@@ -1,0 +1,109 @@
+<!DOCTYPE html><html><head> <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="реле, таймеры, термостаты, молниезащита, электронные компоненты, полупроводники, микросхемы" />
+<meta name="description" content="Продажа электронных компонентов, промышленных реле, контакторов, пускателей, устройств управления" />
+<link href="/bitrix/templates/poligon_ew/components/bitrix/menu/tabs/style.css" type="text/css" rel="stylesheet" />
+<link href="/bitrix/templates/poligon_ew/components/bitrix/menu/topnav_new/style.css" type="text/css" rel="stylesheet" />
+<link href="/bitrix/templates/poligon_ew/components/bitrix/menu/main/style.css" type="text/css" rel="stylesheet" />
+<link href="/bitrix/templates/poligon_ew/components/bitrix/breadcrumb/nav/style.css" type="text/css" rel="stylesheet" />
+<link href="/bitrix/templates/poligon/components/bitrix/news.line/main_page/style.css" type="text/css" rel="stylesheet" />
+<link href="/bitrix/templates/poligon_ew/components/bitrix/menu/footer_menu/style.css" type="text/css" rel="stylesheet" />
+
+<title>ПОЛИГОН - электронные компоненты, фотореле, таймеры, реле, релейная автоматика, термостаты, контакторы, молниезащита и УЗИП</title><!--[if lte IE 7]><link href="/iehack.css" rel="stylesheet" type="text/css" /><![endif]--><!--[if IE]><meta http-equiv="imagetoolbar" content="no" /><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link href="/bitrix/templates/poligon_ew/styles.css.gz" rel="stylesheet" type="text/css" /><link href="/bitrix/templates/poligon_ew/template_styles.css.gz" rel="stylesheet" type="text/css" /><script src="/bitrix/templates/poligon/js/height.js"></script><script src="http://yandex.st/jquery/1.6.4/jquery.min.js"></script><link href="/css/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css" /><script src="/js/jquery.lightbox-0.5.pack.js.gz"></script><script src="/bitrix/templates/poligon_ew/js/screen.js"></script><script>	jQuery(function(){	    jQuery("a.show").lightBox({			imageLoading: '/js/images/lightbox-ico-loading.gif',			imageBtnClose: '/js/images/lightbox-btn-close.gif',			imageBtnPrev: '/js/images/lightbox-btn-prev.gif',			imageBtnNext: '/js/images/lightbox-btn-next.gif',			imageBlank: '/js/images/lightbox-blank.gif',		});		$("#onStore a[href='#orderPopup']").bind('click', function(){			$('body').append('<div id="wrapperOrder"></div>');			$("#orderPopup").show('slow');			return false;		});		$("img#close").bind('click', function(){			$("#orderPopup").hide('slow');			$("#wrapperOrder").remove();			return false;		});		$("#wrapperOrder").live('click', function(){			$("#orderPopup").hide();			$("#wrapperOrder").remove();			return false;		});	});</script><style>#wrapperOrder{	background: white;	opacity: 0.2;	width: 100%;	position: fixed;	height: 100%;	top: 0;}#orderPopup {	background-color: white;	display: none;	position: fixed;	z-index: 100;	font-family: Sans;	width: 38%;	height: auto;	border-radius: 24px;	border-color: blue;	border-width: 1%;	border-style: solid;	top: 30%;	left: 30%;}#orderPopup p{	padding: 0 2%;	font-size: 12pt;}#orderPopup img#close{	cursor: pointer;	float: right;}#orderPopup h1{	margin: 0;	padding: 0 2%;	font-size: 100%;	background-color: blue;	color: white;	border-radius: 24px 24px 0px 0px;}</style>
+</head><body id="main_main"><div id="overlay"></div><div id="ajax_container1">	<table id="title" style="width: 100%;">		<tr>			<td id="tit">poligon.info</td>			<td style="text-align: right; vertical-align: top;"><a href="javascript:void(0)" onclick="Close()"><img src="/bitrix/images/fileman/htmledit2/taskbarx.gif" alt="" /></a></td>		</tr>	</table>	<div id="ajax_container" style="text-align: left;"></div></div><div id="main_div">	<div id="logo">		<a href="/index.php" id="logo_link"><img src="/bitrix/templates/poligon/images/logo.gif" alt="Логотип ООО ПОЛИГОН"/></a>		<!--		<div id="lang">					</div>		-->		<div id="mail">			<a href="mailto:elcomp@poligon.info">elcomp@poligon.info</a> 		</div>
+		<div id="phone">						<div class="pre">(812)</div>325-42-20
+			<a href="/content/contacts/">все контакты</a>		</div>		<div id="form">			<div class="search-form">
+<form action="/search/index.php">
+	<input type="text" class="inputtext" name="q" value="Введите строку для поиска" onfocus="this.value=''" onblur="if (this.value == '')this.value='Введите строку для поиска'" size="40" maxlength="50" />&nbsp;<input name="s" type="submit" class="submit" value="Найти" />
+</form>
+</div>
+		</div>
+	</div>
+	<div class="clear"><!-- --></div>
+	<div id="menu">			<ul id="tabs">									<li class="selected"><a href="/content/about/" style="white-space: nowrap;">Компания</a></li>									<li><a href="/catalog/" style="white-space: nowrap;">Каталог товаров</a></li>										<li><a href="/special/" style="white-space: nowrap;">Спецпредложения</a></li>					</ul>		<div id="main_area">			<div id="navigation">			<ul class="topnav_menu">
+				<li><a class="nav_point5" href="/content/feedback/catalog_order/catalogs.php" style="white-space: nowrap;">Заказ каталогов и CD</a></li>					<li><a class="nav_point3" href="/content/feedback/quick_order/" style="white-space: nowrap;">Быстрая заявка</a></li>					<li><a class="nav_point pdf" href="/pdf/" style="white-space: nowrap;">Скачать каталоги</a></li>	</ul>
+			</div>		
+	<ul id="first">
+				<li>
+				
+		<a href="/content/about/" style="white-space: nowrap;">О компании<br /></a>
+								
+		<a href="/content/program/" style="white-space: nowrap;">Программа поставок<br /></a>
+								
+		<a href="/content/certificates/" style="white-space: nowrap;">Сертификаты<br /></a>
+					</li>
+							<li>
+				
+		<a href="/content/articles/" style="white-space: nowrap;">Публикации<br /></a>
+								
+		<a href="/content/program/delivery.php" style="white-space: nowrap;">Способы доставки<br /></a>
+								
+		<a href="/content/contacts/" style="white-space: nowrap;">Контакты<br /></a>
+					</li>
+					</li>
+	</ul>
+		</div>	</div>	<div class="clear"><!-- --></div>	<div id="catalog">		<div id ="right">		<div id="partners">			<b class="top_right_corner"><!-- --></b>			<b class="bottom_right_corner"><!-- --></b>			<b class="bottom_left_corner"><!-- --></b>			<a href="/content/program/">Программа поставок</a>				<a href="/catalog/index.php?SECTION_ID=77"><img src="/images/logo/transparent/pre/releco.png" alt="RELECO" title="RELECO - промышленные промежуточные реле"/></a> <a href="/catalog/index.php?SECTION_ID=5414"><img src="/images/logo/transparent/pre/graesslin.png" alt="Graesslin" title="Graesslin - таймеры и фотореле. Сделано в Германии."/></a> <a href="/catalog/index.php?SECTION_ID=5094"><img src="/images/logo/transparent/pre/benedict.png" alt="Benedict" title="Контакторы, пускатели, защита Benedict"/></a> <a href="/catalog/index.php?SECTION_ID=4847"><img src="/images/logo/transparent/pre/huber+suhner.png" alt="HUBER+SUHNER" title="ВЧ-разъемы, оптические компоненты"/></a> <a href="/catalog/index.php?SECTION_ID=142"><img src="/images/logo/transparent/pre/tele.png" alt="TELE" title="реле времени и контроля из Австрии"/></a> <a href="/catalog/index.php?SECTION_ID=5512"><img src="/images/logo/transparent/pre/cbi.png" alt="CBI" title="Профессиональные автоматические выключатели"/></a><br><a href="/catalog/index.php?SECTION_ID=5535"><img title="SONDER — термостаты" alt="SONDER" src="/images/logo/transparent/pre/sonder.png" style="height: 50px; width: 100px;"/></a><a href="/catalog/index.php?SECTION_ID=74"><img src="/images/logo/transparent/pre/citel.png" alt="CITEL" title="CITEL - устройства молниезащиты" style="height: 50px; width: 100px;"/></a><a style="/*margin-left: 50px;*/" href="/catalog/index.php?SECTION_ID=5583"><img src="/images/logo/transparent/pre/emko.png" alt="EMKO" title="EMKO - температурные датчики и и контроллеры" style="width: 100px; height: 36px;"/></a><a style="" href="/catalog/index.php?SECTION_ID=5644"><img style="" src="/images/logo/transparent/pre/hhi.png" alt="Hyundai Heavy Industries" title="Инверторы и НВА Hyundai"/></a><a  style="position: relative; left: 50px;" href="/special/farnell.php"><img style="" src="/images/logo/transparent/pre/farnell.png" alt="FARNELL" title="мировой лидер в области поставок электронных компонентов"></a>		</div>		<div class="right_space">&nbsp;</div>		<div id="special">			<b class="top_right_corner"><!-- --></b>			<b class="bottom_right_corner"><!-- --></b>			<b class="bottom_left_corner"><!-- --></b>					<div style="display:block"><a href="/catalog/index.php?SECTION_ID=158&amp;ELEMENT_ID=1229"><img style="text-align: left;" height="50" src="http://poligon.info/images/TELE/_g2pmsy20_tr2-400_.jpg" alt="" />Реле контроля фаз G2PM400VSY20</a></div>Многофункциональное. 280-520В. 2 перекидных контакта. чередование, обрыв, асимметрия, min, max, нейтраль. в наличии! 
+		</div>
+			<div class="right_space">&nbsp;</div>
+		</div>
+		<div id="catalog_list">
+				<div id="content_div">
+					<div id="bread_crumbs">
+											<div class="spacer3"><!-- --></div>
+					</div>
+		<div id="print"><a href='/http:/www.google.com/index.php?print=Y'><br /><img src="/images/printer.gif" width="16" style="vertical-align: top" alt="print" />Версия для печати</a></div>
+		<div id="content">						<!-- -->
+<div id="news"><b class="news_top_right_corner"> <!-- --> </b><b class="news_bottom_right_corner"> <!-- --> </b><b class="news_bottom_left_corner"> <!-- --> </b><b class="newstitle">Новости компании</b> <ul id="news_list">
+			<li><a href="/content/news/index.php?news=76534"><span>27.03.2013</span><br />Новый каталог CITEL</a></li>
+			<li><a href="/content/news/index.php?news=76441"><span>18.03.2013</span><br />Новая серия реле контроля</a></li>
+			<li><a href="/content/news/index.php?news=76406"><span>05.03.2013</span><br />Распродажа электронных компонентов</a></li>
+			<li><a href="/content/news/index.php?news=76369"><span>25.02.2013</span><br />Farnell element14 на выставке Embedded World 2013</a></li>
+			<li><a href="/content/news/index.php?news=76122"><span>17.01.2013</span><br />Продукция CITEL прошла проверку на соответствие требованиям атомной промышленности</a></li>
+	</ul>
+			
+ <b class="subscribetitle">Уведомления о новинках</b>   <br />  <p class="spacer2">Для подписки на новинки нашего каталога введите свою эл. почту.</p>
+
+<form action="/personal/subscribe/subscr_edit.php">
+
+<input type="text" class="subscribe_inputtext" name="sf_EMAIL" size="20" value="mymail@onsomehost.ru" onfocus="this.value=''"  onblur="if (this.value == '')this.value='mymail@onsomehost.ru'" title="Введите ваш e-mail" />
+<input type="submit" name="OK" class="subscribe_submit" value="Подписаться" />
+</form>
+ </div>
+<!-- -->
+<h2>Специализация компании</h2>
+<p>Компания &quot;ПОЛИГОН&quot; специализируется в оптовой торговле <a href="/special/farnell.php">электронными компонентами</a> и <a href="/catalog/">электротехническими изделиями</a>. Мы сотрудничаем со следующими производителями:</p>
+<p><strong>RELECO — промежуточные реле</strong> — промышленные реле, интерфейсные реле, полупроводниковые реле, колодки, таймеры и аксессуары; </p>
+<p><strong>CITEL — грозозащита (молниезащита)</strong> — устройства защиты от импульсного перенапряжения (УЗИП), молниезащита сетей энергоснабжения, защита сетей данных и телекоммуникаций, защита радиоприемных и антенно-фидерных устройств (коаксиальная защита), бесперебойное электроснабжение, газоразрядники. </p>
+<p><strong>CBI — автоматические выключатели</strong> для профессионального использования, для любых температурных условий использования и токов. </p>
+
+<p><strong>TELE — промышленная автоматизация</strong> — <a href="/catalog/index.php?SECTION_ID=157">реле контроля</a> (тока, напряжения и мощности в 1- и 3-фазных сетях, температуры, уровня жидкости, частоты), <a href="/catalog/index.php?SECTION_ID=159">реле времени</a> (многофункциональные и простые; задержка включения, задержка выключения, циклические реле), модульная система контроля WatchDog pro, устройства плавного пуска и торможения двигателей, цифровые таймеры, счетчики моточасов, системы управления, реле (промежуточные, безопасности), трансформаторы тока и проч. </p>
+<p><strong>Graesslin</strong> — <b>умный дом</b> и <a href="/content/articles/control-lighting.php">управление освещением</a> — цифровые и механические таймеры, счётчики времени наработки, комнатные термостаты и хронотермостаты, лестничные таймеры, фотореле. </p>
+<p><strong>BENEDICT — контакторы</strong>, пускатели, мотор-автоматы, тепловые реле, кулачковые переключатели, кнопки, модульные контакторы и модульные устройства. </p>
+<p><strong>HUBER+SUHNER — высокочастотные коаксиальные разъемы. </strong>Оптические компоненты. Кабель и сборки. Антенны. </p>
+<p><strong>OBSTA — световое ограждение</strong>. </p>
+<p><strong>SONDER  — термостаты</strong> для контроля температуры на производстве и в быту. </p>
+
+<p><strong>EMKO  — </strong> температурные и промышленные контроллеры и датчики. </p>
+
+<p><strong>Hyundai Heavy Industries — преобразователи частоты и модульные автоматические выключатели</strong>, подразделение крупнейшего корейского концерна Hyundai по производству <abbr title="Низковольтной аппаратуры">НВА</abbr>.</p>
+
+<p><strong>FarnellInOne</strong> — более 250000 наименований от 2000 производителей. Микросхемы. Электронные компоненты, комплектующие изделия. 
+  <br /> </p><p>Отечественные заводы-изготовители.</p>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">try {var pageTracker = _gat._getTracker("UA-12562837-1");pageTracker._trackPageview();} catch(err) {}</script><!--В Explorer есть баг, когда в контенте область заканчивается на <p></p>, то див наследует маргин от p. В общем не удалять fix ниже комментария -->
+<!--[if lte IE 6]><b class="iefix">.</b><![endif]-->	</div>		</div>	</div>	<div class="clear"><!-- --></div></div></div><div id="footer">	<div id="adress">		<table><tr><td style="vertical-align: top;">Наш адрес:</td><td> 197376, Санкт-Петербург,<br/> ул. Льва Толстого, д. 7, оф. 501</td></tr></table> 	</div>	
+	<ul id="footer_list">
+
+			<li><a href="/content/about/" style="white-space: nowrap;">О компании</a></li>
+	
+
+			<li><a href="/content/contacts/" style="white-space: nowrap;">Контактная информация</a></li>
+	
+
+			<li><a href="/map.php" style="white-space: nowrap;">Карта сайта</a></li>
+	
+
+	</ul>
+	<!-- Yandex.Metrika counter -->	<script type="text/javascript">	(function (d, w, c) {		(w[c] = w[c] || []).push(function() {			try {				w.yaCounter9739159 = new Ya.Metrika({id:9739159,						webvisor:true,						clickmap:true,						trackLinks:true,						accurateTrackBounce:true});			} catch(e) { }		});		var n = d.getElementsByTagName("script")[0],			s = d.createElement("script"),			f = function () { n.parentNode.insertBefore(s, n); };		s.type = "text/javascript";		s.async = true;		s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";		if (w.opera == "[object Opera]") {			d.addEventListener("DOMContentLoaded", f, false);		} else { f(); }	})(document, window, "yandex_metrika_callbacks");	</script>	<noscript><div><img src="//mc.yandex.ru/watch/9739159" style="position:absolute; left:-9999px;" alt="" /></div></noscript>	<!-- /Yandex.Metrika counter -->		<!-- RedHelper -->	<script id="rhlpscrtg" type="text/javascript" charset="utf-8" async="async" src="https://web.redhelper.ru/service/main.js?c=poligon"></script>	<!--/Redhelper -->			<div id="copyright">	<script type="text/javascript" src="/js/orphus/orphus.js"></script>	<a href="http://orphus.ru" id="orphus" target="_blank"><img alt="Система Orphus" src="/js/orphus/orphus.gif" border="0" width="121" height="21" /></a>			<br />&copy; 2013 Все права защищены
+	</div></div></body></html>
