@@ -1,0 +1,29 @@
+<?
+$MESS ['CC_BSC1_ERROR_AUTHORIZE'] = "Authorisation error: incorrect login or password.";
+$MESS ['CC_BSC1_PERMISSION_DENIED'] = "You do not have enough permissions to import the catalog. Please check the import component settings.";
+$MESS ['CC_BSC1_ERROR_MODULE'] = "The Information Blocks module is not installed.";
+$MESS ['CC_BSC1_ERROR_FILE_WRITE'] = "Error writing to #FILE_NAME#.";
+$MESS ['CC_BSC1_ERROR_FILE_OPEN'] = "Error trying to open #FILE_NAME# for writing.";
+$MESS ['CC_BSC1_ERROR_HTTP_READ'] = "Error reading HTTP data.";
+$MESS ['CC_BSC1_ERROR_UNKNOWN_COMMAND'] = "Unknown command.";
+$MESS ['CC_BSC1_ERROR_INIT'] = "Error trying to initialise the temporary folder.";
+$MESS ['CC_BSC1_TABLES_DROPPED'] = "Temporary tables has been deleted.";
+$MESS ['CC_BSC1_TABLES_CREATED'] = "Temporary tables has been created.";
+$MESS ['CC_BSC1_TABLE_CREATE_ERROR'] = "Error trying to create temporary tables.";
+$MESS ['CC_BSC1_FILE_READ'] = "The source file has been processed.";
+$MESS ['CC_BSC1_FILE_ERROR'] = "Error trying to open the source file.";
+$MESS ['CC_BSC1_FILE_PROGRESS'] = "Processed #PERCENT#% so far.";
+$MESS ['CC_BSC1_INDEX_CREATED'] = "Temporary tables has been indexed.";
+$MESS ['CC_BSC1_INDEX_CREATE_ERROR'] = "Error creating the index of temporary tables.";
+$MESS ['CC_BSC1_METADATA_ERROR'] = "Error importing metadata.";
+$MESS ['CC_BSC1_METADATA_IMPORTED'] = "Metadata has been imported successfully.";
+$MESS ['CC_BSC1_PROGRESS'] = "Processed #DONE# elements of #TOTAL#.";
+$MESS ['CC_BSC1_DONE'] = "Elements has been imported successfully.";
+$MESS ['CC_BSC1_IMPORT_SUCCESS'] = "Import has completed successfully.";
+$MESS ['CC_BSC1_DEA_DONE'] = "Done deactivating/deleting elements.";
+$MESS ['CC_BSC1_ZIP_ERROR'] = "Archive deflate error.";
+$MESS ['CC_BSC1_ZIP_PROGRESS'] = "Unpacking archive.";
+$MESS ['CC_BSC1_ZIP_DONE'] = "Done unpacking archive.";
+$MESS ['CC_BSC1_SECTIONS_IMPORTED'] = "Groups has been imported.";
+$MESS ['CC_BSC1_SECTION_DEA_DONE'] = "Done deactivating/deleting groups.";
+?>

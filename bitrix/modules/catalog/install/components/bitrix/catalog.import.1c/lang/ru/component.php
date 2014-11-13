@@ -1,0 +1,29 @@
+<?
+$MESS ['CC_BSC1_ERROR_AUTHORIZE'] = "Ошибка авторизации. Неверное имя пользователя или пароль.";
+$MESS ['CC_BSC1_PERMISSION_DENIED'] = "У Вас нет прав для импорта каталога. Проверьте настройки компонента импорта.";
+$MESS ['CC_BSC1_ERROR_MODULE'] = "Модуль Информационных блоков не установлен.";
+$MESS ['CC_BSC1_ERROR_FILE_WRITE'] = "Ошибка записи в файл #FILE_NAME#.";
+$MESS ['CC_BSC1_ERROR_FILE_OPEN'] = "Ошибка открытия файла #FILE_NAME# для записи.";
+$MESS ['CC_BSC1_ERROR_HTTP_READ'] = "Ошибка чтения HTTP данных.";
+$MESS ['CC_BSC1_ERROR_UNKNOWN_COMMAND'] = "Неизвестная команда.";
+$MESS ['CC_BSC1_ERROR_INIT'] = "Ошибка инициализации временного каталога.";
+$MESS ['CC_BSC1_TABLES_DROPPED'] = "Временные таблицы удалены.";
+$MESS ['CC_BSC1_TABLES_CREATED'] = "Временные таблицы созданы.";
+$MESS ['CC_BSC1_TABLE_CREATE_ERROR'] = "Ошибка создания временных таблиц.";
+$MESS ['CC_BSC1_FILE_READ'] = "Файл импорта прочитан.";
+$MESS ['CC_BSC1_FILE_ERROR'] = "Ошибка открытия файла импорта.";
+$MESS ['CC_BSC1_FILE_PROGRESS'] = "Обработано #PERCENT#% файла.";
+$MESS ['CC_BSC1_INDEX_CREATED'] = "Временные таблицы проиндексированы.";
+$MESS ['CC_BSC1_INDEX_CREATE_ERROR'] = "Ошибка создания индекса для временных таблиц.";
+$MESS ['CC_BSC1_METADATA_ERROR'] = "Ошибка импорта метаданных.";
+$MESS ['CC_BSC1_METADATA_IMPORTED'] = "Метаданные импортированы успешно.";
+$MESS ['CC_BSC1_PROGRESS'] = "Обработано #DONE# из #TOTAL# элементов.";
+$MESS ['CC_BSC1_DONE'] = "Загрузка элементов завершена.";
+$MESS ['CC_BSC1_IMPORT_SUCCESS'] = "Импорт успешно завершен.";
+$MESS ['CC_BSC1_DEA_DONE'] = "Деактивация/Удаление элементов завершены.";
+$MESS ['CC_BSC1_ZIP_ERROR'] = "Ошибка распаковки архива.";
+$MESS ['CC_BSC1_ZIP_PROGRESS'] = "Идет распаковка архива.";
+$MESS ['CC_BSC1_ZIP_DONE'] = "Распаковка архива завершена.";
+$MESS ['CC_BSC1_SECTIONS_IMPORTED'] = "Группы импортированы.";
+$MESS ['CC_BSC1_SECTION_DEA_DONE'] = "Деактивация/удаление групп завершено.";
+?>

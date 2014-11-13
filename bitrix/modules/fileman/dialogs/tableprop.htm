@@ -1,0 +1,150 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DAREA HTML//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Windows-1251">
+<style type="text/css">
+.tablebodytext {font-family: Arial, Helvetica, sans-serif; font-size:smaller;}
+</style>
+</head>
+<body style="BACKGROUND-COLOR: menu; BORDER-BOTTOM: threeddarkshadow solid 1px; BORDER-LEFT: threedface solid 1px; BORDER-RIGHT: threeddarkshadow solid 1px; BORDER-TOP: threedface solid 1px;" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<script>
+<!--
+var CELL_HEIGHT=25;
+var CELL_WIDTH=25;
+var nCols=0;
+var nRows=0;
+var prevRow=-1;
+var prevCol=-1;
+
+function DrawTable(iRows, iCols)
+{
+	if(iRows>nRows || iCols>nCols)
+		SetObSize((iRows>nRows?iRows:nRows)*(CELL_HEIGHT+2)+30, (iCols>nCols?iCols:nCols)*(CELL_WIDTH+2)+8);
+
+	if(iRows>nRows)
+	{
+		for(i=nRows;i<iRows;i++)
+		{
+			tr=c.insertRow();
+			for(j=0;j<nCols;j++)
+			{
+				td=tr.insertCell();
+				td.width=CELL_WIDTH;
+				td.height=CELL_HEIGHT;
+				td.bgColor="white";
+				td.innerHTML="<img src='/bitrix/images/1.gif' width='"+CELL_WIDTH+"' height='"+CELL_HEIGHT+"'>";
+			}
+		}
+		nRows=iRows;
+	}
+
+	 if(iCols>nCols)
+	 {
+		for(i=0;i<nRows;i++)
+		{
+			tr=c.rows(i);
+			for(j=nCols;j<iCols;j++)
+			{
+				td=tr.insertCell();
+				td.width=CELL_WIDTH;
+				td.height=CELL_HEIGHT;
+				td.bgColor="white";
+				td.innerHTML="<img src='/bitrix/images/1.gif' width='"+CELL_WIDTH+"' height='"+CELL_HEIGHT+"'>";
+			}
+		}
+		nCols=iCols;
+	}
+}
+
+function SelectTable(curRow, curCol)
+{
+	if(prevRow!=curRow || prevCol!=curCol)
+	{
+		for(i=0;i<nRows;i++)
+		{
+			tr=c.rows(i);
+			for(j=0;j<nCols;j++)
+			{
+				td=tr.cells(j);
+				if(j<=curCol && i<=curRow)
+					td.bgColor="blue";
+				else
+					td.bgColor="white";
+			}
+		}
+		prevRow=curRow;
+		prevCol=curCol;
+	}
+}
+
+
+var isCaptured=false;
+function DMO()
+{
+	X=window.event.clientX;
+	Y=window.event.clientY;
+	if(isCaptured && (X<0 || Y<0))
+	{
+		document.releaseCapture();
+		isCaptured=false;
+	}
+	else
+	{
+		if(X>0 && Y>0)
+		{
+			if(!isCaptured)
+			{
+				isCaptured=true;
+				o.setCapture();
+			}
+			iColumn=Math.floor((X-5)/(CELL_WIDTH+2));
+			iRow=Math.floor((Y-5)/(CELL_HEIGHT+2));
+			r.innerHTML=(iRow+1)+" x "+(iColumn+1);
+			DrawTable(iRow+1, iColumn+1);
+			SelectTable(iRow, iColumn);
+		}
+	}
+}
+
+function public_SetObj(ob)
+{
+	prevRow=-1;
+	prevCol=-1;
+	for(i=0;i<nRows;i++)
+		c.deleteRow();
+
+	nCols=0;
+	nRows=0;
+			
+
+	obj=ob;
+	DrawTable(5, 5);
+}
+
+function SetObSize(height, width)
+{
+	obj.TableProp.width=width;
+	obj.TableProp.height=height;
+}
+
+function Cl()
+{
+	X=window.event.clientX;
+	Y=window.event.clientY;
+	iColumn=Math.floor((X-5)/(CELL_WIDTH+2))+1;
+	iRow=Math.floor((Y-5)/(CELL_HEIGHT+2))+1;
+	window.external.raiseEvent("OnTableSelect", Array(iRow, iColumn));
+}
+//-->
+</script>
+<div id="o" onmousemove="DMO()" onClick="Cl()">
+<table cellpadding="0" border="2" cellspacing="0"><tr><td bgcolor="threedface">
+<table id="c" cellpadding="0" border="0" cellspacing="2">
+</table>
+<table cellpadding="0" border="0" cellspacing="0" width="100%">
+<tr><td align="center" valign="middle"><span id="r" class='tablebodytext'>&nbsp;</span></td></tr>
+</table>
+</td></tr></table>
+</div>
+</body>
+</html>
