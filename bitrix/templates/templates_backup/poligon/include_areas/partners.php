@@ -1,0 +1,14 @@
+<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
+<a href="/catalog/index.php?SECTION_ID=77"><img src="/images/logo/transparent/pre/releco.png" alt="RELECO" title="RELECO - промышленные промежуточные реле"/></a> 
+<a href="/catalog/index.php?SECTION_ID=5414"><img src="/images/logo/transparent/pre/graesslin.png" alt="Graesslin" title="Graesslin - таймеры и фотореле. Сделано в Германии."/></a> 
+<a href="/catalog/index.php?SECTION_ID=5094"><img src="/images/logo/transparent/pre/benedict.png" alt="Benedict" title="Контакторы, пускатели, защита Benedict"/></a> 
+<a href="/catalog/index.php?SECTION_ID=4847"><img src="/images/logo/transparent/pre/huber+suhner.png" alt="HUBER+SUHNER" title="ВЧ-разъемы, оптические компоненты"/></a> 
+<a href="/catalog/index.php?SECTION_ID=142"><img src="/images/logo/transparent/pre/tele.png" alt="TELE" title="реле времени и контроля из Австрии"/></a> 
+<a href="/catalog/index.php?SECTION_ID=5512"><img src="/images/logo/transparent/pre/cbi.png" alt="CBI" title="Профессиональные автоматические выключатели"/></a>
+<br>
+<a href="/catalog/index.php?SECTION_ID=5535"><img title="SONDER — термостаты" alt="SONDER" src="/images/logo/transparent/pre/sonder.png" style="height: 50px; width: 100px;"/></a>
+<a href="/catalog/index.php?SECTION_ID=74"><img src="/images/logo/transparent/pre/citel.png" alt="CITEL" title="CITEL - устройства молниезащиты" style="height: 50px; width: 100px;"/></a>
+<a style="/*margin-left: 50px;*/" href="/catalog/index.php?SECTION_ID=5583"><img src="/images/logo/transparent/pre/emko.png" alt="EMKO" title="EMKO - температурные датчики и и контроллеры" style="width: 100px; height: 36px;"/></a>
+<a  style="" href="/special/farnell.php"><img style="" src="/images/logo/transparent/pre/farnell.png" alt="FARNELL" title="мировой лидер в области поставок электронных компонентов"></a>
+<a href="/catalog/index.php?SECTION_ID=5650"><img title="производитель промышленных решений для измерения и контроля основных электрических параметров" alt="VEMER" src="/images/logo/transparent/pre/vemer.png" /></a>
+<a href="/catalog/index.php?SECTION_ID=5818"><img title="" alt="RELEQUICK" src="/images/logo/transparent/pre/relequick.png" /></a>

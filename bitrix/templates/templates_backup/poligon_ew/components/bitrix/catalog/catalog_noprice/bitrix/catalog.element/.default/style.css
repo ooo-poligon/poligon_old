@@ -1,0 +1,12 @@
+.catalog-price {	 color:red;}
+.catalog-price-1 {
+	 color:#fff;
+	background:#0D4B96;
+	font-size:14px;
+}
+.abs{	position:absolute; 	right:0px;        _right:10px;	top:20px;	width:234px;}
+.abs table.price{	border:1px solid #CCC;}
+.abs table th{	text-align:left;}
+.catalog-element{position:relative;}
+.name{font-size:16px;}
+small{font-size:12px;}div.images  {width: 100%; text-align: center;}div.images img {/*height: 150px; */width: auto; padding: 4px;}#onStore {	/*background-color: green;*/	color: green;	font-size: 14px;	font-weight: bold;	font-family: Arial;	padding: 8px;	text-align: left;	/*height: 50px;*/	border: 3px solid gray;	border-radius: 6px;	white-space: nowrap;	min-width: 225px;}#onStore span {	color: black;}#onStore span a{	/*color: rgb(240, 240, 125);*/}#onStore span strong:after{	content: 'ð.';}
