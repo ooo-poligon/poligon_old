@@ -1,0 +1,236 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fstatistic%2Fevents%2Fevent_list.php.html"; </script>
+
+<title>События</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "statistic/events/event_list.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [События])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">События</h1></div></div>
+<div id="pagebody" valign="bottom">
+<p>На данной форме представлена детальная информация по каждому событию,
+произошедшему как на сайте, так и вне сайта.</p>
+
+<h4>Фильтр</h4>
+
+<table class="tnormal">
+<tr>
+	<th>Наименование параметра</th><th>Описание</th>
+</tr>
+<tr>
+<td><b>Найти</b></td>
+<td>Поле, позволяющее найти события по их основным параметрам:
+идентификатору рекламной кампании, <i>event1</i> или <i>event2</i>. Это поле
+присутствует, даже если фильтр свернут.</td></tr>
+<tr>
+<td>ID<font color="#008000">*</font></td>
+<td>ID события в базе.</td></tr>
+<tr>
+<td>ID типа события<font color="#008000">*</font></td>
+<td>ID типа события в базе.</td></tr>
+<tr>
+<td>Наименование типа события<font color="#008000">*</font></td>
+<td>Наименование типа события.</td></tr>
+<tr>
+<td> <code>event1</code> /  <code>event2</code><font color="#008000">*</font></td>
+<td>Идентификаторы типа события:  <code>event1</code> и  <code>event2</code> соответственно.</td></tr>
+<tr>
+<td> <code>event3</code><font color="#008000">*</font></td>
+<td>Дополнительный параметр события.</td></tr>
+<tr>
+<td>Дата</td>
+<td>Интервал, за который требуется отобразить события.</td></tr>
+<tr>
+<td>ID сессии<font color="#008000">*</font></td>
+<td> ID сессии, в рамках которой произошло событие.</td></tr>
+<tr>
+<td>ID посетителя<font color="#008000">*</font></td>
+<td> ID посетителя, совершившего события.</td></tr>
+<tr>
+<td>Страна<font color="#008000">*</font></td>
+<td>Страна посетителя сайта, инициировавшего событие.</td></tr>
+<tr>
+<td>ID рекламной кампании<font color="#008000">*</font></td>
+<td>ID рекламной кампании, в рамках которой произошло событие.</td></tr>
+<tr>
+<td>На возврате по рекламной кампании</td>
+<td>С помощью данного поля можно отфильтровать события, произошедшие на прямом заходе по рекламной кампании либо на возврате.</td>
+</tr>
+<tr>
+<td>ID хита<font color="#008000">*</font></td>
+<td>В данном поле можно задать ID хита, инициировавшего занесение в базу данных события.</td></tr>
+<tr>
+<td>Откуда пришли<font color="#008000">*</font></td>
+<td>Сайт и страница, с которой пришли на ту страницу, где было инициировано
+требуемое событие.</td></tr>
+<tr>
+<td>Где произошло<font color="#008000">*</font></td>
+<td>Сайт и страница, на которой было инициировано требуемое событие.</td></tr>
+<tr>
+<td>Куда перенаправили<font color="#008000">*</font></td>
+<td>Поле позволяет отобрать события по странице, на которую
+перенаправляется посетитель после события.</td></tr>
+<tr>
+<td>Денежная сумма</td>
+<td>Интервал для отбора событий по значению их денежной суммы.</td></tr>
+<tr>
+<td>Валюта</td>
+<td>Поле позволяет отобрать события по валюте денежной суммы.</td>
+</tr>
+<tr>
+<td>Логика между полями</td>
+<td>Переключатель, определяющий механизм поиска записей.
+<ul>
+<li>&quot;<b>И</b>&quot; - выводятся события, удовлетворяющие всем
+	критериям фильтра.</li>
+<li>&quot;<b>ИЛИ</b>&quot; - выводятся события, удовлетворяющие хотя бы
+	одному критерию.</li>
+</ul>
+</td></tr>
+    <tr><td>Показать все условия</td><td>Отражает все поля фильтра.</td></tr>
+  
+    <tr><td>Скрыть все условия</td><td>Скрывает все поля фильтра, кроме полей по умолчанию.</td></tr>
+
+</table>
+
+<p><font color="#008000">*</font> - для данных полей вы можете воспользоваться <a href="../../general/filter.php.html">специальными логическими
+выражениями</a>.</p>
+
+<p>Чтобы установить фильтр по заданным критериям поиска, нажмите на кнопку <b>Найти</b>. Для отображения всех событий нажмите на кнопку <b>Отменить</b>.</p>
+
+<h4>Контекстная панель</h4>
+<table class="tnormal">
+<tbody>
+	<tr>
+	<th>Кнопка</th>
+	<th>Описание</th>
+	</tr>
+	<tr>
+	<td>Добавить</td>
+	<td>Открывает форму для ручного создания нового события.</td>
+	</tr>
+<tr>
+	<td>Настроить</td>
+	<td>Позволяет перейти к диалогу настройки внешнего вида отчетной формы.</td>
+	</tr>
+	<tr>
+	<td>Excel</td>
+	<td>Экспортирует данные из таблицы в формат MS Excel.</td>
+	</tr>
+</tbody>
+</table>
+
+<h4>Таблица</h4>
+
+<table class="wordtable">
+<tr>
+<th>Колонка</th>
+<th>Описание</th>
+</tr>
+<tr>
+<th style="vertical-align:top">Колонка флажков</th>
+<td>Поле предназначено для выбора событий, к которым
+предполагается применить какое-либо действие из панели действий,
+расположенной ниже таблицы кампаний.</td>
+</tr>
+<tr>
+<th style="vertical-align:top">ID</th>
+<td>Идентификатор события в базе.</td>
+</tr>
+<tr>
+<th style="vertical-align:top">Тип</th>
+<td>Идентификатор типа события. Ссылка открывает список типов
+событий с фильтром, установленным на этот тип событий.</td>
+</tr>
+<tr>
+<th style="vertical-align:top">event1</th>
+<td>Параметр типа события - <i>event1</i>.</td>
+</tr>
+<tr>
+<th style="vertical-align:top">event2</th>
+<td>Параметр типа события - <i>event2</i>.</td>
+</tr>
+<tr>
+<th style="vertical-align:top">Дата</th>
+<td>Дата возникновения событие.</td>
+</tr>
+<tr>
+<th style="vertical-align:top">Сессия</th>
+<td>ID сессии, в течение которой произошло событие. Ссылка открывает
+список сессий с фильтром, установленным на эту сессию.</td>
+</tr>
+<tr>
+<th style="vertical-align:top">Посет.</th>
+<td>ID посетителя, инициировавшего событие. Ссылка открывает список
+посетителей с фильтром, установленным на этого посетителя.</td>
+</tr>
+<tr>
+<th style="vertical-align:top">Страна</th>
+<td>Страна посетителя, инициировавшего событие.</td>
+</tr>
+<tr>
+<th style="vertical-align:top">Рекл. камп.</th>
+<td>ID рекламной кампании, зайдя по которой, посетитель инициировал событие.
+Если ID выведен с символом <b><font color="#FF0000">*</font></b>, посетитель инициировал событие на возврате по данной рекламной кампании, в противном случае
+		- на прямом заходе.<br>Ссылка открывает список кампаний с
+фильтром, установленным на эту кампанию.</td>
+</tr>
+<tr>
+<th style="vertical-align:top">Хит</th>
+<td>ID хита, на котором произошло событие. Ссылка открывает список
+посетителей с фильтром, установленным на этого посетителя.</td>
+</tr>
+<tr>
+<th style="vertical-align:top">Сайт</th>
+<td>Сайт, на котором произошло событие.</td>
+</tr>
+<tr>
+<th style="vertical-align:top">Денежная сумма</th>
+<td>Денежная сумма события, указывается либо в базовой валюте модуля, либо в валюте, выбранной в фильтре.</td>
+</tr>
+</table>
+
+
+
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

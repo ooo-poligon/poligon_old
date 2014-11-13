@@ -1,0 +1,134 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../index.html?page=source%2Fstore%2Fsale%2Fsettings%2Fsale_status_edit.php.html"; </script>
+
+<title>Создание и редактирование информационного статуса заказа</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "store/sale/settings/sale_status_edit.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Создание и редактирование информационного статуса заказа])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Создание и редактирование информационного статуса заказа</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+<h4 id="topictoctitle">В этом разделе</h4>
+<menu id="topictoc">
+  <li><a href="#menu" >Контекстная панель</a> </li>
+
+  <li><a href="#fields" >Поля формы</a> </li>
+
+  <li><a href="#buttons" >Кнопки управления</a> </li>
+</menu>
+<p>Данная форма служит для создания новых и изменения параметров уже существующих информационных статусов заказа.</p>
+
+<h4><a name="menu"></a>Контекстная панель</h4>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th width="25%">Кнопка</th><th width="75%">Описание</th></tr>
+  
+    <tr><td>Список статусов</td><td>Переход на страницу со списком статусов заказа.</td></tr>
+  
+    <tr><td>Добавить новый статус</td><td>Переход к форме создания нового статуса заказа. Кнопка отображается при редактировании существующего статуса.</td></tr>
+  
+    <tr><td>Удалить статус</td><td>Удаление редактируемого статуса заказа. Кнопка отображается при редактировании существующего статуса.</td></tr>
+  </tbody>
+</table>
+
+<h4><a name="fields"></a>Поля формы</h4>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th width="25%">Поле</th><th width="75%">Описание</th></tr>
+  
+    <tr><td>*Код</td><td>Уникальный код статуса. Задается в виде 1 буквы латинского алфавита.</td></tr>
+  
+    <tr><td>Сортировка</td><td>Относительный &quot;вес&quot; статуса. Используется для определения положения данного статуса в общем списке статусов.</td></tr>
+  
+    <tr><td>*Название</td><td>Укажите название статуса для всех языков, используемых в системе.</td></tr>
+  
+    <tr><td>Описание</td><td>Задайте описание статуса для всех языков, используемых в системе.</td></tr>
+  
+    <tr><th colspan="2">Права на доступ</th></tr>
+  
+    <tr><td colspan="2">В данной части формы устанавливаются права на доступ к заказам в данном статусе. 
+        <table class="wordtable">
+          <tbody>
+            <tr><th width="20%">Поле</th><th width="80%">Описание</th></tr>
+          
+            <tr><td>Группа пользователей</td><td>Выведены те группы пользователей, которые имеют в настройках модуля Интернет-магазин уровень доступа <b>Обработка заказов</b>.</td></tr>
+          
+            <tr><td>Просмотр</td><td>Опция возможности просмотра заказа, который находится в редактируемом статусе, пользователями данной группы.</td></tr>
+          
+            <tr><td>Флаг отмены</td><td>При отмеченной опции пользователь данной группы будет иметь возможность изменять флаг отмены в форме детального просмотра заказа, т.е. сможет отменить заказ.</td></tr>
+          
+            <tr><td>Флаг доставки</td><td>При отмеченной опции пользователь данной группы будет иметь возможность изменять флаг доставки в форме детального просмотра заказа, т.е. сможет разрешить доставку товара.</td></tr>
+          
+            <tr><td>Флаг оплаты</td><td>При отмеченной опции пользователь данной группы будет иметь возможность изменять флаг оплаты в форме детального просмотра заказа, т.е. переводить заказ в состояние &quot;Оплачен&quot;.</td></tr>
+          
+            <tr><td>Перевод в этот статус</td><td>Опция дает возможность пользователю данной группы переводить заказ в редактируемый статус.</td></tr>
+          
+            <tr><td>Изменение</td><td>При наличии данной опции пользователю данной группы будет доступно действие <b>Изменить параметры заказа</b> в меню действий заказа.</td></tr>
+          
+            <tr><td>Удаление</td><td>При наличии данной опции пользователю данной группы будет доступно действие <b>Удалить заказ</b> в меню действий заказа.</td></tr>
+          </tbody>
+        </table>
+      </td></tr>
+  </tbody>
+</table>
+
+<p>* - Поля являются обязательными для заполнения.</p>
+
+<h4><a name="buttons"></a>Кнопки управления</h4>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th width="25%">Кнопка</th><th width="75%">Описание</th></tr>
+  
+    <tr><td>Сохранить</td><td>Сохранение внесённых изменений. Переход на страницу со списком статусов заказа.</td></tr>
+  
+    <tr><td>Применить</td><td>Применение внесённых изменений. Продолжение редактирования параметров статуса заказа.</td></tr>
+  
+    <tr><td>Отменить</td><td>Отмена внесённых изменений. Возврат первоначальных значений параметров.</td></tr>
+  </tbody>
+</table>
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

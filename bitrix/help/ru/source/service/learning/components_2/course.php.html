@@ -1,0 +1,106 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../index.html?page=source%2Fservice%2Flearning%2Fcomponents_2%2Fcourse.php.html"; </script>
+
+<title>Учебный курс (комплексный компонент)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/learning/components_2/course.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Компоненты 2.0::Учебный курс (комплексный компонент)])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Компоненты 2.0::Учебный курс (комплексный компонент)</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<p>Комплексный компонент осуществляет полноценный вывод учебного курса. Компонент стандартный и входит в дистрибутив модуля. 
+  <br />
+ </p>
+ 
+<h4>Пример вызова</h4>
+ 
+<br />
+ 
+<pre class="syntax" id="xmp5A0A6F40">&lt;?$APPLICATION-&gt;IncludeComponent(&quot;bitrix:learning.course&quot;,&quot;&quot;,Array(<br />     &quot;SEF_MODE&quot; =&gt; &quot;Y&quot;,<br />     &quot;COURSE_ID&quot; =&gt; $_REQUEST[&quot;COURSE_ID&quot;],<br />     &quot;CHECK_PERMISSIONS&quot; =&gt; &quot;Y&quot;,<br />     &quot;PAGE_WINDOW&quot; =&gt; &quot;10&quot;,<br />     &quot;SHOW_TIME_LIMIT&quot; =&gt; &quot;Y&quot;,<br />     &quot;PAGE_NUMBER_VARIABLE&quot; =&gt; &quot;PAGE&quot;,<br />     &quot;TESTS_PER_PAGE&quot; =&gt; &quot;20&quot;,<br />     &quot;SET_TITLE&quot; =&gt; &quot;Y&quot;,<br />     &quot;CACHE_TYPE&quot; =&gt; &quot;A&quot;,<br />     &quot;CACHE_TIME&quot; =&gt; &quot;3600&quot;,<br />     &quot;SEF_FOLDER&quot; =&gt; &quot;/examples/&quot;,<br />     &quot;SEF_URL_TEMPLATES&quot; =&gt; Array(<br />         &quot;course.detail&quot; =&gt; &quot;course#COURSE_ID#/index&quot;,<br />         &quot;lesson.detail&quot; =&gt; &quot;course#COURSE_ID#/lesson#LESSON_ID#/&quot;,<br />         &quot;chapter.detail&quot; =&gt; &quot;course#COURSE_ID#/chapter#CHAPTER_ID#/&quot;,<br />         &quot;test.self&quot; =&gt; &quot;course#COURSE_ID#/selftest#SELF_TEST_ID#/&quot;,<br />         &quot;test&quot; =&gt; &quot;course#COURSE_ID#/test#TEST_ID#/&quot;,<br />         &quot;test.list&quot; =&gt; &quot;course#COURSE_ID#/examination/&quot;,<br />         &quot;course.contents&quot; =&gt; &quot;course#COURSE_ID#/contents/&quot;,<br />         &quot;gradebook&quot; =&gt; &quot;course#COURSE_ID#/gradebook/&quot;<br />         ),<br />     &quot;VARIABLE_ALIASES&quot; =&gt; Array(<br />         &quot;course.detail&quot; =&gt; Array(),<br />         &quot;lesson.detail&quot; =&gt; Array(),<br />         &quot;chapter.detail&quot; =&gt; Array(),<br />         &quot;test.self&quot; =&gt; Array(),<br />         &quot;test&quot; =&gt; Array(),<br />         &quot;test.list&quot; =&gt; Array(),<br />         &quot;course.contents&quot; =&gt; Array(),<br />         &quot;gradebook&quot; =&gt; Array(),<br />         )<br />     )<br />);?&gt;</pre>
+ 
+<h4>Описание параметров</h4>
+ 
+<h5 class="graytitle">Основные параметры</h5>
+ <dl> 	<dt><span style="font-weight: bold;">COURSE_ID</span> 	</dt><dd>Идентификатор курса. </dd></dl> 
+<h5 class="graytitle">Управление адресами страниц</h5>
+ <dl> 	<dt><span style="font-weight: bold;">SEF_MODE</span> 	</dt><dd>Включение поддержки <span style="font-weight: bold;">ЧПУ</span> и полей настройки адресов <span style="font-weight: bold;">ЧПУ</span>. 	</dd><dt><span style="font-weight: bold;">SEF_FOLDER</span> 	</dt><dd>Каталог <span style="font-weight: bold;">ЧПУ</span>: путь до папки, с которой работает компонент. Этот путь может как совпадать с физическим путём, так и не совпадать. 	</dd><dt><span style="font-weight: bold;">SEF_URL_TEMPLATES</span> 	</dt><dd>Указываются адреса страниц: 	 
+    <ul> 		 
+      <li><span style="font-weight: bold;">course.detail</span> - главная страница курса; 		</li>
+     
+      <li><span style="font-weight: bold;">lesson.detail</span> - страница урока курса; 		</li>
+     
+      <li><span style="font-weight: bold;">chapter.detail</span> - страница главы курса; 		</li>
+     
+      <li><span style="font-weight: bold;">test.self</span> - страница теста для самопроверки; 		</li>
+     
+      <li><span style="font-weight: bold;">test</span> - страница с тестом; 		</li>
+     
+      <li><span style="font-weight: bold;">test.list</span> - страница списка тестов; 		</li>
+     
+      <li><span style="font-weight: bold;">course.contents</span> - страница со всеми материалами курса; 		</li>
+     
+      <li><span style="font-weight: bold;">gradebook</span> - страница журнала курса. </li>
+     </ul>
+   	</dd><dt><span style="font-weight: bold;">VARIABLE_ALIASES</span> 	</dt><dd>Имена переменных для управления страницами курса. </dd></dl> 
+<h5 class="graytitle">Настройки кэширования</h5>
+ <dl> 	<dt><span style="font-weight: bold;">CACHE_TYPE</span> 	</dt><dd>Тип кеширования: 	 
+    <ul> 		 
+      <li><span style="font-weight: bold;">A</span> - Авто: действует при включенном кешировании в течение заданного времени; 		</li>
+     
+      <li><span style="font-weight: bold;">Y</span> - Кешировать: необходимо определить время кеширования; 		</li>
+     
+      <li><span style="font-weight: bold;">N</span> - Не кешировать: кеширования нет в любом случае. </li>
+     </ul>
+   	</dd><dt><span style="font-weight: bold;">CACHE_TIME</span> 	</dt><dd>Время кеширования, указанное в секундах.</dd></dl> 
+<h5 class="graytitle">Дополнительные настройки</h5>
+ <dl> 	<dt><span style="font-weight: bold;">CHECK_PERMISSIONS</span> 	</dt><dd>При выборе значения <span style="font-weight: bold;">Y</span> будет проверяться право на доступ к курсу. 	</dd><dt><span style="font-weight: bold;">SET_TITLE</span> 	</dt><dd>При отмеченной опции на каждой странице будет установлен заголовок в соответствии с ее содержимым. </dd></dl> 
+<h5 class="graytitle">Настройки списка тестов</h5>
+ <dl> 	<dt style="font-weight: bold;"><span class="syntax">TESTS_PER_PAGE</span> 	</dt><dd>Количество тестов, отображаемых на странице. Остальные будут выведены с помощью постраничной навигации. </dd></dl> 
+<h5 class="graytitle">Настройки теста</h5>
+ <dl> 	<dt style="font-weight: bold;"><span class="syntax">PAGE_WINDOW</span> 	</dt><dd>Количество вопросов, отображаемых в навигационной цепочке. 	</dd><dt style="font-weight: bold;"><span class="syntax">SHOW_TIME_LIMIT</span> 	</dt><dd>При отмеченной опции будет отображаться счетчик времени. 	 
+    <br />
+   
+    <br />
+   <span style="font-weight: bold;">Примечание:</span> если в настройках теста ограничение по времени не установлено, то счетчик не будет отображаться в любом случае. 	</dd><dt style="font-weight: bold;"><span class="syntax">PAGE_NUMBER_VARIABLE</span> 	</dt><dd>Имя переменной для идентификатора вопроса теста. </dd></dl><bitrix:sys name="feedbackform"></bitrix:sys> <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

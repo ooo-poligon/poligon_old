@@ -1,0 +1,174 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../index.html?page=source%2Fcontent%2Fiblock%2Fimport%2Fimport_csv.php.html"; </script>
+
+<title>Импорт в формате CSV</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "content/iblock/import/import_csv.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Импорт в формате CSV])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Импорт в формате CSV</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<h4 id="topictoctitle">В этом разделе</h4>
+ <menu id="topictoc"> 	 
+  <li><a href="#s_1">Шаг 1. Файл данных</a> 	</li>
+ 
+  <li><a href="#s_2">Шаг 2. Формат</a> 	</li>
+ 
+  <li><a href="#s_3">Шаг 3. Поля</a> 	</li>
+ 
+  <li><a href="#s_4">Шаг 4. Результат</a></li>
+ </menu> 
+<p>Форма импорта (<span style="font-style: italic;">Контент &gt; Информационные блоки &gt; Импорт &gt; CSV</span>) предназначен для импорта данных в формате <span style="font-weight: bold;">CSV</span> в информационный блок. </p>
+ 
+<h4><a name="s_1"></a>Шаг 1. Файл данных</h4>
+ 
+<p>Форма предназначена для выбора загружаемого файла и информационного блока, в который будет выполняться загрузка данных. </p>
+ 
+<table class="tnormal"> 	 
+  <tbody> 
+    <tr> 		<th width="18%">Поле</th> 		<th width="82%">Описание</th></tr>
+   	 
+    <tr> 		<td><nobr>Файл данных </nobr></td> 		<td>С помощью кнопки <span style="font-weight: bold;">&quot;Обзор&quot;</span> выберите файл с загружаемыми данными.</td></tr>
+   	 
+    <tr> 		<td>Информационный блок </td> 		<td>Выберите сначала тип информационного блока, а затем и сам блок, в который будет выполняться загрузка данных. </td></tr>
+   </tbody>
+ </table>
+ 
+<h4><a name="s_2"></a>Шаг 2. Формат </h4>
+ 
+<table class="tnormal"> 	 
+  <tbody> 
+    <tr> 		<th width="18%">Поле</th> 		<th width="82%">Описание</th></tr>
+   	 
+    <tr> 		<td>Формат <span style="font-weight: bold;">CSV</span> файла</td> 		<td>Выберите подходящий формат <span style="font-weight: bold;">CSV </span>файла с данными: 			 
+        <ul> 				 
+          <li><b>с разделителями </b>- поля разделяются специальным символом (например, запятой или пробелом); 				</li>
+         
+          <li><b>фиксированная ширина полей</b>. </li>
+         </ul>
+       В зависимости от вашего выбора необходимо заполнить соответствующую форму настроек. </td></tr>
+   	 
+    <tr> 		<th colspan="2">С разделителями </th></tr>
+   	 
+    <tr> 		<td>Разделитель полей </td> 		<td>Укажите символы, используемые для разделения полей данных. </td></tr>
+   	 
+    <tr> 		<td>Первая строка содержит имена полей </td> 		<td>Установите флаг в это поле, если первая строка файла содержит имена полей данных, . </td></tr>
+   	 
+    <tr> 		<th colspan="2">Фиксированная ширина полей </th></tr>
+   	 
+    <tr> 		<td>Метки разделителя</td> 		<td>Укажите в столбик номера колонок, разделяющие поля. </td></tr>
+   	 
+    <tr> 		<td>Первая строка содержит имена полей </td> 		<td>Если первая строка файла содержит имена полей данных, установите флаг в это поле. </td></tr>
+   	 
+    <tr> 		<th colspan="2">Образцы данных </th></tr>
+   	 
+    <tr> 		<td colspan="2">В поле представлен образец загружаемых данных. 	</td></tr>
+   </tbody>
+ </table>
+ 
+<p>Для возврата к предыдущему шагу воспользуйтесь кнопкой <span style="font-weight: bold;">Назад</span>. Для продолжения процедуры загрузки данных нажмите кнопку <span style="font-weight: bold;">Далее</span>.</p>
+ 
+<h4><a name="s_3"></a>Шаг 3. Поля </h4>
+ 
+<p>Форма служит для задания соответствия между полями инфоблока и загружаемого файла. </p>
+ 
+<table class="tnormal"> 	 
+  <tbody> 
+    <tr> 		<th width="18%">Поле</th> 		<th width="82%">Описание</th></tr>
+   	 
+    <tr> 		<th colspan="2">Задайте соответствие полей в файле полям в базе</th></tr>
+   	 
+    <tr> 		<td colspan="2">Установите соответствие между полями загружаемого файла и полями информационного блока, в который выполняется загрузка данных. 
+        <table class="wordtable"> 				 
+          <tbody> 
+            <tr> 					<th width="17%">Поле</th> 					<th width="83%">Описание</th></tr>
+           				 
+            <tr> 					<td>Поля в файле</td> 					<td>Список полей загружаемого файла. </td></tr>
+           				 
+            <tr> 					<td>Поля в базе </td> 					<td>Список полей инфоблока, в который выполняется загрузка. 						 
+                <p class="note"><b>Важно!</b> Обязательно должно быть выбрано хотя бы одно из полей <b>Уникальный идентификатор (B_IBLOCK_ELEMENT.XML_ID)</b> или <b>Название (B_IBLOCK_ELEMENT.NAME)</b>. Эти поля используются для сопоставления записей в файле записям в базе данных. </p>
+               </td></tr>
+           			</tbody>
+         </table>
+       			 
+        <p class="note"><b>Внимание!</b> Убедитесь, что соответствия полей заданы корректно. В противном случае результат загрузки непредсказуем.</p>
+       </td></tr>
+   	 
+    <tr> 		<th colspan="2">Дополнительные настройки </th></tr>
+   	 
+    <tr> 		<td>Путь к картинкам </td> 		<td>Для загрузки элементов с иллюстрациями необходимо предварительно выгрузить картинки в какую-либо папку на сайте с помощью любого FTP-клиента. Путь к папке с изображениями, нужно указать в этом поле. </td></tr>
+   	 
+    <tr> 		<td>Товары, которых не было в файле</td> 		<td>Определяется действие выполняемое над элементами инфоблока, которые уже есть в базе, но отсутствуют в загружаемом файле: 			 
+        <ul> 				 
+          <li><b>Деактивировать</b> - элементы инфоблока станут неактивными; 				</li>
+         
+          <li><b>Удалить</b> - элементы будут удалены; 				</li>
+         
+          <li><b>Не трогать</b> - элементы будут сохранены без изменений. 		</li>
+         </ul>
+       </td></tr>
+   	 
+    <tr> 		<td>Неактивные товары / группы, которые есть в файле</td> 		<td>Выберите действие, которое будет выполнено над неактивными элементами/группами информационного блока: 			 
+        <ul> 				 
+          <li><b>Оставить как есть</b> - элементы/группы не будут изменены; 				</li>
+         
+          <li><b>Активировать</b> - элементы/группы станут активными (т.е. доступными для показа в публичном разделе). </li>
+         </ul>
+       </td></tr>
+   	 
+    <tr> 		<td>Время выполнения шага</td> 		<td>Длительность одного шага загрузки данных из <span style="font-weight: bold;">CSV</span> файла в секундах. При значении <b>&quot;0&quot;</b> загрузка данных выполняется за один шаг.</td></tr>
+   	 
+    <tr> 		<th colspan="2">Образцы данных </th></tr>
+   	 
+    <tr> 		<td colspan="2">В поле представлен образец загружаемых данных. 	</td></tr>
+   </tbody>
+ </table>
+ 
+<p>Для возврата к предыдущему шагу воспользуйтесь кнопкой <span style="font-weight: bold;">Назад</span>. Для выполнения загрузки данных нажмите кнопку <span style="font-weight: bold;">Загрузить данные</span>. </p>
+ 
+<h4><a name="s_4"></a>Шаг 4. Результат </h4>
+ 
+<p>Выводится информация о результатах загрузки данных. Для того чтобы повторить загрузку данных или импортировать данные из другого <span style="font-weight: bold;">CSV</span> файла, нажмите кнопку <span style="font-weight: bold;">Вернуться на первый шаг</span>.</p>
+ <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

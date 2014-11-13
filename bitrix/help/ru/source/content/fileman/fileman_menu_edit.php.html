@@ -1,0 +1,252 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fcontent%2Ffileman%2Ffileman_menu_edit.php.html"; </script>
+
+<title>Редактирование меню</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "content/fileman/fileman_menu_edit.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Редактирование меню])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Редактирование меню</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+<h4 id="topictoctitle">В этом разделе</h4>
+ <menu id="topictoc"> 
+  <li><a href="#menu">Контекстная панель</a> </li>
+ 
+  <li><a href="#edit-simp">Упрощённый режим</a> </li>
+ 
+  <li><a href="#edit-full">Расширенный режим</a> </li>
+ 
+  <li><a href="#buttons">Кнопки управления</a> </li>
+ 
+  <li><a href="#menu1">Мастер редактирования меню </a></li>
+ </menu> 
+<p>Редактирование меню возможно двумя способами: через форму в <b>Административном разделе</b> и через кнопки <img src="../../images/iblock/420/menu.png" width="69" height="24">&nbsp;в разделах <b>Просмотр</b>, <b>Редактирование</b>. А так же через <b>Меню команд компонента Меню</b>, которое имеет разный вид<b>. </b>Такой: <img src="../../images/iblock/e21/menu_edit.png" width="46" height="23"> - в разделах <b>Просмотр </b>и<b> Редактирование,</b> и такой: <img src="../../images/iblock/534/menu_comp.png" width="48" height="25"> - в разделе <b>Разработка.</b> 
+  <br />
+ </p>
+ 
+<p>При использовании <b>Административного раздела</b> открывается <b>Форма редактирования меню</b>. при использовании кнопок в разделах <b>Просмотр</b>, <b>Редактирование</b>, <b>Разработка</b> надо выбирать команду <b>Редактировать пункты меню</b>. По этой команде откроется диалог <b>Редактирование меню</b>. 
+  <br />
+ </p>
+ 
+<h4>Форма редактирования меню 
+  <br />
+ </h4>
+ 
+<p>Форма редактирования меню предназначена для создания нового и редактирования пунктов уже существующего меню. </p>
+ 
+<h4><a name="menu"></a>Контекстная панель</h4>
+ 
+<table style="border-collapse: collapse;" class="tnormal"> 
+  <tbody> 
+    <tr><th width="18%">Пункт</th><th width="82%">Описание</th></tr>
+   
+    <tr><td>Каталог</td><td>Переход в папку, открытую в данный момент в менеджере файлов. </td></tr>
+   
+    <tr><td>Расширенный/ Упрощённый режим</td><td>Переключение между режимами редактирования. </td></tr>
+   
+    <tr><td>Редактировать как файл </td><td>Переключение в режим редактирования кода меню. Кнопка отображается при редактировании существующего меню. </td></tr>
+   
+    <tr><td>Удалить меню </td><td>Удаление редактируемого меню. </td></tr>
+   </tbody>
+ </table>
+ 
+<h4><a name="edit-simp"></a>Редактирование меню - упрощённый режим</h4>
+ 
+<p>Данная форма служит интерфейсом для создания пунктов меню в упрощённом режиме. Для добавления новых пунктов следует заполнить поля таблицы и сохранить внесённые изменения.</p>
+ 
+<table style="border-collapse: collapse;" class="tnormal"> 
+  <tbody> 
+    <tr><th>Поле</th><th>Описание</th></tr>
+   
+    <tr><td width="18%">Тип меню </td><td width="83%"><a href="fileman_menu.php.html#type">Тип</a> создаваемого меню.</td></tr>
+   
+    <tr><th colspan="2">Пункты меню </th></tr>
+   
+    <tr><td>Название</td><td>Название пункта меню. Это название будет показано в меню в публичной части.</td></tr>
+   
+    <tr><td>Ссылка</td><td>Ссылка на страницу или раздел сайта.</td></tr>
+   
+    <tr><td>Сортировка</td><td>Порядок, в котором будут расположены пункты меню. Меньшее число соответствует более высокому пложению.&nbsp;</td></tr>
+   
+    <tr><td>Удалить</td><td>Удаление пункта меню. Для того чтобы удалить пункт меню, установите флаг в это поле и нажмите кнопку <span style="font-weight: bold;">Сохранить</span> или <span style="font-weight: bold;">Применить</span>. </td></tr>
+   </tbody>
+ </table>
+ 
+<h4><a name="edit-full"></a>Редактирование меню - расширенный режим</h4>
+ 
+<p><b>Расширенный режим</b> позволяет изменять значения дополнительных параметров пунктов меню.</p>
+ 
+<table style="border-collapse: collapse;" class="tnormal"> 
+  <tbody> 
+    <tr><th>Поле</th><th>Описание</th></tr>
+   
+    <tr><td width="18%">Тип меню </td><td width="83%"><a href="fileman_menu.php.html#type">Тип</a> создаваемого меню.</td></tr>
+   
+    <tr><td>Шаблон меню </td><td>Если для отображения меню будет использоваться отдельный шаблон, то в данном поле можно указать путь к этому шаблону. </td></tr>
+   
+    <tr><th colspan="2">Пункты меню 
+        <br />
+       </th></tr>
+   
+    <tr><td>Название</td><td>Название пункта меню. Именно это название будет показано в меню в публичной части.</td></tr>
+   
+    <tr><td>Ссылка</td><td>Ссылка на страницу или раздел сайта. </td></tr>
+   
+    <tr><td>Сортировка</td><td>Порядок, в котором будут расположены пункты меню. Чем меньшее число вы укажете, тем выше будет расположен данный пункт.&nbsp;</td></tr>
+   
+    <tr><td>Удалить</td><td>Удаление пункта меню. Для того чтобы удалить пункт меню, установите флаг в это поле и нажмите кнопку <span style="font-weight: bold;">Сохранить</span> или <span style="font-weight: bold;">Применить</span>. </td></tr>
+   
+    <tr><td>Дополнительные ссылки для подсветки</td><td>Указываются страницы сайта, при переходе на которые также будет подсвечиваться (выделяться) создаваемый пункт меню. 
+        <br />
+       
+        <br />
+       Например, пункт меню Siemens ссылается на страницу со списком телефонов соответствующей марки (<code style="font-style: italic;">/catalog/phone/section.php</code>). Если вы хотите, чтобы при просмотре детальной информации о каждой модели телефона также выделялся пункт меню Siemens, то в этом поле нужно указать путь к странице с детальной информацией о модели телефона (например, <code style="font-style: italic;">/catalog/phone/element.php</code>). 
+        <br />
+       
+        <br />
+       Путь к страницам задается относительно корня сайта. Если все страницы, при переходе на которые должен быть подсвечен пункт меню, хранятся в одной папке сайта, то в поле <span style="font-weight: bold;">Дополнительные ссылки для подсветки</span> можно указать путь к данной папке относительно корня сайта. Например, <code style="font-style: italic;">/catalog/phone/</code>. </td></tr>
+   
+    <tr><td>Тип условия </td><td>Тип условия, при выполнении которого пункт меню будет показываться посетителям: 
+        <ul> 
+          <li><b>Для папки или файла</b>: страница или подраздел текущего раздела сайта, в котором будет показываться данный пункт меню; </li>
+         
+          <li><b>Для групп пользователей</b>: группы пользователей, для которых будет показываться данный пункт; </li>
+         
+          <li><b>Период времени</b>: период времени, в течение которого пункт меню будет показываться посетителям; </li>
+         
+          <li><b>Параметр в URL</b>: параметр в URL страницы, при наличии которого пункт меню будет показан посетителям; </li>
+         
+          <li><b>Выражение PHP</b>: произвольное условие на языке PHP. Условие должно быть указано так, как оно выглядит внутри оператора <i><span style="font-style: italic;">if()</span></i>. При формировании страницы с помощью оператора <code style="font-style: italic;">if()</code> осуществляется проверка условия на выполнение. Если условие выполняется (т.е. выражение принимает значение <code style="font-style: italic;">true</code>), то пункт меню будет показан пользователю. 
+            <br />
+           Например, с помощью условия <code style="font-style: italic;">$USER-&gt;IsAuthorized()</code> можно проверять, является ли текущий пользователь авторизованным на сайте. </li>
+         </ul>
+       </td></tr>
+   
+    <tr><td>Условие&nbsp;</td><td>Условие, при выполнении которого будет отображаться создаваемый пункт меню.</td></tr>
+   
+    <tr><td><a name="param"></a>Параметры&nbsp;</td><td>Указываются любые параметры, используемые при построении шаблоном пункта меню. Параметры хранятся в ассоциированном массиве <code style="font-style: italic;">$PARAMS</code> в виде пар <i style="font-style: italic;">&quot;имя</i><span style="font-style: italic;"> =&gt; </span><i style="font-style: italic;">значение</i><span style="font-style: italic;">&quot;</span>. При построении меню по шаблону, в самом шаблоне может быть добавлена проверка параметра, например: 
+        <pre id="xmpC78E00CF" class="syntax">if ($PARAMS[&quot;MY_PARAM&quot;]==&quot;Y&quot;)</pre>
+       или подставлено его значение: 
+        <pre id="xmp903618D5" class="syntax">&lt;a href='&quot;.$link.&quot;'<br /> class='&quot;.$clrtext.&quot;'<br /> title='&quot;.$PARAMS[&quot;ALT&quot;].&quot;'&gt;&quot;.$TEXT.&quot;&quot;. $clrimg .&quot;&lt;/a&gt;</pre>
+       
+        <p class="note">В поставляемом дистрибутиве продукта для меню используется параметр <span style="font-weight: bold;">Дополнительное выделение пунктов меню</span>, позволяющий выделить первый пункт меню с помощью разделителя. Для этого в поле <span style="font-weight: bold;">Название</span> параметра необходимо указать <code style="font-style: italic;">SEPARATOR</code>, а в поле <span style="font-weight: bold;">Значение</span> ввести <code style="font-weight: bold;">Y</code>.</p>
+       </td></tr>
+   </tbody>
+ </table>
+ 
+<p>Кнопка <b>Вставить пункт</b> добавляет в форму еще один пункт меню. 
+  <br />
+ </p>
+ 
+<h4><a name="buttons"></a>Кнопки управления</h4>
+ 
+<table style="border-collapse: collapse;" class="tnormal"> 
+  <tbody> 
+    <tr><th width="18%">Кнопка</th><th width="82%">Описание</th></tr>
+   
+    <tr><td>Сохранить</td><td>Сохранение внесённых изменений.</td></tr>
+   
+    <tr><td>Применить</td><td>Применение внесённых изменений. Продолжение редактирования пунктов меню.</td></tr>
+   
+    <tr><td>Отменить</td><td>Отмена внесённых изменений. </td></tr>
+   </tbody>
+ </table>
+ 
+<br />
+ 
+<h4><a name="menu1"></a>Мастер редактирования меню </h4>
+ Диалог предназначен для редактирования пунктов меню. Из окна диалога можно перейти в форму редактирования меню, если воспользоваться ссылкой <b>Редактировать меню в Панели управления</b>. 
+<br />
+ 
+<br />
+ 
+<table border="0" style="border-collapse: collapse;" class="tnormal"> 
+  <tbody> 
+    <tr><th width="18%">Колонка 
+        <br />
+       </th><th width="82%">Описание 
+        <br />
+       </th></tr>
+   
+    <tr><td>Якорь <img src="../../images/iblock/3de/anchor.png" width="17" height="18"></td><td>Инструмент для изменения положения пункта меню в общем порядке меню способом <b>Drag&amp;Drop</b>.</td></tr>
+   
+    <tr><td>Название 
+        <br />
+       </td><td>Имя пункта меню 
+        <br />
+       </td></tr>
+   
+    <tr><td>Ссылка</td><td>Раздел, к которому привязан пункт меню</td></tr>
+   
+    <tr><td>Папки <img src="../../images/iblock/3f6/folders.png" width="17" height="18"></td><td>Открытие диалога для выбора файла (папки) 
+        <br />
+       </td></tr>
+   
+    <tr><td>Стрелки <img src="../../images/iblock/08b/arrow_move.png" width="40" height="18"></td><td>Инструмент для пошагового изменения положения пунта меню в общем порядке меню.</td></tr>
+   
+    <tr><td>Удалить <img src="../../images/iblock/3f8/del.png" width="19" height="18"></td><td>Удаление пункта меню</td></tr>
+   </tbody>
+ </table>
+ 
+<br />
+ 
+<table border="0" style="border-collapse: collapse;" class="tnormal"> 
+  <tbody> 
+    <tr><th width="18%">Кнопки 
+        <br />
+       </th><th width="82%">Команда 
+        <br />
+       </th></tr>
+   
+    <tr><td>Сохранить</td><td>Сохранение внесенных изменений.</td></tr>
+   
+    <tr><td>Отменить 
+        <br />
+       </td><td>Отказ от внесенных изменений. 
+        <br />
+       </td></tr>
+   </tbody>
+ </table>
+ <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

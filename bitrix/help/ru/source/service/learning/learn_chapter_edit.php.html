@@ -1,0 +1,156 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fservice%2Flearning%2Flearn_chapter_edit.php.html"; </script>
+
+<title>Создание и редактирование главы</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/learning/learn_chapter_edit.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Создание и редактирование главы])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Создание и редактирование главы</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<h4 id="topictoctitle">В этом разделе</h4>
+ <menu id="topictoc"> 	 
+  <li><a href="#panel">Контекстная панель</a></li>
+ 	 
+  <li><a href="#fields">Поля формы</a></li>
+ 		<menu> 	 
+    <li><a href="#chapter">Вкладка &quot;Глава&quot;</a></li>
+   		 
+    <li><a href="#announ">Вкладка &quot;Анонс&quot;</a></li>
+   		 
+    <li><a href="#descr">Вкладка &quot;Содержание&quot;</a></li>
+   		</menu> 
+  <li><a href="#buttons">Кнопки управления</a></li>
+ </menu> 
+<p>Для создания и редактирования глав учебного курса применяется форма одного и того же вида. В зависимости от того, создаете вы новую главу или редактируете существующую, некоторые поля могут присутствовать или отсутствовать на форме.</p>
+ 
+<h4><a name="panel"></a>Контекстная панель</h4>
+ 
+<table width="100%" class="tnormal" style="border-collapse: collapse;"> 	 
+  <tbody> 
+    <tr> 		<th width="17%">Кнопка</th> 		<th width="83%">Описание</th></tr>
+   	 
+    <tr> 		<td>Список</td> 		<td>Ссылка для перехода на страницу <a href="learn_chapter_admin.php.html">со списком глав</a> учебного курса.</td></tr>
+   	 
+    <tr> 		<td>Создать</td> 		<td>Ссылка для перехода на страницу создания новой главы. <b>Отображается только на странице редактирования уже существующей главы.</b></td></tr>
+   	 
+    <tr> 		<td>Удалить</td> 		<td>Удаление главы, просматриваемой на данной странице. <b>Команда доступна только на странице редактирования уже существующей главы.</b></td></tr>
+   </tbody>
+ </table>
+ 
+<h2><a name="fields"></a>Поля формы </h2>
+ 
+<h4><a name="chapter"></a>Вкладка &quot;Глава&quot; </h4>
+ 
+<table class="tnormal" style="border-collapse: collapse;"> 	 
+  <tbody> 
+    <tr> 		<th width="152">Поле</th> 		<th width="517">Описание</th></tr>
+   	 
+    <tr> 		<td width="152">ID</td> 		<td>Идентификатор главы. 
+        <br />
+       
+        <br />
+       <b>Данное поле отображается только в режиме редактирования существующей главы.</b></td></tr>
+   	 
+    <tr> 		<td width="152">Изменена</td> 		<td>Дата и время создания или изменения главы. 
+        <br />
+       
+        <br />
+       <b>Данное поле отображается только в режиме редактирования существующей главы.</b></td></tr>
+   	 
+    <tr><td colspan="1">Запись активна</td><td colspan="1">Установка статуса активности</td></tr>
+  
+    <tr> 		<td>Родительский раздел </td> 		<td>Указывается уровень, в котором находится глава. </td></tr>
+   	 
+    <tr> 		<td width="152">*Название</td> 		<td>Название главы. </td></tr>
+   	 
+    <tr> 		<td width="152">Индекс сортировки </td> 		<td>Вес сортировки главы; применяется при выводе главы в списке.</td></tr>
+   	 
+    <tr> 		<td width="152">Символическое имя </td> 		<td>Мнемоническое имя главы. </td></tr>
+   </tbody>
+ </table>
+ * - Поля, обязательные для заполнения. 
+<h4><a name="announ"></a>Вкладка &quot;Анонс&quot; </h4>
+ 
+<table class="tnormal" style="border-collapse: collapse;"> 	 
+  <tbody> 
+    <tr> 		<th width="149">Поле</th> 		<th width="520">Описание</th></tr>
+   	 
+    <tr> 		<td width="149">Text / HTML</td> 		<td>Выбор формата создания краткого описания главы.</td></tr>
+   	 
+    <tr> 		<td width="149">Использовать визуальный редактор</td> 		<td>При условии использования формата <span style="font-weight: bold;">HTML</span>, для создания анонса главы будет использоваться визуальный редактор.</td></tr>
+   	 
+    <tr> 		<td width="149">Изображение</td> 		<td>Поле позволяет в краткое описание главы добавить изображение с помощью кнопки <b>Обзор...</b></td></tr>
+   </tbody>
+ </table>
+ 
+<h4><a name="descr"></a>Вкладка &quot;Содержание&quot; </h4>
+ 
+<table class="tnormal" style="border-collapse: collapse;"> 	 
+  <tbody> 
+    <tr> 		<th width="146">Поле</th> 		<th width="523">Описание</th></tr>
+   	 
+    <tr> 		<td width="146">Text / HTML</td> 		<td>Выбор формата создания детального описания главы.</td></tr>
+   	 
+    <tr> 		<td width="146">Использовать визуальный редактор</td> 		<td>При условии использования формата <span style="font-weight: bold;">HTML</span>, для создания детального описания главы будет использоваться визуальный редактор.</td></tr>
+   	 
+    <tr> 		<td width="146">Изображение</td> 		<td>Поле позволяет в детальное описание главы добавить изображение с помощью кнопки <b>Обзор...</b></td></tr>
+   </tbody>
+ </table>
+ 
+<h4><a name="buttons"></a>Кнопки управления</h4>
+ 
+<table class="tnormal" style="border-collapse: collapse;"> 	 
+  <tbody> 
+    <tr> 		<th width="97" align="left">Кнопка</th> 		<th width="572">Описание</th></tr>
+   	 
+    <tr> 		<td width="97" align="left">Сохранить</td> 		<td>Сохранение внесённых изменений. Возврат к <a href="learn_chapter_admin.php.html">списку глав</a> курса.</td></tr>
+   	 
+    <tr> 		<td width="97" align="left">Применить</td> 		<td>Сохранение внесённых изменений. Продолжение редактирования параметров главы.</td></tr>
+   	 
+    <tr> 		<td width="97" align="left">Отменить</td> 		<td>Отмена внесённых изменений. Возврат к <a href="learn_chapter_admin.php.html">списку глав</a> курса. </td></tr>
+   </tbody>
+ </table>
+ <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

@@ -1,0 +1,106 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../../index.html?page=source%2Fcontent%2Fiblock%2Fcomponents%2Fcatalog%2Fcat.list.of.linked.elements.php.html"; </script>
+
+<title>Список связанных элементов</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../../docstyle.css);</style>
+
+<script src="../../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "content/iblock/components/catalog/cat.list.of.linked.elements.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Каталог::Список связанных элементов])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Каталог::Список связанных элементов</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+<p>Компонент предназначен для вывода списка связанных элементов.</p>
+
+<h4>Пример вызова</h4>
+
+<pre class="syntax" id="xmpCEDC294A">&lt;?<br />$APPLICATION-&gt;IncludeFile(&quot;iblock/catalog/link_element_list.php&quot;, Array(<br />&quot;ELEMENT_ID&quot;		=&gt; $_REQUEST[&quot;ID&quot;],<br />&quot;LINK_IBLOCK_TYPE&quot;		=&gt; &quot;catalog&quot;,<br />&quot;LINK_IBLOCK_ID&quot;           =&gt; &quot;22&quot;,<br />&quot;LINK_PROPERTY_SID&quot;        =&gt; &quot;THEMES&quot;,<br />&quot;PAGE_LINK_ELEMENT_COUNT&quot;	=&gt; &quot;50&quot;,<br />&quot;LINK_ELEMENT_SORT_FIELD&quot;	=&gt; &quot;sort&quot;,<br />&quot;LINK_ELEMENT_SORT_ORDER&quot;	=&gt; &quot;desc&quot;,<br />&quot;arrPROPERTY_LINK_CODE&quot;	=&gt; array(),<br />&quot;LINK_PRICE_CODE&quot;		=&gt; &quot;RETAIL&quot;,<br />&quot;CATALOG_URL&quot;              =&gt; &quot;/catalog/&quot;,<br />&quot;SECTION_URL&quot;              =&gt; &quot;/catalog/accessory/section.php?&quot;,<br />&quot;BASKET_URL&quot;               =&gt; &quot;/personal/basket.php&quot;<br />&quot;CACHE_TIME&quot;               =&gt; &quot;3600&quot;,<br />&quot;DISPLAY_PANEL&quot;            =&gt; &quot;Y&quot;,<br />));<br />?&gt;</pre>
+
+<h4>Описание параметров</h4>
+<dl><dt style="FONT-WEIGHT: bold">ELEMENT_ID </dt><dd>ID родительского элемента для связанных элементов. </dd>
+<br/>
+<dt style="FONT-WEIGHT: bold">LINK_IBLOCK_TYPE </dt><dd>Тип инфоблока связанных элементов. </dd>
+<br/>
+<dt style="FONT-WEIGHT: bold">LINK_IBLOCK_ID </dt><dd>ID инфоблока связанных элементов. </dd>
+<br/>
+<dt style="FONT-WEIGHT: bold">LINK_PROPERTY_SID </dt><dd>Символьный код свойства родительского элемента, в котором хранится связь. </dd>
+<br/>
+<dt style="FONT-WEIGHT: bold">PAGE_LINK_ELEMENT_COUNT </dt><dd>Количество связанных элементов на одной странице (для постраничного вывода). </dd>
+<br/>
+<dt style="FONT-WEIGHT: bold">LINK_ELEMENT_SORT_FIELD </dt><dd>Сортировка может быть выполнена по: 
+    <ul>
+      <li><span style="FONT-WEIGHT: bold">shows</span> &ndash; среднее количество просмотров элемента (популярность элемента); </li>
+    
+      <li><span style="FONT-WEIGHT: bold">sort</span> &ndash; по индексу сортировки; </li>
+    
+      <li><span style="FONT-WEIGHT: bold">timestamp_x</span> – по дате изменения; </li>
+    
+      <li><span style="FONT-WEIGHT: bold">name</span> – по заголовку; </li>
+    
+      <li><span style="FONT-WEIGHT: bold">id</span> – по ID элемента; </li>
+    
+      <li><span style="FONT-WEIGHT: bold">active_from</span> – по дате активности &ldquo;с&rdquo;; </li>
+    
+      <li><span style="FONT-WEIGHT: bold">active_to</span> – по дате активности &ldquo;по&rdquo;. </li>
+    </ul>
+  </dd>
+<br/>
+<dt style="FONT-WEIGHT: bold">LINK_ELEMENT_SORT_ORDER </dt><dd>Сортировка может быть выполнена по: 
+    <ul>
+      <li><span style="FONT-WEIGHT: bold">asc</span> – по возрастанию; </li>
+    
+      <li><span style="FONT-WEIGHT: bold">desc</span> – по убыванию. </li>
+    </ul>
+  </dd>
+<br/>
+<dt style="FONT-WEIGHT: bold">arrPROPERTY_LINK_CODE </dt><dd>Массив выбираемых символьных кодов свойств для связанных элементов. </dd>
+<br/>
+<dt style="FONT-WEIGHT: bold">LINK_PRICE_CODE </dt><dd>Символьный код типа цены для связанных элементов. </dd>
+<br/>
+<dt style="FONT-WEIGHT: bold">CATALOG_URL </dt><dd>Начальная страница каталога. </dd><dt style="FONT-WEIGHT: bold">SECTION_URL </dt><dd>Страница с разделами каталога связанных элементов. </dd>
+<br/>
+<dt style="FONT-WEIGHT: bold">BASKET_URL </dt><dd>URL, ведущий на страницу с корзиной покупателя. </dd>
+<br/>
+<dt style="FONT-WEIGHT: bold">CACHE_TIME </dt><dd>(сек.) время кеширования значений выбираемых из базы. </dd>
+<br/>
+<dt style="FONT-WEIGHT: bold">DISPLAY_PANEL </dt><dd>Добавлять в <b>Административную панель</b> кнопки для данного компонента. </dd></dl><bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

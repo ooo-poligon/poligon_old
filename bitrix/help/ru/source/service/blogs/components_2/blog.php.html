@@ -1,0 +1,116 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../index.html?page=source%2Fservice%2Fblogs%2Fcomponents_2%2Fblog.php.html"; </script>
+
+<title>Блоги (комплексный компонент)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/blogs/components_2/blog.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Компоненты 2.0::Блоги (комплексный компонент)])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Компоненты 2.0::Блоги (комплексный компонент)</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+<p>Комплексный компонент создаёт полноценный публичный интерфейс блогов. Компонент стандартный и входит в дистрибутив модуля.</p>
+ 
+<h4>Пример вызова</h4>
+
+<pre id="xmpB5727E3D" class="syntax">&lt;?$APPLICATION-&gt;IncludeComponent(&quot;bitrix:blog&quot;,&quot;&quot;,Array(<br />     &quot;USER_PROPERTY_NAME&quot; =&gt; &quot;&quot;,<br />     &quot;SEF_MODE&quot; =&gt; &quot;Y&quot;,<br />     &quot;PATH_TO_SMILE&quot; =&gt; &quot;/bitrix/images/blog/smile/&quot;,<br />     &quot;CACHE_TYPE&quot; =&gt; &quot;A&quot;,<br />     &quot;CACHE_TIME&quot; =&gt; &quot;3600&quot;,<br />     &quot;SET_TITLE&quot; =&gt; &quot;Y&quot;,<br />     &quot;CACHE_TIME_LONG&quot; =&gt; &quot;604800&quot;,<br />     &quot;SET_NAV_CHAIN&quot; =&gt; &quot;Y&quot;,<br />     &quot;MESSAGE_COUNT&quot; =&gt; &quot;25&quot;,<br />     &quot;MESSAGE_COUNT_MAIN&quot; =&gt; &quot;6&quot;,<br />     &quot;BLOG_COUNT_MAIN&quot; =&gt; &quot;6&quot;,<br />     &quot;COMMENTS_COUNT&quot; =&gt; &quot;25&quot;,<br />     &quot;MESSAGE_LENGTH&quot; =&gt; &quot;100&quot;,<br />     &quot;BLOG_COUNT&quot; =&gt; &quot;20&quot;,<br />     &quot;USER_PROPERTY&quot; =&gt; Array(),<br />     &quot;BLOG_PROPERTY&quot; =&gt; Array(),<br />     &quot;BLOG_PROPERTY_LIST&quot; =&gt; Array(),<br />     &quot;POST_PROPERTY&quot; =&gt; Array(),<br />     &quot;POST_PROPERTY_LIST&quot; =&gt; Array(),<br />     &quot;SEF_FOLDER&quot; =&gt; &quot;/blog/&quot;,<br />     &quot;SEF_URL_TEMPLATES&quot; =&gt; Array(<br />         &quot;index&quot; =&gt; &quot;index.php&quot;,<br />         &quot;group&quot; =&gt; &quot;group/#group_id#.php&quot;,<br />         &quot;blog&quot; =&gt; &quot;#blog#/&quot;,<br />         &quot;user&quot; =&gt; &quot;user/#user_id#.php&quot;,<br />         &quot;user_friends&quot; =&gt; &quot;friends/#user_id#.php&quot;,<br />         &quot;search&quot; =&gt; &quot;search.php&quot;,<br />         &quot;user_settings&quot; =&gt; &quot;#blog#/user_settings.php&quot;,<br />         &quot;user_settings_edit&quot; =&gt; &quot;#blog#/user_settings_edit.php?id=#user_id#&quot;,<br />         &quot;group_edit&quot; =&gt; &quot;#blog#/group_edit.php&quot;,<br />         &quot;blog_edit&quot; =&gt; &quot;#blog#/blog_edit.php&quot;,<br />         &quot;category_edit&quot; =&gt; &quot;#blog#/category_edit.php&quot;,<br />         &quot;post_edit&quot; =&gt; &quot;#blog#/post_edit.php?id=#post_id#&quot;,<br />         &quot;draft&quot; =&gt; &quot;#blog#/draft.php&quot;,<br />         &quot;trackback&quot; =&gt; POST_FORM_ACTION_URI.'&amp;blog=#blog#&amp;id=#post_id#&amp;page=trackback',<br />         &quot;post&quot; =&gt; &quot;#blog#/#post_id#.php&quot;,<br />         &quot;rss&quot; =&gt; &quot;#blog#/rss/#type#&quot;,<br />         &quot;rss_all&quot; =&gt; &quot;rss/#type#/#group_id#&quot;<br />         ),<br />     &quot;VARIABLE_ALIASES&quot; =&gt; Array(<br />         &quot;index&quot; =&gt; Array(),<br />         &quot;group&quot; =&gt; Array(),<br />         &quot;blog&quot; =&gt; Array(),<br />         &quot;user&quot; =&gt; Array(),<br />         &quot;user_friends&quot; =&gt; Array(),<br />         &quot;search&quot; =&gt; Array(),<br />         &quot;user_settings&quot; =&gt; Array(),<br />         &quot;user_settings_edit&quot; =&gt; Array(<br />               &quot;user_id&quot; =&gt; &quot;id&quot;<br />               ),<br />         &quot;group_edit&quot; =&gt; Array(),<br />         &quot;blog_edit&quot; =&gt; Array(),<br />         &quot;category_edit&quot; =&gt; Array(),<br />         &quot;post_edit&quot; =&gt; Array(<br />               &quot;post_id&quot; =&gt; &quot;id&quot;<br />               ),<br />         &quot;draft&quot; =&gt; Array(),<br />         &quot;trackback&quot; =&gt; Array(<br />             &quot;blog&quot; =&gt; &quot;blog&quot;,<br />             &quot;post_id&quot; =&gt; &quot;id&quot;<br />             ),<br />         &quot;post&quot; =&gt; Array(),<br />         &quot;rss&quot; =&gt; Array(),<br />         &quot;rss_all&quot; =&gt; Array(),<br />         )<br />     )<br />);?&gt;</pre>
+ 
+<h4>Описание параметров</h4>
+ 
+<h5 class="graytitle">Дополнительно</h5>
+ <dl> 	<dt><span style="font-weight: bold;">USER_PROPERTY_NAME</span> 	</dt><dd>Название закладки с дополнительными свойствами. </dd></dl> 
+<h5 class="graytitle">Внешний вид</h5>
+ <dl> 	<dt><span style="font-weight: bold;">MESSAGE_COUNT</span> 	</dt><dd>Количество сообщений на странице. Остальные сообщения будут выведены с помощью постраничной навигации. 	</dd><dt><span style="font-weight: bold;">MESSAGE_COUNT_MAIN</span> 	</dt><dd>Количество новых сообщений на главной странице блога. 	</dd><dt><span style="font-weight: bold;">BLOG_COUNT_MAIN</span> 	</dt><dd>Количество блогов на главной странице блогов. 	</dd><dt><span style="font-weight: bold;">COMMENTS_COUNT</span> 	</dt><dd>Количество комментариев, выводимых к сообщению на странице. Остальные будут выведены с помощью постраничной навигации. 	</dd><dt><span style="font-weight: bold;">MESSAGE_LENGTH</span> 	</dt><dd>Длина текста выводимых сообщений на главной странице блогов. 	</dd><dt><span style="font-weight: bold;">BLOG_COUNT</span> 	</dt><dd>Количество блогов, выводимых на странице. Остальные будут выведены с помощью постраничной навигации. </dd></dl> 
+<h5 class="graytitle">Управление адресами страниц</h5>
+ <dl> 	<dt><span style="font-weight: bold;">SEF_MODE</span> 	</dt><dd>При установленном флаге включается поддержка <span style="font-weight: bold;">ЧПУ</span> и становятся доступными поля настройки адресов <span style="font-weight: bold;">ЧПУ</span>. 	</dd><dt><span style="font-weight: bold;">SEF_FOLDER</span> 	</dt><dd>Каталог <span style="font-weight: bold;">ЧПУ</span>: путь до папки, с которой работает компонент. Этот путь может как совпадать с физическим путём, так и не совпадать. 	</dd><dt>S<span style="font-weight: bold;">EF_URL_TEMPLATES</span> 	</dt><dd>Указываются адреса следующих страниц: 	
+    <ul> 		
+      <li><span style="font-weight: bold;">index</span> - главная страница блогов; 		</li>
+    
+      <li><span style="font-weight: bold;">group</span> - страница блогов определённой группы; 		</li>
+    
+      <li><span style="font-weight: bold;">blog</span> - страница блога; 		</li>
+    
+      <li><span style="font-weight: bold;">user</span> - страница профиля пользователя; 		</li>
+    
+      <li><span style="font-weight: bold;">user_friends</span> - страница друзей пользователя; 		</li>
+    
+      <li><span style="font-weight: bold;">search</span> - страница поиска по блогам; 		</li>
+    
+      <li><span style="font-weight: bold;">user_settings</span> - страница настроек пользователей; 		</li>
+    
+      <li><span style="font-weight: bold;">user_settings_edit</span> - страница настроек прав доступа пользователей; 		</li>
+    
+      <li><span style="font-weight: bold;">group_edit</span> - страница настроек групп пользователей блога; 		</li>
+    
+      <li><span style="font-weight: bold;">blog_edit</span> - страница редактирования блога; 		</li>
+    
+      <li><span style="font-weight: bold;">category_edit</span> - страница настроек категорий блога; 		</li>
+    
+      <li><span style="font-weight: bold;">post_edit</span> - страница редактирования сообщений блога; 		</li>
+    
+      <li><span style="font-weight: bold;">draft</span> - страница недописанных сообщений блога; 		</li>
+    
+      <li><span style="font-weight: bold;">trackback</span> - указывается код для получения Trackback адреса сообщения; 		</li>
+    
+      <li><span style="font-weight: bold;">post</span> - страница детального просмотра сообщения. 		</li>
+    
+      <li><span style="font-weight: bold;">rss</span> - страница экспорта данных блога. 		</li>
+    
+      <li><span style="font-weight: bold;">rss_all</span> - страница экспорта сообщений всех блогов.</li>
+     </ul>
+   	</dd><dt><span style="font-weight: bold;">VARIABLE_ALIASES</span> 	</dt><dd>Имена переменных для управления страницами блогов.</dd> </dl> 
+<h5 class="graytitle">Настройки кэширования</h5>
+ <dl> 	<dt><span style="font-weight: bold;">CACHE_TYPE</span> 	</dt><dd>Тип кэширования: 	
+    <ul> 		
+      <li><span style="font-weight: bold;">A</span> - Авто: действует при включенном кэшировании в течение заданного времени; 		</li>
+    
+      <li><span style="font-weight: bold;">Y</span> - Кэшировать: для кэширования необходимо определить время кэширования; 		</li>
+    
+      <li><span style="font-weight: bold;">N</span> - Не кэшировать: кэширования нет в любом случае.</li>
+     	</ul>
+   	</dd><dd> 	
+    <br />
+  </dd><dt><span style="font-weight: bold;">CACHE_TIME</span> 	</dt><dd>Время кэширования, указанное в секундах. 	</dd><dt><span style="font-weight: bold;">CACHE_TIME_LONG</span> 	</dt><dd>Время кэширования страниц, начиная со второй.</dd> </dl> 
+<h5 class="graytitle">Дополнительные настройки</h5>
+ <dl> 	<dt><span style="font-weight: bold;">PATH_TO_SMILE</span> 	</dt><dd>Путь к папке со смайликам относительно корня сайта. 	</dd><dt><span style="font-weight: bold;">SET_TITLE</span> 	</dt><dd>Установка заголовка на каждой странице в соответствии с содержанием этого поля. 	</dd><dt><span style="font-weight: bold;">SET_NAV_CHAIN</span> 	</dt><dd>Отображение в цепочке навигации переходов по страницам блогов. 	</dd><dt><span style="font-weight: bold;">USER_PROPERTY</span> 	</dt><dd>Дополнительные свойства в профиле пользователя. 	</dd><dt><span style="font-weight: bold;">BLOG_PROPERTY</span> 	</dt><dd>Дополнительные пользовательские свойства блога. 	</dd><dt><span style="font-weight: bold;">BLOG_PROPERTY_LIST</span> 	</dt><dd>Дополнительные пользовательские свойства блога в информации о блоге. 	</dd><dt><span style="font-weight: bold;">POST_PROPERTY</span> 	</dt><dd>Дополнительные пользовательские свойства сообщения при детальном просмотре сообщения. 	</dd><dt><span style="font-weight: bold;">POST_PROPERTY_LIST</span> 	</dt><dd>Дополнительные пользовательские свойства сообщения, отображаемые в блоге. </dd></dl><bitrix:sys name="feedbackform"></bitrix:sys> <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

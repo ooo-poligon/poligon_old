@@ -1,0 +1,156 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fservice%2Fblogs%2Fblog_blog_edit.php.html"; </script>
+
+<title>Создание и редактирование блога</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/blogs/blog_blog_edit.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Создание и редактирование блога])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Создание и редактирование блога</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<h4 id="topictoctitle">В этом разделе</h4>
+ <menu id="topictoc"> 
+  <li><a href="#menu">Контекстная панель</a></li>
+ 
+  <li><a href="#form">Форма редактирования</a></li>
+ 	<menu> 	 
+    <li><a href="#params">Параметры блога</a></li>
+   	 
+    <li><a href="#access">Права на доступ</a></li>
+   
+    <li><a href="#add">Доп. свойства</a></li>
+   	</menu> 
+  <li><a href="#buttons">Кнопки управления</a></li>
+ </menu> 
+<p>Форма служит для создания нового или редактирования существующего блога.<b> Каждый пользователь может завести только один блог.</b> </p>
+ 
+<h2><a name="menu"></a>Контекстная панель</h2>
+ 
+<table class="tnormal" style="border-collapse: collapse;"> 	 
+  <tbody> 
+    <tr> 		<th width="25%">Кнопка</th> 		<th width="75%">Описание</th></tr>
+   	 
+    <tr> 		<td>Список блогов </td> 		<td>Переход на страницу co <a href="blog_blog.php.html">списком блогов</a>.</td></tr>
+   	 
+    <tr> 		<td>Новый блог </td> 		<td>Переход к форме создания нового блога. Кнопка отображается при редактировании существующего блога.</td></tr>
+   	 
+    <tr> 		<td>Удалить блог</td> 		<td>Удаление редактируемого блога. Кнопка отображается при редактировании существующего блога.</td></tr>
+   </tbody>
+ </table>
+ 
+<h2><a name="form"></a>Форма редактирования</h2>
+ 
+<h4><a name="params"></a>Закладка &quot;Параметры блога &quot;</h4>
+ 
+<table style="width: 986px; height: 324px; border-collapse: collapse;" class="tnormal"> 	 
+  <tbody> 
+    <tr> 		<th width="28%">Поле</th> 		<th width="72%">Описание</th></tr>
+   	 
+    <tr> 		<td>ID</td> 		<td>Уникальный идентификатор блога. </td></tr>
+   	 
+    <tr> 		<td>*Название</td> 		<td>Название блога.</td></tr>
+   	 
+    <tr> 		<td>Описание</td> 		<td>Поле для ввода описания к блогу. </td></tr>
+   	 
+    <tr> 		<td>*Название латинскими буквами </td> 		<td>Название блога латинскими буквами. </td></tr>
+   	 
+    <tr> 		<td>Активность</td> 		<td>Признак активности блога.</td></tr>
+   	 
+    <tr> 		<td>*Владелец блога </td> 		<td>Указывается идентификатор пользователя, который является владельцем блога.</td></tr>
+   	 
+    <tr> 		<td>*Группа блогов </td> 		<td>Название группы, к которой относится блог. </td></tr>
+   	 
+    <tr> 		<td>На блоге разрешены комментарии </td> 		<td>Установка этого флага разрешает создавать комментарии к сообщениям. 	</td></tr>
+   	 
+    <tr> 		<td>Включена защита от роботов (<span style="font-weight: bold;">CAPTCHA</span>) </td> 		<td>При включении этого флага будет использоваться технология <span style="font-weight: bold;">CAPTCHA</span>.</td></tr>
+   	 
+    <tr> 		<td>Включена выгрузка в <span style="font-weight: bold;">RSS .92</span>, <span style="font-weight: bold;">RSS 2.0</span> и <span style="font-weight: bold;">Atom .03</span> </td> 		<td>Данная опция определяет возможность экспорта данных блога в форматы <span style="font-weight: bold;">RSS .92</span>, <span style="font-weight: bold;">RSS 2.0</span> и <span style="font-weight: bold;">Atom .03</span>.</td></tr>
+   	 
+    <tr> 		<td>Отправлять уведомления на email</td> 		<td>Отправка&nbsp; извещения о создании новых сообщений или комментариев на e-mail владельца блога. </td></tr>
+   
+    <tr><td colspan="1">Разрешить использование визуального редактора и HTML</td><td colspan="1">Разрешение на использование редактора и html-кодов.</td></tr>
+  </tbody>
+ </table>
+ 
+<p>* - Поля, обязательные для заполнения. </p>
+ 
+<h4><a name="access"></a>Закладка &quot;Право на доступ &quot;</h4>
+ 
+<p>На этой закладке настраиваются следующие права на доступ к блогу:</p>
+ 
+<ul> 	 
+  <li><b>Права на сообщения;</b> 	</li>
+ 
+  <li><b>Права на комментарии.</b> </li>
+ </ul>
+ 
+<p>Каждое из этих прав настраивается для:</p>
+ 
+<ul> 	 
+  <li>всех посетителей; 	</li>
+ 
+  <li>авторизованных посетителей; 	</li>
+ 
+  <li>друзей. </li>
+ </ul>
+ 
+<h4><a name="add"></a>Закладка &quot;Дополнительные свойства&quot;</h4>
+ 
+<p>На данной закладке отображаются дополнительные свойства, созданные пользователем. Для добавления нового свойства служит ссылка <b>Добавить пользовательское свойство</b>.</p>
+ 
+<h2><a name="buttons"></a>Кнопки управления </h2>
+ 
+<table class="tnormal" style="border-collapse: collapse;"> 	 
+  <tbody> 
+    <tr> 		<th width="16%">Кнопка</th> 		<th width="84%">Описание</th></tr>
+   	 
+    <tr> 		<td>Сохранить</td> 		<td>Сохранение внесённых изменений. Переход на страницу со <a href="blog_blog.php.html">списком блогов</a>.</td></tr>
+   	 
+    <tr> 		<td>Применить</td> 		<td>Применение внесённых изменений. Продолжение редактирования параметров блога.</td></tr>
+   	 
+    <tr> 		<td>Отменить</td> 		<td>Отмена внесённых изменений. Возврат первоначальных значений параметров.</td></tr>
+   </tbody>
+ </table>
+ <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

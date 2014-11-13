@@ -1,0 +1,72 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../index.html?page=source%2Fservice%2Fsupport%2Fcomponents_2%2Fsup_ticket.php.html"; </script>
+
+<title>Техподдержка (комплексный компонент)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/support/components_2/sup_ticket.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Компоненты 2.0::Техподдержка (комплексный компонент)])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Компоненты 2.0::Техподдержка (комплексный компонент)</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<p>Комплексный компонент создает полноценную систему техподдержки, с помощью которой можно просмотреть список обращений, добавить своё сообщение или написать новое обращение в техподдержку. Компонент стандартный и входит в дистрибутив модуля. 
+  <br />
+ </p>
+ 
+<h4>Пример вызова</h4>
+ 
+<br />
+ 
+<pre class="syntax" id="xmpD9780763">&lt;?$APPLICATION-&gt;IncludeComponent(&quot;bitrix:support.ticket&quot;,&quot;&quot;,Array(<br />     &quot;SEF_MODE&quot; =&gt; &quot;Y&quot;,<br />     &quot;TICKETS_PER_PAGE&quot; =&gt; &quot;50&quot;,<br />     &quot;MESSAGES_PER_PAGE&quot; =&gt; &quot;20&quot;,<br />     &quot;SET_PAGE_TITLE&quot; =&gt; &quot;Y&quot;,<br />     &quot;SEF_FOLDER&quot; =&gt; &quot;/examples/&quot;,<br />     &quot;SEF_URL_TEMPLATES&quot; =&gt; Array(<br />         &quot;ticket_list&quot; =&gt; &quot;index.php&quot;,<br />         &quot;ticket_edit&quot; =&gt; &quot;#ID#.php&quot;<br />     ),<br />     &quot;VARIABLE_ALIASES&quot; =&gt; Array(<br />         &quot;ticket_list&quot; =&gt; Array(),<br />         &quot;ticket_edit&quot; =&gt; Array(),<br />  	)<br />&nbsp;&nbsp;&nbsp;&nbsp; )<br />);?&gt;<br /></pre>
+ 
+<h4>Описание параметров</h4>
+ <dl> 	<dt><b><span class="syntax">SEF_MODE</span></b> 	</dt><dd>При значении параметра <b>Y</b> включается поддержка ЧПУ и становятся доступными параметры настройки адресов ЧПУ: 	 
+    <ul> 		 
+      <li><b>SEF_FOLDER</b> - каталог ЧПУ: путь до папки с которой работает компонент. Этот путь может как совпадать с физическим путём, так и не совпадать. 		</li>
+     
+      <li><b>SEF_URL_TEMPLATE</b> -&gt; <b>ticket_list</b> - адрес страницы со списком обращений. 		</li>
+     
+      <li><b>SEF_URL_TEMPLATE</b> -&gt; <b>ticket_edit</b> - адрес страницы редактирования обращений. </li>
+     </ul>
+   	</dd><dt><b><span class="syntax">VARIABLE_ALIASES</span></b> 	</dt><dd>Имена переменных. В режиме без поддержки ЧПУ указывается переменная, которой будет передаваться идентификатор обращения (например, ID). 	</dd><dt><b><span class="syntax">TICKETS_PER_PAGE</span></b> 	</dt><dd>Количество обращений на одной странице. 	</dd><dt><b><span class="syntax">MESSAGES_PER_PAGE</span></b> 	</dt><dd><span class="syntax">Количество сообщений на одной странице</span>. 	</dd><dt><b><span class="syntax">SET_PAGE_TITLE</span></b> 	</dt><dd><span class="syntax">Определяет устанавливать заголовок страницы (значение параметра равно <b>Y</b>) или нет (значение <b>N</b>).</span> </dd></dl><bitrix:sys name="feedbackform"></bitrix:sys> <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

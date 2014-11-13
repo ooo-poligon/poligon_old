@@ -1,0 +1,118 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../../index.html?page=source%2Fcontent%2Fiblock%2Fcomponents%2Fcatalog%2Fcat.table.with.section.elements.php.html"; </script>
+
+<title>Элементы раздела в табличном порядке</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../../docstyle.css);</style>
+
+<script src="../../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "content/iblock/components/catalog/cat.table.with.section.elements.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Каталог::Элементы раздела в табличном порядке])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Каталог::Элементы раздела в табличном порядке</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+<p>Компонент предназначен для вывода элементов раздела в табличном порядке. Как правило, используется на странице, отображающей содержимое того или иного раздела каталога.</p>
+
+<h4>Пример вызова</h4>
+
+<pre class="syntax" id="xmp90220D39">&lt;?<br />$APPLICATION-&gt;IncludeFile(&quot;iblock/catalog/section.php&quot;, Array(<br />	&quot;IBLOCK_TYPE&quot;		=&gt; &quot;catalog&quot;,<br />	&quot;IBLOCK_ID&quot;		=&gt; &quot;21&quot;,<br />	&quot;SECTION_ID&quot;		=&gt; $_REQUEST[&quot;SECTION_ID&quot;],<br />	&quot;PAGE_ELEMENT_COUNT&quot;	=&gt; &quot;30&quot;,<br />	&quot;LINE_ELEMENT_COUNT&quot;	=&gt; &quot;2&quot;,<br />	&quot;ELEMENT_SORT_FIELD&quot;	=&gt; &quot;sort&quot;,<br />	&quot;ELEMENT_SORT_ORDER&quot;	=&gt; &quot;asc&quot;,<br />	&quot;arrPROPERTY_CODE&quot;	=&gt; Array(<br />			&quot;YEAR&quot;,<br />			&quot;STANDBY_TIME&quot;,<br />			&quot;TALKTIME&quot;,<br />			&quot;WEIGHT&quot;,<br />			&quot;STANDART&quot;,<br />			&quot;SIZE&quot;,<br />			&quot;BATTERY&quot;<br />			),<br />	&quot;PRICE_CODE&quot;		=&gt; &quot;RETAIL&quot;,<br />	&quot;BASKET_URL&quot;		=&gt; &quot;/personal/basket.php&quot;,<br />	&quot;FILTER_NAME&quot;		=&gt; &quot;arrFilter&quot;,<br />	&quot;CACHE_FILTER&quot;		=&gt; &quot;N&quot;,<br />	&quot;CACHE_TIME&quot;		=&gt; &quot;3600&quot;,<br />	&quot;DISPLAY_PANEL&quot;		=&gt; &quot;Y&quot;,<br />	&quot;ACTION_VARIABLE&quot;		=&gt; &quot;action&quot;,<br />	&quot;PRODUCT_ID_VARIABLE&quot;	=&gt; &quot;id&quot;,<br />	&quot;SECTION_ID_VARIABLE&quot;	=&gt; &quot;SECTION_ID&quot;,<br />	&quot;SHOW_DESCRIPTION&quot;		=&gt; &quot;N&quot;,<br />	&quot;USE_PRICE_COUNT&quot;		=&gt; &quot;N&quot;,<br />	&quot;SHOW_PRICE_COUNT&quot;		=&gt; &quot;1&quot;,<br />	));<br />?&gt;</pre>
+
+<h4>Описание параметров</h4>
+<dl><dt style="FONT-WEIGHT: bold">IBLOCK_TYPE </dt><dd>Тип инфоблока. </dd>
+<br/>
+<dt style="FONT-WEIGHT: bold">IBLOCK_ID </dt><dd>ID инфоблока. </dd>
+<br/>
+<dt style="FONT-WEIGHT: bold">SECTION_ID </dt><dd>ID раздела. </dd>
+<br/>
+<dt style="FONT-WEIGHT: bold">PAGE_ELEMENT_COUNT </dt><dd>Количество элементов на странице. </dd>
+<br/>
+<dt style="FONT-WEIGHT: bold">LINE_ELEMENT_COUNT </dt><dd>Количество элементов, выводимых в одной строке таблицы. </dd>
+<br/>
+<dt style="FONT-WEIGHT: bold">ELEMENT_SORT_FIELD </dt><dd>По какому полю сортировать элементы; доступны следующие значения: 
+    <ul>
+      <li><span style="FONT-WEIGHT: bold">shows</span> &ndash; среднее количество просмотров элемента (популярность элемента); </li>
+    
+      <li><span style="FONT-WEIGHT: bold">sort</span> &ndash; по индексу сортировки; </li>
+    
+      <li><span style="FONT-WEIGHT: bold">timestamp_x</span> – по дате изменения; </li>
+    
+      <li><span style="FONT-WEIGHT: bold">name</span> – по заголовку; </li>
+    
+      <li><span style="FONT-WEIGHT: bold">id</span> – по ID элемента; </li>
+    
+      <li><span style="FONT-WEIGHT: bold">active_from</span> – по дате активности <span style="FONT-WEIGHT: bold">&quot;с&quot;</span>; </li>
+    
+      <li><span style="FONT-WEIGHT: bold">active_to</span> – по дате активности <span style="FONT-WEIGHT: bold">&quot;по&quot;</span>. </li>
+    </ul>
+  </dd>
+<br/>
+<dt style="FONT-WEIGHT: bold">ELEMENT_SORT_ORDER </dt><dd>Порядок сортировки элементов, допустимы следующие значения: 
+    <ul>
+      <li><span style="FONT-WEIGHT: bold">asc</span> – по возрастанию; </li>
+    
+      <li><span style="FONT-WEIGHT: bold">desc</span> – по убыванию. </li>
+    </ul>
+  </dd>
+<br/>
+<dt style="FONT-WEIGHT: bold">arrPROPERTY_CODE </dt><dd>Массив символьных кодов свойств раздела. </dd>
+<br/>
+<dt style="FONT-WEIGHT: bold">PRICE_CODE </dt><dd>Символьный код типа цены. </dd><dt style="FONT-WEIGHT: bold">BASKET_URL </dt><dd>URL ведущий на страницу с корзиной покупателя. </dd>
+<br/>
+<dt style="FONT-WEIGHT: bold">FILTER_NAME </dt><dd>Имя массива со значениями фильтрации элементов. </dd>
+<br/>
+<dt style="FONT-WEIGHT: bold">CACHE_FILTER </dt><dd>[Y|N] кешировать значения, выбираемые из базы если установлен фильтр по ним. </dd>
+<br/>
+<dt style="FONT-WEIGHT: bold">CACHE_TIME </dt><dd>(сек.) время кеширования значений выбираемых из базы. </dd>
+<br/>
+<dt style="FONT-WEIGHT: bold">DISPLAY_PANEL </dt><dd>Добавлять в <span style="FONT-WEIGHT: bold">Административную панель</span> кнопки для данного компонента. </dd>
+<br/>
+<dt style="FONT-WEIGHT: bold">ACTION_VARIABLE </dt><dd>Название переменной, в которой передается действие, например, <span style="FONT-WEIGHT: bold">BUY</span> и др. </dd>
+<br/>
+<dt style="FONT-WEIGHT: bold">PRODUCT_ID_VARIABLE </dt><dd>Название переменной, в которой передается код товара для покупки. </dd>
+<br/>
+<dt style="FONT-WEIGHT: bold">SECTION_ID_VARIABLE </dt><dd>Название переменной, в которой передается код группы. </dd>
+<br/>
+<dt style="FONT-WEIGHT: bold">SHOW_DESCRIPTION </dt><dd>Показывать описание для списка. </dd>
+<br/>
+<dt style="FONT-WEIGHT: bold">USE_PRICE_COUNT </dt><dd>Использовать вывод цен с диапазонами. При отмеченной опции выводятся цены всех типов на товары. </dd>
+<br/>
+<dt style="FONT-WEIGHT: bold">SHOW_PRICE_COUNT </dt><dd>Выводить цены для количества. Указывается, для какого количества товаров выводить цены. </dd></dl><bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

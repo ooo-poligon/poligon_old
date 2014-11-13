@@ -1,0 +1,123 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../index.html?page=source%2Fsettings%2Fusers%2Fcomponents_2%2Fmain_register.php.html"; </script>
+
+<title>Настраиваемая регистрация</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "settings/users/components_2/main_register.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Компоненты 2.0::Настраиваемая регистрация])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Компоненты 2.0::Настраиваемая регистрация</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+<p>Компонент позволяет настроить форму регистрации на сайте. Установить, какие параметры будут предложены пользователю для заполнения, какие из них будут обязательны для заполнения. Для данного компонента можно настроить ЧПУ, установить настройки кеширования, и в качестве дополнительных настроек компонента возможно регулировать дальнейшие переходы пользователя по страницам сайта после регистрации: по ссылке в параметре backurl или на страницу окончания регистрации и т.д.</p>
+
+<h4>Пример вызова</h4>
+
+<pre class="syntax" id="xmp5A0A6F40">&lt;?$APPLICATION-&gt;IncludeComponent(
+&quot;bitrix:main.register&quot;,
+&quot;&quot;,
+Array(
+	&quot;USER_PROPERTY_NAME&quot; =&gt; &quot;Доп. свойства&quot;, 
+	&quot;SEF_MODE&quot; =&gt; &quot;Y&quot;, 
+	&quot;SHOW_FIELDS&quot; =&gt; Array(&quot;NAME&quot;,&quot;LAST_NAME&quot;), 
+	&quot;REQUIRED_FIELDS&quot; =&gt; Array(&quot;LAST_NAME&quot;), 
+	&quot;AUTH&quot; =&gt; &quot;Y&quot;, 
+	&quot;USE_BACKURL&quot; =&gt; &quot;Y&quot;, 
+	&quot;SUCCESS_PAGE&quot; =&gt; &quot;register_ok.php&quot;, 
+	&quot;SET_TITLE&quot; =&gt; &quot;Y&quot;, 
+	&quot;USER_PROPERTY&quot; =&gt; Array(&quot;UF_ZODIAK&quot;),  
+	&quot;SEF_FOLDER&quot; =&gt; &quot;/register/&quot;, 
+	&quot;VARIABLE_ALIASES&quot; =&gt; Array(
+	)
+)
+);?&gt;
+
+</pre>
+
+<h4>Описание параметров</h4>
+<span class="content-block-head">Основные параметры</span> <dl><dt><strong>SHOW_FIELDS</strong> </dt><dd>В параметре перечисляются поля, которые будут выведены в дополнение к стандартному набору в форме регистрации. Стандартными полями, обязательными для заполнения являются: 
+    <ul>
+      <li>Логин; </li>
+    
+      <li>Пароль; </li>
+    
+      <li>Подтверждение пароля; </li>
+    
+      <li>Адрес e-mail. </li>
+    </ul>
+  Дополнительными полями являются&nbsp;из формы редактирования параметров пользователя: имя, фамилия, отчество, профессия и другие личные данные. 
+    <br />
+  
+    <br />
+  </dd><dt><strong>REQUIRED_FIELDS</strong> </dt><dd>Список допустимых значений такой же, что и в предыдущем пункте. Указанные здесь поля&nbsp; будут обязательными для заполнения в форме. </dd></dl>
+<br />
+<span class="content-block-head">Управление адресами страниц</span> <dl><dt><strong>CHECK_DATES</strong> </dt><dd>[Y|N] Включить поддержку ЧПУ. При отмеченном флаге становятся доступными поля настройки адресов: 
+    <br />
+  
+    <br />
+  <dl><dt><strong>SEF_FOLDER</strong> </dt><dd>Каталог ЧПУ (относительно корня сайта). </dd></dl></dd></dl>
+<br />
+<span class="content-block-head">Дополнительные настройки</span> <dl><dt><strong>AUTH </strong></dt><dd>[Y|N] При установленной опции после регистрации пользователь будет автоматически авторизован на сайте. В противном случае после регистрации пользователю будет предоставлена к заполнению форма авторизации. 
+    <br />
+  
+    <br />
+  </dd><dt><strong>USE_BACKURL</strong> </dt><dd>[Y|N] Отправлять пользователя по обратной ссылке, если она есть. При наличии в адресной строке параметра backurl пользователь будет перенаправлен по указанной в этом параметре ссылке после заполнения формы регистрации. 
+    <br />
+  
+    <br />
+  </dd><dt><strong>SUCCESS_PAGE</strong> </dt><dd>Адрес страницы сайта,&nbsp;которая будет финальной страницей процедуры регистрации, и пользователь будет&nbsp;перенаправлен на нее в случае успешной регистрации. Если пользователь зарегистрирован и авторизован, то при переходе на страницу регистрации он попадет на страницу окончания регистрации. 
+    <br />
+  <i>Примечание:</i> один из параметров (обратную ссылку или страницу окончанию регистрации) лучше заполнить. Если отмечены оба параметра, то пользователь будет переведен по обратной ссылке. 
+    <br />
+  
+    <br />
+  </dd><dt><strong>SET_TITLE</strong> </dt><dd>[Y|N]&nbsp;При отмеченной опции в качестве заголовка страницы будет установлено <i>Регистрация нового пользователя</i>. 
+    <br />
+  
+    <br />
+  </dd><dt><strong>USER_PROPERTY</strong> </dt><dd>Можно указать дополнительные пользовательские свойства, если они заданы. </dd></dl>
+<br />
+<span class="content-block-head">Дополнительно</span> <dl><dt><strong>USER_PROPERTY_NAME</strong> </dt><dd>Название закладки с дополнительными свойствами.</dd></dl>
+<br />
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

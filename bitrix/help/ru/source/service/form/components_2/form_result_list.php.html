@@ -1,0 +1,74 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../index.html?page=source%2Fservice%2Fform%2Fcomponents_2%2Fform_result_list.php.html"; </script>
+
+<title>Список результатов</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/form/components_2/form_result_list.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Компоненты 2.0::Список результатов])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Компоненты 2.0::Список результатов</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<p>Компонент предназначен для вывода списка результатов выбранной веб-формы. Количество записей на странице со списком результатов зависит от прав доступа пользователя, установленных в настройках формы и в настройках ее статуса. Настройки компонента позволяют переходить со страницы со списком результатов к заполнению веб-формы, подробному просмотру определённого результата, к изменению результата, также пользователь может удалить результат(ы), если имеет на это соответствующие права доступа. Компонент стандартный и входит в дистрибутив модуля. 
+  <br />
+ </p>
+ 
+<h4>Пример вызова</h4>
+ 
+<br />
+ 
+<pre class="syntax" id="xmp5A0A6F40">&lt;?$APPLICATION-&gt;IncludeComponent(&quot;bitrix:form.result.list&quot;,&quot;&quot;,Array(<br />     &quot;SEF_MODE&quot; =&gt; &quot;Y&quot;,<br />     &quot;WEB_FORM_ID&quot; =&gt; $_REQUEST[&quot;WEB_FORM_ID&quot;],<br />     &quot;VIEW_URL&quot; =&gt; &quot;result_view.php&quot;,<br />     &quot;EDIT_URL&quot; =&gt; &quot;result_edit.php&quot;,<br />     &quot;NEW_URL&quot; =&gt; &quot;result_new.php&quot;,<br />     &quot;SHOW_ADDITIONAL&quot; =&gt; &quot;N&quot;,<br />     &quot;SHOW_ANSWER_VALUE&quot; =&gt; &quot;N&quot;,<br />     &quot;SHOW_STATUS&quot; =&gt; &quot;Y&quot;,<br />     &quot;NOT_SHOW_FILTER&quot; =&gt; &quot;&quot;,<br />     &quot;NOT_SHOW_TABLE&quot; =&gt; &quot;&quot;,<br />     &quot;CHAIN_ITEM_TEXT&quot; =&gt; &quot;&quot;,<br />     &quot;CHAIN_ITEM_LINK&quot; =&gt; &quot;&quot;,<br />     &quot;SEF_FOLDER&quot; =&gt; &quot;/communication/web-forms/&quot;,<br />     &quot;VARIABLE_ALIASES&quot; =&gt; Array()<br />     )<br />);?&gt;</pre>
+ 
+<h4>Описание параметров</h4>
+ 
+<h5 class="graytitle">Источник данных</h5>
+ <dl> 	<dt><span style="font-weight: bold;">WEB_FORM_ID</span> 	</dt><dd>Идентификатор веб-формы. </dd></dl> 
+<h5 class="graytitle">Управление адресами страниц</h5>
+ <dl> 	<dt><span style="font-weight: bold;">SEF_MODE</span> 	</dt><dd>Включение поддержки <span style="font-weight: bold;">ЧПУ</span> и полей настройки адресов <span style="font-weight: bold;">ЧПУ</span>. 	</dd><dt><span style="font-weight: bold;">SEF_FOLDER</span> 	</dt><dd>Каталог <span style="font-weight: bold;">ЧПУ</span>: путь до папки, с которой работает компонент. Этот путь может как совпадать с физическим путём, так и не совпадать. 	</dd><dd> 	 
+    <br />
+   </dd><dt><span style="font-weight: bold;">VARIABLE_ALIASES</span> 	</dt><dd>Имена переменных, в которых передаются названия действий. </dd></dl> 
+<h5 class="graytitle">Параметры компонента</h5>
+ <dl> 	<dt><span style="font-weight: bold;">VIEW_URL</span> 	</dt><dd>Указывается адрес страницы просмотра результата заполнения формы. 	</dd><dt><span style="font-weight: bold;">EDIT_URL</span> 	</dt><dd>Указывается адрес страницы редактирования результата. 	</dd><dt><span style="font-weight: bold;">NEW_URL</span> 	</dt><dd>Указывается адрес страницы добавления результата (заполнения формы). 	</dd><dt><span style="font-weight: bold;">SHOW_ADDITIONAL</span> 	</dt><dd>Вывод дополнительных полей формы (при их наличии). 	</dd><dt><span style="font-weight: bold;">SHOW_ANSWER_VALUE</span> 	</dt><dd>Вывод для показа значения параметра <span style="font-style: italic;">ANSWER_VALUE</span> вопроса веб-формы (выводится рядом со значением ответа). 	</dd><dt><span style="font-weight: bold;">SHOW_STATUS</span> 	</dt><dd>Отображение на странице со списком результатов статуса текущего результата. 	</dd><dt><span style="font-weight: bold;">NOT_SHOW_FILTER</span> 	</dt><dd>Указываются коды полей, которые нельзя показывать в фильтре. С помощью данной настройки можно исключить те поля веб-формы, которые не должны отображаться в фильтре на странице со списком результатов. 	 
+    <p><b>Примечание:</b> чтобы поле отображалось в фильтре на странице со списком результатов, для данного вопроса должна быть заполнена закладка 	<b>Фильтр</b> в форме редактирования вопроса веб-формы в расширенном режиме.</p>
+   	</dd><dt><span style="font-weight: bold;">NOT_SHOW_TABLE</span> 	</dt><dd>Указываются коды полей, которые нельзя показывать в таблице. Можно исключить те поля веб-формы, которые не должны отображаться в таблице на странице со списком результатов веб-формы. 	</dd><dt><span style="font-weight: bold;">CHAIN_ITEM_TEXT</span> 	</dt><dd>Название дополнительного пункта в навигационной цепочке (если оставить незаполненным, то в навигационную цепочку пункт не добавляется). 	</dd><dt><span style="font-weight: bold;">CHAIN_ITEM_LINK</span> 	</dt><dd>Можно задать ссылку, которая будет показана на дополнительном пункте меню в навигационной цепочке. </dd></dl><bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

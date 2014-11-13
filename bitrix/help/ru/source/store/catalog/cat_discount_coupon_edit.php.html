@@ -1,0 +1,150 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fstore%2Fcatalog%2Fcat_discount_coupon_edit.php.html"; </script>
+
+<title>Создание и редактирование купона</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "store/catalog/cat_discount_coupon_edit.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Торговый каталог::Создание и редактирование купона])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Торговый каталог::Создание и редактирование купона</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+
+
+
+
+<h4 id="topictoctitle">В этом разделе</h4>
+<menu id="topictoc">
+	<li><a href=#menu>Контекстная панель</a></li>
+	<li><a href="#form">Форма редактирования</a></li>
+	<li><a href=#buttons>Кнопки управления</a></li>
+</menu>
+
+
+<p>Данная форма служит для создания нового или редактирования существующего купона. </p>
+
+<p class="note"><b>Примечание.</b><br>
+		Купон представляет собой разновидность скидки. Его отличие заключается в том, что купон - это уникальная последовательность символов, случайно сгенерированная. Правом на получение скидки по купону обладает покупатель, которому каким-либо образом была сообщена данная уникальная последовательность символов.</p>
+
+<h2><a name="menu"></a>Контекстная панель</h2>
+	<table class="tnormal">
+			<tbody>
+					<tr>
+							<th width="25%">Кнопка</th>
+							<th width="75%">Описание</th>
+					</tr>
+					<tr>
+							<td>Список купонов </td>
+							<td>Переход  на страницу, содержащую полный список купонов.</td>
+					</tr>
+					<tr>
+							<td>Добавить новый купон </td>
+							<td>Переход к форме создания нового купона. Кнопка отображается при редактировании существующей скидки.</td>
+					</tr>
+					<tr>
+							<td>Удалить скидку</td>
+							<td>Удаление редактируемого купона.</td>
+					</tr>
+			</tbody>
+	</table>
+	<h2><a name="form" id="form"></a>Форма редактирования</h2>
+
+	<table class="tnormal">
+		<tbody>
+			<tr>
+				<th width="25%">Поле</th>
+				<th width="75%">Описание</th>
+</tr>
+			<tr>
+				<td>ID</td>
+				<td>Уникальный идентификатор купона.</td>
+</tr>
+			<tr>
+				<td>*Скидка</td>
+				<td>В выпадающем списке выбирается одна из имеющихся в системе скидок, к которой будет относиться создаваемый купон.</td>
+</tr>
+			
+			<tr>
+				<td>Активность</td>
+				<td>Признак активности купона.</td>
+</tr>
+			<tr>
+				<td>Одноразовый</td>
+				<td>При отмеченной опции купон является одноразовым, при снятой - многоразовым.</td>
+</tr>
+			<tr>
+				<td>*Код купона</td>
+				<td>Код купона генерируется по кнопке <i>Сгенерировать код</i>.</td>
+</tr>
+			<tr>
+				<td>Дата применения купона</td>
+				<td>Дата и время, когда купон был использован. Автоматически устанавливается после применения одноразового купона.</td>
+</tr>
+</tbody>
+</table>
+* - Поля, обязательные для заполнения.
+
+<h2><a name="buttons"></a>Кнопки управления
+</h2>
+		<table class="tnormal">
+			<tbody>
+				<tr>
+					<th width="25%">Кнопка</th>
+					<th width="75%">Описание</th>
+</tr>
+				<tr>
+					<td>Сохранить</td>
+					<td>Сохранение внесённых изменений. Переход на страницу со списком купонов.</td>
+</tr>
+				<tr>
+					<td>Применить</td>
+					<td>Применение внесённых изменений. Продолжение редактирования параметров купона.</td>
+</tr>
+				<tr>
+					<td>Отменить</td>
+					<td>Отмена внесённых изменений. Возврат первоначальных значений параметров.</td>
+</tr>
+</tbody>
+</table>
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

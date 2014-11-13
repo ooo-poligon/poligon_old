@@ -1,0 +1,72 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../index.html?page=source%2Fservice%2Fforum%2Fcomponents_2%2Fmenu.php.html"; </script>
+
+<title>Меню</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/forum/components_2/menu.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Компоненты 2.0::Меню])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Компоненты 2.0::Меню</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<p>Компонент выводит меню форума. Компонент стандартный и входит в дистрибутив модуля.
+  <br />
+</p>
+ 
+<h4>Пример вызова</h4>
+
+<br />
+
+<pre id="xmpD9780763" class="syntax">&lt;?$APPLICATION-&gt;IncludeComponent(&quot;bitrix:forum.menu&quot;,&quot;&quot;,Array(<br />     &quot;TMPLT_SHOW_AUTH_FORM&quot; =&gt; &quot;LINK&quot;,<br />     &quot;SHOW_ADD_MENU&quot; =&gt; &quot;N&quot;,<br />     &quot;CACHE_TYPE&quot; =&gt; &quot;A&quot;,<br />     &quot;CACHE_TIME&quot; =&gt; &quot;0&quot;,<br />     &quot;URL_TEMPLATES_INDEX&quot; =&gt; &quot;index.php&quot;,<br />     &quot;URL_TEMPLATES_LIST&quot; =&gt; &quot;list.php?FID=#FID#&quot;,<br />     &quot;URL_TEMPLATES_PROFILE_VIEW&quot; =&gt; &quot;profile_view.php?UID=#UID#&quot;,<br />     &quot;URL_TEMPLATES_SUBSCR_LIST&quot; =&gt; &quot;subscr_list.php&quot;,<br />     &quot;URL_TEMPLATES_ACTIVE&quot; =&gt; &quot;active.php&quot;,<br />     &quot;URL_TEMPLATES_SEARCH&quot; =&gt; &quot;search.php&quot;,<br />     &quot;URL_TEMPLATES_HELP&quot; =&gt; &quot;help.php&quot;,<br />     &quot;URL_TEMPLATES_USER_LIST&quot; =&gt; &quot;user_list.php&quot;,<br />     &quot;URL_TEMPLATES_PM_LIST&quot; =&gt; &quot;pm_list.php&quot;,<br />     &quot;URL_TEMPLATES_PM_EDIT&quot; =&gt; &quot;pm_edit.php?FID=#FID#&amp;MID=#MID#&amp;UID=#UID#&amp;mode=#mode#&quot;,<br />     &quot;URL_TEMPLATES_PM_FOLDER&quot; =&gt; &quot;pm_folder.php&quot;,<br />     &quot;URL_TEMPLATES_RULES&quot; =&gt; &quot;rules.php&quot;,<br />     &quot;FID&quot; =&gt; $_REQUEST[&quot;FID&quot;],<br />     &quot;TID&quot; =&gt; $_REQUEST[&quot;FID&quot;],<br />     &quot;PAGE_NAME&quot; =&gt; &quot;&quot;,<br />     &quot;PATH_TO_AUTH_FORM&quot; =&gt; &quot;/auth.php&quot;<br />     )<br />);?&gt;<br /></pre>
+ 
+<h4>Описание параметров</h4>
+ 
+<h5 class="graytitle">Дополнительно</h5>
+ 	<b>TMPLT_SHOW_AUTH_FORM</b> 	<dl><dd>Авторизация может быть показана в виде: 	<blockquote><b>LINK</b> - ссылок;</blockquote> 	<blockquote><i><b>INPUT </b></i>- полей ввода.</blockquote> 	</dd><dt><b>SHOW_ADD_MENU</b> 	</dt><dd>При отмеченной опции будут показаны дополнительные пункты меню. Например, пункт <b>Отметить форумы прочитанными</b>. </dd></dl> 
+<h5 class="graytitle">Основные параметры</h5>
+ <dl> 	<dt><b>FID</b> 	</dt><dd>Идентификатор форума. 	</dd><dt><b>TID</b> 	</dt><dd>Идентификатор темы. 	</dd><dt><b>PAGE_NAME</b> 	</dt><dd>Имя страницы вызывающего компонента. 	</dd><dt><b>PATH_TO_AUTH_FORM</b> 	</dt><dd>Путь к форме авторизации. Если не задан, то будет использовано значение по умолчанию. </dd></dl> 
+<h5 class="graytitle">Шаблоны ссылок</h5>
+ <dl> 	<dt><b>URL_TEMPLATES_INDEX</b> 	</dt><dd>Адрес страницы со списком форумов. 	</dd><dt><b>URL_TEMPLATES_LIST</b> 	</dt><dd>Адрес страницы со списком тем форума. 	</dd><dt><b>URL_TEMPLATES_PROFILE_VIEW</b> 	</dt><dd>Адрес страницы просмотра профиля пользователя. 	</dd><dt><b>URL_TEMPLATES_SUBSCR_LIST</b> 	</dt><dd>Адрес страницы подписки на форумы. 	</dd><dt><b>URL_TEMPLATES_ACTIVE</b> 	</dt><dd>Адрес страницы списка новых тем форумов. 	</dd><dt><b>URL_TEMPLATES_SEARCH</b> 	</dt><dd>Адрес страницы поиска по форумам. 	</dd><dt><b>URL_TEMPLATES_HELP</b> 	</dt><dd>Адрес страницы помощи по форумам. 	</dd><dt><b>URL_TEMPLATES_USER_LIST</b> 	</dt><dd>Адрес страницы со списком зарегистрированных пользователей форума. 	</dd><dt><b>URL_TEMPLATES_PM_LIST</b> 	</dt><dd>Адрес страницы личных сообщений пользователя. 	</dd><dt><b>URL_TEMPLATES_PM_EDIT</b> 	</dt><dd>Адрес страницы создания (редактирования) личных сообщений. 	</dd><dt><b>URL_TEMPLATES_PM_FOLDER</b> 	</dt><dd>Адрес страницы управления директориями личных сообщений. 	</dd><dt><b>URL_TEMPLATES_RULES</b> 	</dt><dd>Адрес страницы, содержащей правила форума. </dd></dl> 
+<h5 class="graytitle">Настройки кеширования</h5>
+ <dl> 	<dt><b>CACHE_TYPE</b> 	</dt><dd>Тип кеширования: 	<blockquote><b>A</b> - Авто: действует при включенном кешировании в течение заданного времени; </blockquote> 	<blockquote><b>Y</b> - Кешировать: необходимо определить время кеширования; </blockquote> 	<blockquote><b>N</b> - Не кешировать: кеширования нет в любом случае.</blockquote> 	</dd><dt><b>CACHE_TIME</b> 	</dt><dd>Время кеширования, указанное в секундах. </dd></dl><bitrix:sys name="feedbackform"></bitrix:sys> <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

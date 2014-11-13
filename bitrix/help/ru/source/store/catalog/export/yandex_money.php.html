@@ -1,0 +1,77 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../index.html?page=source%2Fstore%2Fcatalog%2Fexport%2Fyandex_money.php.html"; </script>
+
+<title>Автоматический экспорт каталогов в Яндекс.Товары</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "store/catalog/export/yandex_money.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Автоматический экспорт каталогов в Яндекс.Товары])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Автоматический экспорт каталогов в Яндекс.Товары</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+
+
+<p>
+Модуль торгового каталога имеет возможность выгрузки каталогов товаров в XML файл, подходящий для размещения в системе
+<b> Яндекс.Товары</b>.
+</p>
+<p>
+Укажите в <a href="../settings.php.html">настройках</a> модуля <b>Торговый каталог</b> каталоги, которые необходимо выгружать в XML файл. XML файл будет пересоздаваться с периодичностью, указанной в переменной
+<b>Период экспорта в Яндекс.Товары</b>. Готовый файл будет располагаться по адресу <nobr><code>http://ваш_сайт/upload/yandex.php</code></nobr> (вместо подстроки
+<b>ваш_сайт</b> должен быть указан реальный адрес сайта, подстрока <code>upload</code> берется из переменной <b>Папка по умолчанию для загрузки файлов</b> настроек Главного модуля). 
+</p>
+<p>
+Готовый файл <nobr><code>http://ваш_сайт/upload/yandex.php</code></nobr> может принимать дополнительные параметры referer1 и referer2, которые служат для формирования ссылок на товары с учётом рекламных компаний. Например, если запросить адрес</p>
+<pre class=syntax id="xmpD3422BBC">
+<nobr>http://ваш_сайт/upload/yandex.php?referer1=wizard&amp;referer2=soft</nobr></pre>
+<p>то в выдаваемом XML файле ссылки на страницу с детальной информацией о товаре будут иметь вид</p>
+<pre class=syntax id="xmpF07875A9">
+<nobr>http://ваш_сайт/catalog/detail.php?ID=8192&amp;r1=wizard&amp;r2=soft</nobr></pre>
+<p>Если параметр referer1 не задан, то он принимает значение "yandext". Например,</p>
+<pre class=syntax id="xmp0DAE3F97">
+<nobr>http://ваш_сайт/catalog/detail.php?ID=8192&r1=yandext&amp;r2=</nobr></pre>
+
+
+
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

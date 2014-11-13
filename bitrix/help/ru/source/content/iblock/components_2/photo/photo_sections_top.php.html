@@ -1,0 +1,122 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../../index.html?page=source%2Fcontent%2Fiblock%2Fcomponents_2%2Fphoto%2Fphoto_sections_top.php.html"; </script>
+
+<title>Разделы с TOP'ом фотографий</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../../docstyle.css);</style>
+
+<script src="../../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "content/iblock/components_2/photo/photo_sections_top.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Разделы с TOP'ом фотографий])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Разделы с TOP'ом фотографий</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+<p>Одностраничный компонент. Служит для вывода TOP'а фотографий, сгруппированных по разделам.</p>
+ 
+<h4>Пример вызова</h4>
+ 
+<pre class="syntax" id="xmp5A0A6F40">&lt;?$APPLICATION-&gt;IncludeComponent(<br />	&quot;bitrix:photo.sections.top&quot;,<br />	&quot;&quot;,<br />	Array(<br />		&quot;IBLOCK_TYPE&quot; =&gt; &quot;photo&quot;, <br />		&quot;IBLOCK_ID&quot; =&gt; &quot;8&quot;, <br />		&quot;SECTION_SORT_FIELD&quot; =&gt; &quot;sort&quot;, <br />		&quot;SECTION_SORT_ORDER&quot; =&gt; &quot;asc&quot;, <br />		&quot;ELEMENT_SORT_FIELD&quot; =&gt; &quot;sort&quot;, <br />		&quot;ELEMENT_SORT_ORDER&quot; =&gt; &quot;asc&quot;, <br />		&quot;FILTER_NAME&quot; =&gt; &quot;arrFilter&quot;, <br />		&quot;FIELD_CODE&quot; =&gt; Array(&quot;&quot;,&quot;&quot;), <br />		&quot;PROPERTY_CODE&quot; =&gt; Array(&quot;&quot;,&quot;&quot;), <br />		&quot;SECTION_URL&quot; =&gt; &quot;section.php?SECTION_ID=#SECTION_ID#&quot;, <br />		&quot;DETAIL_URL&quot; =&gt; &quot;detail.php?SECTION_ID=#SECTION_ID#&amp;ELEMENT_ID=#ELEMENT_ID#&quot;, <br />		&quot;DISPLAY_PANEL&quot; =&gt; &quot;N&quot;, <br />		&quot;CACHE_TYPE&quot; =&gt; &quot;A&quot;, <br />		&quot;CACHE_TIME&quot; =&gt; &quot;3600&quot;, <br />		&quot;CACHE_FILTER&quot; =&gt; &quot;N&quot;, <br />		&quot;SECTION_COUNT&quot; =&gt; &quot;5&quot;, <br />		&quot;ELEMENT_COUNT&quot; =&gt; &quot;9&quot;, <br />		&quot;LINE_ELEMENT_COUNT&quot; =&gt; &quot;3&quot; <br />		)<br />);?&gt;</pre>
+ 
+<h4>Описание параметров</h4>
+ 
+<h5 class="graytitle">Основные параметры</h5>
+ 		<dl> 		 	 <dt style="font-weight: bold;">IBLOCK_TYPE</dt> 		<dd>Тип информационного блока. Указывается один из созданных в системе 		типов инфоблоков.</dd> <dt style="font-weight: bold;">IBLOCK_ID</dt> 		<dd>Код информационного блока, из которого будет выводиться информация.</dd> </dl> 
+<h5 class="graytitle">Источник данных</h5>
+ <dl> 	<dt style="font-weight: bold;">SECTION_SORT_FIELD</dt> 		<dd>Указывается поле, по которому будет происходить сортировка разделов в TOP&rsquo;е элементов. 		 
+    <ul> 			 
+      <li><span style="font-weight: bold;">sort</span> - по индексу сортировки;</li>
+     			 
+      <li><span style="font-weight: bold;">timestamp_x</span> - по дате изменения;</li>
+     			 
+      <li><span style="font-weight: bold;">name</span> - по названию;</li>
+     			 
+      <li><span style="font-weight: bold;">ID</span> - по ID;</li>
+     			 			 
+      <li><span style="font-weight: bold;">depth_level</span> - по уровню вложенности.</li>
+     						 		</ul>
+   		Можно указать код любого другого поля. 		</dd>	 	<dt style="font-weight: bold;">SECTION_SORT_ORDER</dt> 		<dd>Порядок сортировки разделов. 		 
+    <ul> 	 
+      <li><span style="font-weight: bold;">asc</span> &ndash; по возрастанию;</li>
+     	 
+      <li><span style="font-weight: bold;">desc</span> &ndash; по убыванию.</li>
+     </ul>
+   		</dd>	 	<dt style="font-weight: bold;">ELEMENT_SORT_FIELD</dt> 		<dd>Указывается поле, по которому будет происходить сортировка фотографий внутри каждого раздела. 		 
+    <ul> 			 
+      <li><span style="font-weight: bold;">shows</span> - по количеству просмотров в среднем;</li>
+     			 
+      <li><span style="font-weight: bold;">sort</span> - по индексу сортировки;</li>
+     			 
+      <li><span style="font-weight: bold;">timestamp_x</span> - по дате изменения;</li>
+     			 
+      <li><span style="font-weight: bold;">name</span> - по названию;</li>
+     			 
+      <li><span style="font-weight: bold;">ID</span> - по ID;</li>
+     			 
+      <li><span style="font-weight: bold;">active_from</span> - по дате начала активности;</li>
+     			 
+      <li><span style="font-weight: bold;">active_to</span> - по дате окончания активности.</li>
+     		</ul>
+   		Можно указать код любого другого поля. 		 		</dd> 	<dt style="font-weight: bold;">ELEMENT_SORT_ORDER</dt> 		<dd>Порядок сортировки фотографий в разделе. 		 
+    <ul> 			 
+      <li><span style="font-weight: bold;">asc</span> &ndash; по возрастанию;</li>
+     			 
+      <li><span style="font-weight: bold;">desc</span><span style="font-weight: bold;"> </span>&ndash; по убыванию.</li>
+     		</ul>
+   		</dd> 		<dt style="font-weight: bold;">FILTER_NAME</dt> 			<dd>Задается имя переменной, в которой передается массив параметров из фильтра. Служит для определения выходящих из фильтра элементов. Поле может быть оставлено пустым, тогда используется значение по умолчанию.</dd> 	<dt style="font-weight: bold;">FIELD_CODE</dt> 		<dd>Поля, которые будут отображены на странице TOP'а элементов. Задается в виде массива с символьными именами полей в коде или в 		публичной части редактора, удерживая клавишу <span style="font-style: italic;">Ctrl</span>. Если ничего не 		выбрано, то будут выведены поля по умолчанию.</dd>	 	<dt style="font-weight: bold;">PROPERTY_CODE</dt> 		<dd>Свойства, которые будут отображены на странице 		<span lang="en-us">TOP'</span>а элементов. Задается в виде массива с символьными именами свойств в коде либо в 		публичной части редактора, удерживая клавишу <span style="font-style: italic;">Ctrl</span>. Если ничего не выбрано, то свойства отображены не будут.</dd>	 		 </dl> 
+<h5 class="graytitle">Внешний вид</h5>
+ <dl> 	<dt style="font-weight: bold;">SECTION_COUNT</dt> 		<dd>Максимальное количество выводимых разделов.</dd>	 	<dt style="font-weight: bold;">ELEMENT_COUNT</dt> 		<dd>Максимальное количество фотографий, выводимых в каждом разделе.</dd>	 	<dt style="font-weight: bold;">LINE_ELEMENT_COUNT</dt> 		<dd>Количество фотографий, выводимых в одной строке таблицы списка 		разделов.</dd>	 	 </dl> 
+<h5 class="graytitle">Шаблоны ссылок</h5>
+ <dl> 	<dt style="font-weight: bold;">SECTION_URL</dt> 		<dd>URL, ведущий на страницу с содержимым раздела. По умолчанию поле 		содержит <code style="font-style: italic;">section.php?SECTION_ID=#SECTION_ID#</code>.</dd> 	<dt style="font-weight: bold;">DETAIL_URL</dt> 		<dd>URL, ведущий на страницу с содержимым элемента раздела. По умолчанию 		поле содержит <code style="font-style: italic;">detail.php?SECTION_ID=#SECTION_ID#&amp;ELEMENT_ID=#ELEMENT_ID#</code>.</dd>		 </dl> 
+<h5 class="graytitle">Настройки кэширования</h5>
+ <dl> 	<dt style="font-weight: bold;">CACHE_TYPE</dt> 		<dd>Тип кеширования: 		 
+    <ul> 			 
+      <li><span style="font-weight: bold;">А</span> - Авто: действует при включенном автокешировании на странице <span style="font-weight: bold;">Настройки кеширования</span> (<i>Настройки &gt; Настройки продукта &gt; Автокеширование</i>) и при установленном времени кеширования в поле <b>CACHE_TIME</b>.</li>
+     			 
+      <li><span style="font-weight: bold;">Y</span> - Кешировать: должно быть установлено время кеширования (<b>CACHE_TIME</b>). Настройки 			автокеширования не влияют на данный тип кеширования.</li>
+     			 
+      <li><span style="font-weight: bold;">N</span> - Не кешировать: кеширование не происходит<span style="font-style: italic;">.</span></li>
+     		</ul>
+   		</dd> 	<dt style="font-weight: bold;">CACHE_TIME</dt> 		<dd>Время кеширования в секундах.</dd> 	<dt style="font-weight: bold;">CACHE_FILTER</dt> 		<dd>Кешировать при установленном фильтре. При установленной опции каждый результат, полученный из фильтра будет кэшироваться. Имеет смысл отмечать, если многие пользователи используют одну и туже выборку из фильтра.</dd> </dl> 
+<h5 class="graytitle">Дополнительные настройки</h5>
+ <dl> 	<dt style="font-weight: bold;">DISPLAY_PANEL</dt> 		<dd>Добавляться кнопки в режиме редактирования сайта в <span style="font-weight: bold;">Административную панель</span> и в набор кнопок области редактирования данного компонента. 
+    <br />
+   </dd> </dl> <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

@@ -1,0 +1,88 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../../index.html?page=source%2Fsettings%2Fsettings%2Fcomponents2%2Fnavigation%2Fsite_selector.php.html"; </script>
+
+<title>Выбор сайта</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../../docstyle.css);</style>
+
+<script src="../../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "settings/settings/components2/navigation/site_selector.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Выбор сайта])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Выбор сайта</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+<p>Компонент включен в шаблон дизайна сайта и служит для переключения между сайтами, созданными на базе данной копии продукта. Компонент определяет путь к корневым директориям сайтов, созданных в системе, и выводит ссылки с названиями сайтов в определенном в шаблоне дизайна сайта месте. При этом ссылка с названием текущего (просматриваемого в данный момент) сайта не подсвечивается, т.е. является неактивной.</p>
+
+<h4>Пример вызова</h4>
+
+<pre class="syntax" id="xmp5A0A6F40">&lt;?$APPLICATION-&gt;IncludeComponent(
+&quot;bitrix:main.site.selector&quot;,
+&quot;.default&quot;,
+Array(
+	&quot;SITE_LIST&quot; =&gt; array(0=&gt;&quot;*all*&quot;,), 
+	&quot;CACHE_TYPE&quot; =&gt; &quot;A&quot;, 
+	&quot;CACHE_TIME&quot; =&gt; &quot;3600&quot; 
+	)
+);?&gt;</pre>
+
+<h4>Описание параметров</h4>
+<span class="content-block-head">Источник данных</span> <dl><dt><strong>SITE_LIST</strong> </dt><dd>Список сайтов. В данном поле можно выбрать сайты, ссылки на которые будут выведены данным компонентом в публичном разделе. </dd></dl>
+<br />
+<span class="content-block-head">Настройки кеширования</span> <dl><dt><strong>CACHE_TYPE</strong> </dt><dd>Тип кеширования. Доступны следующие значения: 
+    <ul>
+      <li><i>А</i> - Авто 
+        <br />
+      Автоматическое кеширование. Действует при включенном автокешировании на странице Настройки кеширования (<i>Настройки &gt; Настройки продукта &gt; Автокеширование</i>) и при установленном времени кеширования в поле <b>CACHE_TIME</b> (сек.). </li>
+    
+      <li><i>Y</i> - Кешировать 
+        <br />
+      При данном типе кеширования время кеширования (<b>CACHE_TIME</b>) должно быть установлено. Настройки автокеширования не влияют на данный тип кеширования. </li>
+    
+      <li><i>N</i> - Не кешировать 
+        <br />
+      При выборе этого типа кеширование не происходит, независимо от настроек автокеширования (<i>Настройки &gt; Настройки продукта &gt; Автокеширование)</i> </li>
+    </ul>
+  
+    <br />
+  
+    <br />
+  </dd><dt><strong>CACHE_TIME</strong> </dt><dd>Время кеширования в секундах. По умолчанию поле содержит 3600 сек. </dd></dl><bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

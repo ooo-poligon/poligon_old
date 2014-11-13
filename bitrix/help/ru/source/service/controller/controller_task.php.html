@@ -1,0 +1,148 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fservice%2Fcontroller%2Fcontroller_task.php.html"; </script>
+
+<title>Задачи для выполнения на клиентах</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/controller/controller_task.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Контроллер::Задачи для выполнения на клиентах])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Контроллер::Задачи для выполнения на клиентах</h1></div></div>
+<div id="pagebody" valign="bottom">
+Список задач, выполняемых на клиентах контроллера. Могут быть выполнены следующие задачи: 
+<ul> 
+  <li>установка групповых настроек;</li>
+ 
+  <li>обновление сайта;</li>
+ 
+  <li>обновление счетчика;</li>
+ 
+  <li>выполнение команды;</li>
+ 
+  <li>закрытие/открытие клиентов.</li>
+ </ul>
+ 
+<h4><a name="filter"></a>Фильтр</h4>
+ 
+<p>Фильтр используется для задания параметров отбора задач, отображаемых в списке. 
+  <br />
+ </p>
+ 
+<table width="100%"> 	 
+  <tbody> 
+    <tr> 		<th width="138">Поле</th> 		<th width="554">Описание</th></tr>
+   	 
+    <tr> 		<td>Статус выполнения </td> 		<td>Поиск задач по статусам их выполнения. Возможен множественный выбор статусов.</td> 	</tr>
+   	 
+    <tr> 		<td>ID</td> 		<td>Поиск задачи по идентификатору.</td> 	</tr>
+   	 
+    <tr> 	<td>Клиент</td> 	<td>Название клиента, на котором должны выполниться (выполнялись) задачи. </td> 	</tr>
+   	 
+    <tr> 	<td>Операция</td> 	<td>Поиск задачи по названию. Если выбрано значение <span style="font-weight: bold;">любая</span>, то будут отображены все задачи. </td> 	</tr>
+   	 
+    <tr> 	<td>Период выполнения </td> 	<td>Отбор задач, с указанным периодом их выполнения. </td> 	</tr>
+   	 
+    <tr> 	<td>Период изменения </td> 	<td>Отбор задач, с указанным периодом их изменения. </td> 	</tr>
+   	 
+    <tr> 	<td>Период создания</td> 	<td>Отбор задач, с указанным периодом их создания. </td> 	</tr>
+   </tbody>
+ </table>
+ 
+<p>Чтобы отфильтровать задачи по заданным критериям поиска, нажмите кнопку <b>Найти</b>. Для отображения всех задач нажмите кнопку <b>Отменить</b>.</p>
+ 
+<h4><a name="panel"></a>Контекстная панель</h4>
+ 
+<table width="100%" class="tnormal"> 	 
+  <tbody> 
+    <tr> 		<th width="17%">Кнопка</th> 		<th width="83%">Описание</th></tr>
+   	 
+    <tr> 	<td>Обновить список </td> 	<td>Обновляет список задач. </td> 	</tr>
+   	 
+    <tr> 		<td>Настроить</td> 		<td>Позволяет перейти к диалогу настройки внешнего вида отчетной формы.</td></tr>
+   	 
+    <tr> 		<td>Excel</td> 		<td>Экспортирует данные из отображаемой таблицы в формат <span style="font-weight: bold;">MS Excel</span>.</td></tr>
+   </tbody>
+ </table>
+ 
+<h4><a name="list"></a>Список задач</h4>
+ 
+<table width="100%" class="tnormal"> 	 
+  <tbody> 
+    <tr> 		<th>Колонка</th> 		<th>Описание</th></tr>
+   	 
+    <tr> 		<td>Колонка флажков</td> 		<td>Выбор задач, к которым предполагается применить какое-либо действие.</td> 	</tr>
+   	 
+    <tr> 		<td>Меню 
+        <br />
+       действий 
+        <br />
+       <img src="../../images/iblock/a4d/admin_col_btn_action.png" width="30" height="20"></td> 		<td>Доступные действия: 			 
+        <ul> 				 
+          <li><b>Повторить</b> - повторить выполнение задачи.</li>
+         				 
+          <li><b>Отменить</b> - удалить задачу из списка.</li>
+         			</ul>
+       </td></tr>
+   	 
+    <tr> 	<td>Клиент</td> 	<td>Название клиента, на котором выполнена задача.</td> 	</tr>
+   	 
+    <tr> 	<td>Задача</td> 	<td>Название задачи.</td> 	</tr>
+   	 
+    <tr> 		<td>Состояние</td> 		<td>Один из статусов выполнения задачи: <span style="font-weight: bold;">новая</span>, <span style="font-weight: bold;">выполнена частично</span>, <span style="font-weight: bold;">успешно выполнена</span> или <span style="font-weight: bold;">ошибка выполнения</span>. </td> 	</tr>
+   	 
+    <tr> 		<td>Выполнено</td> 		<td>Дата и время выполнения задачи. </td> 	</tr>
+   	 
+    <tr> 	<td>Аргумент</td> 	<td>Аргумент задачи. Например, для задачи <span style="font-weight: bold;">Выполнить команду</span> в качестве аргумента выступает php-скрипт.</td> 	</tr>
+   	 
+    <tr> 	<td>Результат</td> 	<td>Указывается результат выполнения задачи или описание ошибки выполнения задачи. </td> 	</tr>
+   	 
+    <tr> 	<td>URL клиента </td> 	<td><span style="font-weight: bold;">URL</span>-адрес клиента. </td> 	</tr>
+   	 
+    <tr> 	<td>Дата изменения </td> 	<td>Дата и время изменения задачи.</td> 	</tr>
+   	 
+    <tr> 	<td>Дата создания </td> 	<td>Дата и время создания задачи. </td> 	</tr>
+   	 
+    <tr> 		<td>ID</td> 		<td>Идентификатор задачи. </td> 	</tr>
+   </tbody>
+ </table>
+ <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

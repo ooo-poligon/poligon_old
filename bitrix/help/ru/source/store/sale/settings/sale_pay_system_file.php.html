@@ -1,0 +1,154 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../index.html?page=source%2Fstore%2Fsale%2Fsettings%2Fsale_pay_system_file.php.html"; </script>
+
+<title>Обработка платежных систем</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "store/sale/settings/sale_pay_system_file.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Обработка платежных систем])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Обработка платежных систем</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+<h4 id="topictoctitle">В этом разделе</h4>
+<menu id="topictoc">
+  <li><a href="#examp" >Пример файла-обработчика</a> </li>
+
+  <li><a href="#results" >Результаты обработки</a> </li>
+
+  <li><a href="#files" >Предустановленные шаблоны файлов</a> </li>
+</menu>
+<p>Интеграция магазина с платежными системами осуществляется через файлы-обработчики платежных систем. Эти файлы создаются индивидуально для каждой платежной системы и вызываются непосредственно после оформления заказа, а также при выборе клиентом функции повторения платежа в персональном разделе. Файлы-обработчики могут содержать скрипт, отображающий на экране необходимый платежный документ, или форму для отправки данных электронной платежной системе.</p>
+
+<p>Общая методика работы с файлами-обработчиками такова:</p>
+
+<ul>
+  <li>скопируйте необходимые вам шаблоны файлов-обработчиков из папки <code>/bitrix/modules/sale/payment</code> в раздел по умолчанию <code>/bitrix/php_interface/include/sale_payment. Путь к пользовательским файлам-обработчикам платежных систем устанавливается в настройках модуля Интернет-магазина</code>; </li>
+
+  <li>измените файлы в папке <code>/bitrix/php_interface/include/payment</code> таким образом, чтобы они удовлетворяли вашим нуждам и соответствовали интерфейсу соответствующих платежных систем. Типичные изменения, которые необходимо произвести в этих файлах: изменение тестовых номеров и паролей к платежным системам на реальные номера и пароли, полученные при регистрации в соответствующей платежной системе; добавление изображения оттиска печати и подписей к счету; изменение внешнего вида формы в соответствии с дизайном сайта и т.п.; </li>
+
+  <li>добавьте файлы-обработчики с интерфейсами других платежных систем, если они нужны; </li>
+
+  <li>введите / измените пути к файлам-обработчикам соответствующих платежных систем в <a href="sale_pay_system_edit.php.html">форме управления</a> платежными системами. </li>
+</ul>
+
+<h4><a name="examp"></a>Пример файла-обработчика</h4>
+
+<p>Типичный файл-обработчик имеет следующий вид (на примере <a href="../../../index.php.html">http://www.secpay.com</a>)</p>
+
+<pre class="syntax" id="xmpAF7222F6">&lt;form name=&quot;secpay&quot; 
+		 action=&quot;https://www.secpay.com/java-bin/ValCard&quot; 
+		 method=POST&gt;
+
+&lt;!-- Ваш код в системе --&gt;
+Merchant Id
+&lt;input type=&quot;hidden&quot; name=&quot;merchant&quot; value=&quot;secpay&quot;&gt;
+
+&lt;!-- Уникальный номер транзакции --&gt;
+Transaction Id
+&lt;input type=&quot;hidden&quot; name=&quot;trans_id&quot; 
+		  value=&quot;Invoice_&lt;?echo $ORDER_ID ?&gt;&quot;&gt;
+
+&lt;!-- Сумма --&gt;
+The Amount
+&lt;input type=&quot;hidden&quot; name=&quot;amount&quot; 
+		  value=&quot;&lt;?echo $arOrder[&quot;PRICE&quot;]?&gt;&quot;&gt;
+
+&lt;!-- Адреса для перехода в случае успешной 
+	 и неуспешной оплаты соответственно --&gt;
+The Callback
+&lt;input type=&quot;hidden&quot; name=&quot;callback&quot; 
+		  value=&quot;http://www.mysite.com/successcallback.html;http://www.mysite.com/failcallback.html&quot;&gt;
+
+&lt;!-- Указание, что это тестовый запрос --&gt;
+&lt;input type=hidden name=&quot;options&quot; 
+		  value=&quot;test_status=true,dups=false&quot;&gt;
+
+&lt;!-- Дополнительные параметры --&gt;
+&lt;input type=hidden name=&quot;font_face&quot; value=&quot;Arial&quot;&gt;
+&lt;input type=hidden name=&quot;bgcolor&quot; value=&quot;white&quot;&gt;
+&lt;input type=&quot;submit&quot; value=&quot;Submit Order&quot;&gt;
+
+&lt;/form&gt;
+</pre>
+
+<p>Конкретный синтаксис (интерфейс общения) платежной системы необходимо уточнить в системе помощи (тех. поддержки) данной платежной системы.</p>
+
+<h4><a name="results"></a>Результаты обработки</h4>
+
+<p>Возможность автоматического получения результата и параметров оплаты заказа у электронной платежной системы зависит от конкретной платежной системы. Возможно использование двух базовых способов получения ответа от платежной системы:</p>
+
+<ul>
+  <li>если платежная система позволяет запросить статус обработки заказа, то возможно создание файла получения результата. Такую возможность предоставляет, например, платежная система <a href="http://www.assist.ru" target="_blank" >assist.ru</a>. В файле получения результата (обработки результата) необходимо с помощью скрипта запросить платежную систему о статусе и параметрах заданного заказа, а потом сохранить полученную информацию. Файл получения результата будет вызываться на команду &quot;Обновить статус&quot; формы &quot;Заказы&quot; административного раздела сайта. Примером файла получения результата может служить файл получения результата от платежной системы <a href="http://www.assist.ru" target="_blank" >assist.ru</a>: <code>/bitrix/php_interface/include/payment/assist_res.php</code>. Путь к файлу получения результата соответствующей платежной системы должен быть задан в <a href="sale_pay_system_edit.php.html">форме управления</a> платежными системами. </li>
+
+  <li>если платежная система возвращает результат сразу в ответ на запрос обработки заказа, то соответствующий код должен быть вставлен в файл-обработчик этой платежной системы. </li>
+</ul>
+
+<h4><a name="files"></a>Предустановленные шаблоны файлов</h4>
+
+<p>Шаблоны расположены в каталоге <code>/bitrix/modules/sale/payment/</code>. Для изменения шаблонов под свои нужды скопируйте их в каталог <code>/bitrix/php_interface/include/payment</code>.</p>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th width="25%">Файл</th><th width="75%">Описание</th></tr>
+  
+    <tr><td><code>assist.php</code></td><td>Файл-обработчик оплат по кредитной карте для системы <a href="http://www.assist.ru" target="_blank" >assist.ru</a></td></tr>
+  
+    <tr><td><code>assist_rapida.php</code></td><td>Файл-обработчик оплат по кредитной карте для системы &laquo;Рапида&raquo; через <a href="http://www.assist.ru" target="_blank" >assist.ru</a></td></tr>
+  
+    <tr><td><code>assist_res.php</code></td><td>Файл получения результата для системы <a href="http://www.assist.ru" target="_blank" >assist.ru</a></td></tr>
+  
+    <tr><td><code>betaling.php</code></td><td>Файл-обработчик оплат по кредитной карте для системы <a href="http://betaling.viborgnet.dk" target="_blank" >http://betaling.viborgnet.dk</a> (западная система)</td></tr>
+  
+    <tr><td><code>paycash.php</code></td><td>Файл-обработчик оплат для системы &laquo;Яндекс.Деньги&raquo;</td></tr>
+  
+    <tr><td><code>paypal.php</code></td><td>Файл-обработчик оплат по кредитной карте для системы <a href="http://www.paypal.com" target="_blank" >paypal.com</a> (западная система)</td></tr>
+  
+    <tr><td><code>post.php</code></td><td>Файл-обработчик оплат для почтового перевода.</td></tr>
+  
+    <tr><td><code>sberbank.php</code></td><td>Файл-обработчик оплат для Сбербанка (печать квитанции)</td></tr>
+  
+    <tr><td><code>webmoney.php</code></td><td>Файл-обработчик оплат для системы «Webmoney»</td></tr>
+  </tbody>
+</table>
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

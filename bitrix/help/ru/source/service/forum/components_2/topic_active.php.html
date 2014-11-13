@@ -1,0 +1,74 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../index.html?page=source%2Fservice%2Fforum%2Fcomponents_2%2Ftopic_active.php.html"; </script>
+
+<title>Новые темы</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/forum/components_2/topic_active.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Компоненты 2.0::Новые темы])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Компоненты 2.0::Новые темы</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<p>Компонент список новых тем форума. Компонент стандартный и входит в дистрибутив модуля. 
+  <br />
+ </p>
+ 
+<h4>Пример вызова</h4>
+ 
+<br />
+ 
+<pre class="syntax" id="xmpD9780763">&lt;?$APPLICATION-&gt;IncludeComponent(&quot;bitrix:forum.topic.active&quot;,&quot;&quot;,Array(<br />     &quot;URL_TEMPLATES_READ&quot; =&gt; &quot;read.php?FID=#FID#&amp;TID=#TID#&amp;MID=#MID#&quot;,<br />     &quot;URL_TEMPLATES_LIST&quot; =&gt; &quot;list.php?FID=#FID#&quot;,<br />     &quot;URL_TEMPLATES_PROFILE_VIEW&quot; =&gt; &quot;profile_view.php?UID=#UID#&quot;,<br />     &quot;FID&quot; =&gt; $_REQUEST[&quot;FID&quot;],<br />     &quot;SET_TITLE&quot; =&gt; &quot;Y&quot;,<br />     &quot;DATE_FORMAT&quot; =&gt; &quot;d.m.Y&quot;,<br />     &quot;DATE_TIME_FORMAT&quot; =&gt; &quot;d.m.Y H:i:s&quot;,<br />     &quot;SET_NAVIGATION&quot; =&gt; &quot;Y&quot;,<br />     &quot;TOPICS_PER_PAGE&quot; =&gt; &quot;20&quot;,<br />     &quot;MESSAGES_PER_PAGE&quot; =&gt; &quot;25&quot;,<br />     &quot;PATH_TO_ICON&quot; =&gt; &quot;/bitrix/images/forum/icon/&quot;,<br />     &quot;CACHE_TYPE&quot; =&gt; &quot;A&quot;,<br />     &quot;CACHE_TIME&quot; =&gt; &quot;0&quot;,<br />     &quot;WORD_LENGTH&quot; =&gt; &quot;50&quot;<br />     )<br />);?&gt;<br /></pre>
+ 
+<h4>Описание параметров</h4>
+ 
+<h5 class="graytitle">Основные параметры</h5>
+ <dl> 	<dt><b>FID</b> 	</dt><dd>Идентификатор форума. </dd></dl> 
+<h5 class="graytitle">Шаблоны ссылок</h5>
+ <dl> 	<dt><b>URL_TEMPLATES_READ</b> 	</dt><dd>Адрес страницы чтения темы форума. 	</dd><dt><b>URL_TEMPLATES_LIST</b> 	</dt><dd>Адрес страницы со списком тем форума. 	</dd><dt><b>URL_TEMPLATES_PROFILE_VIEW</b> 	</dt><dd>Адрес страницы просмотра профиля пользователя. </dd></dl> 
+<h5 class="graytitle">Настройки кеширования</h5>
+ <dl> 	<dt><b>CACHE_TYPE</b> 	</dt><dd>Тип кеширования: 	<blockquote><b>A</b> - Авто: действует при включенном кешировании в течение заданного времени; </blockquote> 	<blockquote><b>Y</b> - Кешировать: необходимо определить время кеширования; </blockquote> 	<blockquote><b>N</b> - Не кешировать: кеширования нет в любом случае.</blockquote> 	</dd><dt><b>CACHE_TIME</b> 	</dt><dd>Время кеширования, указанное в секундах. </dd></dl> 
+<h5 class="graytitle">Дополнительные настройки</h5>
+ <dl> 	<dt><b>SET_TITLE</b> 	</dt><dd>При отмеченной опции в качестве заголовка страницы будет установлено 	<b>Новые темы</b>. 	</dd><dt><b>DATE_FORMAT</b> 	</dt><dd>Формат показа даты. 	</dd><dt><b>DATE_TIME_FORMAT</b> 	</dt><dd>Формат показа даты и времени. 	</dd><dt><b>SET_NAVIGATION</b> 	</dt><dd>При отмеченной опции в навигационной цепочке будут отражен переход на страницу новых тем. 	</dd><dt><b>TOPICS_PER_PAGE</b> 	</dt><dd>Количество тем, отображаемых на одной странице. Для отображения всех тем используется постраничная навигация. 	</dd><dt><b>MESSAGES_PER_PAGE</b> 	</dt><dd>Количество сообщений, отображаемых на одной странице. Для отображения всех сообщений используется постраничная навигация. 	</dd><dt><b>PATH_TO_ICON</b> 	</dt><dd>Путь относительно корня сайта к папке с иконками к темам. 	</dd><dt><b>WORD_LENGTH</b> 	</dt><dd>Максимально допустимая длина словообразующих символов, следующих друг за другом. 
+    <br />
+   Если длина слова превысит указанное число, то символы слова будут разбавлены разрывами (при просмотре сообщений разрывы не отображаются). </dd></dl><bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

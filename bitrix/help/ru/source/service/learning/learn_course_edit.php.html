@@ -1,0 +1,196 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fservice%2Flearning%2Flearn_course_edit.php.html"; </script>
+
+<title>Создание и редактирование курса</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/learning/learn_course_edit.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Создание и редактирование курса])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Создание и редактирование курса</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<h4 id="topictoctitle">В этом разделе</h4>
+ <menu id="topictoc"> 
+  <li><a href="#panel">Контекстная панель</a></li>
+ 
+  <li><a href="#fields">Поля формы</a></li>
+ 	<menu> 	 
+    <li><a href="#course">Вкладка &quot;Курс&quot;</a></li>
+   	 
+    <li><a href="#announ">Вкладка &quot;Анонс&quot;</a></li>
+   	 
+    <li><a href="#descr">Вкладка &quot;Подробно&quot;</a></li>
+   	 
+    <li><a href="#access">Вкладка &quot;Доступ&quot;</a></li>
+   	</menu> 
+  <li><a href="#buttons">Кнопки управления</a> </li>
+ </menu> 
+<p>Для создания и редактирования учебного курса применяется форма одного и того же вида. В зависимости от того, создаете вы новый курс или редактируете существующий, некоторые поля могут присутствовать или отсутствовать на форме.</p>
+ 
+<h4><a name="panel"></a>Контекстная панель</h4>
+ 
+<table width="100%" class="tnormal"> 
+  <tbody> 
+    <tr> <th width="17%">Кнопка</th> <th width="83%">Описание</th> </tr>
+   
+    <tr> <td>Список</td> <td>Ссылка для перехода на страницу <a href="learn_course_admin.php.html">со списком учебных курсов.</a></td> </tr>
+   
+    <tr> <td>Создать</td> <td>Ссылка для перехода на страницу создания нового курса. Отображается только на странице редактирования уже существующего курса.</td> </tr>
+   
+    <tr> 	<td>Удалить</td> 	<td>Удаление курса, просматриваемого на данной странице. Команда доступна только на странице редактирования уже существующего курса.</td> 	</tr>
+   </tbody>
+ </table>
+ 
+<h2><a name="fields"></a>Поля формы </h2>
+ 
+<h4><a name="course"></a>Вкладка &quot;Курс&quot;</h4>
+Настройка основных параметров.
+<br />
+
+<br />
+ 
+<table class="tnormal"> 
+  <tbody> 
+    <tr><th width="170">Поле</th><th width="568">Описание</th></tr>
+   
+    <tr> <td width="170">ID</td> <td>Идентификатор курса. 
+        <br />
+       	 
+        <br />
+       	<b>Поле отображается только в режиме редактирования существующего курса.</b></td> </tr>
+   
+    <tr> <td width="170">Изменена</td> <td>Дата и время создания или изменения курса. 
+        <br />
+       	 
+        <br />
+       	<b>Поле отображается только в режиме редактирования существующего курса.</b></td> </tr>
+   
+    <tr> 	<td>Запись активна </td> 	<td>Признак активности курса. Если это поле отмечено, то курс и его содержимое доступно для показа в публичной части.</td> </tr>
+   
+    <tr> <td width="170">Период активности (DD.MM.YYYY)</td> <td>Указывается период активности курса. Если какое-то из полей оставлено пустым, то граница периода считается неограниченной.</td> </tr>
+   
+    <tr> <td width="170">Символическое имя </td> <td>Произвольное символическое имя курса. </td> </tr>
+   
+    <tr> <td width="170">*Сайты</td> <td>Указываются сайты, на которых данный курс будет активным. </td> </tr>
+   
+    <tr> <td width="170">*Название</td> <td>Название курса. </td> </tr>
+   
+    <tr> <td width="170">Индекс сортировки </td> <td>Вес сортировки курса; применяется при выводе курса в списке.</td> </tr>
+   </tbody>
+ </table>
+ * - Поля, обязательные для заполнения. 
+<h4> 	<a name="announ"></a>Вкладка &quot;Анонс&quot;</h4>
+Создание анонса курса
+<br />
+
+<br />
+ 
+<table class="tnormal"> 
+  <tbody> 
+    <tr><th width="170">Поле</th><th width="568">Описание</th></tr>
+   
+    <tr> <td width="170">Text / HTML</td> <td> Выбор формата создания краткого описания курса.</td> </tr>
+   
+    <tr> <td width="170">Использовать визуальный редактор</td> <td>При условии использования формата <span style="font-weight: bold;">HTML</span>, для создания анонса курса будет использоваться визуальный редактор.</td> </tr>
+   
+    <tr> <td width="170">Изображение</td> <td>Поле позволяет в краткое описание курса добавить изображение с помощью кнопки <b>Обзор...</b></td> </tr>
+   </tbody>
+ </table>
+ 
+<h4><a name="descr"></a>Вкладка &quot;Подробно&quot;</h4>
+Создание детального описания курса.
+<br />
+
+<br />
+ 
+<table class="tnormal"> 
+  <tbody> 
+    <tr><th width="170">Поле</th><th width="568">Описание</th></tr>
+   
+    <tr> <td width="170">Text / HTML</td> <td> Выбор формата создания детального описания курса.</td> </tr>
+   
+    <tr> <td width="170">Использовать визуальный редактор</td> <td>При условии использования формата <span style="font-weight: bold;">HTML</span>, для создания детального описания курса будет использоваться визуальный редактор.</td> </tr>
+   
+    <tr> <td width="170">Изображение</td> <td>Поле позволяет в детальное описание курса добавить изображение с помощью кнопки <b>Обзор...</b></td> </tr>
+   </tbody>
+ </table>
+ 
+<h4> 	<a name="access"></a>Вкладка &quot;Доступ&quot;</h4>
+
+<br />
+
+<br />
+ 
+<table class="tnormal"> 
+  <tbody> 
+    <tr><th width="170">Поле</th><th width="568">Описание</th></tr>
+   
+    <tr> <td width="170">Доступы групп пользователей</td> <td>Назначение различных прав доступа к курсам для разных групп пользователей: 
+        <ul> 	 
+          <li><b>нет доступа </b>- доступ к курсам закрыт; 		</li>
+         
+          <li><b>чтение</b> - курсы доступны на чтение; 		</li>
+         
+          <li><b>изменение </b>- право на редактирование курсов;</li>
+         			 
+          <li><b>полный доступ </b>- разрешено редактировать курсы и управлять уровнем доступа к курсам пользователей других групп. </li>
+         	</ul>
+       </td> </tr>
+   </tbody>
+ </table>
+ 
+<h4><a name="buttons"></a>Кнопки управления</h4>
+ 
+<table class="tnormal"> 
+  <tbody> 
+    <tr><th width="170" align="left">Кнопка</th><th>Описание</th></tr>
+   
+    <tr> <td width="170" align="left">Сохранить</td> <td>Сохранение внесённых изменений. Возврат к <a href="learn_course_admin.php.html">списку курсов</a>.</td> </tr>
+   
+    <tr> <td width="170" align="left">Применить</td> <td>Сохранение внесённых изменений. Продолжение редактирования курса.</td> </tr>
+   
+    <tr> <td width="170" align="left">Отменить</td> <td>Отмена внесённых изменений. Возврат к <a href="learn_course_admin.php.html">списку курсов</a>. </td> </tr>
+   </tbody>
+ </table>
+ <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

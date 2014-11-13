@@ -1,0 +1,142 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fservice%2Fcontroller%2Fcontroller_group_admin.php.html"; </script>
+
+<title>Управление группами сайтов</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/controller/controller_group_admin.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Контроллер::Управление группами сайтов])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Контроллер::Управление группами сайтов</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<p>На странице <b>Управление группами сайтов </b>(<span style="font-style: italic;">Сервисы &gt; Контроллер &gt; Группы</span>) представлена таблица, содержащая список групп сайтов-клиентов. Страница служит для добавления новых групп, а также для перехода к редактированию существующих.</p>
+ 
+<h4><a name="filter"></a>Фильтр</h4>
+ 
+<p>Фильтр используется для задания параметров отбора групп сайтов, отображаемых в списке. Следующая таблица описывает поля фильтра.</p>
+ 
+<table width="100%" style="border-collapse: collapse;"> 	 
+  <tbody> 
+    <tr> 		<th width="140">Поле</th> 		<th width="552">Описание</th></tr>
+   	 
+    <tr> 		<td>Название</td> 		<td>Поиск группы по названию. </td> 	</tr>
+   	 
+    <tr> 		<td>ID</td> 		<td>Поиск группы по идентификатору. </td> 	</tr>
+   	 
+    <tr> 	<td>Период изменения</td> 	<td>Поиск группы по изменениям за указанный период. </td> 	</tr>
+   	 
+    <tr> 	<td>Период создания</td> 	<td>Отбор групп, которые были созданы в указанный период. </td> 	</tr>
+   </tbody>
+ </table>
+ 
+<p>Для того чтобы отфильтровать группы по заданным критериям поиска, нажмите кнопку <b>Найти</b>. Для отображения всех групп нажмите кнопку <b>Отменить</b>.</p>
+ 
+<h4><a name="panel"></a>Контекстная панель</h4>
+ 
+<table width="100%" class="tnormal" style="border-collapse: collapse;"> 	 
+  <tbody> 
+    <tr> 		<th>Кнопка</th> 		<th>Описание</th></tr>
+   	 
+    <tr> 		<td>Добавить</td> 		<td>Служит для добавления <a href="controller_group_edit.php.html">новой группы сайтов</a>.</td> 	</tr>
+   	 
+    <tr> 		<td>Настроить</td> 		<td>Позволяет перейти к диалогу настройки внешнего вида отчетной формы.</td></tr>
+   	 
+    <tr> 		<td>Excel</td> 		<td>Экспорт данных из отображаемой таблицы в формат <b>MS Excel</b>.</td></tr>
+   </tbody>
+ </table>
+ 
+<h4><a name="list"></a>Список групп</h4>
+ 
+<table width="100%" class="tnormal" style="border-collapse: collapse;"> 	 
+  <tbody> 
+    <tr> 		<th width="17%">Колонка</th> 		<th width="83%">Описание</th></tr>
+   	 
+    <tr> 		<td>Колонка флажков</td> 		<td>Поле предназначено для выбора групп сайтов, к которым предполагается применить какое-либо действие.</td> 	</tr>
+   	 
+    <tr> 		<td>Меню 
+        <br />
+       действий 
+        <br />
+       <img src="../../images/iblock/4ab/admin_col_btn_action.png" width="30" height="20"></td> 		<td>При нажатии на кнопку действий конкретной группы отображается меню, позволяющее: 			 
+        <ul> 				 
+          <li><b>Редактировать</b> - отредактировать <a href="controller_group_edit.php.html">группу сайтов</a>; 				</li>
+         
+          <li><b>Удалить </b>- удалить группу. 
+            <br />
+           					<b>Примечание</b>: 					удаление группы, к которой относится хотя бы один сайт, а также группы, используемой по умолчанию, невозможно. </li>
+         			</ul>
+       </td></tr>
+   	 
+    <tr> 	<td>Название</td> 	<td>Название группы.</td> 	</tr>
+   	 
+    <tr> 		<td>Дата изменения </td> 		<td>Дата и время проведения последней модификации группы. </td> 	</tr>
+   	 
+    <tr> 		<td>Кем изменено</td> 		<td>Логин, имя и фамилия пользователя, проводившего последнее изменение группы. </td> 	</tr>
+   	 
+    <tr> 	<td>Дата создания </td> 	<td>Дата и время создания группы сайтов.</td> 	</tr>
+   	 
+    <tr> 	<td>Кем создана </td> 	<td>Логин, имя и фамилия пользователя, создавшего группу. </td> 	</tr>
+   	 
+    <tr> 	<td>Описание</td> 	<td>Произвольное описание группы сайтов. </td> 	</tr>
+   	 
+    <tr><td colspan="1">Период обновления счетчиков</td><td colspan="1">Периодичность обновления счетчиков</td></tr>
+  
+    <tr><td colspan="1">Обновлять счетчик пользователей</td><td colspan="1">Уведомление об включенном обновлении</td></tr>
+  
+    <tr><td colspan="1">Обновлять счетчик сайтов
+        <br />
+      </td><td colspan="1">Уведомление об включенном обновлении</td></tr>
+  
+    <tr><td colspan="1">Обновлять счетчик свободного пространства
+        <br />
+      </td><td colspan="1">Уведомление об включенном обновлении</td></tr>
+  
+    <tr><td colspan="1">Обновлять счетчик последней авторизации
+        <br />
+      </td><td colspan="1">Уведомление об включенном обновлении</td></tr>
+  
+    <tr> 		<td>ID</td> 		<td>Идентификатор группы. </td> 	</tr>
+   </tbody>
+ </table>
+ <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

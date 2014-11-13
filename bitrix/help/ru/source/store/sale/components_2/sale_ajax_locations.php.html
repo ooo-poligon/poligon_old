@@ -1,0 +1,108 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../index.html?page=source%2Fstore%2Fsale%2Fcomponents_2%2Fsale_ajax_locations.php.html"; </script>
+
+<title>AJAX-местоположения</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "store/sale/components_2/sale_ajax_locations.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Компоненты 2.0::AJAX-местоположения])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Компоненты 2.0::AJAX-местоположения</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+
+<p>Одностраничный компонент. <br />Компонент выводит динамическую форму выбора местоположений. 
+Используется в шаблоне компонента <a href="sale_order_full.php.html">Процедура оформления заказа (bitrix:sale.order.full)
+</a>. </p>
+
+<h4>Примеры вызова</h4>
+
+<pre class=syntax id="xmp5A0A6F40">
+&lt;?$APPLICATION-&gt;IncludeComponent(
+&quot;bitrix:sale.ajax.locations&quot;,
+&quot;&quot;,
+Array(
+	&quot;CITY_OUT_LOCATION&quot; =&gt; &quot;Y&quot;, 
+	&quot;COUNTRY_INPUT_NAME&quot; =&gt; &quot;COUNTRY&quot;, 
+	&quot;CITY_INPUT_NAME&quot; =&gt; &quot;LOCATION&quot;, 
+	&quot;COUNTRY&quot; =&gt; &quot;2&quot;, 
+	&quot;ONCITYCHANGE&quot; =&gt; &quot;&quot; 
+)
+);?&gt;</pre>
+
+<pre class=syntax id="xmp5A0A6F40">
+...
+if ($arParams[&quot;USE_AJAX_LOCATIONS&quot;] == &quot;Y&quot;):
+	$GLOBALS[&quot;APPLICATION&quot;]-&gt;IncludeComponent(
+	'bitrix:sale.ajax.locations',
+	'',
+	array(
+	&quot;AJAX_CALL&quot; =&gt; &quot;N&quot;,
+	&quot;COUNTRY_INPUT_NAME&quot; =&gt; &quot;COUNTRY_&quot;.$arProperties[&quot;FIELD_NAME&quot;],
+	&quot;CITY_INPUT_NAME&quot; =&gt; $arProperties[&quot;FIELD_NAME&quot;],
+	&quot;CITY_OUT_LOCATION&quot; =&gt; &quot;Y&quot;,
+	&quot;LOCATION_VALUE&quot; =&gt; $value,
+));
+...
+</pre>
+
+<h4>Описание параметров</h4>
+<h5 class="graytitle">Основные параметры</h5>
+<dl>
+	<dt>CITY_OUT_LOCATION</DT> 
+		<dd>[Y|N] Возвращать ID местоположения (в противном случае - города). Если опция установлена, то обработчик будет возвращать ID местоположения.
+		</DD>
+	<dt>COUNTRY_INPUT_NAME</DT> 
+		<dd>Имя поля формы для страны. Значение по умолчанию COUNTRY. </dd>
+	<DT>CITY_INPUT_NAME</DT>
+		<dd>Имя поля формы для города (местоположения). Значение по умолчанию LOCATION. </dd>
+	<DT>COUNTRY</DT>
+		<DD>Стартовое значение страны. Из списка стран можно установить номер 
+		одной страны, которая будет отображена первой в списке.</DD>
+	<DT>ONCITYCHANGE</DT>	
+		<DD>Обработчик смены значения города (местоположения). Можно указать имя 
+		клиентской функции-обработчика события &quot;выбор города&quot;.</DD>
+</dl>
+
+
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

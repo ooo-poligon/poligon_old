@@ -1,0 +1,132 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fsettings%2Fusers%2Ftask_admin.php.html"; </script>
+
+<title>Уровни доступа</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "settings/users/task_admin.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Уровни доступа])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Уровни доступа</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+<h4 id="topictoctitle">В этом разделе</h4>
+<menu id="topictoc">
+  <li><a href="#filter" >Фильтр</a> </li> <li><a href="#menu" >Контекстная панель</a> </li>
+
+  <li><a href="#list" >Список уровней доступа</a> </li>
+</menu>
+<p>Управление уровнями доступа осуществляется на странице <b>Уровни доступа</b> в административном разделе сайта:<i> Настройки &gt; Пользователи &gt; Уровни доступа</i>. На данной странице представлен список всех имеющихся уровней доступа: системных и созданных вами. Системные уровни доступа доступны только для просмотра, отредактировать и удалить их невозможно. </p>
+
+<h4><a name="filter"></a>Фильтр</h4>
+
+<p>Форма фильтра используется для выбора из списка уровней доступа в соответствии с указанными условиями. Нижеследующая таблица описывает параметры, по которым может выполняться поиск.</p>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th width="25%">Параметр</th><th width="75%">Описание</th></tr>
+  
+    <tr><td>ID</td><td>Идентификатор уровня доступа.</td></tr>
+  
+    <tr><td>Буква</td><td>Буква уровня доступа. </td></tr>
+  
+    <tr><td>Модуль</td><td>Данное поле позволяет отобразить уровни доступа только к Главному модулю либо только к модулю Управление структурой, либо все уровни доступа.</td></tr>
+  
+    <tr><td>Признак системности </td><td>Данное поле позволяет отобразить только <i>системные</i> уровни доступа либо только <i>несистемные</i> (созданные вами), либо все уровни доступа. </td></tr>
+  
+    <tr><td>Привязка</td><td>Позволяет осуществить отбор уровней доступа, привязанных к модулю, либо к папкам и файлам, либо все уровни доступа.</td></tr>
+  </tbody>
+</table>
+
+<p>Для того чтобы отобрать уровни доступа по заданным критериям поиска, нажмите кнопку &quot;Найти&quot;. Для отображения всех уровней нажмите кнопку &quot;Отменить&quot;.</p>
+
+<h4><a name="menu"></a>Контекстная панель</h4>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th width="29%">Пункт</th><th width="71%">Описание</th></tr>
+  
+    <tr><td>Добавить уровень доступа </td><td>Переход к форме <a href="task_edit.php.html">создания</a> нового уровня доступа.</td></tr>
+  
+    <tr><td>Excel</td><td>Экспортирует данные из отображаемой таблицы в формат MS Excel.</td></tr>
+  
+    <tr><td>Настроить</td><td>Позволяет перейти к диалогу настройки внешнего вида отчетной формы.</td></tr>
+  </tbody>
+</table>
+
+<h4><a name="list"></a>Список уровней доступа</h4>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th width="25%">Поле</th><th width="75%">Описание</th></tr>
+  
+    <tr><td>Колонка флажков</td><td>Поле предназначено для выбора уровней доступа, к которым предполагается применить какое-либо правило или действие.</td></tr>
+  
+    <tr><td>Действие</td><td>Действия над уровнями: 
+        <ul>
+          <li><b>Посмотреть</b> - переход к просмотру параметров уровня доступа. Данный пункт меню отображается только для системных уровней доступа. Просмотр системного уровня осуществляется на странице редактирования уровня; </li>
+        
+          <li><b>Изменить</b> - переход к <a href="task_edit.php.html">редактированию</a> уровня доступа. Данный пункт меню отображается только для несистемных уровней доступа; </li>
+        
+          <li><b>Добавить копию</b> - создание копии уровня доступа; </li>
+        
+          <li><b>Удалить</b> - удаление уровня доступа. Данный пункт меню отображается только для несистемных уровней доступа. </li>
+        </ul>
+      </td></tr>
+  
+    <tr><td>ID</td><td>Идентификатор уровня доступа.</td></tr>
+  
+    <tr><td>Название</td><td>Название уровня доступа. </td></tr>
+  
+    <tr><td>Буква</td><td>Буква уровня доступа.</td></tr>
+  
+    <tr><td>Описание</td><td>Произвольное описание уровня. </td></tr>
+  
+    <tr><td>Модуль</td><td>Модуль, к которому относится данный уровень: Главный модуль (main) или Управление структурой (fileman). </td></tr>
+  
+    <tr><td>Признак системности </td><td>Уровень доступа является системным или созданным пользователем. </td></tr>
+  
+    <tr><td>Привязка</td><td>Указывается к чему привязан уровень: к модулю или файлам и папкам. </td></tr>
+  </tbody>
+</table>
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

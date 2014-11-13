@@ -1,0 +1,224 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fservice%2Fsubscribe%2Fsubscr_admin.php.html"; </script>
+
+<title>Подписчики</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/subscribe/subscr_admin.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Подписчики])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Подписчики</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<h4 id="topictoctitle">В этом разделе</h4>
+ <menu id="topictoc"> 
+  <li><a href="#filter">Фильтр</a></li>
+ 
+  <li><a href="#list">Список подписчиков</a></li>
+ 
+  <li><a href="#create">Как создать подписчика</a></li>
+ 
+  <li><a href="#edit">Как изменить данные подписчика</a> </li>
+ </menu> 
+<p>Форма <span style="font-weight: bold;">Подписчики</span><font class="titletext"> </font>(<i>Сервисы &gt; Рассылки &gt; Подписчики</i>) предназначена для управления пользователями, подписанными на получение новостей. С помощью этой формы можно:</p>
+ 
+<ul> 	 
+  <li>в форме наглядной таблицы просматривать данные подписчиков; 	</li>
+ 
+  <li>создавать новых подписчиков; 	</li>
+ 
+  <li>редактировать параметры подписчиков; 	</li>
+ 
+  <li>удалять подписчиков. </li>
+ </ul>
+ 
+<p>Форма <span style="font-weight: bold;">Подписчики</span><font class="titletext"> </font>содержит две основные области: <b>фильтр</b> и <b>список </b><span style="font-weight: bold;">подписчиков</span>.</p>
+ 
+<h4><a name="filter"></a>Фильтр</h4>
+ 
+<p>Задание параметров отбора подписчиков, которые отображаются в списке. 
+  <br />
+ </p>
+ 
+<ul> 	 
+  <li>идентификатор подписчика; 	</li>
+ 
+  <li>диапазон дат, в пределах которых подписчик могло быть добавлен или изменен в базе данных; 	</li>
+ 
+  <li>адрес электронной почты; 	</li>
+ 
+  <li>статус анонимности; 	</li>
+ 
+  <li>имя; 	</li>
+ 
+  <li>другие критерии. </li>
+ </ul>
+ 
+<p>Нижеследующая таблица описывает поля фильтра.</p>
+ 
+<table class="tnormal"> 	 
+  <tbody> 
+    <tr> 		<th width="200">Поле</th> 		<th>Описание</th></tr>
+   	 
+    <tr> 		<td>ID</td> 		<td>Идентификатор подписчика, под которым он зарегистрирован в базе данных. 
+        <br />
+       Поле позволяет использовать язык запросов для задания сложных условий.</td></tr>
+   	 
+    <tr> 		<td>Дата добавления</td> 		<td>Диапазон дат, в пределах которых искомые подписчики могли быть добавлены в базу данных.</td></tr>
+   	 
+    <tr> 		<td>Дата изменения</td> 		<td>Диапазон дат, в пределах которых данные искомых подписчиков могли быть изменены.</td></tr>
+   	 
+    <tr> 		<td>E-Mail</td> 		<td>Адрес электронной почты подписчика, используемый для отсылки сообщений.</td></tr>
+   	 
+    <tr> 		<td>Анонимный</td> 		<td>Поле позволяет включать в отчет подписчиков: 			 
+        <ul> 				 
+          <li>анонимных (не зарегистрированных на сайте) подписчиков; 				</li>
+         
+          <li>зарегистрированных на сайте подписчиков; 				</li>
+         
+          <li>всех подписчиков, как анонимных, так и зарегистрированных. 		</li>
+         </ul>
+       </td></tr>
+   	 
+    <tr> 		<td>ID пользователя</td> 		<td>Идентификатор <span style="font-weight: bold;">пользователя</span>, под которым он зарегистрирован на сайте. (Сравните с <span style="font-weight: bold;">ID</span>.) 
+        <br />
+       Поле значимо лишь для зарегистрированных (не анонимных пользователей).</td></tr>
+   	 
+    <tr> 		<td>Подписчик</td> 		<td>Персональные данные пользователя, по которым следует произвести отбор. 
+        <br />
+       Поле значимо лишь для зарегистрированных (не анонимных пользователей).</td></tr>
+   	 
+    <tr> 		<td>Подтверждено</td> 		<td>Позволяет отобразить подписчиков:&nbsp; 			 
+        <ul> 				 
+          <li>подтвердивших свою подписку; 				</li>
+         
+          <li>не подтвердивших подписки; 				</li>
+         
+          <li>всех подписчиков. </li>
+         </ul>
+       </td></tr>
+   	 
+    <tr> 		<td>Активно</td> 		<td>Поле позволяет включать в отчет подписчиков, чей статус подписки: 			 
+        <ul> 				 
+          <li>активен (подписчик получает сообщения); 				</li>
+         
+          <li>не активен (подписчик не получает сообщения); 				</li>
+         
+          <li>всех подписчиков. </li>
+         </ul>
+       </td></tr>
+   	 
+    <tr> 		<td>Формат</td> 		<td>Фильтрация подписчиков по желаемому формату получаемых сообщений.</td></tr>
+   	 
+    <tr> 		<td>Рассылка</td> 		<td>Отображение подписчиков, которые подписаны на выбранные рассылки. Для выбора нескольких рассылок воспользуйтесь клавишей <b>Ctrl</b> при нажатии кнопки мыши.</td></tr>
+   </tbody>
+ </table>
+ 
+<p>Чтобы отфильтровать сообщения по заданным критериям поиска, нажмите кнопку <b>Найти</b>. Для отображения всех сообщений, нажмите кнопку <b>Отменить</b>.</p>
+ 
+<h4>Контекстная панель</h4>
+ 
+<table width="100%" class="tnormal"> 	 
+  <tbody> 
+    <tr> 		<th>Кнопка</th> 		<th>Описание</th></tr>
+   	 
+    <tr> 		<td>Добавить</td> 		<td>Добавление нового подписчика.</td></tr>
+   	 
+    <tr> 		<td>Настроить</td> 		<td>Переход к диалогу настройки внешнего вида отчетной формы.</td></tr>
+   	 
+    <tr> 		<td>Excel</td> 		<td>Экспорт данных из отображаемой таблицы в формат <span style="font-weight: bold;">MS Excel</span>.</td></tr>
+   </tbody>
+ </table>
+ 
+<h4><a name="list"></a>Список подписчиков</h4>
+ 
+<p>Фильтрация списка подписчиков согласно установленным критериям. Данные подписчика могут быть отредактированы и удалены.</p>
+ 
+<table class="wordtable"> 	 
+  <tbody> 
+    <tr> 		<th width="200">Колонка</th> 		<th>Описание</th></tr>
+   	 
+    <tr> 		<th style="vertical-align: top;">Колонка флажков</th> 		<td>Выбор подписчиков, к которым предполагается применить какое-либо правило или действие.</td></tr>
+   	 
+    <tr> 		<th style="vertical-align: top;">Меню 
+        <br />
+       действий 
+        <br />
+       <img src="../../images/iblock/b06/admin_col_btn_action.png" width="30" height="20"></th> 		<td>Меню, позволяющее <b>изменить </b>или <b>удалить</b> подписчика.</td></tr>
+   	 
+    <tr> 		<th style="vertical-align: top;">ID</th> 		<td>Идентификатор подписчика, под которым он зарегистрирован в базе данных.&nbsp;</td></tr>
+   	 
+    <tr> 		<th style="vertical-align: top;">Добавлено</th> 		<td>Дата добавления данного подписчика в базу данных.</td></tr>
+   	 
+    <tr> 		<th style="vertical-align: top;">Адрес</th> 		<td>Адрес электронной почты подписчика, используемый для отсылки сообщений.</td></tr>
+   	 
+    <tr> 		<th style="vertical-align: top;">Подписчик</th> 		<td>Данные о подписчике: анонимный или его регистрационные данные.</td></tr>
+   	 
+    <tr> 		<th style="vertical-align: top;">Подтв.</th> 		<td>Статус подтверждения подписки. <b>Да</b> - подписчик подтвердил желание получать сообщения подписанных рассылок, и <b>нет</b> - в противном случае.</td></tr>
+   	 
+    <tr> 		<th style="vertical-align: top;">Акт.</th> 		<td>Статус активности подписки.&nbsp; 
+        <br />
+       Если подписка активна, то сообщения данному подписчику отсылаются. 
+        <br />
+       </td></tr>
+   	 
+    <tr> 		<th style="vertical-align: top;">Формат</th> 		<td>Желаемый подписчиком формат сообщений. </td></tr>
+   	 
+    <tr> 		<th style="vertical-align: top;">Изменено</th> 		<td>Дата изменения параметров подписки. </td></tr>
+   	 
+    <tr> 		<th style="vertical-align: top;">Время подтверждения </th> 		<td>Дата создания подписки. </td></tr>
+   	 
+    <tr> 		<th style="vertical-align: top;">Код подтверждения </th> 		<td>Код подтверждения подписки. </td></tr>
+   </tbody>
+ </table>
+ 
+<h4><a name="create"></a>Как создать подписчика</h4>
+ 
+<p>Для создания подписчика служит кнопка <b>Добавить</b>, открывающая <a href="add_subscriber.php.html">форму добавления/редактирования адреса</a>. 
+  <br />
+ </p>
+ 
+<h4><a name="edit"></a>Как изменить данные подписчика</h4>
+ 
+<p>Для изменения регистрационных данных подписчика дважды кликните на строке соответствующего подписчика.</p>
+ <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

@@ -1,0 +1,140 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../index.html?page=source%2Fservice%2Fforum%2Fcomponents_2%2Fuser_profile_view.php.html"; </script>
+
+<title>Пользователь (профиль)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/forum/components_2/user_profile_view.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Компоненты 2.0::Пользователь (профиль)])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Компоненты 2.0::Пользователь (профиль)</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+
+
+
+<p>Данный компонент служит для просмотра профиля пользователя форума. Компонент является стандартным и входит в дистрибутив модуля.</p>
+<h4>Пример вызова</h4>
+<pre class=syntax id="xmpD5186E4D">
+&lt;?$APPLICATION-&gt;IncludeComponent(&quot;bitrix:forum.user.profile.view&quot;,&quot;&quot;,Array(
+     &quot;USER_PROPERTY_NAME&quot; =&gt; &quot;&quot;,
+     &quot;SET_TITLE&quot; =&gt; &quot;Y&quot;,
+     &quot;SET_NAVIGATION&quot; =&gt; &quot;Y&quot;,
+     &quot;USER_PROPERTY&quot; =&gt; array(),
+     &quot;CACHE_TYPE&quot; =&gt; &quot;A&quot;,
+     &quot;CACHE_TIME&quot; =&gt; &quot;0&quot;,
+     &quot;DATE_FORMAT&quot; =&gt; &quot;d.m.Y&quot;,
+     &quot;DATE_TIME_FORMAT&quot; =&gt; &quot;d.m.Y H:i:s&quot;,
+     &quot;URL_TEMPLATES_READ&quot; =&gt; &quot;read.php?FID=#FID#&amp;TID=#TID#&amp;MID=#MID#&quot;,
+     &quot;URL_TEMPLATES_PROFILE&quot; =&gt; &quot;profile.php?UID=#UID#&quot;,
+     &quot;URL_TEMPLATES_USER_LIST&quot; =&gt; &quot;user_list.php&quot;,
+     &quot;URL_TEMPLATES_PM_LIST&quot; =&gt; &quot;pm_list.php&quot;,
+     &quot;URL_TEMPLATES_MESSAGE_SEND&quot; =&gt; &quot;message_send.php?TYPE=#TYPE#&amp;UID=#UID#&quot;,
+     &quot;URL_TEMPLATES_USER_POST&quot; =&gt; &quot;user_post.php?UID=#UID#&amp;mode=#mode#&quot;,
+     &quot;UID&quot; =&gt; $_REQUEST[&quot;UID&quot;]
+     )
+);?&gt;
+</pre>
+
+<h4>Описание параметров</h4>
+
+<h5 class="graytitle">Дополнительно</h5>
+<dl>
+
+	<dd></dd>
+	<dt>USER_PROPERTY_NAME</dt>
+	<dd> Название закладки с дополнительными свойствами пользователя.</dd></dl>
+	
+<h5 class="graytitle">Основные параметры</h5>
+<dl>
+
+	<dt>UID</dt>
+	<dd>Идентификатор пользователя.</dd></dl><h5 class="graytitle">Шаблоны ссылок</h5>
+<dl>
+
+	<dt>URL_TEMPLATES_READ</dt>
+	<dd>Адрес страницы чтения темы форума.</dd>
+	<dt>URL_TEMPLATES_PROFILE</dt>
+	<dd>Адрес страницы редактирования профиля пользователя.</dd>
+	<dt>URL_TEMPLATES_USER_LIST</dt>
+	<dd>Адрес страницы со списком зарегистрированных пользователей форума.</dd>
+	<dt>URL_TEMPLATES_PM_LIST</dt>
+	<dd>Адрес страницы личных сообщений пользователя.</dd>
+	<dt>URL_TEMPLATES_MESSAGE_SEND</dt>
+	<dd> Адрес страницы отправки сообщений.</dd>
+	<dt>URL_TEMPLATES_USER_POST</dt>
+	<dd> Адрес страницы со списком всех сообщений  пользователя. </dd></dl>
+<h5 class="graytitle">Настройки кеширования</h5>
+<dl>
+
+	<dt>CACHE_TYPE</dt>
+	<dd> Тип кеширования:
+    		<blockquote><i>A</i> - Авто: действует при включенном кешировании в течение заданного времени; </blockquote>
+    		<blockquote><i>Y</i> - Кешировать: для кеширования необходимо определить только время кеширования; </blockquote>
+    		<blockquote><i>N</i> - Не кешировать: кеширования нет в любом случае.</blockquote>
+	</dd>
+	<dt>CACHE_TIME</dt>
+	<dd> Время кеширования, указанное в секундах.</dd></dl>
+	<h5 class="graytitle">Дополнительные настройки</h5>
+<dl>
+
+	<dt>SET_TITLE</dt>
+		<dd>[Y/N] При отмеченной опции в качестве заголовка страницы будет установлено имя пользователя.</dd>
+	<dt>SET_NAVIGATION</dt>
+		<dd>[Y/N] 
+
+
+При отмеченной опции в навигационной цепочке будут отражен переход на страницу профиля пользователя.</dd>
+	<dt>USER_PROPERTY</dt>
+		<dd>Указываются  свойства пользователя, которые будут показаны на закладке с названием, заданным в параметре USER_PROPERTY_NAME.</dd>
+	    <dt>DATE_FORMAT</dt>
+	    <dd>Формат показа даты.</dd>
+	    <dt>DATE_TIME_FORMAT</dt>
+	    <dd>Формат показа даты и времени.</dd>
+	    
+	</dl>
+
+
+
+
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

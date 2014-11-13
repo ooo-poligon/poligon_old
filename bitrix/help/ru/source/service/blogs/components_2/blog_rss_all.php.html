@@ -1,0 +1,90 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../index.html?page=source%2Fservice%2Fblogs%2Fcomponents_2%2Fblog_rss_all.php.html"; </script>
+
+<title>RSS блогов по группам/сайтам</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/blogs/components_2/blog_rss_all.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Компоненты 2.0::RSS блогов по группам/сайтам])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Компоненты 2.0::RSS блогов по группам/сайтам</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<p>Компонент выводит <span style="font-weight: bold;">RSS</span> блогов группы или сайта в заданном формате. Компонент стандартный и входит в дистрибутив модуля.</p>
+ 
+<h4>Пример вызова</h4>
+ 
+<br />
+ 
+<pre class="syntax" id="xmp5A0A6F40">&lt;?$APPLICATION-&gt;IncludeComponent(&quot;bitrix:blog.rss.all&quot;,&quot;&quot;,Array(<br />     &quot;MESSAGE_COUNT&quot; =&gt; &quot;10&quot;,<br />     &quot;PATH_TO_POST&quot; =&gt; &quot;blog_post.php?page=post&amp;blog=#blog#&amp;post_id=#post_id#&quot;,<br />     &quot;PATH_TO_USER&quot; =&gt; &quot;blog_user.php?page=user&amp;user_id=#user_id#&quot;,<br />     &quot;BLOG_VAR&quot; =&gt; &quot;blog&quot;,<br />     &quot;POST_VAR&quot; =&gt; &quot;post_id&quot;,<br />     &quot;USER_VAR&quot; =&gt; &quot;user_id&quot;,<br />     &quot;PAGE_VAR&quot; =&gt; &quot;page&quot;,<br />     &quot;GROUP_ID&quot; =&gt; $group_id,<br />     &quot;TYPE&quot; =&gt; $type,<br />     &quot;CACHE_TYPE&quot; =&gt; &quot;A&quot;,<br />     &quot;CACHE_TIME&quot; =&gt; &quot;86400&quot;<br />     )<br />);?&gt;</pre>
+ 
+<h4>Описание параметров</h4>
+ 
+<h5 class="graytitle">Источник данных</h5>
+ <dl> 	<dt style="font-weight: bold;"><span class="syntax">GROUP_ID</span> 	</dt><dd>Код, в котором передается идентификатор группы блогов. 	</dd></dl> 
+<h5 class="graytitle">Внешний вид</h5>
+ <dl> 	<dt style="font-weight: bold;"><span class="syntax">MESSAGE_COUNT</span> 	</dt><dd>Число сообщений блогов, данные из которых будут выгружены в соответствующем формате. </dd></dl> 
+<h5 class="graytitle">Шаблоны ссылок</h5>
+ <dl> 	<dt><span style="font-weight: bold;">PATH_TO_POST</span> 	</dt><dd>Путь к странице просмотра сообщения блога. 	</dd><dt><span style="font-weight: bold;">PATH_TO_USER</span> 	</dt><dd>Путь к странице профиля пользователя. </dd></dl> 
+<h5 class="graytitle">Настройки кеширования</h5>
+ <dl> 	<dt><span style="font-weight: bold;">CACHE_TYPE</span> 	</dt><dd>Тип кеширования: 	 
+    <ul> 		 
+      <li><span style="font-weight: bold;">A</span> - Авто: действует при включенном кешировании в течение заданного времени; 		</li>
+     
+      <li><i style="font-weight: bold; font-style: italic;">Y</i><span style="font-weight: bold; font-style: italic;"> </span>- Кешировать: необходимо определить время кеширования; 		</li>
+     
+      <li><span style="font-weight: bold;">N</span> - Не кешировать: кеширования нет в любом случае. </li>
+     </ul>
+   	</dd><dd> 	 
+    <br />
+   </dd><dt><span style="font-weight: bold;">CACHE_TIME</span> 	</dt><dd>Время кеширования, указанное в секундах. </dd></dl> 
+<h5 class="graytitle">Дополнительные настройки</h5>
+ <dl> 	<dt style="font-weight: bold;"><span class="syntax">TYPE</span> 	</dt><dd>Указывается формат экспорта данных: 	 
+    <ul> 		 
+      <li><span style="font-weight: bold;">rss1</span> - формат <span style="font-weight: bold;">RSS .92</span>; 		</li>
+     
+      <li><span style="font-weight: bold;">rss2</span> - формат <span style="font-weight: bold;">RSS 2.0</span>; 		</li>
+     
+      <li><span style="font-weight: bold;">atom</span> - формат <span style="font-weight: bold;">Atom .03</span>; </li>
+     </ul>
+   либо тип экспорта указывается с помощью кода. 	</dd><dt><span style="font-weight: bold;">BLOG_VAR</span> 	</dt><dd>Имя переменной, которой передается ID блога. 	</dd><dt><span style="font-weight: bold;">POST_VAR</span> 	</dt><dd>Имя переменной, которой передается ID сообщения. 	</dd><dt><span style="font-weight: bold;">USER_VAR</span> 	</dt><dd>Имя переменной, которой передается ID пользователя блога. 	</dd><dt><span style="font-weight: bold;">PAGE_VAR</span> 	</dt><dd>Имя переменной, которой передается страница блога. </dd></dl><bitrix:sys name="feedbackform"></bitrix:sys> <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

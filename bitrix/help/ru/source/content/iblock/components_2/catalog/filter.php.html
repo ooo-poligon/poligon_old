@@ -1,0 +1,76 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../../index.html?page=source%2Fcontent%2Fiblock%2Fcomponents_2%2Fcatalog%2Ffilter.php.html"; </script>
+
+<title>Фильтр по элементам</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../../docstyle.css);</style>
+
+<script src="../../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "content/iblock/components_2/catalog/filter.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Каталог::Фильтр по элементам])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Каталог::Фильтр по элементам</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<p>Компонент выводит форму фильтра для фильтрации элементов информационых блоков. Компонент стандартный и входит в дистрибутив модуля.</p>
+ 
+<h4>Пример вызова</h4>
+ 
+<pre class="syntax" id="xmp5A0A6F40">&lt;?$APPLICATION-&gt;IncludeComponent(&quot;bitrix:catalog.filter&quot;,&quot;&quot;,Array(<br />     &quot;IBLOCK_TYPE&quot; =&gt; &quot;books&quot;,<br />     &quot;IBLOCK_ID&quot; =&gt; &quot;30&quot;,<br />     &quot;FILTER_NAME&quot; =&gt; &quot;arrFilter&quot;,<br />     &quot;FIELD_CODE&quot; =&gt; Array(&quot;NAME&quot;),<br />     &quot;PROPERTY_CODE&quot; =&gt; Array(&quot;YEAR&quot;,&quot;PUBLISHER&quot;),<br />     &quot;PRICE_CODE&quot; =&gt; Array(&quot;WHOLESALE&quot;,&quot;RETAIL&quot;),<br />     &quot;CACHE_TYPE&quot; =&gt; &quot;A&quot;,<br />     &quot;CACHE_TIME&quot; =&gt; &quot;3600&quot;,<br />     &quot;LIST_HEIGHT&quot; =&gt; &quot;5&quot;,<br />     &quot;TEXT_WIDTH&quot; =&gt; &quot;20&quot;,<br />     &quot;NUMBER_WIDTH&quot; =&gt; &quot;5&quot;<br />     )<br />);?&gt;</pre>
+ 
+<h4>Описание параметров</h4>
+ 
+<h5 class="graytitle">Источник данных </h5>
+ <dl> 	<dt><span style="font-weight: bold;">IBLOCK_TYPE</span> 	</dt><dd>Тип информационного блока.</dd><dt><span style="font-weight: bold;">IBLOCK_ID</span> 	</dt><dd>Идентификатор информационного блока выбранного типа. </dd> 	<dt><span style="font-weight: bold;">FILTER_NAME</span> 	</dt><dd>Имя массива со значениями фильтра для фильтрации элементов. Если имя не указано, то будет использоваться значение по умолчанию.</dd> 	<dt><span style="font-weight: bold;">FIELD_CODE</span> 	</dt><dd>Необходимые для показа поля фильтра. </dd> 	<dt><span style="font-weight: bold;">PROPERTY_CODE</span> 	</dt><dd>Свойства инфоблока, которые будут выступать в качестве полей фильтра. </dd> </dl> 
+<h5 class="graytitle">Внешний вид </h5>
+ <dl> 	<dt><span style="font-weight: bold;">LIST_HEIGHT</span> 	</dt><dd>Высота списков множественного выбора, отображаемых в фильтре. 	</dd><dt><span style="font-weight: bold;">TEXT_WIDTH</span> 	</dt><dd>Ширина текстового поля ввода в форме фильтра. 	</dd><dt><span style="font-weight: bold;">NUMBER_WIDTH</span> 	</dt><dd>Ширина полей ввода для числовых интервалов. </dd></dl> 
+<h5 class="graytitle">Настройки кеширования</h5>
+ <dl> 	<dt><span style="font-weight: bold;">CACHE_TYPE</span> 	</dt><dd>Тип кеширования: 	 
+    <ul> 		 
+      <li><span style="font-weight: bold;">A</span> - Авто: действует при включенном кешировании в течение заданного времени; 		</li>
+     
+      <li><span style="font-weight: bold;">Y</span><span style="font-weight: bold;"> </span>- Кешировать: необходимо определить время кеширования; 		</li>
+     
+      <li><span style="font-weight: bold;">N</span> - Не кешировать: кеширования нет в любом случае. </li>
+     </ul>
+   	</dd><dt><span style="font-weight: bold;">CACHE_TIME</span> 	</dt><dd>Время кеширования, указанное в секундах.</dd></dl> 	 
+<h5 class="graytitle">Цены</h5>
+ <dl> 	<dt><span style="font-weight: bold;">PRICE_CODE</span> 	</dt><dd>Указываются типы цен для выводимых элементов. Если не задан ни один из типов, то цена товара и кнопки <span style="font-weight: bold;">Купить</span> и <span style="font-weight: bold;">В корзину</span> показаны не будут. </dd></dl> <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

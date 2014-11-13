@@ -1,0 +1,90 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../../index.html?page=source%2Fcontent%2Fiblock%2Fcomponents_2%2Fnews%2Fnews_calendar.php.html"; </script>
+
+<title>Календарь</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../../docstyle.css);</style>
+
+<script src="../../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "content/iblock/components_2/news/news_calendar.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Календарь])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Календарь</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<p>Одностраничный компонент, который служит для формирования и вывода календаря новостей или событий. Настройки позволяют настраивать внешний вид календаря, указывать его тип. Также компонент содержит стандартные настройки управления шаблоном, кешированием и т.д.</p>
+ 
+<h4>Пример вызова</h4>
+ 
+<pre class="syntax" id="xmp5A0A6F40">&lt;?$APPLICATION-&gt;IncludeComponent(<br />	&quot;bitrix:news.calendar&quot;,<br />	&quot;&quot;,<br />	Array(<br />		&quot;IBLOCK_TYPE&quot; =&gt; &quot;news&quot;, <br />		&quot;IBLOCK_ID&quot; =&gt; &quot;33&quot;, <br />		&quot;MONTH_VAR_NAME&quot; =&gt; &quot;month&quot;, <br />		&quot;YEAR_VAR_NAME&quot; =&gt; &quot;year&quot;, <br />		&quot;WEEK_START&quot; =&gt; &quot;1&quot;, <br />		&quot;DATE_FIELD&quot; =&gt; &quot;DATE_ACTIVE_FROM&quot;, <br />		&quot;TYPE&quot; =&gt; &quot;EVENTS&quot;, <br />		&quot;SHOW_YEAR&quot; =&gt; &quot;Y&quot;, <br />		&quot;SHOW_TIME&quot; =&gt; &quot;Y&quot;, <br />		&quot;TITLE_LEN&quot; =&gt; &quot;0&quot;, <br />		&quot;SET_TITLE&quot; =&gt; &quot;Y&quot;, <br />		&quot;SHOW_CURRENT_DATE&quot; =&gt; &quot;Y&quot;, <br />		&quot;SHOW_MONTH_LIST&quot; =&gt; &quot;Y&quot;, <br />		&quot;NEWS_COUNT&quot; =&gt; &quot;0&quot;, <br />		&quot;DETAIL_URL&quot; =&gt; &quot;news_detail.php?ID=#ELEMENT_ID#&quot;, <br />		&quot;CACHE_TYPE&quot; =&gt; &quot;A&quot;, <br />		&quot;CACHE_TIME&quot; =&gt; &quot;3600&quot; <br />		)<br />);?&gt;<br /></pre>
+ 
+<h4>Описание параметров</h4>
+ 
+<h5 class="graytitle">Основные параметры</h5>
+ <dl> 		 	 <dt style="font-weight: bold;">IBLOCK_TYPE</dt> 		<dd>Тип информационного блока.</dd> <dt style="font-weight: bold;">IBLOCK_ID</dt> 		<dd>Код информационного блока.</dd> 	<dt style="font-weight: bold;">MONTH_VAR_NAME</dt> 		<dd>Имя переменной для месяца. Имя переменной, в которой передается номер месяца.</dd>	 	<dt style="font-weight: bold;">YEAR_VAR_NAME</dt> 		<dd>Имя переменной для года. Имя переменной, в которой передается номер года.</dd>	 	<dt style="font-weight: bold;">WEEK_START</dt> 		<dd>Начало недели. Устанавливается день отсчета недели: понедельник 		либо воскресенье.</dd> </dl> 
+<h5 class="graytitle">Внешний вид</h5>
+ <dl> 	<dt style="font-weight: bold;">SHOW_YEAR</dt> 		<dd>Показывать переход по годам. При отсутствии опции в шаблоне по умолчанию не будет выведена ссылка на предыдущий год. В шаблоне <span style="font-weight: bold;">compact</span> в любом случае не выводится.</dd> 	<dt style="font-weight: bold;">SHOW_TIME</dt> 		<dd>Показывать время новостей. При отмеченной опции рядом с названием элемента будет выведено время начала активности, если оно определено для элемента (действует для шаблона по умолчанию).</dd> 	<dt style="font-weight: bold;">TITLE_LEN</dt> 		<dd>Длина заголовка (0 - не ограничивать) выводимая в календаре. </dd> 	<dt style="font-weight: bold;">SHOW_CURRENT_DATE</dt> 		<dd>Показывать текущий месяц и год. 		При установленной опции будут выведены текущий месяц 		и год над календарем в правом углу.</dd> 	<dt style="font-weight: bold;">SHOW_MONTH_LIST</dt> 		<dd>Показывать выпадающий список месяцев. В шаблоне по умолчанию при отмеченной опции будет выведен выпадающий список месяцев. В противном случае только ссылки на предыдущий и следующий месяцы.</dd> 	<dt style="font-weight: bold;">NEWS_COUNT</dt> 		<dd>Количество новостей в день (0 - не ограничивать). Если число отлично от нуля, то будут выбраны элементы с меньшим временем начала активности. Если время не определено, то элементы будут выбраны по индексу сортировки. </dd> </dl> 
+<h5 class="graytitle">Шаблоны ссылок</h5>
+ <dl> 	<dt style="font-weight: bold;">DETAIL_URL</dt> 		<dd>URL, ведущий на страницу с содержимым элемента инфоблока в 		календаре.</dd> </dl> 
+<h5 class="graytitle">Настройки кеширования</h5>
+ <dl> 	<dt style="font-weight: bold;">CACHE_TYPE</dt> 		<dd>Тип кеширования: 		 
+    <ul> 			 
+      <li><span style="font-weight: bold;">А</span><span style="font-weight: bold;"> </span>- Авто: действует при включенном автокешировании на странице <span style="font-weight: bold;">Настройки кеширования</span> (<i>Настройки &gt; Настройки продукта &gt; Автокеширование</i>) и при установленном времени кэширования в поле <b>CACHE_TIME</b>.</li>
+     			 
+      <li><span style="font-weight: bold;">Y</span> - Кешировать:должно быть установлено время кеширования (<b>CACHE_TIME</b>). Настройки 			автокеширования не влияют на данный тип.</li>
+     			 
+      <li><span style="font-weight: bold;">N</span> - Не кешировать: кеширование не происходит<span style="font-style: italic;">.</span></li>
+     		</ul>
+   		</dd> 	<dt style="font-weight: bold;">CACHE_TIME</dt> 		<dd>Время кеширования в секундах.</dd> </dl> 
+<h5 class="graytitle">Дополнительные настройки</h5>
+ <dl> 	<dt style="font-weight: bold;">DATE_FIELD</dt> 		<dd>Поле даты. Если установлен тип календаря <span style="font-weight: bold;">Событийный</span> (<span style="font-weight: bold;">EVENTS</span>), то здесь установливается поле, по которому будет происходить &quot;раскладывание&quot; событий по датам, сортировка, выборка. 		 
+    <br />
+   		Доступны следующие значения: 
+    <ul>		 	 
+      <li><span style="font-weight: bold;">DATE_ACTIVE_TO</span>&nbsp; - Дата активности по;</li>
+     	 
+      <li><span style="font-weight: bold;">DATE_ACTIVE_FROM</span> - Дата активности с;</li>
+     	 
+      <li><span style="font-weight: bold;">TIME_STAMP_X</span> - Время последнего изменения;</li>
+     	 
+      <li><span style="font-weight: bold;">DATE_CREATE</span> - Дата создания;</li>
+     </ul>
+   </dd> 	<dt style="font-weight: bold;">TYPE</dt> 		<dd>Тип календаря. Тип календаря может быть новостной (<span style="font-weight: bold;">NEWS</span>) и событийный (<span style="font-weight: bold;">EVENTS</span>). В новостном 		календаре все элементы сортируются и раскладываются по дате начала активности. В событийном календаре это будет происходить в соответствии с настройками поля даты.</dd> 	<dt style="font-weight: bold;">SET_TITLE</dt> 		<dd>Устанавливать заголовок страницы. При отмеченной опции в качестве заголовка страницы будет выведен текущий месяц и год.</dd>	 </dl> <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

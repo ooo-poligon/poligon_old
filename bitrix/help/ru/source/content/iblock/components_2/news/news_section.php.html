@@ -1,0 +1,238 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../../index.html?page=source%2Fcontent%2Fiblock%2Fcomponents_2%2Fnews%2Fnews_section.php.html"; </script>
+
+<title>Новости (комплексный компонент)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../../docstyle.css);</style>
+
+<script src="../../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "content/iblock/components_2/news/news_section.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Новости (комплексный компонент)])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Новости (комплексный компонент)</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+<p>Комплексный компонент позволяет создать новостной раздел на сайте. Доступен просмотр детальной информации, списка элементов, настройка экспорта в <b>rss</b>, организация голосования за новости (или другие элементы инфоблоков), настройка отзывов, вывода материалов по темам, настройки <b>ЧПУ</b> и многое другое.</p>
+ 
+<h4>Пример вызова</h4>
+ 
+<pre style="height: 400px;" id="xmp8A743AD0" class="syntax">&lt;?$APPLICATION-&gt;IncludeComponent(<br />        &quot;bitrix:news&quot;,<br />        &quot;.default&quot;,<br />        Array(<br />            &quot;DISPLAY_DATE&quot; =&gt; &quot;Y&quot;, <br />            &quot;DISPLAY_PICTURE&quot; =&gt; &quot;Y&quot;, <br />            &quot;DISPLAY_PREVIEW_TEXT&quot; =&gt; &quot;Y&quot;, <br />            &quot;SEF_MODE&quot; =&gt; &quot;N&quot;, <br />            &quot;IBLOCK_TYPE&quot; =&gt; &quot;news&quot;, <br />            &quot;IBLOCK_ID&quot; =&gt; &quot;33&quot;, <br />            &quot;NEWS_COUNT&quot; =&gt; &quot;5&quot;, <br />            &quot;USE_SEARCH&quot; =&gt; &quot;N&quot;, <br />            &quot;USE_RSS&quot; =&gt; &quot;Y&quot;, <br />            &quot;USE_RATING&quot; =&gt; &quot;N&quot;, <br />            &quot;USE_CATEGORIES&quot; =&gt; &quot;Y&quot;, <br />            &quot;USE_REVIEW&quot; =&gt; &quot;N&quot;, <br />            &quot;USE_FILTER&quot; =&gt; &quot;N&quot;, <br />            &quot;SORT_BY1&quot; =&gt; &quot;ACTIVE_FROM&quot;, <br />            &quot;SORT_ORDER1&quot; =&gt; &quot;DESC&quot;, <br />            &quot;SORT_BY2&quot; =&gt; &quot;SORT&quot;, <br />            &quot;SORT_ORDER2&quot; =&gt; &quot;ASC&quot;, <br />            &quot;PREVIEW_TRUNCATE_LEN&quot; =&gt; &quot;0&quot;, <br />            &quot;LIST_ACTIVE_DATE_FORMAT&quot; =&gt; &quot;d.m.Y&quot;, <br />            &quot;LIST_FIELD_CODE&quot; =&gt; array(0=&gt;&quot;&quot;,), <br />            &quot;LIST_PROPERTY_CODE&quot; =&gt; array(0=&gt;&quot;&quot;,), <br />            &quot;HIDE_LINK_WHEN_NO_DETAIL&quot; =&gt; &quot;N&quot;, <br />            &quot;DISPLAY_NAME&quot; =&gt; &quot;Y&quot;, <br />            &quot;META_KEYWORDS&quot; =&gt; &quot;KEYWORDS&quot;, <br />            &quot;META_DESCRIPTION&quot; =&gt; &quot;DESCRIPTION&quot;, <br />            &quot;DETAIL_ACTIVE_DATE_FORMAT&quot; =&gt; &quot;d.m.Y&quot;, <br />            &quot;DETAIL_FIELD_CODE&quot; =&gt; array(0=&gt;&quot;&quot;,), <br />            &quot;DETAIL_PROPERTY_CODE&quot; =&gt; array(0=&gt;&quot;SOURCE&quot;,), <br />            &quot;DETAIL_DISPLAY_TOP_PAGER&quot; =&gt; &quot;N&quot;, <br />            &quot;DETAIL_DISPLAY_BOTTOM_PAGER&quot; =&gt; &quot;Y&quot;, <br />            &quot;DETAIL_PAGER_TITLE&quot; =&gt; &quot;Страница&quot;, <br />            &quot;DETAIL_PAGER_TEMPLATE&quot; =&gt; &quot;&quot;, <br />            &quot;DISPLAY_PANEL&quot; =&gt; &quot;Y&quot;, <br />            &quot;SET_TITLE&quot; =&gt; &quot;Y&quot;, <br />            &quot;INCLUDE_IBLOCK_INTO_CHAIN&quot; =&gt; &quot;N&quot;, <br />            &quot;ADD_SECTIONS_CHAIN&quot; =&gt; &quot;Y&quot;, <br />            &quot;USE_PERMISSIONS&quot; =&gt; &quot;N&quot;, <br />            &quot;CACHE_TYPE&quot; =&gt; &quot;A&quot;, <br />            &quot;CACHE_TIME&quot; =&gt; &quot;3600&quot;, <br />            &quot;CACHE_FILTER&quot; =&gt; &quot;N&quot;, <br />            &quot;DISPLAY_TOP_PAGER&quot; =&gt; &quot;N&quot;, <br />            &quot;DISPLAY_BOTTOM_PAGER&quot; =&gt; &quot;Y&quot;, <br />            &quot;PAGER_TITLE&quot; =&gt; &quot;Новости&quot;, <br />            &quot;PAGER_SHOW_ALWAYS&quot; =&gt; &quot;N&quot;, <br />            &quot;PAGER_TEMPLATE&quot; =&gt; &quot;&quot;, <br />            &quot;PAGER_DESC_NUMBERING&quot; =&gt; &quot;N&quot;, <br />            &quot;PAGER_DESC_NUMBERING_CACHE_TIME&quot; =&gt; &quot;36000&quot;, <br />            &quot;NUM_NEWS&quot; =&gt; &quot;20&quot;, <br />            &quot;NUM_DAYS&quot; =&gt; &quot;360&quot;, <br />            &quot;YANDEX&quot; =&gt; &quot;N&quot;, <br />            &quot;CATEGORY_IBLOCK&quot; =&gt; array(0=&gt;&quot;33&quot;,1=&gt;&quot;29&quot;,2=&gt;&quot;8&quot;,), <br />            &quot;CATEGORY_CODE&quot; =&gt; &quot;THEMES&quot;, <br />            &quot;CATEGORY_ITEMS_COUNT&quot; =&gt; &quot;4&quot;, <br />            &quot;VARIABLE_ALIASES&quot; =&gt; Array(<br />                &quot;SECTION_ID&quot; =&gt; &quot;SECTION_ID&quot;,<br />                &quot;ELEMENT_ID&quot; =&gt; &quot;news&quot;<br />            )<br />        )<br />);?&gt;</pre>
+ 
+<h4>Описание параметров</h4>
+ 
+<h5 class="graytitle">Дополнительно</h5>
+ <dl>		 		<dt style="font-weight: bold;">DISPLAY_DATE</dt> 			<dd>Вывод даты элементов.</dd> 		 		<dt style="font-weight: bold;">DISPLAY_PICTURE</dt> 			<dd>Вывод изображения для анонса.</dd> 		<dt style="font-weight: bold;">DISPLAY_PREVIEW_TEXT</dt> 			<dd>Вывод текст анонса для элементов.</dd> </dl>	 
+<h5 class="graytitle">Основные параметры</h5>
+ <dl> 	 <dt style="font-weight: bold;">IBLOCK_TYPE</dt> 		<dd>Тип информационного блока.</dd> <dt style="font-weight: bold;">IBLOCK_ID</dt> 		<dd>Код информационного блока.</dd> 	<dt style="font-weight: bold;">NEWS_COUNT</dt> 		<dd>Количество новостей на странице при постраничной навигации.</dd> 	<dt style="font-weight: bold;">USE_SEARCH</dt> 		<dd>Разрешить поиск. При установленной опции будет выведена форма 		поиска. Поиск будет осуществляться только в выводимой данным компонентом 		информации.</dd>		 </dl> 
+<h5 class="graytitle">Настройки RSS</h5>
+ 		<dl> 	<dt style="font-weight: bold;">USE_RSS</dt> 		<dd>Разрешен экспорт в <span style="font-weight: bold;">RSS</span> и доступны поля для спецификации настроек <span style="font-weight: bold;">RSS.</span></dd><dt style="font-weight: bold;">NUM_NEWS</dt><dd>Количество новостей, экспортируемых в <b>RSS</b>.</dd><dt style="font-weight: bold;">NUM_DAYS</dt><dd>Количество дней для экспорта. Например, за последние 30 дней.</dd><dt style="font-weight: bold;">YANDEX</dt><dd>Экспортировать в диалект Яндекса. Опция служит для подключения формата для отправки новостей службе <span style="font-weight: bold;">Яндекс.Новости</span> и отличается дополнительной веткой, содержащей полный текст элемента информационного блока (<yandex:full-text style="font-weight: bold;">DETAIL_TEXT</yandex:full-text>). В этом случае элементы информационного блока выбираются за последние два дня без ограничения количества.</dd>	 </dl> 
+<h5 class="graytitle">Настройки голосования</h5>
+ 		<dl> 		<dt style="font-weight: bold;">USE_RATING</dt> 			<dd>Разрешить голосование. Посетители смогут голосовать за новости, выставляя баллы, на странице с детальной информацией. При установленной опции становятся доступными следующие поля:</dd><dt style="font-weight: bold;">MAX_VOTE</dt><dd>Максимальный балл. 
+    <br />
+   </dd><dt style="font-weight: bold;">VOTE_NAMES</dt><dd>Массив, в котором задаются подписи к баллам в таком виде: 			 
+    <pre id="xmp5A0A6F40" class="syntax">&quot;VOTE_NAMES&quot; =&gt; Array(&quot;оч плохо&quot;,&quot;плохо&quot;,&quot;удв&quot;,&quot;хор&quot;,&quot;отл&quot;,&quot;&quot;),<br /></pre>
+   Если подписи заданы, то они будут выведены вместо оценок-цифр. Если массив не задан, то будут использованы значения по умолчанию. 			</dd> 		</dl> 		 
+<h5 class="graytitle">Настройка материалов по теме</h5>
+ <dl>		 	<dt style="font-weight: bold;">USE_CATEGORIES</dt> 		<dd>Опция включает возможность вывода материалов по теме. Материалы в привязке к темам создаются следующим образом. Создается инфоблок (например, &quot;темы&quot;), в котором определяются будущие темы материалов в виде разделов. Разделы заполнять элементами не требуется. В настройках инфоблока, элементы которого предполагается привязывать к созданным темам, определятся свойство типа &quot;Привязка к разделам&quot; и выбирается инфоблок, в котором разделы являются темами. И далее для каждого из элементов этого инфоблока можно задать свойство привязки к теме. </dd><dt style="font-weight: bold;">CATEGORY_IBLOCK</dt><dd>Инфоблоки. Выбираются инфоблоки, из которых будет происходить выборка информации. В коде задается в виде массива. 		 
+    <pre class="syntax">array(0=&gt;&quot;33&quot;,1=&gt;&quot;29&quot;,2=&gt;&quot;8&quot;,),</pre>
+   		</dd><dt style="font-weight: bold;">CATEGORY_CODE</dt><dd>Код свойства, в котором хранится привязка элемента к определенному разделу (например, <span style="font-weight: bold;">THEMES</span>).</dd><dt style="font-weight: bold;">CATEGORY_ITEMS_COUNT</dt><dd>Максимальное количество материалов из одного инфоблока. 
+    <br />
+   </dd>	 </dl>	 
+<h5 class="graytitle">Настройки отзывов</h5>
+ <dl> 		<dt style="font-weight: bold;">USE_REVIEW</dt> 		<dd>Разрешить отзывы. При установленной опции становятся доступными следующие поля:</dd><dt class="style1" style="font-weight: bold;">MESSAGES_PER_PAGE</dt><dd>Количество сообщений на одной странице. 
+    <br />
+   </dd><dt style="font-weight: bold;">USE_CAPTCHA</dt><dd>Определяется вывод изображения и поля ввода <span style="font-weight: bold;">CAPTCHA</span> в форме добавления отзыва в публичной части.</dd><dt style="font-weight: bold;">PATH_TO_SMILE</dt><dd>Путь относительно корня сайта к папке со смайлами. Значение по умолчанию <span style="font-weight: bold;">/bitrix/images/forum/smile/</span>.</dd><dt style="font-weight: bold;">FORUM_ID</dt><dd>ID форума, созданного для отзывов посетителей.</dd><dt style="font-weight: bold;">URL_TEMPLATES_READ</dt><dd>Указывается относительный путь к странице чтения темы на форуме. Если поле пусто, путь к странице будет получен из настроек форума.</dd> </dl>	 
+<h5 class="graytitle">Настройки фильтра</h5>
+ <dl>	 	<dt style="font-weight: bold;">USE_FILTER</dt> 		<dd>Показывать фильтр. При отмеченной опции доступны следующие 		поля: 
+    <br />
+   </dd><dd><span style="font-weight: bold;">FILTER_NAME</span><dl> 				<dd>Задается имя переменной, в которой передается массив параметров из фильтра. Служит для определения выходящих из фильтра элементов. Поле может быть оставлено пустым, тогда используется значение по умолчанию.</dd> 			<dt style="font-weight: bold;">FILTER_FIELD_CODE</dt> 				<dd>Выбрать нужные поля элементов инфоблока, по которым возможна фильтрация. Заполняется из публичной части редактора, удерживая клавишу 				<span style="font-style: italic;">Ctrl</span> либо в коде, указывая массив: 				 
+        <pre class="syntax">Array(&quot;NAME&quot;,&quot;PREVIEW_TEXT&quot;,&quot;PREVIEW_PICTURE&quot;,&quot;DETAIL_TEXT&quot;,&quot;&quot;),</pre>
+       				</dd> 			<dt style="font-weight: bold;">FILTER_PROPERTY_CODE</dt> 				<dd>Свойства элементов инфоблока, по которым будет возможна фильтрация. Заполняется из публичной части редактора, удерживая клавишу 				<span style="font-style: italic;">Ctrl</span> либо в коде, указывая массив. Например, <code style="font-weight: bold;">Array(&quot;SOURCE&quot;,&quot;USER&quot;,&quot;&quot;,&quot;&quot;)</code>.</dd> 				 		</dl> 		 </dd></dl> 
+<h5 class="graytitle">Источник данных</h5>
+ <dl> 	<dt style="font-weight: bold;">SORT_BY1</dt> 		<dd>Поле для первой сортировки новостей: 
+    <ul> 	 
+      <li><span style="font-weight: bold;">ID</span> &ndash; по ID;</li>
+     		 	 
+      <li><span style="font-weight: bold;">sort</span> &ndash; по индексу сортировки;</li>
+     	 
+      <li><span style="font-weight: bold;">timestamp_x</span> &ndash; по дате изменения;</li>
+     	 
+      <li><span style="font-weight: bold;">name</span> &ndash; по заголовку;</li>
+     	 
+      <li><span style="font-weight: bold;">active_from</span> &ndash; по дате начала активности.</li>
+     </ul>
+   </dd> 	<dt style="font-weight: bold;">SORT_ORDER1</dt> 		<dd>Направление для первой сортировки новостей: 
+    <ul> 	 
+      <li><span style="font-weight: bold;">asc</span> &ndash; по возрастанию;</li>
+     	 
+      <li><span style="font-weight: bold;">desc</span><span style="font-weight: bold; font-style: italic;"> </span>&ndash; по убыванию.</li>
+     </ul>
+   </dd> 	<dt style="font-weight: bold;">SORT_BY2</dt> 		<dd>Поле для второй сортировки новостей. 		 
+    <ul> 	 
+      <li><span style="font-weight: bold;">ID</span> &ndash; по ID;</li>
+     			 	 
+      <li><span style="font-weight: bold;">sort</span> &ndash; по индексу сортировки;</li>
+     	 
+      <li><span style="font-weight: bold;">timestamp_x</span> &ndash; по дате изменения;</li>
+     	 
+      <li><span style="font-weight: bold;">name</span> &ndash; по заголовку;</li>
+     	 
+      <li><span style="font-weight: bold;">active_from</span> &ndash; по дате начала активности.</li>
+     </ul>
+   		</dd> 	<dt style="font-weight: bold;">SORT_ORDER2</dt> 		<dd>Направление для второй сортировки новостей. 		 
+    <ul> 	 
+      <li><span style="font-weight: bold;">asc</span> &ndash; по возрастанию;</li>
+     	 
+      <li><span style="font-weight: bold;">desc</span> &ndash; по убыванию.</li>
+     </ul>
+   		</dd> 		 </dl> 
+<h5 class="graytitle">Управление адресами страниц</h5>
+ <dl> 	<dt style="font-weight: bold;">SEF_MODE</dt> 		<dd>Включить поддержку <span style="font-weight: bold;">ЧПУ</span>.</dd> <dt style="font-weight: bold;">VARIABLE_ALIASES</dt> 	<dd>При отключенной опции <b>SEF_MODE</b> доступны поля 		для задания <span style="font-weight: bold;">Идентификатора раздела</span> (например, <span style="font-weight: bold;">SECTION_ID</span>) и 		<span style="font-weight: bold;">Идентификатора новости</span> (например, <span style="font-weight: bold;">ELEMENT_ID</span>). Данные поля хранятся в массиве идентификаторов раздела и новости, например: 
+    <br />
+   	 
+    <pre class="syntax">&quot;VARIABLE_ALIASES&quot; =&gt; Array(<br />		&quot;SECTION_ID&quot; =&gt; &quot;SECTION_ID&quot;,<br />		&quot;ELEMENT_ID&quot; =&gt; &quot;ELEMENT_ID&quot;<br />)</pre>
+   		 	При включенной опции <b>SEF_MODE</b> доступны следующие параметры:		 		</dd><dt style="font-weight: bold;">SEF_FOLDER</dt><dd>Каталог <span style="font-weight: bold;">ЧПУ</span> (относительно корня сайта). 
+    <br />
+   </dd><dt style="font-weight: bold;">SEF_URL_TEMPLATES</dt><dd> 		В данном массиве определяются шаблоны адресов различных страниц в новостном разделе: 
+    <ul> 
+      <li><span style="font-weight: bold;">Cтраница общего списка</span>. Указывается путь к общему списку элементов. Переход на эту страницу будет происходить по ссылке <span style="font-weight: bold;">Вернуться к списку</span>.</li>
+     
+      <li><span style="font-weight: bold;">Страница раздела</span>. Для перехода на страницу раздела в в качестве параметра должно передаваться ID раздела (<span style="font-weight: bold;">#SECTION_ID#</span>). По умолчанию поле содержит <span style="font-weight: bold;">#SECTION_ID#/</span>. Если разделы в инфоблоке не заданы, то поле требуется оставить пустым. </li>
+     
+      <li><span style="font-weight: bold;">Страница детального просмотра</span>. Указывается путь к странице детального просмотра. В качестве параметра должно передаваться ID элемента. </li>
+     
+      <li><span style="font-weight: bold;">Страница поиска.</span> Задается часть содержимого адресной строки при переходе к странице поиска. Например, <span style="font-weight: bold;">search/.</span> </li>
+     
+      <li><span style="font-weight: bold;">Страница RSS</span>. Задается часть содержимого адресной строки при переходе к странице <span style="font-weight: bold;">rss</span>. Например, <span style="font-weight: bold;">rss/</span>. </li>
+     
+      <li><span style="font-weight: bold;">Страница RSS для раздела</span><i>. </i>Задается часть содержимого адресной строки при переходе к странице <span style="font-weight: bold;">rss</span> в каждом разделе. По умолчанию <span style="font-weight: bold;">#SECTION_ID#/rss/</span>. </li>
+     </ul>
+   	 
+    <pre class="syntax">&quot;SEF_URL_TEMPLATES&quot; =&gt; Array(<br />			&quot;news&quot; =&gt; &quot;list/&quot;,<br />			&quot;section&quot; =&gt; &quot;section/&quot;,<br />			&quot;detail&quot; =&gt; &quot;#ELEMENT_ID#/&quot;,<br />			&quot;search&quot; =&gt; &quot;search/&quot;,<br />			&quot;rss&quot; =&gt; &quot;rss/&quot;,<br />			&quot;rss_section&quot; =&gt; &quot;#SECTION_ID#/rss/&quot;<br />		),<br /></pre>
+   В публичной части редактора путь к каждой странице задается в отдельном поле. 	 </dd> </dl> 		 
+<h5 class="graytitle">Настройки кеширования</h5>
+ <dl> 	<dt style="font-weight: bold;">CACHE_TYPE</dt> 		<dd>Тип кеширования: 		 
+    <ul> 			 
+      <li><span style="font-weight: bold;">А</span> - Авто: действует при включенном автокешировании на странице <span style="font-weight: bold;">Настройки кэширования</span> (<i>Настройки &gt; Настройки продукта &gt; Автокеширование</i>) и при установленном времени кэширования в поле <b>CACHE_TIME</b>.</li>
+     			 
+      <li><span style="font-weight: bold;">Y</span><span style="font-weight: bold;"> </span>- Кешировать:	должно быть установлено время кеширования (<b>CACHE_TIME</b>). Настройки 			автокеширования не влияют на данный тип кеширования.</li>
+     			 
+      <li><span style="font-weight: bold;">N</span> - Не кешировать:	кеширование не происходит<span style="font-style: italic;">.</span></li>
+     		</ul>
+   		</dd> 	<dt style="font-weight: bold;">CACHE_TIME</dt> 		<dd>Время кеширования в секундах.</dd> 	<dt style="font-weight: bold;">CACHE_FILTER</dt> 		<dd>Кешировать при установленном фильтре. Каждый результат, полученный из фильтра будет кешироваться. Имеет смысл отмечать, если многие пользователи используют одну и туже выборку из фильтра.</dd> </dl> 	 
+<h5 class="graytitle">Дополнительные настройки</h5>
+ <dl> 	<dt style="font-weight: bold;">DISPLAY_PANEL</dt> 		<dd>Добавлять кнопки в <span style="font-weight: bold;">Административную панель</span> в режиме редактирования сайта и в области редактирования данного компонента.</dd>	 	<dt style="font-weight: bold;">SET_TITLE</dt> 		<dd>В качестве заголовка страницы установить имя текущего инфоблока.</dd>	 	<dt style="font-weight: bold;">INCLUDE_IBLOCK_INTO_CHAIN</dt> 		<dd>В цепочку навигации будет добавлено имя инфоблока.</dd>	 	<dt style="font-weight: bold;">ADD_SECTIONS_CHAIN</dt> 		<dd>При наличии разделов в инфоблоке и установленной опции при переходе по разделам в цепочку навигации будут добавлены названия разделов.</dd>	 	<dt style="font-weight: bold;">USE_PERMISSIONS</dt> 		<dd>Использовать дополнительное ограничение доступа к детальной информации элементов инфоблока. При установленной опции становится доступным 		следующее поле:</dd><dt style="font-weight: bold;">GROUP_PERMISSIONS</dt><dd>Выбор групп пользователей, имеющих доступ к детальной информации. 
+    <br />
+   </dd> </dl> 
+<h5 class="graytitle">Настройки детального просмотра</h5>
+ <dl> 	<dt style="font-weight: bold;">DISPLAY_NAME</dt> 		<dd>Вывод названия элемента.</dd> 	<dt style="font-weight: bold;">META_KEYWORDS</dt> 		<dd>Установить ключевые слова страницы из свойства. Среди всех свойств, 		определенных для данного инфоблока, выбирается то, в котором содержатся ключевые слова.</dd> 	<dt style="font-weight: bold;">META_DESCRIPTION</dt> 		<dd>Установить ключевые слова страницы из свойств инфоблока.</dd> 	<dt style="font-weight: bold;">DETAIL_ACTIVE_DATE_FORMAT</dt> 		<dd>Формат показа даты. В выпадающем списке перечислены все возможные варианты показа даты, формируемые внутри компонента. Выбрав пункт <i>(другое)&gt;</i> можно сформировать свой вариант на основании php-функции <span style="font-weight: bold;">date</span>. 		 
+    <br />
+   		Предустановленные варианты формата даты: 		 
+    <table style="width: 300px;"> 	 
+      <tbody> 
+        <tr> 		<th>Код</th> 		<th>Формат даты</th> 	</tr>
+       	 
+        <tr> 		<td>d-m-Y</td> 		<td>22-02-2007</td> 	</tr>
+       	 
+        <tr> 		<td>m-d-Y</td> 		<td>02-22-2007</td> 	</tr>
+       	 
+        <tr> 		<td>Y-m-d</td> 		<td>2007-02-22</td> 	</tr>
+       	 
+        <tr> 		<td>d.m.Y</td> 		<td>22.02.2007</td> 	</tr>
+       	 	 
+        <tr> 		<td>m.d.Y</td> 		<td>02.22.2007</td> 	</tr>
+       	 	 
+        <tr> 		<td>j M Y</td> 		<td>22 Фев 2007</td> 	</tr>
+       		 	 
+        <tr> 		<td>M j, Y</td> 		<td>Фев 22, 2007</td> 	</tr>
+       		 
+        <tr> 		<td>j F Y</td> 		<td>22 Февраль 2007</td> 	</tr>
+       		 
+        <tr> 		<td>F j, Y</td> 		<td>Февраль 22, 2007</td> 	</tr>
+       		 
+        <tr> 		<td>d.m.y g:i A</td> 		<td>22.02.07 7:30 AM</td> 	</tr>
+       		 
+        <tr> 		<td>d.m.y G:i</td> 		<td>22.02.07 7:30</td> 	</tr>
+       
+        <tr> 		<td>d.m.Y H:i</td> 		<td>22.02.2007 07:30</td> 	</tr>
+       		 </tbody>
+     </table>
+   		</dd> 	<dt style="font-weight: bold;">DETAIL_FIELD_CODE</dt> 		<dd>Поля, которые будут отображены на странице детального просмотра. Задается в виде массива с символьными именами полей в коде или в 		публичной части редактора, удерживая клавишу <span style="font-style: italic;">Ctrl</span>. Если ничего не 		выбрано, то будут выведены поля по умолчанию.</dd> 	<dt style="font-weight: bold;">DETAIL_PROPERTY_CODE</dt> 		<dd>Свойства, которые будут отображены на странице детального просмотра. Задается в виде массива с символьными именами свойств в коде или в 		публичной части редактора, удерживая клавишу <span style="font-style: italic;">Ctrl</span>. Если ничего не выбрано, то свойства отображены не будут. 		 </dd></dl> 
+<h5 class="graytitle">Настройки списка</h5>
+ <dl> 	<dt style="font-weight: bold;">PREVIEW_TRUNCATE_LEN</dt> 		<dd>Максимальная длина анонса для вывода (только для типа текст), после которой текст анонс будет отсечен.</dd> 	<dt style="font-weight: bold;">LIST_ACTIVE_DATE_FORMAT</dt> 		<dd>Формат показа даты. В выпадающем списке перечислены все возможные варианты показа даты, формируемые внутри компонента. Выбрав пункт <i>(другое)&gt;</i>, вы можете сформировать свой вариант на основании php-функции <span style="font-weight: bold;">date</span>. 		 
+    <br />
+   		Предустановленные варианты формата даты: 		 
+    <table style="width: 300px;"> 	 
+      <tbody> 
+        <tr> 		<th>Код</th> 		<th>Формат даты</th> 	</tr>
+       	 
+        <tr> 		<td>d-m-Y</td> 		<td>22-02-2007</td> 	</tr>
+       	 
+        <tr> 		<td>m-d-Y</td> 		<td>02-22-2007</td> 	</tr>
+       	 
+        <tr> 		<td>Y-m-d</td> 		<td>2007-02-22</td> 	</tr>
+       	 
+        <tr> 		<td>d.m.Y</td> 		<td>22.02.2007</td> 	</tr>
+       	 	 
+        <tr> 		<td>m.d.Y</td> 		<td>02.22.2007</td> 	</tr>
+       	 	 
+        <tr> 		<td>j M Y</td> 		<td>22 Фев 2007</td> 	</tr>
+       		 	 
+        <tr> 		<td>M j, Y</td> 		<td>Фев 22, 2007</td> 	</tr>
+       		 
+        <tr> 		<td>j F Y</td> 		<td>22 Февраль 2007</td> 	</tr>
+       		 
+        <tr> 		<td>F j, Y</td> 		<td>Февраль 22, 2007</td> 	</tr>
+       		 
+        <tr> 		<td>d.m.y g:i A</td> 		<td>22.02.07 7:30 AM</td> 	</tr>
+       		 
+        <tr> 		<td>d.m.y G:i</td> 		<td>22.02.07 7:30</td> 	</tr>
+       
+        <tr> 		<td>d.m.Y H:i</td> 		<td>22.02.2007 07:30</td> 	</tr>
+       		 </tbody>
+     </table>
+   		 		</dd> 	<dt style="font-weight: bold;">LIST_FIELD_CODE</dt> 		<dd>Поля, которые будут отображены на странице списка элементов. Задается в виде массива с символьными именами полей в коде или в публичной части редактора, удерживая клавишу <span style="font-style: italic;">Ctrl</span>. Если ничего не выбрано, то будут выведены поля по умолчанию. </dd> 	<dt style="font-weight: bold;">LIST_PROPERTY_CODE</dt> 		<dd>Свойства, которые будут отображены на странице списка элементов. Задается в виде массива с символьными именами свойств в коде либо в публичной части редактора, удерживая клавишу <span style="font-style: italic;">Ctrl</span>. Если ничего не выбрано, то свойства отображены не будут.</dd> 	<dt style="font-weight: bold;">HIDE_LINK_WHEN_NO_DETAIL</dt> 		<dd>Скрывать ссылку, если нет детального описания или у пользователя нет прав на ее просмотр.</dd> </dl> 
+<h5 class="graytitle">Настройки постраничной навигации детального просмотра</h5>
+ <dl> 	<dt style="font-weight: bold;">DISPLAY_TOP_PAGER</dt> 		<dd>Навигация по страницам будет выведена вверху страницы, над списком.</dd> 	<dt style="font-weight: bold;">DISPLAY_BOTTOM_PAGER</dt> 		<dd>Навигация по страницам будет выведена внизу страницы, под списком. </dd> 	<dt style="font-weight: bold;">PAGER_TITLE</dt> 		<dd>Название категорий, по которым происходит перемещение при детальном просмотре (например, страница, глава и др.).</dd> 	<dt style="font-weight: bold;">PAGER_SHOW_ALWAYS</dt> 		<dd>Выводить всегда. Постраничная навигация будет выводиться, даже если все элементы помещаются на одной странице. 
+    <br />
+   </dd> 	<dt style="font-weight: bold;">PAGER_TEMPLATE</dt> 		<dd>Название шаблона постраничной навигации. Если поле пусто, то выбирается шаблон по умолчанию (<span style="font-weight: bold;">.default</span>). Также в системе задан шаблон <span style="font-weight: bold;">orange</span>.</dd> 	<dt style="font-weight: bold;">PAGER_DESC_NUMBERING</dt> 		<dd>Использовать обратную навигацию, когда меняется лишь последняя страница при добавлении нового элемента. Это происходит, если новые элементы попадают всегда вверх списка (отсортированы по дате начала активности по убыванию). Эти страницы&nbsp; удобно закешировать на длительный срок</dd> 	<dt style="font-weight: bold;">PAGER_DESC_NUMBERING_CACHE_TIME</dt> 		<dd>Время кеширования страниц для обратной навигации. 
+    <br />
+   </dd> </dl> <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

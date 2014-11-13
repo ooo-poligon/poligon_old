@@ -1,0 +1,164 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../index.html?page=source%2Fservice%2Fsupport%2Freference_book%2Fticket_dict_edit.php.html"; </script>
+
+<title>Создание и редактирование записи справочника</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/support/reference_book/ticket_dict_edit.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Создание и редактирование записи справочника])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Создание и редактирование записи справочника</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<h4 id="topictoctitle">В этом разделе</h4>
+ <menu id="topictoc"> 
+  <li><a href="#fields_rec">Вкладка &quot;Запись&quot;</a></li>
+ 
+  <li><a href="#fields_stat">Вкладка &quot;Статистика&quot;</a></li>
+ 
+  <li><a href="#buttons">Кнопки управления</a> </li>
+ </menu> 
+<p>Форма предназначена для создания и редактирования записей справочника техподдержки, а именно:</p>
+ 
+<ul> 	 
+  <li>категорий; 	</li>
+ 
+  <li>критичностей; 	</li>
+ 
+  <li>статусов; 	</li>
+ 
+  <li>оценок; 	</li>
+ 
+  <li>источников обращений; 	</li>
+ 
+  <li>часто используемых ответов; 	</li>
+ 
+  <li>сложности. </li>
+ </ul>
+ 
+<h4>Контекстная панель</h4>
+ 
+<table width="100%" class="tnormal"> 	 
+  <tbody> 
+    <tr> 		<th>Кнопка</th> 		<th>Описание</th></tr>
+   	 
+    <tr> 		<td>Справочник</td> 		<td>Открывает справочник для текущего типа записи.</td></tr>
+   	 
+    <tr> 		<td>Создать новую запись</td> 		<td>Создает новую запись текущего типа в справочнике. 
+        <br />
+       <b>Отображается только при редактировании существующей записи справочника. </b></td></tr>
+   	 
+    <tr> 		<td>Удалить запись</td> 		<td>Удаляет открытую запись. 
+        <br />
+       <b>Отображается только при редактировании существующей записи справочника. </b></td></tr>
+   </tbody>
+ </table>
+ 
+<h4><a name="fields_rec"></a>Вкладка &quot;Запись&quot;</h4>
+ 
+<table class="tnormal"> 	 
+  <tbody> 
+    <tr> 		<th>Поле</th> 		<th>Описание</th></tr>
+   	 
+    <tr> 		<td>Тип</td> 		<td>Тип записи справочника.</td></tr>
+   	 
+    <tr> 		<td>Сайт</td> 		<td>Сайт, в котором показывать данную запись. </td></tr>
+   	 
+    <tr> 		<td>Порядок сортировки</td> 		<td>Порядок сортировки при выводе.</td></tr>
+   	 
+    <tr> 		<td>Заголовок*</td> 		<td>Заголовок записи.</td></tr>
+   	 
+    <tr> 		<td>Символьный код</td> 		<td>При использовании функции API <code style="font-style: italic;">CTicket::SetTicket</code> есть возможность задавать в качестве параметра не <span style="font-weight: bold;">ID</span> типа записи справочника, а его символьные коды, что упрощает программирование. Данное поле может содержать именно этот символьный код.</td></tr>
+   	 
+    <tr> 		<td>Описание</td> 		<td>Для типов <span style="font-weight: bold;">категория</span><span style="font-weight: bold;">, </span><span style="font-weight: bold;">критичность</span><span style="font-weight: bold;">, </span><span style="font-weight: bold;">оценка</span><span style="font-weight: bold;">, 			</span><span style="font-weight: bold;">статус</span> данное поле используется для всплывающей подсказки. 
+        <br />
+       
+        <br />
+       Для типа <span style="font-weight: bold;">часто используемые ответы</span> это поле используется для ввода тела ответа.</td></tr>
+   	 
+    <tr> 		<td>При создании нового обращения на сайте, выбирать по умолчанию в выпадающем списке </td> 		<td>Флаг позволяет выбрать по умолчанию данное значение в веб-форме при создании нового обращения. Для одного типа записей справочника и одного сайта может быть только одна запись, для которой этот флаг будет установленным. 
+        <br />
+       
+        <br />
+       Поле доступно для модификации только для типов <span style="font-weight: bold;">категория, критичность и источники</span>.</td></tr>
+   	 
+    <tr> 		<td>Ответственный</td> 		<td>Ответственный за обращение. 
+        <br />
+       
+        <br />
+       Поле доступно для модификации только для типов <span style="font-weight: bold;">категория</span><span style="font-weight: bold;">,</span><span style="font-weight: bold;"> критичность и источники</span>.</td></tr>
+   </tbody>
+ </table>
+ 
+<p>* - Поле, обязательное для заполнения. </p>
+ 
+<h4><a name="fields_stat"></a>Вкладка &quot;Статистика&quot;</h4>
+ 
+<p>Доступна только для типа <span style="font-weight: bold;">категория</span>. </p>
+ 
+<table class="tnormal"> 	 
+  <tbody> 
+    <tr> 		<th colspan="2">Как регистрировать новые обращения в техподдержку в модуле статистики </th></tr>
+   	 
+    <tr> 		<td><code>event1</code></td> 		<td>Идентификатор <code style="font-weight: bold;">event1</code> типа события для модуля статистики.</td></tr>
+   	 
+    <tr> 		<td><code>event2</code></td> 		<td>Идентификатор <code style="font-weight: bold;">event2</code> типа события для модуля статистики.</td></tr>
+   	 
+    <tr> 		<td><code>event3</code></td> 		<td>Дополнительный параметр события для модуля статистики.</td></tr>
+   </tbody>
+ </table>
+ 
+<h4><a name="buttons"></a>Кнопки управления</h4>
+ 
+<table class="tnormal"> 	 
+  <tbody> 
+    <tr> 		<th width="170" align="left">Кнопка</th> 		<th>Описание</th></tr>
+   	 
+    <tr> 		<td width="170" align="left">Сохранить</td> 		<td>Сохраняет параметры записи справочника в базе данных.</td></tr>
+   	 
+    <tr> 		<td width="170" align="left">Применить</td> 		<td>Сохраняет параметры подписчика. Редактирование продолжается.</td></tr>
+   	 
+    <tr> 		<td width="170" align="left">Сбросить</td> 		<td>Сбрасывает все введенные после открытия формы данные.&nbsp;</td></tr>
+   </tbody>
+ </table>
+ <bitrix:sys name="feedbackform"></bitrix:sys> <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

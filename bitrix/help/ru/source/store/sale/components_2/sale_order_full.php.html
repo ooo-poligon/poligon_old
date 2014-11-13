@@ -1,0 +1,114 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../index.html?page=source%2Fstore%2Fsale%2Fcomponents_2%2Fsale_order_full.php.html"; </script>
+
+<title>Процедура оформления заказа</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "store/sale/components_2/sale_order_full.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Компоненты 2.0::Процедура оформления заказа])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Компоненты 2.0::Процедура оформления заказа</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+
+
+<p>Одностраничный компонент.
+<br />Компонент строит процедуру оформления заказа. </p>
+
+<h4>Пример вызова</h4>
+<pre class=syntax id="xmp5A0A6F40">
+&lt;&lt;?$APPLICATION-&gt;IncludeComponent(&quot;bitrix:sale.order.full&quot;,&quot;&quot;,Array(
+     &quot;PATH_TO_BASKET&quot; =&gt; &quot;basket.php&quot;,
+     &quot;PATH_TO_PERSONAL&quot; =&gt; &quot;index.php&quot;,
+     &quot;PATH_TO_AUTH&quot; =&gt; &quot;/auth.php&quot;,
+     &quot;PATH_TO_PAYMENT&quot; =&gt; &quot;payment.php&quot;,
+     &quot;ALLOW_PAY_FROM_ACCOUNT&quot; =&gt; &quot;Y&quot;,
+     &quot;SHOW_MENU&quot; =&gt; &quot;Y&quot;,
+     &quot;USE_AJAX_LOCATIONS&quot; =&gt; &quot;Y&quot;,
+     &quot;SHOW_AJAX_DELIVERY_LINK&quot; =&gt; &quot;Y&quot;,
+     &quot;COUNT_DELIVERY_TAX&quot; =&gt; &quot;N&quot;,
+     &quot;COUNT_DISCOUNT_4_ALL_QUANTITY&quot; =&gt; &quot;N&quot;,
+     &quot;SET_TITLE&quot; =&gt; &quot;Y&quot;
+     )
+);?&gt;</pre>
+<h4>Описание параметров</h4>
+<h5 class="graytitle">Основные параметры</h5>
+<dl>
+	<dt>ALLOW_PAY_FROM_ACCOUNT</dt>
+		<dd>[Y|N] Позволять оплачивать с внутреннего счета. Если выбрано значение &quot;Y&quot;, то при наличии достаточной суммы на внутреннем счете в базовой валюте сайта, пользователю будет предложено оплатить с этого счета.</dd>
+		<dt>SHOW_MENU</dt>
+		<dd>[Y|N] Показывать меню навигации по процедуре оформления заказа. Если выбрано значение &quot;Y&quot;, то будут показаны шаги процедуры оформления заказа.</dd>
+		<dt>COUNT_DELIVERY_TAX</dt>
+		<dd>[Y|N] Рассчитывать налог для доставки. Если выбрано значение &quot;Y&quot;, то будет рассчитан налог для доставки. </dd>
+		<dt>COUNT_DISCOUNT_4_ALL_QUANTITY</dt>
+		<dd>[Y|N] Рассчитывать скидку для каждой позиции (на все количество товара). Если выбрано значение &quot;Y&quot;, то будет рассчитана скидка на каждый товар, приобретенный в N количестве. </dd>
+		
+</dl>
+<h5 class="graytitle">Дополнительные настройки</h5>
+<dl>
+<dt>PATH_TO_BASKET</dt>
+		<dd>Указывается путь к странице с корзиной. Такая страница может быть создана с помощью компонента <a href="sale_basket_basket.php.html">Корзина</a>.</dd>
+	<dt>PATH_TO_PERSONAL</dt>
+		<dd>Указывается путь к персональному разделу, например, к странице со списком заказов либо к пластиковым картам пользователя и т. д. Переход на страницу возможен по ссылке после оформления заказа. </dd>
+		<dt>PATH_TO_AUTH</dt>
+		<dd>Указывается путь к странице с авторизацией на сайте.</dd>
+		<dt>PATH_TO_PAYMENT</dt>
+			<dd>Указывается путь к странице подключения платежной системы. Такую страницу можно создать с помощью компонента <a href="sale_order_payment.php.html">Подключение платежной системы</a>.</dd>
+		    <dt>USE_AJAX_LOCATIONS</dt>
+		    <dd>[Y|N] Если выбрано значение &quot;Y&quot;, то будет использована расширенная форма 
+			выбора местоположений, которая будет построена компонентом 
+			<a href="sale_ajax_locations.php.html">AJAX-местоположения</a>.&nbsp; </dd>
+	        <dt>SHOW_AJAX_DELIVERY_LINK</dt>
+	        <dd>Автоматический запуск расчёта стоимости доставки:
+	        	<ul>
+			<li><i>Y</i> - будут выведены только ссылки;</li>
+			<li><i>N</i> - стоимость доставки будет рассчитана сразу; </li>
+			<li><i>S</i> - стоимость доставки рассчитывается на сервере. </li>
+			</ul>
+	        </dd>
+        <dt>SET_TITLE</dt>
+			<dd>[Y|N] В качестве заголовка будет установлено &quot;Оформление заказа&quot;.</dd>
+</dl>
+
+
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

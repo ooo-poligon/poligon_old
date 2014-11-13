@@ -1,0 +1,348 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fcontent%2Ffileman%2Ffileman_html_edit.php.html"; </script>
+
+<title>HTML редактор</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "content/fileman/fileman_html_edit.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [HTML редактор])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">HTML редактор</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<h4 id="topictoctitle">В этом разделе</h4>
+ <menu id="topictoc"> 	 
+  <li><a href="#edit">Настройки интерфейса</a> 	<menu></menu> 	</li>
+ 
+  <li><a href="#panel1">Панель инструментов</a> 	</li>
+ 
+  <li><a href="#loading">Загрузка графики на сайт</a> 	</li>
+ 
+  <li><a href="#components">Визуальные компоненты</a></li>
+ </menu> 
+<p>Специальный программный модуль реализует <span style="font-weight: bold;">HTML-</span>редактор, позволяющий изменять текст и графику веб-страницы в режиме реального времени через браузер. Меню окна редактора имеет очень удобный интерфейс, представляющий собой типовой набор действий текстового редактора <span style="font-weight: bold;">MS Word</span>. </p>
+ 
+<p>Вы сможете размещать внутри страницы изображения, форматировать текст, добавлять таблицы, делать разметку и т.д. Внешнее оформление созданных вами страниц не будет отличаться от уже существующих. На базе изменений (удаление, создание, редактирование) редактор генерирует <span style="font-weight: bold;">HTML-</span>код. Обновление страницы в публичном разделе сайта выполняется автоматически после сохранения изменений.</p>
+ 
+<p>При редактировании выполняется изменение только внутренней (рабочей) области страницы, что позволяет сохранить общий дизайн сайта. Управлять сайтом с помощью <span style="font-weight: bold;">HTML-</span>редактора вы можете с любого компьютера, на котором установлен <span style="font-weight: bold;">Internet Explorer</span> (версии 5.0 и выше) и <span style="font-weight: bold;">FireFox</span> (версии 1.0 и выше).</p>
+ 
+<p><img src="../../images/iblock/783/redactor.png" width="650" height="471"></p>
+ 
+<p>Редактор может иметь отличающийся интерфейс, в зависимости от прав доступа конкретного пользователя и способа открытия редактора. Для удобства работы форма визуального <span style="font-weight: bold;">HTML-</span>редактора разделена на три зоны:</p>
+ 
+<ul> 	 
+  <li>Редактирование; 	</li>
+ 
+  <li>Свойства; 	</li>
+ 
+  <li>Визуальные компоненты. </li>
+ </ul>
+ 
+<p>Последние две зоны можно свернуть и вновь открыть воспользовавшись кнопками в нижней панели редактора. 
+  <br />
+ </p>
+ 
+<h4><a name="edit"></a>Настройка интерфейса редактора 
+  <br />
+ </h4>
+ 
+<p>Редактор имеет регулируемый интерфейс в котором можно отключить или включить панели:</p>
+ 
+<table border="0" class="tnormal" style="border-collapse: collapse;"> 
+  <tbody> 
+    <tr><th width="18%">Панель 
+        <br />
+       </th><th width="82%">Описание 
+        <br />
+       </th></tr>
+   
+    <tr><td>Стандартная</td><td>Неотключаемая панель с основными командами</td></tr>
+   
+    <tr><td> Управление и настройки 
+        <br />
+       </td><td> Панель команд администратора. В зависимости от уровня доступа может быть не видна. 
+        <br />
+       </td></tr>
+   
+    <tr><td>Стиль</td><td>Управление стилями текста</td></tr>
+   
+    <tr><td>Форматирование</td><td>&nbsp; Форматирование текста 
+        <br />
+       </td></tr>
+   
+    <tr><td colspan="1">Режимы редактирования</td><td colspan="1">Выбор одного из трех режимов: визуального, в исходных кодах или совмещенного.</td></tr>
+   
+    <tr><td colspan="1">Шаблон сайта</td><td colspan="1">Выбор шаблона в котором осуществляется редактирование.</td></tr>
+   </tbody>
+ </table>
+ 
+<p></p>
+ 
+<p>Настройка интерфейса осуществляется вызовом <b>Диалога настроек визуального редактора</b> по кнопке <img src="../../images/iblock/009/settings_button.png" width="20" height="20">. <span style="font-weight: bold;">Диалог настроек</span> состоит из трех закладок, если визуальный редактор открыт из <span style="font-weight: bold;">Панели управления</span> и из двух, если открыт из публичных разделов. В диалоге настройки, открытом из публичных разделов отсутствует<span style="font-weight: bold;"> Панель инструментов</span>. 
+  <br />
+ </p>
+ 
+<p><img src="../../images/iblock/55b/redactor_setting.png" width="502" height="279"> </p>
+ 
+<table style="border-collapse: collapse;" class="tnormal"> 
+  <tbody> 
+    <tr> 	 	 <th colspan="2"> Панель инструментов </th></tr>
+   
+    <tr> 	 <td>Стандартная</td> 	 <td>Неотключаемая панель 
+        <br />
+       </td> </tr>
+   
+    <tr> <td colspan="1">Стиль</td> <td colspan="1">Можно отключить 
+        <br />
+       </td> </tr>
+   
+    <tr> <td>Форматирование 
+        <br />
+       </td> <td>Можно отключить</td> </tr>
+   
+    <tr><td colspan="1">Режимы редактирования</td><td colspan="1">Можно отключить</td></tr>
+   
+    <tr><td colspan="1">Шаблон сайта</td><td colspan="1">Можно отключить</td></tr>
+   
+    <tr><td colspan="1">Управление и настройки</td><td colspan="1">Может быть не видимой, если права пользователя ограничены администратором</td></tr>
+   
+    <tr><td colspan="1">Запоминать положение панелей</td><td colspan="1">Можно отключить</td></tr>
+   
+    <tr> <th colspan="2">Панель задач 
+        <br />
+       </th> </tr>
+   
+    <tr> <td>Компоненты 2.0 
+        <br />
+       </td> <td>Может быть не видимой, если права пользователя ограничены администратором</td> </tr>
+   
+    <tr><td colspan="1">Свойства</td><td colspan="1">Можно отключить</td></tr>
+   
+    <tr><td colspan="1">Сниппеты</td><td colspan="1">Можно отключить</td></tr>
+   
+    <tr><td colspan="1">компоненты 1.0</td><td colspan="1">Может быть не видимой, если права пользователя ограничены администратором</td></tr>
+   
+    <tr> <td>Запоминать положение панелей</td> <td>Можно отключить</td> </tr>
+   
+    <tr> <th colspan="2">Дополнительные настройки 
+        <br />
+       </th> </tr>
+   
+    <tr> <td>Показывать подсказки к параметрам компонентов</td> <td>Можно отключить.</td> </tr>
+   
+    <tr> <td>Использовать визуальные эффекты</td> <td>Можно отключить. Отключение рекомендуется для слабых машин. 
+        <br />
+       </td> </tr>
+   </tbody>
+ </table>
+ 
+<p> </p>
+ 
+<h4><a name="panel1"></a>Панель инструментов HTML-редактора 
+  <br />
+ </h4>
+ 
+<table style="border-collapse: collapse;" class="tnormal"> 	 
+  <tbody> 
+    <tr> 		<th colspan="2">Общие действия</th></tr>
+   	 
+    <tr><td colspan="1"><img src="../../images/iblock/cfa/save_exit.png" width="137" height="24"></td><td colspan="1">Сохранение и выход из редактора</td></tr>
+   
+    <tr><td colspan="1"><img src="../../images/iblock/88a/exit.gif" width="20" height="20"></td><td colspan="1">Выход без сохранения</td></tr>
+   
+    <tr><td colspan="1"><img src="../../images/iblock/cca/new.gif" width="20" height="20"></td><td colspan="1">Создание новой страницы</td></tr>
+   
+    <tr><td colspan="1"><img src="../../images/iblock/cac/save_but.png" width="20" height="20"></td><td colspan="1">Сохранить и продолжить редактирование</td></tr>
+   
+    <tr><td colspan="1"><img src="../../images/iblock/ebe/save_as.png" width="20" height="20"></td><td colspan="1">Сохранить под другим именем</td></tr>
+   
+    <tr><td colspan="1"><img src="../../images/iblock/eab/pageprops.gif" width="20" height="20"></td><td colspan="1">Переход к редактированию параметров страницы</td></tr>
+   
+    <tr> 		<td width="18%"><img src="../../images/iblock/abb/fullscreen.gif" width="20" height="20"></td> 		<td width="82%">Переключение в полноэкранный режим.</td></tr>
+   	 
+    <tr> 		<td width="18%"><img src="../../images/iblock/009/settings_button.png" width="20" height="20"></td> 		<td width="82%">Изменение настроек визуального редактора.</td></tr>
+   	 	 	 	 
+    <tr> 		<td><img src="../../images/iblock/798/pasteword.gif" width="20" height="20"></td> 		<td>Вставить из Word. Позволяет очистить добавляемый текст от дополнительных элементов форматирования (например, стилей).</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/a9e/pastetext.gif" width="20" height="20"></td> 		<td>Вставить фрагмент как текст.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/af2/select_all.png" width="22" height="22"></td> 		<td>Выделить все на странице.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/dc9/undo_but.png" width="20" height="20"></td> 		<td>Отменить выполненное действие.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/313/redo_but.png" width="20" height="20"></td> 		<td>Вернуть отменённое действие.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/162/borders.gif" width="20" height="20"></td> 		<td>Отобразить или скрыть границы таблиц.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/590/instable.gif" width="20" height="20"></td> 		<td>Создать таблицу.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/f5a/anchor.gif" width="20" height="20"></td> 		<td>Добавить якорь.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/440/link.gif" width="20" height="20"></td> 		<td>Вставить гиперссылку.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/19c/dellink.gif" width="20" height="20"></td> 		<td>Удалить гиперссылку.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/791/image.gif" width="20" height="20"></td> 		<td>Добавить изображение.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/b1e/symbol.png" width="20" height="20"></td> 		<td>Вставить специальный символ.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/10a/spell_check.png" width="20" height="20"></td> 		<td>Проверка орфографии.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/40d/flash.png" width="20" height="20"></td> 		<td>Вставка Flash-ролика.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/7be/wysiwyg.gif" width="20" height="20"></td> 		<td>Переключение в режим визуального редактирования.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/61f/text.gif" width="20" height="20"></td> 		<td>Переключение в режим редактирования исходного кода страницы.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/d0a/split.gif" width="20" height="20"></td> 		<td>Переключение в совмещённый режим редактирования.</td></tr>
+   	 	 	 	 	 	 
+    <tr> 		<th align="left" colspan="2">Свойства текста</th></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/4d2/bgcolor.gif" width="20" height="20"></td> 		<td>Цвет фона.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/418/fgcolor.gif" width="20" height="20"></td> 		<td>Цвет текста.</td></tr>
+   	 
+    <tr> 		<th colspan="2">Кнопки форматирования текста</th></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/841/bold.gif" width="20" height="20"></td> 		<td>Полужирный.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/80c/italic.gif" width="20" height="20"></td> 		<td>Курсив.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/036/under.gif" width="20" height="20"></td> 		<td>Подчёркнутый.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/d14/left.gif" width="20" height="20"></td> 		<td>Выравнивание абзаца по левому краю.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/ee6/center.gif" width="20" height="20"></td> 		<td>Выравнивание абзаца по центру.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/e73/right.gif" width="20" height="20"></td> 		<td>Выравнивание абзаца по правому краю.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/565/justify.gif" width="20" height="20"></td> 		<td>Выравнивание абзаца по ширине.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/efb/numlist.gif" width="20" height="20"></td> 		<td>Нумерованный список.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/bec/bullist.gif" width="20" height="20"></td> 		<td>Маркированный список.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/d0a/deindent.gif" width="20" height="20"></td> 		<td>Уменьшить отступ.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/af2/inindent.gif" width="20" height="20">&nbsp;</td> 		<td>Увеличить отступ.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/bf4/hr.gif" width="20" height="20"></td> 		<td>Добавить горизонтальный разделитель.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/439/removeformat.gif" width="20" height="20"></td> 		<td>Удалить форматирование.</td></tr>
+   	 
+    <tr> 		<th colspan="2">Элементы выбора начертания</th></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/5d1/text-01_style.png" width="130" height="18"></td> 		<td>Предопределённые стили текста (<span style="font-weight: bold;">CSS</span>). <b> 
+          <br />
+         
+          <br />
+         Примечание</b>: Для сохранения дизайна сайта при форматировании текста рекомендуется пользоваться предопределёнными стилями.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/f03/text-02_format.png" width="70" height="18"></td> 		<td>Уровень (формат) текста. Например, <span style="font-weight: bold;">Заголовок1</span>, 			<span style="font-weight: bold;">Заголовок2</span>, ..., <span style="font-weight: bold;">Основной текст</span>.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/5fe/text-04_font.png" width="70" height="18"></td> 		<td>Шрифт.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/4ae/text-03_size.png" width="70" height="18"></td> 		<td>Размер шрифта.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/b61/templates.png" width="150" height="18"></td> 		<td>Шаблон (дизайн) сайта, в соответствии с которым будет отображаться страница.</td></tr>
+   	 
+    <tr> 		<th colspan="2">Дополнительно</th></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/244/page_break.png" width="20" height="20"></td> 		<td>Вставить разделитель страниц для печати.</td></tr>
+   	 
+    <tr> 		<td><img src="../../images/iblock/e89/break.png" width="20" height="20"></td> 		<td>Вставить разделитель страниц <span style="font-style: italic;">&lt;BREAK/&gt;</span> для вывода постраничной навигации.</td></tr>
+   	 
+    <tr> 		<th colspan="2"> 
+        <br />
+       </th></tr>
+   	 </tbody>
+ </table>
+ 
+<h4><a name="loading"></a>Загрузка графики на сайт </h4>
+ 
+<p><span style="font-weight: bold;">HTML-</span>редактор позволяет загружать графику с локального диска и размещать ее на веб-странице. Процесс размещения изображения очень прост:</p>
+ 
+<ol> 	 
+  <li>Выберите место для изображения на странице, установив туда позицию курсора, и нажмите кнопку <img src="../../images/iblock/aa5/image.gif" width="20" height="20"> на панели редактора. Откроется диалог <span style="font-weight: bold;">Новый рисунок</span>. 	</li>
+ 
+  <li>Перейдите к форме загрузки изображения, нажав кнопку <img src="../../images/iblock/ff9/load_button.png" width="15" height="18"> рядом с полем <span style="font-weight: bold;">Путь к изображению</span>. Откроется окно <span style="font-weight: bold;">Открыть файл</span>. 	</li>
+ 
+  <li>С помощью <span style="font-weight: bold;">Менеджера файлов</span> выберите папку на сервере, в которую будет сохранено изображение (обычно <code style="font-weight: bold;">images</code>).</li>
+ 
+  <li>На закладке <span style="font-weight: bold;">Загрузить файл</span> укажите путь к загружаемому файлу на локальном компьютере. Для выбора файла воспользуйтесь кнопкой <span style="font-weight: bold;">Обзор</span>. 	</li>
+ 
+  <li>Нажмите кнопку <span style="font-weight: bold;">Загрузить</span>. Указанный файл будет загружен в выбранную папку. 
+    <br />
+   
+    <br />
+   <img src="../../images/iblock/307/upload.png" width="537" height="145"> 
+    <br />
+   	</li>
+ 
+  <li>Если отмечена опция <b>Открыть файл после загрузки</b>, то после нажатия кнопки <span style="font-weight: bold;">Загрузить</span> изображение будет открыто в форме добавления изображения. 	</li>
+ 
+  <li>Если необходимо, укажите дополнительные параметры изображения: ширину, высоту, толщину рамки и т.д. 	</li>
+ 
+  <li>Нажмите кнопку <span style="font-weight: bold;">Сохранить</span>. </li>
+ </ol>
+ 
+<h2><a name="components"></a>Визуальные компоненты</h2>
+ 
+<p>Компоненты являются блоками, с помощью которых строится публичная часть сайта. Они позволяют повторно использовать единожды написанный и отлаженный код в рамках одного сайта или на разных сайтах. Визуальные средства среды <span style="font-weight: bold;">&quot;1C-Битрикс: Управление сайтом&quot;</span> позволяют размещать и настраивать компоненты без написания кода. Поставляемые с продуктом системные компоненты регулярно обновляются, при этом расширяется функционал компонентов и исправляются возможные ошибки.</p>
+ 
+<p>Визуальные компоненты доступны в двух версиях. В компонентах версии 2.0 разделены логика и представление. Для одной логики может быть создано несколько представлений, в том числе зависящих от шаблона текущего сайта. Нет необходимости изменять логику компонента для изменения особенностей его показа. Поэтому управлять внешним видом информации, выводимой компонентом версии 2.0, значительно проще.</p>
+ 
+<p>Компоненты версии 2.0 делятся на простые и комплексные. <span style="font-weight: bold;">Простые</span> (обычные, одностраничные) компоненты создают какую-либо область на одной странице. <span style="font-weight: bold;">Комплексные</span> (сложные, многостраничные) компоненты создают разделы сайта, например, новостной раздел или раздел фотогалереи.</p>
+ 
+<p>Для быстрого размещения компонентов на странице разработан специальный интерфейс в рамках визуального <span style="font-weight: bold;">HTML-</span>редактора. При редактировании страницы можно выбрать подходящий компонент из списка и переместить его в рабочую область страницы. </p>
+ 
+<p><img src="../../images/iblock/49f/place_comp.png" width="578" height="213"></p>
+ 
+<p>Компоненты включают набор параметров, определяющих поведение компонента. Основная особенность компонентов заключается в том, что они позволяют управлять данными параметрами через визуальный интерфейс продукта: после размещения компонента в рабочей области внизу страницы отобразится панель свойств компонента в зоне <span style="font-weight: bold;">Свойства</span>. Например, панель свойств компонента <span style="font-weight: bold;">Новости</span> имеет следующий вид:</p>
+ 
+<p><img src="../../images/iblock/7f5/comp_params.png" width="637" height="269"></p>
+ 
+<p>Если палитра свойств не отображается, следует выделить компонент, кликнув по нему указателем мыши. После установки требуемых свойств, страница готова к отображению. В зоне <span style="font-weight: bold;">Свойства</span> производится настройка компонента 
+  <br />
+ </p>
+ <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

@@ -1,0 +1,273 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fstatistic%2Fvisitors%2Fhit_list.php.html"; </script>
+
+<title>Хиты посетителей</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "statistic/visitors/hit_list.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Хиты посетителей])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Хиты посетителей</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+
+
+
+<p>Данная форма отображает хиты посетителей сайта. Под термином <i>хит</i>
+понимается одна загрузка страницы. Нажатие на ссылку на сайте и
+загрузка страницы приводит к генерации <i>хита</i>. Перезагрузка
+страницы или запрос к несуществующей страницы (404 ошибка) также
+генерирует <i>хит</i>. </p>
+
+<h4>Фильтр </h4>
+
+<table class=tnormal>
+<tr>
+	<th>Параметр</th><th>Описание</th>
+</tr>
+<tr>
+<td>ID, логин, имя, фамилия<font color="#008000">*</font></td>
+<td>Позволяет отобрать хиты <i>зарегистрированных </i>посетителей по
+маске их строк логина, имени, фамилия или ID.</td>
+</tr>
+<tr>
+<td>ID хита</td>
+<td>Маска идентификатора искомого хита.</td></tr>
+<tr>
+<td>ID сессии</td>
+<td>Маска для отбора сессий, в течение которых пользователем были
+открыты страницы (сгенерированы хиты).</td></tr>
+<tr>
+<td>Дата</td>
+<td>Интервал для отбора хитов по дате начала сессии.</td></tr>
+<tr>
+<td>ID посетителя<font color="#008000">*</font></td>
+<td> Позволяет отобрать хиты по маске ID посетителей сайта.</td>
+</tr>
+<tr>
+<td>Зарегистрирован</td>
+<td>Определяет, отображать ли только хиты зарегистрированных
+посетителей, незарегистрированных или всех.</td></tr>
+<tr>
+<td>Впервые/вернулся</td>
+<td>Флаг, позволяющий отфильтровать хиты посетителей, впервые
+посетивших сайт либо вернувшихся на сайт.</td></tr>
+<tr>
+<td>IP адрес<font color="#008000">*</font></td>
+<td>Маска IP-адреса посетителей, сгенерировавших искомые хиты.</td>
+</tr>
+<tr>
+<td>Страна<font color="#008000">*</font></td>
+<td>Позволяет отобрать хиты по стране посетителя (определяется по
+IP адресу). В квадратных скобках можно ввести двухсимвольную
+аббревиатуру страны (напр., RU, BY, US).</td>
+</tr>
+<tr>
+<td>UserAgent<font color="#008000">*</font></td>
+<td>Маска UserAgent’ов посетителей, сгенерировавших искомые хиты.</td>
+</tr>
+<tr>
+<td>Cookie</td>
+<td>Маска для сопоставления с cookie посетителей (отбор хитов
+посетителей, которым были переданы определённые cookie).</td>
+</tr>
+<tr>
+<td>Попал в стоп-лист</td>
+<td>Флаг, позволяющий отфильтровать хиты посетителей, которые были
+добавлены в стоп-лист.</td></tr>
+<tr>
+<td>ID записи стоп-листа</td>
+<td>Позволяет отобрать хиты заблокированных пользователей по
+маске идентификатора записи в стоп-листе.</td></tr>
+<tr>
+<td>Страница</td>
+<td>Позволяет отфильтровать хиты посетителей по имени страницы и
+сайту.<br><br>В выпадающем списке <b>(ошибка 404)</b> можно указать,
+отображать ли только запросы несуществующих страниц.</td></tr>
+<tr>
+<td>Логика между полями</td>
+<td>Переключатель, определяющий механизм поиска записей.
+<ul>
+<li>&quot;<b>И</b>&quot; - выводятся события, удовлетворяющие всем
+	критериям фильтра.
+<li>&quot;<b>ИЛИ</b>&quot; - выводятся события, удовлетворяющие хотя бы
+	одному критерию.</li>
+</ul>
+</td></tr>
+</table>
+
+<p><font color="#008000">*</font> - для данных полей вы можете воспользоваться <a href="../../general/filter.php.html">специальными логическими
+выражениями</a>.</p>
+
+<p>Для того чтобы установить фильтр по заданным критериям поиска, нажмите кнопку
+<b>Найти</b>. Для
+отображения всех данных нажмите кнопку <b>Отменить</b>.</p>
+
+<h4><a name="context_bar">Контекстная панель</a></h4>
+<table class="tnormal">
+<tbody>
+	<tr>
+	<th>Кнопка</th>
+	<th>Описание</th>
+	</tr>
+	<tr>
+	<td>Excel</td>
+	<td>Экспортирует данные из отображаемой таблицы в формат MS Excel.</td>
+	</tr><tr>
+	<td>Настроить</td>
+	<td>Позволяет перейти к диалогу настройки внешнего вида отчетной формы.</td>
+	</tr>
+</tbody>
+</table>
+
+<h4>Таблица</h4>
+
+<table class=wordtable>
+<tr>
+<th>Колонка</th>
+<th>Описание</th>
+</tr>
+<tr>
+<th style="vertical-align:top">Меню действий&nbsp;<br><img src="../../images/iblock/bac/admin_col_btn_action.png" width="30" height="20"></th>
+<td>Нажатие на кнопку действий в строке конкретного хита
+отображает меню, содержащее команды:
+<ul>
+<li><b>Подробно</b> - открывает отдельное окно с информацией по хиту (см.
+	ниже).</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th style="vertical-align:top">ID</th>
+<td>ID хита в базе (ваши текущий хит отмечен красным).</td>
+</tr>
+<tr>
+<th style="vertical-align:top">Дата</th>
+<td>Дата и время генерации хита (напр., загрузки страницы).</td>
+</tr>
+<tr>
+<th style="vertical-align:top">Посетитель</th>
+<td>Если посетитель зарегистрирован, данные в формате:
+<ul>
+<li>[ID пользователя] - ссылка открывает <a href="../../settings/users/user_edit.php.html">форму
+	редактирования пользователя</a>;
+<li>(логин) Имя Фамилия.</ul>
+Если посетитель впервые на сайте - <b>(впервые)</b>, иначе - <b>(вернулся)</b>.</td>
+</tr>
+<tr>
+<th style="vertical-align:top">IP адрес</th>
+<td>IP адрес посетителя. Ссылка на значении открывает страницу
+поиска информации по этому адресу (http://www.whois.sc/<b>IP</b> ).</td>
+</tr>
+<tr>
+<th style="vertical-align:top">Страна</th>
+<td>Страна посетителя.</td>
+</tr>
+<tr>
+<th style="vertical-align:top">Страница</th>
+<td>Страница хита.</td>
+</tr>
+<tr>
+<th style="vertical-align:top">Выбрано</th>
+<td>Количество хитов, выбранных из базы данных.</td>
+</tr>
+</table>
+
+<br>
+<h5>Пример</h5>
+<p class=sml id=glabel1>Нажмите на рисунок, чтобы увеличить</p>
+<img src="../../images/iblock/b0c/hit_list_small.png" width="381" height="218">
+
+<h4>Подробный просмотр информации о хите</h4>
+
+<table class="tnormal">
+<tr>
+	<th>Поле</th><th>Описание</th>
+</tr>
+<tr>
+	<td>ID</td><td>ID хита в базе.</td>
+</tr>
+<tr>
+<td>Сессия</td>
+<td>ID сессии в базе.</td></tr>
+<tr>
+<td>Дата</td>
+<td>Время возникновения хита.</td>
+</tr>
+<tr>
+<td>Откуда пришел</td>
+<td>Ссылающаяся страница.</td>
+</tr>
+<tr>
+<td>Куда пришел</td>
+<td>Адрес страницы хита.</td></tr>
+<tr>
+<td>Посетитель</td>
+<td>Регистрационные данные посетителя, ID посетителя.</td></tr>
+<tr>
+<td>IP адрес</td>
+<td>IP адрес посетителя в момент хита.</td></tr>
+<tr>
+<td>Страна</td>
+<td>Страна посетителя.</td></tr>
+<tr>
+<td>UserAgent</td>
+<td>UserAgent браузера посетителя.</td></tr>
+<tr>
+<td>Метод запроса</td>
+<td>Метод HTTP-запроса: GET либо POST. Подробнее о методах запроса можно
+прочесть тут: <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html" target="_blank">Method Definitions</a>
+(или <a href="http://lib.ru/WEBMASTER/rfc2068/section-9.html" target="_blank"> в переводе на русский</a>).</td></tr>
+<tr>
+<td>Cookies</td>
+<td>Содержимое файла cookie в момент хита.</td>
+</tr>
+</table>
+
+<br>
+<h5>Пример</h5>
+<p class=sml id=glabel2>Нажмите на рисунок, чтобы увеличить</p>
+<img src="../../images/iblock/5ef/hit_detail_small.png" width="361" height="238">
+
+
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

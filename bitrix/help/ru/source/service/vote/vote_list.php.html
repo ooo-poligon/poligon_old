@@ -1,0 +1,164 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fservice%2Fvote%2Fvote_list.php.html"; </script>
+
+<title>Список опросов</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/vote/vote_list.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Список опросов])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Список опросов</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<p>Список опросов. В каждый опрос может входить один и более вопросов, каждый вопрос содержит в свою очередь варианты ответов разных типов.</p>
+ 
+<h4><b>Фильтр</b></h4>
+ 
+<p>Задание параметров отбора опросов, которые отображаются в списке. 
+  <br />
+ </p>
+ 
+<table class="tnormal"> 
+  <tbody> 
+    <tr> 	<th>Параметр</th><th>Описание</th> </tr>
+   
+    <tr> <td>Заголовок*</td> <td>Заголовок опроса.</td> </tr>
+   
+    <tr> <td>ID*</td> <td>ID группы опросов в базе.</td></tr>
+   
+    <tr> <td>Индикатор</td> <td><span style="font-weight: bold;">Красный</span> &ndash; флаг активности опроса не установлен, либо текущая дата не попадает в интервал проведения опроса. 
+        <br />
+       <span style="font-weight: bold;">Зеленый</span> &ndash; флаг активности установлен и текущая дата попадает в интервал проведения опроса.</td></tr>
+   
+    <tr> <td>Дата начала</td> <td>Интервал для поля <span style="font-weight: bold;">Начало</span> (дата начала проведения опроса).</td></tr>
+   
+    <tr> <td>Дата окончания</td> <td>Интервал для поля <span style="font-weight: bold;">Окончание</span> (дата окончания опроса).</td></tr>
+   
+    <tr> <td>Группа опросов*</td> <td>Группа, к которой принадлежит опрос.</td></tr>
+   
+    <tr> <td>Флаг активности установлен</td> <td>Значение флага активности.</td></tr>
+   
+    <tr> <td>Число голосований</td> <td>Интервал для количества голосований по тому или иному опросу.</td></tr>
+   </tbody>
+ </table>
+ 
+<p>* - для данных полей вы можете воспользоваться <a href="../../general/filter.php.html"> специальными логическими выражениями</a>.</p>
+ 
+<p>Для инициализации фильтра необходимо нажать кнопку <b>Найти</b>. Для отображения всех опросов нажмите кнопку <b>Отменить</b>.</p>
+ 
+<h4>Контекстная панель</h4>
+ 
+<table width="100%" class="tnormal"> 
+  <tbody> 
+    <tr> <th>Кнопка</th> <th>Описание</th> </tr>
+   
+    <tr> <td>Создать</td> <td>Создание и установка параметров нового опроса.</td> </tr>
+   
+    <tr> <td>Настроить</td> <td>Переход к диалогу настройки внешнего вида отчетной формы.</td> </tr>
+   
+    <tr> 	<td>Excel</td> 	<td>Экспорт данных из отображаемой таблицы в формат <span style="font-weight: bold;">MS Excel</span>.</td> 	</tr>
+   </tbody>
+ </table>
+ 
+<h4><b>Таблица параметров опроса</b> </h4>
+ 
+<table class="wordtable"> 
+  <tbody> 
+    <tr> <th>Колонка</th> <th>Описание</th> </tr>
+   
+    <tr> <th style="vertical-align: top;">Колонка флажков</th> <td>Выбор опросов для применения к ним 	действий при помощи <a href="#act">вспомогательной формы <b>Действия</b></a> внизу таблицы.</td> </tr>
+   
+    <tr> <th style="vertical-align: top;">Меню 
+        <br />
+       действий</th> <td>Доступные действия: 	 
+        <ul> 	 
+          <li><b>Изменить </b>- отредактировать запись; 	</li>
+         
+          <li><b>Обнулить </b>- удалить все результаты 		опроса;</li>
+         	 
+          <li><b>Форма </b>- посмотреть форму опроса;</li>
+         	 
+          <li><b>Результаты </b>- посмотреть результаты 		опроса;</li>
+         	 
+          <li><b>Удалить </b>- удалить запись.</li>
+         	</ul>
+       </td> </tr>
+   
+    <tr> <th style="vertical-align: top;">ID</th> <td>ID опроса в базе.</td> </tr>
+   
+    <tr> <th style="vertical-align: top;">Инд.</th> <td>Индикатор опроса: 	 
+        <br />
+       <b>Красный</b> - флаг активности опроса не установлен, либо текущая дата не попадает в интервал проведения опроса; 
+        <br />
+       <b>Зеленый</b> - флаг активности установлен и текущая дата попадает в интервал проведения опроса. 
+        <ul> 		 		 	</ul>
+       </td> </tr>
+   
+    <tr> <th style="vertical-align: top;">Начало</th> <td>Дата начала проведения опроса.</td> </tr>
+   
+    <tr> <th style="vertical-align: top;">Окончание</th> <td>Дата окончания проведения опроса.</td> </tr>
+   
+    <tr> <th style="vertical-align: top;">Группа</th> <td>ID группы, к которой принадлежит опрос.</td> </tr>
+   
+    <tr> <th style="vertical-align: top;">Акт.</th> <td>Флаг активности опроса.</td> </tr>
+   
+    <tr> <th style="vertical-align: top;">Сорт.</th> <td>Порядок сортировки.</td> </tr>
+   
+    <tr> <th style="vertical-align: top;">Заголовок</th> <td>Заголовок опроса.</td> </tr>
+   
+    <tr> <th style="vertical-align: top;">Вопросы</th> <td>Количество вопросов; ссылка на добавление вопроса.</td> </tr>
+   
+    <tr> <th style="vertical-align: top;">Голосов.</th> <td>Количество голосований по данному опросу, ссылка ведет на страницу голосований с предустановленным фильтром.</td> </tr>
+   
+    <tr> <th style="vertical-align: top;">Выбрано</th> <td><span>Количество выбранных из базы записей. </span> </td> </tr>
+   
+    <tr> <th style="vertical-align: top;">Отмечено</th> <td><span>Количество записей, отмеченных 	флажками.</span></td> </tr>
+   </tbody>
+ </table>
+ 
+<h4><a name="act"></a>Действия над опросами</h4>
+ 
+<p>Вспомогательная форма <b>Действия</b> позволяет осуществить различные операции одновременно над несколькими опросами. Чтобы применить то или иное действие к опросам, следует пометить их галочками в левом столбце таблицы.</p>
+ 
+<p>Предусмотрены действия.</p>
+ <dl> 	<dt><span style="font-weight: bold;">Активировать</span> - переводит выбранные опросы в активный 		статус.</dt> 	<dt><span style="font-weight: bold;">Деактивировать</span> - переводит выбранные опросы в 		неактивный статус.</dt> </dl> <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

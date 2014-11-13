@@ -1,0 +1,122 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../index.html?page=source%2Fservice%2Fforum%2Fcensor_filter%2Fforum_words_edit.php.html"; </script>
+
+<title>Создание/редактирование слова</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/forum/censor_filter/forum_words_edit.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Фильтр нецензурных слов::Создание/редактирование слова])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Фильтр нецензурных слов::Создание/редактирование слова</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<h4 id="topictoctitle">В этом разделе</h4>
+ <menu id="topictoc"> 	 
+  <li><a href="#menu">Контекстная панель</a> 	</li>
+ 
+  <li><a href="#form">Форма редактирования</a> 	</li>
+ 
+  <li><a href="#buttons">Кнопки управления</a></li>
+ </menu> 
+<p>Форма используется для добавления в словарь новых и редактирования существующих нецензурных слов.</p>
+ 
+<h4><a name="menu"></a>Контекстная панель</h4>
+ 
+<table class="tnormal"> 	 
+  <tbody> 
+    <tr> 		<th width="17%">Кнопка</th> 		<th width="83%">Описание</th></tr>
+   	 
+    <tr> 		<td>Список</td> 		<td>Переход на страницу <a href="forum_words.php.html">словаря слов</a>.</td></tr>
+   	 
+    <tr> 		<td>Добавить</td> 		<td>Переход к форме создания нового слова. Кнопка отображается при редактировании существующего слова.</td></tr>
+   	 
+    <tr> 		<td>Удалить</td> 		<td>Удаление слова. Кнопка отображается при редактировании существующего слова.</td></tr>
+   </tbody>
+ </table>
+ 
+<h4><a name="form"></a>Форма редактирования</h4>
+ 
+<table class="tnormal"> 	 
+  <tbody> 
+    <tr> 		<th width="18%">Поле</th> 		<th width="82%">Описание</th></tr>
+   	 
+    <tr> 		<td>Поиск*</td> 		<td>Нецензурное слово или его часть с использованием символов: 
+        <br />
+       ^ - приставка; 
+        <br />
+       % - суффиксы и окончания; 
+        <br />
+       ? - один символ; 
+        <br />
+       * - любое количество словообразующих символов. </td></tr>
+   	 
+    <tr> 		<td>Активен</td> 		<td>Признак активности. </td></tr>
+   	 
+    <tr> 		<td>Тип создания шаблона </td> 		<td>Указывается тип, на основе которого создаётся шаблон нецензурного слова. </td></tr>
+   	 
+    <tr> 		<td>Замена</td> 		<td>Замена для нецензурного слова. 
+        <br />
+       
+        <br />
+       Замена слова происходит в том случае, если в <a href="../settings.php.html">настройках модуля</a> включен фильтр нецензурных слов и в качестве действий с найденными словами выбрано <b>Заменить</b>. Причем сначала проверяется, имеется ли собственная замена, если она есть, то будет использована. Если же собственной замены нет, то будет использоваться замена из настроек.</td></tr>
+   	 
+    <tr> 		<td>Описание</td> 		<td>Произвольное описание для нецензурного слова, которое будет отображаться только в <b>Административном разделе</b>. </td></tr>
+   </tbody>
+ </table>
+ 
+<p>&nbsp;* - Поле, обязательное для заполнения.</p>
+ 
+<h4><a name="buttons"></a>Кнопки управления</h4>
+ 
+<table class="tnormal"> 	 
+  <tbody> 
+    <tr> 		<th width="18%">Кнопка</th> 		<th width="82%">Описание</th></tr>
+   	 
+    <tr> 		<td>Сохранить</td> 		<td>Сохранение внесённых изменений. Переход на страницу словаря нецензурных слов.</td></tr>
+   	 
+    <tr> 		<td>Применить</td> 		<td>Сохранение внесённых изменений. Продолжение редактирования параметров нецензурного слова.</td></tr>
+   	 
+    <tr> 		<td>Отменить</td> 		<td>Отмена внесённых изменений. Возврат первоначальных значений параметров.</td></tr>
+   </tbody>
+ </table>
+ <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

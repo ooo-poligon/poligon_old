@@ -1,0 +1,96 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../index.html?page=source%2Fservice%2Fblogs%2Fcomponents_2%2Fblog_new_blogs.php.html"; </script>
+
+<title>Новые блоги</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/blogs/components_2/blog_new_blogs.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Компоненты 2.0::Новые блоги])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Компоненты 2.0::Новые блоги</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<p>Компонент выводит новые блоги. Компонент стандартный и входит в дистрибутив модуля.
+  <br />
+</p>
+ 
+<h4>Пример вызова</h4>
+
+<br />
+
+<pre id="xmp5A0A6F40" class="syntax">&lt;?$APPLICATION-&gt;IncludeComponent(&quot;bitrix:blog.new_blogs&quot;,&quot;&quot;,Array(<br />     &quot;BLOG_COUNT&quot; =&gt; &quot;6&quot;,<br />     &quot;SHOW_DESCRIPTION&quot; =&gt; &quot;Y&quot;,<br />     &quot;SORT_BY1&quot; =&gt; &quot;DATE_CREATE&quot;,<br />     &quot;SORT_ORDER1&quot; =&gt; &quot;DESC&quot;,<br />     &quot;SORT_BY2&quot; =&gt; &quot;ID&quot;,<br />     &quot;SORT_ORDER2&quot; =&gt; &quot;DESC&quot;,<br />     &quot;PATH_TO_BLOG&quot; =&gt; &quot;blog_blog.php?page=blog&amp;blog=#blog#&quot;,<br />     &quot;PATH_TO_USER&quot; =&gt; &quot;blog_user.php?page=user&amp;user_id=#user_id#&quot;,<br />     &quot;BLOG_VAR&quot; =&gt; &quot;blog&quot;,<br />     &quot;USER_VAR&quot; =&gt; &quot;user_id&quot;,<br />     &quot;PAGE_VAR&quot; =&gt; &quot;page&quot;,<br />     &quot;CACHE_TYPE&quot; =&gt; &quot;A&quot;,<br />     &quot;CACHE_TIME&quot; =&gt; &quot;86400&quot;<br />     )<br />);?&gt;</pre>
+ 
+<h4>Описание параметров</h4>
+ 
+<h5 class="graytitle">Внешний вид</h5>
+ <dl> 	<dt><span style="font-weight: bold;">BLOG_COUNT</span> 	</dt><dd>Количество блогов, выводимых на странице. 	</dd><dt><span style="font-weight: bold;">SHOW_DESCRIPTION</span> 	</dt><dd>При выборе значения <span style="font-weight: bold;">Y</span> будет выводится описание блога. </dd></dl> 
+<h5 class="graytitle">Шаблоны ссылок</h5>
+ <dl> 	<dt><span style="font-weight: bold;">PATH_TO_BLOG</span> 	</dt><dd>Путь к главной странице конкретного блога. 	</dd><dt><span style="font-weight: bold;">PATH_TO_USER</span> 	</dt><dd>Путь к странице профиля пользователя. </dd></dl> 
+<h5 class="graytitle">Настройки кэширования</h5>
+ <dl> 	<dt>CACHE_TYPE 	</dt><dd>Тип кэширования: 	
+    <ul> 		
+      <li><span style="font-weight: bold;">A</span> - Авто: действует при включенном кэшировании в течение заданного времени; 		</li>
+    
+      <li><span style="font-weight: bold;">Y</span> - Кешировать: необходимо определить время кэширования; 		</li>
+    
+      <li><span style="font-weight: bold;">N</span> - Не кэшировать: кэширования нет в любом случае. </li>
+    </ul>
+   	</dd><dt><span style="font-weight: bold;">CACHE_TIME</span> 	</dt><dd>Время кэширования, указанное в секундах.</dd></dl> 
+<h5 class="graytitle">Дополнительные настройки</h5>
+ <dl> 	<dt><span style="font-weight: bold;">SORT_BY1</span> 	</dt><dd>Выбирается первый параметр сортировки: 	
+    <ul> 		
+      <li><span style="font-weight: bold;">DATE_CREATE</span> - дата создания блога; 		</li>
+    
+      <li><span style="font-weight: bold;">ID</span><span style="font-weight: bold;"> </span>- идентификатор блога; 		</li>
+    
+      <li><span style="font-weight: bold;">NAME</span> - название блога; 		</li>
+    
+      <li><span style="font-weight: bold;">LAST_POST_DATE</span> - дата последнего сообщения. </li>
+    </ul>
+   	</dd><dt><span style="font-weight: bold;">SORT_ORDER1</span> 	</dt><dd>Направление сортировки по параметру <span style="font-weight: bold;">SORT_BY1</span>: 	
+    <ul> 		
+      <li><span style="font-weight: bold;">asc</span><i> </i>- по возрастанию; 		</li>
+    
+      <li><span style="font-weight: bold;">desc</span> - по убыванию. </li>
+    </ul>
+   	</dd><dt><span style="font-weight: bold;">SORT_BY2</span> 	</dt><dd>Выбирается второй параметр сортировки. 	</dd><dt><span style="font-weight: bold;">SORT_ORDER2</span> 	</dt><dd>Направление сортировки по параметру <span style="font-weight: bold;">SORT_BY2</span>. 	</dd><dt><span style="font-weight: bold;">BLOG_VAR</span> 	</dt><dd>Имя переменной, которой передается ID блога. 	</dd><dt><span style="font-weight: bold;">USER_VAR</span> 	</dt><dd style="font-weight: bold;">Имя переменной, которой передается ID пользователя блога. 	</dd><dt><span style="font-weight: bold;">PAGE_VAR</span> 	</dt><dd>Имя переменной, которой передается страница блога. </dd></dl><bitrix:sys name="feedbackform"></bitrix:sys> <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

@@ -1,0 +1,160 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fsettings%2Fusers%2Fuser_admin.php.html"; </script>
+
+<title>Список пользователей</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "settings/users/user_admin.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Список пользователей])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Список пользователей</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+<h4>В данном разделе</h4>
+
+<p><a href="#filter" >Фильтр</a> 
+  <br />
+<a href="#menu" >Контекстная панель</a> 
+  <br />
+<a href="#ussers" >Список пользователей</a></p>
+
+<p>Форма <b>Список пользователей</b> находится в административной части сайта: <i>Настройки &gt; Пользователи &gt; Список пользователей</i>. Данная форма содержит полный список пользователей сайта и позволяет:</p>
+
+<ul>
+  <li>добавлять новых пользователей сайта; </li>
+
+  <li>переходить к управлению параметрами и правами доступа пользователей; </li>
+
+  <li>удалять пользователей сайта. </li>
+</ul>
+
+<h4><a name="filter"></a>Фильтр</h4>
+
+<p>Форма фильтра используется для выбора из списка пользователей в соответствии с указанными условиями. Нижеследующая таблица описывает параметры, по которым может выполняться поиск.</p>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th width="25%">Параметр</th><th width="75%">Описание</th></tr>
+  
+    <tr><td>Найти</td><td>Позволяет найти пользователей по их основным параметрам: логину, e-mail или имени, фамилии, отчеству. Это поле присутствует, даже если фильтр свернут.</td></tr>
+  
+    <tr><td>ID</td><td>Идентификатор пользователя. Соответствует полю <b>ID</b> в списке пользователей. Допустимо использование <a href="../../general/filter.php.html">сложного поиска</a>.</td></tr>
+  
+    <tr><td>Дата изменения</td><td>Позволяет отобрать пользователей, параметры которых были изменены в течение интересующего вас периода.</td></tr>
+  
+    <tr><td>Последняя авторизация</td><td>Позволяет осуществить поиск пользователей по дате последней авторизации.</td></tr>
+  
+    <tr><td>Активен</td><td>Определяется, какие пользователи будут участвовать в поиске: 
+        <ul>
+          <li>активные; </li>
+        
+          <li>неактивные; </li>
+        
+          <li>все (активные и неактивные). </li>
+        </ul>
+      </td></tr>
+  
+    <tr><td>Логин</td><td>Поле позволяет осуществить отбор пользователей по логину. Допустимо использование <a href="../../general/filter.php.html">сложного поиска</a>.</td></tr>
+  
+    <tr><td>E-Mail</td><td>Служит для отбора пользователей по адресу электронной почты. Допустимо использование <a href="../../general/filter.php.html">сложного поиска</a>.</td></tr>
+  
+    <tr><td>Фамилия, имя, отчество</td><td>Служит для отбора пользователей по имени. Допустимо использование <a href="../../general/filter.php.html">сложного поиска</a>.</td></tr>
+  
+    <tr><td>Поля профайла</td><td>Позволяет осуществлять поиск пользователей по другим полям профиля: телефон, номер ICQ и пр. Допустимо использование <a href="../../general/filter.php.html">сложного поиска</a>.</td></tr>
+  
+    <tr><td>Группы</td><td>Список групп, пользователей из которых следует отобрать. Для выбора нескольких групп удерживайте клавишу <i>Ctrl</i>.</td></tr>
+  </tbody>
+</table>
+
+<p>Для того чтобы отобрать пользователей по заданным критериям поиска, нажмите кнопку &quot;Найти&quot;. Для отображения всех групп нажмите кнопку &quot;Отменить&quot;.</p>
+
+<h4><a name="menu"></a>Контекстная панель</h4>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th width="25%">Кнопка</th><th width="75%">Описание</th></tr>
+  
+    <tr><td>Добавить пользователя</td><td>Переход к форме создания нового пользователя.</td></tr>
+  
+    <tr><td>Excel</td><td>Экспортирует данные из отображаемой таблицы в формат MS Excel.</td></tr>
+  
+    <tr><td>Настроить</td><td>Позволяет перейти к диалогу настройки внешнего вида отчетной формы.</td></tr>
+  </tbody>
+</table>
+
+<h4><a name="ussers"></a>Список пользователей</h4>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th width="25%">Поле</th><th width="75%">Описание</th></tr>
+  
+    <tr><td>Колонка флажков</td><td>Поле предназначено для выбора пользователей, к которым предполагается применить какое-либо правило или действие.</td></tr>
+  
+    <tr><td>Действие</td><td>Действия над пользователями: 
+        <ul>
+          <li><b>Изменить</b> - переход к <a href="user_edit.php.html">редактированию</a> пользователя; </li>
+        
+          <li><b>Добавить копию</b> - создание копии пользователя; </li>
+        
+          <li><b>Удалить</b> - удаление пользователя. </li>
+        </ul>
+      </td></tr>
+  
+    <tr><td>Логин</td><td>Логин (имя входа) пользователя.</td></tr>
+  
+    <tr><td>Активность</td><td>Признак активности пользователя. Блокировка администратора сайта <font class="tablebodytext"><b></b></font>невозможна<font class="tablebodytext">.</font></td></tr>
+  
+    <tr><td>Дата изменения</td><td>Дата последней модификации информации о пользователе.</td></tr>
+  
+    <tr><td>Имя</td><td>Имя пользователя.</td></tr>
+  
+    <tr><td>Фамилия</td><td>Фамилия пользователя.</td></tr>
+  
+    <tr><td>E-mail</td><td>Адрес электронной почты пользователя.</td></tr>
+  
+    <tr><td>Последняя авторизация</td><td>Дата последней авторизации пользователя</td></tr>
+  
+    <tr><td>ID</td><td>Идентификатор пользователя.</td></tr>
+  </tbody>
+</table>
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

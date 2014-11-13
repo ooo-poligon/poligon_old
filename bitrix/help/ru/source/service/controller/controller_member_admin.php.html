@@ -1,0 +1,172 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fservice%2Fcontroller%2Fcontroller_member_admin.php.html"; </script>
+
+<title>Управление подчиненными сайтами</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/controller/controller_member_admin.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Контроллер::Управление подчиненными сайтами])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Контроллер::Управление подчиненными сайтами</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<p>На странице (<i>Сервисы &gt; Контроллер &gt; Сайты</i>) представлен список сайтов, подключенных к сайту-контроллеру. </p>
+ 
+<h4><a name="filter"></a>Фильтр</h4>
+ 
+<p>Фильтр используется для задания параметров отбора сайтов-клиентов, отображаемых в списке. 
+  <br />
+ </p>
+ 
+<table width="100%" style="border-collapse: collapse;"> 	 
+  <tbody> 
+    <tr> 		<th width="151">Поле</th> 		<th width="541">Описание</th></tr>
+   	 
+    <tr> 		<td>Название</td> 		<td>Поиск сайта-клиента по названию. </td> 	</tr>
+   	 
+    <tr> 		<td style="font-weight: bold;">ID</td> 		<td>Поиск клиента по идентификатору. </td> 	</tr>
+   	 
+    <tr> 		<td><span style="font-weight: bold;">URL</span> сайта</td> 		<td><span style="font-weight: bold;">URL</span>-адрес клиента.</td> 	</tr>
+   	 
+    <tr> 	<td>Группа</td> 	<td>Отбор клиентов, относящихся к указанной группе. Если выбрано значение <span style="font-weight: bold;">любая</span>, то будут отображены клиенты, относящиеся ко всем группам. </td> 	</tr>
+   	 
+    <tr> 	<td>Уникальный код</td> 	<td>Поиск клиента по уникальному коду.</td> 	</tr>
+   	 
+    <tr> 	<td>Активен</td> 	<td>Отображение только активных клиентов либо только неактивных клиентов, либо всех клиентов. </td> 	</tr>
+   	 
+    <tr> 	<td>Отключен</td> 	<td>Отображение только присоединенных клиентов либо только отсоединенных клиентов, либо всех клиентов. </td> 	</tr>
+   	 
+    <tr> 	<td>Период изменения</td> 	<td>Поиск клиентов, настройки которых были изменены в указанный период. </td> 	</tr>
+   	 
+    <tr> 	<td>Период создания</td> 	<td>Поиск клиентов, которые были созданы в указанный период времени.</td> 	</tr>
+   	 
+    <tr> 	<td>Активен с</td> 	<td>Отбор клиентов, активность которых началась в заданный период времени. </td> 	</tr>
+   	 
+    <tr> 		<td>Активен по</td> 		<td>Отбор клиентов, активность которых закончилась в заданный период времени. </td> 	</tr>
+   
+    <tr><td colspan="1">Контактное лицо </td><td colspan="1">ФИО контактного лица</td></tr>
+   
+    <tr><td colspan="1">E-Mail адрес</td><td colspan="1">Адрес электронной почты контактного лица</td></tr>
+   </tbody>
+ </table>
+ 
+<p>Чтобы отфильтровать клиентов по заданным критериям поиска, нажмите кнопку <b>Найти</b>. Для отображения всех клиентов нажмите кнопку <b>Отменить</b>.</p>
+ 
+<h4><a name="panel"></a>Контекстная панель</h4>
+ 
+<table width="100%" class="tnormal" style="border-collapse: collapse;"> 	 
+  <tbody> 
+    <tr> 		<th>Кнопка</th> 		<th>Описание</th></tr>
+   	 
+    <tr> 		<td>Добавить</td> 		<td>Служит для добавления <a href="controller_member_edit.php.html">нового клиента</a>.</td> 	</tr>
+   	 
+    <tr> 		<td>Настроить</td> 		<td>Переход к диалогу настройки внешнего вида отчетной формы.</td></tr>
+   	 
+    <tr> 		<td>Excel</td> 		<td>Экспорт данных из отображаемой таблицы в формат <span style="font-weight: bold;">MS Excel</span>.</td></tr>
+   </tbody>
+ </table>
+ 
+<h4><a name="list"></a>Список сайтов</h4>
+ 
+<table width="100%" class="tnormal" style="border-collapse: collapse;"> 	 
+  <tbody> 
+    <tr> 		<th width="19%">Колонка</th> 		<th width="81%">Описание</th></tr>
+   	 
+    <tr> 		<td>Колонка флажков</td> 		<td>Выбор клиентов, к которым предполагается применить действие.</td> 	</tr>
+   	 
+    <tr> 		<td>Меню 
+        <br />
+       действий 
+        <br />
+       <img src="../../images/iblock/406/admin_col_btn_action.png" width="30" height="20"></td> 		<td>Доступные действия: 			 
+        <ul> 				 
+          <li><b>Редактировать</b> - отредактировать параметры сайта; 				</li>
+         
+          <li><b>Войти как Администратор</b> - переход в публичный раздел сайта-клиента в качестве администратора; Виден только на&nbsp; 				</li>
+         
+          <li><b>Обновить сайт</b> - установка обновлений на сайт клиента; 				</li>
+         
+          <li><b>Обновить настройки</b> - выполнение установки настроек на сайт клиента; 				</li>
+         
+          <li><b>Выполнить PHP</b> - переход на страницу <a href="controller_run_command.php.html">удаленного выполнения команды</a> для данного сайта; 				</li>
+         
+          <li><b>Лог операций</b> - переход на страницу <a href="controller_log_admin.php.html">журнала работы контроллера</a> с установленным фильтром на данном клиенте; 				</li>
+         
+          <li><b>Отсоединить</b> - отключение клиента от контроллера; 				</li>
+         
+          <li><b>Удалить </b>- удаление записи данного клиента. </li>
+         			</ul>
+       </td></tr>
+   	 
+    <tr> 		<td>Дата изменения </td> 		<td>Дата и время проведения последнего изменения клиента. </td> 	</tr>
+   	 
+    <tr> 		<td>Кем изменено</td> 		<td>Логин, имя и фамилия пользователя, проводившего последнее изменение клиента. </td> 	</tr>
+   	 
+    <tr> 		<td>Название</td> 		<td>Название клиента.</td> 	</tr>
+   	 
+    <tr> 		<td><span style="font-weight: bold;">URL</span> сайта </td> 		<td><span style="font-weight: bold;">URL</span>-адрес сайта-клиента. </td> 	</tr>
+   	 
+    <tr> 		<td>Группа</td> 		<td>Группа, к которой относится клиент. </td> 	</tr>
+   	 
+    <tr> 	<td>Отсоединен</td> 	<td>Отметка о том, что клиент присоединен или отсоединен от контроллера.</td> 	</tr>
+   	 
+    <tr> 	<td>Акт.</td> 	<td>Признак активности клиента. </td> 	</tr>
+   	 
+    <tr> 	<td>Активен с </td> 	<td>Дата и время начала активности клиента. </td> 	</tr>
+   	 
+    <tr> 	<td>Активен по </td> 	<td>Дата и время окончания активности клиента.</td> 	</tr>
+   	 
+    <tr> 	<td>Дата создания </td> 	<td>Дата и время создания клиента.</td> 	</tr>
+   	 
+    <tr> 	<td>Кем создана </td> 	<td>Логин, имя и фамилия пользователя, который создал клиента. </td> 	</tr>
+   	 
+    <tr> 	<td>Уникальный код </td> 	<td>Уникальный код клиента.</td> 	</tr>
+   	 
+    <tr> 	<td>Общ.ядро</td> 	<td>Признак общности ядра контроллера и клиента. </td> 	</tr>
+   	 
+    <tr> 	<td>Заметки</td> 	<td>Произвольное описание клиента. </td> 	</tr>
+   	 
+    <tr> 		<td>ID</td> 		<td>Идентификатор клиента. </td> 	</tr>
+   </tbody>
+ </table>
+ <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

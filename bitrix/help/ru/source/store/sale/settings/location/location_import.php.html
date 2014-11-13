@@ -1,0 +1,136 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../../index.html?page=source%2Fstore%2Fsale%2Fsettings%2Flocation%2Flocation_import.php.html"; </script>
+
+<title>Импорт местоположений</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../../docstyle.css);</style>
+
+<script src="../../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "store/sale/settings/location/location_import.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Импорт местоположений])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Импорт местоположений</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+
+
+
+
+<h4 id="topictoctitle">В этом разделе</h4>
+<menu id="topictoc">
+<li><a href="#master">Мастер импорта местоположений</a></li>
+<li><a  href="#load">Загрузка местоположений из файла</a></li>
+	<menu>
+	<li><a href="#form_l">Форма загрузки 
+местоположений</a></li>
+	<li><a  href="#examp">Пример файла с местоположениями</a>
+	</menu>
+</menu>
+
+
+<p>Для быстрой загрузки местоположений на сайт существует две возможности: 
+воспользоваться мастером импорта местоположений либо выполнить импорт 
+самостоятельно из файла.</p>
+
+<h4><a name="master">Мастер импорта местоположений</a></h4>
+<p>Для удобства импорта местоположений в систему создан мастер загрузки 
+местоположений. Для запуска мастера служит кнопка <b>Запустить мастер импорта 
+местоположений</b> на закладке <i>Импорт</i>. На каждом шаге мастер предлагает к 
+заполнению различные параметры: какие города загружать, удалять ли прежние 
+данные и т.д. При работе с мастером импорта файлы местоположений загружать не 
+требуется. </p>
+
+<h4><a name="form_l">Закладка "Импорт из файла"</a></h4>
+<p>Также есть возможность загрузить местоположения из файла данных специального 
+формата. Для этого необходимо воспользоваться закладкой <b>Импорт из файла</b>. 
+При этом старые местоположения могут быть удалены автоматически с помощью флага 
+<b>Удалить местоположения перед загрузкой</b>.</p>
+
+<table class="tnormal">
+	<tr>
+		<th width="25%">Поле</th>
+		<th width="75%">Описание</th></tr>
+	<tr>
+		<td>Файл</td>
+		<td>Файл с местоположениями. С помощью кнопки "Обзор" вы можете выбрать 
+      необходимый файл на локальном компьютере.</td></tr>
+	<tr>
+		<td>Удалить местоположения перед загрузкой</td>
+		<td>Для того чтобы перед загрузкой новых местоположений удалить ранее 
+      созданные местоположения, установите флаг в это поле. 
+			<p class="note"><b>Обратите внимание! </b>Местоположения будут удалены даже 
+      в том случае, если они фигурируют в адресах существующих 
+  заказов.</p>
+</td></tr>
+</table>
+<h4><a name="examp">Пример файла для загрузки местоположений</a> <br /><br /></h4><pre class="syntax" id="xmpAA683772">
+en
+S,en,Russian Federation,ru,Россия
+T,en,Moscow,ru,Москва
+T,en,Kaliningrad,ru,Калининград
+S,en,Ukraine,ru,Украина
+T,en,Kiev,ru,Киев
+S,en,Estonia,ru,Эстония</pre>
+<p>В первой строке указывается язык (в примере<code> en</code> (английский), 
+названия на котором будут отображаться в административной части и использоваться 
+для поиска при загрузке. </p>
+
+<p>В остальных строках файла указываются загружаемые данные. Сначала указывается 
+страна (строка начинается с "S"), потом все города этой страны (строки 
+начинаются с "T"), потом следующая страна и т.д. </p>
+
+<p>Каждая строка имеет следующий формат (в самом файле строка не должна 
+разрываться): </p>
+<pre class="syntax" id="xmpB5863953">
+&lt;Указатель страна/город (S/T)&gt;,
+&lt;сайт (язык названия)&gt;,&lt;название для указанного перед этим сайта&gt;,
+&lt;сайт (язык названия)&gt;,&lt;название для указанного перед этим сайта&gt;...</pre>
+<p>Названия должны быть указаны для всех языков. Если какие-либо из языков не 
+существуют, то они будут проигнорированы.</p>
+
+<p>Если загружаемая страна уже присутствует в системе, то она не будет загружена 
+повторно, а будет использована существующая запись. Города загружаются всегда, 
+вне зависимости от присутствия подобных названий в системе. </p>
+<bitrix:sys 
+name="feedbackform"></bitrix:sys>
+
+
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

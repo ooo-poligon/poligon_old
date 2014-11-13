@@ -1,0 +1,65 @@
+<html>
+<head><META http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<script type="text/JavaScript" src="files/treearr.js"></script>
+<script type="text/javascript">
+var pageid=""; var searchquery=""; var indexquery=""; var syncmode=false; var pagenum=0;
+var qs = location.search.substr(1); var A  = qs.split("&");
+var B  = null; var F  = "source/index.php.html";
+for(var i=0;i<A.length;i++){ B=A[i].split("="); A[i]=[B[0],B[1]]; }
+for (var j=0;j<A.length;j++){ if(A[j][0]=="page"){ F=A[j][1]; break; } }
+F = unescape(F); 
+function navDelta(incr) 
+{ 
+	next = pagenum; 
+	if (incr < 0)
+	{
+		for (i=pagenum-1; i>=0; i--)
+		if (FITEMS[i] != null)
+		{
+			next = i;
+			break;
+		}
+	}
+	else
+	{
+		for (i=pagenum+1; i<FITEMS.length; i++)
+		if (FITEMS[i] != null)
+		{
+			next = i;
+			break;
+		}
+	}
+	if (next == pagenum) return;
+	var url = FITEMS[next];
+	try {
+	jstree.dOpenTreeNode(next);
+	} catch (e) {
+	pagenum = next;
+	};
+	window.open(url, "content");
+}
+</script>
+<title>Битрикс: Управление сайтом</title>
+</head>
+<script type="text/JavaScript">
+document.write('<frameset rows="43,*" frameborder="0" framespacing="0" border="1" bordercolor="#5D6BB3">');
+document.write('<frame name="header" src="helpheaderc.html" scrolling="no">');
+document.write('<frameset cols="350,*"  border="4" frameborder="1" FRAMESPACING="4" TOPMARGIN="0" LEFTMARGIN="0" MARGINHEIGHT="0" MARGINWIDTH="0">');
+document.write('<frame name="toc" src="helpcontents.html" TOPMARGIN="5" LEFTMARGIN="5" MARGINHEIGHT="5" MARGINWIDTH="5" FRAMEBORDER="1" BORDER="1">');
+document.write('<frame name="content" src="' + F + '" FRAMEBORDER="no" BORDER="0" BORDERCOLOR="#5D6BB3" style="border-left:1px solid #273056;border-top:0px;">');
+document.write('</frameset>');
+document.write('</frameset>');
+var frm = window.parent.frames;
+for (i=0; i < frm.length; i++) 
+{
+	if (frm[i].name == "header")
+	{
+		try{
+		frm[i].open("helpheaderc.html", "header");
+		}catch(e){};
+
+	}
+}
+</script>
+<noscript><p>To display this page you need a browser with JavaScript support.</p><a href="helpcontents.html">Help contents</a></noscript> 
+</html>

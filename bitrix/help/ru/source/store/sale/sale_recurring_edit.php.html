@@ -1,0 +1,132 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fstore%2Fsale%2Fsale_recurring_edit.php.html"; </script>
+
+<title>Создание и редактирование продления подписки</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "store/sale/sale_recurring_edit.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Создание и редактирование продления подписки])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Создание и редактирование продления подписки</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+<h4 id="topictoctitle">В этом разделе</h4>
+<menu id="topictoc">
+  <li><a href="#menu" >Контекстная панель</a> </li>
+
+  <li><a href="#fields" >Поля формы</a> </li>
+
+  <li><a href="#buttons" >Кнопки управления</a> </li>
+</menu>
+<p>Данная форма служит для оформления продления подписки или изменения параметров уже оформленного продления.</p>
+
+<h4><a name="#menu"></a>Контекстная панель</h4>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th width="25%">Кнопка</th><th width="75%">Описание</th></tr>
+  
+    <tr><td height="19">Список записей</td><td>Переход на страницу со списком записей о продлении подписки.</td></tr>
+  
+    <tr><td height="19">Добавить новую запись</td><td>Переход к форме создания нового продления. Отображается при редактировании существующего продления.</td></tr>
+  
+    <tr><td height="19">Удалить запись</td><td>Удаление редактируемого продления.</td></tr>
+  </tbody>
+</table>
+
+<h4><a name="#fields"></a>Поля формы</h4>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th width="25%">Поле</th><th width="75%">Описание</th></tr>
+  
+    <tr><td>ID</td><td>Идентификатор записи о продлении подписки в системе. Отображается в режиме редактирования продления подписки.</td></tr>
+  
+    <tr><td>Дата последнего изменения</td><td>Дата и время последнего изменения подписки.</td></tr>
+  
+    <tr><td>*Пользователь</td><td>Регистрационный код пользователя, для которого оформляется продление подписки. Выбор кода осуществляется из списка, открываемого с помощью кнопки [<b>...</b>].</td></tr>
+  
+    <tr><td>Отменено</td><td>Признак недействительности продления подписки. 
+        <br />
+      Если выбрана данная опция, то продление подписки считается недействительным (т.е. продление отменяется).</td></tr>
+  
+    <tr><td>Причины отмены</td><td>Если продление подписки отменяется, то в данном поле указываются причины отмены.</td></tr>
+  
+    <tr><td>Модуль</td><td>Название модуля, право на доступ к контенту которого продлевается.</td></tr>
+  
+    <tr><td>*Товар</td><td>Идентификационный номер товара, подписка на использование которого продлевается.</td></tr>
+  
+    <tr><td>Название товара</td><td>Полное наименование товара.</td></tr>
+  
+    <tr><td>Ссылка на товар</td><td>Ссылка на страницу с информацией о товаре.</td></tr>
+  
+    <tr><td>Дата последнего продления</td><td>Дата и время оформления предыдущего продления подписки.</td></tr>
+  
+    <tr><td>*Дата очередного продления</td><td>Дата и время предстоящего продления подписки.</td></tr>
+  
+    <tr><td>Предыдущая попытка выполнена успешно</td><td>Признак успешности предыдущего оформления продления подписки.</td></tr>
+  
+    <tr><td>Осталось попыток продления</td><td>Если продление подписки осуществляется автоматически, то в данном поле указывается количество возможных попыток продления. Если значение поля равно <b>0</b>, то попытка продления подписки производиться не будет.</td></tr>
+  
+    <tr><td>*Код базового заказа</td><td>Код продлеваемого заказа.</td></tr>
+  
+    <tr><td>Описание</td><td>Произвольное описание записи о продлении подписки.</td></tr>
+  </tbody>
+</table>
+
+<p>* - Поля, обязательные для заполнения.</p>
+
+<h4><a name="buttons"></a>Кнопки управления</h4>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th width="25%">Кнопка</th><th width="75%">Описание</th></tr>
+  
+    <tr><td>Сохранить</td><td>Сохранение изменений, выполненных на данной странице. Переход на страницу со списком продлений подписок.</td></tr>
+  
+    <tr><td>Применить</td><td>Сохранение внесённых изменений. Продолжение редактирования параметров продления подписки.</td></tr>
+  
+    <tr><td>Отменить</td><td>Отмена внесённых изменений. Возврат первоначальных значений параметров.</td></tr>
+  </tbody>
+</table>
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

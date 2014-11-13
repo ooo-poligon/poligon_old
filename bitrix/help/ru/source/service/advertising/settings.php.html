@@ -1,0 +1,114 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fservice%2Fadvertising%2Fsettings.php.html"; </script>
+
+<title>Настройки</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/advertising/settings.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Настройки])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Настройки</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<h4 id="topictoctitle">В этом разделе</h4>
+ <menu id="topictoc"> 	 
+  <li><a href="#settings">Закладка &quot;Настройки&quot;</a> 	</li>
+ 
+  <li><a href="#access">Закладка &quot;Доступ&quot;</a></li>
+ </menu> 
+<p>Форма настроек модуля <span style="font-weight: bold;">Рекламы</span> (<span style="font-style: italic;">Настройки &gt; Настройки продукта &gt; Модули</span>) предназначена для задания общесистемных параметров модуля.</p>
+ 
+<h4><a name="settings"></a>Закладка &quot;Настройки&quot;</h4>
+ 
+<p>Настройка общих параметров модуля.</p>
+ 
+<table class="tnormal"> 	 
+  <tbody> 
+    <tr> 		<th width="26%">Название параметра</th> 		<th width="74%">Описание параметра</th></tr>
+   	 
+    <tr> 		<td><label for="DONT_USE_CONTRACT">Не использовать ограничения контрактов при показе баннера</label></td> 		<td>Ограничения контрактов не будут использованы при показе баннеров.</td></tr>
+   	 
+    <tr> 		<td>Использовать HTML редактор (только для IE 5.0 или FireFox 1.0 и выше)</td> 		<td>Разрешить или запретить использование визуального HTML редактора при редактировании кода баннеров.</td></tr>
+   	 
+    <tr> 		<td>Сколько дней хранить динамику по баннерам</td> 		<td>Ограничить количество дней, отводимых для хранения данных по показам и кликам на баннеры.</td></tr>
+   	 
+    <tr> 		<td>Ширина графика</td> 		<td>Ширина графиков (в пикселях).</td></tr>
+   	 
+    <tr> 		<td>Высота графика</td> 		<td>Высота графиков (в пикселях).</td></tr>
+   	 
+    <tr> 		<td>Диаметр круговой диаграммы</td> 		<td>Диаметр круговых диаграмм (в пикселях).</td></tr>
+   	 
+    <tr> 		<td>На сколько дней запоминать, что посетитель посмотрел тот или иной баннер</td> 		<td>Количество дней, в течение которых посетитель считается просмотревшим тот или иной баннер.</td></tr>
+   	 
+    <tr> 		<td>Полное имя файла для учета кликов на баннер</td> 		<td>Путь к файлу, содержащему скрипт для сбора статистики по кликам на баннеры. Скрипт по умолчанию (<code style="font-style: italic;">/bitrix/rk.php</code>) регистрирует клики в модуле <span style="font-weight: bold;">Статистики</span>, если последний установлен; иначе, предпринимается попытка зарегистрировать клик в модуле <span style="font-weight: bold;">Рекламы</span>.</td></tr>
+   	 
+    <tr> 		<td>Подкаталог для хранения загруженных баннеров</td> 		<td>Имя подкаталога (относительно каталога <code style="font-style: italic;">/upload/</code>), в котором хранятся все изображения, загружаемые при создании баннеров.</td></tr>
+   </tbody>
+ </table>
+ 
+<h4><a name="access"></a>Закладка &quot;Доступ&quot;</h4>
+ 
+<p>Настройка прав групп пользователей на доступ к модулю рекламы.</p>
+ 
+<table class="tnormal"> 	 
+  <tbody> 
+    <tr> 		<th width="25%">Поле</th> 		<th width="75%">Описание</th></tr>
+   	 
+    <tr> 		<td>По умолчанию</td> 		<td>Управление правами доступа всех групп пользователей, для которых установлен уровень доступа <span style="font-weight: bold;">п</span><span style="font-weight: bold;">о умолчанию</span>.</td></tr>
+   	 
+    <tr> 		<td>[Группа пользователей]</td> 		<td>Уровень доступа для конкретной группы пользователей: 			 
+        <ul> 				 
+          <li><b>Доступ закрыт</b> - доступ запрещён; 				</li>
+         
+          <li><b>Рекламодатель</b> - доступ к меню и административным файлам открыт, пользователь видит только те контракты и принадлежащие им баннеры, на которые у него есть соответствующие права. Данный уровень прав используется для групп рекламодателей, размещающих свои баннеры на вашем сайте. 				</li>
+         
+          <li><b>Менеджер баннеров</b>- доступ к управлению баннерами контракта (без права изменения параметров контракта), в настройках которого для данных пользователей установлено право <b>Управление баннерами</b>. 				</li>
+         
+          <li><b>Демо-доступ</b> - пользователь видит все контракты, типы баннеров, баннеры, может строить любые графики, но без права модификации чего-либо (право обычно используется в демонстрационном режиме, когда пользователь может все видеть, но не имеет права что либо изменять). 				</li>
+         
+          <li><b>Администратор рекламы</b> - полный доступ, без каких либо ограничений. </li>
+         </ul>
+       </td></tr>
+   </tbody>
+ </table>
+ <bitrix:sys name="feedbackform"></bitrix:sys> <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

@@ -1,0 +1,169 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../../index.html?page=source%2Fstore%2Fsale%2Fsettings%2Forder_props%2Forder_props.php.html"; </script>
+
+<title>Список свойств</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../../docstyle.css);</style>
+
+<script src="../../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "store/sale/settings/order_props/order_props.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Список свойств])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Список свойств</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+
+
+
+
+<h4 id="topictoctitle">В этом разделе</h4>
+
+<menu id="topictoc">
+<li><a href="#filter">Форма поиска</a></li>
+<li><a href="#add">Контекстная панель</a></li>
+<li><a href="#list">Список свойств заказа</a>
+</menu>
+
+
+<p>Форма <b>Свойства заказа</b> служит для настройки списка свойств заказа, значения которых должны быть указаны клиентом интернет-магазина при оформлении заказа. Набор свойств заказа зависит от <a href="../sale_person_type.php.html">типа плательщика</a>, выбранного клиентом при оформлении заказа.</p>
+<h4><a name="filter">Форма поиска</a></h4>
+<p>С помощью данной формы вы можете выполнить поиск свойств заказа в соответствии с указанными условиями.</p>
+<table width="100%">
+	<tr>
+		<th width="25%">Поле</th>
+		<th width="75%">Описание</th>
+</tr>
+	<tr>
+		<td>Тип плательщика</td>
+		<td>Поиск свойств заказа, заданных для определённого типа плательщика.</td>
+</tr>
+	<tr>
+		<td>Тип свойства</td>
+		<td>Поиск свойств указанного типа (флажок, строка, список и т.д.).</td>
+</tr>
+	<tr>
+		<td>Входит в профиль</td>
+		<td>Указывается, будут ли участвовать в поиске свойства, входящие в профиль покупателя.</td>
+</tr>
+	<tr>
+		<td>Группа свойств</td>
+		<td>Позволяет провести поиск свойств по названию группы, к которой они относятся.</td>
+</tr>
+</table>
+<p>Для того чтобы отобрать свойства заказа по заданным критериям поиска, нажмите кнопку "Найти". Для отображения всех свойств нажмите кнопку "Отменить".</p>
+<h4><a name="add" id="add">Контекстная панель</a></h4>
+<table class="tnormal">
+	<tr>
+		<th width="25%">Кнопка</th>
+		<th width="75%">Описание</th>
+</tr>
+	<tr>
+		<td>Новое свойство</td>
+		<td>Переход к форме <a href="order_props_add.php.html">создания</a> нового свойства заказа.</td>
+</tr>	<tr>
+		<td>Excel</td>
+		<td>Экспортирует данные из отображаемой таблицы в формат MS Excel.</td>
+</tr>
+<tr>
+	<td>Настроить</td>
+	<td>Позволяет перейти к диалогу настройки внешнего вида отчетной формы.</td>
+	</tr>
+</table>
+<h4><a name="list" id="list">Список свойств заказа</a></h4>
+<table class="tnormal">
+<tr><th width="25%">Поле</th><th width="75%">Описание</th></tr>
+<tr>
+		<td>Колонка флажков</td>
+		<td>Поле предназначено для выбора свойств заказа, к которым предполагается применить какое-либо правило или действие.</td>
+</tr>
+
+<tr>
+	<td>Действия</td>
+	<td>Действия над свойством заказа:
+		<ul>
+			<li><b>Изменить параметры свойства</b> - <a href="order_props_add.php.html">редактирование</a> свойства заказа;</li>
+			<li><b>Удалить свойство</b> - удаление свойства заказа.</li>
+</ul></td>
+</tr>
+<tr>
+<td>ID</td>
+<td>Идентификатор  свойства заказа.</td>
+</tr>
+<tr>
+<td>Тип плательщика</td>
+<td>Тип плательщика, которому это свойство будет предложено для заполнения при оформлении заказа.</td>
+</tr>
+<tr>
+<td>Название</td>
+<td>Название свойства, как оно будет показано клиенту магазина при оформлении заказа.</td>
+</tr>
+<tr>
+<td>Тип</td>
+<td>Тип свойства, может иметь следующие значения:
+<ul>
+	<li><code>CHECKBOX</code> - флажок;</li>
+	<li><code>TEXT</code> - строка;</li>
+	<li><code>SELECT</code> - выпадающий список выбора значения из предложенных вариантов;</li>
+	<li><code>MULTISELECT</code> - список с возможностью множественного выбора;</li>
+	<li><code>TEXTAREA</code> - текст;</li>
+	<li><code>LOCATION</code> - местоположение;</li>
+	<li><code>RADIO</code> - список переключателей.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>Обяз.</td>
+<td>Обязательно ли это свойство к заполнению. 
+	<p class="note">Свойства с установленными флагами <i><a href="order_props_add.php.html#use_as">Использовать как ...</a></i> обязательны к заполнению вне зависимости от значения данного поля.</p></td>
+</tr>
+<tr>
+<td>Группа</td>
+<td><a href="order_props_group.php.html">Группа свойств</a>, к которой принадлежит данное свойство. Группировка свойств используется исключительно для удобства представления и заполнения свойств в заказе.</td>
+</tr>
+<tr>
+<td>Профиль</td>
+<td>Определяет, входит ли свойство в профиль пользователя.<br><br>Если клиент уже делал заказы в магазине, то ему
+не обязательно будет при оформлении очередного заказа заполнять свойства, входящие в профиль пользователя. Клиент сможет выбрать один из сохраненных профилей для автоматического заполнения таких свойств заказа.<br><br>
+Клиент может редактировать свои профили в персональном разделе сайта. В профиль следует включать те свойства, которые обычно не меняются от заказа к заказу, либо имеют очень небольшой список вариантов (например, адрес доставки у клиента, как правило, один и его можно включить в профиль, а комплектация заказа обычно выбирается индивидуально для каждого заказа и ее включать в профиль не следует).</td>
+</tr>
+</table>
+
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

@@ -1,0 +1,168 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../index.html?page=source%2Fstatistic%2Fusers_online.php.html"; </script>
+
+<title>Кто на сайте</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../docstyle.css);</style>
+
+<script src="../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "statistic/users_online.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Кто на сайте])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Кто на сайте</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+<p>На странице показана таблица сессий и посетителей, проявивших активность на сайте за последнее время. Таблица автоматически обновляется через промежуток времени, задаваемый на странице. Для этого нужно выбрать одно из значений <b>20</b>, <b>30</b>, <b>60</b>, <b>120 </b>или <b>300</b>, которые определяют время обновления в секундах. Для немедленного обновления списка нажмите на ссылку <b>Обновить</b>. Таймер в круглых скобках показывает количество секунд до следующего обновления.</p>
+
+<h4>Фильтр</h4>
+
+<p>С помощью фильтра отображаются данные по интересующим параметрам.</p>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th width="28%">Параметр</th><th width="72%">Описание</th></tr>
+  
+    <tr><td>ID, логин, имя, фамилия<font color="#008000">*</font></td><td>ID, логин, имя или фамилия пользователя. </td></tr>
+  
+    <tr><td>ID сессии<font color="#008000">*</font></td><td>Маска идентификатора требуемых сессий.</td></tr>
+  
+    <tr><td>ID посетителя <font color="#008000">*</font></td><td>Идентификатор посетителя сайта (не пользователя). </td></tr>
+  
+    <tr><td>Зарегистрирован</td><td>Определяет, отображать ли только сессии зарегистрированных посетителей, незарегистрированных или всех.</td></tr>
+  
+    <tr><td>Впервые/вернулся</td><td>Флаг, позволяющий отфильтровать сессии посетителей, впервые посетивших сайт либо вернувшихся на сайт.</td></tr>
+  
+    <tr><td>Добавил в избранное</td><td>Флаг, позволяющий отфильтровать сессии, в течении которых посетитель добавил сайт в избранное.</td></tr>
+  
+    <tr><td>IP адрес<font color="#008000">*</font></td><td>Маска <span style="FONT-WEIGHT: bold">IP</span> адреса искомых посетителей.</td></tr>
+  
+    <tr><td>Страна<font color="#008000">*</font></td><td>Отбор сессии по стране посетителя (определяется по <span style="FONT-WEIGHT: bold">IP</span> адресу). В квадратных скобках можно ввести двухсимвольную аббревиатуру страны (напр., <span style="FONT-WEIGHT: bold">RU</span>, <span style="FONT-WEIGHT: bold">BY</span>, <span style="FONT-WEIGHT: bold">US</span>).</td></tr>
+  
+    <tr><td>Попал в стоп-лист</td><td>Фильтр сессий посетителей, которые были добавлены в стоп-лист.</td></tr>
+  
+    <tr><td>ID записи стоп-листа<font color="#008000">*</font></td><td>Отбор сессий заблокированных пользователей по маске идентификатора записи в стоп-листе.</td></tr>
+  
+    <tr><td>Хитов</td><td>Интервал для отбора сессий по количеству страниц (хитов), загруженных в течении сессии.</td></tr>
+  
+    <tr><td>Пришел по рекламной кампании</td><td>Фильтр сессий посетителей, сделавших прямой заход, либо возврат по рекламной кампании.</td></tr>
+  
+    <tr><td>ID рекламной кампании<font color="#008000">*</font></td><td>Маска <span style="FONT-WEIGHT: bold">ID</span> рекламной кампании при поиске по предыдущему полю.</td></tr>
+  
+    <tr><td>referer1 / referer2<font color="#008000">*</font></td><td>Идентификаторы рекламной кампании &ndash; <span style="FONT-WEIGHT: bold">referer1</span>, <span style="FONT-WEIGHT: bold">referer2</span><i> </i>(при поиске по полю <b>Пришел по рекламной кампании</b>).</td></tr>
+  
+    <tr><td>referer3<font color="#008000">*</font></td><td>Дополнительный параметр при заходе по рекламной кампании – <span style="FONT-WEIGHT: bold">referer3</span> (при поиске по полю <b>Пришел по рекламной кампании</b>).</td></tr>
+  
+    <tr><td>Возврат по рекламной кампании</td><td>Фильтр сессий посетителей или на прямом заходе по рекламной кампании, или на возврате (при поиске по полю <b>Пришел по рекламной кампании</b>).</td></tr>
+  
+    <tr><td>Откуда впервые пришел</td><td>Страница, с которой посетитель впервые пришел на сайт.</td></tr>
+  
+    <tr><td>Последняя страница<font color="#008000">*</font></td><td>Фильтр сессий посетителей по последней просмотренной странице и сайту. 
+        <br />
+      
+        <br />
+      В выпадающем списке <b>(ошибка 404)</b> можно указать, отображать ли только запросы несуществующих страниц.</td></tr>
+  </tbody>
+</table>
+
+<p><font color="#008000">*</font> - для данных полей Вы можете воспользоваться <a href="../general/filter.php.html">специальными логическими выражениями</a>.</p>
+
+<p>Чтобы установить фильтр по заданным критериям поиска, нажмите кнопку <b>Найти</b>. Для отображения всех данных нажмите кнопку <b>Отменить</b>.</p>
+
+<h4>Контекстная панель</h4>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th>Кнопка</th><th>Описание</th></tr>
+  
+    <tr><td>Настроить</td><td>Переход к диалогу настройки внешнего вида отчетной формы.</td></tr>
+  
+    <tr><td>Excel</td><td>Экспорт данных из таблицы в формат <b>MS Excel</b>.</td></tr>
+  </tbody>
+</table>
+
+<h4>Таблица сессий и посетителей</h4>
+
+<table class="wordtable">
+  <tbody>
+    <tr><th>Колонка</th><th>Описание</th></tr>
+  
+    <tr><th style="VERTICAL-ALIGN: top">Меню действий 
+        <br />
+      <img src="../images/iblock/110/admin_col_btn_action.png" width="30" height="20"></th><td>Отображает меню, содержащее команды: 
+        <ul>
+          <li><b>Подробно</b> - открывает отдельное <a href="visitors/guest_list.php.html#details">окно с подробной информацией о посетителе</a>; </li>
+        
+          <li><b>Стоп-лист</b> - добавляет <b>IP</b> в стоп-лист. </li>
+        </ul>
+      </td></tr>
+  
+    <tr><th style="VERTICAL-ALIGN: top">Рекламная кампания</th><td>Если посетитель сделал прямой заход либо возврат по рекламной кампании, то в данном столбце выводятся: <b>ID</b> рекламной кампании, <b>referer1 / referer2</b>. Ссылка на <b>ID</b> кампании открывает <a href="advertising_campaigns/adv_list.php.html">список кампаний</a> с фильтром, установленным на эту кампанию.</td></tr>
+  
+    <tr><th style="VERTICAL-ALIGN: top">Хитов</th><td>Количество страниц (хитов), просмотренных в течении сессии. Ссылка на показателе открывает <a href="visitors/hit_list.php.html">список хитов</a> с фильтром, установленным на <span style="FONT-WEIGHT: bold">ID</span> посетителя.</td></tr>
+  
+    <tr><th style="VERTICAL-ALIGN: top">Время сессии</th><td>Длительность сессии.</td></tr>
+  
+    <tr><th style="VERTICAL-ALIGN: top">Посетитель</th><td>Если посетитель зарегистрирован, то данные в формате: 
+        <ul>
+          <li>[ID пользователя] - ссылка открывает <a href="../settings/users/user_edit.php.html">форму редактирования пользователя</a>; </li>
+        
+          <li>(логин) Имя Фамилия; </li>
+        
+          <li>[ID посетителя] - ссылка открывает <a href="visitors/guest_list.php.html">список посетителей</a> с фильтром по этому посетителю. </li>
+        </ul>
+      Если посетитель впервые на сайте - <b>(впервые)</b>, иначе - <b>(вернулся)</b>.</td></tr>
+  
+    <tr><th style="VERTICAL-ALIGN: top">IP адрес</th><td><span style="FONT-WEIGHT: bold">IP</span> адрес посетителя. Ссылка на значении открывает страницу поиска информации по этому адресу (http://www.whois.sc/<b>IP</b>).</td></tr>
+  
+    <tr><th style="VERTICAL-ALIGN: top">Страна</th><td>Страна посетителя (определяется по <span style="FONT-WEIGHT: bold">IP</span> адресу).</td></tr>
+  
+    <tr><th style="VERTICAL-ALIGN: top">Последняя страница</th><td>Последняя страница, просмотренная посетителем.</td></tr>
+  
+    <tr><th style="VERTICAL-ALIGN: top">Откуда впервые пришел</th><td>Страница, с которой посетитель впервые пришел на сайт.</td></tr>
+  
+    <tr><th style="VERTICAL-ALIGN: top">Выбрано</th><td>Общее количество посетителей, присутствующих в настоящее время на сайте одновременно.</td></tr>
+  </tbody>
+</table>
+
+<h4>Пример таблицы </h4>
+
+<p><img src="../images/iblock/ca8/user_on_site.png" width="837" height="289"></p>
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

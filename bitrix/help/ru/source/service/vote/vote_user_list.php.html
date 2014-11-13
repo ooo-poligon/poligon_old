@@ -1,0 +1,140 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fservice%2Fvote%2Fvote_user_list.php.html"; </script>
+
+<title>Посетители</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/vote/vote_user_list.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Посетители])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Посетители</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<p>Информация по посетителям сайта, участвовавшим в опросах. 
+  <br />
+ </p>
+ 
+<h4><b>Фильтр</b></h4>
+ 
+<p>Задание параметров отбора посетителей, которые отображаются в списке.</p>
+ 
+<table class="tnormal"> 
+  <tbody> 
+    <tr> 	<th>Наименование параметра</th><th>Описание</th> </tr>
+   
+    <tr> <td>ID, имя, фамилия пользователя*</td> <td>Маска для имени и фамилии авторизованного пользователя, либо ID пользователя.</td> </tr>
+   
+    <tr> <td>ID*</td> <td>ID посетителя для модуля опросов.</td></tr>
+   
+    <tr> <td>Дата первого опроса</td> <td>Интервал для даты когда посетитель впервые принял участие в опросах.</td></tr>
+   
+    <tr> <td>Дата последнего опроса</td> <td>Интервал для даты когда посетитель впервые принял участие в опросах.</td></tr>
+   
+    <tr> <td>ID посетителя в модуле статистики*</td> <td>ID посетителя выданный модулем статистики.</td></tr>
+   
+    <tr> <td>IP адрес*</td> <td>Маска для последнего IP адреса с которым голосовал посетитель.</td></tr>
+   
+    <tr> <td>Число голосований</td> <td>Интервал для количество голосований данного посетителя.</td></tr>
+   
+    <tr> <td>Опрос*</td> <td>Опрос, в котором участвовали посетители.</td></tr>
+   </tbody>
+ </table>
+ 
+<p>* - для данных полей вы можете воспользоваться <a href="../../general/filter.php.html"> специальными логическими выражениями</a>.</p>
+ 
+<p>Для инициализации фильтра необходимо нажать кнопку <b>Найти</b>. Для отображения всех опросов нажмите кнопку <b>Отменить</b>.</p>
+ 
+<h4>Контекстная панель</h4>
+ 
+<table width="100%" class="tnormal"> 	 
+  <tbody> 
+    <tr> 	<th>Кнопка</th> 	<th>Описание</th> 	</tr>
+   
+    <tr> <td>Настроить</td> <td>Переход к диалогу настройки внешнего вида отчетной формы.</td> </tr>
+   
+    <tr> 	<td>Excel</td> 	<td>Экспорт данных из отображаемой таблицы в формат <span style="font-weight: bold;">MS Excel</span>.</td> 	</tr>
+   </tbody>
+ </table>
+ 
+<h4><b>Таблица</b></h4>
+ <span> 	</span><span> </span> 
+<table class="wordtable"> 
+  <tbody> 
+    <tr> <th>Колонка 
+        <br />
+       флажков</th> <th>Меню 
+        <br />
+       действий</th> <th>ID</th><th>Первый</th><th>Последний </th><th>Посетитель</th> <th>IP</th> <th>Голосо- 
+        <br />
+       ваний </th></tr>
+   
+    <tr> <td>[1]</td> <td><img src="../../images/iblock/b7c/admin_col_btn_action.png" width="30" height="20"> [2]</td> <td>[3]</td> <td>[4]</td> <td>[5]</td> <td>[6]</td> <td>[7]</td> <td>[8]</td> </tr>
+   
+    <tr> <th>Выбрано: [9]</th> <th>Отмечено: [10]</th> <th colspan="6"> 
+        <br />
+       </th></tr>
+   </tbody>
+ </table>
+ 
+<ol> 
+  <li>Выбор посетителей для применения к ним 	действий при помощи вспомогательной 	формы внизу таблицы.</li>
+ 
+  <li>Меню, 	позволяющее удалить посетителя. </li>
+ 
+  <li>ID посетителя, выданный модулем опросов.</li>
+ 
+  <li>Дата первого голосования посетителя.</li>
+ 
+  <li>Дата последнего голосования посетителя.</li>
+ 
+  <li>ID, под которым был авторизован посетитель в момент голосования; 	имя и фамилия пользователя; ID посетителя, выданный модулем статистики.</li>
+ 
+  <li>IP адрес, с которого посетитель голосовал последний раз. 	Ссылка ведет на сервер <span style="font-weight: bold;">RIPN</span> для получения дополнительной информации по IP адресу.</li>
+ 
+  <li>Количество голосований посетителя. Ссылка ведет на страницу голосований с предустановленным фильтром.</li>
+ 
+  <li>Количество выбранных из базы записей.</li>
+ 
+  <li>Количество записей, отмеченных флажками.</li>
+ </ol>
+ <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

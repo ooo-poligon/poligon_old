@@ -1,0 +1,156 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fsettings%2Fusers%2Fgroup_admin.php.html"; </script>
+
+<title>Группы пользователей</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "settings/users/group_admin.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Группы пользователей])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Группы пользователей</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+<h4 id="topictoctitle">В этом разделе</h4>
+<menu id="topictoc">
+  <li><a href="#filter" >Фильтр</a> </li> <li><a href="#menu" >Контекстная панель</a> </li>
+
+  <li><a href="#groups" >Список групп пользователей</a> </li>
+</menu>
+<p>Управление группами пользователей осуществляется на странице <b>Группы пользователей</b> в административном разделе сайта: <i>Настройки &gt; Пользователи &gt; Группы пользователей</i>. Форма <strong>Группы пользователей</strong> предназначена для:</p>
+
+<ul>
+  <li>просмотра групп пользователей; </li>
+
+  <li>редактирования групп пользователей; </li>
+
+  <li>создания и удаления групп пользователей. </li>
+</ul>
+
+<h4><a name="filter"></a>Фильтр</h4>
+
+<p>Форма фильтра используется для выбора из списка групп пользователей в соответствии с указанными условиями. Нижеследующая таблица описывает параметры, по которым может выполняться поиск.</p>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th width="25%">Параметр</th><th width="75%">Описание</th></tr>
+  
+    <tr><td>Найти</td><td>Позволяет найти&nbsp;группы пользователей&nbsp;по их основным параметрам:&nbsp;названию или идентификатору. Это поле присутствует, даже если фильтр свернут.</td></tr>
+  
+    <tr><td>ID</td><td>Идентификатор группы пользователей. Соответствует полю <b>ID</b> списка групп. Допустимо использование <a href="../../general/filter.php.html">сложного поиска</a>.</td></tr>
+  
+    <tr><td>Изменен</td><td>Позволяет отобрать группы пользователей, параметры которых были изменены в течение интересующего вас периода.</td></tr>
+  
+    <tr><td>Активность</td><td>Определяется, какие группы пользователей будут отображаться в результатах поиска: 
+        <ul>
+          <li>активные; </li>
+        
+          <li>неактивные; </li>
+        
+          <li>все (активные и неактивные). </li>
+        </ul>
+      </td></tr>
+  
+    <tr><td>Название</td><td>Название отбираемых групп пользователей. Допустимо использование <a href="../../general/filter.php.html">сложного поиска</a>.</td></tr>
+  
+    <tr><td>Описание</td><td>Позволяет осуществить отбор групп пользователей по их описанию. Допустимо использование <a href="../../general/filter.php.html">сложного поиска</a>.</td></tr>
+  
+    <tr><td>Пользователей</td><td>Служит для отбора групп пользователей по количеству пользователей, относящимся к данным группам. Задается в виде числового диапазона.</td></tr>
+  </tbody>
+</table>
+
+<p>Для того чтобы отобрать группы пользователей по заданным критериям поиска, нажмите кнопку &quot;Найти&quot;. Для отображения всех групп нажмите кнопку &quot;Отменить&quot;.</p>
+
+<h4><a name="menu"></a>Контекстная панель</h4>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th width="25%">Пункт</th><th width="75%">Описание</th></tr>
+  
+    <tr><td>Добавить группу</td><td>Переход к форме <a href="group_edit.php.html">создания</a> новой группы пользователей.</td></tr>
+  
+    <tr><td>Excel</td><td>Экспортирует данные из отображаемой таблицы в формат MS Excel.</td></tr>
+  
+    <tr><td>Настроить</td><td>Позволяет перейти к диалогу настройки внешнего вида отчетной формы.</td></tr>
+  </tbody>
+</table>
+
+<h4><a name="groups"></a>Список групп пользователей</h4>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th width="25%">Поле</th><th width="75%">Описание</th></tr>
+  
+    <tr><td>Колонка флажков</td><td>Поле предназначено для выбора групп пользователей, к которым предполагается применить какое-либо правило или действие.</td></tr>
+  
+    <tr><td>Действие</td><td>Действия над группой пользователей: 
+        <ul>
+          <li><b>Изменить</b> - переход к <a href="group_edit.php.html">редактированию</a> группы; </li>
+        
+          <li><b>Добавить копию</b> - создание копии группы пользователей; </li>
+        
+          <li><b>Удалить</b> - удаление группы пользователей. </li>
+        </ul>
+      <b>Примечание:</b> Удаление групп <i>Администратор</i> и <i>Everyone</i> невозможно. </td></tr>
+  
+    <tr><td>ID</td><td>Идентификатор группы пользователей.&nbsp;</td></tr>
+  
+    <tr><td>Дата изменения</td><td>Дата последней модификации группы.</td></tr>
+  
+    <tr><td>Активность</td><td>Признак активности группы. Если группа неактивна, все пользователи в составе группы полностью блокируются. Существуют две группы пользователей, блокировка которых невозможна: <font class="tablebodytext"><b>Администраторы</b> и <b>Everyone</b>.</font> 
+        <ul>
+          <li>Группа <b>Администраторы</b> всегда активна и предназначена для пользователей, осуществляющих администрирование сайта. </li>
+        
+          <li>Группа <b>Everyone</b> виртуально содержит всех не авторизовавшихся посетителей сайта. </li>
+        </ul>
+      </td></tr>
+  
+    <tr><td>Сортировка</td><td>Относительный &quot;вес&quot; группы пользователей. Определяет порядок вывода групп в списке.</td></tr>
+  
+    <tr><td>Название</td><td>Осмысленное название группы пользователей.</td></tr>
+  
+    <tr><td>Описание</td><td>Описание группы пользователей.</td></tr>
+  
+    <tr><td>Пользователей</td><td>Количество пользователей в группе.</td></tr>
+  </tbody>
+</table>
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

@@ -1,0 +1,184 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../../index.html?page=source%2Fcontent%2Fiblock%2Fcomponents_2%2Fphoto%2Fphoto_composite.php.html"; </script>
+
+<title>Фотогалерея (комплексный компонент)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../../docstyle.css);</style>
+
+<script src="../../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "content/iblock/components_2/photo/photo_composite.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Фотогалерея (комплексный компонент)])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Фотогалерея (комплексный компонент)</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<p>Комплексный компонент фотогалереи позволяет получить полнофункциональную фотогалерею. Физически создается только одна страница на сайте. Настройки компонента дают возможность гибкие возможности управления параметрами вывода фотографий. 
+  <br />
+ </p>
+ 
+<h4>Пример вызова</h4>
+ 
+<pre style="height: 400px;" id="xmp5A0A6F40" class="syntax">&lt;?$APPLICATION-&gt;IncludeComponent(<br />	&quot;bitrix:photo&quot;,	<br />	&quot;.default&quot;,<br />	Array(<br />		&quot;SEF_MODE&quot; =&gt; &quot;N&quot;, <br />		&quot;IBLOCK_TYPE&quot; =&gt; &quot;photo&quot;, <br />		&quot;IBLOCK_ID&quot; =&gt; &quot;8&quot;, <br />		&quot;USE_RATING&quot; =&gt; &quot;N&quot;, <br />		&quot;USE_REVIEW&quot; =&gt; &quot;N&quot;, <br />		&quot;USE_FILTER&quot; =&gt; &quot;N&quot;, <br />		&quot;SECTION_COUNT&quot; =&gt; &quot;20&quot;, <br />		&quot;TOP_ELEMENT_COUNT&quot; =&gt; &quot;9&quot;, <br />		&quot;TOP_LINE_ELEMENT_COUNT&quot; =&gt; &quot;3&quot;, <br />		&quot;SECTION_SORT_FIELD&quot; =&gt; &quot;sort&quot;, <br />		&quot;SECTION_SORT_ORDER&quot; =&gt; &quot;asc&quot;, <br />		&quot;TOP_ELEMENT_SORT_FIELD&quot; =&gt; &quot;sort&quot;, <br />		&quot;TOP_ELEMENT_SORT_ORDER&quot; =&gt; &quot;asc&quot;, <br />		&quot;TOP_FIELD_CODE&quot; =&gt; array(0=&gt;&quot;&quot;,), <br />		&quot;TOP_PROPERTY_CODE&quot; =&gt; array(0=&gt;&quot;&quot;,), <br />		&quot;SECTION_PAGE_ELEMENT_COUNT&quot; =&gt; &quot;20&quot;, <br />		&quot;SECTION_LINE_ELEMENT_COUNT&quot; =&gt; &quot;3&quot;, <br />		&quot;ELEMENT_SORT_FIELD&quot; =&gt; &quot;sort&quot;, <br />		&quot;ELEMENT_SORT_ORDER&quot; =&gt; &quot;asc&quot;, <br />		&quot;LIST_FIELD_CODE&quot; =&gt; array(0=&gt;&quot;&quot;,), <br />		&quot;LIST_PROPERTY_CODE&quot; =&gt; array(0=&gt;&quot;&quot;,), <br />		&quot;META_KEYWORDS&quot; =&gt; &quot;-&quot;, <br />		&quot;META_DESCRIPTION&quot; =&gt; &quot;-&quot;, <br />		&quot;DETAIL_FIELD_CODE&quot; =&gt; array(0=&gt;&quot;SHOW_COUNTER&quot;,), <br />		&quot;DETAIL_PROPERTY_CODE&quot; =&gt; array(), <br />		&quot;DISPLAY_PANEL&quot; =&gt; &quot;Y&quot;, <br />		&quot;SET_TITLE&quot; =&gt; &quot;Y&quot;, <br />		&quot;USE_PERMISSIONS&quot; =&gt; &quot;N&quot;, <br />		&quot;CACHE_TYPE&quot; =&gt; &quot;A&quot;, <br />		&quot;CACHE_TIME&quot; =&gt; &quot;3600&quot;, <br />		&quot;CACHE_FILTER&quot; =&gt; &quot;N&quot;, <br />		&quot;DISPLAY_TOP_PAGER&quot; =&gt; &quot;N&quot;, <br />		&quot;DISPLAY_BOTTOM_PAGER&quot; =&gt; &quot;Y&quot;, <br />		&quot;PAGER_TITLE&quot; =&gt; &quot;Фотографии&quot;, <br />		&quot;PAGER_SHOW_ALWAYS&quot; =&gt; &quot;N&quot;, <br />		&quot;PAGER_TEMPLATE&quot; =&gt; &quot;&quot;, <br />		&quot;PAGER_DESC_NUMBERING&quot; =&gt; &quot;N&quot;, <br />		&quot;PAGER_DESC_NUMBERING_CACHE_TIME&quot; =&gt; &quot;36000&quot;, <br />		&quot;VARIABLE_ALIASES&quot; =&gt; Array(<br />		&quot;SECTION_ID&quot; =&gt; &quot;SECTION_ID&quot;,<br />		&quot;ELEMENT_ID&quot; =&gt; &quot;ELEMENT_ID&quot;<br />		)<br />)<br />);?&gt;</pre>
+ 
+<h4>Описание параметров</h4>
+ 
+<h5 class="graytitle">Основные параметры</h5>
+ 		<dl> 		 	 <dt style="font-weight: bold;">IBLOCK_TYPE</dt> 		<dd>Тип информационного блока.</dd> <dt style="font-weight: bold;">IBLOCK_ID</dt> 		<dd>Код информационного блока, из которого будет выводиться информация.</dd> </dl> 
+<h5 class="graytitle">Управление адресами страниц</h5>
+ <dl> 	<dt style="font-weight: bold;">SEF_MODE</dt> 		<dd>Включить поддержку <span style="font-weight: bold;">ЧПУ</span>.</dd> <dt style="font-weight: bold;">VARIABLE_ALIASES</dt> 	<dd>При отключенной опции <b>SEF_MODE</b> доступны поля для задания 	<span style="font-weight: bold;">Идентификатора раздела</span> (например, <span style="font-weight: bold;">SECTION_ID</span>) и <span style="font-weight: bold;">Идентификатора элемента</span> (например, <span style="font-weight: bold;">ELEMENT_ID</span>). Данные поля 	задаются в виде массива, например, 
+    <br />
+   	 
+    <pre id="xmp5A0A6F40" class="syntax">&quot;VARIABLE_ALIASES&quot; =&gt; Array(<br />		&quot;SECTION_ID&quot; =&gt; &quot;SECTION_ID&quot;,<br />		&quot;ELEMENT_ID&quot; =&gt; &quot;ELEMENT_ID&quot;<br />)</pre>
+   	При включенной опции <b>SEF_MODE</b> доступны следующие параметры:		 		</dd><dt style="font-weight: bold;">SEF_FOLDER</dt><dd>Каталог <span style="font-weight: bold;">ЧПУ</span> (относительно корня сайта), который будет отображаться в URL при переходе на создаваемую страницу.</dd><dt style="font-weight: bold;">SEF_URL_TEMPLATES</dt><dd> 		В массиве определяются шаблоны адресов различных страниц в новостном разделе: 
+    <ul> 
+      <li><span style="font-weight: bold;">Список разделов с TOP'ом фотографий</span><span style="font-weight: bold; font-style: italic;">. </span>Указывается путь к начальной странице компонента &ndash; список разделов с TOP&rsquo;ом фотографий. Если в текущем разделе данная страница индексная, то поле можно оставить пустым.</li>
+     
+      <li><span style="font-weight: bold;">Раздел фотогалереи</span>. Путь к странице с элементами раздела. Он должен содержать ID раздела. (<span style="font-style: italic;">#SECTION_ID#</span>). По умолчанию поле содержит <span style="font-style: italic;">#SECTION_ID#/</span> </li>
+     
+      <li><span style="font-weight: bold;">Фотография детально</span>. Путь к странице с детальной информацией. Он должен содержать ID элемента, например, <span style="font-style: italic;">#SECTION_ID#/#ELEMENT_ID#/</span> </li>
+     </ul>
+   	 
+    <pre id="xmp5A0A6F40" class="syntax">&quot;SEF_URL_TEMPLATES&quot; =&gt; Array(<br />	&quot;sections_top&quot; =&gt; &quot;top/&quot;,<br />	&quot;section&quot; =&gt; &quot;#SECTION_ID#/&quot;,<br />	&quot;detail&quot; =&gt; &quot;#SECTION_ID#/#ELEMENT_ID#/&quot;<br />),<br /></pre>
+   В публичной части редактора путь к каждой странице задается в отдельном поле. 	 </dd> </dl>	 
+<h5 class="graytitle">Настройки кэширования</h5>
+ <dl> 	<dt style="font-weight: bold;">CACHE_TYPE</dt> 		<dd>Тип кеширования: 		 
+    <ul> 			 
+      <li><span style="font-weight: bold;">А</span> - Авто: действует при включенном автокешировании на странице <span style="font-weight: bold;">Настройки кэширования</span> (<i>Настройки &gt; Настройки продукта &gt; Автокеширование</i>) и при установленном времени кеширования в поле <b>CACHE_TIME</b>.</li>
+     			 
+      <li><span style="font-weight: bold;">Y</span> - Кешировать: должно быть установленовремя кеширования (<b>CACHE_TIME</b>). Настройки 			автокеширования не влияют на данный тип кеширования.</li>
+     			 
+      <li><span style="font-weight: bold;">N</span> - Не кешировать: кеширование не происходит<span style="font-style: italic;">.</span></li>
+     		</ul>
+   		</dd> 	<dt style="font-weight: bold;">CACHE_TIME</dt> 		<dd>Время кеширования в секундах.</dd> 	<dt style="font-weight: bold;">CACHE_FILTER</dt> 		<dd>Кешировать при установленном фильтре. При установленной опции каждый результат, полученный из фильтра будет кешироваться. Имеет смысл отмечать, если многие пользователи используют одну и туже выборку из фильтра.</dd> </dl> 
+<h5 class="graytitle">Дополнительные настройки</h5>
+ <dl> 	<dt style="font-weight: bold;">DISPLAY_PANEL</dt> 		<dd>Добавлять кнопку&nbsp; в режиме редактирования сайта на <span style="font-weight: bold;">Административной панели</span> и в наборе кнопок области редактирования данного компонента.</dd>	 	<dt style="font-weight: bold;">SET_TITLE</dt> 		<dd>Устанавливать в качестве заголовка страницы имя текущего инфоблока.</dd>	 	<dt style="font-weight: bold;">USE_PERMISSIONS</dt> 		<dd>Использовать дополнительное ограничение доступа к детальной информации элементов инфоблока. При установленной опции становится доступным 		следующее поле:</dd><dt style="font-weight: bold;">GROUP_PERMISSIONS</dt><dd>Выбор группы пользователей, имеющих доступ к детальной информации. 
+    <br />
+   </dd> </dl> 
+<h5 class="graytitle">Настройки постраничной навигации</h5>
+ <dl> 	<dt style="font-weight: bold;">DISPLAY_TOP_PAGER</dt> 		<dd>Навигация по страницам будет выведена вверху страницы, над списком.</dd> 	<dt style="font-weight: bold;">DISPLAY_BOTTOM_PAGER</dt> 		<dd>Навигация по страницам будет выведена внизу страницы, под списком. </dd> 	<dt style="font-weight: bold;">PAGER_TITLE</dt> 		<dd>Название категорий, по которым происходит перемещение при детальном просмотре (например, страница, глава и др.)</dd> 	<dt style="font-weight: bold;">PAGER_SHOW_ALWAYS</dt> 		<dd>Выводить всегда. Если данный флаг не отмечен, постраничная навигация не будет выводиться, если все элементы помещаются на одной странице. Если отмечен, то всегда будет выводиться.</dd> 	<dt style="font-weight: bold;">PAGER_TEMPLATE</dt> 		<dd>Название шаблона постраничной навигации. Если поле пусто, то выбирается шаблон по умолчанию (<span style="font-weight: bold;">.default</span>). Также в системе задан шаблон <span style="font-weight: bold;">orange</span>.</dd> 	<dt style="font-weight: bold;">PAGER_DESC_NUMBERING</dt> 		<dd>Использовать обратную навигацию, когда при добавлении нового элемента постоянно меняется только последняя страница. Остальные страницы можно закешировать на длительный срок.Это верно, если новые элементы попадают всегда вверх списка (отсортированы по дате начала активности по убыванию).</dd> 	<dt style="font-weight: bold;">PAGER_DESC_NUMBERING_CACHE_TIME</dt> 		<dd>Время кеширования страниц для обратной навигации. 
+    <br />
+   </dd> </dl> 
+<h5 class="graytitle">Настройки детального просмотра</h5>
+ <dl> 	<dt style="font-weight: bold;">META_KEYWORDS</dt> 		<dd>Установить ключевые слова страницы из свойств инфоблока.</dd> 	<dt style="font-weight: bold;">META_DESCRIPTION</dt> 		<dd>Установить описание страницы из свойств инфоблока.</dd> 	<dt style="font-weight: bold;">DETAIL_FIELD_CODE</dt> 		<dd>Поля, которые будут отображены на 		странице детального просмотра. Задается в виде массива с символьными 		именами полей в коде или в 		публичной части редактора, удерживая клавишу <span style="font-style: italic;">Ctrl</span>. Если ничего не 		выбрано, то будут выведены поля по умолчанию.</dd> 	<dt style="font-weight: bold;">DETAIL_PROPERTY_CODE</dt> 		<dd>Свойства, которые будут отображены на странице детального просмотра. Задается в виде массива с символьными именами свойств в коде либо в 		публичной части редактора, удерживая клавишу <span style="font-style: italic;">Ctrl</span>. Если ничего не выбрано, то свойства отображены не будут. </dd></dl> 
+<h5 class="graytitle">Настройки отзывов</h5>
+ <dl> 		<dt style="font-weight: bold;">USE_REVIEW</dt> 		<dd>Функция подключает настройки отзывов, выводимых на странице. При установленной опции становятся доступными следующие поля:</dd><dt class="style1" style="font-weight: bold;">MESSAGES_PER_PAGE</dt><dd>Количество сообщений на одной странице.</dd><dt style="font-weight: bold;">USE_CAPTCHA</dt><dd>Опция определяет вывод изображения и поля ввода <span style="font-weight: bold;">CAPTCHA</span> в форме добавления отзыва в публичной части.</dd><dt style="font-weight: bold;">PATH_TO_SMILE</dt><dd>Путь относительно корня сайта к папке со смайлами. Значение по умолчанию <span style="font-weight: bold;">/bitrix/images/forum/smile/</span>.</dd><dt style="font-weight: bold;">FORUM_ID</dt><dd>ID форума, созданного для отзывов посетителей.</dd><dt style="font-weight: bold;">URL_TEMPLATES_READ</dt><dd>Указывается относительный путь к странице чтения темы на форуме. Если поле пусто, путь к странице будет получен из настроек форума.</dd> </dl>	 
+<h5 class="graytitle">Настройки фильтра</h5>
+ <dl>	 	<dt style="font-weight: bold;">USE_FILTER</dt> 		<dd>Показывать фильтр. При отмеченной опции доступны следующие 		поля:</dd><dd><span style="font-weight: bold;">FILTER_NAME</span><dl> 				<dd>Задается имя переменной, в которой передается массив параметров из фильтра. Служит для определения выходящих из фильтра элементов. Поле может быть оставлено пустым, тогда используется значение по умолчанию.</dd> 			<dt style="font-weight: bold;">FILTER_FIELD_CODE</dt> 				<dd>Выбор полей элементов инфоблока, по которым будет возможна фильтрация. Заполняется из публичной части редактора, удерживая клавишу 				<span style="font-style: italic;">Ctrl</span> либо в коде, указывая массив: 				 
+        <pre id="xmp5A0A6F40" class="syntax">Array(&quot;NAME&quot;,&quot;PREVIEW_TEXT&quot;,&quot;<span lang="en-us">SORT&quot;,</span>&quot;&quot;),</pre>
+       				</dd> 			<dt style="font-weight: bold;">FILTER_PROPERTY_CODE</dt> 				<dd>Свойства элементов инфоблока по которым будет возможна фильтрация. Заполняется из публичной части редактора, удерживая клавишу 				<i>Ctrl</i> либо в коде, указывая массив.</dd> 				 		</dl> 		 </dd></dl> 
+<h5 class="graytitle">Настройки TOP'а</h5>
+ <dl> 	<dt><b>SECTION_COUNT</b></dt> 		<dd>Максимальное количество выводимых разделов. 
+    <br />
+   </dd>	 	<dt><b>TOP_ELEMENT_COUNT</b></dt> 		<dd>Максимальное количество фотографий, выводимых в каждом разделе. 
+    <br />
+   </dd>	 	<dt><b>TOP_LINE_ELEMENT_COUNT</b></dt> 		<dd>Количество фотографий, выводимых в одной строке таблицы списка разделов. 
+    <br />
+   </dd>	 	<dt><b>SECTION_SORT_FIELD</b></dt> 		<dd>Указывается поле, по которому будет происходить сортировка разделов в TOP&rsquo;е элементов. 		 
+    <ul> 			 
+      <li><b>sort</b> - по индексу сортировки;</li>
+     			 
+      <li><b>timestamp_x</b> - по дате изменения;</li>
+     			 
+      <li><b>name</b> - по названию;</li>
+     			 
+      <li><b>ID</b> - по ID;</li>
+     			 			 
+      <li><b>depth_level</b> - по уровню вложенности.</li>
+     						 		</ul>
+   		Можно указать код любого другого поля. 		</dd>	 	<dt><b>SECTION_SORT_ORDER</b></dt> 		<dd>Порядок сортировки разделов. 		 
+    <ul> 	 
+      <li><b>asc</b> &ndash; по возрастанию;</li>
+     	 
+      <li><b>desc</b> &ndash; по убыванию.</li>
+     </ul>
+   		</dd>	 	<dt><b>TOP_ELEMENT_SORT_FIELD</b></dt> 		<dd>По какому полю сортируем фотографии 		 
+    <ul> 			 
+      <li><b>shows</b> - по количеству просмотров в среднем;</li>
+     			 
+      <li><b>sort</b> - по индексу сортировки;</li>
+     			 
+      <li><b>timestamp_x</b> - по дате изменения;</li>
+     			 
+      <li><b>name</b> - по названию;</li>
+     			 
+      <li><b>ID</b> - по ID;</li>
+     			 
+      <li><b>active_from</b> - по дате начала активности;</li>
+     			 
+      <li><b>active_to</b> - по дате окончания активности.</li>
+     		</ul>
+   		Можно указать код любого другого поля. 		</dd>	 	<dt><b>TOP_ELEMENT_SORT_ORDER</b></dt> 		<dd>Порядок сортировки фотографий в разделе. 		 
+    <ul> 			 
+      <li><b>asc</b> &ndash; по возрастанию;</li>
+     			 
+      <li><b>desc</b> &ndash; по убыванию.</li>
+     		</ul>
+   		</dd>	 	<dt><b>TOP_FIELD_CODE</b></dt> 		<dd>Поля, которые будут отображены на странице TOP'а элементов. Задается в виде массива с символьными именами полей в коде или в 		публичной части редактора, удерживая клавишу <i>Ctrl</i>. Если ничего не 		выбрано, то будут выведены поля по умолчанию.</dd>	 	<dt><b>TOP_PROPERTY_CODE</b></dt> 		<dd>Свойства, которые будут отображены на странице 		<span lang="en-us">TOP'</span>а элементов. Задается в виде массива с символьными именами свойств в коде либо в 		публичной части редактора, удерживая клавишу <i>Ctrl</i>. Если ничего не выбрано, то свойства отображены не будут.</dd>	 </dl> 
+<h5 class="graytitle">Настройки списка</h5>
+ <dl> 	<dt><b>SECTION_PAGE_ELEMENT_COUNT</b></dt> 		<dd>Количество элементов на одной странице. Остальные элементы будут выведены с помощью постраничной навигации. </dd> 	<dt><b>SECTION_LINE_ELEMENT_COUNT</b></dt> 		<dd>Количество фотографий, выводимых в одной строке таблицы раздела. 
+    <br />
+   </dd> 	<dt><b>ELEMENT_SORT_FIELD</b></dt> 		<dd>По какому полю сортируем фотографии. Указывается поле, по которому будет происходить сортировка фотографий внутри каждого раздела. 		 
+    <ul> 			 
+      <li><b>shows</b> - по количеству просмотров в среднем;</li>
+     			 
+      <li><b>sort</b> - по индексу сортировки;</li>
+     			 
+      <li><b>timestamp_x</b> - по дате изменения;</li>
+     			 
+      <li><b>name</b> - по названию;</li>
+     			 
+      <li><b>ID</b> - по ID;</li>
+     			 
+      <li><b>active_from</b> - по дате начала активности;</li>
+     			 
+      <li><b>active_to</b> - по дате окончания активности.</li>
+     		</ul>
+   		Можно указать код любого другого поля. 		 		</dd> 	<dt><b>ELEMENT_SORT_ORDER</b></dt> 		<dd>Порядок сортировки фотографий в разделе. 		 
+    <ul> 			 
+      <li><b>asc</b> &ndash; по возрастанию;</li>
+     			 
+      <li><b>desc</b> &ndash; по убыванию.</li>
+     		</ul>
+   		</dd> 	<dt><b>LIST_FIELD_CODE</b></dt> 		<dd>Поля, которые будут отображены на 		странице списка элементов. Задается в виде массива с символьными именами 		полей в коде или в публичной части редактора, удерживая клавишу <i>Ctrl</i>. 		Если ничего не выбрано, то будут выведены поля по умолчанию.</dd> 	<dt><b>LIST_PROPERTY_CODE</b></dt> 		<dd>Свойства, которые будут 		отображены на странице списка элементов. Задается в виде массива с символьными именами свойств в коде либо в 		публичной части редактора, удерживая клавишу <i>Ctrl</i>. Если ничего не выбрано, то свойства отображены не будут.</dd> </dl> 
+<h5 class="graytitle">Настройки голосования</h5>
+ 		<dl> 		<dt><b>USE_RATING</b></dt> 			<dd>Разрешить голосование. При установленной опции становятся доступными следующие поля:</dd><dt><b>MAX_VOTE</b></dt><dd>Максимально возможный балл, т.е. число возможных оценок.</dd><dt><b>VOTE_NAMES</b></dt><dd>Массив, в котором задаются подписи к баллам в таком виде: 			 
+    <pre id="xmp5A0A6F40" class="syntax">&quot;VOTE_NAMES&quot; =&gt; Array(&quot;оч плохо&quot;,&quot;плохо&quot;,&quot;удв&quot;,&quot;хор&quot;,&quot;отл&quot;,&quot;&quot;),<br /></pre>
+   Если подписи заданы, то они будут выведены вместо оценок-цифр. 			Если массив не задан, то будут использованы значения по умолчанию.</dd> 		</dl> 	 <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

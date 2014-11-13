@@ -1,0 +1,218 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fcontent%2Ffileman%2Fsettings.php.html"; </script>
+
+<title>Настройки</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "content/fileman/settings.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Настройки])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Настройки</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<h4 id="topictoctitle">В этом разделе</h4>
+ <menu id="topictoc"> 	 
+  <li><a href="#fields">Настройки модуля</a></li>
+ 	 
+  <li><a href="#htmleditor">Настройки визуального редактора</a></li>
+ 	 
+  <li><a href="#access">Уровень доступа к модулю</a></li>
+ 	 
+  <li><a href="#buttons">Кнопки управления</a></li>
+ </menu> 
+<p>Форма <b>Настройки</b> модуля <span style="font-weight: bold;">Управления структурой</span> сайта (<i>Настройки &gt; Настройки продукта &gt; Настройки модулей &gt; Управление структурой</i>) предназначена для управления глобальными настройками 	модуля. Для удобства выполнения настроек форма разделена на три закладки: <b>Настройки</b>, <b>Визуальный редактор</b> и <b>Доступ</b>.</p>
+ 
+<h4><a name="fields"></a>Закладка &quot;Настройки&quot;</h4>
+ 
+<p>Настройка общих параметров модуля. </p>
+ 
+<table style="border-collapse: collapse;" class="tnormal"> 
+  <tbody> 
+    <tr> 	<th width="22%"><a name="settings"></a>Поле</th> 	<th width="78%"> 		Описание 	</th> </tr>
+   
+    <tr> 	<td>Редактор страниц по умолчанию</td> 	<td> Режим редактирования страниц по умолчанию. Доступны следующие режимы: 		 
+        <ul> 			 
+          <li><b>Текстовый редактор</b> - отображает сам текст файла, без включения <span style="font-weight: bold;">PHP</span> кода. Однако, в этом режиме отображаются все <span style="font-weight: bold;">HTML</span>-теги.</li>
+         			 
+          <li><b>Редактирование PHP скрипта</b> - отображает исходный текст файла. Режим предназначен исключительно для использования разработчиками.</li>
+         			 
+          <li><b>Визуальный HTML редактор</b> - открывает встроенный <a href="fileman_html_edit.php.html">визуальный редактор HTML</a>, позволяющий форматировать текст аналогично <span style="font-weight: bold;">Microsoft Word</span>.</li>
+         			</ul>
+       </td> </tr>
+   
+    <tr> 	<td>Расширения исполняемых файлов </td> 	<td>Указываются расширения исполняемых файлов через запятую для контроля доступа. </td> </tr>
+   
+    <tr><td colspan="1">Разрешенные компоненты</td><td colspan="1">Компоненты, которые будут показаны в визуальном редакторе. По умолчанию поле пустое и отображаются все компоненты. Поле - разрешающее, то есть&nbsp; введенные имена компонентов отображаются, остальные - нет. </td></tr>
+   
+    <tr> 			<th colspan="2">Настройки для сайтов</th> </tr>
+   
+    <tr> <td>Использовать индивидуальные настройки для каждого сайта</td> <td>При включенной опции для каждого из созданных в системе сайтов могут быть заданы индивидуальные <b>Типы меню</b> и <b>Типы свойств</b>.</td> </tr>
+   
+    <tr> <td>Настройки для сайта</td> <td>В выпадающем списке доступны все созданные в системе сайты. Выбор доступен при отмеченной опции <b>Использовать индивидуальные настройки для каждого сайта</b>.</td> </tr>
+   
+    <tr> 	<td><a name="menu_types"></a>Типы меню</td> 	<td>В данной мини-форме указываются используемые на сайте типы меню и их описания. 		 
+        <table style="border-collapse: collapse;" class="wordtable"> 	 
+          <tbody> 
+            <tr> 		<th width="18%">Поле</th> 		<th width="82%">Описание</th> 		</tr>
+           	 
+            <tr> 		<td height="19"> Тип </td> 		<td>Тип (мнемоническое имя) используемого на сайте меню. Обычно мнемонические имена типов меню 			назначаются, исходя из расположения меню на странице сайта (например, <span style="font-weight: bold;">top</span>, <span style="font-weight: bold;">left</span> и т.д.). Имя типа меню указывается латинскими буквами. </td> 		</tr>
+           		 
+            <tr> 			<td height="19">Название</td> 			<td>Произвольное название (описание) типа меню. </td> 			</tr>
+           	</tbody>
+         </table>
+       		 		 </td> </tr>
+   
+    <tr> 	<td><a href="fileman_menu_edit.php.html#param">Количество дополнительных&nbsp; параметров меню</a></td> 	<td> Количество полей для задания значений параметров, обрабатываемых в шаблоне показа меню и влияющих на представление меню. </td> </tr>
+   
+    <tr> 	<td><a name="prop"></a>Типы свойств</td> 	<td>Форма служит для создания свойств страниц сайта и задания их описания. 		<b> </b> 
+        <table style="border-collapse: collapse;" class="wordtable"> 	 
+          <tbody> 
+            <tr> 		<th width="18%">Поле</th> 		<th width="82%">Описание</th> 		</tr>
+           	 
+            <tr> 		<td height="19">Тип </td> 		<td>Тип (мнемоническое имя) свойства. Указывается латинскими буквами. </td> 		</tr>
+           		 
+            <tr> 			<td height="19">Название</td> 			<td>Произвольное название (описание) свойства. Указанное название будет отображаться в форме задания значений свойств для папки или страницы. </td> 			</tr>
+           	</tbody>
+         </table>
+       			 			 
+        <p class="note"> 			 Мнемонические имена типов свойств, используемых для управления метаданными страницы, должны соответствовать названиям соответствующих мета-тегов в языке <b>HTML</b>. Например, 			 ключевые слова - <span style="font-weight: bold;">keywords</span>, описание - <span style="font-weight: bold;">description</span>. </p>
+       </td> </tr>
+   </tbody>
+ </table>
+ 
+<h4><a name="htmleditor"></a>Закладка &quot;Визуальный редактор&quot;</h4>
+ 
+<p>Настройка визуального <span style="font-weight: bold;">HTML</span> редактора.</p>
+ 
+<table style="border-collapse: collapse;" class="tnormal"> 
+  <tbody> 
+    <tr> 	<th width="25%"><a name="settings"></a>Поле</th> 	<th width="75%"> 		Описание 	</th> </tr>
+   
+    <tr> 	<td>Разрешить в визуальном <span style="font-weight: bold;">HTML</span> редакторе выводить стили без названий</td> 	<td>Позволяет при редактировании страницы в режиме <span style="font-weight: bold;">HTML</span> редактора выводить в списке доступных <span style="font-weight: bold;">CSS</span> стилей в том числе и те стили, для которых не заданы названия. 
+        <br />
+       		 
+        <br />
+       		<b>Примечание</b>: Названия стилей задаются в файле <code style="font-style: italic;">.styles.php</code>, размещённом в папке соответствующего шаблона сайта. </td> </tr>
+   
+    <tr><td colspan="1">Отображать внешний вид стилей в выпадающем списке</td><td colspan="1">Названия стилей будут отображаться в соответствии с их оформлением</td></tr>
+   
+    <tr> 	<td>По умолчанию открывать <span style="font-weight: bold;">HTML</span> редактор в полноэкранном режиме</td> 	<td>Использование полноэкранного режима по умолчанию.</td> </tr>
+   
+    <tr> 			<th colspan="2">Настройки преобразования содержимого 
+        <br />
+       </th> </tr>
+   
+    <tr> <td>Скрывать исходный код компонентов 2.0 при просмотре страницы в режиме кода</td> <td>Установленный чекбокс позволяет скрыть код от&nbsp; просмотра 
+        <br />
+       </td> </tr>
+   
+    <tr> <td>Группы символов, автоматически заменяемые на <b>HTML</b>-сущности при сохранении страницы<span style="font-weight: bold;"></span></td> <td>Чекбоксы, определяющие подмену символов: 
+        <br />
+       
+        <ul> 
+          <li>Дополнительные символы европейских алфавитов (умляуты и пр.)</li>
+         
+          <li>Символы греческого алфавита</li>
+         
+          <li>Другие символы, имеющие замену в виде html-сущностей</li>
+         </ul>
+       </td> </tr>
+   
+    <tr> 			<th colspan="2">Настройки системы проверки орфографии</th> </tr>
+   
+    <tr> <td>Использовать для проверки орфографии <span style="font-weight: bold;">MS Word</span> (если установлен)</td> <td>При включенной опции проверка орфографии будет проводиться с помощью редактора <span style="font-weight: bold;">Microsoft Word</span>, если он установлен на компьютере пользователя.</td> </tr>
+   
+    <tr> <td>Использовать для проверки <span style="font-weight: bold;">pSpell/aSpell</span></td> <td>Опция доступна, если на сервере установлено расширение php - <span style="font-weight: bold;">pSpell</span> и имеются библиотеки <span style="font-weight: bold;">aSpell</span> (система словарей). Они доступны по адресу <a href="../../index.php.html">http://aspell.sourceforge.net/</a>. 
+        <br />
+       Установить словарь и загрузить дополнительные словари можно по ссылкам. 
+        <br />
+       </td> </tr>
+   </tbody>
+ </table>
+ 
+<h4><a name="access"></a>Закладка &quot;Доступ&quot;</h4>
+ 
+<p>Настройка уровней доступа групп пользователей к ресурсам модуля. </p>
+ 
+<table style="border-collapse: collapse;" class="tnormal"> 
+  <tbody> 
+    <tr> 	<th width="18%">Поле</th> 	<th width="82%">Описание</th> </tr>
+   
+    <tr> 	<td>По умолчанию</td> 	<td> 		Уровень доступа к модулю<b> Управление структурой </b> для всех групп пользователей, для которых установлено право доступа <span style="font-weight: bold;">по умолчанию</span>. </td> </tr>
+   
+    <tr> 	<td>[Группа пользователей]</td> 	<td>		Изменение настроек доступа для конкретной группы. Возможно задание следующих уровней доступа: 
+        <br />
+       		 
+        <ul> 
+          <li><b>по умолчанию</b> - действует уровень, установленный в поле <b>по умолчанию</b>. 
+            <br />
+           </li>
+         
+          <li><b>доступ закрыт</b> - доступ пользователей к файлам и папка невозможен;</li>
+         			 
+          <li><b>только к доступным папкам</b> - доступ открыт к тем папкам, в свойствах которых разрешен доступ для данной группы пользователей;</li>
+         			 
+          <li><b>просмотр настроек модуля</b> - просмотр только настроек модуля без возможности изменения.</li>
+         
+          <li><b>полный доступ</b> - можно все 
+            <br />
+           </li>
+         		</ul>
+       		</td> </tr>
+   </tbody>
+ </table>
+ 
+<h4><a name="buttons"></a>Кнопки управления </h4>
+ 
+<table style="border-collapse: collapse;" class="tnormal"> 	 
+  <tbody> 		 
+    <tr> 			<th width="18%">Кнопка</th> 			<th width="82%">Описание</th> 		</tr>
+   		 
+    <tr> 			<td>Сохранить</td> 			<td> Сохранение внесённых изменений. </td> 		</tr>
+   		 
+    <tr> 			<td>Сбросить</td> 			<td>Отмена внесённых изменений. Возврат первоначальных значений параметров. </td> 		</tr>
+   		 
+    <tr> 			<td>По умолчанию </td> 			<td>Установка значений свойств модуля равными значениям по умолчанию. </td> 		</tr>
+   	</tbody>
+ </table>
+ <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

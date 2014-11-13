@@ -1,0 +1,380 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fservice%2Fform%2Fform_question_edit.php.html"; </script>
+
+<title>Создание и редактирование вопроса</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/form/form_question_edit.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Создание и редактирование вопроса])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Создание и редактирование вопроса</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<h4 id="topictoctitle">В этом разделе</h4>
+ <menu id="topictoc"> 	 
+  <li><a href="#menu">Контекстная панель</a> 	</li>
+ 
+  <li><a href="#s_form">Упрощённая форма редактирования</a> 	</li>
+ 
+  <li><a href="#f_form">Редактирование в полном режиме</a> 	</li>
+ 
+  <li><a href="#buttons">Кнопки управления</a></li>
+ </menu> 
+<p>Для создания и изменения вопроса формы применяется страница одного типа. Большинство параметров вопросов и ответов можно настроить, воспользовавшись <a href="form_edit.php.html#templ">визуальным редактором</a> шаблона оформления формы.</p>
+ 
+<h4><a name="menu"></a>Контекстная панель</h4>
+ На странице отображены две контекстные панели: основная, аналогичная<b> Основной контекстной панели</b> веб-формы и дополнительная, для формы редактирования вопросов. Дополнительная контекстная панель: 
+<br />
+ 
+<br />
+ 
+<table style="border-collapse: collapse;" class="tnormal"> 	 
+  <tbody> 
+    <tr> 		<th width="18%">Кнопка</th> 		<th width="82%">Описание</th></tr>
+   	 	 
+    <tr> 		<td>Создать</td> 		<td>Переход на страницу создания нового вопроса формы. Кнопка отображается при редактировании существующего вопроса.</td></tr>
+   	 
+    <tr> 		<td>Копировать</td> 		<td>Копирование текущего вопроса в новый. Кнопка отображается при редактировании существующего вопроса.</td></tr>
+   	 
+    <tr> 		<td>Удалить</td> 		<td>Удаление текущего вопроса. Кнопка отображается при редактировании существующего вопроса.</td></tr>
+   	 	 	 </tbody>
+ </table>
+ 
+<h4><a name="s_form"></a>Упрощённая форма редактирования</h4>
+ 
+<h5><a name="fields"></a>Закладка &quot;Свойства&quot;</h5>
+ 
+<table style="border-collapse: collapse;" class="tnormal"> 	 
+  <tbody> 
+    <tr> 		<th width="18%">Поле</th> 		<th width="82%">Описание</th></tr>
+   	  	 
+    <tr> 		<td>Дата изменения</td> 		<td>Дата последнего изменения вопроса. Поле отображается при редактировании существующего вопроса. </td></tr>
+   	 
+    <tr> 		<td>Активен</td> 		<td>Флаг активности вопроса.</td></tr>
+   	 
+    <tr> 		<td>Порядок сортировки</td> 		<td>Относительный &quot;вес&quot;, определяющий положение вопроса в общем списке.</td></tr>
+   	 
+    <tr> 		<td>Изображение</td> 		<td>Изображение, которое будет выведено рядом с вопросом.</td></tr>
+   	 
+    <tr> 		<td>Вопрос</td> 		<td>Текст вопроса.</td></tr>
+   	 
+    <tr> 		<td>Поле ответа обязательно для заполнения</td> 		<td>Флаг обязательности ответа на данный вопрос формы.</td></tr>
+   	 
+    <tr> 		<td>Тип поля для ответа</td> 		<td>Тип поля для ответа на данный вопрос: 			 
+        <ul> 				 
+          <li><code style="font-weight: bold;">text</code> - однострочный текст; 				</li>
+         
+          <li><code style="font-weight: bold;">textarea</code>- многострочный текст; 				</li>
+         
+          <li><code style="font-weight: bold;">multiselect</code> - список вариантов с возможностью множественного выбора; 				</li>
+         
+          <li><code style="font-weight: bold;">dropdown</code> - список вариантов с возможностью одиночного выбора; 				</li>
+         
+          <li><code style="font-weight: bold;">radio</code> - набор radio кнопок (одиночный выбор); 				</li>
+         
+          <li><code style="font-weight: bold;">checkbox</code> - набор checkbox кнопок (множественный выбор); 				</li>
+         
+          <li><code style="font-weight: bold;">image</code> - поле для ввода изображения; 				</li>
+         
+          <li><code style="font-weight: bold;">date</code> - поля для ввода даты со встроенным календарем; 				</li>
+         
+          <li><code style="font-weight: bold;">file</code> - поле для добавления файла; 				</li>
+         
+          <li><code style="font-weight: bold;">password</code> - поле для ввода пароля; 				</li>
+         
+          <li><code style="font-weight: bold;">email</code> - поле для ввода электронного адреса; 				</li>
+         
+          <li><code style="font-weight: bold;">url</code> - поле для ввода адреса сайта; 				</li>
+         
+          <li><code style="font-weight: bold;">hidden</code> - скрытое поле. </li>
+         </ul>
+       </td></tr>
+   	 
+    <tr> 		<td height="39">Ответ</td> 		<td>Поле меняется в зависимости от выбранного типа ответа.
+        <br />
+      Для поля типа <code style="font-weight: bold;">textarea</code> указывается количество столбцов и строк. 
+        <br />
+       
+        <br />
+       Для полей типа <code style="font-weight: bold;">radio</code>, <code style="font-weight: bold;">checkbox</code>, 			<code style="font-weight: bold;">dropdown</code>, <code style="font-weight: bold;">multiselect</code> поле <b>Ответ</b> выглядит следующим образом: 			 
+        <table border="0" style="border-collapse: collapse;"> 				 
+          <tbody> 
+            <tr> 					<th width="20%">Поле</th> 					<th width="80%">Описание</th></tr>
+           				 
+            <tr> 					<td>Варианты ответа</td> 					<td>Вариант ответа на вопрос.</td></tr>
+           				 
+            <tr> 					<td>Порядок</td> 					<td>Относительный &quot;вес&quot;, определяющий порядок следования вариантов ответа в списке.</td></tr>
+           				 
+            <tr> 					<td>По умолчанию</td> 					<td>Вариант ответа, отмеченный в этом поле, по умолчанию будет использоваться в качестве ответа на вопрос.</td></tr>
+           			</tbody>
+         </table>
+       
+        <br />
+       Для поля типа <code style="font-weight: bold;">hidden</code> из выпадающего списка выбирается тип поля ответа, а для остальных полей задается размер поля ответа.</td></tr>
+   </tbody>
+ </table>
+ 
+<h5><a name="valid"></a>Закладка &quot;Валидаторы&quot;</h5>
+ 
+<p>Добавление валидаторов для используемых полей ответов.</p>
+ 
+<table border="0" style="border-collapse: collapse;"> 	 
+  <tbody> 
+    <tr> 		<th width="35%">Поле</th> 		<th width="65%">Описание</th></tr>
+   	 
+    <tr> 		<td>Доступные валидаторы для поля типа <b>&lt;тип_поля&gt;</b> </td> 		<td>Из выпадающего списка для поля указанного типа выбирается один из доступных валидаторов. Для его назначения служит кнопка <b>Добавить валидатор</b>, расположенная рядом с полем. </td></tr>
+   </tbody>
+ </table>
+ 
+<h5><a name="fields"></a>Закладка &quot;Комментарий&quot;</h5>
+ 
+<p>&nbsp;Созданный служебный комментарий будет отображаться только в <span style="font-weight: bold;">Административном разделе</span>.</p>
+ 
+<h4><a name="f_form"></a>Полная форма редактирования</h4>
+ 
+<h5><a name="fields"></a>Закладка &quot;Свойства&quot;</h5>
+ 
+<table style="border-collapse: collapse;" class="tnormal"> 	 
+  <tbody> 
+    <tr> 		<th width="18%">Поле</th> 		<th width="82%">Описание</th></tr>
+   	 	 
+    <tr> 		<td>Дата изменения</td> 		<td>Дата последнего изменения вопроса. Поле отображается при редактировании существующего вопроса. </td></tr>
+   	 
+    <tr> 		<td>Активен</td> 		<td>Флаг активности вопроса.</td></tr>
+   	 
+    <tr> 		<td>Порядок сортировки</td> 		<td>Относительный &quot;вес&quot;, определяющий положение вопроса в общем списке.</td></tr>
+   	 
+    <tr> 		<td>* Символьный идентификатор</td> 		<td>Символьный код вопроса. Задается символами латинского алфавита.</td></tr>
+   	 
+    <tr> 		<td height="32">Обязателен</td> 		<td>Признак обязательности ответа на данный вопрос.</td></tr>
+   </tbody>
+ </table>
+ 
+<p>* - Поля, обязательные для заполнения.</p>
+ 
+<h5><a name="fields"></a>Закладка &quot;Вопрос&quot;</h5>
+ 
+<table style="border-collapse: collapse;" class="tnormal"> 	 
+  <tbody> 
+    <tr> 		<th width="18%">Поле</th> 		<th width="82%">Описание</th></tr>
+   	 
+    <tr> 		<td>Изображение</td> 		<td>Изображение, которое будет показываться рядом с вопросом.</td></tr>
+   	 
+    <tr> 		<td>Текст вопроса</td> 		<td>Текст создаваемого вопроса.</td></tr>
+   </tbody>
+ </table>
+ 
+<h5><a name="fields"></a>Закладка &quot;Ответ&quot;</h5>
+ 
+<p>Форма позволяет создать поля, используемые для ввода ответа на вопрос, либо создать возможные варианты ответов на вопрос.</p>
+ 
+<table border="0" style="border-collapse: collapse;"> 	 
+  <tbody> 
+    <tr> 		<th width="18%">Поле</th> 		<th width="82%">Описание</th></tr>
+   	 
+    <tr> 		<td>ID</td> 		<td>Идентификатор поля для ответа.</td></tr>
+   	 
+    <tr> 		<td>Текст 
+        <br />
+       ANSWER_TEXT</td> 		<td>Текст ответа на вопрос. 
+        <br />
+       
+        <br />
+       Используется для полей типа 			<code><span style="font-weight: bold;">dropdown</span>, <span style="font-weight: bold;">multiselect</span>, <span style="font-weight: bold;">radio</span>, <span style="font-weight: bold;">checkbox</span></code>. Для остальных типов полей необходимо поставить пробел.</td></tr>
+   	 
+    <tr> 		<td>Значение 
+        <br />
+       ANSWER_VALUE</td> 		<td>Дополнительный параметр, который может быть использован для идентификации конкретного ответа (например, в списках).</td></tr>
+   	 
+    <tr> 		<td>Тип поля</td> 		<td>Тип поля для ответа на данный вопрос: 			 
+        <ul> 				 
+          <li><code style="font-weight: bold;">text</code> - однострочный текст; 				</li>
+         
+          <li><code style="font-weight: bold;">textarea</code>- многострочный текст; 				</li>
+         
+          <li><code style="font-weight: bold;">multiselect</code> - список вариантов с возможностью множественного выбора; 				</li>
+         
+          <li><code style="font-weight: bold;">dropdown</code> - список вариантов с возможностью одиночного выбора; 				</li>
+         
+          <li><code style="font-weight: bold;">radio</code> - набор radio кнопок (одиночный выбор); 				</li>
+         
+          <li><code style="font-weight: bold;">checkbox</code> - набор checkbox кнопок (множественный выбор); 				</li>
+         
+          <li><code style="font-weight: bold;">image</code> - поле для ввода изображения; 				</li>
+         
+          <li><code style="font-weight: bold;">date</code> - поля для ввода даты со встроенным календарем; 				</li>
+         
+          <li><code style="font-weight: bold;">file</code> - поле для добавления файла; 				</li>
+         
+          <li><code style="font-weight: bold;">password</code> - поле для ввода пароля; 				</li>
+         
+          <li><code style="font-weight: bold;">email</code> - поле для ввода электронного адреса;</li>
+         
+          <li><code style="font-weight: bold;">url</code> - поле для ввода адреса сайта</li>
+         
+          <li><code style="font-weight: bold;">hidden</code> - скрытое поле. </li>
+         </ul>
+       </td></tr>
+   	 
+    <tr> 		<td>Ширина</td> 		<td>Ширина полей типа <code><span style="font-weight: bold;">text</span>, <span style="font-weight: bold;">textarea</span>, <span style="font-weight: bold;">image</span>, <span style="font-weight: bold;">date</span></code>. Задается количеством столбцов.</td></tr>
+   	 
+    <tr> 		<td>Высота</td> 		<td>Высота полей типа <code>t<span style="font-weight: bold;">extarea</span>, <span style="font-weight: bold;">multiselect</span></code>. Задается количеством строк.</td></tr>
+   	 
+    <tr> 		<td>Параметры</td> 		<td>Данное поле может использоваться для вывода стиля элемента ввода, а также для задания специальных идентификаторов: 			 
+        <ul> 				 
+          <li><b>SELECTED -</b> при задании этого идентификатора поле ввода будет 				выделено; работает для полей следующих типов: <code><span style="font-weight: bold;">multiselect</span>, <span style="font-weight: bold;">dropdown</span>, <span style="font-weight: bold;">radio</span>, <span style="font-weight: bold;">checkbox</span>.</code> 				</li>
+         
+          <li><b>NOT_ANSWER -</b> идентификатор используется для пометки тех пунктов элементов управления, которые не являются вариантами ответа на вопрос. В том случае, если этот идентификатора задан и если ответ на вопрос обязателен, выбор посетителем данного ответа не будет считаться ответом на обязательный вопрос формы. Работает для типов полей: 				<code><span style="font-weight: bold;">dropdown</span>, <span style="font-weight: bold;">radio</span>, <span style="font-weight: bold;">multiselect</span>, <span style="font-weight: bold;">checkbox</span></code>. 				</li>
+         
+          <li><b>NOW_DATE -</b>выводит в поле типа <code style="font-weight: bold;">date</code> текущую дату. 				</li>
+         
+          <li><b>NOW_TIME -</b>выводит в поле типа <code style="font-weight: bold;">date</code> текущее время. </li>
+         </ul>
+       </td></tr>
+   	 
+    <tr> 		<td>Сорт.</td> 		<td>Относительный &quot;вес&quot; определяющий положение варианта ответа в общем списке.</td></tr>
+   	 
+    <tr> 		<td>Акт.</td> 		<td>Признак активности поля. Для отображения в публичном разделе выбираются только активные варианты ответа.</td></tr>
+   	 
+    <tr> 		<td>Удалить</td> 		<td>Для того чтобы удалить вариант ответа, установите флаг в это поле и нажмите кнопку <span style="font-weight: bold;">Применить</span>.</td></tr>
+   </tbody>
+ </table>
+ 
+<h5><a name="valid"></a>Закладка &quot;Валидаторы&quot;</h5>
+ 
+<p>Добавление валидаторов для используемых полей ответов.</p>
+ 
+<table border="0" style="border-collapse: collapse;"> 	 
+  <tbody> 
+    <tr> 		<th width="35%">Поле</th> 		<th width="65%">Описание</th></tr>
+   	 
+    <tr> 		<td>Доступные валидаторы для поля типа <b>&lt;тип_поля&gt;</b> </td> 		<td>Выбирается один из доступных валидаторов. Для его назначения служит кнопка <b>Добавить валидатор</b>, расположенная рядом с полем. </td></tr>
+   </tbody>
+ </table>
+ 
+<h5><a name="fields"></a>Закладка &quot;Результаты&quot;</h5>
+ 
+<p>Закладка служит для настройки параметров показа результатов ответа вопрос.</p>
+ 
+<table style="border-collapse: collapse;" class="tnormal"> 	 
+  <tbody> 
+    <tr> 		<th width="24%">Поле</th> 		<th width="76%">Описание</th></tr>
+   	 
+    <tr> 		<td>Показать в HTML-таблице результатов</td> 		<td colspan="6">Если отметить данный флаг, то ответы на данный вопрос будут отображены в <span style="font-weight: bold;">HTML</span>-таблице результатов формы.</td></tr>
+   	 
+    <tr> 		<td>Показать в Excel-таблице результатов</td> 		<td colspan="6">Если отметить данный флаг, то ответы на данный вопрос будут отображены в <span style="font-weight: bold;">Excel</span>-таблице результатов формы.</td></tr>
+   	 
+    <tr> 		<td>Заголовок столбца в таблице</td> 		<td colspan="6">Текст, который будет выводиться в таблице результатов в качестве заголовка столбца, содержащего ответы на данный вопрос.</td></tr>
+   </tbody>
+ </table>
+ 
+<h5><a name="fields"></a>Закладка &quot;Фильтр&quot;</h5>
+ 
+<table style="border-collapse: collapse;" class="tnormal"> 	 
+  <tbody> 
+    <tr> 		<th colspan="9">Поля в фильтре</th></tr>
+   	 
+    <tr> 		<td width="18%">для вводимого значения</td> 		<td width="82%" colspan="6">Тип полей фильтра таблицы результатов для поиска ответов, вводимых пользователем в следующих типах полей: <span style="font-weight: bold;">text</span>, <span style="font-weight: bold;">textarea</span>. 			 
+        <br />
+       Возможны следующие типы полей в фильтре: 			 
+        <ul> 				 
+          <li>однострочное текстовое поле; 				</li>
+         
+          <li>числовой интервал; 				</li>
+         
+          <li>интервал дат; 				</li>
+         
+          <li>флаг существования. </li>
+         </ul>
+       </td></tr>
+   	 
+    <tr> 		<td>для параметра <span style="font-weight: bold;">ANSWER_TEXT</span></td> 		<td colspan="6">Тип полей фильтра для поиска значений параметра <span style="font-weight: bold;">ANSWER_TEXT</span> в ответах посетителя. 
+        <br />
+       Возможны следующие типы полей в фильтре: 			 
+        <ul> 				 
+          <li>однострочное текстовое поле; 				</li>
+         
+          <li>числовой интервал; 				</li>
+         
+          <li>выпадающий список из всех значений <span style="font-weight: bold;">ANSWER_TEXT</span>; 				</li>
+         
+          <li>флаг существования. </li>
+         </ul>
+       </td></tr>
+   	 
+    <tr> 		<td>для параметра <span style="font-weight: bold;">ANSWER_VALUE</span></td> 		<td colspan="6">Тип полей фильтра для поиска значений параметра <span style="font-weight: bold;">ANSWER_VALUE</span> в ответах посетителя. 
+        <br />
+       Возможны следующие типы полей в фильтре: 			 
+        <ul> 				 
+          <li>однострочное текстовое поле; 				</li>
+         
+          <li>числовой интервал; 				</li>
+         
+          <li>выпадающий список из всех значений <span style="font-weight: bold;">ANSWER_TEXT</span>; 				</li>
+         
+          <li>флаг существования. </li>
+         </ul>
+       </td></tr>
+   	 
+    <tr> 		<td>Подпись к полю фильтра</td> 		<td colspan="6">Текст, который будет выводиться рядом с выбранными полями фильтра по таблице результатов.</td></tr>
+   </tbody>
+ </table>
+ 
+<h5><a name="fields"></a>Закладка &quot;Комментарий&quot;</h5>
+ 
+<p>Созданный служебный комментарий будет отображаться только в <span style="font-weight: bold;">Административном разделе</span>.</p>
+ 
+<h4><a name="buttons"></a>Кнопки управления</h4>
+ 
+<table style="border-collapse: collapse;" class="tnormal"> 	 
+  <tbody> 
+    <tr> 		<th width="18%" align="left">Кнопка</th> 		<th width="82%">Описание</th></tr>
+   	 
+    <tr> 		<td align="left">Сохранить</td> 		<td>Сохранение параметров вопроса. Переход к списку вопросов.</td></tr>
+   	 
+    <tr> 		<td align="left">Применить</td> 		<td>Сохранение параметров вопроса. Продолжение редактирования вопроса.</td></tr>
+   	 
+    <tr> 		<td align="left">Отменить</td> 		<td>Отмена внесённых изменений. Возврат первоначальных значений параметров.</td></tr>
+   </tbody>
+ </table>
+ <bitrix:sys name="feedbackform"></bitrix:sys> <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

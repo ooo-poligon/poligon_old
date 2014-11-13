@@ -1,0 +1,144 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fservice%2Fvote%2Fvote_question_list.php.html"; </script>
+
+<title>Список вопросов</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/vote/vote_question_list.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Список вопросов])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Список вопросов</h1></div></div>
+<div id="pagebody" valign="bottom">
+ <span> 
+  <p>Форма для просмотра списка вопросов и осуществления различных операций над ними.</p>
+ 
+  <h4><b>Фильтр</b></h4>
+ 
+  <p>Задание параметров отбора вопросов, которые отображаются в списке. 
+    <br />
+   </p>
+ <span> </span> 
+  <table class="tnormal"> 
+    <tbody> 
+      <tr> 	<th>Наименование параметра</th><th>Описание</th> </tr>
+     
+      <tr> <td>Вопрос*</td> <td>Текста вопроса.</td> </tr>
+     
+      <tr> <td>ID*</td> <td>ID вопроса.</td></tr>
+     
+      <tr> <td>Активен</td> <td>Значение флага активности.</td></tr>
+     
+      <tr> <td>Включен в диаграмму</td> <td>Флаг включения вопроса в результирующую диаграмму.</td></tr>
+     </tbody>
+   </table>
+ 
+  <p>* - для данных полей вы можете воспользоваться <a href="../../general/filter.php.html"> специальными логическими выражениями</a>.</p>
+ 
+  <p>Для инициализации фильтра необходимо нажать кнопку <b>Найти</b>. Для отображения всех опросов нажмите кнопку <b>Отменить</b>.</p>
+ <span> 
+    <h4>Контекстная панель</h4>
+   
+    <table width="100%" class="tnormal"> 	 
+      <tbody> 
+        <tr> 	<th>Кнопка</th> 	<th>Описание</th> 	</tr>
+       	 
+        <tr> 	<td>Создать</td> 	<td>Создает новый вопрос.</td> 	</tr>
+       
+        <tr> <td><span><span>Настроить</span></span></td> <td><span><span>Переход к диалогу настройки внешнего вида отчетной формы.</span></span></td> </tr>
+       
+        <tr> 	<td><span><span>Excel<span><span></span></span></span></span></td> 	<td><span><span>Экспорт данных из отображаемой таблицы в формат <span style="font-weight: bold;">MS Excel</span>.</span></span></td> 	</tr>
+       </tbody>
+     </table>
+   </span> 
+  <h4> Таблица параметров вопроса</h4>
+ 
+  <table class="wordtable"> 
+    <tbody> 
+      <tr> 	<th>Колонка 
+          <br />
+         флажков</th> 	<th>Меню 
+          <br />
+         действий</th> 	<th>ID</th><th>Изменено </th><th>Акт.</th> <th>Диагр.</th> <th>Сорт.</th> <th>Вопрос</th> </tr>
+     
+      <tr> <td>[1]</td> <td><img src="../../images/iblock/e0a/admin_col_btn_action.png" width="30" height="20"> [2]</td> <td>[3]</td> <td>[4]</td> <td>[5]</td> <td>[6]</td> <td>[7]</td> <td>[8]</td> </tr>
+     
+      <tr><th>Выбрано: [9]</th> <th>Отмечено: [10]</th> <th colspan="6"> 
+          <br />
+         </th> </tr>
+     </tbody>
+   </table>
+ 
+  <ol> 
+    <li>Поле позволяет выбрать вопросы для применения к ним 	действий при помощи <a href="#act">вспомогательной формы <b>Действия</b></a> внизу таблицы.</li>
+   
+    <li>Доступные действия: 	 
+      <ul> 	 
+        <li><b>Изменить </b>- отредактировать вопрос; 	</li>
+       
+        <li><b>Удалить </b>- удалить вопрос.</li>
+       	</ul>
+     </li>
+   
+    <li>ID вопроса в базе.</li>
+   
+    <li>Дата изменения записи в базе данных.</li>
+   
+    <li>Флаг активности вопроса.</li>
+   
+    <li>Флаг, определяющий, включен ли вопрос в результирующую диаграмму.</li>
+   
+    <li>Индекс сортировки (положение в списке) вопроса.</li>
+   
+    <li>Текст вопроса.</li>
+   
+    <li>Количество выбранных из базы вопросов (с учётом фильтра).</li>
+   
+    <li>Количество отмеченных флажками вопросов.</li>
+   </ol>
+ 
+  <h4><a name="act"></a>Действия над вопросами</h4>
+ 
+  <p>Вспомогательная форма <b>Действия</b> позволяет осуществить различные операции одновременно над несколькими вопросами. Чтобы применить то или иное действие к вопросам, следует пометить их галочками в левом столбце таблицы.</p>
+ 
+  <p>Предусмотрены следующие действия.</p>
+ <dl> 	<dt><span style="font-weight: bold;">Активировать</span> - переводит выбранные вопросы в активный 		статус.</dt> 	<dt><span style="font-weight: bold;">Деактивировать</span> - переводит выбранные вопросы в 		неактивный статус.</dt> </dl> </span><bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

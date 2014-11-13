@@ -1,0 +1,154 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../index.html?page=source%2Fstore%2Fsale%2Fuser_accounts%2Ftransactions.php.html"; </script>
+
+<title>Транзакции</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "store/sale/user_accounts/transactions.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Транзакции])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Транзакции</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+
+
+
+
+<h4 id="topictoctitle">В этом разделе</h4>
+<menu id="topictoc">
+<li><a href="#filter">Форма поиска</a></li>
+<li><a href="#menu">Контекстная панель</a></li>
+<li><a href="#list">Список транзакций</a>
+</menu>
+
+
+<p>Форма <b>Транзакции</b> (<i>Магазин -&gt; Счета покупателей -&gt; Транзакции</i>) содержит список всех транзакций, выполняемых по счету клиента интернет-магазина (например, зачисление или списание денежных средств).</p>
+<h4><a name="filter" id="filter">Форма поиска</a></h4>
+<p>С помощью данной формы вы можете выполнить поиск транзакций в соответствии с указанными условиями.</p>
+<table class="tnormal">
+	<tr>
+		<th width="25%">Поле</th>
+		<th width="75%">Описание</th>
+</tr>
+<tr>
+		<td height="19">Пользователь</td>
+		<td>Поиск транзакции по имени, отчеству, фамилии и/или e-mail адресу пользователя, по счету которого была выполнена операция.  Возможно использование условий <a href="../../../general/filter.php.html">сложного поиска</a>.</td>
+</tr>
+	<tr>
+		<td height="19">ID пользователя</td>
+		<td>Идентификационный номер пользователя, по счету которого была выполнена операция.</td>
+</tr>
+	<tr>
+		<td height="19">Логин пользователя</td>
+		<td>Поиск транзакции по логину (имени входа) пользователя, по счету которого была выполнена операция.</td>
+</tr>
+	<tr>
+		<td height="19">Валюта</td>
+		<td>Поиск транзакции по валюте операции.</td>
+</tr>
+	<tr>
+		<td height="19">Дата транзакции</td>
+		<td>Поиск операции по дате проведения.<br>
+			Возможно указание как количества дней, прошедших со дня выполнения операции, так и периода времени, в течение которого могла быть выполнена транзакция.</td>
+</tr>
+	<tr>
+		<td height="19">Номер заказа</td>
+		<td>Поиск транзакции по номеру заказа, в рамках которого она была проведена.</td>
+</tr>
+</table>
+<p>Для того чтобы отобрать транзакции по заданным критериям поиска, нажмите кнопку "Найти". Для отображения всех транзакций нажмите кнопку "Отменить".</p>
+<h4><a name="menu" id="menu">Контекстная панель</a></h4>
+<table class="tnormal">
+	<tr>
+		<th width="25%">Кнопка</th>
+		<th width="75%">Описание</th>
+</tr>
+	<tr>
+		<td>Добавить транзакцию</td>
+		<td>Переход к форме <a href="transactions_add.php.html">создания</a> новой транзакции.</td>
+</tr><tr>
+		<td>Excel</td>
+		<td>Экспортирует данные из отображаемой таблицы в формат MS Excel.</td>
+</tr>
+<tr>
+	<td>Настроить</td>
+	<td>Позволяет перейти к диалогу настройки внешнего вида отчетной формы.</td>
+	</tr>
+</table>
+<h4><a name="list" id="list">Список транзакций</a></h4>
+<table class="tnormal">
+<tr>
+<th width="25%">Поле</th>
+<th width="75%">Описание</th>
+</tr>
+<tr>
+<td>ID</td>
+<td>Уникальный идентификатор транзакции в системе.</td>
+</tr>
+<tr>
+	<td>Дата транзакции</td>
+	<td>Дата проведения операции по счету.</td>
+</tr>
+<tr>
+<td>Пользователь</td>
+<td>Регистрационный код, имя и e-mail адрес пользователя, по счету которого осуществляется данная операция.</td>
+</tr>
+<tr>
+<td>Сумма</td>
+<td>Сумма операции.</td>
+</tr>
+<tr>
+<td>Заказ</td>
+<td>Номер заказа, в рамках которого была проведена данная операция.<br> 
+	Номер заказа представлен в виде ссылки, позволяющей перейти к форме с подробной информацией о заказе.</td>
+</tr>
+<tr>
+<td>Тип</td>
+<td>Тип операции по счету.</td>
+</tr>
+<tr>
+	<td>Описание</td>
+	<td>Регистрационный код, имя и логин пользователя, выполнившего транзакцию.</td>
+</tr>
+</table>
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

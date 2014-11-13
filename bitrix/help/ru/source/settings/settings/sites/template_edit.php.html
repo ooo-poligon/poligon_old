@@ -1,0 +1,178 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../index.html?page=source%2Fsettings%2Fsettings%2Fsites%2Ftemplate_edit.php.html"; </script>
+
+<title>Создание и редактирование шаблона</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "settings/settings/sites/template_edit.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Создание и редактирование шаблона])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Создание и редактирование шаблона</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+<h4 id="topictoctitle">В этом разделе</h4>
+<menu id="topictoc">
+  <li><a href="#menu" >Контекстная панель</a> </li> <li><a href="#form">Форма редактирования</a> <menu>
+      <li><a href="#templ" >Шаблон</a> </li> <li><a href="#sitestyles">Стили сайта</a> </li>
+    
+      <li><a href="#styles">Cтили шаблона</a> </li> <li><a href="#files" >Дополнительные файлы</a> </li>
+    </menu></li>
+
+  <li><a href="#buttons">Кнопки управления</a> </li>
+</menu>
+<h2><a name="menu"></a>Контекстная панель</h2>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th width="25%">Кнопка</th><th width="75%">Описание</th></tr>
+  
+    <tr><td height="19">Список шаблонов</td><td>Переход на страницу со списком шаблонов сайта.</td></tr>
+  
+    <tr><td height="19">Добавить шаблон</td><td>Переход к форме создания нового шаблона. Кнопка отображается при редактировании существующего шаблона.</td></tr>
+  
+    <tr><td height="19">Копировать шаблон</td><td>Копирование редактируемого шаблона.</td></tr>
+  
+    <tr><td height="19">Удалить шаблон</td><td>Удаление редактируемого шаблона.</td></tr>
+  </tbody>
+</table>
+
+<h2><a name="form"></a>Форма создания шаблона</h2>
+
+<p>Для удобства работы форма создания шаблона разделена на несколько закладок. На каждой закладке выполняется определённая группа действий по настройке шаблона.</p>
+
+<h4><a name="templ"></a>Закладка &quot;Шаблон&quot;</h4>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th width="25%">Поле</th><th width="75%">Описание</th></tr>
+  
+    <tr><td>ID</td><td>Идентификатор шаблона. Задается символами латинского алфавита. При редактировании шаблона рядом с данным полем отображается ссылка на папку шаблона. 
+        <br />
+      
+        <br />
+      <b>Примечание</b>: При создании новый шаблон будет автоматически сохранен в каталоге <code>/bitrix/templates/</code>в папке с именем, соответствующим идентификатору шаблона.</td></tr>
+  
+    <tr><td>Название</td><td>Произвольное название шаблона.</td></tr>
+  
+    <tr><td>Описание</td><td>Произвольное описание шаблона.</td></tr>
+  
+    <tr><th colspan="2">*Внешний вид шаблона сайта (рабочую область заменить #WORK_AREA#):</th></tr>
+  
+    <tr><td colspan="2">Данное поле служит для создания и редактирования кода шаблона. Разделитель #WORK_AREA# обозначает границу между верхней и нежней частью дизайна, т.е. место подключение рабочей области страницы.
+        <br />
+      
+        <br />
+      <b>Примечание:</b> Опция <i>Использовать визуальный редактор</i> служит для подключения визуального режима редактирования шаблона. Опция доступна, если в <a href="../settings.php.html">настройках</a> Главного модуля отмечена соответствующая опция. </td></tr>
+  </tbody>
+</table>
+
+<p>* - Поля, обязательные для заполнения.</p>
+
+<h4><a name="sitestyles"></a>Закладка &quot;Стили сайта&quot;</h4>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th>Файл стилей сайта (styles.css)</th></tr>
+  
+    <tr><td>Данное поле служит для описания таблиц каскадных стилей (CSS), используемых на страницах сайта. Описание стилей хранится в файле <code>styles.css</code> в папке шаблона сайта.</td></tr>
+  
+    <tr><th>Описание стилей</th></tr>
+  
+    <tr><td>В данной части формы указываются названия стилей, как они будут отображаться в визуальном редакторе при редактировании страниц. Указанные здесь названия будут сохранены в файле <code>.styles.php</code> папки шаблона. 
+        <table class="wordtable">
+          <tbody>
+            <tr><th>Поле</th><th>Описание</th></tr>
+          
+            <tr></tr>
+          
+            <tr><td>Имя стиля</td><td>Указывается имя стиля, как оно названо в файле.</td></tr>
+          
+            <tr><td>Название&nbsp;стиля</td><td>Указывается название стиля. Название будет отображаться в визуальном редакторе.</td></tr>
+          </tbody>
+        </table>
+      </td></tr>
+  </tbody>
+</table>
+
+<h4><a name="styles"></a>Закладка &quot;Стили шаблона&quot;</h4>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th>Файл стилей шаблона (template_styles.css)</th></tr>
+  
+    <tr><td>Данное поле служит для описания таблиц каскадных стилей (CSS), используемых в шаблоне. Описание стилей хранится в файле <code>template_styles.css</code> в папке шаблона сайта.</td></tr>
+  </tbody>
+</table>
+
+<h4><a name="files"></a>Закладка &quot;Дополнительные файлы&quot;</h4>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th colspan="2">Дополнительные файлы</th></tr>
+  
+    <tr><td colspan="2">В этом поле указываются дополнительные файлы (картинки, шаблоны меню, шаблоны включаемых областей и др.), используемые для текущего шаблона сайта. 
+        <ul>
+          <ul>
+            <li><b>Изменить</b> - переход к редактированию существующего файла; </li>
+          
+            <li><b>Добавить включаемый файл</b>- ссылка на страницу с формой создания нового файла. </li>
+          </ul>
+        </ul>
+      </td></tr>
+  </tbody>
+</table>
+
+<h2><a name="buttons"></a>Кнопки управления</h2>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th width="25%">Кнопка</th><th width="75%">Описание</th></tr>
+  
+    <tr><td>Сохранить</td><td>Сохранение внесённых изменений. Переход на страницу со списком шаблонов сайта.</td></tr>
+  
+    <tr><td>Применить</td><td>Применение внесённых изменений. Продолжение редактирования шаблона.</td></tr>
+  
+    <tr><td>Отменить</td><td>Отмена внесённых изменений. Возврат первоначальных значений параметров.</td></tr>
+  </tbody>
+</table>
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

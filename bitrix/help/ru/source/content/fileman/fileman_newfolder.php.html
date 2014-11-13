@@ -1,0 +1,266 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fcontent%2Ffileman%2Ffileman_newfolder.php.html"; </script>
+
+<title>Создание новой папки</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "content/fileman/fileman_newfolder.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Создание новой папки])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Создание новой папки</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+<h4 id="topictoctitle">В этом разделе</h4>
+ <menu id="topictoc"> 
+  <li><a href="#menu">Контекстная панель</a> </li>
+ 
+  <li><a href="#fields">Поля формы</a> </li>
+ 
+  <li><a href="#examp">Пример создания раздела</a> </li>
+ </menu> 
+<p>Форма открывается всякий раз, когда выбирается пункт меню <b>Новая папка</b> в <span style="font-weight: bold;">Контекстном меню</span> или нажимается <b>Меню&nbsp;команд</b> кнопки&nbsp;<img src="../../images/iblock/c01/new.png" width="83" height="24"> на <span style="font-weight: bold;">Административной панели</span> с выбором команды <b>Создать раздел</b>. Новая папка создаётся в той папке, которая открыта в настоящее время в менеджере. Например, если у вас открыта папка <code style="font-style: italic;">/site2/about/</code>, то новая папка будет добавлена в раздел <code style="font-style: italic;">/site2/about/</code>.</p>
+ 
+<p>В зависимости от выбора способа создания папки алгоритм действий будет разным. При выборе кнопки&nbsp;<img src="../../images/iblock/c01/new.png" width="83" height="24"> на <b>Административной панели</b> откроется <b>Мастер создания папки</b>. При выборе команды <b>Новая папка</b> в <b>Контекстном меню</b> откроется форма <b>Создание нового каталога</b>. 
+  <br />
+ </p>
+ 
+<h4><a name="menu"></a>Форма Создание нового каталога</h4>
+ Предназначена для создания новой папки. 
+<br />
+ 
+<h4><a name="menu"></a>Контекстная панель</h4>
+ 
+<table class="tnormal" style="border-collapse: collapse;"> 
+  <tbody> 
+    <tr><th width="18%">Кнопка</th><th width="82%">Описание</th></tr>
+   
+    <tr><td>Каталог</td><td>Переход в папку, открытую в данный момент в <span style="font-weight: bold;">Менеджере файлов</span>. </td></tr>
+   </tbody>
+ </table>
+ 
+<h4> 
+  <br />
+ </h4>
+ 
+<table class="tnormal" style="border-collapse: collapse;"> 
+  <tbody> 
+    <tr><th width="18%">Поле</th><th width="82%">Описание</th></tr>
+   
+    <tr><td>Имя папки</td><td>Название новой папки. Только латинские символы.</td></tr>
+   
+    <tr><td>Название раздела</td><td>Название нового раздела, как он будет показан в цепочке навигации в публичной части.</td></tr>
+   
+    <tr><td>Создать пункт меню</td><td>Если опция включена, то ссылка на создаваемый раздел будет добавлена в указанное ниже меню.</td></tr>
+   
+    <tr><td>Меню</td><td>Тип меню, в которое должна быть добавлена ссылка на создаваемый раздел.</td></tr>
+   
+    <tr><td>Название пункта</td><td>Текст пункта меню, как он будет показан в публичной части сайта.</td></tr>
+   
+    <tr><td>Создать индексную страницу раздела</td><td>Если эта опция включена, то сразу же после создания раздела в нем будет создан файл <code style="font-style: italic;">index.php</code>. Это позволит открывать раздел сайта без указания имени страницы. Например: <code><span style="font-style: italic;">http://yoursite.ru/site2/about/ourdepartment</span>/</code>, - пользователи будут автоматически перенаправляться на индексную страницу раздела. </td></tr>
+   
+    <tr><td>Шаблон</td><td>Шаблон, на основе которого будет создана индексная страница.</td></tr>
+   
+    <tr><td>Перейти к редактированию</td><td>Если эта опция включена, то после создания раздела откроется редактор файлов, в котором можно будет изменить и наполнить созданную индексную страницу.&nbsp;</td></tr>
+   </tbody>
+ </table>
+ 
+<h4>Команды</h4>
+ 
+<br />
+ 
+<table border="0" class="tnormal" style="border-collapse: collapse;"> 
+  <tbody> 
+    <tr><th width="18%">Команды 
+        <br />
+       </th><th width="82%">Описание 
+        <br />
+       </th></tr>
+   
+    <tr><td>Сохранить</td><td>&nbsp;Сохранение изменений, переход в папку.</td></tr>
+   
+    <tr><td>Применить 
+        <br />
+       </td><td>&nbsp; Сохранение изменений, возврат в форму для редактирования 
+        <br />
+       </td></tr>
+   
+    <tr><td>Отменить</td><td>&nbsp;Отмена изменений</td></tr>
+   </tbody>
+ </table>
+ 
+<br />
+ 
+<h4><a name="examp"></a>Пример создания раздела через форму создания сайта 
+  <br />
+ </h4>
+ 
+<ol> 
+  <li>Перейдите в менеджер файлов: <span style="font-style: italic;">Настройки &gt; Структура сайта</span>. </li>
+ 
+  <li>Нажмите кнопку <b>Новая папка</b> на контекстной панели страницы. </li>
+ 
+  <li>Введите имя папки. Только латинские символы. </li>
+ 
+  <li>Введите название раздела. Именно это название будет отображено в цепочке навигации в качестве ссылки на созданный раздел. </li>
+ 
+  <li>Отметьте флажком поле <b>Создать индексную страницу раздела</b>, чтобы добавить в новую папку файл <code style="font-style: italic;">index.php</code>. При открытии нового раздела сайта в браузере, по умолчанию первой будет показана эта страница. </li>
+ 
+  <li>Выберите шаблон индексной страницы. В дистрибутив продукта включены следующие шаблоны страниц: <span style="font-weight: bold;">Стандартная страница</span>, <span style="font-weight: bold;">Включаемая область для страницы</span> или <span style="font-weight: bold;">Включаемая область для раздела</span>. 
+    <ul> 
+      <li>Шаблон <span style="font-weight: bold;">Стандартная страница</span> применяется для всех страниц сайта и представляет собой текстовое сообщение <code style="font-style: italic;">Text here&hellip;</code> без определённого стиля. </li>
+     
+      <li>Шаблон <span style="font-weight: bold;">Включаемая область для страницы</span> применяется для включаемых областей отдельной страницы сайта. </li>
+     
+      <li>Шаблон <span style="font-weight: bold;">Включаемая область для раздела</span><i> </i>применяется при создании включаемой области для всех страниц раздела сайта. </li>
+     </ul>
+   </li>
+ 
+  <li>Отметьте флажком поле <b>Перейти к редактированию</b>, чтобы приступить к редактированию индексной страницы непосредственно после сохранения раздела. </li>
+ 
+  <li>Отредактируйте страницу по своему усмотрению. </li>
+ 
+  <li>Нажмите кнопку <span style="font-weight: bold;">Сохранить</span>, чтобы сохранить файл в новой папке. </li>
+ </ol>
+ 
+<br />
+ 
+<h4><a name="examp"></a> Мастер создания нового раздела 
+  <br />
+ </h4>
+ Создание нового раздела выполняется в несколько шагов. 
+<br />
+ 
+<h4>Шаг первый</h4>
+ Собственно создание раздела 
+<br />
+ 
+<table border="0" class="tnormal" style="border-collapse: collapse;"> 
+  <tbody> 
+    <tr><th width="18%">Поле 
+        <br />
+       </th><th width="82%">Описание 
+        <br />
+       </th></tr>
+   
+    <tr><td>Имя папки</td><td>Название папки, только латинские символы!</td></tr>
+   
+    <tr><td>Заголовок раздела&nbsp; 
+        <br />
+       </td><td>Заголовок раздела как он будет отображаться в структуре сайта 
+        <br />
+       </td></tr>
+   
+    <tr><td>Перейти к редактированию страницы</td><td>Открытие для редактирования индексной страницы раздела</td></tr>
+   
+    <tr><td>Добавить пункт меню</td><td>Установка флажка приводит к созданию пункта меню с ссылкой на создаваемый раздел. Если флажок снят, то активна кнопка <b>Готово</b> и возможно завершение работы <b>Мастера</b>. Если при снятом флажке работа Мастера продолжается, то второй шаг пропускается. 
+        <br />
+       </td></tr>
+   </tbody>
+ </table>
+ 
+<br />
+ 
+<h4>Шаг второй</h4>
+ Настройка пункта меню 
+<br />
+ 
+<table border="0" class="tnormal" style="border-collapse: collapse;"> 
+  <tbody> 
+    <tr><th width="18%">Поле 
+        <br />
+       </th><th width="82%">Описание 
+        <br />
+       </th></tr>
+   
+    <tr><td>Имя нового пункта</td><td>Имя. под которым новый пункт будет отображен в меню</td></tr>
+   
+    <tr><td>Тип меню 
+        <br />
+       </td><td>Выбор типа меню 
+        <br />
+       </td></tr>
+   
+    <tr><td>Вставить перед пунктом</td><td>Выбор месторасположения пункта в меню</td></tr>
+   </tbody>
+ </table>
+ 
+<br />
+ После второго шага возможно завершение работы Мастера. 
+<br />
+ 
+<br />
+ 
+<h4>Шаг третий</h4>
+ Задание свойств раздела 
+<br />
+ 
+<table border="0" class="tnormal"> 
+  <tbody> 
+    <tr><th width="18%">Поле 
+        <br />
+       </th><th width="82%">Описание 
+        <br />
+       </th></tr>
+   
+    <tr><td>Описание</td><td>Описание раздела</td></tr>
+   
+    <tr><td>Ключевые слова 
+        <br />
+       </td><td>Ключевые слова для поиска 
+        <br />
+       </td></tr>
+   
+    <tr><td>Разное</td><td>Произвольный комментарий</td></tr>
+   
+    <tr><td></td><td> 
+        <br />
+       </td></tr>
+   </tbody>
+ </table>
+ 
+<br />
+ После завершения работы Мастера (нажатием на кнопку <b>Готово</b>) раздел создастся и откроется форма для редактирования индексной страницы. 
+<br />
+ 
+<br />
+ <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

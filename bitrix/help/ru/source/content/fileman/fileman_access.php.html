@@ -1,0 +1,124 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fcontent%2Ffileman%2Ffileman_access.php.html"; </script>
+
+<title>Права доступа</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "content/fileman/fileman_access.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Права доступа])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Права доступа</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<h4 id="topictoctitle">В этом разделе</h4>
+ <menu id="topictoc"> 	 
+  <li><a href="#menu">Контекстная панель</a></li>
+ 	 
+  <li><a href="#fields">Поля формы</a></li>
+ 	 
+  <li><a href="#buttons">Кнопки управления</a></li>
+ </menu> 
+<p>Управление доступом пользователей к страницам и разделам сайта выполняется с помощью <span style="font-weight: bold;">Менеджера файлов</span>: <i>Контент</i> &gt; <i>Структура сайта &gt; Файлы и папки</i>.</p>
+ 
+<p>Чтобы изменить права доступа к папке или файлу, необходимо выбрать пункт <b>Доступ</b> в меню действий папки или файла либо:</p>
+ 
+<ul> 	 
+  <li> Установить флаг в поле рядом с названием папки 						или файла (уровень прав доступа может быть настроен одновременно для нескольких файлов и папок);</li>
+ 	 
+  <li>Выбрать в поле <b>Действия</b>, расположенном на панели управления внизу страницы, пункт <b>Доступ</b> и нажать кнопку <span style="font-weight: bold;">Применить</span>. </li>
+ </ul>
+ 
+<p>После этого будет открыта форма редактирования прав доступа к выбранному файлу или папке (или нескольким файлам и папкам). По умолчанию настройки прав доступа к папке распространяются на все вложенные файлы и папки через механизм наследования. </p>
+ 
+<h4><a name="menu"></a>Контекстная панель</h4>
+ 
+<table class="tnormal"> 	 
+  <tbody> 
+    <tr> 		<th width="18%">Кнопка</th> 		<th width="82%">Описание</th> 	</tr>
+   	 
+    <tr> 		<td>Каталог</td> 		<td>Переход в папку, открытую в данный момент в менеджере файлов. </td> 	</tr>
+   </tbody>
+ </table>
+ 
+<h4><a name="#fields"></a>Поля формы </h4>
+ 
+<table border="0"> 	 
+  <tbody> 
+    <tr> 		<th width="18%">Поле</th> 		<th width="82%">Описание</th> 	</tr>
+   	 
+    <tr> 		<td> Группа</td> 		<td>Группа пользователей сайта, для которой выполняется настройка прав доступа. Управление группами пользователей осуществляется в модуле <a href="../../settings/users/group_admin.php.html">Пользователи</a>.</td> 	</tr>
+   	 
+    <tr> 		<td> Право</td> 		<td>Изменение текущего права доступа группы пользователей к файлу или разделу. Назначаются следующие уровни доступа: 			 
+        <ul> 	 
+          <li> <b>Запрещён</b> &ndash; доступ пользователей к данной папке или файлу закрыт;</li>
+         	 
+          <li><b>Чтение</b> &ndash; пользователям разрешено просматривать информацию файла или папки;</li>
+         	 
+          <li><b>Запись</b> &ndash; пользователи могут создавать, изменять и удалять файлы;</li>
+         	 
+          <li><b>Полный доступ</b> &ndash; пользователям разрешается не только изменять файлы, но и управлять правами доступа других пользователей;</li>
+         	 
+          <li><b>Наследовать</b> &ndash; для выбранных файлов или папок будут назначены те же права, что и для вышележащей папки;</li>
+         
+          <li><b>Документооборот</b> - пользователям разрешена работа с файлами в документоообороте. </li>
+         			</ul>
+       </td> 	</tr>
+   	 
+    <tr> 		<td>Текущее право </td> 		<td>Право доступа к файлу или разделу, которым группа пользователей обладает в данный момент. </td> 	</tr>
+   </tbody>
+ </table>
+ 
+<h4><a name="buttons"></a>Кнопки управления</h4>
+ 
+<table border="0"> 	 
+  <tbody> 
+    <tr> 		<th width="18%">Кнопка</th> 		<th width="82%">Описание</th> 	</tr>
+   	 
+    <tr> 		<td>Сохранить</td> 		<td>Сохранение выполненных настроек. </td> 	</tr>
+   	 
+    <tr> 		<td>Применить</td> 		<td>Сохранение выполненных настроек. Продолжение изменения прав доступа.</td> 	</tr>
+   	 
+    <tr> 		<td>Сбросить</td> 		<td>Отмена внесённых изменений. </td> 	</tr>
+   </tbody>
+ </table>
+ <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

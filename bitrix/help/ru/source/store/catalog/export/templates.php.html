@@ -1,0 +1,219 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../index.html?page=source%2Fstore%2Fcatalog%2Fexport%2Ftemplates.php.html"; </script>
+
+<title>Шаблоны</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "store/catalog/export/templates.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Шаблоны])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Шаблоны</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+
+
+<p>Информация, содержащаяся в этом разделе, является дополнительной к описанию шаблонов экспорта в разделе <a href="index.php.html">Экспорт. Детальное описание</a>.</p>
+
+<h4><b>Шаблоны экспорта</b></h4>
+
+<p>Шаблоны должны быть расположены в каталоге <nobr><code>/bitrix/php_interface/include/catalog_export/</code></nobr>. Предустановленные шаблоны содержат только подключение реальных скриптов. Пользовательские шаблоны должны содержать весь код, который необходим для экспорта. В качестве шаблонов система предлагает все файлы этого каталога, оканчивающиеся на
+<code>_run.php</code>. Если в этом каталоге находится файл с таким же именем, но оканчивающийся на <code>_setup.php</code>, то система считает этот файл файлом дополнительных настроек (мастером экспорта) для соответствующего шаблона экспорта.</p>
+
+<p>Если в начале шаблона экспорта находится тег <code> &lt;title&gt;</code> (возможно, в PHP комментариях), то содержимое этого тега принимается за название шаблона экспорта. В противном случае названием шаблона становится имя его файла.</p>
+
+<p>Вы можете добавить в каталог <code>/bitrix/php_interface/include/catalog_export/</code> любое количество  произвольных шаблонов экспорта.</p>
+<h4>Шаблон экспорта</h4>
+<p>Шаблон экспорта представляет собой обычный PHP скрипт, в котором нет вывода данных. В этом скрипте доступны все стандартные переменные, а так же все переменные, которые установлены в мастере экспорта.</p>
+
+<p>Шаблон экспорта может установить переменную <code>$strExportErrorMessage</code>, содержащую текстовое описание ошибок, которые произошли при выполнении экспорта. В этом случае система будет интерпретировать экспорт как неудачный и выведет содержимое переменной <code>$strExportErrorMessage</code> на экран.</p>
+
+<p>Если после выполнения экспорта системе будет доступна переменная <code>$SETUP_FILE_NAME</code>, то система будет интерпретировать содержимое этой переменной как путь к файлу данных, в который был произведен экспорт. Путь может быть относительным или абсолютным. Система по окончании экспорта отобразит полный путь к файлу данных на экране.</p>
+
+<h4>Пример простейшего шаблона экспорта</h4>
+<pre class=syntax id="xmp0F5C7AF4">
+&lt;?
+//&lt;title&gt;Простейший&lt;/title&gt;
+// Выведем в файл данных название выбраного инфоблока
+$strName = &quot;&quot;;
+
+// Переменная $IBLOCK_ID должна быть установлена
+// мастером экспорта или из профиля
+// Переменная $SETUP_FILE_NAME должна быть установлена 
+// мастером экспорта или из профиля
+$IBLOCK_ID = IntVal($IBLOCK_ID);
+
+// Модули каталога и инфоблоков уже подключены
+$db_res = CIBlock::GetList(Array(), 
+						   Array(&quot;ID&quot;=&gt;IntVal($IBLOCK_ID))
+						   );
+if ($ar_res = $db_res-&gt;Fetch())
+{
+	$strName = $ar_res[&quot;NAME&quot;];
+}
+
+if (strlen($strName)&gt;0)
+{
+	if ($fp = @fopen($_SERVER[&quot;DOCUMENT_ROOT&quot;].$SETUP_FILE_NAME,
+					 'wb'))
+	{
+		@fwrite($fp, $strName);
+		@fclose($fp);
+	}
+	else
+	{
+		$strExportErrorMessage = &quot;Ошибка открытия файла данных на запись&quot;;
+	}
+}
+else
+{
+	$strExportErrorMessage = &quot;Информационный блок не найден&quot;;
+}
+?&gt;
+</pre>
+
+<h4>Мастер экспорта</h4>
+<p>Мастер экспорта служит для задания дополнительных параметров экспорта (выбор экспортируемых каталогов и групп, указание пути к файлу данных и т.п.). Если дополнительные параметры шаблону экспорта не нужны, то мастер экспорта создавать не обязательно.
+</p>
+
+<p>Мастер экспорта может быть многошаговым. В этом случае следует использовать переменную <code>$STEP</code>, содержащую текущий шаг мастера. На следующий шаг переменная <code>$STEP</code> должна переходить с увеличенным соответственно значением.
+</p>
+
+<p>На последнем шаге переменная <code>$FINITE</code> должна быть установлена в значение True. Система воспринимает эту ситуацию как конец мастера экспорта и передает управление на шаблон экспорта или на сохранение профиля.
+</p>
+
+<p>После окончания мастера экспорта должна быть доступна переменная <code>$SETUP_FIELDS_LIST</code>, содержащая список имен переменных, устанавливаемых мастером экспорта. Имена переменных должны быть разделены запятыми.
+</p>
+
+<p>Если в качестве действия было вызвано создание профиля экспорта (т.е. переменная <code>$ACTION</code> равна <code>EXPORT_SETUP</code>), то после окончания мастера экспорта должна быть доступна переменная <code>$SETUP_PROFILE_NAME</code>, содержащая имя создаваемого профиля.
+</p>
+
+<p>В качестве переменной, содержащей путь к файлу данных, в который производится экспорт, рекомендуется использовать переменную <code>$SETUP_FILE_NAME</code>. В этом случае после окончания экспорта система подскажет пользователю полный путь к файлу данных.
+</p>
+
+<h4>Пример простейшего мастера экспорта</h4>
+<pre class=syntax id="xmpFD023632">
+&lt;?
+$strMyError = &quot;&quot;;
+
+if ($STEP&gt;1)
+{
+	$IBLOCK_ID = IntVal($IBLOCK_ID);
+	if ($IBLOCK_ID &lt;= 0)
+	{
+		$strMyError .= &quot;Инфоблок не выбран.&lt;br&gt;&quot;;
+	}
+
+	if (strlen($SETUP_FILE_NAME) &lt;= 0)
+		$strMyError .= &quot;Не указан файл данных.&lt;br&gt;&quot;;
+
+	if ($ACTION==&quot;EXPORT_SETUP&quot; &amp;&amp; strlen($SETUP_PROFILE_NAME)&lt;=0)
+		$strMyError .= &quot;Не указано имя профиля&lt;br&gt;&quot;;
+
+	if (strlen($strMyError) &gt; 0)
+	{
+		$STEP = 1;
+	}
+}
+
+echo ShowError($strMyError);
+
+if ($STEP==1)
+{
+	?&gt;
+	&lt;form method=&quot;post&quot; action=&quot;&lt;?echo $APPLICATION-&gt;GetCurPage() ?&gt;&quot;&gt;
+		Выберите инфоблок:
+		&lt;select name=&quot;IBLOCK_ID&quot;&gt;
+		&lt;?
+		$db_res = CIBlock::GetList(Array(&quot;iblock_type&quot;=&gt;&quot;asc&quot;, 
+								   &quot;name&quot;=&gt;&quot;asc&quot;));
+		while ($res = $db_res-&gt;Fetch())
+		{
+			?&gt;
+			&lt;option value=&quot;&lt;?echo $res[&quot;ID&quot;] ?&gt;&quot;
+			&lt;?if (IntVal($res[&quot;ID&quot;]) == $IBLOCK_ID)
+				  echo &quot; selected&quot;;?&gt;&gt;&lt;?echo $res[&quot;NAME&quot;];?&gt;&lt;/option&gt;
+			&lt;?
+		}
+		?&gt;
+		&lt;/select&gt;&lt;br&gt;
+
+		Укажите имя файла данных:
+		&lt;input type=&quot;text&quot; name=&quot;SETUP_FILE_NAME&quot; 
+		 value=&quot;&lt;?echo (strlen($SETUP_FILE_NAME)&gt;0) ? 
+						htmlspecialchars($SETUP_FILE_NAME) : 
+						&quot;/upload/file.csv&quot; ?&gt;&quot; size=&quot;50&quot;&gt;
+		&lt;br&gt;
+
+		&lt;?if ($ACTION==&quot;EXPORT_SETUP&quot;):?&gt;
+			Имя профиля:
+			&lt;input type=&quot;text&quot; name=&quot;SETUP_PROFILE_NAME&quot; 
+			 value=&quot;&lt;?echo htmlspecialchars($SETUP_PROFILE_NAME)?&gt;&quot; 
+			 size=&quot;30&quot;&gt;
+			&lt;br&gt;
+		&lt;?endif;?&gt;
+
+		&lt;?//Следующие переменные должны быть обязательно установлены?&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;lang&quot; value=&quot;&lt;?echo $lang ?&gt;&quot;&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;ACT_FILE&quot; 
+		 value=&quot;&lt;?echo htmlspecialchars($_REQUEST[&quot;ACT_FILE&quot;]) ?&gt;&quot;&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;ACTION&quot; value=&quot;&lt;?echo $ACTION ?&gt;&quot;&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;STEP&quot; value=&quot;&lt;?echo $STEP + 1 ?&gt;&quot;&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;SETUP_FIELDS_LIST&quot; 
+		 value=&quot;IBLOCK_ID,SETUP_FILE_NAME&quot;&gt;
+		&lt;input type=&quot;submit&quot; 
+		 value=&quot;&lt;?echo ($ACTION==&quot;EXPORT&quot;) ?
+						&quot;Экспортировать&quot; :
+						&quot;Сохранить&quot;;?&gt;&quot;&gt;
+	&lt;/form&gt;
+	&lt;?
+}
+elseif ($STEP==2)
+{
+	// Второй шаг не нужен, говорим &quot;передать управление дальше&quot;
+	$FINITE = True;
+}
+?&gt;</pre>
+
+
+
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

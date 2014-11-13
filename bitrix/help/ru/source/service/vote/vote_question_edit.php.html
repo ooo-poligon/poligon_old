@@ -1,0 +1,188 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fservice%2Fvote%2Fvote_question_edit.php.html"; </script>
+
+<title>Создание и редактирование вопроса</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/vote/vote_question_edit.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Создание и редактирование вопроса])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Создание и редактирование вопроса</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<p>Форма для редактирования вопросов. </p>
+ <span> 
+  <h4>Контекстная панель</h4>
+ 
+  <table width="100%" class="tnormal"> 	 
+    <tbody> 
+      <tr> 	<th>Кнопка</th> 	<th>Описание</th> 	</tr>
+     	 
+      <tr> 	<td>Список</td> 	<td>Открывает список вопросов опроса.</td> 	</tr>
+     	 
+      <tr> 	<td>Создать</td> 	<td>Создает новый вопрос.</td> 	</tr>
+     
+      <tr> <td>Удалить</td> <td>Удаляет текущий вопрос.</td> </tr>
+     </tbody>
+   </table>
+ </span> 
+<h4>Вкладка &quot;Свойства&quot; </h4>
+ 
+<table class="tnormal"> 
+  <tbody> 
+    <tr> <th>Поле</th> <th>Описание</th></tr>
+   
+    <tr> <td>Группа</td> <td>Группа опросов.</td></tr>
+   
+    <tr> <td>Опрос</td> <td>Название опроса.</td></tr>
+   
+    <tr> <td>Дата изменения</td> <td>Дата изменения записи в базе данных. <b>Отображается только при редактировании вопроса.</b></td></tr>
+   
+    <tr> <td>Сколько раз ответили на данный вопрос</td> <td>Количество ответов на данный вопрос. <b>Отображается только при редактировании вопроса.</b> </td> </tr>
+   
+    <tr> <td>Активен</td> <td>Флаг активности вопроса.</td></tr>
+   
+    <tr> <td>Порядок сортировки</td> <td>Порядок сортировки вопроса.</td></tr>
+   
+    <tr> <td>Включить в диаграмму результатов</td> <td>Флаг включения вопроса в результирующую диаграмму.</td></tr>
+   
+    <tr> <td>Вид диаграммы </td> <td>Вид диаграммы ответов на вопрос. </td> </tr>
+   
+    <tr> <td>Шаблон по умолчанию для показа результатов </td> <td>Из выпадающего списка выбирается шаблон, на основе которого будет показана результирующая диаграмма. </td> </tr>
+   
+    <tr> <td>Изображение</td> <td>Изображение по тематике вопроса для загрузки с локального компьютера в форматах <span style="font-weight: bold;">jpg</span>, <span style="font-weight: bold;">bmp</span>, <span style="font-weight: bold;">jpeg</span>, <span style="font-weight: bold;">jpe</span>, <span style="font-weight: bold;">gif</span>, <span style="font-weight: bold;">png</span>.</td></tr>
+   </tbody>
+ </table>
+ 
+<h4>Вкладка &quot;Вопрос&quot; </h4>
+ 
+<table class="tnormal"> 
+  <tbody> 
+    <tr> <th>Поле</th> <th>Описание</th></tr>
+   
+    <tr> <td>Текст вопроса*</td> <td>Текст вопроса.</td></tr>
+   </tbody>
+ </table>
+ 
+<p>* - Поле, обязательное для заполнения.</p>
+ 
+<h4>Вкладка &quot;Ответы&quot; </h4>
+ 
+<table class="tnormal"> 
+  <tbody> 
+    <tr> <th>ID</th> <th>Сообщение</th> <th>Тип поля</th> <th>Ширина</th> <th>Высота</th> <th>Параметры</th> <th>Сорт.</th> <th>Цвет</th> <th>Акт.</th> <th>Уд.</th> <th> 
+        <br />
+       </th></tr>
+   
+    <tr> <td>[1]</td> <td>[2]</td> <td>[3]</td> <td>[4]</td> <td>[5]</td> <td>[6]</td> <td>[7]</td> <td>[8]</td> <td>[9]</td> <td>[10]</td> <td>[11]</td></tr>
+   </tbody>
+ </table>
+ 
+<ol> 	 
+  <li>ID варианта ответа в базе.</li>
+ 	 
+  <li>Текстовое сообщение которое будет выведено рядом с ответом.</li>
+ 	 
+  <li>Тип поля ввода. 		 
+    <ul> 			 
+      <li><b><b>radio</b></b> &ndash; радио-кнопка, можно выбрать только один вариант ответа из группы ответов с таким типом поля.</li>
+     			 
+      <li><b>checkbox</b> &ndash; флаг, можно выбрать несколько вариантов ответов.</li>
+     			 
+      <li><b>dropdown</b> &ndash; элемент с выпадающим списком, можно выбрать только один вариант ответа; все элементы имеющие данные тип поля будут собраны в один выпадающий список.</li>
+     			 
+      <li><b>multiselect</b> &ndash; список, с возможностью множественного выбора; все элементы имеющие данный тип поля будут собраны в один список.</li>
+     			 
+      <li><b>text</b> &ndash; однострочное поле ввода, посетитель может заполнить его своим ответом.</li>
+     			 
+      <li><b>textarea</b> &ndash; многострочное поле ввода, посетитель может заполнить его своим ответом.</li>
+     		</ul>
+   	</li>
+ 	 
+  <li>Для различных типов полей имеет различное назначение. 	 
+    <ul> 		 
+      <li><b>radio</b> &ndash; не доступно для модификации.</li>
+     		 
+      <li><b>checkbox</b> &ndash; не доступно для модификации.</li>
+     		 
+      <li><b>dropdown</b> &ndash; не доступно для модификации.</li>
+     		 
+      <li><b>multiselect</b> &ndash; не доступно для модификации.</li>
+     		 
+      <li><b>text</b> &ndash; параметр <code style="font-style: italic;">size</code><span style="font-style: italic;"> </span>тега <code style="font-style: italic;">&lt;input type=&rdquo;text&rdquo;&gt;</code></li>
+     		 
+      <li><b>textarea</b> &ndash; параметр <code style="font-style: italic;">cols</code> тега <code style="font-style: italic;">&lt;textarea&gt;</code> </li>
+     	</ul>
+   	</li>
+ 	 
+  <li>Для различных типов полей имеет различное назначение. 	 
+    <ul> 		 
+      <li><b>radio</b> &ndash; не доступно для модификации.</li>
+     		 
+      <li><b>checkbox</b> &ndash; не доступно для модификации.</li>
+     		 
+      <li><b>dropdown</b> &ndash; не доступно для модификации.</li>
+     		 
+      <li><b>multiselect</b> &ndash; параметр <code style="font-style: italic;">size</code> тега <code style="font-style: italic;">&lt;select multiple&gt;</code></li>
+     		 
+      <li><b>text</b> &ndash; не доступно для модификации.</li>
+     		 
+      <li><b>textarea</b> &ndash; параметр <code style="font-style: italic;">rows</code> тега <code style="font-style: italic;">&lt;textarea&gt;</code> </li>
+     	</ul>
+   	</li>
+ 	 
+  <li>Дополнительные параметры элемента ввода: стиль, класс. Например, <code style="font-style: italic;">style=&quot;width:100%&quot;</code>.</li>
+ 	 
+  <li>Порядок сортировки при выводе в форме опроса и в результирующей диаграмме.</li>
+ 	 
+  <li>Цвет элемента диаграммы (для выбора нажмите на квадрат справа от поля).</li>
+ 	 
+  <li>Флаг активности.</li>
+ 	 
+  <li>Флаг при установке которого вариант ответа будет удален.</li>
+ 	 
+  <li>Популярность данного варианта ответа в ходе голосований по данному опросу (используется при построении диаграммы).</li>
+ </ol>
+ 
+<p><span style="font-weight: bold;">Примечание:</span> если вы не хотите заполнять поле <span style="font-weight: bold;">Сообщение</span>, то поставьте пробел.</p>
+ <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

@@ -1,0 +1,226 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fstatistic%2Fvisitors%2Fstoplist_list.php.html"; </script>
+
+<title>Стоп-лист</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "statistic/visitors/stoplist_list.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Стоп-лист])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Стоп-лист</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+
+
+
+<p>Стоп-лист - таблица, содержащая параметры, используемые для ограничения доступа посетителей к содержимому сайта и перенаправлению на другие страницы. </p>
+
+<h4>Фильтр </h4>
+
+<table class=tnormal>
+<tr>
+	<th>Наименование параметра</th><th>Описание</th>
+</tr>
+<tr>
+<td>ID</td>
+<td>Маска для отбора записей стоп-листа по идентификатору.</td></tr>
+<tr>
+<td>Сайт</td>
+<td>Позволяет ограничить поиск записями стоп-листа только
+конкретных сайтов.</td></tr>
+<tr>
+<td>Дата начала</td>
+<td>Время начала активности искомой записи стоп-листа.</td></tr>
+<tr>
+<td>Дата окончания</td>
+<td>Время окончания активности искомой записи стоп-листа.</td></tr>
+<tr>
+<td>Активно</td>
+<td>Позволяет выбрать или все записи, или только с установленным / снятым флагом
+<b> Активно</b>.</td></tr>
+<tr>
+<td>Добавить в статистику</td>
+<td>Позволяет выбрать или все записи, или только с установленным / снятым флагом
+<b> Добавить в статистику</b>.</td></tr>
+<tr>
+<td>IP адрес</td>
+<td>IP адрес посетителя искомой записи стоп-листа.</td></tr>
+<tr>
+<td>UserAgent</td>
+<td>UserAgent посетителя.</td></tr>
+<tr>
+<td>Откуда</td>
+<td>Ссылающаяся страница (отбор записей по страницам, с которых
+приходили посетители, попавшие в стоп-лист).</td></tr>
+<tr>
+<td>Куда</td>
+<td>Отбор записей по страницам, на которые приходили посетители.</td></tr>
+<tr>
+<td>Перенаправить</td>
+<td>Поиск записей по маске страницы, на которую перенаправляется
+посетитель.</td></tr>
+<tr>
+<td>Сообщение</td>
+<td>Поиск записей по маске сообщения, отображаемого посетителю в стоп-листе.</td></tr>
+<tr>
+<td>Комментарий</td>
+<td>Комментарий администратора.</td>
+</tr>
+<tr>
+<td>Логика между полями</td>
+<td>Определяет, будут ли при поиске учитываться все критерии, или требуется совпадение по хотя бы одному
+критерию.</td></tr></table>
+
+<p>* - для данных полей вы можете воспользоваться <a href="../../general/filter.php.html">специальными логическими
+выражениями</a>.</p>
+
+<p>Для того чтобы установить фильтр по заданным критериям поиска,
+нажмите кнопку <b>Найти</b>. Для отображения всех сессий нажмите
+кнопку <b>Отменить</b>.</p>
+
+<h4><a name="context_bar">Контекстная панель</a></h4>
+<table class="tnormal" width="100%">
+<tbody>
+	<tr>
+	<th>Кнопка</th>
+	<th>Описание</th>
+	</tr>
+	<tr>
+	<td>Добавить</td>
+	<td>Нажатие этой кнопки открывает форму <a href="stoplist_edit.php.html">добавления новой записи</a>
+	стоп-листа.</td>
+	</tr>
+	<tr>
+	<td>Excel</td>
+	<td>Экспортирует данные из отображаемой таблицы в формат MS Excel.</td>
+	</tr><tr>
+	<td>Настроить</td>
+	<td>Позволяет перейти к диалогу настройки внешнего вида отчетной формы.</td>
+	</tr>
+</tbody>
+</table>
+
+<h4>Таблица </h4>
+
+<table class=wordtable>
+<tr>
+<th>Колонка</th>
+<th>Описание</th>
+</tr>
+<tr>
+<th style="vertical-align:top">Колонка флажков</th>
+<td>Поле предназначено для выбора записей стоп-листа, к которым
+предполагается применить какое-либо действие из панели действий,
+расположенной ниже таблицы.</td>
+</tr>
+<tr>
+<th style="vertical-align:top">Меню действий&nbsp;<img src="../../images/iblock/760/admin_col_btn_action.png" width="30" height="20"></th>
+<td>Нажатие на кнопку действий в строке конкретной записи отображает меню, содержащее команды:
+<ul>
+<li><b>Изменить</b> - <a href="stoplist_edit.php.html">редактирование</a> параметров записи;
+<li><b>Удалить</b> - удаляет запись стоп-листа.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th style="vertical-align:top">ID</th>
+<td>Идентификатор записи стоп-листа.</td>
+</tr>
+<tr>
+<th style="vertical-align:top">Статус активности</th>
+<td>Индикатор, сигнализирующий об активности записи:
+<dir>
+<li><img src="../../images/iblock/3ce/green.gif" width="14" height="14"> - запись в
+	данный момент активна;</li>
+<li><img src="../../images/iblock/2e4/red.gif" width="14" height="14"> - запись в
+	данный момент не активна.</li>
+</dir>
+На активность записи влияют следующие поля:
+<ul>
+<li>время начала действия записи;</li>
+<li>время окончания действия записи;</li>
+<li>флаг активности записи.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th style="vertical-align:top">Начало</th>
+<td>Время начала действия записи.</td>
+</tr>
+<tr>
+<th style="vertical-align:top">Акт.</th>
+<td>Флаг активности записи.</td>
+</tr>
+<tr>
+<th style="vertical-align:top">Сайт</th>
+<td>Сайт, на котором активна данная запись стоп-листа.</td>
+</tr>
+<tr>
+<th style="vertical-align:top">IP адрес сети </th>
+<td>IP-адрес посетителя.</td>
+</tr>
+<tr>
+<th style="vertical-align:top">Маска сети</th>
+<td>Маска сети посетителя.</td>
+</tr>
+<tr>
+<th style="vertical-align:top">Стат.</th>
+<td>Если <b>да</b> - в статистике регистрируется факт попадания
+посетителя в стоп-лист.</td>
+</tr>
+<tr>
+<th style="vertical-align:top">Выбрано</th>
+<td>Количество записей, выбранных из базы данных.</td>
+</tr>
+<tr>
+<th style="vertical-align:top">Отмечено</th>
+<td>Количество записей, отмеченных флажками.</td>
+</tr>
+</table>
+
+<h4>Пример записи</h4>
+<p class=sml id=glabel1>Нажмите на рисунок, чтобы увеличить</p>
+<img src="../../images/iblock/77e/stoplist_list_small.png" width="386" height="114">
+
+
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

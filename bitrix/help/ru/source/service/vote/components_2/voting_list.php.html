@@ -1,0 +1,70 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../index.html?page=source%2Fservice%2Fvote%2Fcomponents_2%2Fvoting_list.php.html"; </script>
+
+<title>Список вопросов</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/vote/components_2/voting_list.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Компоненты 2.0::Список вопросов])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Компоненты 2.0::Список вопросов</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<p>Вывод списка вопросов. Компонент стандартный и входит в дистрибутив модуля.
+  <br />
+</p>
+ 
+<h4>Пример вызова</h4>
+
+<br />
+
+<pre id="xmp23685014" class="syntax">&lt;?$APPLICATION-&gt;IncludeComponent(&quot;bitrix:voting.list&quot;,&quot;&quot;,Array(<br />     &quot;CHANNEL_SID&quot; =&gt; &quot;BOOKS_VOTE&quot;,<br />     &quot;VOTE_FORM_TEMPLATE&quot; =&gt; &quot;vote_new.php?VOTE_ID=#VOTE_ID#&quot;,<br />     &quot;VOTE_RESULT_TEMPLATE&quot; =&gt; &quot;vote_result.php?VOTE_ID=#VOTE_ID#&quot;<br />     )<br />);?&gt;</pre>
+ 
+<h4>Описание параметров</h4>
+ 
+<h5 class="graytitle">Основные параметры</h5>
+ <dl> 	<dt><b><span class="syntax">CHANNEL_SID</span></b> 	</dt><dd>Символьный идентификатор группы опросов. </dd></dl> 
+<h5 class="graytitle">Шаблоны ссылок</h5>
+ <dl> 	<dt><b>VOTE_FORM_TEMPLATE</b> 	</dt><dd>Указывается путь к странице с формой вопроса. В качестве параметра страницы необходимо передавать идентификатор вопроса. 	</dd><dd> 	<b>
+      <br />
+    </b></dd><dt><b>VOTE_RESULT_TEMPLATE</b> 	</dt><dd>Указывается путь к странице с диаграммой результатов опроса. В качестве параметра страницы необходимо передавать идентификатор опроса. </dd></dl><bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

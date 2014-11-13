@@ -1,0 +1,162 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fservice%2Fvote%2Fvote_edit.php.html"; </script>
+
+<title>Создание и редактирование опроса</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/vote/vote_edit.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Создание и редактирование опроса])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Создание и редактирование опроса</h1></div></div>
+<div id="pagebody" valign="bottom">
+ <span> 
+  <p>Редактирование параметров опроса.</p>
+ 
+  <h4>Контекстная панель</h4>
+ <span> </span> 
+  <table width="100%" class="tnormal"> 
+    <tbody> 	 
+      <tr> 	<th>Кнопка</th> 	<th>Описание</th> 	</tr>
+     	 
+      <tr> 	<td>Список</td> 	<td>Переход к списку всех опросов.</td> 	</tr>
+     	 
+      <tr> 	<td>Создать</td> 	<td>Создает новый опрос.</td> 	</tr>
+     	 
+      <tr> <td>Удалить</td> <td>Удаляет текущий опрос.</td> 	 	</tr>
+     	 
+      <tr> 	<td> <span> Сбросить </span></td> 	<td>Удаляет все результаты текущего опроса.</td> 	</tr>
+     	 
+      <tr> 	<td> <span> Вопросы</span></td> 	<td>Открывает список вопросов <span> текущего опроса.</span></td> 	</tr>
+     	 
+      <tr> 	<td> <span> Создать вопрос</span></td> 	<td>Открывает форму создания нового 	вопроса для <span> текущего опроса.</span></td> 	</tr>
+     </tbody>
+   </table>
+ 
+  <h4>Вкладка &quot;Свойства&quot;</h4>
+ 
+  <table class="tnormal"> 
+    <tbody> 
+      <tr> 	<th>Поле</th><th>Описание</th> </tr>
+     
+      <tr> 	<td>Дата изменения</td> 	<td>Дата изменения записи в базе данных. <b>Отображается только при редактировании опроса. </b></td> </tr>
+     
+      <tr> <td>Количество голосований</td> <td>Количество голосований по данному опросу.<b> Отображается только при редактировании опроса.</b></td> </tr>
+     
+      <tr> <td>Активен</td> <td>Флаг активности опроса.</td> </tr>
+     
+      <tr> <td>Отсылать email на каждое голосование</td> <td>При установке данного флага на каждое голосование по данному опросу будет отослано сообщение по <span style="font-weight: bold;">email</span> в соответствии с заранее заданным шаблоном.</td> </tr>
+     
+      <tr> <td>Порядок сортировки</td> <td>Порядок сортировки опроса при выводе его в списке.</td> </tr>
+     
+      <tr> <td>Группа</td> <td>Группа к которой принадлежит опрос.</td> </tr>
+     
+      <tr> <td>Заголовок</td> <td>Название опроса.</td> </tr>
+     
+      <tr> <td>Дата начала*</td> <td>Дата начала проведения опроса.</td> </tr>
+     
+      <tr> <td>Кол-во дней</td> <td>Для нового опроса можно ввести количество дней в течении которых опрос будет активен и доступен для голосования.</td> </tr>
+     
+      <tr> <td>Дата окончания</td> <td>Дата окончания проведения опроса.</td> </tr>
+     </tbody>
+   </table>
+ <span> * - Поля, обязательные для заполнения. 
+    <h4>Вкладка &quot;Описание&quot;</h4>
+   
+    <table class="tnormal"> 
+      <tbody> 
+        <tr> 	<th>Поле</th><th>Описание</th> </tr>
+       
+        <tr> <td>Изображение</td> <td>Вы можете загрузить со своего локального компьютера какое либо изображение в форматах: 
+            <br />
+           <code><span><span style="font-weight: bold;"> bmp</span>, </span><span style="font-weight: bold;"> jpg</span>, <span style="font-weight: bold;">jpeg</span>, <span style="font-weight: bold;">jpe</span>, <span style="font-weight: bold;">gif</span>, <span style="font-weight: bold;">png</span></code>.</td></tr>
+       
+        <tr> <td>Описание</td> <td>Описание опроса в виде: 
+            <ul> 	 
+              <li>обычного текста (<span style="font-weight: bold;">Text</span>);</li>
+             	 
+              <li><span style="font-weight: bold;"> HTML </span>с помощью встроенного в систему <span style="font-weight: bold;">HTML</span>- редактора. Доступно на системах с <span style="font-weight: bold;">Internet Explorer 5.0</span>, <span style="font-weight: bold;">Firefox 1.0</span> и выше. Необходимо установить флаг <b>Использовать HTML-редактор</b> в настройках модуля опросов.</li>
+             </ul>
+           </td></tr>
+       </tbody>
+     </table>
+   
+    <h4>Вкладка &quot;Ограничения&quot;</h4>
+   
+    <table class="tnormal"> 
+      <tbody> 
+        <tr> 	<th>Поле</th><th>Описание</th> </tr>
+       
+        <tr> <td>Не голосовать дважды</td> <td>Ограничение пользователей, которые уже, вероятно, приняли участие в опросе. 
+            <ul> 
+              <li><b>&lt;нет ограничений&gt;</b> - уникальность посетителей никак не отслеживается, каждый посетитель может голосовать по данному опросу неограниченное количество раз.</li>
+             
+              <li><b>в одной сессии </b>- посетитель не может дважды проголосовать по данному опросу в одной сессии (т.е. пока не перезапустит браузер либо пока не истечет сессия).</li>
+             
+              <li><b>в одной сессии либо с одним cookie </b> &ndash; каждому посетителю в момент голосования единожды выдается свой уникальный номер, который записывается в cookie посетителя; данная опция не позволяет посетителю голосовать дважды по данному опросу в одной сессии, либо с одним уникальным номером из cookie.</li>
+             
+              <li><b>в одной сессии, либо с одним cookie, либо с одного IP</b> &ndash; данная опция не позволит проголосовать посетителю дважды по данному опросу в одной сессии, либо с одним уникальным номером, либо с одного <span style="font-weight: bold;">IP</span> адреса.</li>
+             </ul>
+           </td> </tr>
+       
+        <tr> <td>Не голосовать дважды с одного IP в течение</td> <td>Если в предыдущем вы выбрали <span style="font-weight: bold;">не голосовать дважды в одной сессии, либо с одним cookie, либо с одного IP</span>, следует учесть, что пользователи, находящиеся в локальной сети (LAN) какой-либо организации имеют как правило один внешний IP адрес, другими словами если какой &ndash; либо пользователь данной LAN уже проголосовал, то больше никто уже не сможет участвовать в данном опросе. Для разрешения такой ситуации вам необходимо задать интервал времени, в течение которого модуль опросов не даст голосовать дважды с одного IP адреса.</td></tr>
+       </tbody>
+     </table>
+   
+    <h4>Вкладка &quot;Статистика&quot;</h4>
+   
+    <table class="tnormal"> 
+      <tbody> 
+        <tr> 	<th>Поле</th><th>Описание</th> </tr>
+       
+        <tr> <td> Добавлять событие при голосовании</td> <td>Если флажок установлен, в момент голосования будет зарегистрировано событие в модуле статистики.</td></tr>
+       
+        <tr> <td> <code>Event1</code></td> <td>Идентификатор типа события - <code style="font-style: italic;">event1</code></td></tr>
+       
+        <tr> <td> <code>Event2</code></td> <td>Идентификатор типа события - <code style="font-style: italic;">event2</code></td></tr>
+       
+        <tr> <td> <code>Event3</code></td> <td>Дополнительный параметр события - <code style="font-style: italic;">event3</code></td></tr>
+       </tbody>
+     </table>
+   
+
+ </span></span><bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

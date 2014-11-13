@@ -1,0 +1,82 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../../index.html?page=source%2Fcontent%2Fiblock%2Fcomponents%2Fphotogallery%2Fphotogallery.photo.details.php.html"; </script>
+
+<title>Фотография детально</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../../docstyle.css);</style>
+
+<script src="../../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "content/iblock/components/photogallery/photogallery.photo.details.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Фотография детально])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Фотография детально</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<p>Компонент предназначен для показа полной информации по одной фотографии. Выводит также навигационные ссылки <b>Следующая</b> и <b>Предыдущая</b>.</p>
+ 
+<h4>Пример вызова</h4>
+ 
+<pre class="syntax" id="xmpA1686F46">&lt;?<br />$APPLICATION-&gt;IncludeFile(&quot;iblock/photo/photo.php&quot;, Array(<br />&quot;IBLOCK_TYPE&quot;		=&gt; &quot;photo&quot;,<br />&quot;IBLOCK_ID&quot;		=&gt; &quot;8&quot;,<br />&quot;ELEMENT_ID&quot;		=&gt; $_REQUEST[&quot;ID&quot;],<br />&quot;SECTION_URL&quot;		=&gt; &quot;/about/gallery/section.php?&quot;,<br />&quot;ELEMENT_SORT_FIELD&quot;	=&gt; &quot;sort&quot;,<br />&quot;ELEMENT_SORT_ORDER&quot;	=&gt; &quot;asc&quot;,<br />&quot;CACHE_TIME&quot;		=&gt; &quot;3600&quot;,<br />&quot;DISPLAY_PANEL&quot;		=&gt; &quot;Y&quot;,<br />));<br />?&gt;</pre>
+ 
+<h4>Описание параметров</h4>
+ <dl> 	<dt style="font-weight: bold;">IBLOCK_TYPE</dt> 		<dd>Тип инфоблока.</dd> 	<dt style="font-weight: bold;">IBLOCK_ID</dt> 		<dd>ID инфоблока.</dd> 	<dt style="font-weight: bold;">ELEMENT_ID</dt> 		<dd>ID фотографии.</dd> 	<dt style="font-weight: bold;">SECTION_URL</dt> 		<dd>URL ведущий на страницу с содержимым раздела фотогалереи.</dd> 	<dt style="font-weight: bold;">ELEMENT_SORT_FIELD</dt> 		<dd>По какому полю сортировать фотографии (для ссылок &ldquo;следующая&rdquo;, &ldquo;предыдущая&rdquo;); доступны следующие значения: 
+    <ul> 	 
+      <li><span style="font-weight: bold;">shows</span> &ndash; среднее количество просмотров фотографий (популярность);</li>
+     	 
+      <li><span style="font-weight: bold;">sort</span> &ndash; по индексу сортировки;</li>
+     	 
+      <li><span style="font-weight: bold;">timestamp_x</span> &ndash; по дате изменения;</li>
+     	 
+      <li><span style="font-weight: bold;">name</span> &ndash; по заголовку;</li>
+     	 
+      <li><span style="font-weight: bold;">id</span> &ndash; по ID элемента;</li>
+     	 
+      <li><span style="font-weight: bold;">active_from</span> &ndash; по дате активности <span style="font-weight: bold;">&quot;с&quot;</span>;</li>
+     	 
+      <li><span style="font-weight: bold;">active_to</span> &ndash; по дате активности <span style="font-weight: bold;">&quot;по&quot;</span>.</li>
+     </ul>
+   </dd> 	<dt style="font-weight: bold;">ELEMENT_SORT_ORDER</dt> 		<dd>Порядок сортировки фотографий (для ссылок <span style="font-weight: bold;">&quot;следующая&quot;</span>, <span style="font-weight: bold;">&quot;предыдущая&quot;</span>); допустимы следующие значения: 
+    <ul> 	 
+      <li><span style="font-weight: bold;">asc</span> &ndash; по возрастанию;</li>
+     	 
+      <li><span style="font-weight: bold;">desc</span> &ndash; по убыванию.</li>
+     </ul>
+   </dd> 	<dt style="font-weight: bold;">CACHE_TIME</dt> 		<dd>(сек.) время кеширования значений, выбираемых из базы.</dd> 	<dt style="font-weight: bold;">DISPLAY_PANEL</dt> 		<dd>[Y|N] Добавлять ли в <span style="font-weight: bold;">Административную панель</span> кнопки для данного компонента.</dd> </dl> <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

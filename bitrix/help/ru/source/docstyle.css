@@ -1,0 +1,666 @@
+
+/*------------------------------------------------------------*/
+/* Стили справки Битрикс Управление Сайтом                    */
+/*-Автор: Shaggy----------------------------------------------*/
+/*-Медвед-Превед!!!-------------------------------------------*/
+/*-(того, кто удалит две предыдущие строчки - прокляну)-------*/
+/*------------------------------------------------------------*/
+
+
+/* Скрыть прибамбасы при печати */
+@media print
+{
+	#topictoc, #topictoctitle, table#topicfooter, #projectnamebanner, p.sml
+	{
+		display:none;
+	}
+
+	h1.Banner /* Главный заголовок топика */
+	{
+		margin-left: 0;
+		font-size: 175%;
+		text-decoration:underline
+	}
+
+	div#pagetop
+	{
+		position: relative;
+		left: 0px;
+		padding: 0px 0px 0px 0px;
+		border-bottom: 0px none;
+		page-break-before: always;
+	}
+}
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */
+
+
+/* Главная верстка всей страницы */
+body
+{
+	overflow:hidden;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background: #ffffff; 
+	color: #000000;
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 70%;
+	width: 100%;
+	scrollbar-base-color:#DDDDDD;
+	scrollbar-track-color:#E7E7E7;
+	scrollbar-darkshadow-color:#FFFFFF;
+	scrollbar-shadow-color:#808080;
+	scrollbar-3dlight-color:#808080;
+	scrollbar-highlight-color:#FFFFFF;
+	scrollbar-arrow-color:#333333;
+	scrollbar-face-color:#DDDDDD;
+}
+
+@media screen
+{
+	div#pagetop
+	{
+		position: relative;
+		left: 0px;
+		padding: 0px 0px 0px 0px;
+		border-bottom: 1px solid #ADB4C7;
+		page-break-before: always;
+		background: #F9FAFE url(./images/header.jpeg) no-repeat;
+		FILTER:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#D6E0FE', endColorStr='#F9FAFE', gradientType='1');
+	}
+}
+
+div#pagebody
+{
+	padding: 1.5em 40px 0px 35px;
+	overflow:auto;
+}
+
+div#pagetitlebanner
+{
+	padding:0px 10px 1px 22px;
+}
+
+table.projectnametable
+{
+	position: relative;
+	left: 0px;
+	top: 0px;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	width: 100%;
+	height: 21px; 
+	border-collapse: collapse;
+	border-style: solid;
+	border-width: 0px;
+	font-size: 100%;
+	background-color: transparent;
+	color:#353D60;
+}
+
+table.projectnametable td 
+{
+	color:#353D60;
+	margin: 0px 0px 0px 0px;
+	padding: 2px 0px 0px 21px;
+	vertical-align: middle;
+	border-width: 0px
+	border-style: solid;
+	border-color: #999999;
+	background: transparent; 
+	font-style: italic;
+	font-weight: normal;
+}
+
+table.projectnametable td.feedback
+{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 80%;
+	text-align:right;
+}
+
+table.projectnametable td a:link, table.projectnametable td a:active, table.projectnametable td a:visited, table.projectnametable td a:hover
+{
+	color:#7373BA;
+}
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */
+
+/* Нижний колонтитул */
+@media screen
+{
+	table#topicfooter
+	{
+		color:#999999;
+		display:block;
+		text-align:left;
+		font-size: 90%;
+		padding:0px 0px 0px 0px;
+		margin:20pt 0px 0px 0px;
+		border-top:1px solid #C8C8C8;
+		border-collapse:collapse;
+		vertical-align:top;
+		width:100%;
+		height:35px
+	}
+	
+	table#topicfooter td
+	{
+		background: transparent;
+		color:#999999;
+		padding:9px 0px 9px 0px;
+		margin:0px 0px 0px 0px;
+	}
+	
+	table#topicfooter tr
+	{
+		width:100%;
+		margin:0px 0px 0px 0px;
+		padding:0px 0px 0px 0px;
+	}
+	
+	table#topicfooter a:link, table#topicfooter a:active, table#topicfooter a:visited, table#topicfooter a:hover
+	{
+		color:#999999;
+	}
+}
+
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */
+
+
+/* Стиль для временной пометки красным */
+.devnote
+{
+	background-color:#FF0000;
+	color:#FFFFFF;
+}
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */
+
+
+/* Ссылки */
+a:link	{ color: #0066FF; } 
+
+a:active	{ color: #CC9900; }
+
+a:visited 	{ color: #996600; }
+
+a:hover	{color: #CC9900; }
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */
+
+
+/* Стандартные заголовки */
+h1, h2, h3, h4
+{
+margin-bottom: .4em; 
+margin-top: 2em;
+margin-left: -15px;
+font-weight: bold;
+}
+
+@media screen
+{
+	h1.Banner /* Главный заголовок топика */
+	{
+	margin-top: 0em;
+	margin-left: -2px;
+	font-size: 120%;
+	}
+}
+
+h2
+{
+font-size: 120%;
+line-height: 100%
+}
+
+h3
+{
+margin-left: 0em;
+font-size: 115%;
+}
+
+h4
+{
+font-size: 100%;
+}
+
+h5
+{
+font-family: Tahoma;
+font-size: 100%;
+margin-left: 0px;
+margin-top: 2em;
+margin-bottom: 0.7em;
+}
+
+h5.graytitle
+{
+	background:#DDDDDD;
+	padding:4px 4px 4px 6px;
+	margin-left:2px;
+	margin-right:2px
+}
+
+h6
+{
+font-family: Tahoma;
+font-size: 100%;
+text-decoration:underline;
+margin-left: 0px;
+margin-bottom: 0px;
+padding-bottom: 0px;
+color:#5F5F5F
+}
+
+i, td i
+{
+	color:#000077;
+}
+
+h1 i, h2 i, h3 i, h4 i, h5 i, table.projectnametable i
+{
+	color:black;
+}
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */
+
+
+/* "Обычный" - стандартный параграф */
+p
+{
+	margin-top:7pt;
+	margin-bottom:1.5em;
+	font-size:100%;
+	color:#000000;
+	list-style-type: none;
+}
+
+/* Параграф в таблице */
+td p
+{
+	margin-left: .50em;
+}
+
+/* Малый текст для инстукций пользовательского интерфейса справки. 
+   При экспорте в Word тэг с этим стилем должен быть удален.       */
+@media screen
+{
+	p.sml
+	{
+		font-size:80%;
+		margin-top:0px;
+		margin-bottom:5px;
+		color:#5F5F5F;
+	}
+}
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */
+
+
+/* Стили списков: "In this section" / "В этом разделе" */
+/* Все тэги с id="topictoc" должны удаляться при конвертации в Word */
+#topictoc
+{
+	font-style: normal;
+}
+
+menu#topictoc
+{
+	padding-left:0px;
+	margin-left:0px;
+	margin-top:2px;
+	margin-bottom:17px;
+}
+
+menu#topictoc li
+{
+	margin-left:0px;
+	padding-left:0px;
+	padding-bottom: 0px;
+	list-style-type:none;
+	font-weight:bold;
+}
+
+menu#topictoc menu
+{
+	margin-left:1em;
+	font-weight:normal;
+}
+
+menu#topictoc li menu
+{
+	margin-top:0.2em;
+	margin-bottom:0.45em;
+}
+
+menu#topictoc menu li
+{
+	font-weight:normal;
+	background-image:url(images/tick.png);
+	background-position:left 0.55em;
+	background-repeat:no-repeat;
+	padding-left:0.75em;
+}
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */
+
+
+/* Термины и определения. Иногда - параметры и  описания. */
+dd blockquote
+{
+	margin-top:2pt;
+	margin-bottom:7pt;
+}
+
+dd p
+{
+	margin-top:5pt;
+	margin-bottom: 10pt;
+}
+
+ol li p	{margin-top: .6em;	margin-bottom: 0em; margin-left: 0em;}
+ul li p	{margin-top: .6em;	margin-bottom: 0em; margin-left: 0em;}
+
+ol		{margin-top: 1em; margin-bottom: 1em; margin-left: 3em; }
+ul		{list-style: square; margin-top: 1em; margin-bottom: 1em; margin-left: 3em; }
+dir		{list-style: none; margin-top: 1em; margin-bottom: 1em; margin-left: 3em; }
+dir li	{list-style: none; margin-left: -1.5em; }
+
+td ul	{margin-bottom: .5em}
+
+li 		{padding-bottom: .3em;}
+
+dl ul	{ margin-top: .5em; margin-bottom: 1em; margin-left: 1.5em; }
+dl		{ margin-top: 1.3em; }
+
+ol dl	{ margin-top: 1em; margin-left: -1.6em; margin-bottom: 1em;}
+
+ol dl dl	{ margin-top: 0em;	margin-left: .2em; }
+
+dd
+{
+	margin-bottom: 0em;
+	margin-left: 4em; 
+	margin-right: 2em;
+}
+
+dt
+{
+	padding-left: 1.5pt;
+	padding-bottom:1.5pt;
+	margin-top: 1em; 
+	font-weight: bold; 
+	margin-left: 1.5em; 
+	margin-right: 1.85em; 
+}
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */
+
+
+/* Информационные секции с предупреждениями и иконками  */
+
+p.note, p.stop, p.info
+{
+	padding: 3px 3pt 3pt 23pt;
+	margin: 10pt 0pt 10pt 0pt;
+	background-color:#EEEEEE;
+	background-position:4 3;
+	background-repeat:no-repeat;
+}
+
+p.note b, p.stop b, p.info b
+{
+	color:black;
+}
+
+p.stop
+{
+	background-image:url('./images/stop-2.png');
+}
+
+p.note
+{
+	background-image:url('./images/warning.png');
+}
+
+p.info
+{
+	background-image:url('./images/info.png');
+}
+
+td p.note, td p.stop, td p.info
+{
+	background-color:#DDDDDD;
+}
+
+/* Особая секция - обычный параграф, но слева на полях воскл. знак */
+p.notice
+{
+	background-image:url(images/notice.png);
+	background-position:0 10px;
+	background-repeat:no-repeat;
+	margin-left:-25px;
+	padding-left:25px;
+}
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */
+
+
+/* Посимвольный код */
+code
+{
+	font-family: Courier New;
+	font-size: 9pt
+}
+
+/* Блочный код */
+pre
+{
+	font-family: Courier New;
+	border: 1px solid #DDDDDD;
+	width:100%;
+}
+
+pre.syntax
+{
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+	font-size:110%;
+	background-color:#EEEEEE;
+	padding:1em 1em 1em 1em;
+	border: 1px solid #DDDDDD;
+	overflow:auto;
+}
+
+/* Блочный код внутри таблиц и списков */
+td pre.syntax, td li pre.syntax, td pre
+{
+	font-size:100%;
+	background-color:#F6F6F6;
+	padding:.5em .5em .5em .5em;
+	margin:.5em 0em .5em 0em;
+	overflow:auto;
+}
+
+li pre.syntax
+{
+	margin-top:10px;
+}
+
+
+/* Кнопка копирования кода */
+button.copyx
+{
+	border:0px;
+	width:60px;
+	height:21px;
+	margin:-5px 0px 5px 0px;
+	cursor:pointer;
+	background:transparent
+}
+
+span.copyx
+{
+	border:0px;
+	width:60px;
+	height:21px;
+	background:url(copy.png) no-repeat
+}
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */
+
+
+/* Стандартная таблица описания параметров и полей */
+/* с серыми ячейками и белым бордером в 2 пикс     */
+table, table.tnormal
+{
+	font-size: 100%;
+	text-align: left;
+	margin-top: 1em;
+	padding:3px 3px 3px 3px;
+	border:0 none white;
+	background-color:white;
+	width: 100%;
+	font-style: normal;
+}
+
+td, table td, table.tnormal td
+{
+	vertical-align: top;
+	background: #EEEEEE;
+	padding:3px .5em 3px .5em;
+	font-style: normal;
+	color:black;
+	margin:2px 2px 2px 2px;
+}
+
+tr
+{
+	margin: .50em;
+	vertical-align: middle;
+	font-style: normal;
+}
+
+th
+{
+	text-align: left;
+	vertical-align: middle;
+	background: #DDDDDD;
+	padding:3px .5em 3px .5em;
+	margin:2px 2px 2px 2px;
+	font-style:normal;
+}
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */
+
+
+/* Таблица с белым фоном и серым заголовком для списков терминов */
+table.lucid
+{
+	padding:0px 0px 0px 0px;
+	border:none 0px white;
+	background-color:white;
+	width: 100%;
+	border-collapse:collapse;
+}
+
+table.lucid td
+{
+	background: white;
+	border:none 0px white;
+}
+
+table.lucid ul
+{
+	padding-left:12px;margin-left:0px
+}
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */
+
+
+/* Белая таблица с черными границами */
+table.wordtable
+{
+	padding:3px 3px 3px 3px;
+	border:solid 1px #5F5F5F;
+	background-color:#FFFFFF;
+	width: 100%;
+	border-collapse:collapse;
+}
+
+li table.wordtable
+{
+	margin-left: 0px;
+}
+
+table.wordtable th
+{
+	background: #F2F2F2;
+	border:solid 1px #5F5F5F;
+	font-style: normal;
+	color:black;
+}
+
+table.wordtable td
+{
+	background: #FFFFFF;
+	background-color: #FFFFFF;
+	border:solid 1px #5F5F5F;
+	font-style: normal;
+	color:black;
+}
+
+li table.wordtable, li table.wordtable th, li table.wordtable td
+{
+	border:solid 1px #C9C9C9;
+}
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */
+
+
+/* Полностью невидимая теблица для раскладки */
+table.invisible
+{
+	padding:3 3 3 3;
+	border:none 0px #5F5F5F;
+	background-color:transparent;
+	width: 100%;
+	border-collapse:collapse;
+}
+
+table.invisible td
+{
+	background: transparent;
+	border:none 0px #5F5F5F;
+	font-style: normal;
+	color:black;
+}
+
+li table, li table.tnormal, li table.wordtable
+{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: -2px;
+	width:70%
+}
+/* *************************************************************** */
+/* *************************************************************** */
+/* *************************************************************** */

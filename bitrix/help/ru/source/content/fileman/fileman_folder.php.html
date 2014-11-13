@@ -1,0 +1,138 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fcontent%2Ffileman%2Ffileman_folder.php.html"; </script>
+
+<title>Свойства папки</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "content/fileman/fileman_folder.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Свойства папки])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Свойства папки</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+<h4 id="topictoctitle">В этом разделе</h4>
+<menu id="topictoc">
+  <li><a href="#menu" >Контекстная панель</a> </li>
+
+  <li><a href="#fields" >Поля формы</a> </li>
+
+  <li><a href="#buttons" >Кнопки управления</a> </li>
+</menu>
+<p>Перейти к управлению свойствами папки можно, выбрав пункт <b>Свойства папки </b>в меню <span style="FONT-WEIGHT: bold">Менеджера файлов</span> либо нажав <b>Меню команд кнопки</b>&nbsp;<img src="../../images/iblock/040/edit.png" width="88" height="24"> на <span style="FONT-WEIGHT: bold">Административной панели</span>. </p>
+
+<p>Форма служит для управления доступом к соответствующему разделу сайта, а также значениями свойств страниц данного раздела. </p>
+
+<h4><a name="menu"></a>Контекстная панель</h4>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th width="18%">Кнопка</th><th width="82%">Описание</th></tr>
+  
+    <tr><td>Каталог</td><td>Переход в папку, открытую в данный момент в <span style="FONT-WEIGHT: bold">Менеджере файлов</span>. </td></tr>
+  </tbody>
+</table>
+
+<p>Форма содержит две закладки: <b>Свойства каталога</b> и <b>Доступ</b>. 
+  <br />
+</p>
+
+<h4><a name="fields"></a>Закладка Свойства каталога 
+  <br />
+</h4>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th width="18%">Поле</th><th width="82%">Описание</th></tr>
+  
+    <tr><td>Заголовок</td><td>Заголовок папки, отображаемый в цепочки навигации в качестве ссылки на соответствующий раздел. </td></tr>
+  
+    <tr><th colspan="2">Свойства папки </th></tr>
+  
+    <tr><td colspan="2">
+        <table class="wordtable">
+          <tbody>
+            <tr><th width="17%">Поле</th><th width="83%">Описание</th></tr>
+          
+            <tr><td>Код</td><td>Название свойства, указанное в <a href="settings.php.html#prop">настройках</a> модуля <b>Управление структурой</b>. </td></tr>
+          
+            <tr><td>Значение</td><td>Произвольное значение свойства.</td></tr>
+          </tbody>
+        </table>
+      
+        <br />
+      Пустое поле формы служит для создания свойства, значение которого будет использоваться только для страниц данного раздела. В этом случае в поле <span style="FONT-WEIGHT: bold">Код</span> указывается код (мнемоническое имя) свойства. Код свойства задается символами латинского алфавита. Кнопка <span style="FONT-WEIGHT: bold">Ещё</span> добавляет строку для создания нового свойства страниц текущего раздела. </td></tr>
+  
+    <tr><th colspan="2">Закладка Права доступа </th></tr>
+  
+    <tr><td>[Группа пользователей] </td><td>Право доступа группы пользователей к данному разделу. Возможны следующие уровни доступа. 
+        <ul>
+          <li><b>Запрещён</b> - доступ запрещён в любой форме, в т.ч. чтение и просмотр свойств. </li>
+        
+          <li><b>Чтение</b> - пользователю разрешено просматривать содержимое папки. </li>
+        
+          <li><b>Документооборот</b> - пользователю разрешено редактирование документов в папке через систему документооборота. </li>
+        
+          <li><b>Запись</b> - пользователю разрешено самостоятельно изменять файлы папки. </li>
+        
+          <li><b>Полный доступ</b> - пользователю разрешено самостоятельно изменять и удалять файлы папки, а также управлять их свойствами. </li>
+        
+          <li><b>Наследовать</b> - уровень прав доступа пользователей к данной папке наследуется из настроек прав доступа вышележащего каталога. </li>
+        </ul>
+      Настройка доступа в поле <b style="FONT-WEIGHT: bold">Все группы, для которых&nbsp; уровень доступа Наследовать</b> позволяет изменить уровень доступа к папке для всех групп с правом доступа <b>Наследовать</b>.</td></tr>
+  </tbody>
+</table>
+
+<h4><a name="buttons"></a>Кнопки управления</h4>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th width="18%">Кнопка</th><th width="82%">Описание</th></tr>
+  
+    <tr><td>Сохранить</td><td>Сохранение свойств папки. Возврат в папку, открытую в менеджере файла. </td></tr>
+  
+    <tr><td>Применить</td><td>Сохранение внесённых изменений. Продолжение редактирования свойств папки. </td></tr>
+  
+    <tr><td>Отменить</td><td>Отмена внесённых изменений. Возврат в папку, открытую в менеджере файла. </td></tr>
+  </tbody>
+</table>
+<sys name="feedbackform"></sys><bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

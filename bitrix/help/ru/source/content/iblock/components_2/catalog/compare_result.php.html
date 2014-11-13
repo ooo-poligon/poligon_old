@@ -1,0 +1,82 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../../index.html?page=source%2Fcontent%2Fiblock%2Fcomponents_2%2Fcatalog%2Fcompare_result.php.html"; </script>
+
+<title>Таблица сравнения</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../../docstyle.css);</style>
+
+<script src="../../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "content/iblock/components_2/catalog/compare_result.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Каталог::Таблица сравнения])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Каталог::Таблица сравнения</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<p>Компонент выводит таблицу сравниваемых элементов. Компонент стандартный и входит в дистрибутив модуля.</p>
+ 
+<h4>Пример вызова</h4>
+ 
+<pre id="xmp5A0A6F40" class="syntax">&lt;?$APPLICATION-&gt;IncludeComponent(&quot;bitrix:catalog.compare.result&quot;,&quot;&quot;,Array(<br />     &quot;IBLOCK_TYPE&quot; =&gt; &quot;books&quot;,<br />     &quot;IBLOCK_ID&quot; =&gt; &quot;30&quot;,<br />     &quot;NAME&quot; =&gt; &quot;CATALOG_COMPARE_LIST&quot;,<br />     &quot;ELEMENT_SORT_FIELD&quot; =&gt; &quot;sort&quot;,<br />     &quot;ELEMENT_SORT_ORDER&quot; =&gt; &quot;asc&quot;,<br />     &quot;DETAIL_URL&quot; =&gt; &quot;element.php?IBLOCK_ID=#IBLOCK_ID#&amp;SECTION_ID=#SECTION_ID#&amp;ELEMENT_ID=#ELEMENT_ID#&quot;,<br />     &quot;BASKET_URL&quot; =&gt; &quot;/personal/basket.php&quot;,<br />     &quot;ACTION_VARIABLE&quot; =&gt; &quot;action&quot;,<br />     &quot;PRODUCT_ID_VARIABLE&quot; =&gt; &quot;id&quot;,<br />     &quot;SECTION_ID_VARIABLE&quot; =&gt; &quot;SECTION_ID&quot;,<br />     &quot;FIELD_CODE&quot; =&gt; Array(&quot;NAME&quot;),<br />     &quot;PROPERTY_CODE&quot; =&gt; Array(&quot;YEAR&quot;,&quot;PUBLISHER&quot;),<br />     &quot;PRICE_CODE&quot; =&gt; Array(&quot;WHOLESALE&quot;,&quot;RETAIL&quot;),<br />     &quot;USE_PRICE_COUNT&quot; =&gt; &quot;N&quot;,<br />     &quot;SHOW_PRICE_COUNT&quot; =&gt; &quot;1&quot;,<br />     &quot;DISPLAY_ELEMENT_SELECT_BOX&quot; =&gt; &quot;N&quot;,<br />     &quot;ELEMENT_SORT_FIELD_BOX&quot; =&gt; &quot;name&quot;,<br />     &quot;ELEMENT_SORT_ORDER_BOX&quot; =&gt; &quot;asc&quot;<br />     )<br />);?&gt;</pre>
+ 
+<h4>Описание параметров</h4>
+ 
+<h5 class="graytitle">Основные параметры</h5>
+ <dl> 	<dt><span style="font-weight: bold;">IBLOCK_TYPE</span> 	</dt><dd>Указывается тип информационного блока.</dd><dt><span style="font-weight: bold;">IBLOCK_ID</span> 	</dt><dd>Идентификатор информационного блока выбранного типа. </dd> 	<dt><span style="font-weight: bold;">ELEMENT_SORT_FIELD</span> 	</dt><dd>Указывается поле, по которому будет происходить сортировка элементов. Например, <span style="font-weight: bold;">sort</span> - индекс сортировки.</dd> 	<dt><span style="font-weight: bold;">ELEMENT_SORT_ORDER</span> 	</dt><dd>Направление сортировки</dd></dl>
+<ul>
+  <li><span style="font-weight: bold;">asc</span><i> - </i>по возрастанию;</li>
+
+  <li><span style="font-weight: bold;">desc</span> - по убыванию.</li>
+</ul>
+<dl> </dl> 
+<h5 class="graytitle">Внешний вид </h5>
+ <dl> 	<dt><span style="font-weight: bold;">PROPERTY_CODE</span> 	</dt><dd>Указываются свойства инфоблока, которые должны быть отражены при показе его элементов. 	</dd></dl> 
+<h5 class="graytitle">Дополнительные настройки</h5>
+ <dl><dt><span style="font-weight: bold;">DETAIL_URL</span> 	</dt><dd>Путь к странице с детальным описанием элемента инфоблока. </dd><dt><span style="font-weight: bold;">BASKET_URL</span> 	</dt><dd>Путь к странице с корзиной покупателя. </dd><dt><span style="font-weight: bold;">ACTION_VARIABLE</span> 	</dt><dd>Указывается имя переменной, в которой передается действие: <span style="font-weight: bold;">ADD_TO_COMPARE_LIST</span>, <span style="font-weight: bold;">ADD2BASKET</span> и т.д. Значение поля по умолчанию <span style="font-weight: bold;"> action</span>. </dd><dt><span style="font-weight: bold;">PRODUCT_ID_VARIABLE</span> 	</dt><dd>Имя переменной, в которой будет передаваться ID товара. 	</dd><dt><span style="font-weight: bold;">SECTION_ID_VARIABLE</span> 	</dt><dd>Имя переменной, в которой будет передаваться ID раздела инфоблока. </dd></dl>	 
+<h5 class="graytitle">Цены</h5>
+ <dl> 	<dt><span style="font-weight: bold;">PRICE_CODE</span> 	</dt><dd>Указываются типы цен, которые будут выведены для элементов. Если не задан ни один из типов, то цена товара и кнопки <span style="font-weight: bold;">Купить</span> и <span style="font-weight: bold;">В корзину</span> показаны не будут. 	</dd><dt><span style="font-weight: bold;">USE_PRICE_COUNT</span> 	</dt><dd>[Y/N] При выборе значения <span style="font-weight: bold;">&quot;Y&quot;</span> отображаются цены всех типов на товары . 	</dd><dt><span style="font-weight: bold;">SHOW_PRICE_COUNT</span> 	</dt><dd>Количество единиц товара, для которого выводить стоимость. </dd></dl> 
+<h5 class="graytitle">Дополнительные настройки</h5>
+ <dl> 	<dt><span style="font-weight: bold;">NAME</span> 	</dt><dd>Имя переменной, в которой передается список сравниваемых элементов. По умолчанию <span style="font-weight: bold;">CATALOG_COMPARE_LIST</span>. </dd><dt><span style="font-weight: bold;">FIELD_CODE</span> 	</dt><dd>Поля для сравнивнения товаров в таблице сравнения. </dd><dt><span style="font-weight: bold;">DISPLAY_ELEMENT_SELECT_BOX</span> 	</dt><dd>[Y/N] При выборе значения <span style="font-weight: bold;">&quot;Y&quot;</span> после таблицы будет добавлен список элементов текущего инфоблока. Их можно добавить в таблицу.</dd><dt><span style="font-weight: bold;">ELEMENT_SORT_FIELD_BOX</span> 	</dt><dd>Указывается поле, по которому будет происходить сортировка списка элементов инфоблока.</dd><dt><span style="font-weight: bold;">ELEMENT_SORT_ORDER_BOX</span> 	</dt><dd>Направление сортировки:</dd></dl>
+<ul>
+  <li><span style="font-weight: bold;">asc</span><i> - </i>по возрастанию;</li>
+
+  <li><span style="font-weight: bold;">desc</span> - по убыванию. </li>
+</ul>
+ <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

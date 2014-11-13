@@ -1,0 +1,176 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../index.html?page=source%2Fsettings%2Fsettings%2Fmail_events%2Fmessage_edit.php.html"; </script>
+
+<title>Создание и редактирование шаблона</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "settings/settings/mail_events/message_edit.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Создание и редактирование шаблона])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Создание и редактирование шаблона</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+
+
+
+
+<h4 id="topictoctitle">В этом разделе</h4>
+	<menu id="topictoc">
+<li><a href="#menu">Контекстная панель</a></li>
+<li><a href="#fields">Поля формы</a><a href="#menu"></a></li>
+<li><a href="#buttons">Кнопки управления</a>
+</menu>
+
+
+<p>Данная форма предназначена для создания нового или изменения уже существующего почтового шаблона.</p>
+<h4><a name="menu">Контекстная панель</a></h4>
+	<table class="tnormal">
+		<tr>
+			<th width="25%" height="23">Кнопка</th>
+			<th width="75%">Описание</th>
+</tr>
+		<tr>
+			<td>Список шаблонов</td>
+			<td>Переход на страницу со списком шаблонов почтовых сообщений.</td>
+</tr>
+<tr>
+			<td>Тип события</td>
+			<td>Переход к форме редактирования соответствующего типа почтового события. </td>
+</tr>
+		<tr>
+			<td>Добавить шаблон</td>
+			<td>Переход к форме создания нового почтового шаблона. Кнопка отображается при редактировании существующего почтового шаблона.</td>
+</tr>
+		<tr>
+			<td>Копировать шаблон</td>
+			<td>Копирование редактируемого шаблона.</td>
+</tr>
+		<tr>
+			<td>Удалить шаблон</td>
+			<td>Удаление редактируемого шаблона.</td>
+</tr>
+</table>
+<h4><a name="fields">Поля формы</a></h4>
+	<table class="tnormal">
+	<tr>
+		<th width="25%" height="23">Поле</th>
+		<th width="75%">Описание</th>
+</tr>
+	<tr>
+		<td>Последнее обновление</td>
+		<td>Дата последнего изменения почтового шаблона.</td>
+</tr>
+	<tr>
+		<td>Активен</td>
+		<td>Флаг активности шаблона. Если шаблон не активен, то данный шаблон не будет использоваться для генерации почтовых сообщений.</td>
+</tr>
+	<tr>
+		<td>*Сайт</td>
+		<td>Сайт (или сайты), для отправки почтовых сообщений с которого используется данный шаблон.</td>
+</tr>
+	<tr>
+		<td>Тип почтового события</td>
+		<td>Код и название типа почтового события, при возникновении которого будет сгенерировано почтовое сообщение на основе данного шаблона.</td>
+</tr>
+	<tr>
+		<td>*От кого **</td>
+		<td>Адрес отправителя почтового сообщения.</td>
+</tr>
+	<tr>
+		<td>*Кому**</td>
+		<td>Адрес получателя почтового сообщения.</td>
+</tr>
+	<tr>
+		<td>Скрытая копия**</td>
+		<td>Адрес получателя скрытой копии сообщения.</td>
+</tr>
+	<tr>
+		<td>Тема**</td>
+		<td>Тема почтового сообщения.</td>
+</tr>
+	<tr>
+		<td>Тип тела сообщения</td>
+		<td>Формат тела сообщения:
+			<ul>
+				<li> <b>Текст</b> - текстовый формат;</li>
+				<li><b>HTML</b> - тело сообщения будет представлено в HTML формате.</li>
+</ul></td>
+</tr>
+	<tr>
+		<th colspan="2">Тело сообщения**</th>
+</tr>
+	<tr>
+		<td colspan="2">Поле для создания информационной части (текста) сообщения.</td>
+</tr>
+	<tr>
+		<th colspan="2">Доступные поля</th>
+</tr>
+	<tr>
+		<td colspan="2">В данной секции представлены шаблоны переменных (изменяемых данных), которые могут быть подставлены в поля сообщения, отмеченные **. <br>
+			<br>
+			Например, в поле <b>От кого </b>может быть подставлен шаблон #DEFAULT_EMAIL_FROM#. Это значит, что в качестве адреса отправителя сообщения будет подставляться e-mail адрес, указанный в настройках соответствующего сайта или <b>Главного модуля</b>.</td>
+</tr>
+</table>
+<p>* - Поля, обязательные для заполнения. </p>
+<p>** - Значения данных полей могут быть заданы с помощью шаблонов, представленных в секции <b>Доступные поля</b>.</p>
+<h4><a name="buttons" id="buttons"></a>Кнопки управления
+</h4>
+<table border="0">
+	<tr>
+		<th width="25%">Кнопка</th>
+		<th width="75%">Описание</th>
+</tr>
+	<tr>
+		<td>Сохранить</td>
+		<td>Сохранение внесённых изменений.</td>
+</tr>
+	<tr>
+		<td>Применить</td>
+		<td>Применение внесённых изменений. Продолжение редактирования почтового шаблона.</td>
+</tr>
+	<tr>
+		<td>Отменить</td>
+		<td>Отмена внесённых изменений. Возврат первоначальных значений параметров.</td>
+</tr>
+</table>
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

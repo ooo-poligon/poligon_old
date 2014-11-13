@@ -1,0 +1,214 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fstatistic%2Fevents%2Fevent_edit.php.html"; </script>
+
+<title>Загрузка событий</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "statistic/events/event_edit.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Загрузка событий])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Загрузка событий</h1></div></div>
+<div id="pagebody" valign="bottom">
+<h4 id="topictoctitle">В этом разделе</h4>
+
+<menu id="topictoc">
+<li><a href="#1">Закладка &quot;Из файла&quot;</a></li>
+<li><a href="#2">Закладка &quot;Ручной ввод&quot;</a></li>
+<li><a href="#3">Автоматическая регистрация событий</a>
+</menu>
+
+
+<p>Данная форма предназначена для занесения в базу данных событий, произошедших вне сайта. Примерами таких
+событий могут служить <i>оплата заказа</i>, <i>отмена заказа</i> и т.п.</p>
+<h4><a name="1"></a>Загрузка из файла</h4>
+
+<p>При помощи этой формы Вы можете загрузить список событий из внешнего файла в формате CSV. Формат данных в файле должен иметь следующие поля:</p>
+
+<p><code>&quot;[1]&quot;,&quot;[2]&quot;,&quot;[3]&quot;,&quot;[4]&quot;,&quot;[5]&quot;,&quot;[6]&quot;,&quot;[7]&quot;</code> </p>
+
+<ol>
+	<li>ID типа события.</li>
+	<li>Дополнительный параметр (<code>event3</code>).</li>
+	<li>Дата, заданная в формате даты для текущего сайта.</li>
+	<li>Дополнительный параметр в формате:<br><br></li>
+</ol>
+	<pre class=syntax id="xmp8BC81080">
+16,&quot;file1.exe&quot;,&quot;10.10.2007 12:30&quot;,&quot;BITRIX_SM.10.5.RU.6.Y&quot;,&quot;250&quot;,&quot;USD&quot;
+16,&quot;help_doc.chm&quot;,&quot;10.10.2007 12:30&quot;
+16,&quot;www&quot;,&quot;BITRIX_SM.11.4.US.8.N&quot;,&quot;233.45&quot;
+16,&quot;1С-Битрикс: Управление сайтом&quot;,&quot;BITRIX_SM.11.4.US.8.N&quot;,&quot;233.45&quot;,&quot;RUB&quot;,&quot;Y&quot;</pre>
+
+<p>После нажатия кнопки <b>Загрузить</b> происходит чтение файла и занесение полей в следующую таблицу.</p>
+
+<h4><a name="2"></a>Закладка "Ручной ввод"</h4>
+
+<p>Помимо загрузки событий из файла, Вы можете заполнять эту таблицу вручную.</p>
+
+<table class="tnormal">
+<tr>
+<th width=0>#</th>
+<th>ID типа события *</th>
+<th>event3</th>
+<th>Дата</th>
+<th>Доп. параметр</th>
+<th>Денежная сумма</th>
+<th>Валюта</th>
+<th>Возврат<br>денег
+<th></th>
+</tr>
+<tr>
+<td>[1]</td>
+<td>[2] [3]</td>
+<td>[4]</td>
+<td>[5] [6]</td>
+<td>[7]</td>
+<td>[8]</td>
+<td>[9]</td>
+<td>[10]</td>
+<td>[11]</td></tr></table>
+
+<ol>
+	<li>Порядковый номер.</li>
+	<li>ID типа события.</li>
+	<li>Иконка, вызывающая форму для выбора типа события.</li>
+	<li>Дополнительный параметр события – <code>event3</code> (в нем может быть, например, сумма заказа).</li>
+	<li>Дата события.</li>
+	<li>Кнопка, открывающая календарь.</li>
+	<li>Дополнительный параметр (формат описан выше).</li>
+	<li>Денежная сумма события.</li>
+	<li>Валюта (данный столбец выводится, если в настройках модуля установлена базовая валюта, которая, в свою очередь, может быть установлена при
+		наличии модуля валют).</li>
+	<li>Если эта опция установлена, сумма отнимается от доходов рекламной кампании. В противном случае, доход
+		рекламной кампании увеличивается на эту сумму.&nbsp;</li>
+	<li>Кнопка, копирующая текущую строку в следующую.</li>
+</ol>
+
+<p>Нажатие кнопки <b>Загрузить</b>  регистрирует события из таблицы в
+базе данных.</p>
+
+<h4><a name="3"></a>Автоматическая регистрация событий</h4>
+
+<p>Когда посетитель уходит, например, на оформление заказа, то в ссылку, ведущую на внешнюю платежную систему, должен быть добавлен специальный шаблон – <b><code>#EVENT_GID#</code></b>.
+Этот шаблон в дальнейшем будет автоматически заменен (в скрипте <b><code>redirect.php</code></b>) на составной идентификатор:<br> </p>
+
+<pre class=syntax id="xmpD8BE074C">
+[код сайта].[ID сессии].[ID посетителя].[ID страны].[ID
+ рекламной кампании].[Y – возврат по рекламной кампании; N – прямой заход].</pre>
+
+<p>Пример такой ссылки:<br></p>
+<pre class=syntax id="xmpF2E422E8">
+&lt;a href=&quot;http://www.ritlabs.ru/redirect.php?<code>event1</code>=softkey_out&amp;
+ <code>event2</code>=thebat&amp;<code>event3</code>=buy&amp;
+ goto=http://www.softkey.ru/catalog/basket.php?
+ prodid=902&amp;quantity=1&amp;referer1=ritlabs_site&amp;referer2=<b>#</b><b>EVENT</b><b>_</b><b>GID</b><b>#</b>&quot;&gt;
+Купить
+&lt;/a&gt;</pre>
+
+<p>В приведенной ссылке кодированные символы заменены для удобства чтения. Оригинал ссылки:<br> </p>
+<pre class=syntax id="xmp28CC2F3F">
+&lt;a href=&quot;http://www.ritlabs.ru/redirect.php?<code>event1</code>=softkey_out&amp;<code>
+ event2</code>=thebat&amp;<code>event3</code>=buy&amp;
+ goto=http%3A//www.softkey.ru/catalog/basket.php%3Fprodid%3D902%26quantity%3D1%26referer1%3Dritlabs_site%26referer2%3D%23EVENT_GID%23&quot;&gt;
+Купить
+&lt;/a&gt;</pre>
+<p>Для задания подобных ссылок предусмотрены специальные возможности во встроенном в систему HTML-редакторе.</p>
+
+<p>Большинство платежных систем принимают такой специальный параметр и возвращают его в письме, оповещающем владельца товара о заказе (например, на <a href="../../index.php.html">www.softkey.ru</a> таких идентификаторов два:
+<i> referer1</i> и <i>referer2</i>). Когда к Вам поступает письмо, оповещающее о том, что заказ оформлен, Вы должны занести данное событие в статистику своего сайта. </p>
+
+<p>Если Вы хотите автоматически заносить события, произошедшие вне Вашего сайта, то сделать это можно, загружая PHP-страницу, адрес которой формируется по следующей формуле:<br></p>
+
+<pre class=syntax id="xmp8DA057C5">
+http://[ВАШСАЙТ]/bitrix/admin/event_edit.php?
+
+        USER_LOGIN=[ЛОГИН]&amp;USER_PASSWORD=[ПАРОЛЬ]&amp;lang=[САЙТ]&amp;
+        Login=Y&amp;TYPE=AUTH&amp;AUTH_FORM=Y&amp;
+        ARR[]=[N]&amp;LOAD_[N]=Y&amp;EVENT_ID_[N]=[ID типа]&amp;EVENT3_[N]=[EVENT3]&amp;
+        DATE_ENTER_[N]=[ДАТА]&amp;PARAM_[N]= [ПАРАМЕТР]]&amp;MONEY_[N]=[ДЕНЕЖНАЯСУММА]&amp;
+        CHARGEBACK_[N]=[ФЛАГВОЗВРАТАДЕНЕГ]&amp;
+        ARR[]=[N+1]]&amp;LOAD_[N+1]=Y&amp;EVENT_ID_[N+1]=[ID типа]&amp;EVENT3_[N+1]=[EVENT3]&amp;
+        DATE_ENTER_[N+1]=[ДАТА]&amp;PARAM_[N+1]= [ПАРАМЕТР]&amp;MONEY_[N+1]=[ДЕНЕЖНАЯСУММА]&amp;
+        CHARGEBACK_[N]=[ФЛАГВОЗВРАТАДЕНЕГ]&amp;
+...
+        ARR[]=[M]&amp;]&amp;LOAD_[M]=Y&amp;EVENT_ID_[M]=[ID типа]&amp;EVENT3_[M]=[EVENT3]&amp;
+        DATE_ENTER_[M]=[ДАТА]&amp;PARAM_[M]= [ПАРАМЕТР]&amp;MONEY_[M]=[ДЕНЕЖНАЯСУММА]&amp;
+        CHARGEBACK_[N]=[ФЛАГВОЗВРАТАДЕНЕГ]
+
+&amp;check_unique=Y&amp;save=Y</pre>
+
+<p>В данной формуле:</p>
+
+<ul>
+	<li><b>[ВАШСАЙТ]</b> – адрес сайта;</li>
+	<li><b>[ЛОГИН]</b> – логин пользователя, имеющего право <i>Запись</i> для модуля статистики;</li>
+	<li><b>[ПАРОЛЬ]</b> – пароль вышеописанного пользователя;</li>
+	<li><b>[САЙТ]</b> – сайт, в формате которого будет задана дата события (например, <code>ru</code>);</li>
+	<li><b>[</b><b>N</b><b>], [</b><b>N</b><b>+1]</b> – порядковый номер загружаемого события;</li>
+	<li><b>[</b><b>M</b><b>]</b> – количество загружаемых событий;</li>
+	<li><b>[</b><b>ID</b><b>типа]</b> – ID типа загружаемого события;</li>
+	<li><b>[</b><b>EVENT</b><b>3]</b> – дополнительный параметр события;</li>
+	<li><b>[ДАТА]</b> – дата события в формате заданного сайта;</li>
+	<li><b>[ПАРАМЕТР]</b> – параметр в формате:<br>[Код сайта].[ID сессии].[ID посетителя].[ID страны].[ID рекламной кампании].[<i>Y</i> – возврат по рекламной кампании;
+		<i> N</i> – прямой заход];</li>
+	<li><b>[</b><b>MONEY</b><b>]</b> – денежная сумма события;</li>
+	<li><b>[</b><b>CHARGEBACK</b><b>]</b> – флаг возврата денег: <i> Y</i> – денежную сумму необходимо отнять от доходов рекламной кампании;
+		<i> N</i> – денежную сумму необходимо прибавить к доходам компании (по умолчанию).</li>
+	<li><b>check</b><b>_</b><b>unique</b> – для проверки уникальности загружаемых событий значение данного параметра должно быть
+		<i>Y</i>, в противном случае уникальность проверяться не будет.</li>
+</ul>
+
+<h5>Пример адреса</h5>
+
+<pre class=syntax id="xmp79DE0DC8">
+http://www.1c-bitrix.ru/bitrix/admin/event_edit.php?
+       USER_LOGIN=admin&amp;USER_PASSWORD=123456&amp;lang=ru&amp;Login=Y&amp;
+       TYPE=AUTH&amp;AUTH_FORM=Y&amp;ARR[]=1&amp;LOAD_1=Y&amp;EVENT_ID_1=35&amp;
+       EVENT3_1=250&amp;DATE_ENTER_1=10.01.2007&amp;PARAM_1=BITRIX_SM.10345.676.US.3.Y&amp;
+       ARR[]=2&amp;LOAD_2=Y&amp;EVENT_ID_2=35&amp;EVENT3_2=340&amp;DATE_ENTER_2=11.01.2007&amp;
+       PARAM_2= BITRIX_SM.10400.700.RU.5.N&amp;MONEY_2=970.35&amp;check_unique=Y&amp;save=Y</pre>
+
+<p class="note"><b>Внимание<br></b>Пример представлен не в кодированном виде. Для корректной работы страницы вам необходимо для значений параметров ссылки применять URL-
+кодирование (в PHP - функция <b><code>urlencode()</code></b>).</p>
+
+
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

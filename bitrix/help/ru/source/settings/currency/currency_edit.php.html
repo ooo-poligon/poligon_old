@@ -1,0 +1,171 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fsettings%2Fcurrency%2Fcurrency_edit.php.html"; </script>
+
+<title>Создание и редактирование валюты</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "settings/currency/currency_edit.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Валюты::Создание и редактирование валюты])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Валюты::Создание и редактирование валюты</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+
+
+
+
+<h4 id="topictoctitle">В этом разделе</h4>
+<menu id="topictoc">
+<li><a href="#menu">Контекстная панель</a></li>
+<li><a href="#form">Форма 
+редактирования</a></li>
+<li><a href="#buttons">Кнопки управления</a>
+</menu>
+
+
+<p>Данная форма служит для создания новой и изменения параметров созданной 
+валюты.</p>
+
+<h4><a name="menu">Контекстная панель</a></h4>
+<table class="tnormal">
+	<tr>
+		<th width="25%">Кнопка</th>
+		<th width="75%">Описание</th></tr>
+	<tr>
+		<td>Список</td>
+		<td>Переход на страницу со списком валют.</td></tr>
+	<tr>
+		<td>Создать</td>
+		<td>Переход к форме создания новой валюты. Кнопка отображается при 
+      редактировании существующей валюты.</td></tr>
+	<tr>
+		<td>Удалить</td>
+		<td>Удаление редактируемой валюты.</td></tr>
+</table>
+<h4><a name="form">Форма редактирования</a></h4>
+<table class="tnormal">
+	<tr>
+		<th width="25%">Поле</th>
+		<th width="75%">Описание</th></tr>
+	<tr>
+		<td>*Валюта</td>
+		<td>Трехбуквенное обозначение валюты (например, RUB, EUR, USD).</td></tr>
+	<tr>
+		<td>Номинал</td>
+		<td>Номинал, или количество валюты, для которого устанавливается обменный 
+      курс. Обычно равен номиналу, устанавливаемому ЦБ РФ. Для большинства валют 
+      номинал будет равен 1 (например, 30.5 RUB за <b>1</b> USD). У некоторых 
+      валют он будет отличен от 1 (например, 14.25 RUB за 1000 BYR).</td></tr>
+	<tr>
+		<td>*Курс по умолч.</td>
+		<td>Курс валюты, который будет использоваться при конвертации валюты, если 
+      в форме "Курсы валют" для данной валюты не задан другой курс. Для базовой 
+      валюты курс должен быть равен 1. Для остальных валют курс устанавливается 
+      относительно базовой валюты. Другими словами, при добавлении валюты 
+      поставьте напротив этой валюты сумму, которую дают за нее в базовой 
+      валюте.<br /><br />Например, установите курс для RUB в 1, тогда курс для USD 
+      может быть равен 30.5, а для EUR - 34.2. Подробнее о курсах валют смотрите 
+      раздел помощи <a href="currency_rates.php.html">Курсы валют</a>.</td></tr>
+	<tr>
+		<td>Индекс сортировки</td>
+		<td>Относительный "вес", влияющий на положение валюты в общем 
+списке.</td></tr>
+	<tr>
+		<th colspan="2">Настройки валют для языков (English, Russian и т.д.)</th></tr>
+	<tr>
+		<td><font class="tablebodytext" title="Полное название валюты">Название</font></td>
+		<td>Полное название валюты для данного языка.</td></tr>
+	<tr>
+		<td><font class="tablebodytext" title="Строка формата для вывода валюты">Шаблон формата</font></td>
+		<td>Шаблон, по которому суммы в данной валюте будут выводиться на экран. 
+			<br /><br />При выборе шаблона вывода в нижеследующие поля будут подставлены 
+      значения по умолчанию. При необходимости вы можете изменить значения этих 
+      полей.</td></tr>
+	<tr>
+		<td>*Строка формата для вывода валюты</td>
+		<td>Формат для вывода суммы в данной валюте на экран.<br /><br />Все символы 
+      строки формата выводятся как есть, за исключением символа "#". Символ "#" 
+      заменяется при выводе на реальную сумму (например, строка формата <i># руб 
+      за 1 шт.</i> может быть выведена как <i>18 586,95 руб за 1 шт.</i>). 
+      Формат вывода суммы зависит от описанных ниже полей.</td></tr>
+	<tr>
+		<td><font class="tablebodytext" title="Десятичная точка при выводе">Десятичная точка при выводе</font></td>
+		<td>Символ-разделитель целой и дробной части числа.</td></tr>
+	<tr>
+		<td><font class="tablebodytext" title="Разделитель тысяч при выводе">Разделитель тысяч при 
+выводе</font></td>
+		<td>Символ-разделитель тысяч целой части числа.&nbsp; 
+			<p class="info"><b>Для разработчиков</b>. Обратите внимание, что для 
+      обозначения символа-разделителя можно использовать шестнадцатеричное 
+      значение, например, <code>xA0</code>.</p>
+</td></tr>
+	<tr>
+		<td><font class="tablebodytext" title="Количество десятичных знаков">Количество десятичных 
+знаков</font></td>
+		<td>Количество знаков в дробной части числа (например, количество копеек 
+      для RUB).</td></tr>
+</table>
+<p>* - Поля, обязательные для заполнения.</p>
+
+<h4><a name="buttons">Кнопки управления</a></h4>
+<table class="tnormal">
+	<tr>
+		<th width="25%">Кнопка</th>
+		<th width="75%">Описание</th></tr>
+	<tr>
+		<td>Сохранить</td>
+		<td>Сохранение внесённых изменений. Переход на страницу со списком 
+    валют.</td></tr>
+	<tr>
+		<td>Применить</td>
+		<td>Сохранение внесённых изменений. Продолжение редактирования параметров 
+      валюты.</td></tr>
+	<tr>
+		<td>Отменить</td>
+		<td>Отмена внесённых изменений. Возврат первоначальных значений 
+    параметров.</td></tr>
+</table><bitrix:sys 
+name="feedbackform"></bitrix:sys>
+
+
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

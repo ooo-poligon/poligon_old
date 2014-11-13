@@ -1,0 +1,104 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../../index.html?page=source%2Fcontent%2Fiblock%2Fcomponents_2%2Felement_add%2Felement_add.php.html"; </script>
+
+<title>Добавление элементов инфоблока (комплексный компонент)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../../docstyle.css);</style>
+
+<script src="../../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "content/iblock/components_2/element_add/element_add.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Добавление элементов инфоблока (комплексный компонент)])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Добавление элементов инфоблока (комплексный компонент)</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<p>Комплексный компонент осуществляет вывод списка элементов указанного инфоблока, добавление/редактирование элементов и их удаление в зависимости от прав пользователя. Компонент стандартный и входит в дистрибутив модуля.</p>
+ 
+<h4>Пример вызова</h4>
+ 
+<pre class="syntax" id="xmp5A0A6F40" style="height: 400px;">&lt;?$APPLICATION-&gt;IncludeComponent(&quot;bitrix:iblock.element.add&quot;,&quot;&quot;,Array(<br />     &quot;SEF_MODE&quot; =&gt; &quot;Y&quot;,<br />     &quot;IBLOCK_TYPE&quot; =&gt; &quot;articles&quot;,<br />     &quot;IBLOCK_ID&quot; =&gt; &quot;29&quot;,<br />     &quot;PROPERTY_CODES&quot; =&gt; Array(&quot;NAME&quot;,&quot;IBLOCK_SECTION&quot;,&quot;PREVIEW_TEXT&quot;,&quot;DETAIL_TEXT&quot;,&quot;101&quot;),<br />     &quot;PROPERTY_CODES_REQUIRED&quot; =&gt; Array(&quot;NAME&quot;),<br />     &quot;GROUPS&quot; =&gt; Array(&quot;11&quot;),<br />     &quot;STATUS&quot; =&gt; Array(&quot;1&quot;),<br />     &quot;STATUS_NEW&quot; =&gt; &quot;2&quot;,<br />     &quot;ELEMENT_ASSOC&quot; =&gt; &quot;CREATED_BY&quot;,<br />     &quot;ALLOW_EDIT&quot; =&gt; &quot;Y&quot;,<br />     &quot;ALLOW_DELETE&quot; =&gt; &quot;Y&quot;,<br />     &quot;NAV_ON_PAGE&quot; =&gt; &quot;10&quot;,<br />     &quot;MAX_USER_ENTRIES&quot; =&gt; &quot;100000&quot;,<br />     &quot;MAX_LEVELS&quot; =&gt; &quot;100000&quot;,<br />     &quot;LEVEL_LAST&quot; =&gt; &quot;Y&quot;,<br />     &quot;USE_CAPTCHA&quot; =&gt; &quot;Y&quot;,<br />     &quot;USER_MESSAGE_ADD&quot; =&gt; &quot;&quot;,<br />     &quot;USER_MESSAGE_EDIT&quot; =&gt; &quot;&quot;,<br />     &quot;DEFAULT_INPUT_SIZE&quot; =&gt; &quot;30&quot;,<br />     &quot;MAX_FILE_SIZE&quot; =&gt; &quot;0&quot;,<br />     &quot;CUSTOM_TITLE_NAME&quot; =&gt; &quot;Название статьи&quot;,<br />     &quot;CUSTOM_TITLE_TAGS&quot; =&gt; &quot;Теги&quot;,<br />     &quot;CUSTOM_TITLE_DATE_ACTIVE_FROM&quot; =&gt; &quot;&quot;,<br />     &quot;CUSTOM_TITLE_DATE_ACTIVE_TO&quot; =&gt; &quot;&quot;,<br />     &quot;CUSTOM_TITLE_IBLOCK_SECTION&quot; =&gt; &quot;&quot;,<br />     &quot;CUSTOM_TITLE_PREVIEW_TEXT&quot; =&gt; &quot;&quot;,<br />     &quot;CUSTOM_TITLE_PREVIEW_PICTURE&quot; =&gt; &quot;&quot;,<br />     &quot;CUSTOM_TITLE_DETAIL_TEXT&quot; =&gt; &quot;&quot;,<br />     &quot;CUSTOM_TITLE_DETAIL_PICTURE&quot; =&gt; &quot;&quot;,<br />     &quot;SEF_FOLDER&quot; =&gt; &quot;/examples/&quot;,<br />     &quot;VARIABLE_ALIASES&quot; =&gt; Array()<br />     )<br />);?&gt;</pre>
+ 
+<h4>Описание параметров</h4>
+ 
+<h5 class="graytitle">Источник данных</h5>
+ <dl> 	<dt><span style="font-weight: bold;">IBLOCK_TYPE</span> 	</dt><dd>Указывается тип информационного блока. </dd><dt><span style="font-weight: bold;">IBLOCK_ID</span> 	</dt><dd>Идентификатор информационного блока выбранного типа.</dd> 	</dl> 
+<h5 class="graytitle">Параметры компонента </h5>
+ <dl> 	<dt><span style="font-weight: bold;">NAV_ON_PAGE</span> 	</dt><dd>Количество элементов на странице. Весь список выводится с помощью постраничной навигации. 	</dd><dt><span style="font-weight: bold;">USE_CAPTCHA</span> 	</dt><dd>При выборе значения <span style="font-weight: bold;">&quot;Y&quot;</span> будут выведены изображение и поле ввода <span style="font-weight: bold;">CAPTCHA</span> в форме добавления элемента.</dd> 	<dt><span style="font-weight: bold;">USER_MESSAGE_ADD</span> 	</dt><dd>Сообщение, которое будет выведено при успешном добавлении элемента.</dd> 	<dt><span style="font-weight: bold;">USER_MESSAGE_EDIT</span> 	</dt><dd>Сообщение, которое будет выведено при успешном редактировании элемента.</dd> 	<dt><span style="font-weight: bold;">DEFAULT_INPUT_SIZE</span> 	</dt><dd>Размер полей ввода в форме создания/редактирования элемента. </dd> 	</dl> 
+<h5 class="graytitle">Свойства инфоблока </h5>
+ <dl> 	<dt><span style="font-weight: bold;">PROPERTY_CODES</span> 	</dt><dd>Поля и свойства инфоблока, которые будут выведены в форме создания/редактирования элемента. 	</dd><dt><span style="font-weight: bold;">PROPERTY_CODES_REQUIRED</span> 	</dt><dd>Поля и свойства инфоблока, которые должны быть обязательно заполнены в форме создания/редактирования элемента. </dd> 	</dl>		 
+<h5 class="graytitle">Параметры доступа </h5>
+ <dl> 	<dt><span style="font-weight: bold;">GROUPS</span> 	</dt><dd>Группы пользователей, которые имеют право на добавление/редактирование элементов инфоблока.</dd><dt><span style="font-weight: bold;">STATUS</span> 	</dt><dd>Статусы, находясь в которых элементы будут показываться пользователям.</dd><dt><span style="font-weight: bold;">STATUS_NEW</span> </dt><dd>Статус, в который переводятся элементы при их создании/редактировании.</dd><dt><span style="font-weight: bold;">ELEMENT_ASSOC</span> 	</dt><dd>Задается привязка к пользователю: 	 
+    <ul> 		 
+      <li><span style="font-weight: bold;">N</span> - нет привязки, всем пользователям показываются все элементы. Параметры <span style="font-weight: bold;">ALLOW_EDIT</span> и <span style="font-weight: bold;">ALLOW_DELETE</span> недоступны. </li>
+     	 
+      <li><span style="font-weight: bold;">CREATED_BY</span> - привязка по создателю: пользователю будут показаны только созданные им элементы. </li>
+     	 
+      <li><span style="font-weight: bold;">PROPERTY_ID</span> - привязка по свойству инфоблока. В параметре <span style="font-weight: bold;">ELEMENT_ASSOC_PROPERTY</span> указывается свойство, по которому выполняется привязка. </li>
+     	</ul>
+   </dd> 	<dt><span style="font-weight: bold;">ALLOW_EDIT</span> 	</dt><dd>При выборе значения <span style="font-weight: bold;">&quot;Y&quot;</span> выведятся ссылки на редактирование доступных пользователю элементов. </dd> 	<dt><span style="font-weight: bold;">ALLOW_DELETE</span> 	</dt><dd>При выборе значения <span style="font-weight: bold;">&quot;Y&quot;</span> выведятся ссылки на удаление доступных пользователю элементов. </dd> 	<dt><span style="font-weight: bold;">MAX_USER_ENTRIES</span> 	</dt><dd>Максимальное количество элементов, которое может добавить пользователь. </dd> 	<dt><span style="font-weight: bold;">MAX_LEVELS</span> 	</dt><dd>Максимальное количество разделов, в которое можно добавлять элемент. </dd> 	<dt><span style="font-weight: bold;">LEVEL_LAST</span> 	</dt><dd>При отмеченной опции пользователям разрешено добавлять элементы только на нижний уровень дерева разделов инфоблока.</dd> 	<dt><span style="font-weight: bold;">MAX_FILE_SIZE</span> 	</dt><dd>Максимальный размер загружаемых файлов. Если указано <span style="font-weight: bold;">&quot;0&quot;</span>, то размер файлов не ограничен. </dd> </dl> 	 
+<h5 class="graytitle">Управление адресами страниц </h5>
+ <dl><dt><span style="font-weight: bold;">SEF_MODE</span> 	</dt><dd>При установленном флаге включается поддержка <span style="font-weight: bold;">ЧПУ</span> и становятся доступными поля настройки адресов <span style="font-weight: bold;">ЧПУ</span>. 	</dd><dt><span style="font-weight: bold;">SEF_FOLDER</span> 	</dt><dd>Каталог <span style="font-weight: bold;">ЧПУ</span>. Путь до папки, с которой работает компонент. Этот путь может как совпадать с физическим путем, так и не совпадать. 	</dd><dd style="font-weight: bold;"> 	 
+    <br />
+   </dd><dt><span style="font-weight: bold;">VARIABLE_ALIASES</span> 	</dt><dd>Имена переменных для управления страницами элементов инфоблока.</dd> </dl> 
+<h5 class="graytitle">Собственные названия полей </h5>
+ <dl> 	<dt><span style="font-weight: bold;">CUSTOM_TITLE_&lt;поле инфоблока&gt;</span> 	</dt><dd>Задаются названия полей инфоблока для отображения	пользователям. 
+    <br />
+   		Вместо <span style="font-weight: bold;">&lt;поле инфоблока&gt;</span> указано следующее: 		 
+    <ul> 		 
+      <li><span style="font-weight: bold;">NAME</span> - наименование;</li>
+     		 
+      <li><span style="font-weight: bold;">TAGS</span> - теги; </li>
+     		 
+      <li><span style="font-weight: bold;">DATE_ACTIVE_FROM</span> - дата начала; </li>
+     		 
+      <li><span style="font-weight: bold;">DATE_ACTIVE_TO</span> - дата завершения; </li>
+     		 
+      <li><span style="font-weight: bold;">IBLOCK_SECTION</span> - раздел инфоблока;</li>
+     		 
+      <li><span style="font-weight: bold;">PREVIEW_TEXT</span> - текст анонса; </li>
+     		 
+      <li><span style="font-weight: bold;">PREVIEW_PICTURE</span> - картинка анонса; </li>
+     		 
+      <li><span style="font-weight: bold;">DETAIL_TEXT</span> - подробный текст;</li>
+     		 
+      <li><span style="font-weight: bold;">DETAIL_PICTURE</span> - подробная картинка.</li>
+     		</ul>
+   	</dd> 	</dl> <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

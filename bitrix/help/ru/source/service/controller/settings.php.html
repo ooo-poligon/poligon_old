@@ -1,0 +1,120 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fservice%2Fcontroller%2Fsettings.php.html"; </script>
+
+<title>Настройки модуля</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/controller/settings.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Контроллер::Настройки модуля])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Контроллер::Настройки модуля</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+<p>Форма (<i>Настройки &gt; Настройки продукта &gt; Настройки модулей &gt; Контроллер</i>) предназначена для задания общесистемных параметров модуля <span style="font-weight: bold;">Контроллер сайтов</span>.</p>
+ 
+<h4>Закладка &quot;Настройки&quot;</h4>
+ 
+<table class="tnormal" style="border-collapse: collapse;"> 	 
+  <tbody> 
+    <tr> 		<th width="29%">Поле</th> 		<th width="71%">Описание</th> 	</tr>
+   	 
+    <tr> 		<td>Группа по умолчанию для присоединяющихся сайтов</td> 		<td>Название группы, к которой будут присоединяться сайты при их присоединении к контроллеру. </td> 	</tr>
+   	 
+    <tr> 		<td>Интервал для автоматической установки групповых настроек на клиентские сайты, по умолчанию, минут</td> 		<td>Задается интервал по умолчанию (в минутах) для автоматической установки групповых настроек на клиентские сайты. Если указано <span style="font-weight: bold;">0</span>, то настройки клиентов не будут обновляться автоматически. </td> 	</tr>
+   	 
+    <tr> 		<td>Путь к папке с общим ядром (относительно корня сайта-контроллера)</td> 		<td>Для возможности обновления клиентов с общим файловым ядром продукта, необходимо указать путь к папке с общим ядром.</td> 	</tr>
+   </tbody>
+ </table>
+ 
+<h4>Закладка &quot;Авторизация&quot;
+  <br />
+</h4>
+
+<br />
+
+<table style="border-collapse: collapse;" class="tnormal"> 
+  <tbody>     
+    <tr> <th colspan="2"><b>Авторизация пользователей контроллера на подчиненных сайтах</b></th> </tr>
+   
+    <tr> <td>Разрешить авторизацию пользователей контроллера</td> <td>У</td> </tr>
+   
+    <tr> <td>Соответствие групп</td> <td>Ч</td> </tr>
+   
+    <tr><td colspan="1"></td><td colspan="1"></td></tr>
+  
+    <tr> <th colspan="2"><b>Сквозная авторизация пользователей между подчиненными сайтами</b></th> </tr>
+   
+    <tr> <td>Разрешить сквозную авторизацию</td> <td>П</td> </tr>
+   
+    <tr> <td>Соответствие групп</td> <td>О</td> </tr>
+   </tbody>
+ </table>
+
+<br />
+
+<h4>Закладка &quot;Доступ&quot;</h4>
+ 
+<p>Форма служит для определения прав групп пользователей на доступ к модулю <span style="font-weight: bold;">Контроллер сайтов</span>.</p>
+ 
+<table class="tnormal" style="border-collapse: collapse;"> 	 
+  <tbody> 
+    <tr> 		<th width="25%">Поле</th> 		<th width="75%">Описание</th></tr>
+   	 
+    <tr> 		<td>По умолчанию</td> 		<td>Управление уровнем доступа групп пользователей, для которых установлено право <span style="font-weight: bold;">по умолчанию</span>.</td></tr>
+   	 
+    <tr> 		<td>[Группа пользователей]</td> 		<td> 			Управление правом доступа отдельных групп пользователей. Возможны следующие уровни доступа: 			 
+        <ul> 				 
+          <li><b>Доступ запрещен</b> - доступ к модулю закрыт; 				</li>
+         
+          <li><b>Только чтение </b> - разрешается только просмотр файлов и параметров модуля; 				</li>
+         
+          <li><b>Добавление новых сайтов </b> - добавление новых сайтов, позволяет безопасно вводить имя-пароль на клиентских машинах при присоединении; 	 		</li>
+         
+          <li><b>Управление сайтами </b> - управление сайтами, т.е. их добавление, обновление, отсоединение, административный вход на них, просмотр журнала работы. Нельзя удалять сайты и изменять групповые настройки; 					</li>
+         
+          <li><b>Полный доступ</b> - полный доступ без каких-либо ограничений. </li>
+         			</ul>
+       </td></tr>
+   </tbody>
+ </table>
+ <bitrix:sys name="feedbackform"></bitrix:sys> <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

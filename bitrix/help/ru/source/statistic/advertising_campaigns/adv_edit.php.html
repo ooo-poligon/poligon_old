@@ -1,0 +1,151 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fstatistic%2Fadvertising_campaigns%2Fadv_edit.php.html"; </script>
+
+<title>Создание и редактирование рекламной кампании</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "statistic/advertising_campaigns/adv_edit.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Создание и редактирование рекламной кампании])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Создание и редактирование рекламной кампании</h1></div></div>
+<div id="pagebody" valign="bottom">
+<p>Эта форма предназначена для создания новых и правки
+существующих рекламных кампаний (РК). Подробнее о рекламных кампаниях можно прочитать в <a href="adv_list.php.html">этом разделе</a>.
+<p>Таблицы ниже описывают поля, используемые при редактировании
+рекламной кампании.</p>
+
+<h4>Контекстная панель</h4>
+
+<table width=100% class=tnormal>
+<tr>
+<th width="22%">Кнопка</th>
+<th width="78%">Описание</th>
+</tr>
+<tr>
+<td>Список</td>
+<td>Открывает <a href="adv_list.php.html">список</a> всех рекламных кампаний.</td>
+</tr>
+<tr>
+<td>Добавить</td>
+<td>Создает новую рекламную кампанию. Отображается только при редактировании существующей рекламной кампании.</td>
+</tr>
+<tr>
+<td>Сбросить</td>
+<td>Обнуляет все счетчики открытой рекламной кампании. Отображается только при редактировании существующей рекламной кампании.</td>
+</tr>
+<tr>
+<td>Удалить</td>
+<td>Удаляет текущую рекламную кампанию. Отображается только при редактировании существующей рекламной кампании.</td>
+</tr>
+</table>
+
+<h4>Вкладка &quot;Свойства&quot;</h4>
+<table class="tnormal">
+<tr>
+<th>Поле</th><th>Описание</th>
+</tr>
+<tr>
+<td>Приоритет</td><td>Значение приоритета рекламной кампании. Чем выше значение, тем выше приоритет.</td>
+</tr>
+<tr>
+<th colspan=2>Идентификация рекламной кампании</th></tr>
+<tr>
+<td><font color="#FF0000">*</font> referer1</td>
+<td>Значение идентификатора рекламной кампании <i> referer1</i>.
+Передается в URL.</td></tr>
+<tr>
+<td>referer2</td>
+<td>Значение идентификатора рекламной кампании <i>referer2</i>.
+Передается в URL.</td></tr>
+<tr>
+<th colspan=2>Дополнительные условия<br>
+РК работает (то есть, модуль
+статистики регистрирует ее события) при выполнении
+любого из этих условий или же без них.</th>
+</tr>
+<tr>
+<td>Откуда пришли</td>
+<td>Маски для ссылающихся страниц, разделенные новой строкой (в маске возможно использование символов: &quot;%&quot; - 0 или более любых символов и _ – 1 любой символ)</td>
+</tr>
+<tr>
+<td>Поисковые системы</td>
+<td>Поисковые системы, заходы с которых считаются заходами по данной рекламной кампании.</td>
+</tr>
+<tr>
+<td>Куда пришли</td>
+<td>Маски для страниц сайта, заходы на которые следует
+регистрировать как заходы по рекламной кампании.</td>
+</tr>
+</table>
+<font color="#FF0000"> *</font> - поля, обязательные для заполнения.
+<h4>Вкладка &quot;Дополнительно&quot;</h4>
+<table class="tnormal">
+<tr>
+<th>Поле</th><th>Описание</th>
+</tr>
+<tr>
+<th colspan=2>Финансы</th></tr>
+<tr>
+<td>Затраты</td>
+<td>Денежная сумма, затраченная на рекламную кампанию. Выводится и
+хранится в базовой валюте модуля. При вводе суммы валюта может быть выбрана произвольно,&nbsp;при сохранении сумма будет сконвертирована в базовую валюту.</td></tr>
+<tr>
+<td>Доходы</td>
+<td>Сумма денег по всем денежно-значимым событиям, произошедшим в рамках рекламной кампании. Данная сумма может быть также модифицирована вручную; принципы работы с валютой для данной суммы аналогичны
+затратам.</td></tr>
+<tr>
+<th colspan=2>Дополнительные настройки</th></tr>
+<tr>
+<td>Как отображать события</td>
+<td>Метод отображения событий по этой рекламной кампании в таблице рекламных кампаний.</td>
+</tr>
+<tr>
+<td>Описание</td>
+<td>Описание рекламной кампании.</td>
+</tr></table>
+
+<p>
+
+После внесения изменений не забудьте нажать кнопку <b>Сохранить</b>
+(сохраняет изменения и открывает список кампаний) или <b>Применить</b>
+(сохраняет изменения без перехода в список кампаний).<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

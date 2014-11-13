@@ -1,0 +1,89 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../index.html?page=source%2Fstore%2Fsale%2Fcomponents_2%2Fsale_basket_basket.php.html"; </script>
+
+<title>Корзина</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "store/sale/components_2/sale_basket_basket.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Компоненты 2.0::Корзина])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Компоненты 2.0::Корзина</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+
+
+<p>Одностраничный компонент. 
+<br />
+Компонент отображает список товаров, отправленных пользователем в корзину. Товары в корзине могут быть отложены и будут храниться, либо удалены из корзины, также пользователь может перейти к оформлению заказа.</p>
+
+<h4>Пример вызова</h4>
+<pre class=syntax id="xmp099E6B1E">
+&lt;?
+$APPLICATION->IncludeComponent(
+		"bitrix:sale.basket.basket",
+		"",
+		Array(
+			"PATH_TO_ORDER" => "/personal/order.php", 
+			"HIDE_COUPON" 	=> "N", 
+			"COLUMNS_LIST" 	=> Array("NAME","PRICE","TYPE"), 
+			"SET_TITLE" 	=> "Y" 
+		)
+);?&gt;</pre>
+<h4>Описание параметров</h4>
+<h5 class="graytitle">Внешний вид</h5>
+<dl>
+	<dt>COLUMNS_LIST</dt>
+		<dd>Выбираются поля, которые будут выведены в качестве названий колонок в таблице товаров, находящихся в корзине.</dd>
+</dl>
+<h5 class="graytitle">Дополнительные настройки</h5>
+<dl>
+<dt>PATH_TO_ORDER</dt>
+		<dd>Страница оформления заказа. Путь к странице  - процедуре оформления заказа. Если страница находится в текущей директории, то достаточно указать ее название.</dd>
+	<dt>HIDE_COUPON</dt>
+		<dd>[Y|N] Если «Да», то на странице с корзиной товаров поле для ввода купона на скидку показано не будет.</dd>
+	<dt>SET_TITLE</dt>
+		<dd>[Y|N] В качестве заголовка страницы будет установлено &quot;Моя корзина&quot;.</dd>
+</dl>
+
+
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

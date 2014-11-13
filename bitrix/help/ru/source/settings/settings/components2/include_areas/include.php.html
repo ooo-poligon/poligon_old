@@ -1,0 +1,91 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../../index.html?page=source%2Fsettings%2Fsettings%2Fcomponents2%2Finclude_areas%2Finclude.php.html"; </script>
+
+<title>Вставка включаемой области</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../../docstyle.css);</style>
+
+<script src="../../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "settings/settings/components2/include_areas/include.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Вставка включаемой области])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Вставка включаемой области</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+<p>Компонент располагается в шаблоне дизайна сайта и определяет место расположения включаемых областей страниц и разделов. Настройки компонента позволяют определить суффикс имени файла включаемой области, указать режим редактирования включаемой области по умолчанию, шаблон области по умолчанию.</p>
+
+<h4>Пример вызова</h4>
+
+<pre class="syntax" id="xmp5A0A6F40">&lt;?$APPLICATION-&gt;IncludeComponent(
+&quot;bitrix:main.include&quot;,
+&quot;&quot;,
+Array(
+	&quot;AREA_FILE_SHOW&quot; =&gt; &quot;sect&quot;, 
+	&quot;AREA_FILE_SUFFIX&quot; =&gt; &quot;inc&quot;, 
+	&quot;AREA_FILE_RECURSIVE&quot; =&gt; &quot;N&quot;, 
+	&quot;EDIT_MODE&quot; =&gt; &quot;html&quot;, 
+	&quot;EDIT_TEMPLATE&quot; =&gt; &quot;page_inc.php&quot; 
+)
+);?&gt;</pre>
+
+<h5 class="graytitle">Параметры компонента </h5>
+<dl><dt><strong>AREA_FILE_SHOW</strong> </dt><dd>Показывать включаемую область. Возможные значения sect (показывать для раздела, область будет являться включаемой для всего раздела), page (показывать для страницы, область будет являться включаемой только для текущей страницы). 
+     </dd>
+ <br />
+  
+    <br />
+<dt><strong>AREA_FILE_SUFFIX</strong> </dt><dd>Суффикс имени файла включаемой области. Поле предназначено для указания суффикса, который будет добавляться к именам файлов включаемых областей. Страницы с таким суффиксом будут восприниматься как включаемые области. 
+ </dd>
+ <br />
+  
+    <br />
+<dt><strong>AREA_FILE_RECURSIVE</strong> </dt><dd>[Y|N] Рекурсивное подключение включаемых областей разделов. Настройка доступна при установленном параметре <i>Показывать включаемую область (AREA_FILE_SHOW)</i> в значение <em>для раздела (sect)</em>. При установленном флаге включаемые области разделов будут подключаться рекурсивно, т.е. если в папке более низкого уровня есть своя включаемая область, то она будет показана. Если же текущий раздел не имеет своей включаемой области, то рекурсивно до корня сайта будут проверяться все разделы до самого верхнего и будет выведена первая встретившаяся включаемая область. 
+ </dd>
+ <br />
+  
+    <br />
+<dt><strong>EDIT_MODE</strong> </dt><dd>Режим редактирования по умолчанию. Доступны три значения <em>как HTML (html)</em>, <em>как PHP (php)</em>, <em>как текст (text)</em>. Режим редактирования, выбранный в данном поле, будет использоваться при переходе к редактированию включаемой области страницы/раздела из публичной части. 
+  </dd>
+ <br />
+  
+    <br />
+<dt><strong>EDIT_TEMPLATE</strong> </dt><dd>Шаблон области по умолчанию. Доступны все шаблоны страниц, созданные в системе. Они располагаются в разделе /bitrix/templates/.default/page_templates/. В данном поле вы можете указать любой другой файл в системе, указав полный путь в файлу-шаблону. </dd></dl>
+<p></p><bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

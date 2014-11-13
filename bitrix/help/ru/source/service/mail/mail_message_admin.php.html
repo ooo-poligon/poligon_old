@@ -1,0 +1,178 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fservice%2Fmail%2Fmail_message_admin.php.html"; </script>
+
+<title>Письма</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/mail/mail_message_admin.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Письма])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Письма</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<h4 id="topictoctitle">В этом разделе</h4>
+ <menu id="topictoc"> 
+  <li><a href="#filter">Фильтр</a></li>
+ 
+  <li><a href="#list">Список сообщений</a></li>
+ 
+  <li><a href="#create">Как проверить наличие новых сообщений</a></li>
+ 
+  <li><a href="#edit">Как удалить сообщения или применить другие правила и действия к сообщениям</a> </li>
+ </menu> 
+<p>Форма <b>Письма</b> (<i>Сервисы &gt; Почта &gt; Письма</i>) отображает&nbsp;сообщения, полученные с существующих (добавленных вами) почтовых ящиков. Пользуясь этой формой, вы можете:</p>
+ 
+<ul> 	 
+  <li>в форме наглядной таблицы просматривать информацию о полученных сообщениях; 	</li>
+ 
+  <li>полученные сообщения; 	</li>
+ 
+  <li>применять правила и действия к сообщениям (например, удалять сообщения, помечать сообщения как спам и пр.) </li>
+ </ul>
+ 
+<p>Форма&nbsp;<b></b>содержит две основные области: <b>фильтр</b> и <b>список сообщений</b>, а также вспомогательные области <b>Получить почту</b> и <font class="tablebodytext"><b>Обработка писем</b>.</font></p>
+ 
+<h4><a name="filter"></a>Фильтр</h4>
+ 
+<p>Используется для задания параметров отбора сообщений, отображаемых в списке. 
+  <br />
+</p>
+
+<table width="100%" style="border-collapse: collapse;"> 	 
+  <tbody> 
+    <tr> 		<th width="200">Поле</th> 		<th>Описание</th></tr>
+   	  	 
+    <tr> 		<td>ID</td> 		<td>Идентификатор искомого сообщения.</td></tr>
+   	 
+    <tr> 		<td>Почтовый ящик</td> 		<td>Название почтового ящика, где ищутся сообщения.</td></tr>
+   	 
+    <tr> 		<td>Помеченные как спам</td> 		<td>Отбор всех сообщений, или только помеченных или не помеченных как спам.</td></tr>
+   	 
+    <tr> 		<td>Прочитанные сообщения</td> 		<td>Отбор всех сообщений, или только прочитанных или не прочитанных.</td></tr>
+   	 
+    <tr> 		<td>От кого</td> 		<td>Поиск по отправителю</td></tr>
+   	 
+    <tr> 		<td>Кому</td> 		<td>Поиск по получателю</td></tr>
+   	 
+    <tr> 		<td>Тема</td> 		<td>Поиск по теме</td></tr>
+   	 
+    <tr> 		<td>Текст</td> 		<td>Слова и фразы, которые могут содержаться в тексте (т.н. &quot;теле&quot;) сообщения.</td></tr>
+   
+    <tr><td colspan="1">Показать все условия</td><td colspan="1">Отображение одновременно всех условий</td></tr>
+  
+    <tr><td colspan="1">Скрыть все условия</td><td colspan="1">Сокрытие всех условий</td></tr>
+  </tbody>
+ </table>
+ 
+<p>Чтобы отфильтровать сообщения по заданным критериям поиска, нажмите кнопку <b>Найти</b>. Для отображения всех сообщений нажмите кнопку <b>Отменить</b>.</p>
+ 
+<h4>Контекстная панель</h4>
+ 
+<table width="100%" class="tnormal" style="border-collapse: collapse;"> 	 
+  <tbody> 
+    <tr> 		<th>Кнопка</th> 		<th>Описание</th></tr>
+   	 
+    <tr><td colspan="1">Получить почту</td><td colspan="1">Команда получения почты с выбором почтового ящика</td></tr>
+  
+    <tr> 		<td>Настроить</td> 		<td>Переход к диалогу настройки внешнего вида отчетной формы.</td></tr>
+   	 
+    <tr> 		<td>Excel</td> 		<td>Экспорт данных из таблицы в формат <span style="font-weight: bold;">MS Excel</span>.</td></tr>
+   </tbody>
+ </table>
+ 
+<p>Поле <b>Получить почту</b> позволяет проверить <a href="#create">наличие новых сообщений</a>. </p>
+ 
+<h4><a name="list"></a>Список сообщений</h4>
+ 
+<table class="wordtable" style="border-collapse: collapse;"> 	 
+  <tbody> 
+    <tr> 		<th>Колонка</th> 		<th>Описание</th></tr>
+   	 
+    <tr> 		<th style="vertical-align: top;">Колонка флажков</th> 		<td>Выбор сообщений, к которым предполагается применить какое-либо правило или действие. Возможные правила и действия содержатся в области <font class="tablebodytext"><b>Обработка писем</b>.</font></td></tr>
+   	 
+    <tr> 		<th style="vertical-align: top;">Тема</th> 		<td>Тема полученного сообщения.</td></tr>
+   	 
+    <tr> 		<th style="vertical-align: top;">От кого</th> 		<td>Отправитель сообщения. В качестве отправителя отображается <span style="font-weight: bold;">имя отправителя</span>, которое назначил себе сам отправитель.</td></tr>
+   	 
+    <tr> 		<th style="vertical-align: top;">Дата</th> 		<td>Дата получения сообщения.</td></tr>
+   	 
+    <tr> 		<th style="vertical-align: top;">Ящик</th> 		<td>Название почтового ящика, с которого получено данное сообщение.</td></tr>
+   	 
+    <tr> 		<th style="vertical-align: top;">Размер</th> 		<td>Размер сообщения в байтах.</td></tr>
+   	 
+    <tr> 		<th style="vertical-align: top;">СПАМ коэф.</th> 		<td>Относительный показатель принадлежности сообщения к спаму (сообщения массовой несанкционированной рассылки).</td></tr>
+   	 
+    <tr> 		<th style="vertical-align: top;">Влож.</th> 		<td>Количество вложений в данном сообщении.&nbsp; 			 
+        <p class="note"><b>Примечание</b> 
+          <br />
+         Сообщения, отправленные в формате <span style="font-weight: bold;">HTML</span>, всегда имеют хотя бы одно вложение - само сообщение в формате <span style="font-weight: bold;">HTML</span>.</p>
+       </td></tr>
+   	  	  </tbody>
+ </table>
+ 
+<p class="info"><b>Примечание</b> 
+  <br />
+ Таблица может быть отсортирована по любому полю путём нажатия на заголовок требуемой колонки.</p>
+ 
+<h4><a name="create"></a>Как проверить наличие новых сообщений</h4>
+ 
+<p>Чтобы проверить наличие новых сообщений в мини-форме <font class="tablebodytext"><b>Получить почту</b> выберите интересующий вас ящик (или все ящики) и нажмите кнопку <b>ОК</b></font>.</p>
+ 
+<p>В открывшейся промежуточной форме <font class="titletext"><b>Получение новой почты</b> отобразится статус проверки по каждому из ящиков и количество полученных сообщений.</font></p>
+ 
+<p><font class="titletext">Если при получении почты с какого-либо адреса возникли ошибки, статус проверки ящика будет включать ссылку <b>Настройки почтового ящика</b>. Перейдя по этой ссылке можно изменить свойства этого ящика (например, откорректировать пароль доступа).</font></p>
+ 
+<h4><a name="edit"></a>Как удалить сообщения или применить другие правила и действия к сообщениям</h4>
+ 
+<p>Для применения любого возможного действия или правила к сообщению или группе сообщений:</p>
+ 
+<ol> 	 
+  <li>Отметьте требуемые сообщения, обозначив их в <b>Колонке флажков</b>. Чтобы выделить все сообщения, поставьте флажок в заголовке таблицы. 	</li>
+ 
+  <li>В мини-форме <font class="tablebodytext"><b>Обработка писем</b> укажите, следует ли применять правило ко всем ли сообщениям или только к выделенным.</font> 	</li>
+ 
+  <li><font class="tablebodytext">Там же </font>выберите требуемое действие, например, <b>Удалить</b> или <b>Пометить как спам</b>. 	</li>
+ 
+  <li>Нажмите кнопку <b>ОК</b>. </li>
+ </ol>
+ <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

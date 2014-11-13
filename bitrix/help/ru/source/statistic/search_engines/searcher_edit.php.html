@@ -1,0 +1,158 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fstatistic%2Fsearch_engines%2Fsearcher_edit.php.html"; </script>
+
+<title>Редактирование поисковика</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "statistic/search_engines/searcher_edit.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Редактирование поисковика])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Редактирование поисковика</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+
+
+
+<p>Эта форма применяется для создания описание новых поисковиков и редактирования существующих.
+Форма может быть открыта путём нажатия кнопки <b>Добавить</b>
+контекстной панели <a href="searcher_list.php.html"> списка поисковых систем</a>,
+либо выбора пункта <b>Изменить</b> меню
+действий:</p>
+
+<img src="../../images/iblock/43d/menu_select_searcher_edit.png" width="200" height="181">
+
+<h4><a name="context_bar">Контекстная панель</a></h4>
+<table class="tnormal" width="100%">
+<tbody>
+	<tr>
+	<th width="15%">Кнопка</th>
+	<th width="85%">Описание</th>
+	</tr>
+	<tr>
+	<td>Список</td>
+	<td>Нажатие этой кнопки открывает <a href="searcher_list.php.html"> форму со списком</a> всех
+	поисковых систем.</td>
+	</tr>
+	<tr>
+	<td>Добавить</td>
+	<td>Открывает текущую форму для добавления новой поисковой
+	системы. Отображается только при редактировании существующего поисковика. </td>
+	</tr>
+	<tr>
+	<td>Удалить</td>
+	<td>Удаляет открытую для правки поисковую систему. Отображается только при редактировании существующего поисковика. </td>
+	</tr>
+</tbody>
+</table>
+<h4>Вкладка &quot;Свойства&quot; (параметры поисковика)</h4>
+
+<table class="tnormal">
+<tr>
+	<th width="200">Поле
+<th>Описание </th></tr>
+<tr>
+	<td width="200">Активен
+<td>Флаг активности поисковой системы. Хиты активных поисковых
+систем распознаются и регистрируются в системе.</td></tr>
+<tr>
+<td width="200">Проверять лимит активности</td>
+<td>Если флаг не установлен, и в настройках модуля установлена проверка на превышение лимита активности клиентом,
+с данного поисковика снимаются все ограничения на превышение установленного лимита активности.</td></tr>
+<tr>
+<td width="200">Сохранять хиты</td>
+<td>Если флаг установлен, адреса проиндексированных страниц
+сохраняются в базе данных.</td></tr>
+<tr>
+<td width="200">Включать в круговую диаграмму индексации по умолчанию</td>
+<td>Если флаг установлен, данные по этой поисковой системе
+включаются в круговую диаграмму индексации сайта.</td></tr>
+<tr>
+<td width="200">Сколько дней хранить хиты</td>
+<td>Количество дней для хранения адресов проиндексированных страниц.
+Если параметр не указан, используется значение, задаваемое в настройках модуля статистики
+(параметр
+<b>Сколько дней хранить хиты поисковиков</b>).</td></tr>
+<tr>
+<td width="200">Сколько дней хранить динамику</td>
+<td>Количество дней для хранения динамики индексации сайта. Если
+параметр не указан, используется значение, задаваемое в настройках модуля статистики
+(параметр
+<b>Сколько дней хранить динамику поисковиков</b>).</td></tr>
+<tr>
+<td width="200">Наименование</td>
+<td>Наименование поисковой системы (например, <i>Google</i>).</td></tr>
+<tr>
+<td width="200">UserAgent</td>
+<td>UserAgent поисковой системы (например, <code>Googlebot/</code>).</td></tr>
+<tr>
+<td width="200">
+Домен
+<td>Домен поисковой системы без www (например: google.com, google.com.ru, google.co.uk, search.yahoo.com и т.д.).
+</tr>
+<tr>
+<td width="200">Переменная</td>
+<td>Имя переменной, в которой передается искомая фраза (см. ниже).</td></tr></table>
+
+<p>Кнопка <b>Сохранить</b> позволяет сохранить свойства и выйти, кнопка <b>Применить</b> - сохранить и остаться в форме, а кнопка <b>Отменить</b> - выйти из формы без сохранения. </p>
+<h4>Переменные доменов</h4>
+
+<p>Переменные, в которых содержатся искомые фразы, определяются следующими правилами.</p>
+
+
+
+<p>Например, при поиске на <b>www.google.com</b> слова
+<i> bitrix </i> поисковая система вернет результаты поиска на странице <b>http://www.google.ru/search?complete=1&amp;hl=ru&amp;q=bitrix&amp;lr=&amp;aq=null</b>. В данном случае, искомое нами слово содержится в параметре
+<code>q</code>, поэтому для домена <b>www.google.com</b> мы устанавливаем переменную <code>q</code>.</p>
+
+
+
+<p>В дальнейшем эта переменная будет использована при выделении поисковых фраз. Аналогично, для выделения поисковых фраз
+- при поиске в найденном. Например, мы ищем на Яндексе слово
+<i>bitrix</i>, а затем в найденном ищем слово <i>download</i>. Результаты поиска будут выданы на странице
+ <b>http://www.yandex.ru/yandsearch?text=download&amp;holdreq=bitrix&amp;holdreq_manually=true</b>. Здесь поисковые фразы
+содержатся в параметрах <code> holdreq</code>&nbsp;и <code>text. </code>Указываем эти параметры&nbsp;через запятую,&nbsp;и в дальнейшем&nbsp;поисковые фразы будут выделяться
+в виде <code>bitrix/download</code>, т.е. через символ "/" и в соответствующем порядке.</p>
+
+
+
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

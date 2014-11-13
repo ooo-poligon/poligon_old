@@ -1,0 +1,216 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fcontent%2Ffileman%2Ffileman_admin.php.html"; </script>
+
+<title>Менеджер файлов</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "content/fileman/fileman_admin.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Менеджер файлов])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Менеджер файлов</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<h4 id="topictoctitle">В этом разделе</h4>
+ <menu id="topictoc"> 	 
+  <li><a href="#menu">Контекстная панель</a></li>
+ 	 
+  <li><a href="#fields">Поля менеджера файлов</a></li>
+ 	 
+  <li><a href="#actions">Операции над папками и файлами</a></li>
+ 	 
+  <li><a href="#menu_edit">Редактирование меню раздела</a></li>
+ </menu> 
+<p>Управление структурой <b>&quot;1С-Битрикс: Управление сайтом&quot;</b> осуществляется в<b> Менеджере файлов</b>: <span style="font-style: italic;">Контент &gt; Структура сайта</span>. <span style="font-weight: bold;">Менеджер файлов</span> организован подобно правой панели <span style="font-weight: bold;">Проводника Windows</span> и представляет собой каталог папок и файлов, на верхнем уровне иерархии которого располагаются сайты, работающие под управлением системы и собственно система физических папок <b>Файлы и папки</b>. 
+  <br />
+</p>
+
+<p>Отличие между сайтами, работающие под управлением системы и папкой <b>Файлы и папки </b>заключается в том, что первые представляют - логические папки, а вторая - физические. Первые созданы для быстрого доступа к файлам обычных пользователей по логике структуры сайта. Вторые - для быстрого доступа к файлам для разработчиков сайтов.</p>
+
+<p>В логической структуре отображаются не все физические файлы и папки, а только те, которым задан <b>Заголовок</b> (поле <b>Заголовок</b>) при создании страницы, раздела.<b>
+    <br />
+  </b></p>
+ 
+<p>Верхний уровень каждого из сайтов имеет приблизительно такую структуру, как показано на рисунке.</p>
+ 
+<p id="glabel1" class="sml">Нажмите на рисунок, чтобы увеличить</p>
+ <img src="../../images/iblock/762/fileman_small.png" width="399" height="291"> 
+<p>Обычно веб-сайт подразделяется на разделы (<span style="font-weight: bold;">Менеджером файлов</span> разделы отображаются как папки), содержащие сгруппированные по тематике наборы файлов. Папки <span style="font-weight: bold;">Менеджера файлов</span> позволяют организовать структурированное хранение информации сайта: веб-страниц, шаблонов, фотографий и пр. </p>
+ 
+<p>Информация об имени файла или папки, размере, дате последнего изменения, уровне прав доступа к файлу показаны в форме таблицы. Нажав на название папки (оно представлено в виде ссылки), можно перейти внутрь этой папки. C помощью двойного щелчка по названию файла, можно открыть данный файла для редактирования.</p>
+ 
+<h4><a name="menu"></a>Контекстная панель </h4>
+ 
+<p>Служит для управления содержимым папки, а также настройки ее свойств.</p>
+ 
+<table class="tnormal"> 
+  <tbody> 
+    <tr> <th width="18%">Кнопка</th> <th width="82%">Описание</th> </tr>
+   
+    <tr> <td><a href="fileman_newfolder.php.html">Новая папка</a></td> <td>Создать новую папку в&nbsp;текущем каталоге.</td> </tr>
+   
+    <tr> <td><a href="fileman_file_new.php.html">Новый файл</a></td> <td>Создать новый файл в&nbsp;текущей папке.</td> </tr>
+   
+    <tr> <td><a href="fileman_file_upload.php.html">Загрузить файл</a></td> <td>Загрузить файл в&nbsp;текущую папку с локального компьютера.</td> </tr>
+   
+    <tr> <td><a href="fileman_menu_edit.php.html">Добавить меню</a></td> <td>Добавить меню в данный раздел.</td> </tr>
+   
+    <tr> <td><a href="fileman_folder.php.html">Свойства папки</a></td> <td>Просмотр и&nbsp;изменение свойств текущей папки (изменение заголовка раздела; управление правами доступа к разделу, а также значениями свойств страниц раздела).</td> </tr>
+   
+    <tr> 	<td>Показать права на доступ для </td> 	<td>Показать в колонке <b>Права на доступ продукта</b> уровень прав доступа к отображаемым файлам и папкам для выбранной группы пользователей. 
+        <br />
+       		 
+        <br />
+       		См. также <a href="fileman_access.php.html">Права доступа</a></td> </tr>
+   
+    <tr> 	<td>Путь</td> 	<td>Чтобы перейти в определённую директорию сайта, укажите путь к папке в этом поле и нажмите кнопку <span style="font-weight: bold;">OK</span>. </td> </tr>
+   
+    <tr> 		<td>Excel</td> 		<td>Экспорт данных из отображаемой таблицы в формат <span style="font-weight: bold;">MS Excel</span>.</td> 	</tr>
+   	 
+    <tr> 	<td>Настроить</td> 	<td>Переход к диалогу настройки внешнего вида отчетной формы.</td> 	</tr>
+   </tbody>
+ </table>
+ 
+<h4><a name="fields"></a>Поля менеджера файлов</h4>
+ 
+<table border="0"> 	 
+  <tbody> 
+    <tr> 		<th width="18%">Поле</th> 		<th width="82%">Описание</th> 	</tr>
+   	 
+    <tr> 		<td>Колонка флажков</td> 		<td>Выбор элементов, к которым предполагается применить какое-либо правило или действие. </td> 	</tr>
+   	 
+    <tr> 		<td>Действия </td> 		<td>Операции над папками: 
+        <ul> 				 
+          <li><span style="font-weight: bold;">Открыть</span> - открыть папку в менеджере файлов;</li>
+         			 
+          <li><span style="font-weight: bold;"> Свойства папки</span> - перейти к форме редактирования свойств папки;</li>
+         			 
+          <li><span style="font-weight: bold;">Переименовать</span> - изменить название папки.&nbsp;
+            <br />
+           </li>
+         			 
+          <li><span style="font-weight: bold;"> Удалить</span> - удалить выбранную папку;</li>
+         			 
+          <li><span style="font-weight: bold;">Доступ</span> - переход к форме изменения прав доступа к данной папке. </li>
+         </ul>
+      Последние три пункта видны только в <b>Файлах и папках</b>.
+        <br />
+      
+        <br />
+      Операции над файлами: 			 
+        <ul> 				 
+          <li><span style="font-weight: bold;">Редактировать как текст</span> - изменение файла в текстовом формате;</li>
+         			 
+          <li><span style="font-weight: bold;"> Редактировать как HTML</span> - изменение файла в <a href="fileman_html_edit.php.html"> HTML-формате</a>;</li>
+         			 
+          <li><span style="font-weight: bold;"> Редактировать как PHP</span> - изменение PHP-кода файла;</li>
+         			 
+          <li><span style="font-weight: bold;">Редактировать в модуле документооборота</span> - изменение файла с регистрацией в модуле документооборота;</li>
+         			 
+          <li><span style="font-weight: bold;"> Просмотр файла</span> - просмотр содержимого файла, а также информации о его размере, дате последнего доступа и изменения;</li>
+         			 
+          <li><span style="font-weight: bold;">Переименовать</span> - изменить название файла. Пункт меню действует при работе с физической структурой сайта;</li>
+         			 
+          <li><span style="font-weight: bold;"> Удалить</span> - удаление файла;</li>
+         				 
+          <li><span style="font-weight: bold;">Доступ</span> - переход к форме изменения прав доступа к данному файлу.</li>
+         			</ul>
+       </td> 	</tr>
+   	 
+    <tr> 		<td>Заголовок</td> 		<td>Заголовок папки или файла. </td> 	</tr>
+   	 
+    <tr> 		<td>Размер файла </td> 		<td>Размер файла в байтах. </td> 	</tr>
+   	 
+    <tr> 		<td>Изменен</td> 		<td>Дата и время последнего изменения файла или папки. </td> 	</tr>
+   	 
+    <tr> 		<td> Тип </td> 		<td>Тип элемента списка: 			 
+        <ul> 				 
+          <li>Папка;</li>
+         			 
+          <li>Файл (изображение, архив и т.д.);</li>
+         			 
+          <li> Системный файл;</li>
+         			 
+          <li>Текстовый документ;</li>
+         			 
+          <li> Документ HTML;</li>
+         			 
+          <li>Скрипт PHP.</li>
+         			</ul>
+       </td> 	</tr>
+   	 
+    <tr> 		<td> Права на доступ </td> 		<td>Права доступа к файлам и папка на уровне операционной системы. </td> 	</tr>
+   	 
+    <tr> 		<td>Права на доступ продукта </td> 		<td>Права доступа к файлам и папка для выбранной группы пользователей.</td> 	</tr>
+   </tbody>
+ </table>
+ 
+<h4><a name="actions"></a>Операции над папками и файлами</h4>
+ 
+<p>К каждому файлу и папке, отображаемым в <span style="font-weight: bold;">Менеджере файлов</span>, можно применить различные операции по изменению их расположения и свойств.</p>
+ 
+<p>Чтобы осуществить любое из действий над файлами и папками, следует выделить требуемые файлы и папки флажками в крайнем левом поле менеджера файлов. После этого для выполнения операций можно воспользоваться командами в поле <b>Действия</b>, расположенном на панели управления внизу страницы.</p>
+ 
+<p>Выберите нужное действие в списке и нажмите кнопку <span style="font-weight: bold;">Применить</span>.</p>
+ 
+<table class="tnormal"> 
+  <tbody> 
+    <tr> <th width="18%">Действие</th> <th width="82%">Описание</th> </tr>
+   
+    <tr> <td><a href="fileman_access.php.html">Доступ</a></td> <td>Форма редактирования прав доступа к выбранным файлам и папкам. Для изменения прав доступа достаточно выбрать право для конкретной группы пользователей и сохранить изменения.</td> </tr>
+   
+    <tr> <td>Копировать</td> <td>Копирование выбранных файлов и папок в указанную в поле справа папку. Для выбора папки можно воспользоваться кнопкой&nbsp; 
+        <p><img src="../../images/iblock/526/load_button.png" width="15" height="18"></p>
+       </td> </tr>
+   
+    <tr> 	<td>Перенести</td> 	<td>Перемещение выбранных файлов и папок в указанную в поле справа папку. Для выбора папки можно воспользоваться кнопкой&nbsp; 
+        <p><img src="../../images/iblock/526/load_button.png" width="15" height="18"></p>
+       </td> </tr>
+   </tbody>
+ </table>
+ 
+<h4><a name="menu_edit"></a>Редактирование меню текущего раздела</h4>
+ 
+<p>Меню текущего раздела показываются в <span style="font-weight: bold;">Менеджере</span> как файлы с именами вида <span style="font-weight: bold;">Меню типа &laquo;ХХХ&raquo;</span> (например, <span style="font-weight: bold;">Меню типа &laquo;top&raquo;</span>). Для того, чтобы перейти к редактированию меню, достаточно двойного клика по ссылке с его названием.</p>
+ 
+<p>См. также <a href="fileman_menu_edit.php.html">Меню</a></p>
+ <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

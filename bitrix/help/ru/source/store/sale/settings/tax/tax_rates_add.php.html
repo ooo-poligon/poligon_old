@@ -1,0 +1,154 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../../index.html?page=source%2Fstore%2Fsale%2Fsettings%2Ftax%2Ftax_rates_add.php.html"; </script>
+
+<title>Создание и редактирование ставок налогов</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../../docstyle.css);</style>
+
+<script src="../../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "store/sale/settings/tax/tax_rates_add.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Создание и редактирование ставок налогов])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Создание и редактирование ставок налогов</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+
+
+
+
+<h4 id="topictoctitle">В этом разделе</h4>
+<menu id="topictoc">
+<li><a href="#menu">Контекстная панель</a></li>
+<li><a href="#fields">Поля формы</a></li>
+<li><a href="#buttons">Кнопки управления</a>
+</menu>
+
+
+<p>Данная форма предназначена для создания новых и редактирования уже существующих ставок налогов.</p>
+<h4><a name="menu" id="menu">Контекстная панель</a></h4>
+<table class="tnormal">
+	<tr>
+		<th width="25%">Кнопка</th>
+		<th width="75%">Описание</th>
+</tr>
+	<tr>
+		<td>Список ставок налогов</td>
+		<td>Переход на страницу со списком ставок налогов.</td>
+</tr>
+	<tr>
+		<td>Добавить ставку</td>
+		<td>Переход к форме создания новой ставки налога. Кнопка отображается при редактировании существующей ставки.</td>
+</tr>
+	<tr>
+		<td>Удалить ставку</td>
+		<td>Удаление редактируемой ставки налога. Кнопка отображается при редактировании существующей ставки.</td>
+</tr>
+</table>
+<h4><a name="fields" id="fields">Поля формы</a></h4>
+<table class="tnormal">
+<tr>
+<th width="25%">Поле</th>
+<th width="75%">Описание</th>
+</tr>
+<tr>
+<td>ID</td>
+<td>Код ставки.</td>
+</tr>
+<tr>
+<td>Дата изменения</td>
+<td>Дата изменения ставки налога.</td>
+</tr>
+<tr>
+<td>*Налог</td>
+<td>Название налога, для которого задана данная ставка.</td>
+</tr>
+<tr>
+	<td>Активность</td>
+	<td>Признак активности ставки. Только активные ставки налога могут применяться при расчёте стоимости заказа.</td>
+</tr>
+<tr>
+<td>Тип плательщика</td>
+<td>Тип плательщика, к которому применима данная ставка налога.</td>
+</tr>
+<tr>
+<td>*Ставка</td>
+<td>Величина ставки налога.</td>
+</tr>
+<tr>
+<td>Входит в цену</td>
+<td>Указывает, включен ли данный налог в цену товара или нет.</td>
+</tr>
+<tr>
+<td>*Порядок применения</td>
+<td><font class="text">Ставки налога с одинаковым порядком применения складываются, с разными - образуют сложные
+проценты (проценты на проценты).</font></td>
+</tr>
+<tr>
+<td>**Местоположения</td>
+<td>Указываются местоположения, в которых будет применяться данная ставка налога.</td>
+</tr>
+<tr>
+	<td>**Группы местоположений</td>
+	<td>Выбирается группа(-ы), в местоположениях которой будет применяться данная ставка налогов.</td>
+</tr>
+</table>
+<p>* - Поля являются обязательными для заполнения.</p>
+<p> ** - Обязательно указание значения хотя бы одного из данных полей, т.е. должно быть выбрано <i>местоположение</i>, в котором будет применяться эта ставка налога, либо <i>группа местоположений</i>. Возможно указание значений обоих полей одновременно.</p>
+<h4><a name="buttons">Кнопки управления</a></h4>
+<table class="tnormal">
+	<tr>
+		<th width="25%"> Кнопка</th>
+		<th width="75%">Описание</th>
+</tr>
+	<tr>
+		<td>Сохранить</td>
+		<td>Сохранение внесённых изменений. Переход на страницу со списком ставок налогов.</td>
+</tr>
+	<tr>
+		<td>Применить</td>
+		<td>Применение внесённых изменений. Продолжение редактирования параметров ставки налога.</td>
+</tr>
+	<tr>
+		<td>Отменить</td>
+		<td>Отмена внесённых изменений. Возврат первоначальных значений параметров.</td>
+</tr>
+</table>
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

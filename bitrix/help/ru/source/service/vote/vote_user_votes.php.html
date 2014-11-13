@@ -1,0 +1,142 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fservice%2Fvote%2Fvote_user_votes.php.html"; </script>
+
+<title>Голосования</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/vote/vote_user_votes.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Голосования])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Голосования</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<p>Информация по голосованиям посетителей сайта. Форма позволяет просматривать результаты каждого из голосований, устанавливать флаг валидности того или иного голосования. Если у голосования флаг валидности снят, то его результаты не учитываются при построении результирующей диаграммы опроса.</p>
+ 
+<h4><b>Фильтр</b></h4>
+ 
+<p>Задание параметров отбора голосований, которые отображаются в списке. 
+  <br />
+ </p>
+ 
+<table class="tnormal"> 
+  <tbody> 
+    <tr> 	<th>Наименование параметра</th><th>Описание</th> </tr>
+   
+    <tr> <td>ID*</td> <td>ID голосования.</td> </tr>
+   
+    <tr> <td>ID посетителя*</td> <td>ID посетителя выданный модулем опросов.</td> </tr>
+   
+    <tr> <td>ID сессии*</td> <td>ID сессии выданный модулем статистики.</td> </tr>
+   
+    <tr> <td>IP адрес*</td> <td>Маска для IP адреса с которым голосовал посетитель.</td> </tr>
+   
+    <tr> <td>Дата</td> <td>Диапазон дат, за которые требуется отобрать голосования.&nbsp;</td> </tr>
+   
+    <tr> <td>Опрос*</td> <td>ID либо наименование опроса.</td> </tr>
+   
+    <tr> <td>Валидно</td> <td>Значение флага валидности голосования.</td> </tr>
+   </tbody>
+ </table>
+ 
+<p>* - для данных полей вы можете воспользоваться <a href="../../general/filter.php.html"> специальными логическими выражениями</a>.</p>
+ 
+<p>Для инициализации фильтра необходимо нажать кнопку <b>Найти</b>. Для отображения всех опросов нажмите кнопку <b>Отменить</b>.</p>
+ 
+<h4>Контекстная панель</h4>
+ 
+<table width="100%" class="tnormal"> 	 
+  <tbody> 
+    <tr> 	<th>Кнопка</th> 	<th>Описание</th> 	</tr>
+   
+    <tr> <td>Настроить</td> <td>Переход к диалогу настройки внешнего вида отчетной формы.</td> </tr>
+   
+    <tr> 	<td>Excel</td> 	<td>Экспорт данных из отображаемой таблицы в формат <span style="font-weight: bold;">MS Excel</span>.</td> 	</tr>
+   </tbody>
+ </table>
+ 
+<h4>Таблица</h4>
+ 
+<table class="wordtable"> 
+  <tbody> 
+    <tr> <th>Колонка 
+        <br />
+       флажков</th> <th>Меню 
+        <br />
+       действий</th> <th>ID</th><th>Посет. </th><th>Сессия</th> <th>IP</th> <th>Дата</th> <th>Опрос</th> <th>Вал.</th> </tr>
+   
+    <tr> <td>[1]</td> <td><img src="../../images/iblock/9df/admin_col_btn_action.png" width="30" height="20"> [2]</td> <td>[3]</td> <td>[4]</td> <td>[5]</td> <td>[6]</td> <td>[7]</td> <td>[8]</td> <td> [9] </td> </tr>
+   
+    <tr> <th>Выбрано: [10]</th> <th>Отмечено: [11]</th> <th colspan="7"> 
+        <br />
+       </th></tr>
+   </tbody>
+ </table>
+ 
+<ol> 
+  <li>Выбор посетителей для применения к ним 	действий при помощи вспомогательной 	формы внизу таблицы.</li>
+ 
+  <li>Меню, 	позволяющее просмотреть либо удалить 	голосование посетителя.</li>
+ 
+  <li>ID голосования в базе.</li>
+ 
+  <li>ID посетителя, выданный модулем опросов. </li>
+ 
+  <li>ID сессии, выданный модулем статистики. </li>
+ 
+  <li>IP адрес, с которого голосовал посетитель. </li>
+ 
+  <li>Дата голосования. </li>
+ 
+  <li>ID и название опроса. </li>
+ 
+  <li>Флаг валидности опроса. </li>
+ 
+  <li>Число выбранных из базы записей. </li>
+ 
+  <li>Количество записей, отмеченных флажками. </li>
+ </ol>
+ 
+<h4><b>Просмотр результата голосования</b></h4>
+ 
+<p>Просмотр результата голосования подразумевает отображение формы опроса с вариантами ответов, выбранными посетителем в момент голосования. Можно снять либо установить флаг валидности данного голосования.</p>
+ <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

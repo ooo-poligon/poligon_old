@@ -1,0 +1,165 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../index.html?page=source%2Fsettings%2Fsearch%2Fcomponents_2%2Fsearch_tags_cloud.php.html"; </script>
+
+<title>Облако тегов</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "settings/search/components_2/search_tags_cloud.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Компоненты 2.0::Облако тегов])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Компоненты 2.0::Облако тегов</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+<p>Компонент предназначен для вывода облака тегов - механизм поиска по тегам в статистических страницах, элементах информационных блоков, в блогах, форумах. Компонент имеет настройки различных шрифтов и цветов для тегов различной даты и различной популярности использования.</p>
+
+<h4>Пример вызова</h4>
+
+<pre class="syntax" id="xmp5A0A6F40">&lt;?$APPLICATION-&gt;IncludeComponent(
+&quot;bitrix:search.tags.cloud&quot;,
+&quot;&quot;,
+Array(
+	&quot;FONT_MAX&quot; =&gt; &quot;50&quot;, 
+	&quot;FONT_MIN&quot; =&gt; &quot;10&quot;, 
+	&quot;COLOR_NEW&quot; =&gt; &quot;3E74E6&quot;, 
+	&quot;COLOR_OLD&quot; =&gt; &quot;C0C0C0&quot;, 
+	&quot;PERIOD_NEW_TAGS&quot; =&gt; &quot;&quot;, 
+	&quot;SHOW_CHAIN&quot; =&gt; &quot;Y&quot;, 
+	&quot;COLOR_TYPE&quot; =&gt; &quot;Y&quot;, 
+	&quot;WIDTH&quot; =&gt; &quot;100%&quot;, 
+	&quot;SORT&quot; =&gt; &quot;NAME&quot;, 
+	&quot;PAGE_ELEMENTS&quot; =&gt; &quot;150&quot;, 
+	&quot;PERIOD&quot; =&gt; &quot;&quot;, 
+	&quot;URL_SEARCH&quot; =&gt; &quot;/search/index.php&quot;, 
+	&quot;TAGS_INHERIT&quot; =&gt; &quot;Y&quot;, 
+	&quot;CHECK_DATES&quot; =&gt; &quot;N&quot;, 
+	&quot;arrFILTER&quot; =&gt; &quot;all&quot;, 
+	&quot;CACHE_TYPE&quot; =&gt; &quot;A&quot;, 
+	&quot;CACHE_TIME&quot; =&gt; &quot;3600&quot; 
+	)
+);?&gt;
+</pre>
+
+<h4>Описание параметров</h4>
+<span class="content-block-head">Основные параметры</span> <dl><dt><strong>SORT</strong> </dt><dd>Укажите тип сортировки тегов: по имени (NAME) или по популярности (CNT). 
+    <br />
+  
+    <br />
+  </dd><dt><strong>PAGE_ELEMENTS</strong> </dt><dd>Параметр ограничивает количество выводимых тегов в облаке. 
+    <br />
+  
+    <br />
+  </dd><dt><strong>PERIOD</strong> </dt><dd>Период выборки тегов (дней). 
+    <br />
+  
+    <br />
+  </dd><dt><strong>URL_SEARCH</strong> </dt><dd>Путь к странице поиска (от корня сайта). Страница поиска может быть создана с помощью компонента <a href="search_page.php.html">Стандартная страница поиска</a>. 
+    <br />
+  
+    <br />
+  </dd><dt><strong>TAGS_INHERIT</strong> </dt><dd>[Y|N] Опция служит для сужения области поиска. </dd></dl>
+<br />
+<span class="content-block-head">Источник данных</span> <dl><dt><strong>CHECK_DATES</strong> </dt><dd>[Y|N]&nbsp;При отмеченной опции поиск будет осуществляться только в активных по дате документах. 
+    <br />
+  
+    <br />
+  </dd><dt><strong>arrFILTER</strong> </dt><dd>Параметр служит для ограничение области поиска: статическими файлами (main), либо форумами(forum), либо одним из типов инфоблоков, определенных в системе, либо блогами. Можно также выбрать несколько из перечисленных источников информации либо выбрать пункт <i>Не ограничивать</i>. 
+    <br />
+  Если выбрать: 
+    <ol>
+      <li>[main] Cтатические файлы, то появляется для заполнения поле <i>Путь к файлу начинается с любого из перечисленных</i>, в котором можно указать путь к разделу или файлу, где будет осуществлен поиск, например, /about/. Если поле пусто, то поиск осуществляется во всех статических файлах системы. </li>
+    
+      <li>[forum] Форумы. Ниже отображается поле со всеми форумами, созданными на сайте. Среди них можно выбрать один или несколько форумов либо выбрать вариант (все), тогда поиск будет осуществлен во всех форумах системы. </li>
+    
+      <li>Один из типов инфоблоков (например, [iblock_news] Новости). При нажатии <i>ОК</i> станут доступны все инфоблоки, созданные внутри выбранного типа. Среди них можно выбрать один или несколько инфоблоков либо выбрать вариант (все), тогда поиск будет осуществлен во всех инфоблоках этого типа. </li>
+    
+      <li>[blog] Блоги. При данном ограничении поиск будет осуществлен только в рамках блогов. </li>
+    </ol>
+  </dd></dl>
+<br />
+<span class="content-block-head">Настройки кеширования</span> <dl><dt><strong>CACHE_TYPE</strong> </dt><dd>Тип кеширования. Доступны следующие значения: 
+    <ul>
+      <li><i>А</i> - Авто 
+        <br />
+      Автоматическое кеширование. Действует при включенном автокешировании на странице Настройки кеширования (<i>Настройки &gt; Настройки продукта &gt; Автокеширование</i>) и при установленном времени кеширования в поле <b>CACHE_TIME</b> (сек.). </li>
+    
+      <li><i>Y</i> - Кешировать 
+        <br />
+      При данном типе кеширования время кеширования (<b>CACHE_TIME</b>) должно быть установлено. Настройки автокеширования не влияют на данный тип кеширования. </li>
+    
+      <li><i>N</i> - Не кешировать 
+        <br />
+      При выборе этого типа кеширование не происходит, независимо от настроек автокеширования (<i>Настройки &gt; Настройки продукта &gt; Автокеширование)</i> </li>
+    </ul>
+  </dd><dt><strong>CACHE_TIME</strong> </dt><dd>Время кеширования в секундах. </dd></dl>
+<br />
+<span class="content-block-head">Дополнительно</span> <dl><dt><strong>FONT_MAX</strong> </dt><dd>Устанавливается максимальный размер шрифта написания тегов (в пикселах). 
+    <br />
+  
+    <br />
+  </dd><dt><strong>FONT_MIN</strong> </dt><dd>Минимальный размер шрифта написания тегов в пикселах. 
+    <br />
+  
+    <br />
+  </dd><dt><strong>COLOR_NEW</strong> </dt><dd>Указывается код цвета&nbsp;тегов, дата создания которых наиболее поздняя (пример: &quot;C0C0C0&quot;).&nbsp; 
+    <br />
+  
+    <br />
+  </dd><dt><strong>COLOR_OLD</strong> </dt><dd>Указывается код цвета&nbsp;тегов, дата создания которых наиболее ранняя (пример: &quot;FEFEFE&quot;).&nbsp; 
+    <br />
+  
+    <br />
+  </dd><dt><strong>PERIOD_NEW_TAGS</strong> </dt><dd>Период, в течение которого считать тег новым (дней). 
+    <br />
+  
+    <br />
+  </dd><dt><strong>SHOW_CHAIN</strong> </dt><dd>[Y|N] При установленной опции будет показана цепочка навигации. Параметр работает, если&nbsp;<b>TAGS_INHERIT </b>принимает&nbsp;значение &quot;<strong>Y</strong>&quot;. 
+    <br />
+  
+    <br />
+  </dd><dt><strong>COLOR_TYPE</strong> </dt><dd>[Y|N]&nbsp;При установленной опции переход между цветами <strong>COLOR_NEW</strong> и <strong>COLOR_OLD</strong> будет плавным. 
+    <br />
+  
+    <br />
+  </dd><dt><strong>WIDTH</strong> </dt><dd>Ширина облака тегов (пример: &quot;100%&quot; или &quot;100px&quot;, &quot;100pt&quot;, &quot;100in&quot;). </dd></dl>
+<br />
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

@@ -1,0 +1,78 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../index.html?page=source%2Fservice%2Flearning%2Fcomponents_2%2Fcourse_contents.php.html"; </script>
+
+<title>Все материалы курса</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/learning/components_2/course_contents.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Компоненты 2.0::Все материалы курса])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Компоненты 2.0::Все материалы курса</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<p>Компонент выводит все материалы курса на одной странице. Компонент стандартный и входит в дистрибутив модуля. 
+  <br />
+ </p>
+ 
+<h4>Пример вызова</h4>
+ 
+<br />
+ 
+<pre class="syntax" id="xmp5A0A6F40">&lt;?$APPLICATION-&gt;IncludeComponent(&quot;bitrix:learning.course.contents&quot;,&quot;&quot;,Array(<br />     &quot;COURSE_ID&quot; =&gt; $_REQUEST[&quot;COURSE_ID&quot;],<br />     &quot;CHECK_PERMISSIONS&quot; =&gt; &quot;Y&quot;,<br />     &quot;SET_TITLE&quot; =&gt; &quot;Y&quot;,<br />     &quot;CACHE_TYPE&quot; =&gt; &quot;A&quot;,<br />     &quot;CACHE_TIME&quot; =&gt; &quot;3600&quot;<br />     )<br />);?&gt;</pre>
+ 
+<h4>Описание параметров</h4>
+ 
+<h5 class="graytitle">Основные параметры</h5>
+ <dl> 	<dt><span style="font-weight: bold;">COURSE_ID</span> 	</dt><dd>Идентификатор курса. </dd></dl> 
+<h5 class="graytitle">Настройки кеширования</h5>
+ <dl> 	<dt><span style="font-weight: bold;">CACHE_TYPE</span> 	</dt><dd>Тип кеширования: 	 
+    <ul> 		 
+      <li><span style="font-weight: bold;">A</span> - Авто: действует при включенном кешировании в течение заданного времени; 		</li>
+     
+      <li><span style="font-weight: bold;">Y</span> - Кешировать: необходимо определить время кеширования; 		</li>
+     
+      <li><span style="font-weight: bold;">N</span> - Не кешировать: кеширования нет в любом случае. </li>
+     </ul>
+   	</dd><dt><span style="font-weight: bold;">CACHE_TIME</span> 	</dt><dd>Время кеширования, указанное в секундах.</dd></dl> 
+<h5 class="graytitle">Дополнительные настройки</h5>
+ <dl> 	<dt><span style="font-weight: bold;">CHECK_PERMISSIONS</span> 	</dt><dd>При выборе значения <span style="font-weight: bold;">Y</span> будет проверяться право на доступ к курсу. 	</dd><dt><span style="font-weight: bold;">SET_TITLE</span> 	</dt><dd>При отмеченной опции в качестве заголовка страницы будет установлено название курса. </dd></dl><bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

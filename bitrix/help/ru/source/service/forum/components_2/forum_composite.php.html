@@ -1,0 +1,335 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../index.html?page=source%2Fservice%2Fforum%2Fcomponents_2%2Fforum_composite.php.html"; </script>
+
+<title>Форум (комплексный компонент)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/forum/components_2/forum_composite.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Компоненты 2.0::Форум (комплексный компонент)])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Компоненты 2.0::Форум (комплексный компонент)</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+
+
+<p>Данный комплексный компонент позволяет создать полноценный публичный 
+интерфейс модуля Форум. </p>
+
+<h4>Пример вызова</h4><br /><pre class="syntax" id="xmp5A0A6F40">
+&lt;?$APPLICATION-&gt;IncludeComponent("bitrix:forum","",Array(
+     "TMPLT_SHOW_MENU" =&gt; "TOP",
+     "TMPLT_SHOW_AUTH_FORM" =&gt; "LINK",
+     "TMPLT_SHOW_ADDITIONAL_MARKER" =&gt; "(new)",
+     "TMPLT_SHOW_TOP" =&gt; "",
+     "TMPLT_SHOW_BOTTOM" =&gt; "SET_BE_READ",
+     "WORD_WRAP_CUT" =&gt; "23",
+     "SEF_MODE" =&gt; "Y",
+     "CACHE_TYPE" =&gt; "A",
+     "CACHE_TIME" =&gt; "3600",
+     "SET_TITLE" =&gt; "Y",
+     "PATH_TO_AUTH_FORM" =&gt; "/auth/",
+     "USE_DESC_PAGE_TOPIC" =&gt; "Y",
+     "FORUMS_PER_PAGE" =&gt; "15",
+     "TOPICS_PER_PAGE" =&gt; "10",
+     "MESSAGES_PER_PAGE" =&gt; "3",
+     "FID" =&gt; Array("12","1","6","9","7","8"),
+     "USE_RSS" =&gt; "Y",
+     "DATE_FORMAT" =&gt; "d.m.Y",
+     "DATE_TIME_FORMAT" =&gt; "d.m.Y H:i:s",
+     "SET_NAVIGATION" =&gt; "Y",
+     "PATH_TO_SMILE" =&gt; "/bitrix/images/forum/smile/",
+     "PATH_TO_ICON" =&gt; "/bitrix/images/forum/icon/",
+     "HELP_CONTENT" =&gt; "",
+     "RULES_CONTENT" =&gt; "",
+     "SHOW_FORUMS_LIST" =&gt; "N",
+     "SHOW_FORUM_ANOTHER_SITE" =&gt; "N",
+     "WORD_LENGTH" =&gt; "50",
+     "TIME_INTERVAL_FOR_USER_STAT" =&gt; "600",
+     "SEND_MAIL" =&gt; "E",
+     "SEND_ICQ" =&gt; "A",
+     "SHOW_USER_STATUS" =&gt; "N",
+     "USER_PROPERTY" =&gt; Array(),
+     "RSS_TYPE_RANGE" =&gt; Array("RSS1","RSS2","ATOM"),
+     "RSS_FID_RANGE" =&gt; Array("12","1"),
+     "RSS_CACHE" =&gt; "1800",
+     "RSS_COUNT" =&gt; "30",
+     "RSS_TN_TITLE" =&gt; "",
+     "RSS_TN_DESCRIPTION" =&gt; "",
+     "SEF_FOLDER" =&gt; "/Test_comp/forum/",
+     "SEF_URL_TEMPLATES" =&gt; Array(
+          "index" =&gt; "index.php",
+          "list" =&gt; "forum#FID#/",
+          "read" =&gt; "forum#FID#/topic#TID#/message#MID#/",
+          "help" =&gt; "help/",
+          "rules" =&gt; "rules/",
+          "message_appr" =&gt; "message/approve/forum#FID#/topic#TID#/",
+          "message_move" =&gt; "message/move/forum#FID#/topic#TID#/message#MID#/",
+          "pm_list" =&gt; "pm/forlder#FID#/",
+          "pm_edit" =&gt; "pm/folder#FID#/message#MID#/user#UID#/#mode#/",
+          "pm_read" =&gt; "pm/folder#FID#/message#MID#/",
+          "pm_search" =&gt; "pm/search/",
+          "pm_folder" =&gt; "pm/folders/",
+          "rss" =&gt; "rss/#TYPE#/#MODE#/#IID#/",
+          "search" =&gt; "search/",
+          "subscr_list" =&gt; "subscribe/",
+          "active" =&gt; "topic/new/",
+          "topic_move" =&gt; "topic/move/forum#FID#/topic#TID#/",
+          "topic_new" =&gt; "topic/add/forum#FID#/",
+          "topic_search" =&gt; "topic/search/",
+          "user_list" =&gt; "users/",
+          "profile" =&gt; "user/#UID#/edit/",
+          "profile_view" =&gt; "user/#UID#/",
+          "user_post" =&gt; "user/#UID#/post/#mode#/",
+          "message_send" =&gt; "user/#UID#/send/#TYPE#/"
+          ),
+     "VARIABLE_ALIASES" =&gt; Array(
+          "index" =&gt; Array(),
+          "list" =&gt; Array(),
+          "read" =&gt; Array(),
+          "help" =&gt; Array(),
+          "rules" =&gt; Array(),
+          "message_appr" =&gt; Array(),
+          "message_move" =&gt; Array(),
+          "pm_list" =&gt; Array(),
+          "pm_edit" =&gt; Array(),
+          "pm_read" =&gt; Array(),
+          "pm_search" =&gt; Array(),
+          "pm_folder" =&gt; Array(),
+          "rss" =&gt; Array(),
+          "search" =&gt; Array(),
+          "subscr_list" =&gt; Array(),
+          "active" =&gt; Array(),
+          "topic_move" =&gt; Array(),
+          "topic_new" =&gt; Array(),
+          "topic_search" =&gt; Array(),
+          "user_list" =&gt; Array(),
+          "profile" =&gt; Array(),
+          "profile_view" =&gt; Array(),
+          "user_post" =&gt; Array(),
+          "message_send" =&gt; Array(),
+          )
+      )
+);?&gt;</pre>
+<h4>Описание параметров</h4>
+<h5 class="graytitle">Дополнительно</h5>
+<dl>
+
+	<dt>TMPLT_SHOW_MENU 
+	<dd>Способ отображения меню форума: 
+	<ul>
+		<li><i>BOTH</i> - сверху и снизу; 
+		<li><i>TOP</i> - только сверху; 
+		<li><i>BOTTOM</i> - только снизу; 
+		<li><i>NONE</i> - не показывать. </li></ul>
+	<dt>TMPLT_SHOW_AUTH_FORM 
+	<dd>Авторизация может быть показана в виде: 
+	<ul>
+		<li><i>LINK</i> - ссылок; 
+		<li><i>INPUT</i> - полей ввода. </li></ul>
+	<dt>TMPLT_SHOW_ADDITIONAL_MARKER 
+	<dd>Надпись, которая пишется рядом с темой, в которой есть непрочитанные вами 
+  сообщения. 
+	<dt>TMPLT_SHOW_TOP 
+	<dd>
+	<p>Надпись сверху списка форумов.</p>
+
+	<dt>TMPLT_SHOW_BOTTOM 
+	<dd>Надпись снизу списка форумов (тем). 
+	<dt><span class="syntax">WORD_WRAP_CUT</span> 
+	<dd>Действие со словом, длина которого превышает заявленную. Например: 
+	<ul>
+		<li><i>0</i> - разорвать: в слово будут вставлены разделительные символы, но 
+    при просмотре они не отображаются; 
+		<li><i>23</i> - обрезать: слово будет обрезано до 23 символов. 
+</li></ul></dd></dl>
+<h5 class="graytitle">Основные параметры</h5>
+<dl>
+
+	<dt>PATH_TO_AUTH_FORM 
+	<dd>Путь к форме авторизации. 
+	<dt>USE_DESC_PAGE_TOPIC 
+	<dd>[Y/N] Отмеченная опция позволяет использовать обратную постраничную 
+  навигацию для списка тем. 
+	<dt>FORUMS_PER_PAGE 
+	<dd>Количество форумов на одной странице. 
+	<dt>TOPICS_PER_PAGE 
+	<dd>Количество тем на одной странице. 
+	<dt>MESSAGES_PER_PAGE 
+	<dd>Количество сообщений на одной странице. 
+	<dt>SEND_MAIL 
+	<dd>Пользователи, которые могут отправлять письмо <span>(e-mail)</span> из 
+  профиля: 
+	<ul>
+		<li><i>A</i> - никто; 
+		<li><i>E</i> - авторизованные пользователи; 
+		<li><i>U</i> - все пользователи, для незарегистрированных пользователей 
+    выводить поле CAPTCHA; 
+		<li><i>Y</i> - все пользователи. </li></ul>
+	<dt>SEND_ICQ 
+	<dd>Пользователи, которые могут отправлять сообщение <span>(icq)</span> из 
+  профиля. 
+	<dt>SHOW_USER_STATUS 
+	<dd>[Y/N] При отмеченной опции будет отображаться статус пользователя в списке 
+  пользователей.</dd></dl>
+<h5 class="graytitle">Управление адресами страниц</h5>
+<dl>
+
+	<dt>SEF_MODE 
+	<dd>[Y/N] При установленном флаге включается поддержка ЧПУ и становятся 
+  доступными поля настройки адресов ЧПУ. 
+	<dt>SEF_FOLDER 
+	<dd>Каталог ЧПУ: путь до папки, с которой работает компонент. Этот путь может 
+  как совпадать с физическим путём, так и не совпадать. 
+	<dt>SEF_URL_TEMPLATES 
+	<dd>Указываются адреса следующих страниц: 
+	<ul>
+		<li><i>index</i> - страница списка форумов; 
+		<li><i>list</i> - страница списка тем форума; 
+		<li><i>read</i> - страница чтения темы форума; 
+		<li><i>help</i> - страница помощи по форумам; 
+		<li><i>rules</i> - страница правил форумов; 
+		<li><i>message_appr</i> - страница неодобренных сообщений; 
+		<li><i>message_move</i> - страница переноса сообщений; 
+		<li><i>pm_list</i> - страница списка персональных сообщений; 
+		<li><i>pm_edit</i> - страница создания (редактирования) персональных 
+    сообщений; 
+		<li><i>pm_read</i> - страница чтения персонального сообщения; 
+		<li><i>pm_search</i> - страница поиска пользователей; 
+		<li><i>pm_folder</i> - страница управления папками персональных сообщений; 
+		<li><i>rss</i> - страница экспорта данных в RSS; 
+		<li><i>search</i> - страница поиска по форумам; 
+		<li><i>subscr_list</i> - страница подписки; 
+		<li><i>active</i> - страница новых тем форумов; 
+		<li><i>topic_move</i> - страница переноса тем в форум; 
+		<li><i>topic_new</i> - страница создания новой темы форума; 
+		<li><i>topic_search</i> - страница поиска по форуму; 
+		<li><i>user_list</i> - страница списка зарегистрированных пользователей 
+    форума; 
+		<li><i>profile</i> - страница изменения профиля пользователя; 
+		<li><i>profile_view</i> - страница просмотра профиля пользователя; 
+		<li><i>user_post</i> - страница сообщений пользователей форума; 
+		<li><i>message_send</i> - страница отправки письма. </li></ul>
+	<dt>VARIABLE_ALIASES 
+	<dd>Имена переменных для управления адресами страниц форума.</dd></dl>
+<h5 class="graytitle">Настройки кеширования</h5>
+<dl>
+
+	<dt>CACHE_TYPE 
+	<dd>Тип кеширования: 
+	<ul>
+		<li><i>A</i> - Авто: действует при включенном кешировании в течение 
+    заданного времени; 
+		<li><i>Y</i> - Кешировать: для кеширования необходимо определить только 
+    время кеширования; 
+		<li><i>N</i> - Не кешировать: кеширования нет в любом случае. </li></ul>
+	<dt>CACHE_TIME 
+	<dd>Время кеширования, указанное в секундах.</dd></dl>
+<h5 class="graytitle">Дополнительные настройки</h5>
+<dl>
+
+	<dt>SET_TITLE 
+	<dd>[Y/N] При отмеченной опции будет установлен заголовок каждой страницы в 
+  соответствии с ее содержимым. 
+	<dt>FID 
+	<dd>Идентификаторы форумов, которые необходимо отобразить в публичном разделе. 
+  Если не выбран ни один форум, то будут показаны все форумы. 
+	<dt>DATE_FORMAT 
+	<dd><span>Формат показа даты</span>. 
+	<dt>DATE_TIME_FORMAT 
+	<dd><span>Формат показа даты и времени</span>. 
+	<dt>SET_NAVIGATION 
+	<dd>[Y/N] При отмеченной опции в навигационной цепочке будут отражаться 
+  переходы по страницам форума. 
+	<dt>PATH_TO_SMILE 
+	<dd>Путь относительно корня сайта к папке со смайлами. 
+	<dt>PATH_TO_ICON 
+	<dd>Путь относительно корня сайта к папке с иконками к темам. 
+	<dt>HELP_CONTENT 
+	<dd>Путь к файлу, содержащему "Помощь по форуму" (при пустом поле ввода будет 
+  использовано значение по умолчанию). 
+	<dt>RULES_CONTENT 
+	<dd>Путь к файлу, содержащему "Правила форума" (при пустом поле ввода будет 
+  использовано значение по умолчанию). 
+	<dt>WORD_LENGTH 
+	<dd>
+	<p>Максимально допустимая длина словообразующих символов, следующих друг за 
+  другом. <br />Если длина слова превысит указанное число, то символы слова будут 
+  разбавлены разрывами (при просмотре сообщений разрывы не отображаются). </p>
+
+	<dt>TIME_INTERVAL_FOR_USER_STAT 
+	<dd>Период времени (в секундах), за который отображается информация о 
+  посетителях на форуме. 
+	<dt>USER_PROPERTY 
+	<dd>Указываются свойства пользователя, которые необходимо дополнительно 
+  отобразить при просмотре его профиля. Если не выбрано ни одно из свойств, то 
+  будут показаны все имеющиеся свойства. </dd></dl>
+<h5 class="graytitle">Настройки RSS</h5>
+<dl>
+
+	<dt>USE_RSS 
+	<dd>[Y/N] При отмеченной опции становится возможным экспорт данных в формате 
+  RSS и появляются дополнительные поля настройки RSS. 
+	<dt>RSS_TYPE_RANGE 
+	<dd>Указываются необходимы форматы экспорта данных форума: RSS 0.92, RSS 2.0 и 
+  Atom 0.3. 
+	<dt>RSS_FID_RANGE 
+	<dd>Указываются идентификаторы тех форумов, на которых разрешить RSS. 
+	<dt>RSS_CACHE 
+	<dd>Время кеширования ленты, указанное в секундах. 
+	<dt>RSS_COUNT 
+	<dd>Количество элементов форума для экспорта. 
+	<dt>RSS_TN_TITLE 
+	<dd>Название ленты (при пустом поле ввода будет использовано значение по 
+  умолчанию). 
+	<dt>RSS_TN_DESCRIPTION 
+	<dd>Описание ленты (при пустом поле ввода будет использовано значение по 
+  умолчанию).</dd></dl>
+<h5 class="graytitle">Настройки администратора</h5>
+<dl>
+
+	<dt>SHOW_FORUMS_LIST 
+	<dd>[Y/N] При отмеченной опции администратору будут показаны только те форумы, 
+  которые указаны в параметре <i>FID</i>. 
+	<dt>SHOW_FORUM_ANOTHER_SITE 
+	<dd>[Y/N] При отмеченной опции администратору будут показаны форумы других 
+  сайтов. </dd></dl><bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

@@ -1,0 +1,79 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../../index.html?page=source%2Fsettings%2Fsettings%2Fcomponents2%2Fnavigation%2Fbreadcrumb.php.html"; </script>
+
+<title>Навигационная цепочка</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../../docstyle.css);</style>
+
+<script src="../../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "settings/settings/components2/navigation/breadcrumb.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Навигационная цепочка])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Навигационная цепочка</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+<p>Компонент позволяет выводить навигационную цепочку в шаблоне. Настройки этого компонента позволяют регулировать уровень вложенности разделов (корень сайта - ноль), начиная с которого начнет выводиться навигационная цепочка. Также возможно переопределить путь, для которого цепочка будет построена и т.д.</p>
+
+<h4>Пример вызова</h4>
+
+<pre class="syntax" id="xmp5A0A6F40">&lt;?$APPLICATION-&gt;IncludeComponent(
+&quot;bitrix:breadcrumb&quot;,
+&quot;.default&quot;,
+Array(
+	&quot;START_FROM&quot; =&gt; &quot;0&quot;, 
+	&quot;PATH&quot; =&gt; &quot;&quot;, 
+	&quot;SITE_ID&quot; =&gt; &quot;&quot; 
+)
+);?&gt; 
+</pre>
+
+<h4>Описание параметров</h4>
+<span class="content-block-head">Дополнительные настройки</span> <dl><dt><strong>START_FROM</strong> </dt><dd>Номер пункта, начиная с которого будет построена навигационная цепочка. В поле может быть задано числовое значение, определяющее уровень вложенности раздела на сайте, начиная с которого начнется построение навигационной цепочки. Например, 0 (ноль) в данном поле означает, что построение навигационной цепочки начнется от корня сайта. В случае если заполнено поле <i>Путь, для которого будет построена навигационная цепочка</i>, то номер пункта считается в данном пути. 
+    <br />
+  
+    <br />
+  </dd><dt><strong>PATH</strong> </dt><dd>Путь, для которого будет построена навигационная цепочка (по умолчанию, текущий путь). В данном поле можно переопределить путь, для которого будет построена навигационная цепочка. Если поле не заполнено, то навигационная цепочка будет строиться для текущего пути, в противном случае для пути, определенном в данном поле. 
+    <br />
+  
+    <br />
+  </dd><dt><strong>SITE_ID</strong> </dt><dd>Идентификатор сайта. Параметр устанавливается в случае многосайтовой версии, когда DOCUMENT_ROOT у сайтов разный. </dd></dl>
+<br />
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

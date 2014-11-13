@@ -1,0 +1,182 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fservice%2Fform%2Fform_field_edit.php.html"; </script>
+
+<title>Создание и редактирование поля</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "service/form/form_field_edit.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Создание и редактирование поля])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Создание и редактирование поля</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<h4 id="topictoctitle">В этом разделе</h4>
+ <menu id="topictoc"> 	 
+  <li><a href="#menu">Контекстная панель</a></li>
+ 	 
+  <li><a href="#edit">Форма редактирования</a></li>
+ 	<menu> 	 
+    <li><a href="#prop">Свойства</a></li>
+   	  	 
+    <li><a href="#results">Результаты</a></li>
+   	 
+    <li><a href="#filter">Фильтр</a></li>
+   	 
+    <li><a href="#note">Комментарий</a></li>
+   	</menu> 	 
+  <li><a href="#buttons">Кнопки управления</a></li>
+ </menu> 
+<p>Для создания и изменения поля формы применяется страница одного типа.</p>
+ 
+<h4><a name="menu"></a>Контекстная панель</h4>
+ На странице отображены две контекстные панели: основная, аналогичная<b> Основной контекстной панели</b> веб-формы и дополнительная, для формы редактирования полей. Дополнительная контекстная панель: 
+<br />
+ 
+<br />
+ 
+<table style="border-collapse: collapse;" class="tnormal"> 	 
+  <tbody> 
+    <tr> 		<th width="18%">Кнопка</th> 		<th width="82%">Описание</th> </tr>
+   	 	 
+    <tr> 	<td>Создать</td> 	<td>Переход на страницу создания нового поля формы. Кнопка отображается на странице редактирования уже существующего поля.</td> </tr>
+   	 
+    <tr> 	<td>Копировать</td> 	<td>Копирование текущего поля в новое. 		Кнопка отображается на странице редактирования уже существующего поля.</td> </tr>
+   	 
+    <tr> 	<td>Удалить поле 
+        <br />
+       </td> 	<td>Удаление текущего поля. 		Кнопка отображается на странице редактирования уже существующего поля.</td> </tr>
+   	 	 	 </tbody>
+ </table>
+ 
+<h4><a name="edit"></a>Форма редактирования</h4>
+ 
+<h5><a name="prop"></a>Закладка Свойства</h5>
+ 
+<table style="border-collapse: collapse;" class="tnormal"> 
+  <tbody> 
+    <tr> 	<th width="18%">Поле</th> 	<th width="82%">Описание</th> </tr>
+    
+    <tr> 	<td>Дата изменения</td> 	<td>Дата последнего изменения поля (отображается только на странице редактирования уже существующего поля).</td> </tr>
+   
+    <tr> <td>Активен</td> <td>Флаг активности поля.</td></tr>
+   
+    <tr> <td>Порядок сортировки</td> <td>Порядок сортировки поля; используется при выводе данных в таблице результатов, а также при выводе в фильтре.</td></tr>
+   
+    <tr> <td>* Символьный идентификатор</td> <td>Идентификатор поля; может состоять только из букв латинского алфавита.</td></tr>
+   
+    <tr> <td>Тип поля</td> <td>Используется для хранения данных в соответствующем формате, а также для выбора полей в фильтре: 
+        <ul> 
+          <li>текст &ndash; однострочное текстовое поле в фильтре;</li>
+         
+          <li>число &ndash; числовой интервал в фильтре;</li>
+         
+          <li>дата &ndash; интервал дат в фильтре.</li>
+         </ul>
+       </td></tr>
+   
+    <tr> <td>Заголовок</td> <td>Заголовок поля.</td></tr>
+   </tbody>
+ </table>
+ 
+<p>* - Поля, обязательные для заполнения.</p>
+
+<h4><a name="results"></a>Закладка Результаты</h4>
+ 
+<p>Закладка служит для настройки параметров показа значения поля.</p>
+ 
+<table style="border-collapse: collapse;" class="tnormal"> 	 
+  <tbody> 
+    <tr> 		<th>Поле</th> 	 <th>Описание</th> </tr>
+   	 
+    <tr> 		<td width="21%">Показать в HTML-таблице результатов</td> 		<td width="79%">Если отметить данный флаг, то значения данного поля будут отображены в HTML-таблице результатов формы.</td> </tr>
+   	 
+    <tr> 		<td>Показать в Excel-таблице результатов</td> 		<td>Если отметить данный флаг, то значения данного поля будут отображены в Excel-таблице результатов формы.</td> </tr>
+   	 
+    <tr> 		<td>Заголовок столбца в таблице</td> 		<td>Текст, который будет выводиться в таблице результатов в качестве заголовка столбца, содержащего значения данного поля.</td> </tr>
+   </tbody>
+ </table>
+ 
+<h5><a name="filter"></a>Закладка Фильтр</h5>
+ 
+<p>Форма служит для настройки полей в фильтре для поиска записей по значению данного поля.</p>
+ 
+<table style="border-collapse: collapse;" class="tnormal"> 	 
+  <tbody> 
+    <tr> 		<th>Поле</th> 		<th>Описание</th> </tr>
+   	 
+    <tr> 		<td width="18%">Поля в фильтре</td> 		<td width="82%">Типы полей, по значениям которых будет осуществляться фильтрация элементов на странице со списком форм. 
+        <br />
+       			Возможны следующие типы полей: 			 
+        <ul> 				 
+          <li> текстовое поле;</li>
+         				 
+          <li>числовой интервал;</li>
+         				 
+          <li>интервал дат;</li>
+         				 
+          <li>флаг существования.</li>
+         </ul>
+       </td> </tr>
+   	 
+    <tr> 		<td>Подпись к полю фильтра</td> 		<td>Текст, который будет выводиться рядом с выбранными полями фильтра по таблице результатов.</td> </tr>
+   </tbody>
+ </table>
+ 
+<h5><a name="note"></a>Закладка Комментарий</h5>
+ 
+<p>Форма позволяет создать служебный комментарий к полю.</p>
+ 
+<h4><a name="buttons"></a>Кнопки управления</h4>
+ 
+<table style="border-collapse: collapse;" class="tnormal"> 
+  <tbody> 
+    <tr> <th width="18%" align="left">Кнопка</th> <th width="82%">Описание</th></tr>
+   
+    <tr> <td align="left">Сохранить</td> <td>Сохранение параметров поля. Переход к списку полей формы.</td> </tr>
+   
+    <tr> <td align="left">Применить</td> <td>Сохранение параметров поля. Продолжение редактирования.</td> </tr>
+   
+    <tr> <td align="left">Отменить</td> <td>Отмена внесённых изменений. Возврат первоначальных значений параметров.</td> </tr>
+   </tbody>
+ </table>
+ <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

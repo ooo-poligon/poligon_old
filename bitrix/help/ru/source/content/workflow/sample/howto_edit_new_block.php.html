@@ -1,0 +1,68 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../index.html?page=source%2Fcontent%2Fworkflow%2Fsample%2Fhowto_edit_new_block.php.html"; </script>
+
+<title>Организация поэтапного редактирования новостного блока</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "content/workflow/sample/howto_edit_new_block.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Организация поэтапного редактирования новостного блока])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Организация поэтапного редактирования новостного блока</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<p>Пользователям могут быть даны права на создание и редактирование новостных сообщений, корректорам на правку созданных сообщений, а права на публикацию новостей могут быть предоставлены редактору или администратору. Для реализации такой схемы необходимо выполнить следующее:</p>
+ 	 
+<ol> 	 
+  <li>Создать группы пользователей <b>Авторы,</b> <b>Корректоры</b> и <b>Редакторы</b>: <i>Настройки &gt; Пользователи &gt; Группы пользователей</i>.</li>
+ 	 
+  <li>Добавить в эти группы всех пользователей, которым будет разрешено соответственно создавать, редактировать и публиковать новости. </li>
+ 	 
+  <li>В разделе <i>Контент &gt; Документооборот &gt; Статусы</i> распределите права на управление сообщениями новостного блока так, чтобы сотрудники группы <b>Авторы</b> могли только&nbsp; создавать и редактировать документ (переводить документ в статус <span style="font-weight: bold;">Draft</span>), сотрудники группы <b>Корректоры</b> могли только редактировать документ (Переводить его в статус <b>Ready</b>). Право перевода документа в статус&nbsp; опубликовано предоставьте группе <b>Редакторы</b>.&nbsp; </li>
+ 	 
+  <li>Предоставьте всем группам право <b>Документооборот</b> на раздел сайта, в котором выполняется публикация новостного блока. </li>
+ </ol>
+ 
+<p>В результате сотрудники группы <b>Авторы</b> смогут только создавать или изменять новости, но не смогут публиковать их на сайте. <b>Корректоры</b> смогут править документ, но не публиковать.&nbsp; <b>Редакторы</b> смогут делать все, в том числе и публиковать. Публикация всегда будет подтверждаться редактором или администратором сайта.</p>
+ 
+<p>Для того чтобы разрешить публикацию новости, редактору необходимо зайти в раздел редактирования новостей и изменить статус сообщения (с <span style="font-weight: bold;">Ready</span> на <span style="font-weight: bold;">Published</span>).</p>
+ <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

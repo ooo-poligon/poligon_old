@@ -1,0 +1,160 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fcontent%2Fworkflow%2Fworkflow_status_list.php.html"; </script>
+
+<title>Статусы</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "content/workflow/workflow_status_list.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Статусы])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Статусы</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<h4 id="topictoctitle">В этом разделе</h4>
+ <menu id="topictoc"> 	 
+  <li><a href="#filter">Форма поиска</a> 	</li>
+ 
+  <li><a href="#table">Список статусов</a> 	</li>
+ 
+  <li><a href="#example">Пример использования статусов</a></li>
+ </menu> 
+<p>На странице <b>Статусы документов</b> (<i>Контент &gt; Документооборот &gt; Статусы</i>) представлены возможные статусы документов, а также элементов информационных блоков. Статусы используются для разделения &nbsp;работы над документами на определённые этапы, за каждый из которых отвечает один, либо группа пользователей. Статус <code>#1</code> является конечным в цепочке документооборота, он зарезервирован и не подлежит удалению. При достижении документом данного статуса все изменения, выполненные в документе, вступают в силу (т.е. документ публикуется).</p>
+ 
+<h4><a name="filter"></a>Форма поиска</h4>
+ 
+<p>Форма позволяет выполнить поиск статусов документов в соответствии с указанными условиями.</p>
+ 
+<table class="tnormal" style="border-collapse: collapse;"> 	 
+  <tbody> 
+    <tr> 		<th width="18%">Поле</th> 		<th width="82%">Описание</th></tr>
+   	 
+    <tr> 		<td>ID</td> 		<td>Идентификатор статуса (возможно перечисление через запятую).</td></tr>
+   	 
+    <tr> 		<td>Активен</td> 		<td>Признак активности статуса.</td></tr>
+   	 
+    <tr> 		<td>Заголовок</td> 		<td>Заголовок статуса.</td></tr>
+   	 
+    <tr> 		<td>Описание</td> 		<td>Предполагаемый текст описания статуса.</td></tr>
+   	 
+    <tr> 		<td>Документов</td> 		<td>Количество документов, находящихся в указанных статусах. Количество документов может быть указано как в виде диапазона, так и одним числом.</td></tr>
+   	 
+    <tr> 		<td>Логика между полями</td> 		<td>Установление логики между полями формы поиска.</td></tr>
+   
+    <tr><td colspan="1">Показать все условия</td><td colspan="1">Отображение всех полей одновременно</td></tr>
+  
+    <tr><td colspan="1">Скрыть все условия</td><td colspan="1">Сокрытие всех полей</td></tr>
+  </tbody>
+ </table>
+ 
+<p>Чтобы отобрать статусы документов по заданным критериям поиска, нажмите кнопку <span style="font-weight: bold;">Найти</span>. Для отображения всех статусов нажмите кнопку <span style="font-weight: bold;">Отменить</span>.</p>
+ 
+<h4><a name="menu"></a>Контекстная панель</h4>
+ 
+<table class="tnormal" style="border-collapse: collapse;"> 	 
+  <tbody> 
+    <tr> 		<th width="18%">Кнопка</th> 		<th width="82%">Описание</th></tr>
+   	 
+    <tr> 		<td>Добавить</td> 		<td>Переход к форме <a href="workflow_status_edit.php.html">создания</a> нового статуса.</td></tr>
+   	 
+    <tr> 		<td>Настроить</td> 		<td>Позволяет перейти к диалогу настройки внешнего вида отчетной формы.</td></tr>
+   	 
+    <tr> 		<td>Excel</td> 		<td>Экспортирует данные из отображаемой таблицы в формат <span style="font-weight: bold;">MS Excel</span>.</td></tr>
+   </tbody>
+ </table>
+ 
+<h4><a name="table"></a>Список статусов </h4>
+ 
+<table class="tnormal" style="border-collapse: collapse;"> 	 
+  <tbody> 
+    <tr> 		<th width="18%">Поле</th> 		<th width="82%">Описание</th></tr>
+   	 
+    <tr> 		<td>Колонка флажков</td> 		<td>Поле предназначено для выбора статусов, к которым предполагается применить какое-либо правило или действие.</td></tr>
+   	 
+    <tr> 		<td>Действия</td> 		<td>Действия над статусом: 			 
+        <ul> 				 
+          <li><b>Изменить</b>- <a href="workflow_status_edit.php.html">редактирование</a> параметров статуса; 				</li>
+         
+          <li><b>Удалить -</b>удаление статуса. Удаление конечного статуса (с 				<b>ID </b>равным<b> 1</b>) невозможно. </li>
+         </ul>
+       </td></tr>
+   	 
+    <tr> 		<td>ID</td> 		<td>Идентификатор статуса.</td></tr>
+   	 
+    <tr> 		<td>Дата изм.</td> 		<td>Дата последнего изменения статуса.</td></tr>
+   	 
+    <tr> 		<td>Акт.</td> 		<td>Признак активности статуса. Неактивный статус не может быть применен к документу.</td></tr>
+   	 
+    <tr> 		<td>Сорт.</td> 		<td>Относительный &quot;вес&quot;, влияющий на положение статуса в общем списке.</td></tr>
+   	 
+    <tr> 		<td>Заголовок</td> 		<td>Заголовок статуса.</td></tr>
+   	 
+    <tr> 		<td>Документов</td> 		<td>Количество документов, находящихся в данном статусе. Ссылка с количеством документов позволяет перейти к списку документов, находящихся в данном статусе.</td></tr>
+   </tbody>
+ </table>
+ 
+<h4><a name="example"></a>Пример использования статусов</h4>
+ 
+<p>У вас есть группа авторов, которые пишут статьи на сайте. Также у вас есть главный редактор, проверяющий эти статьи и публикующий их на сайте. Для организации документооборота по данной схеме вам необходимо завести 2 дополнительных статуса:</p>
+ 
+<ul> 	 
+  <li><b>Draft</b> (черновик); 	</li>
+ 
+  <li><b>Ready</b> (готов к публикации). </li>
+ </ul>
+ 
+<p>Авторам необходимо дать возможность редактировать документы в статусе <b>Draft</b> и переводить их в статус <b>Ready</b>. Главному редактору необходимо дать возможность редактировать документы в статусе <b>Ready</b>, а также переводить их в статусы <b>Draft</b> (отправить на доработку) и в статус #1, <b>Published</b> (т.е. публиковать их).</p>
+ 
+<p>Использование шаблонов почтовых сообщений позволяет каждый раз при изменении статуса документа автоматически создавать почтовое сообщение и отправлять данное сообщение ответственному пользователю. Например, сообщения о переводе документов в статус <b>Ready</b> могут направляться главному редактору.</p>
+ 
+<p>Для того чтобы адрес получателя почтового сообщения подставлялся в письмо автоматически, в поле <b>TO (Кому)</b> почтового шаблона следует использовать следующие переменные:</p>
+ 
+<ol> 	 
+  <li>Письмо отсылается на адрес создателя документа (<code style="font-style: italic;">#CREATED_BY_EMAIL#</code>). 	</li>
+ 
+  <li>Письмо отсылается на все адреса администраторов документооборота (<code style="font-style: italic;">#ADMIN_EMAIL#</code>). 	</li>
+ 
+  <li>Письмо отсылается всем, кто принимал участие в редактировании документа в его текущем статусе (<code style="font-style: italic;">#BCC#</code>). </li>
+ </ol>
+ 
+<p>Если в настройках текущего статуса документа указано <span style="font-weight: bold;">Оповестить всех, кто имеет право редактировать (либо просматривать) документ при достижении им данного статуса</span>, то письмо также будет отослано всем пользователям, входящим в группы, для которых установлено право редактировать документ в данном статусе (<code style="font-style: italic;">#BCC#</code>).</p>
+ <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

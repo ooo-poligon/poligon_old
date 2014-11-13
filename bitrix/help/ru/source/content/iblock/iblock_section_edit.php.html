@@ -1,0 +1,156 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fcontent%2Fiblock%2Fiblock_section_edit.php.html"; </script>
+
+<title>Создание и изменение разделов</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "content/iblock/iblock_section_edit.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Создание и изменение разделов])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Создание и изменение разделов</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+<h4 id="topictoctitle">В этом разделе</h4>
+<menu id="topictoc">
+  <li><a href="#menu" >Контекстная панель</a> </li>
+
+  <li><a href="#form" >Форма редактирования</a> <menu>
+      <li><a href="#sect" >Параметры раздела</a> </li>
+    
+      <li><a href="#extra" >Дополнительно</a> </li>
+    
+      <li><a href="#extra_prop" >Доп. свойства</a> </li>
+    </menu></li>
+
+  <li><a href="#buttons" >Кнопки управления</a> </li>
+</menu>
+<p>Если при создании типа информационного блока вы указали, что блок может содержать разделы, эта форма открывается всякий раз, когда вы создаете новый раздел или редактируете существующий. Часть полей не отображается при создании раздела. 
+  <br />
+</p>
+
+<p>Для добавления раздела необходимо выполнить команду <i>Контент &gt; Название инфоблока</i> и перейти в нужный раздел инфоблока в котором надо создать подраздел. После этого нажмите на кнопку <b>Добавить раздел</b> на <b>Контекстной панели</b>. 
+  <br />
+</p>
+
+<p>Для редактирования раздела в колонке команд выберите <b>Изменить</b>. 
+  <br />
+</p>
+
+<h4><a name="menu"></a>Контекстная панель</h4>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th width="18%">Кнопка</th><th width="82%">Описание</th></tr>
+  
+    <tr><td>Список разделов </td><td>Переход на страницу со <a href="iblock_section_admin.php.html">списком разделов</a> инфоблока. </td></tr>
+  
+    <tr><td>Удалить раздел </td><td>Удаление редактируемого раздела. </td></tr>
+  </tbody>
+</table>
+
+<h4><a name="form"></a>Форма редактирования </h4>
+
+<p>Для создания нового раздела просто заполните поля формы и нажмите кнопку <b>Сохранить</b>.</p>
+
+<h5><a name="sect"></a>Закладка &quot;Раздел&quot; </h5>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th width="18%">Поле</th><th width="82%">Описание</th></tr>
+  
+    <tr><td>ID</td><td>Идентификатор раздела в системе. Отображается в режиме редактирования раздела. </td></tr>
+  
+    <tr><td>Изменена</td><td>Дата и время последнего изменения параметров раздела. </td></tr>
+  
+    <tr><td>Запись активна</td><td>Признак активности раздела информационного блока.</td></tr>
+  
+    <tr><td>Родительский раздел</td><td>Раздел, дочерним элементом которого является этот раздел.</td></tr>
+  
+    <tr><td>*Название</td><td>Название раздела.</td></tr>
+  
+    <tr><td>Изображение</td><td>Изображение, ассоциируемое с данным разделом информационного блока. Для выбора изображения используйте кнопку <span style="FONT-WEIGHT: bold">&quot;Обзор&quot;</span>. </td></tr>
+  
+    <tr><th colspan="2">Описание</th></tr>
+  
+    <tr><td>Text / HTML</td><td>Выбор формата создания и вывода описания раздела инфоблока.</td></tr>
+  
+    <tr><td>Использовать визуальный редактор</td><td>Если эта опция включена, при использовании формата HTML отображается панель управления, содержащая опции форматирования текста.</td></tr>
+  
+    <tr><td>Описание раздела</td><td>Информационно насыщенное описание раздела, как оно показывается в публичной части.</td></tr>
+  </tbody>
+</table>
+
+<h5><a name="extra"></a>Закладка &quot;Дополнительно&quot; </h5>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th width="18%">Поле</th><th width="82%">Описание</th></tr>
+  
+    <tr><td>Индекс сортировки</td><td>Относительный &quot;вес&quot;, влияющий на положение раздела в списке.</td></tr>
+  
+    <tr><td>Внешний код </td><td>Символьный код, используемый для связи раздела с внешним источником данных. Поле отображается при включенной опции <a href="settings.php.html#show_code">Показывать код загрузки из внешних источников</a> в настройках модуля <span style="FONT-WEIGHT: bold">Информационные блоки</span>.</td></tr>
+  
+    <tr><td>Символьный код</td><td>Мнемонический код раздела, состоящий из латинских символов. Используется при выборе разделов и элементов разделов для показа в публичной части сайта. </td></tr>
+  
+    <tr><td>Детальная картинка </td><td>Детальное изображение, ассоциируемое с данным разделом информационного блока. </td></tr>
+  </tbody>
+</table>
+
+<h5><a name="extra_prop"></a>Закладка &quot;Доп. свойства&quot; </h5>
+
+<p>На закладке имеется ссылка <b>Добавить пользовательское свойство</b> для добавления нового поля для раздела инфоблока. По ссылке осуществляется переход к <a href="../../settings/settings/userfield_edit.php.html">форме создания нового поля</a>. </p>
+
+<h4><a name="buttons"></a>Кнопки управления </h4>
+
+<table class="tnormal">
+  <tbody>
+    <tr><th width="18%">Поле</th><th width="82%">Описание</th></tr>
+  
+    <tr><td>Сохранить </td><td>Сохранение параметров раздела инфоблока. Возврат к списку разделов информационного блока. </td></tr>
+  
+    <tr><td>Применить</td><td>Сохранение внесённых изменений. Продолжение редактирования параметров раздела информационного блока. </td></tr>
+  
+    <tr><td>Отменить</td><td>Отмена внесённых изменений. Возврат первоначальных значений параметров. </td></tr>
+  </tbody>
+</table>
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

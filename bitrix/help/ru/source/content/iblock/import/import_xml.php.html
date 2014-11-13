@@ -1,0 +1,92 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../../index.html?page=source%2Fcontent%2Fiblock%2Fimport%2Fimport_xml.php.html"; </script>
+
+<title>Импорт в формате XML</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../../docstyle.css);</style>
+
+<script src="../../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "content/iblock/import/import_xml.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Импорт в формате XML])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Импорт в формате XML</h1></div></div>
+<div id="pagebody" valign="bottom">
+ 
+<p>Форма импорта (<i>Контент &gt; Информ. блоки &gt; Импорт &gt; XML</i>) предназначен для загрузки данных в формате <b>XML</b>, хранящихся в отдельном файле, в информационный блок. </p>
+ 
+<table class="tnormal"> 	 
+  <tbody> 
+    <tr> 		<th width="22%">Поле</th> 		<th width="78%">Описание</th></tr>
+   	 
+    <tr> 		<td><nobr>*Файл для загрузки </nobr></td> 		<td>С помощью кнопки <b>Открыть&hellip;</b> выберите файл в формате <span style="font-weight: bold;">XML</span> с сервера или загрузите с локального компьютера. </td></tr>
+   	 
+    <tr> 		<td>*Тип информационного блока </td> 		<td>Выберите информационный блок, в который будет выполняться загрузка данных. 
+        <br />
+       
+        <br />
+       <b>Примечание</b>: если загружаемый инфоблок уже существует в системе, то независимо от выбранного типа инфоблока и сайтов, он заново загружен не будет. Имеющиеся элементы будут обновлены, новые - добавлены. Над теми элементами, отсутствующими в файле, будет совершено действие, указанное в поле <span style="font-weight: bold;">Действия над элементами, которых нет в файле</span>. 
+        <br />
+       Если же такого инфоблока в системе нет, то он будет создан в указанном типе и привязан к выбранным сайтам. </td></tr>
+   	 
+    <tr> 		<td>*Сайты, к которым будет привязан информационный блок </td> 		<td>Выберите сайты, к которым будет привязан инфоблок (если будет создаваться новый инфоблок). </td></tr>
+   	 
+    <tr> 		<td>Действия над элементами, которых нет в файле </td> 		<td>Доступны действия: 			 
+        <ul> 				 
+          <li>ничего; 				</li>
+         
+          <li>либо элементы будут деактивированы; 				</li>
+         
+          <li>либо они будут удалены. </li>
+         </ul>
+       </td></tr>
+   	 
+    <tr> 		<td>Длительность шага в секундах </td> 		<td>Количество секунд выполнения шага импорта. Если указано <span style="font-weight: bold;">&quot;0&quot;</span>, то импорт инфоблока будет осуществлен за один шаг. </td></tr>
+   	 
+    <tr> 		<td>Автоматически генерировать картинку анонса </td> 		<td>Если в описании элемента инфоблока имеется изображение, то при отмеченной опции из него будет сгенерирована картинка анонса, используя 			максимально допустимые ширину и высоту.</td></tr>
+   	 
+    <tr> 		<td>Максимально допустимая ширина </td> 		<td>Максимально допустимая ширина картинки анонса.</td></tr>
+   	 
+    <tr> 		<td>Максимально допустимая высота </td> 		<td>Максимально допустимая высота картинки анонса.</td></tr>
+   </tbody>
+ </table>
+ * - Поля, обязательные для заполнения. 
+<p>При нажатии на кнопку <span style="font-weight: bold;">Импортировать</span> начинается импорт инфоблока и над формой настроек отображается ход процесса загрузки. Кнопка <span style="font-weight: bold;">Остановить импорт</span> служит для остановки процесса загрузки информационного блока при необходимости. После того, как импорт завершен, на данной странице выводится соответствующее сообщение. </p>
+ <bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>

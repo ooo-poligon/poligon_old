@@ -1,0 +1,147 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<META name="keywords" content="Битрикс управление сайтом документация PHP код страница как сделать сайт на PHP">
+<script type="text/JavaScript"> if (window.name != "content") window.location = "../../../index.html?page=source%2Fstatistic%2Fsearch_engines%2Fautodetect_list.php.html"; </script>
+
+<title>Автодетект</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="Content-Language" content="ru">
+
+<style>@import url(../../docstyle.css);</style>
+
+<script src="../../wow.js"></script>
+
+<script type="text/JavaScript">
+top.pageid = "statistic/search_engines/autodetect_list.php.html";
+</script>
+
+</head>
+
+<body id="dxBody" topMargin="0" onload="bodyLoad()">
+<!-- this header was added by chm2web -->
+
+<div id="pagetop">
+<div id="projectnamebanner">
+<table class="projectnametable" cellSpacing="0">
+	<tr>
+		<td>1С-Битрикс: Управление сайтом</td>
+		<td class="feedback"><a 
+      href="mailto:support@bitrixsoft.ru?subject=Вопрос%20по%20документации%20(Топик [Автодетект])">Отправить 
+      отзыв</a> по этому разделу&nbsp;&nbsp;&nbsp;</td></tr>
+</table></div>
+<div id="pagetitlebanner">
+<h1 class="Banner">Автодетект</h1></div></div>
+<div id="pagebody" valign="bottom">
+
+
+
+
+<p>Данная страница предназначена для поиска в накопленных данных статистики новых для системы UserAgent’ов и определения их к классу браузеров или поисковиков.  </p>
+
+<p>Отнесение UserAgent’а к классу браузеров означает, что в дальнейшем данный UserAgent будет исключен из рассмотрения на странице <i>Автодетект</i>, и все посетители, заходящие на сайт с таким UserAgent’ом, будут
+регистироваться как и раньше, а именно - как обычные посетители: для них будет создан профиль, записаны сессии, хиты, зафиксированы переходы по рекламным кампаниям, события и т.д. </p>
+
+<p>В случае, если UserAgent отнесен к классу поисковиков, все заходы на сайт с данным UserAgent’ом будут считаться заходами поискового робота с целью индексации содержимого сайта и, соответственно, будут
+зарегистрированы как поисковики: для них будут сохранены лишь адреса проиндексированных страниц.</p>
+
+<h4>Общие рекомендации по использованию</h4>
+<ol>
+	<li>Если вам неизвестен тот или иной UserAgent, то прежде, чем его классифицировать, лучше поискать этот UserAgent в какой-либо поисковой системе интернета.</li>
+	<li>Обращайте внимание на длину и уникальность добавляемой маски для поисковика. В противном случае, маска может совпасть с каким-либо браузером, и все посетители, заходящие на сайт с данным браузером, будут
+		обработаны как поисковики.</li>
+	<li>Если в имени UserAgent'а встречается <i>bot</i>, <i>robot</i>, или <i>crawler</i>, то
+		его с большой долей вероятности можно отнести к роботу
+		поисковой системы (например: Googlebot, Gaisbot, GrigorBot, MetaTagRobot, metacrawler и т.д.).</li>
+	<li>Если UserAgent является программой для скачивания, его лучше отнести к классу браузеров, т.к. в противном случае не будут фиксироваться события по скачиванию файлов.</li>
+	<li>Если UserAgent является offline-браузером или какую-либо иную утилиту для получения web-содержимого, его лучше отнести к классу браузеров.</li>
+	<li>Если UserAgent неизвестен и не определён, его лучше не относить ни к одному из классов.</li>
+</ol>
+
+<p>Для добавления неизвестных UserAgent'ов в систему, выберите
+требуемую опцию в колонках <b>Поисковик</b> или <b>Браузер</b>
+требуемых&nbsp; UserAgent'ов, затем выделите их флажками в колонке
+флажков и нажмите кнопку <b>Добавить</b> панели действий.&nbsp;</p>
+
+<h4>Фильтр</h4>
+
+<table class="tnormal">
+<tr>
+	<th>Параметр</th><th>Описание</th>
+</tr>
+<tr>
+<td>UserAgent<font color="#008000">*</font></td>
+<td>UserAgent посетителя сайта.</td>
+</tr>
+<tr>
+<td>Искать за текущий день</td>
+<td>Позволяет просмотреть данные за текущий день, за остальные дни
+или все.</td></tr>
+<tr>
+<td>Сессий</td>
+<td>Отбор записей по интервалу количества сессий (количество заходов посетителей с тем или иным UserAgent’ом).</td></tr></table>
+
+<p><font color="#008000">*</font> - для данных полей вы можете воспользоваться <a href="../../general/filter.php.html">специальными логическими
+выражениями</a>.</p>
+
+<p>Для того чтобы установить фильтр по заданным критериям поиска, нажмите кнопку
+<b>Найти</b>. Для
+отображения всех данных нажмите кнопку <b>Отменить</b>.</p>
+
+<h4><b>Таблица</b></h4>
+
+<table class="wordtable">
+<tr>
+	<th>Колонка<br>флажков</th>
+	<th>UserAgent</th><th>Сессий
+<th>Добавляемая маска</th>
+<th>Поисковик</th>
+<th>Браузер</th>
+</tr>
+<tr>
+<td>[1]</td>
+<td>[2]</td>
+<td>[3]</td>
+<td>[4]</td>
+<td>[5]</td>
+<td>[6]</td></tr>
+<tr>
+<th>Выбрано [7]</th>
+<th>Отмечено [8]</th>
+<th colspan="4"></th>
+</tr>
+</table>
+
+<ol>
+<li>Поле предназначено для выбора UserAgent’ов, к которым
+	предполагается применить какое-либо действие из панели
+	действий, расположенной ниже таблицы.
+<li>Неизвестный системе UserAgent. 
+<li>Количество заходов (сессий) с данным UserAgent’ом. 
+<li>Добавляемая маска в таблицу поисковиков либо браузеров; в маске допускается использование:
+	<b>%</b> – 0 или более любых символов; <b> _</b> – один любой символ. 
+<li>Радиокнопка: отнести UserAgent к классу поисковиков. 
+<li>Радиокнопка: отнести UserAgent к классу браузеров. 
+<li>Количество записей, выбранных из базы данных.  
+<li>Количество записей, отмеченных в колонке флажков.</li></ol>
+
+<h4>Пример таблицы</h4><br>
+<img src="../../images/iblock/ade/autodetect.png" width="520" height="238">
+
+<bitrix:sys name="feedbackform"></bitrix:sys>
+
+<table id="topicfooter">
+	<tr>
+		<td>© «Битрикс», 2001-2008, «1C-Битрикс», 2008</td>
+		<td style="width: 50px">&nbsp;</td>
+		<td style="text-align: right"><a href="http://www.1c-bitrix.ru" target="_blank">1С-Битрикс: Управление сайтом</a></td></tr>
+</table></div>
+<script type="text/JavaScript" src="../../../files/supply.js"></script>
+<script type="text/JavaScript">
+var fe = FindFrame("toc", top);
+if ((fe != null) && (top.jstree != null)) {
+  if (top.FITEMS[top.pagenum] != top.pageid)
+    top.jstree.OpenTreeNode("source/" + top.pageid);
+}
+</script>
+</body></html>
