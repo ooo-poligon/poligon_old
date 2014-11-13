@@ -1,0 +1,73 @@
+/* =================== file dialog css =================*/
+div.fd_window{border : 1px solid #848484;background-color: #ffffff;}
+td.fd_det_view_header{height: 18px !important;background-color: #D7D7D7 !important;}
+div.preview_cont{margin: 4px;float: left;border : 1px solid #C6C6C6;}
+div.preview_cont_sel{margin: 4px;float: left;border : 1px solid #C6C6C6;background-color: #F2F2F2;}
+.fd_select{font-size: 11px;background-color: #F4F4F4;}
+.fd_input {background-color: #F4F4F4; width: 320px; font-size:12px !important;}
+table#add2menu_table td, table#add2menu_table_check td {padding: 8px !important;}
+table.fd_tab_title td {padding:5px !important;}
+table.fd_tab_title td.title {color:#494949 !important; font-family:Arial,helvetica,sans-serif !important; font-size:12px !important; font-weight:bold !important; padding:5px 0px !important; width:100% !important; }
+table.fd_tab_title td.delimiter {background-image: url(/bitrix/images/main/file_dialog/title_dot.gif) !important; background-position:left top !important; background-repeat:repeat-x !important; height:5px !important; padding:0px !important; }
+#BX_file_dialog  div.site_selector_div span{color: #666633 !important; margin: 3px 1px 1px 1px !important;}
+
+#BX_file_dialog div.site_selector_div{border: 1px solid #ADADAD !important; padding-top: 1px !important; color: #666633 !important; width: 26px !important; height: 16px !important; background-position: -203px -22px !important; }
+
+.fd_iconkit{background-image: url(/bitrix/images/main/file_dialog/_fd_iconkit.gif) !important; background-repeat: no-repeat !important;}
+
+#BX_file_dialog img.go_button{background-position: -104px -2px !important; width: 16px !important; height: 16px !important;}
+#BX_file_dialog img.path_back_dis{background-position: -164px -22px !important; width: 12px !important; height: 16px !important;}
+#BX_file_dialog img.path_back{background-position: -164px -2px !important; width: 12px !important; height: 16px !important;}
+#BX_file_dialog img.path_forward_dis{background-position: -185px -22px !important; width: 12px !important; height: 16px !important;}
+#BX_file_dialog img.path_forward{background-position: -185px -2px !important; width: 12px !important; height: 16px !important;}
+#BX_file_dialog img.dir_path_up{background-position: -123px -2px !important; width: 16px !important; height: 16px !important;}
+#BX_file_dialog img.dir_path_up_dis{background-position: -143px -2px !important; width: 16px !important; height: 16px !important;}
+#BX_file_dialog img.dir_path_root{background-position: -43px -1px !important; width: 16px !important; height: 16px !important;}
+#BX_file_dialog img.new_dir{background-position: -82px -2px !important; width: 18px !important; height: 16px !important;}
+#BX_file_dialog img.new_dir_dis{background-position: -62px -2px !important; width: 18px !important; height: 16px !important;}
+#BX_file_dialog img.refresh{background-position: -231px -3px !important; width: 18px !important; height: 16px !important;}
+#BX_file_dialog img.view_selector{background-position: -205px -3px !important; width: 22px !important; height: 16px !important;}
+#BX_file_dialog img.sort_up{background-position: -3px -2px !important; width: 18px !important; height: 17px !important;}
+#BX_file_dialog img.sort_down{background-position: -23px -2px !important; width: 18px !important; height: 17px !important;}
+
+/*--  Tabs   --*/
+.fd_tabs_0a{background-position: -2px 0px !important;}
+.fd_tabs_0p{background-position: -9px 0px !important;}
+.fd_tabs_a{background-image: url(/bitrix/images/main/file_dialog/tabs/a.gif) !important; background-repeat:repeat-x !important; color: #242424 !important;}
+.fd_tabs_p{background-image: url(/bitrix/images/main/file_dialog/tabs/p.gif) !important; background-repeat:repeat-x !important; color: #393939 !important;}
+.fd_tabs_pd{background-image: url(/bitrix/images/main/file_dialog/tabs/p.gif) !important; background-repeat:repeat-x !important; color: #a8a8a8 !important;}
+.fd_tabs_0{background-image: url(/bitrix/images/main/file_dialog/tabs/0.gif) !important; background-repeat:repeat-x !important;}
+.fd_tabs_ap{background-position: -40px 0px !important;}
+.fd_tabs_pa{background-position: -52px 0px !important;}
+
+td.windowStandartElement span.title,span.treeStandartElement {color:#242424; margin:1px; padding:1px;}
+td.windowSelectedElement span.title, span.treeSelectedElement{background-color: #ECECEC; color:black; border: 1px solid #F0F0F0; padding:1px;}
+table.bx-file-dialog {width:750px !important;height:476px; !important; padding:0px !important; border:0 !important;}
+table.tab-content-table {border-collapse:collapse !important; width:100% !important; height:27px !important; border-spacing:0 !important; padding:0 !important;}
+table.bx-file-dialog td.tree-node-folding {padding: 4px 1px 0px 1px !important; vertical-align: top !important; }
+table.bx-file-dialog td.tree-node-icon {padding: 1px 1px 0px 1px !important; vertical-align:top !important;}
+table.bx-file-dialog td.tree-node-name {padding: 1px 1px 0px 2px !important; cursor:default !important; vertical-align:top !important;}
+table.bx-file-dialog td.bx-valign-top {vertical-align:top !important;}
+
+.fd_tabs_a0{background-position: -20px 0px !important;}
+.fd_tabs_p0{background-position: -30px 0px !important;}
+
+div.editor_dialog {background-color:#F4F4F4; border:1px solid #A9A9A9;}
+div.editor_dialog td {padding:0px !important; font-size:11px !important;}
+div.editor_dialog div.content {height:100%; overflow:hidden;}
+/*title*/
+div.editor_dialog div.title {background-color:#23468A; background-image:url(images/fileman/editor_dialog/title_bg.gif); background-repeat:repeat-x; background-position:left top; border-bottom:1px solid #A9A9A9;}
+div.editor_dialog div.title td.title-text {font-size:11px !important; font-weight:bold !important; color:#EEF1F7 !important; padding:3px !important; cursor:move !important; vertical-align:top !important;}
+div.editor_dialog a.close {display:block; width:13px; height:13px; background-image:url(images/fileman/editor_dialog/close.gif); overflow:hidden; margin:3px; background-repeat:no-repeat; background-position:center;}
+tr.heading_dialog td {color:#525355 !important; text-align:center !important; font-weight:bold !important; background-color:#E0E4F1 !important;}
+table.dialogprops tr td {padding: 5px 0px 5px 0px !important;}
+
+td.popupmenu {border:1px solid #B6B6B6 !important; padding:1px !important; background-color:#FCFCFC !important; background-image:url(/bitrix/themes/.default/images/menu_gutter.gif) !important; background-repeat:repeat-y !important;}
+td.popupmenu table.popupitem {width:100% !important; margin:1px !important; cursor:default !important;}
+td.popupmenu table.popupitemover {margin:0px !important; border:1px solid #AEB6C2 !important; background-color:#CEDAEE !important;}
+td.popupmenu table.popupitem td.gutter {width: 20px !important;}
+td.popupmenu table.popupitem td.gutter div{width:20px !important; height:100% !important; background-position:0 0 !important;}
+td.popupmenu table.popupitem td.item {padding:3px 5px 3px 9px !important; font-size:11px !important; white-space: nowrap !important;}
+td.popupmenu table.popupitem td.default {font-weight:bold !important;}
+td.popupmenu table.popupitem td.disabled {color:#939393 !important;}
+td.popupmenu div.popupseparator {margin:1px 0px 1px 30px; background-color:#B6B6B6; height:1px; overflow:hidden;}
