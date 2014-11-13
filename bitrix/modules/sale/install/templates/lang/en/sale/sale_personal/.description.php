@@ -1,0 +1,30 @@
+<?
+$MESS["STPD_PER_FOLDER"] = "Personal section";
+$MESS["STPD_ACCOUNT"] = "Current user's account";
+$MESS["STPD_CCARDS"] = "Current user's credit cards";
+$MESS["STPD_CCARDS_DET"] = "Credit card editing page";
+$MESS["STPD_CCARDS_DET_PAGE"] = "Editing current user's credit card";
+$MESS["STPD_CCARDS_LIST"] = "Current user's credit cards";
+$MESS["STPD_ORDER_LIST"] = "Current user's orders";
+$MESS["STPD_ORDER_DET_PAGE"] = "Order details page";
+$MESS["STPD_ORDER_REP_PAGE"] = "Order repeat page (usually the same as the order list page)";
+$MESS["STPD_ORDER_CANC_PAGE"] = "Order cancellation page";
+$MESS["STPD_ORDER_BASK_PAGE"] = "Shopping cart page";
+$MESS["STPD_ORDER_DET"] = "Order details";
+$MESS["STPD_ORDER_DET_DESCR"] = "Current user's order details ";
+$MESS["STPD_ORDER_LIST_PAGE"] = "Page with current user's orders";
+$MESS["STPD_ORDER_PAY_PAGE"] = "Order payment page";
+$MESS["STPD_CANSEL"] = "Order cancellation";
+$MESS["STPD_CANCEL_DESCR"] = "Current user's order cancellation";
+$MESS["STPD_ORDER_TABLE"] = "Current user's orders";
+$MESS["STPD_PROFILE_LIST"] = "Current user's profiles";
+$MESS["STPD_PROFILE_DET_PAGE"] = "Profile editing page";
+$MESS["STPD_PROFILE_DET"] = "Profile parameters";
+$MESS["STPD_PROFILE_DET1"] = "Edit current user's profile";
+$MESS["STPD_PROFILE_LIST_PAGE"] = "Page with current user's profiles";
+$MESS["STPD_SUBSCR_LIST"] = "Page with current user's subscriptions";
+$MESS["STPD_SUBSCR_CANCEL"] = "Subscription cancellation page";
+$MESS["STPD_CANCEL"] = "Cancel subscription";
+$MESS["STPD_CANCEL_DESCR1"] = "Cancel current user's subscription";
+$MESS["STPD_CANCEL_LIST_PAGE"] = "Page with current user's subscriptions";
+?>

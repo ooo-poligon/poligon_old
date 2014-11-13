@@ -1,0 +1,30 @@
+<?
+$MESS["STPC_TITLE_UPDATE"] = "Parameters for the credit card ##ID#";
+$MESS["STPC_TITLE_ADD"] = "New credit card";
+$MESS["STPC_TO_LIST"] = "Back to list";
+$MESS["STPC_TIMESTAMP"] = "Last modification date:";
+$MESS["STPC_ACTIV"] = "Active:";
+$MESS["STPC_SORT"] = "Sort index:";
+$MESS["STPC_PAY_SYSTEM"] = "Payment system:";
+$MESS["STPC_CURRENCY"] = "Currency in which payments are allowed:";
+$MESS["STPC_ANY"] = "(any)";
+$MESS["STPC_TYPE"] = "Card type:";
+$MESS["STPC_CNUM"] = "Credit card number:";
+$MESS["STPC_CEXP"] = "Expiration date:";
+$MESS["STPC_MIN_SUM"] = "Minimum allowed payment:";
+$MESS["STPC_MAX_SUM"] = "Maximum allowed payment:";
+$MESS["STPC_SUM_CURR"] = "Payment currency:";
+$MESS["STPC_SAVE"] = "Save";
+$MESS["STPC_APPLY"] = "Apply";
+$MESS["STPC_CANCEL"] = "Cancel";
+$MESS["STPC_NO_AUTH"] = "You have to authorise to view the credit card information";
+$MESS["STPC_NO_CARD"] = "Cannot find the credit card";
+$MESS["STPC_EMPTY_PAY_SYS"] = "The field \"Payment system\" is empty";
+$MESS["STPC_EMPTY_CARD_TYPE"] = "The field \"Credit card type\" is empty";
+$MESS["STPC_EMPTY_CARDNUM"] = "The field \"Credit card number\" is empty";
+$MESS["STPC_WRONG_CARDNUM"] = "The credit card number is invalid";
+$MESS["STPC_WRONG_MONTH"] = "The credit card expiration month is invalid";
+$MESS["STPC_WRONG_YEAR"] = "The credit card expiration year is invalid";
+$MESS["STPC_EMPTY_BCURRENCY"] = "Currency for the credit card payment limits is not specified";
+$MESS["STPC_ERROR_SAVING_CARD"] = "Error saving credit card";
+?>

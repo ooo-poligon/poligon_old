@@ -1,0 +1,3 @@
+<?
+$arCPCRCity = array();
+?>

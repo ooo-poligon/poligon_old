@@ -1,0 +1,2484 @@
+
+==========================================
+0: 
+==========================================
+
+<html>
+<head>
+<title>Экспресс почта "СПСР Экспресс"</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<script language="JavaScript" src="/index.js"></script>
+<style type="text/css">
+<!--
+body {
+	background-color: #ededec;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+-->
+</style>
+
+<link href="/monitoring.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<link href="../monitoring.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="MM_preloadImages('images/rasshiren-monitoring2.jpg','images/po-naklad-2.jpg','images/new-monitoring2.jpg','/images/monitoring/po-naklad-2.jpg','images/tariffs/new-otpravl3.jpg','images/tariffs/tariffication2.jpg')">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script type="text/javascript" language="Javascript"><!--
+
+function validate(form) {
+
+	if (form.FromCityName.value =='') { alert('Введите Город отправки'); return false;}
+	if (form.Weight.value =='') { alert('Введите Вес'); return false;}	
+	if (form.Amount.value =='') { alert('Введите Оценочную стоимость'); return false;}
+	if (form.ToCityName.value =='') { alert('Введите Город доставки'); return false;}     
+
+	else return true;
+	return false;
+}
+
+
+
+function askdel( warn_msg ){
+	if(confirm( warn_msg )) { return true; }
+return false;
+}
+
+function check_name(field){
+myRe=/ЗАО|ООО|ооо|ОАО|оао|"|'/;
+myArray = myRe.exec(field.value);
+if(myArray) { alert('Краткое название организации не должно содержать\n кавычки и обозначение формы собственности!');  return false;}
+else return true; 
+}
+
+function check_digit(field){
+myRe= /^\d+$/;
+myArray = myRe.exec(field.value);
+if(!myArray) { alert('Поля Вес и Оценочная стоимость должны содержать только цифры !');  return false;}
+else return true; 
+}
+
+function select_city(){
+var form = document.personinfo;
+form.city.value = form.s_city[form.s_city.selectedIndex].value;
+form.s_city[0].selected = 1;
+form.city.focus();
+}
+
+--></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table width="100%%" height="100%"  border="0" cellpadding="0" cellspacing="0" id="body">
+  <tr>
+    <td height="0%" valign="top"><table width="100%" height="100"  border="0" cellpadding="0" cellspacing="0" id="caption">
+  <tr>
+    <td width="24%" class="top-background"></td>
+    <td width="1%"><a href="/index.htm"><img src="/images/monitoring/spsr-logo-monitoring.jpg" width="141" height="100" border="0"></a></td>
+    <td width="24%" class="top-background"></td>
+    <td width="1%"><a href="/index.htm"><img src="/images/monitoring/express-pochta-monitoring.jpg" width="111" height="100" border="0"></a></td>
+    <td width="24%" class="top-background"></td>
+    <td width="1%" ><img src="/images/monitoring/slogan-monitoring.jpg" width="161" height="100"></td>
+    <td width="24%" class="top-background"></td>
+    <td width="1%"><img src="/images/monitoring/envelope-top-monitoring.jpg" width="473" height="100" border="0" usemap="#Map"></td>
+  </tr>
+</table></td>
+  </tr>
+  <tr>
+    <td height="100%" valign="top"><table width="100%" height="100%"  border="0" cellpadding="0" cellspacing="0" id="content">
+  <tr>
+    <td width="100%" valign="top"><table width="100%%"  border="0" cellpadding="0" cellspacing="0" id="mainpart">
+      <tr>
+        <td valign="top"><table width="100%%" height="189"  border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="30%"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="1%"><img src="/images/tariffs/leftstamp-tariffs.jpg" width="89" height="250"></td>
+                <td width="17%" background="/images/tariffs/backlines-tariffs1.jpg">&nbsp;</td>
+                <td width="1%"><img src="/images/tariffs/tariffs-stamp.jpg" width="185" height="250"></td>
+              </tr>
+            </table></td>
+            <td width="70%" valign="top"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="5%" background="/images/tariffs/backlines-tariffs2.jpg">&nbsp;</td>
+                <td width="1%"><a href="/monitoring.htm"><img src="/images/tariffs/monitoring-tariffs.jpg" width="108" height="189" border="0"></a></td>
+                <td width="5%" background="/images/tariffs/backlines-tariffs3.jpg">&nbsp;</td>
+                <td width="1%"><a href="/novoe-otpravl.htm"><img src="/images/tariffs/courier-tariffs.jpg" width="113" height="189" border="0"></a></td>
+                <td width="5%" background="/images/tariffs/backlines-tariffs4.jpg">&nbsp;</td>
+                <td width="1%"><a href="/courier.htm"><img src="/images/tariffs/contacts-tariffs.jpg" width="118" height="189" border="0"></a></td>
+              </tr>
+              <tr>
+                <td colspan="6"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="5%"></td>
+                    <td width="95%"><img src="/images/tariffs/tariffs_heading.jpg" width="350" height="61"></td>
+                  </tr>
+                </table></td>
+                </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+      <table width="100%" height="100%"  border="0" cellpadding="0" cellspacing="0" id="main-content">
+        <tr>
+          <td width="10%" valign="top">&nbsp;</td>
+          <td width="25%" valign="top"><table width="100%" height="90%"  border="0" cellpadding="0" cellspacing="0" id="first column">
+            <tr>
+              <td height="1%">&nbsp;</td>
+            </tr>
+            <tr>
+              <td height="1%">&nbsp;</td>
+              </tr>
+            <tr>
+              <td class="anonces-monitoring">         </p>
+                <p class="attention2">&nbsp;</p>  </td>
+            </tr>
+          </table>            </td>
+          <td width="55%" height="90%" valign="top"><table width="100%" height="90%"  border="0" cellpadding="0" cellspacing="0" id="second-column">
+            <tr>
+              <td width="58%" height="5%"><a href="/tariffs.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','/images/tariffs/tariffication2.jpg',1)"><img src="/images/tariffs/tariffication1.jpg" name="Image15" width="237" height="31" border="0"></a></td>
+              <td width="42%" align="center"><a href="/novoe-otpravl.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','/images/tariffs/new-otpravl3.jpg',1)"><img src="/images/tariffs/new-otpravl3.jpg" name="Image14" width="185" height="31" border="0"></a></td>
+            </tr>
+            <tr>
+              <td colspan="2"  class="maintext-monitoring2">
+
+               
+
+
+ </td>
+            </tr>
+            <tr>
+              <td height="90%" colspan="2" valign="top" class="formtext-container">
+<p class="heading">Уважаемые дамы и господа!
+<p class="maintext-paragraf">Сообщаем Вам, что после долгого периода в 16 месяцев, когда мы удерживали цены на услуги Компании на стабильном уровне, мы вынуждены пойти на повышение наших тарифов на отправку из Москвы.<br>
+<br>
+Начавшийся в начале осени прошлого года и продолжающийся по настоящее время  значительный подъем цен на топливо, повышение в разы стоимости услуг за авиаперевозки не оставляют нам другого выбора. <br>
+<br>
+Тем не менее, компания «СПСР» нашла возможность не только оставить некоторые тарифы на прежнем уровне, но даже понизить их. Так, дешевле обойдется Вам отправка груза свыше 30 кг в Оренбург, Уфу, Волгоград, Екатеринбург, Челябинск, Майкоп, Нальчик, Ставрополь. Причем стоимость отправки тяжелых грузов (более 200 кг) будет меньше более чем на 16 % .<br>
+<br>
+Для клиентов, отправляющих за наличный расчет, по гарантийным письмам, а также впервые заключающих договор с компанией «СПСР» новые тарифы начинают действовать с 01 сентября 2008 года.<br>
+<br>
+С 01 сентября по 01 октября все наши постоянные клиенты будут проинформированы об изменениях в тарифной сетке Компании.<br>
+<br>
+Система скидок будет также пересмотрена с учетом новых тарифов.<br>
+<br>
+Компания «СПСР» продолжает  осуществлять программу повышения качества наших услуг. Уже с 01 сентября срок доставки во все населенные пункты Московской области не будет превышать 1 рабочего дня. А для Вашего удобства повышающий коэффициент к Межрегиональному тарифу теперь будет единым для любых грузов.<br>
+<br>
+Мы искренне надеемся на Ваше понимание и заверяем Вас, что будем и в дальнейшем  повышать качество наших услуг, учитывая все Ваши пожелания.<br>
+<br>
+Обращаем Ваше внимание, что с <font color="red">01 сентября 2008 г.</font> расчет стоимости доставки производится по <a href="docs/tariffs-russia.rar" class="maintext-link">новым тарифам</a>. </p>
+<center>
+
+
+<form method="post" action="/cgi-bin/post.pl?TariffCompute#bottom" name="personinfo" onSubmit="return validate(document.personinfo)"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="48" class="kuda-otkuda">Откуда:</td>
+<td class="form-inputcell"></td>
+</tr>
+<tr>
+<td height="48" class="formtext">Страна</td>
+<td class="formtext2">РОССИЯ</td>
+</tr>
+<tr>
+<td class="formtext">Регион</td>
+<td class="form-inputcell"><SELECT name="FromRegion" class="input2" id="6"><OPTION VALUE="1|0">Агинский Бурятский авт. округ</OPTION>
+<OPTION VALUE="53|0">Адыгея респ.</OPTION>
+<OPTION VALUE="54|0">Алтай респ.</OPTION>
+<OPTION VALUE="3|0">Алтайский край</OPTION>
+<OPTION VALUE="4|0">Амурская обл.</OPTION>
+<OPTION VALUE="6|0">Архангельская обл.</OPTION>
+<OPTION VALUE="7|0">Астраханская обл.</OPTION>
+<OPTION VALUE="55|0">Башкортостан респ.</OPTION>
+<OPTION VALUE="8|0">Белгородская обл.</OPTION>
+<OPTION VALUE="55|2">Белоруссия</OPTION>
+<OPTION VALUE="10|0">Брянская обл.</OPTION>
+<OPTION VALUE="56|0">Бурятия респ.</OPTION>
+<OPTION VALUE="11|0">Владимирская обл.</OPTION>
+<OPTION VALUE="12|0">Волгоградская обл.</OPTION>
+<OPTION VALUE="13|0">Вологодская обл.</OPTION>
+<OPTION VALUE="14|0">Воронежская обл.</OPTION>
+<OPTION VALUE="57|0">Дагестан респ.</OPTION>
+<OPTION VALUE="999|0">Дальнее зарубежье</OPTION>
+<OPTION VALUE="16|0">Еврейская авт. обл.</OPTION>
+<OPTION VALUE="17|0">Ивановская обл.</OPTION>
+<OPTION VALUE="101|0">Ингушская респ.</OPTION>
+<OPTION VALUE="18|0">Иркутская обл.</OPTION>
+<OPTION VALUE="19|0">Кабардино-Балкарская респ.</OPTION>
+<OPTION VALUE="21|0">Калининградская обл.</OPTION>
+<OPTION VALUE="58|0">Калмыкия-Хальмг Танч респ.</OPTION>
+<OPTION VALUE="22|0">Калужская обл.</OPTION>
+<OPTION VALUE="23|0">Камчатская обл.</OPTION>
+<OPTION VALUE="24|0">Карачаево-Черкесская респ.</OPTION>
+<OPTION VALUE="59|0">Карелия респ.</OPTION>
+<OPTION VALUE="25|0">Кемеровская обл.</OPTION>
+<OPTION VALUE="27|0">Кировская обл.</OPTION>
+<OPTION VALUE="60|0">Коми респ.</OPTION>
+<OPTION VALUE="28|0">Коми-Пермяцкий авт. округ</OPTION>
+<OPTION VALUE="96|0">Корякский авт. округ</OPTION>
+<OPTION VALUE="29|0">Костромская обл.</OPTION>
+<OPTION VALUE="30|0">Краснодарский край</OPTION>
+<OPTION VALUE="31|0">Красноярский край</OPTION>
+<OPTION VALUE="32|0">Курганская обл.</OPTION>
+<OPTION VALUE="33|0">Курская обл.</OPTION>
+<OPTION VALUE="35|0">Ленинградская обл.</OPTION>
+<OPTION VALUE="36|0">Липецкая обл.</OPTION>
+<OPTION VALUE="38|0">Магаданская обл.</OPTION>
+<OPTION VALUE="61|0">Марий-Эл респ.</OPTION>
+<OPTION VALUE="62|0">Мордовия респ.</OPTION>
+<OPTION VALUE="40|0">Московская обл.</OPTION>
+<OPTION VALUE="41|0">Мурманская обл.</OPTION>
+<OPTION VALUE="42|0">Ненецкий авт. округ</OPTION>
+<OPTION VALUE="43|0">Нижегородская обл.</OPTION>
+<OPTION VALUE="44|0">Новгородская обл.</OPTION>
+<OPTION VALUE="45|0">Новосибирская обл.</OPTION>
+<OPTION VALUE="46|0">Омская обл.</OPTION>
+<OPTION VALUE="47|0">Оренбургская обл.</OPTION>
+<OPTION VALUE="48|0">Орловская обл.</OPTION>
+<OPTION VALUE="49|0">Пензенская обл.</OPTION>
+<OPTION VALUE="50|0">Пермская обл.</OPTION>
+<OPTION VALUE="51|0">Приморский край</OPTION>
+<OPTION VALUE="52|0">Псковская обл.</OPTION>
+<OPTION VALUE="68|0">Ростовская обл.</OPTION>
+<OPTION VALUE="69|0">Рязанская обл.</OPTION>
+<OPTION VALUE="70|0">Самарская обл.</OPTION>
+<OPTION VALUE="71|0">Саратовская обл.</OPTION>
+<OPTION VALUE="63|0">Саха респ.</OPTION>
+<OPTION VALUE="72|0">Сахалинская обл.</OPTION>
+<OPTION VALUE="73|0">Свердловская обл.</OPTION>
+<OPTION VALUE="64|0">Северная Осетия респ.</OPTION>
+<OPTION VALUE="74|0">Смоленская обл.</OPTION>
+<OPTION VALUE="75|0">Ставропольский край</OPTION>
+<OPTION VALUE="77|0">Таймырский авт. округ</OPTION>
+<OPTION VALUE="78|0">Тамбовская обл.</OPTION>
+<OPTION VALUE="65|0">Татарстан респ.</OPTION>
+<OPTION VALUE="79|0">Тверская обл.</OPTION>
+<OPTION VALUE="80|0">Томская обл.</OPTION>
+<OPTION VALUE="81|0">Тульская обл.</OPTION>
+<OPTION VALUE="66|0">Тыва респ.</OPTION>
+<OPTION VALUE="83|0">Тюменская обл.</OPTION>
+<OPTION VALUE="84|0">Удмуртская респ.</OPTION>
+<OPTION VALUE="87|0">Ульяновская обл.</OPTION>
+<OPTION VALUE="88|0">Усть-Ордынский авт.округ</OPTION>
+<OPTION VALUE="89|0">Хабаровский край</OPTION>
+<OPTION VALUE="67|0">Хакасия респ.</OPTION>
+<OPTION VALUE="90|0">Ханты-Мансийский авт. округ</OPTION>
+<OPTION VALUE="91|0">Челябинская обл.</OPTION>
+<OPTION VALUE="92|0">Чечня респ.</OPTION>
+<OPTION VALUE="93|0">Читинская обл.</OPTION>
+<OPTION VALUE="94|0">Чувашия респ.</OPTION>
+<OPTION VALUE="95|0">Чукотский авт. округ</OPTION>
+<OPTION VALUE="97|0">Эвенкийский авт. округ</OPTION>
+<OPTION VALUE="99|0">Ямало-Ненецкий авт. округ</OPTION>
+<OPTION VALUE="100|0">Ярославская обл.</OPTION></SELECT></td>
+</tr>
+<tr>
+<td class="formtext">Город</td>
+<td class="form-inputcell"><input name="FromCityName" type="text" class="input1" size="35" value="Москва"></td>
+</tr>
+<tr>
+<td width="55%" class="formtext">Общий вес отправки, кг.</td>
+<td width="45%" class="form-inputcell"><input name="Weight" type="text" class="input1" size="35"></td>
+</tr>
+<tr>
+<td class="formtext">Характер груза:</td>
+<td class="form-inputcell"><SELECT name="Nature" class="input2" id="7"><OPTION VALUE="1">документы</OPTION>
+<OPTION VALUE="2">мобильные телефоны</OPTION>
+<OPTION VALUE="3">бытовая и оргтехника</OPTION>
+<OPTION VALUE="4">ценные бумаги</OPTION>
+<OPTION VALUE="5">ювелирные изделия</OPTION>
+<OPTION VALUE="6">косметика</OPTION>
+<OPTION VALUE="7">одежда и текстильные изд.        </OPTION>
+<OPTION VALUE="8">другое</OPTION></SELECT></td>
+</tr>
+<tr>
+<td class="formtext">Сумма оценочной стоимости, руб.</td>
+<td class="form-inputcell"><input name="Amount" type="text" class="input1" size="35" value="0"></td>
+</tr>
+<tr>
+<td class="kuda-otkuda">Куда: </td>
+<td class="form-inputcell"></td>
+</tr>
+<tr>
+<td class="formtext">Страна</td>
+<td class="form-inputcell"><SELECT name="Country"  class="input2" onchange="javascript:if (Country.value == '209|0') {ToRegion.disabled=false;ToCityName.disabled=false} else {ToRegion.disabled=true;ToCityName.disabled=true}"><OPTION VALUE="11|0">Австралия</OPTION>
+<OPTION VALUE="12|0">Австрия</OPTION>
+<OPTION VALUE="13|0">Азербайджан</OPTION>
+<OPTION VALUE="1|0">Албания</OPTION>
+<OPTION VALUE="2|0">Алжир</OPTION>
+<OPTION VALUE="3|0">Амер. Самоа</OPTION>
+<OPTION VALUE="6|0">Ангилья</OPTION>
+<OPTION VALUE="5|0">Ангола</OPTION>
+<OPTION VALUE="4|0">Андорра</OPTION>
+<OPTION VALUE="7|0">Антигуа</OPTION>
+<OPTION VALUE="132|0">Антильские о.(Нид)</OPTION>
+<OPTION VALUE="8|0">Аргентина</OPTION>
+<OPTION VALUE="9|0">Армения</OPTION>
+<OPTION VALUE="10|0">Аруба</OPTION>
+<OPTION VALUE="14|0">Багамские о-ва</OPTION>
+<OPTION VALUE="16|0">Бангладеш</OPTION>
+<OPTION VALUE="17|0">Барбадос</OPTION>
+<OPTION VALUE="15|0">Бахрейн</OPTION>
+<OPTION VALUE="19|0">Белиз</OPTION>
+<OPTION VALUE="2|2">Белоруссия</OPTION>
+<OPTION VALUE="18|0">Бельгия</OPTION>
+<OPTION VALUE="20|0">Бенин</OPTION>
+<OPTION VALUE="21|0">Бермудские о-ва</OPTION>
+<OPTION VALUE="28|0">Болгария</OPTION>
+<OPTION VALUE="23|0">Боливия</OPTION>
+<OPTION VALUE="24|0">Босния</OPTION>
+<OPTION VALUE="25|0">Ботсвана</OPTION>
+<OPTION VALUE="26|0">Бразилия</OPTION>
+<OPTION VALUE="27|0">Бруней</OPTION>
+<OPTION VALUE="29|0">Буркина Фасо</OPTION>
+<OPTION VALUE="30|0">Бурунди</OPTION>
+<OPTION VALUE="22|0">Бутан</OPTION>
+<OPTION VALUE="199|0">Вануату</OPTION>
+<OPTION VALUE="72|0">Великобритания</OPTION>
+<OPTION VALUE="84|0">Венгрия</OPTION>
+<OPTION VALUE="200|0">Венесуэла</OPTION>
+<OPTION VALUE="202|0">Виргиния о.(Вел.)</OPTION>
+<OPTION VALUE="203|0">Виргиния о.(США)</OPTION>
+<OPTION VALUE="201|0">Вьетнам</OPTION>
+<OPTION VALUE="66|0">Габон</OPTION>
+<OPTION VALUE="81|0">Гаити</OPTION>
+<OPTION VALUE="80|0">Гайана</OPTION>
+<OPTION VALUE="67|0">Гамбия</OPTION>
+<OPTION VALUE="70|0">Гана</OPTION>
+<OPTION VALUE="75|0">Гваделупа</OPTION>
+<OPTION VALUE="77|0">Гватемала</OPTION>
+<OPTION VALUE="78|0">Гвинея</OPTION>
+<OPTION VALUE="79|0">Гвинея-Бисау</OPTION>
+<OPTION VALUE="69|0">Германия</OPTION>
+<OPTION VALUE="71|0">Гибралтар</OPTION>
+<OPTION VALUE="82|0">Гондурас</OPTION>
+<OPTION VALUE="83|0">Гонконг</OPTION>
+<OPTION VALUE="74|0">Гренада</OPTION>
+<OPTION VALUE="73|0">Греция</OPTION>
+<OPTION VALUE="68|0">Грузия</OPTION>
+<OPTION VALUE="76|0">Гуам о-в</OPTION>
+<OPTION VALUE="50|0">Дания</OPTION>
+<OPTION VALUE="51|0">Джибути</OPTION>
+<OPTION VALUE="52|0">Доминика</OPTION>
+<OPTION VALUE="15653129|3">Доминика</OPTION>
+<OPTION VALUE="53|0">Доминиканская респ.</OPTION>
+<OPTION VALUE="55|0">Египет</OPTION>
+<OPTION VALUE="207|0">Замбия</OPTION>
+<OPTION VALUE="204|0">Западное Самоа</OPTION>
+<OPTION VALUE="34|0">Зеленого Мыса о.</OPTION>
+<OPTION VALUE="208|0">Зимбабве</OPTION>
+<OPTION VALUE="90|0">Израиль</OPTION>
+<OPTION VALUE="86|0">Индия</OPTION>
+<OPTION VALUE="87|0">Индонезия</OPTION>
+<OPTION VALUE="94|0">Иордания</OPTION>
+<OPTION VALUE="88|0">Иран</OPTION>
+<OPTION VALUE="89|0">Ирландия</OPTION>
+<OPTION VALUE="85|0">Исландия</OPTION>
+<OPTION VALUE="169|0">Испания</OPTION>
+<OPTION VALUE="91|0">Италия</OPTION>
+<OPTION VALUE="205|0">Йемен</OPTION>
+<OPTION VALUE="95|0">Казахстан</OPTION>
+<OPTION VALUE="35|0">Кайманские о-ва</OPTION>
+<OPTION VALUE="31|0">Камбоджа</OPTION>
+<OPTION VALUE="32|0">Камерун</OPTION>
+<OPTION VALUE="33|0">Канада</OPTION>
+<OPTION VALUE="14194405|3">Канарские о-ва</OPTION>
+<OPTION VALUE="153|0">Катар</OPTION>
+<OPTION VALUE="96|0">Кения</OPTION>
+<OPTION VALUE="47|0">Кипр</OPTION>
+<OPTION VALUE="99|0">Киргизия</OPTION>
+<OPTION VALUE="97|0">Кирибати</OPTION>
+<OPTION VALUE="39|0">Китай</OPTION>
+<OPTION VALUE="40|0">Колумбия</OPTION>
+<OPTION VALUE="41|0">Коморские о-ва</OPTION>
+<OPTION VALUE="42|0">Конго</OPTION>
+<OPTION VALUE="49|0">Конго Дем.</OPTION>
+<OPTION VALUE="1|2">Коста-Рика</OPTION>
+<OPTION VALUE="46|0">Куба</OPTION>
+<OPTION VALUE="98|0">Кувейт</OPTION>
+<OPTION VALUE="43|0">Кука о-ва</OPTION>
+<OPTION VALUE="3|2">Кыргызстан</OPTION>
+<OPTION VALUE="100|0">Лаос</OPTION>
+<OPTION VALUE="101|0">Латвия</OPTION>
+<OPTION VALUE="103|0">Лесото</OPTION>
+<OPTION VALUE="104|0">Либерия</OPTION>
+<OPTION VALUE="102|0">Ливан</OPTION>
+<OPTION VALUE="105|0">Ливия</OPTION>
+<OPTION VALUE="106|0">Литва</OPTION>
+<OPTION VALUE="647354|2">Лихтенштейн</OPTION>
+<OPTION VALUE="107|0">Люксембург</OPTION>
+<OPTION VALUE="119|0">Маврикий</OPTION>
+<OPTION VALUE="118|0">Мавритания</OPTION>
+<OPTION VALUE="110|0">Мадагаскар</OPTION>
+<OPTION VALUE="120|0">Майот</OPTION>
+<OPTION VALUE="108|0">Макао</OPTION>
+<OPTION VALUE="109|0">Македония</OPTION>
+<OPTION VALUE="111|0">Малави</OPTION>
+<OPTION VALUE="112|0">Малазия</OPTION>
+<OPTION VALUE="114|0">Мали</OPTION>
+<OPTION VALUE="113|0">Мальдивские о-ва</OPTION>
+<OPTION VALUE="115|0">Мальта</OPTION>
+<OPTION VALUE="126|0">Марокко</OPTION>
+<OPTION VALUE="117|0">Мартиника о-в</OPTION>
+<OPTION VALUE="116|0">Маршалловы о.</OPTION>
+<OPTION VALUE="121|0">Мексика</OPTION>
+<OPTION VALUE="122|0">Микронезия</OPTION>
+<OPTION VALUE="127|0">Мозамбик</OPTION>
+<OPTION VALUE="123|0">Молдова</OPTION>
+<OPTION VALUE="13572866|3">Монако</OPTION>
+<OPTION VALUE="124|0">Монголия</OPTION>
+<OPTION VALUE="125|0">Монсеррат</OPTION>
+<OPTION VALUE="128|0">Мьянма</OPTION>
+<OPTION VALUE="129|0">Намибия</OPTION>
+<OPTION VALUE="130|0">Науру</OPTION>
+<OPTION VALUE="131|0">Непал</OPTION>
+<OPTION VALUE="137|0">Нигер</OPTION>
+<OPTION VALUE="138|0">Нигерия</OPTION>
+<OPTION VALUE="133|0">Нидерланды</OPTION>
+<OPTION VALUE="136|0">Никарагуа</OPTION>
+<OPTION VALUE="135|0">Новая Зеландия</OPTION>
+<OPTION VALUE="134|0">Новая Каледония о-в</OPTION>
+<OPTION VALUE="141|0">Норвегия</OPTION>
+<OPTION VALUE="193|0">ОАЭ</OPTION>
+<OPTION VALUE="142|0">Оман</OPTION>
+<OPTION VALUE="143|0">Пакистан</OPTION>
+<OPTION VALUE="144|0">Палау</OPTION>
+<OPTION VALUE="145|0">Панама</OPTION>
+<OPTION VALUE="146|0">Папуа Новая Гвинея</OPTION>
+<OPTION VALUE="147|0">Парагвай</OPTION>
+<OPTION VALUE="148|0">Перу</OPTION>
+<OPTION VALUE="150|0">Польша</OPTION>
+<OPTION VALUE="151|0">Португалия</OPTION>
+<OPTION VALUE="152|0">Пуэрто-Рико</OPTION>
+<OPTION VALUE="154|0">Реюньон</OPTION><OPTION VALUE="209|0" selected> Россия</option><OPTION VALUE="156|0">Руанда</OPTION>
+<OPTION VALUE="155|0">Румыния</OPTION>
+<OPTION VALUE="56|0">Сальвадор</OPTION>
+<OPTION VALUE="157|0">Сан-Марино</OPTION>
+<OPTION VALUE="158|0">Сан-Томе</OPTION>
+<OPTION VALUE="159|0">Саудовская Аравия</OPTION>
+<OPTION VALUE="176|0">Свазиленд</OPTION>
+<OPTION VALUE="140|0">Сев. Марианские о.</OPTION>
+<OPTION VALUE="139|0">Северная Корея</OPTION>
+<OPTION VALUE="161|0">Сейшельские о-ва</OPTION>
+<OPTION VALUE="160|0">Сенегал</OPTION>
+<OPTION VALUE="173|0">Сент-Винсент</OPTION>
+<OPTION VALUE="171|0">Сент-Китте и Невис</OPTION>
+<OPTION VALUE="172|0">Сент-Люсия</OPTION>
+<OPTION VALUE="32583743|3">Сербия и Черногория</OPTION>
+<OPTION VALUE="162|0">Серра-Леоне</OPTION>
+<OPTION VALUE="163|0">Сингапур</OPTION>
+<OPTION VALUE="179|0">Сирия</OPTION>
+<OPTION VALUE="164|0">Словакия</OPTION>
+<OPTION VALUE="165|0">Словения</OPTION>
+<OPTION VALUE="166|0">Соломоновы о-ва</OPTION>
+<OPTION VALUE="174|0">Судан</OPTION>
+<OPTION VALUE="175|0">Суринам</OPTION>
+<OPTION VALUE="196|0">США</OPTION>
+<OPTION VALUE="182|0">Таджикистан</OPTION>
+<OPTION VALUE="180|0">Таити о-в</OPTION>
+<OPTION VALUE="181|0">Тайвань</OPTION>
+<OPTION VALUE="184|0">Тайланд</OPTION>
+<OPTION VALUE="183|0">Танзания</OPTION>
+<OPTION VALUE="191|0">Теркс.Кайкос</OPTION>
+<OPTION VALUE="185|0">Того</OPTION>
+<OPTION VALUE="186|0">Тонга</OPTION>
+<OPTION VALUE="187|0">Тринидад и Тобаго</OPTION>
+<OPTION VALUE="192|0">Тувалу</OPTION>
+<OPTION VALUE="188|0">Тунис</OPTION>
+<OPTION VALUE="190|0">Туркменистан</OPTION>
+<OPTION VALUE="189|0">Турция</OPTION>
+<OPTION VALUE="194|0">Уганда</OPTION>
+<OPTION VALUE="198|0">Узбекистан</OPTION>
+<OPTION VALUE="195|0">Украина</OPTION>
+<OPTION VALUE="197|0">Уругвай</OPTION>
+<OPTION VALUE="61|0">Фарерские о-ва</OPTION>
+<OPTION VALUE="62|0">Фиджи о-ва</OPTION>
+<OPTION VALUE="149|0">Филиппины</OPTION>
+<OPTION VALUE="63|0">Финляндия</OPTION>
+<OPTION VALUE="64|0">Франция</OPTION>
+<OPTION VALUE="65|0">Француз. Гайана</OPTION>
+<OPTION VALUE="45|0">Хорватия</OPTION>
+<OPTION VALUE="36|0">ЦАР</OPTION>
+<OPTION VALUE="37|0">Чад</OPTION>
+<OPTION VALUE="48|0">Чехия</OPTION>
+<OPTION VALUE="38|0">Чили</OPTION>
+<OPTION VALUE="178|0">Швейцария</OPTION>
+<OPTION VALUE="177|0">Швеция</OPTION>
+<OPTION VALUE="170|0">Шри-Ланка</OPTION>
+<OPTION VALUE="54|0">Эквадор</OPTION>
+<OPTION VALUE="57|0">Экват.Гвинея</OPTION>
+<OPTION VALUE="17909748|3">Экспорт</OPTION>
+<OPTION VALUE="10675429|3">Эритрея</OPTION>
+<OPTION VALUE="58|0">Эритрея</OPTION>
+<OPTION VALUE="59|0">Эстония</OPTION>
+<OPTION VALUE="60|0">Эфиопия</OPTION>
+<OPTION VALUE="167|0">ЮАР</OPTION>
+<OPTION VALUE="206|0">Югославия</OPTION>
+<OPTION VALUE="168|0">Южная Корея</OPTION>
+<OPTION VALUE="92|0">Ямайка</OPTION>
+<OPTION VALUE="93|0">Япония</OPTION></SELECT></td>
+</tr>
+<tr>
+<td class="formtext">Область</td>
+<td class="form-inputcell"><SELECT name="ToRegion" class="input2" id="5"><OPTION VALUE="1|0">Агинский Бурятский авт. округ</OPTION>
+<OPTION VALUE="53|0">Адыгея респ.</OPTION>
+<OPTION VALUE="54|0">Алтай респ.</OPTION>
+<OPTION VALUE="3|0">Алтайский край</OPTION>
+<OPTION VALUE="4|0">Амурская обл.</OPTION>
+<OPTION VALUE="6|0">Архангельская обл.</OPTION>
+<OPTION VALUE="7|0">Астраханская обл.</OPTION>
+<OPTION VALUE="55|0">Башкортостан респ.</OPTION>
+<OPTION VALUE="8|0">Белгородская обл.</OPTION>
+<OPTION VALUE="55|2">Белоруссия</OPTION>
+<OPTION VALUE="10|0">Брянская обл.</OPTION>
+<OPTION VALUE="56|0">Бурятия респ.</OPTION>
+<OPTION VALUE="11|0">Владимирская обл.</OPTION>
+<OPTION VALUE="12|0">Волгоградская обл.</OPTION>
+<OPTION VALUE="13|0">Вологодская обл.</OPTION>
+<OPTION VALUE="14|0">Воронежская обл.</OPTION>
+<OPTION VALUE="57|0">Дагестан респ.</OPTION>
+<OPTION VALUE="999|0">Дальнее зарубежье</OPTION>
+<OPTION VALUE="16|0">Еврейская авт. обл.</OPTION>
+<OPTION VALUE="17|0">Ивановская обл.</OPTION>
+<OPTION VALUE="101|0">Ингушская респ.</OPTION>
+<OPTION VALUE="18|0">Иркутская обл.</OPTION>
+<OPTION VALUE="19|0">Кабардино-Балкарская респ.</OPTION>
+<OPTION VALUE="21|0">Калининградская обл.</OPTION>
+<OPTION VALUE="58|0">Калмыкия-Хальмг Танч респ.</OPTION>
+<OPTION VALUE="22|0">Калужская обл.</OPTION>
+<OPTION VALUE="23|0">Камчатская обл.</OPTION>
+<OPTION VALUE="24|0">Карачаево-Черкесская респ.</OPTION>
+<OPTION VALUE="59|0">Карелия респ.</OPTION>
+<OPTION VALUE="25|0">Кемеровская обл.</OPTION>
+<OPTION VALUE="27|0">Кировская обл.</OPTION>
+<OPTION VALUE="60|0">Коми респ.</OPTION>
+<OPTION VALUE="28|0">Коми-Пермяцкий авт. округ</OPTION>
+<OPTION VALUE="96|0">Корякский авт. округ</OPTION>
+<OPTION VALUE="29|0">Костромская обл.</OPTION>
+<OPTION VALUE="30|0">Краснодарский край</OPTION>
+<OPTION VALUE="31|0">Красноярский край</OPTION>
+<OPTION VALUE="32|0">Курганская обл.</OPTION>
+<OPTION VALUE="33|0">Курская обл.</OPTION>
+<OPTION VALUE="35|0">Ленинградская обл.</OPTION>
+<OPTION VALUE="36|0">Липецкая обл.</OPTION>
+<OPTION VALUE="38|0">Магаданская обл.</OPTION>
+<OPTION VALUE="61|0">Марий-Эл респ.</OPTION>
+<OPTION VALUE="62|0">Мордовия респ.</OPTION>
+<OPTION VALUE="40|0">Московская обл.</OPTION>
+<OPTION VALUE="41|0">Мурманская обл.</OPTION>
+<OPTION VALUE="42|0">Ненецкий авт. округ</OPTION>
+<OPTION VALUE="43|0">Нижегородская обл.</OPTION>
+<OPTION VALUE="44|0">Новгородская обл.</OPTION>
+<OPTION VALUE="45|0">Новосибирская обл.</OPTION>
+<OPTION VALUE="46|0">Омская обл.</OPTION>
+<OPTION VALUE="47|0">Оренбургская обл.</OPTION>
+<OPTION VALUE="48|0">Орловская обл.</OPTION>
+<OPTION VALUE="49|0">Пензенская обл.</OPTION>
+<OPTION VALUE="50|0">Пермская обл.</OPTION>
+<OPTION VALUE="51|0">Приморский край</OPTION>
+<OPTION VALUE="52|0">Псковская обл.</OPTION>
+<OPTION VALUE="68|0">Ростовская обл.</OPTION>
+<OPTION VALUE="69|0">Рязанская обл.</OPTION>
+<OPTION VALUE="70|0">Самарская обл.</OPTION>
+<OPTION VALUE="71|0">Саратовская обл.</OPTION>
+<OPTION VALUE="63|0">Саха респ.</OPTION>
+<OPTION VALUE="72|0">Сахалинская обл.</OPTION>
+<OPTION VALUE="73|0">Свердловская обл.</OPTION>
+<OPTION VALUE="64|0">Северная Осетия респ.</OPTION>
+<OPTION VALUE="74|0">Смоленская обл.</OPTION>
+<OPTION VALUE="75|0">Ставропольский край</OPTION>
+<OPTION VALUE="77|0">Таймырский авт. округ</OPTION>
+<OPTION VALUE="78|0">Тамбовская обл.</OPTION>
+<OPTION VALUE="65|0">Татарстан респ.</OPTION>
+<OPTION VALUE="79|0">Тверская обл.</OPTION>
+<OPTION VALUE="80|0">Томская обл.</OPTION>
+<OPTION VALUE="81|0">Тульская обл.</OPTION>
+<OPTION VALUE="66|0">Тыва респ.</OPTION>
+<OPTION VALUE="83|0">Тюменская обл.</OPTION>
+<OPTION VALUE="84|0">Удмуртская респ.</OPTION>
+<OPTION VALUE="87|0">Ульяновская обл.</OPTION>
+<OPTION VALUE="88|0">Усть-Ордынский авт.округ</OPTION>
+<OPTION VALUE="89|0">Хабаровский край</OPTION>
+<OPTION VALUE="67|0">Хакасия респ.</OPTION>
+<OPTION VALUE="90|0">Ханты-Мансийский авт. округ</OPTION>
+<OPTION VALUE="91|0">Челябинская обл.</OPTION>
+<OPTION VALUE="92|0">Чечня респ.</OPTION>
+<OPTION VALUE="93|0">Читинская обл.</OPTION>
+<OPTION VALUE="94|0">Чувашия респ.</OPTION>
+<OPTION VALUE="95|0">Чукотский авт. округ</OPTION>
+<OPTION VALUE="97|0">Эвенкийский авт. округ</OPTION>
+<OPTION VALUE="99|0">Ямало-Ненецкий авт. округ</OPTION>
+<OPTION VALUE="100|0">Ярославская обл.</OPTION></SELECT></td>
+</tr>
+<tr>
+<td class="formtext">Город</td>
+<td class="form-inputcell"><input name="ToCityName" type="text" class="input1" size="35"></td>
+</tr>
+<tr>
+<td></td>
+<td class="vydacha2"><input checked type="radio" name="ToCity" value="" >
+Поискать город заново<br>
+</td>
+</tr>
+<tr>
+<td></td>
+<td class="form-inputcell"><table cellspacing="5" border="0"><tr>
+<td><input type="image" src="/images/tariffs/raschet-button.jpg" name="submit" width="124" height="27"></td>
+<td><input type="image" src="/images/monitoring/clear-button.jpg" width="124" height="27" onClick="ToRegion.disabled=false; ToCityName.disabled=false; document.personinfo.reset();  return false;"></td>
+</tr></table></td>
+</tr>
+</table></form>
+
+	<script language="JavaScript">
+	<!-- hide
+	document.personinfo.FromCityName.value= 'Москва'
+document.personinfo.Weight.value= '0.001'
+document.personinfo.Amount.value= '0'
+document.personinfo.ToCityName.value= 'Другой (указать выше)'
+document.getElementById("5").options[0]=new Option("Московская обл.", "40|0")
+document.getElementById("5").options[0].selected = true
+document.getElementById("6").options[0]=new Option("Московская обл.", "40|0")
+document.getElementById("6").options[0].selected = true
+document.getElementById("7").options[7].selected = true
+
+	// -->
+	</script>
+	<a name=bottom>
+<br>
+
+<p class="heading">ВНИМАНИЕ!<br>Уважаемые господа!</p>
+<ol class="maintext-paragraf">
+<li>Обращаем Ваше внимание, что расчет стоимости оправки производится согласно услуге  «Экспресс-доставка» в режиме «от двери до двери», т.е. Отправителем всегда является Заказчик перевозки.<br>
+Если же Вы хотите воспользоваться услугой «Сбор отправлений в других городах  РФ» (мы забираем отправление в одном из населенных пунктов и доставляем его Вам, либо перевозим его в другой населенный пункт), то к полученному при расчете  результату необходимо применять повышающий коэффициент 1,3.</li>
+<li>Просим Вас учесть, что при отправке груза нужно определить, какой его вес -   фактический или «объемный» больше, и именно эту величину заложить для расчета в тарифный калькулятор в графу «Общий вес отправки». К сожалению, на сегодняшний день в тарифном калькуляторе не предусмотрена эта функция, поэтому Вам придется самостоятельно рассчитать «объемный вес» Вашего груза и сравнить его с фактическим.<br>
+Для определения величины «объемного веса»  (в кг.) найдите  объем посылки (перемножить длину на ширину на  высоту  в см.)  и разделите на коэффициент 6000 (длина (см) х ширина (см) х высота (см) / 6000).<br>
+По такому же принципу будет производиться оплата и при  оформлении заказа курьером.</li>
+</ol>
+<p class="maintext-paragraf">Приносим свои извинения за предоставленные неудобства и заверяем Вас, что в самое ближайшее время избавим Вас от лишних забот, так как тарифный калькулятор начнет функционировать в нужном режиме.</p>
+
+<p class="heading">Уважаемые дамы и господа!</p>
+<p class="maintext-paragraf">Обращаем Ваше внимание, что  расчет тарифным калькулятором стоимости доставки грузов весом свыше 80 кг. производится с повышающим коэффициентом 1,5. Данный коэффициент применяется при тарификации грузов, вес <font color="#FF0000">одного места</font> которых превышает 80 кг. В случае если при весе от 80 кг. Ваш груз состоит из более чем одного места, то полученную величину Вам необходимо разделить на 1,5.</p>
+<p class="heading">Уважаемые дамы и господа!
+<p class="maintext-paragraf"><font color="#FF0000">Со всеми правилами тарификации услуг Вы можете ознакомиться <a href="docs/tariff_rules.xls" class="maintext-link">здесь</a></font></p>
+
+<br><br><br>
+</td>
+            </tr>
+          </table></td>
+          <td width="11%">&nbsp;</td>
+        </tr>
+      </table>      </td>
+    <td width="0%" height="100%" valign="top" class="right-column-container"><table width="235" height="100%" border="0" cellpadding="0" cellspacing="0" id="right_column">
+      <tr>
+        <td height="0" valign="top"><table width="235" height="47" border="0" cellpadding="0" cellspacing="0" id="icons">
+          <tr>
+            <td width="66" class="icons-text"><a href="/english.htm" class="icons-text_link">English<br>
+              version</a></td>
+            <td width="62" class="icons-text"><a href="/sitemap.htm" class="icons-text_link">Карта<br> 
+              сайта</a> </td>
+            <td width="107" class="icons-text"><a href="mailto:cpcr@cpcr.ru" class="icons-text_link">Обратная<br> 
+              связь </a></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="0%" valign="top"><table width="235" border="0" cellpadding="0" cellspacing="0" id="corporate-menu">
+          <tr>
+            <td class="corporate-menu-item"><a href="/company.htm" class="corporate-menu-item_link">О компании</a> <span class="dots-span">.....................</span> </td>
+            <td width="49" class="corporate-menu-sign"><a href="/About.htm" class="corporate-menu-sign_link">&gt;</a></td>
+          </tr>
+          <tr>
+            <td class="corporate-menu-item"><a href="/facility.htm" class="corporate-menu-item_link">Услуги</a> <span class="dots-span">............................</span> </td>
+            <td width="49" class="corporate-menu-sign"><a href="/facility.htm" class="corporate-menu-sign_link">&gt;</a></td>
+          </tr>
+          <tr>
+            <td class="corporate-menu-item"><a href="/news.htm" class="corporate-menu-item_link">Новости</a> <span class="dots-span">...........................</span></td>
+            <td width="49" class="corporate-menu-sign"><a href="/news.htm" class="corporate-menu-sign_link">&gt;</a></td>
+          </tr>
+          <tr>
+            <td class="corporate-menu-item"><a href="/index.htm" class="corporate-menu-item_link"><nobr>На главную</a> <span class="dots-span">.....................</span></td>
+            <td width="49" class="corporate-menu-sign"><a href="#" class="corporate-menu-sign_link">&gt;</a></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="0%" valign="top">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="40%" valign="top"><table width="235" border="0" cellpadding="0" cellspacing="0" id="address">
+          <tr>
+            <td class="address">&copy;СПСР-Экспресс<br>
+            Россия 109316 Москва,<br>
+            Волгоградский пр-т, д. 42, к. 23<br>
+тел.: +7 (495) 981-10-10<br>
+тел.: +7 (495) 980-10-90<br>
+факс: +7 (495) 981-10-00<br>
+              e-mail: <a href="/mailto:%20cpcr@cpcr.ru" class="address_link">cpcr@cpcr.ru</a></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="60%" valign="top" class="copyright"><a href="/http://www.xds.ru" class="copyright-link">Impex Design: web-дизайн <br>
+          и разработка сайта </a>
+<br><br>
+
+<!--Rating@Mail.ru COUNTER--><script language="JavaScript" type="text/javascript"><!--
+d=document;var a='';a+=';r='+escape(d.referrer)
+js=10//--></script><script language="JavaScript1.1" type="text/javascript"><!--
+a+=';j='+navigator.javaEnabled()
+js=11//--></script><script language="JavaScript1.2" type="text/javascript"><!--
+s=screen;a+=';s='+s.width+'*'+s.height
+a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth)
+js=12//--></script><script language="JavaScript1.3" type="text/javascript"><!--
+js=13//--></script><script language="JavaScript" type="text/javascript"><!--
+d.write('<a href="http://top.mail.ru/jump?from=357602"'+
+' target=_top><img src="http://top.list.ru/counter'+
+'?id=357602;t=84;js='+js+a+';rand='+Math.random()+
+'" alt="Рейтинг@Mail.ru"'+' border=0 height=18 width=88/><\/a>')
+if(11<js)d.write('<'+'!-- ')//--></script><noscript><a
+target=_top href="http://top.mail.ru/jump?from=357602"><img
+src="http://top.list.ru/counter?js=na;id=357602;t=84"
+border=0 height=18 width=88
+alt="Рейтинг@Mail.ru"/></a></noscript><script language="JavaScript" type="text/javascript"><!--
+if(11<js)d.write('--'+'>')//--></script><!--/COUNTER-->
+<br>
+
+</td>
+      </tr>
+    </table>
+      <br></td>
+  </tr>
+</table></td>
+  </tr>
+</table>
+<map name="Map">
+  <area shape="rect" coords="250,56,304,115" href="/#">
+  <area shape="rect" coords="324,54,368,109" href="/#">
+  <area shape="rect" coords="388,60,440,109" href="/#">
+</map>
+</body>
+</html>
+
+==========================================
+0: 
+==========================================
+
+<html>
+<head>
+<title>Экспресс почта "СПСР Экспресс"</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<script language="JavaScript" src="/index.js"></script>
+<style type="text/css">
+<!--
+body {
+	background-color: #ededec;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+-->
+</style>
+
+<link href="/monitoring.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<link href="../monitoring.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="MM_preloadImages('images/rasshiren-monitoring2.jpg','images/po-naklad-2.jpg','images/new-monitoring2.jpg','/images/monitoring/po-naklad-2.jpg','images/tariffs/new-otpravl3.jpg','images/tariffs/tariffication2.jpg')">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script type="text/javascript" language="Javascript"><!--
+
+function validate(form) {
+
+	if (form.FromCityName.value =='') { alert('Введите Город отправки'); return false;}
+	if (form.Weight.value =='') { alert('Введите Вес'); return false;}	
+	if (form.Amount.value =='') { alert('Введите Оценочную стоимость'); return false;}
+	if (form.ToCityName.value =='') { alert('Введите Город доставки'); return false;}     
+
+	else return true;
+	return false;
+}
+
+
+
+function askdel( warn_msg ){
+	if(confirm( warn_msg )) { return true; }
+return false;
+}
+
+function check_name(field){
+myRe=/ЗАО|ООО|ооо|ОАО|оао|"|'/;
+myArray = myRe.exec(field.value);
+if(myArray) { alert('Краткое название организации не должно содержать\n кавычки и обозначение формы собственности!');  return false;}
+else return true; 
+}
+
+function check_digit(field){
+myRe= /^\d+$/;
+myArray = myRe.exec(field.value);
+if(!myArray) { alert('Поля Вес и Оценочная стоимость должны содержать только цифры !');  return false;}
+else return true; 
+}
+
+function select_city(){
+var form = document.personinfo;
+form.city.value = form.s_city[form.s_city.selectedIndex].value;
+form.s_city[0].selected = 1;
+form.city.focus();
+}
+
+--></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table width="100%%" height="100%"  border="0" cellpadding="0" cellspacing="0" id="body">
+  <tr>
+    <td height="0%" valign="top"><table width="100%" height="100"  border="0" cellpadding="0" cellspacing="0" id="caption">
+  <tr>
+    <td width="24%" class="top-background"></td>
+    <td width="1%"><a href="/index.htm"><img src="/images/monitoring/spsr-logo-monitoring.jpg" width="141" height="100" border="0"></a></td>
+    <td width="24%" class="top-background"></td>
+    <td width="1%"><a href="/index.htm"><img src="/images/monitoring/express-pochta-monitoring.jpg" width="111" height="100" border="0"></a></td>
+    <td width="24%" class="top-background"></td>
+    <td width="1%" ><img src="/images/monitoring/slogan-monitoring.jpg" width="161" height="100"></td>
+    <td width="24%" class="top-background"></td>
+    <td width="1%"><img src="/images/monitoring/envelope-top-monitoring.jpg" width="473" height="100" border="0" usemap="#Map"></td>
+  </tr>
+</table></td>
+  </tr>
+  <tr>
+    <td height="100%" valign="top"><table width="100%" height="100%"  border="0" cellpadding="0" cellspacing="0" id="content">
+  <tr>
+    <td width="100%" valign="top"><table width="100%%"  border="0" cellpadding="0" cellspacing="0" id="mainpart">
+      <tr>
+        <td valign="top"><table width="100%%" height="189"  border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="30%"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="1%"><img src="/images/tariffs/leftstamp-tariffs.jpg" width="89" height="250"></td>
+                <td width="17%" background="/images/tariffs/backlines-tariffs1.jpg">&nbsp;</td>
+                <td width="1%"><img src="/images/tariffs/tariffs-stamp.jpg" width="185" height="250"></td>
+              </tr>
+            </table></td>
+            <td width="70%" valign="top"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="5%" background="/images/tariffs/backlines-tariffs2.jpg">&nbsp;</td>
+                <td width="1%"><a href="/monitoring.htm"><img src="/images/tariffs/monitoring-tariffs.jpg" width="108" height="189" border="0"></a></td>
+                <td width="5%" background="/images/tariffs/backlines-tariffs3.jpg">&nbsp;</td>
+                <td width="1%"><a href="/novoe-otpravl.htm"><img src="/images/tariffs/courier-tariffs.jpg" width="113" height="189" border="0"></a></td>
+                <td width="5%" background="/images/tariffs/backlines-tariffs4.jpg">&nbsp;</td>
+                <td width="1%"><a href="/courier.htm"><img src="/images/tariffs/contacts-tariffs.jpg" width="118" height="189" border="0"></a></td>
+              </tr>
+              <tr>
+                <td colspan="6"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="5%"></td>
+                    <td width="95%"><img src="/images/tariffs/tariffs_heading.jpg" width="350" height="61"></td>
+                  </tr>
+                </table></td>
+                </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+      <table width="100%" height="100%"  border="0" cellpadding="0" cellspacing="0" id="main-content">
+        <tr>
+          <td width="10%" valign="top">&nbsp;</td>
+          <td width="25%" valign="top"><table width="100%" height="90%"  border="0" cellpadding="0" cellspacing="0" id="first column">
+            <tr>
+              <td height="1%">&nbsp;</td>
+            </tr>
+            <tr>
+              <td height="1%">&nbsp;</td>
+              </tr>
+            <tr>
+              <td class="anonces-monitoring">         </p>
+                <p class="attention2">&nbsp;</p>  </td>
+            </tr>
+          </table>            </td>
+          <td width="55%" height="90%" valign="top"><table width="100%" height="90%"  border="0" cellpadding="0" cellspacing="0" id="second-column">
+            <tr>
+              <td width="58%" height="5%"><a href="/tariffs.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','/images/tariffs/tariffication2.jpg',1)"><img src="/images/tariffs/tariffication1.jpg" name="Image15" width="237" height="31" border="0"></a></td>
+              <td width="42%" align="center"><a href="/novoe-otpravl.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','/images/tariffs/new-otpravl3.jpg',1)"><img src="/images/tariffs/new-otpravl3.jpg" name="Image14" width="185" height="31" border="0"></a></td>
+            </tr>
+            <tr>
+              <td colspan="2"  class="maintext-monitoring2">
+
+               
+
+
+ </td>
+            </tr>
+            <tr>
+              <td height="90%" colspan="2" valign="top" class="formtext-container">
+<p class="heading">Уважаемые дамы и господа!
+<p class="maintext-paragraf">Сообщаем Вам, что после долгого периода в 16 месяцев, когда мы удерживали цены на услуги Компании на стабильном уровне, мы вынуждены пойти на повышение наших тарифов на отправку из Москвы.<br>
+<br>
+Начавшийся в начале осени прошлого года и продолжающийся по настоящее время  значительный подъем цен на топливо, повышение в разы стоимости услуг за авиаперевозки не оставляют нам другого выбора. <br>
+<br>
+Тем не менее, компания «СПСР» нашла возможность не только оставить некоторые тарифы на прежнем уровне, но даже понизить их. Так, дешевле обойдется Вам отправка груза свыше 30 кг в Оренбург, Уфу, Волгоград, Екатеринбург, Челябинск, Майкоп, Нальчик, Ставрополь. Причем стоимость отправки тяжелых грузов (более 200 кг) будет меньше более чем на 16 % .<br>
+<br>
+Для клиентов, отправляющих за наличный расчет, по гарантийным письмам, а также впервые заключающих договор с компанией «СПСР» новые тарифы начинают действовать с 01 сентября 2008 года.<br>
+<br>
+С 01 сентября по 01 октября все наши постоянные клиенты будут проинформированы об изменениях в тарифной сетке Компании.<br>
+<br>
+Система скидок будет также пересмотрена с учетом новых тарифов.<br>
+<br>
+Компания «СПСР» продолжает  осуществлять программу повышения качества наших услуг. Уже с 01 сентября срок доставки во все населенные пункты Московской области не будет превышать 1 рабочего дня. А для Вашего удобства повышающий коэффициент к Межрегиональному тарифу теперь будет единым для любых грузов.<br>
+<br>
+Мы искренне надеемся на Ваше понимание и заверяем Вас, что будем и в дальнейшем  повышать качество наших услуг, учитывая все Ваши пожелания.<br>
+<br>
+Обращаем Ваше внимание, что с <font color="red">01 сентября 2008 г.</font> расчет стоимости доставки производится по <a href="docs/tariffs-russia.rar" class="maintext-link">новым тарифам</a>. </p>
+<center>
+
+
+<form method="post" action="/cgi-bin/post.pl?TariffCompute#bottom" name="personinfo" onSubmit="return validate(document.personinfo)"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="48" class="kuda-otkuda">Откуда:</td>
+<td class="form-inputcell"></td>
+</tr>
+<tr>
+<td height="48" class="formtext">Страна</td>
+<td class="formtext2">РОССИЯ</td>
+</tr>
+<tr>
+<td class="formtext">Регион</td>
+<td class="form-inputcell"><SELECT name="FromRegion" class="input2" id="6"><OPTION VALUE="1|0">Агинский Бурятский авт. округ</OPTION>
+<OPTION VALUE="53|0">Адыгея респ.</OPTION>
+<OPTION VALUE="54|0">Алтай респ.</OPTION>
+<OPTION VALUE="3|0">Алтайский край</OPTION>
+<OPTION VALUE="4|0">Амурская обл.</OPTION>
+<OPTION VALUE="6|0">Архангельская обл.</OPTION>
+<OPTION VALUE="7|0">Астраханская обл.</OPTION>
+<OPTION VALUE="55|0">Башкортостан респ.</OPTION>
+<OPTION VALUE="8|0">Белгородская обл.</OPTION>
+<OPTION VALUE="55|2">Белоруссия</OPTION>
+<OPTION VALUE="10|0">Брянская обл.</OPTION>
+<OPTION VALUE="56|0">Бурятия респ.</OPTION>
+<OPTION VALUE="11|0">Владимирская обл.</OPTION>
+<OPTION VALUE="12|0">Волгоградская обл.</OPTION>
+<OPTION VALUE="13|0">Вологодская обл.</OPTION>
+<OPTION VALUE="14|0">Воронежская обл.</OPTION>
+<OPTION VALUE="57|0">Дагестан респ.</OPTION>
+<OPTION VALUE="999|0">Дальнее зарубежье</OPTION>
+<OPTION VALUE="16|0">Еврейская авт. обл.</OPTION>
+<OPTION VALUE="17|0">Ивановская обл.</OPTION>
+<OPTION VALUE="101|0">Ингушская респ.</OPTION>
+<OPTION VALUE="18|0">Иркутская обл.</OPTION>
+<OPTION VALUE="19|0">Кабардино-Балкарская респ.</OPTION>
+<OPTION VALUE="21|0">Калининградская обл.</OPTION>
+<OPTION VALUE="58|0">Калмыкия-Хальмг Танч респ.</OPTION>
+<OPTION VALUE="22|0">Калужская обл.</OPTION>
+<OPTION VALUE="23|0">Камчатская обл.</OPTION>
+<OPTION VALUE="24|0">Карачаево-Черкесская респ.</OPTION>
+<OPTION VALUE="59|0">Карелия респ.</OPTION>
+<OPTION VALUE="25|0">Кемеровская обл.</OPTION>
+<OPTION VALUE="27|0">Кировская обл.</OPTION>
+<OPTION VALUE="60|0">Коми респ.</OPTION>
+<OPTION VALUE="28|0">Коми-Пермяцкий авт. округ</OPTION>
+<OPTION VALUE="96|0">Корякский авт. округ</OPTION>
+<OPTION VALUE="29|0">Костромская обл.</OPTION>
+<OPTION VALUE="30|0">Краснодарский край</OPTION>
+<OPTION VALUE="31|0">Красноярский край</OPTION>
+<OPTION VALUE="32|0">Курганская обл.</OPTION>
+<OPTION VALUE="33|0">Курская обл.</OPTION>
+<OPTION VALUE="35|0">Ленинградская обл.</OPTION>
+<OPTION VALUE="36|0">Липецкая обл.</OPTION>
+<OPTION VALUE="38|0">Магаданская обл.</OPTION>
+<OPTION VALUE="61|0">Марий-Эл респ.</OPTION>
+<OPTION VALUE="62|0">Мордовия респ.</OPTION>
+<OPTION VALUE="40|0">Московская обл.</OPTION>
+<OPTION VALUE="41|0">Мурманская обл.</OPTION>
+<OPTION VALUE="42|0">Ненецкий авт. округ</OPTION>
+<OPTION VALUE="43|0">Нижегородская обл.</OPTION>
+<OPTION VALUE="44|0">Новгородская обл.</OPTION>
+<OPTION VALUE="45|0">Новосибирская обл.</OPTION>
+<OPTION VALUE="46|0">Омская обл.</OPTION>
+<OPTION VALUE="47|0">Оренбургская обл.</OPTION>
+<OPTION VALUE="48|0">Орловская обл.</OPTION>
+<OPTION VALUE="49|0">Пензенская обл.</OPTION>
+<OPTION VALUE="50|0">Пермская обл.</OPTION>
+<OPTION VALUE="51|0">Приморский край</OPTION>
+<OPTION VALUE="52|0">Псковская обл.</OPTION>
+<OPTION VALUE="68|0">Ростовская обл.</OPTION>
+<OPTION VALUE="69|0">Рязанская обл.</OPTION>
+<OPTION VALUE="70|0">Самарская обл.</OPTION>
+<OPTION VALUE="71|0">Саратовская обл.</OPTION>
+<OPTION VALUE="63|0">Саха респ.</OPTION>
+<OPTION VALUE="72|0">Сахалинская обл.</OPTION>
+<OPTION VALUE="73|0">Свердловская обл.</OPTION>
+<OPTION VALUE="64|0">Северная Осетия респ.</OPTION>
+<OPTION VALUE="74|0">Смоленская обл.</OPTION>
+<OPTION VALUE="75|0">Ставропольский край</OPTION>
+<OPTION VALUE="77|0">Таймырский авт. округ</OPTION>
+<OPTION VALUE="78|0">Тамбовская обл.</OPTION>
+<OPTION VALUE="65|0">Татарстан респ.</OPTION>
+<OPTION VALUE="79|0">Тверская обл.</OPTION>
+<OPTION VALUE="80|0">Томская обл.</OPTION>
+<OPTION VALUE="81|0">Тульская обл.</OPTION>
+<OPTION VALUE="66|0">Тыва респ.</OPTION>
+<OPTION VALUE="83|0">Тюменская обл.</OPTION>
+<OPTION VALUE="84|0">Удмуртская респ.</OPTION>
+<OPTION VALUE="87|0">Ульяновская обл.</OPTION>
+<OPTION VALUE="88|0">Усть-Ордынский авт.округ</OPTION>
+<OPTION VALUE="89|0">Хабаровский край</OPTION>
+<OPTION VALUE="67|0">Хакасия респ.</OPTION>
+<OPTION VALUE="90|0">Ханты-Мансийский авт. округ</OPTION>
+<OPTION VALUE="91|0">Челябинская обл.</OPTION>
+<OPTION VALUE="92|0">Чечня респ.</OPTION>
+<OPTION VALUE="93|0">Читинская обл.</OPTION>
+<OPTION VALUE="94|0">Чувашия респ.</OPTION>
+<OPTION VALUE="95|0">Чукотский авт. округ</OPTION>
+<OPTION VALUE="97|0">Эвенкийский авт. округ</OPTION>
+<OPTION VALUE="99|0">Ямало-Ненецкий авт. округ</OPTION>
+<OPTION VALUE="100|0">Ярославская обл.</OPTION></SELECT></td>
+</tr>
+<tr>
+<td class="formtext">Город</td>
+<td class="form-inputcell"><input name="FromCityName" type="text" class="input1" size="35" value="Москва"></td>
+</tr>
+<tr>
+<td width="55%" class="formtext">Общий вес отправки, кг.</td>
+<td width="45%" class="form-inputcell"><input name="Weight" type="text" class="input1" size="35"></td>
+</tr>
+<tr>
+<td class="formtext">Характер груза:</td>
+<td class="form-inputcell"><SELECT name="Nature" class="input2" id="7"><OPTION VALUE="1">документы</OPTION>
+<OPTION VALUE="2">мобильные телефоны</OPTION>
+<OPTION VALUE="3">бытовая и оргтехника</OPTION>
+<OPTION VALUE="4">ценные бумаги</OPTION>
+<OPTION VALUE="5">ювелирные изделия</OPTION>
+<OPTION VALUE="6">косметика</OPTION>
+<OPTION VALUE="7">одежда и текстильные изд.        </OPTION>
+<OPTION VALUE="8">другое</OPTION></SELECT></td>
+</tr>
+<tr>
+<td class="formtext">Сумма оценочной стоимости, руб.</td>
+<td class="form-inputcell"><input name="Amount" type="text" class="input1" size="35" value="0"></td>
+</tr>
+<tr>
+<td class="kuda-otkuda">Куда: </td>
+<td class="form-inputcell"></td>
+</tr>
+<tr>
+<td class="formtext">Страна</td>
+<td class="form-inputcell"><SELECT name="Country"  class="input2" onchange="javascript:if (Country.value == '209|0') {ToRegion.disabled=false;ToCityName.disabled=false} else {ToRegion.disabled=true;ToCityName.disabled=true}"><OPTION VALUE="11|0">Австралия</OPTION>
+<OPTION VALUE="12|0">Австрия</OPTION>
+<OPTION VALUE="13|0">Азербайджан</OPTION>
+<OPTION VALUE="1|0">Албания</OPTION>
+<OPTION VALUE="2|0">Алжир</OPTION>
+<OPTION VALUE="3|0">Амер. Самоа</OPTION>
+<OPTION VALUE="6|0">Ангилья</OPTION>
+<OPTION VALUE="5|0">Ангола</OPTION>
+<OPTION VALUE="4|0">Андорра</OPTION>
+<OPTION VALUE="7|0">Антигуа</OPTION>
+<OPTION VALUE="132|0">Антильские о.(Нид)</OPTION>
+<OPTION VALUE="8|0">Аргентина</OPTION>
+<OPTION VALUE="9|0">Армения</OPTION>
+<OPTION VALUE="10|0">Аруба</OPTION>
+<OPTION VALUE="14|0">Багамские о-ва</OPTION>
+<OPTION VALUE="16|0">Бангладеш</OPTION>
+<OPTION VALUE="17|0">Барбадос</OPTION>
+<OPTION VALUE="15|0">Бахрейн</OPTION>
+<OPTION VALUE="19|0">Белиз</OPTION>
+<OPTION VALUE="2|2">Белоруссия</OPTION>
+<OPTION VALUE="18|0">Бельгия</OPTION>
+<OPTION VALUE="20|0">Бенин</OPTION>
+<OPTION VALUE="21|0">Бермудские о-ва</OPTION>
+<OPTION VALUE="28|0">Болгария</OPTION>
+<OPTION VALUE="23|0">Боливия</OPTION>
+<OPTION VALUE="24|0">Босния</OPTION>
+<OPTION VALUE="25|0">Ботсвана</OPTION>
+<OPTION VALUE="26|0">Бразилия</OPTION>
+<OPTION VALUE="27|0">Бруней</OPTION>
+<OPTION VALUE="29|0">Буркина Фасо</OPTION>
+<OPTION VALUE="30|0">Бурунди</OPTION>
+<OPTION VALUE="22|0">Бутан</OPTION>
+<OPTION VALUE="199|0">Вануату</OPTION>
+<OPTION VALUE="72|0">Великобритания</OPTION>
+<OPTION VALUE="84|0">Венгрия</OPTION>
+<OPTION VALUE="200|0">Венесуэла</OPTION>
+<OPTION VALUE="202|0">Виргиния о.(Вел.)</OPTION>
+<OPTION VALUE="203|0">Виргиния о.(США)</OPTION>
+<OPTION VALUE="201|0">Вьетнам</OPTION>
+<OPTION VALUE="66|0">Габон</OPTION>
+<OPTION VALUE="81|0">Гаити</OPTION>
+<OPTION VALUE="80|0">Гайана</OPTION>
+<OPTION VALUE="67|0">Гамбия</OPTION>
+<OPTION VALUE="70|0">Гана</OPTION>
+<OPTION VALUE="75|0">Гваделупа</OPTION>
+<OPTION VALUE="77|0">Гватемала</OPTION>
+<OPTION VALUE="78|0">Гвинея</OPTION>
+<OPTION VALUE="79|0">Гвинея-Бисау</OPTION>
+<OPTION VALUE="69|0">Германия</OPTION>
+<OPTION VALUE="71|0">Гибралтар</OPTION>
+<OPTION VALUE="82|0">Гондурас</OPTION>
+<OPTION VALUE="83|0">Гонконг</OPTION>
+<OPTION VALUE="74|0">Гренада</OPTION>
+<OPTION VALUE="73|0">Греция</OPTION>
+<OPTION VALUE="68|0">Грузия</OPTION>
+<OPTION VALUE="76|0">Гуам о-в</OPTION>
+<OPTION VALUE="50|0">Дания</OPTION>
+<OPTION VALUE="51|0">Джибути</OPTION>
+<OPTION VALUE="52|0">Доминика</OPTION>
+<OPTION VALUE="15653129|3">Доминика</OPTION>
+<OPTION VALUE="53|0">Доминиканская респ.</OPTION>
+<OPTION VALUE="55|0">Египет</OPTION>
+<OPTION VALUE="207|0">Замбия</OPTION>
+<OPTION VALUE="204|0">Западное Самоа</OPTION>
+<OPTION VALUE="34|0">Зеленого Мыса о.</OPTION>
+<OPTION VALUE="208|0">Зимбабве</OPTION>
+<OPTION VALUE="90|0">Израиль</OPTION>
+<OPTION VALUE="86|0">Индия</OPTION>
+<OPTION VALUE="87|0">Индонезия</OPTION>
+<OPTION VALUE="94|0">Иордания</OPTION>
+<OPTION VALUE="88|0">Иран</OPTION>
+<OPTION VALUE="89|0">Ирландия</OPTION>
+<OPTION VALUE="85|0">Исландия</OPTION>
+<OPTION VALUE="169|0">Испания</OPTION>
+<OPTION VALUE="91|0">Италия</OPTION>
+<OPTION VALUE="205|0">Йемен</OPTION>
+<OPTION VALUE="95|0">Казахстан</OPTION>
+<OPTION VALUE="35|0">Кайманские о-ва</OPTION>
+<OPTION VALUE="31|0">Камбоджа</OPTION>
+<OPTION VALUE="32|0">Камерун</OPTION>
+<OPTION VALUE="33|0">Канада</OPTION>
+<OPTION VALUE="14194405|3">Канарские о-ва</OPTION>
+<OPTION VALUE="153|0">Катар</OPTION>
+<OPTION VALUE="96|0">Кения</OPTION>
+<OPTION VALUE="47|0">Кипр</OPTION>
+<OPTION VALUE="99|0">Киргизия</OPTION>
+<OPTION VALUE="97|0">Кирибати</OPTION>
+<OPTION VALUE="39|0">Китай</OPTION>
+<OPTION VALUE="40|0">Колумбия</OPTION>
+<OPTION VALUE="41|0">Коморские о-ва</OPTION>
+<OPTION VALUE="42|0">Конго</OPTION>
+<OPTION VALUE="49|0">Конго Дем.</OPTION>
+<OPTION VALUE="1|2">Коста-Рика</OPTION>
+<OPTION VALUE="46|0">Куба</OPTION>
+<OPTION VALUE="98|0">Кувейт</OPTION>
+<OPTION VALUE="43|0">Кука о-ва</OPTION>
+<OPTION VALUE="3|2">Кыргызстан</OPTION>
+<OPTION VALUE="100|0">Лаос</OPTION>
+<OPTION VALUE="101|0">Латвия</OPTION>
+<OPTION VALUE="103|0">Лесото</OPTION>
+<OPTION VALUE="104|0">Либерия</OPTION>
+<OPTION VALUE="102|0">Ливан</OPTION>
+<OPTION VALUE="105|0">Ливия</OPTION>
+<OPTION VALUE="106|0">Литва</OPTION>
+<OPTION VALUE="647354|2">Лихтенштейн</OPTION>
+<OPTION VALUE="107|0">Люксембург</OPTION>
+<OPTION VALUE="119|0">Маврикий</OPTION>
+<OPTION VALUE="118|0">Мавритания</OPTION>
+<OPTION VALUE="110|0">Мадагаскар</OPTION>
+<OPTION VALUE="120|0">Майот</OPTION>
+<OPTION VALUE="108|0">Макао</OPTION>
+<OPTION VALUE="109|0">Македония</OPTION>
+<OPTION VALUE="111|0">Малави</OPTION>
+<OPTION VALUE="112|0">Малазия</OPTION>
+<OPTION VALUE="114|0">Мали</OPTION>
+<OPTION VALUE="113|0">Мальдивские о-ва</OPTION>
+<OPTION VALUE="115|0">Мальта</OPTION>
+<OPTION VALUE="126|0">Марокко</OPTION>
+<OPTION VALUE="117|0">Мартиника о-в</OPTION>
+<OPTION VALUE="116|0">Маршалловы о.</OPTION>
+<OPTION VALUE="121|0">Мексика</OPTION>
+<OPTION VALUE="122|0">Микронезия</OPTION>
+<OPTION VALUE="127|0">Мозамбик</OPTION>
+<OPTION VALUE="123|0">Молдова</OPTION>
+<OPTION VALUE="13572866|3">Монако</OPTION>
+<OPTION VALUE="124|0">Монголия</OPTION>
+<OPTION VALUE="125|0">Монсеррат</OPTION>
+<OPTION VALUE="128|0">Мьянма</OPTION>
+<OPTION VALUE="129|0">Намибия</OPTION>
+<OPTION VALUE="130|0">Науру</OPTION>
+<OPTION VALUE="131|0">Непал</OPTION>
+<OPTION VALUE="137|0">Нигер</OPTION>
+<OPTION VALUE="138|0">Нигерия</OPTION>
+<OPTION VALUE="133|0">Нидерланды</OPTION>
+<OPTION VALUE="136|0">Никарагуа</OPTION>
+<OPTION VALUE="135|0">Новая Зеландия</OPTION>
+<OPTION VALUE="134|0">Новая Каледония о-в</OPTION>
+<OPTION VALUE="141|0">Норвегия</OPTION>
+<OPTION VALUE="193|0">ОАЭ</OPTION>
+<OPTION VALUE="142|0">Оман</OPTION>
+<OPTION VALUE="143|0">Пакистан</OPTION>
+<OPTION VALUE="144|0">Палау</OPTION>
+<OPTION VALUE="145|0">Панама</OPTION>
+<OPTION VALUE="146|0">Папуа Новая Гвинея</OPTION>
+<OPTION VALUE="147|0">Парагвай</OPTION>
+<OPTION VALUE="148|0">Перу</OPTION>
+<OPTION VALUE="150|0">Польша</OPTION>
+<OPTION VALUE="151|0">Португалия</OPTION>
+<OPTION VALUE="152|0">Пуэрто-Рико</OPTION>
+<OPTION VALUE="154|0">Реюньон</OPTION><OPTION VALUE="209|0" selected> Россия</option><OPTION VALUE="156|0">Руанда</OPTION>
+<OPTION VALUE="155|0">Румыния</OPTION>
+<OPTION VALUE="56|0">Сальвадор</OPTION>
+<OPTION VALUE="157|0">Сан-Марино</OPTION>
+<OPTION VALUE="158|0">Сан-Томе</OPTION>
+<OPTION VALUE="159|0">Саудовская Аравия</OPTION>
+<OPTION VALUE="176|0">Свазиленд</OPTION>
+<OPTION VALUE="140|0">Сев. Марианские о.</OPTION>
+<OPTION VALUE="139|0">Северная Корея</OPTION>
+<OPTION VALUE="161|0">Сейшельские о-ва</OPTION>
+<OPTION VALUE="160|0">Сенегал</OPTION>
+<OPTION VALUE="173|0">Сент-Винсент</OPTION>
+<OPTION VALUE="171|0">Сент-Китте и Невис</OPTION>
+<OPTION VALUE="172|0">Сент-Люсия</OPTION>
+<OPTION VALUE="32583743|3">Сербия и Черногория</OPTION>
+<OPTION VALUE="162|0">Серра-Леоне</OPTION>
+<OPTION VALUE="163|0">Сингапур</OPTION>
+<OPTION VALUE="179|0">Сирия</OPTION>
+<OPTION VALUE="164|0">Словакия</OPTION>
+<OPTION VALUE="165|0">Словения</OPTION>
+<OPTION VALUE="166|0">Соломоновы о-ва</OPTION>
+<OPTION VALUE="174|0">Судан</OPTION>
+<OPTION VALUE="175|0">Суринам</OPTION>
+<OPTION VALUE="196|0">США</OPTION>
+<OPTION VALUE="182|0">Таджикистан</OPTION>
+<OPTION VALUE="180|0">Таити о-в</OPTION>
+<OPTION VALUE="181|0">Тайвань</OPTION>
+<OPTION VALUE="184|0">Тайланд</OPTION>
+<OPTION VALUE="183|0">Танзания</OPTION>
+<OPTION VALUE="191|0">Теркс.Кайкос</OPTION>
+<OPTION VALUE="185|0">Того</OPTION>
+<OPTION VALUE="186|0">Тонга</OPTION>
+<OPTION VALUE="187|0">Тринидад и Тобаго</OPTION>
+<OPTION VALUE="192|0">Тувалу</OPTION>
+<OPTION VALUE="188|0">Тунис</OPTION>
+<OPTION VALUE="190|0">Туркменистан</OPTION>
+<OPTION VALUE="189|0">Турция</OPTION>
+<OPTION VALUE="194|0">Уганда</OPTION>
+<OPTION VALUE="198|0">Узбекистан</OPTION>
+<OPTION VALUE="195|0">Украина</OPTION>
+<OPTION VALUE="197|0">Уругвай</OPTION>
+<OPTION VALUE="61|0">Фарерские о-ва</OPTION>
+<OPTION VALUE="62|0">Фиджи о-ва</OPTION>
+<OPTION VALUE="149|0">Филиппины</OPTION>
+<OPTION VALUE="63|0">Финляндия</OPTION>
+<OPTION VALUE="64|0">Франция</OPTION>
+<OPTION VALUE="65|0">Француз. Гайана</OPTION>
+<OPTION VALUE="45|0">Хорватия</OPTION>
+<OPTION VALUE="36|0">ЦАР</OPTION>
+<OPTION VALUE="37|0">Чад</OPTION>
+<OPTION VALUE="48|0">Чехия</OPTION>
+<OPTION VALUE="38|0">Чили</OPTION>
+<OPTION VALUE="178|0">Швейцария</OPTION>
+<OPTION VALUE="177|0">Швеция</OPTION>
+<OPTION VALUE="170|0">Шри-Ланка</OPTION>
+<OPTION VALUE="54|0">Эквадор</OPTION>
+<OPTION VALUE="57|0">Экват.Гвинея</OPTION>
+<OPTION VALUE="17909748|3">Экспорт</OPTION>
+<OPTION VALUE="10675429|3">Эритрея</OPTION>
+<OPTION VALUE="58|0">Эритрея</OPTION>
+<OPTION VALUE="59|0">Эстония</OPTION>
+<OPTION VALUE="60|0">Эфиопия</OPTION>
+<OPTION VALUE="167|0">ЮАР</OPTION>
+<OPTION VALUE="206|0">Югославия</OPTION>
+<OPTION VALUE="168|0">Южная Корея</OPTION>
+<OPTION VALUE="92|0">Ямайка</OPTION>
+<OPTION VALUE="93|0">Япония</OPTION></SELECT></td>
+</tr>
+<tr>
+<td class="formtext">Область</td>
+<td class="form-inputcell"><SELECT name="ToRegion" class="input2" id="5"><OPTION VALUE="1|0">Агинский Бурятский авт. округ</OPTION>
+<OPTION VALUE="53|0">Адыгея респ.</OPTION>
+<OPTION VALUE="54|0">Алтай респ.</OPTION>
+<OPTION VALUE="3|0">Алтайский край</OPTION>
+<OPTION VALUE="4|0">Амурская обл.</OPTION>
+<OPTION VALUE="6|0">Архангельская обл.</OPTION>
+<OPTION VALUE="7|0">Астраханская обл.</OPTION>
+<OPTION VALUE="55|0">Башкортостан респ.</OPTION>
+<OPTION VALUE="8|0">Белгородская обл.</OPTION>
+<OPTION VALUE="55|2">Белоруссия</OPTION>
+<OPTION VALUE="10|0">Брянская обл.</OPTION>
+<OPTION VALUE="56|0">Бурятия респ.</OPTION>
+<OPTION VALUE="11|0">Владимирская обл.</OPTION>
+<OPTION VALUE="12|0">Волгоградская обл.</OPTION>
+<OPTION VALUE="13|0">Вологодская обл.</OPTION>
+<OPTION VALUE="14|0">Воронежская обл.</OPTION>
+<OPTION VALUE="57|0">Дагестан респ.</OPTION>
+<OPTION VALUE="999|0">Дальнее зарубежье</OPTION>
+<OPTION VALUE="16|0">Еврейская авт. обл.</OPTION>
+<OPTION VALUE="17|0">Ивановская обл.</OPTION>
+<OPTION VALUE="101|0">Ингушская респ.</OPTION>
+<OPTION VALUE="18|0">Иркутская обл.</OPTION>
+<OPTION VALUE="19|0">Кабардино-Балкарская респ.</OPTION>
+<OPTION VALUE="21|0">Калининградская обл.</OPTION>
+<OPTION VALUE="58|0">Калмыкия-Хальмг Танч респ.</OPTION>
+<OPTION VALUE="22|0">Калужская обл.</OPTION>
+<OPTION VALUE="23|0">Камчатская обл.</OPTION>
+<OPTION VALUE="24|0">Карачаево-Черкесская респ.</OPTION>
+<OPTION VALUE="59|0">Карелия респ.</OPTION>
+<OPTION VALUE="25|0">Кемеровская обл.</OPTION>
+<OPTION VALUE="27|0">Кировская обл.</OPTION>
+<OPTION VALUE="60|0">Коми респ.</OPTION>
+<OPTION VALUE="28|0">Коми-Пермяцкий авт. округ</OPTION>
+<OPTION VALUE="96|0">Корякский авт. округ</OPTION>
+<OPTION VALUE="29|0">Костромская обл.</OPTION>
+<OPTION VALUE="30|0">Краснодарский край</OPTION>
+<OPTION VALUE="31|0">Красноярский край</OPTION>
+<OPTION VALUE="32|0">Курганская обл.</OPTION>
+<OPTION VALUE="33|0">Курская обл.</OPTION>
+<OPTION VALUE="35|0">Ленинградская обл.</OPTION>
+<OPTION VALUE="36|0">Липецкая обл.</OPTION>
+<OPTION VALUE="38|0">Магаданская обл.</OPTION>
+<OPTION VALUE="61|0">Марий-Эл респ.</OPTION>
+<OPTION VALUE="62|0">Мордовия респ.</OPTION>
+<OPTION VALUE="40|0">Московская обл.</OPTION>
+<OPTION VALUE="41|0">Мурманская обл.</OPTION>
+<OPTION VALUE="42|0">Ненецкий авт. округ</OPTION>
+<OPTION VALUE="43|0">Нижегородская обл.</OPTION>
+<OPTION VALUE="44|0">Новгородская обл.</OPTION>
+<OPTION VALUE="45|0">Новосибирская обл.</OPTION>
+<OPTION VALUE="46|0">Омская обл.</OPTION>
+<OPTION VALUE="47|0">Оренбургская обл.</OPTION>
+<OPTION VALUE="48|0">Орловская обл.</OPTION>
+<OPTION VALUE="49|0">Пензенская обл.</OPTION>
+<OPTION VALUE="50|0">Пермская обл.</OPTION>
+<OPTION VALUE="51|0">Приморский край</OPTION>
+<OPTION VALUE="52|0">Псковская обл.</OPTION>
+<OPTION VALUE="68|0">Ростовская обл.</OPTION>
+<OPTION VALUE="69|0">Рязанская обл.</OPTION>
+<OPTION VALUE="70|0">Самарская обл.</OPTION>
+<OPTION VALUE="71|0">Саратовская обл.</OPTION>
+<OPTION VALUE="63|0">Саха респ.</OPTION>
+<OPTION VALUE="72|0">Сахалинская обл.</OPTION>
+<OPTION VALUE="73|0">Свердловская обл.</OPTION>
+<OPTION VALUE="64|0">Северная Осетия респ.</OPTION>
+<OPTION VALUE="74|0">Смоленская обл.</OPTION>
+<OPTION VALUE="75|0">Ставропольский край</OPTION>
+<OPTION VALUE="77|0">Таймырский авт. округ</OPTION>
+<OPTION VALUE="78|0">Тамбовская обл.</OPTION>
+<OPTION VALUE="65|0">Татарстан респ.</OPTION>
+<OPTION VALUE="79|0">Тверская обл.</OPTION>
+<OPTION VALUE="80|0">Томская обл.</OPTION>
+<OPTION VALUE="81|0">Тульская обл.</OPTION>
+<OPTION VALUE="66|0">Тыва респ.</OPTION>
+<OPTION VALUE="83|0">Тюменская обл.</OPTION>
+<OPTION VALUE="84|0">Удмуртская респ.</OPTION>
+<OPTION VALUE="87|0">Ульяновская обл.</OPTION>
+<OPTION VALUE="88|0">Усть-Ордынский авт.округ</OPTION>
+<OPTION VALUE="89|0">Хабаровский край</OPTION>
+<OPTION VALUE="67|0">Хакасия респ.</OPTION>
+<OPTION VALUE="90|0">Ханты-Мансийский авт. округ</OPTION>
+<OPTION VALUE="91|0">Челябинская обл.</OPTION>
+<OPTION VALUE="92|0">Чечня респ.</OPTION>
+<OPTION VALUE="93|0">Читинская обл.</OPTION>
+<OPTION VALUE="94|0">Чувашия респ.</OPTION>
+<OPTION VALUE="95|0">Чукотский авт. округ</OPTION>
+<OPTION VALUE="97|0">Эвенкийский авт. округ</OPTION>
+<OPTION VALUE="99|0">Ямало-Ненецкий авт. округ</OPTION>
+<OPTION VALUE="100|0">Ярославская обл.</OPTION></SELECT></td>
+</tr>
+<tr>
+<td class="formtext">Город</td>
+<td class="form-inputcell"><input name="ToCityName" type="text" class="input1" size="35"></td>
+</tr>
+<tr>
+<td></td>
+<td class="vydacha2"><input checked type="radio" name="ToCity" value="" >
+Поискать город заново<br>
+</td>
+</tr>
+<tr>
+<td></td>
+<td class="form-inputcell"><table cellspacing="5" border="0"><tr>
+<td><input type="image" src="/images/tariffs/raschet-button.jpg" name="submit" width="124" height="27"></td>
+<td><input type="image" src="/images/monitoring/clear-button.jpg" width="124" height="27" onClick="ToRegion.disabled=false; ToCityName.disabled=false; document.personinfo.reset();  return false;"></td>
+</tr></table></td>
+</tr>
+</table></form>
+
+	<script language="JavaScript">
+	<!-- hide
+	document.personinfo.FromCityName.value= 'Москва'
+document.personinfo.Weight.value= '0.001'
+document.personinfo.Amount.value= '0'
+document.personinfo.ToCityName.value= 'Другой (указать выше)'
+document.getElementById("5").options[0]=new Option("Московская обл.", "40|0")
+document.getElementById("5").options[0].selected = true
+document.getElementById("6").options[0]=new Option("Московская обл.", "40|0")
+document.getElementById("6").options[0].selected = true
+document.getElementById("7").options[7].selected = true
+
+	// -->
+	</script>
+	<a name=bottom>
+<br>
+
+<p class="heading">ВНИМАНИЕ!<br>Уважаемые господа!</p>
+<ol class="maintext-paragraf">
+<li>Обращаем Ваше внимание, что расчет стоимости оправки производится согласно услуге  «Экспресс-доставка» в режиме «от двери до двери», т.е. Отправителем всегда является Заказчик перевозки.<br>
+Если же Вы хотите воспользоваться услугой «Сбор отправлений в других городах  РФ» (мы забираем отправление в одном из населенных пунктов и доставляем его Вам, либо перевозим его в другой населенный пункт), то к полученному при расчете  результату необходимо применять повышающий коэффициент 1,3.</li>
+<li>Просим Вас учесть, что при отправке груза нужно определить, какой его вес -   фактический или «объемный» больше, и именно эту величину заложить для расчета в тарифный калькулятор в графу «Общий вес отправки». К сожалению, на сегодняшний день в тарифном калькуляторе не предусмотрена эта функция, поэтому Вам придется самостоятельно рассчитать «объемный вес» Вашего груза и сравнить его с фактическим.<br>
+Для определения величины «объемного веса»  (в кг.) найдите  объем посылки (перемножить длину на ширину на  высоту  в см.)  и разделите на коэффициент 6000 (длина (см) х ширина (см) х высота (см) / 6000).<br>
+По такому же принципу будет производиться оплата и при  оформлении заказа курьером.</li>
+</ol>
+<p class="maintext-paragraf">Приносим свои извинения за предоставленные неудобства и заверяем Вас, что в самое ближайшее время избавим Вас от лишних забот, так как тарифный калькулятор начнет функционировать в нужном режиме.</p>
+
+<p class="heading">Уважаемые дамы и господа!</p>
+<p class="maintext-paragraf">Обращаем Ваше внимание, что  расчет тарифным калькулятором стоимости доставки грузов весом свыше 80 кг. производится с повышающим коэффициентом 1,5. Данный коэффициент применяется при тарификации грузов, вес <font color="#FF0000">одного места</font> которых превышает 80 кг. В случае если при весе от 80 кг. Ваш груз состоит из более чем одного места, то полученную величину Вам необходимо разделить на 1,5.</p>
+<p class="heading">Уважаемые дамы и господа!
+<p class="maintext-paragraf"><font color="#FF0000">Со всеми правилами тарификации услуг Вы можете ознакомиться <a href="docs/tariff_rules.xls" class="maintext-link">здесь</a></font></p>
+
+<br><br><br>
+</td>
+            </tr>
+          </table></td>
+          <td width="11%">&nbsp;</td>
+        </tr>
+      </table>      </td>
+    <td width="0%" height="100%" valign="top" class="right-column-container"><table width="235" height="100%" border="0" cellpadding="0" cellspacing="0" id="right_column">
+      <tr>
+        <td height="0" valign="top"><table width="235" height="47" border="0" cellpadding="0" cellspacing="0" id="icons">
+          <tr>
+            <td width="66" class="icons-text"><a href="/english.htm" class="icons-text_link">English<br>
+              version</a></td>
+            <td width="62" class="icons-text"><a href="/sitemap.htm" class="icons-text_link">Карта<br> 
+              сайта</a> </td>
+            <td width="107" class="icons-text"><a href="mailto:cpcr@cpcr.ru" class="icons-text_link">Обратная<br> 
+              связь </a></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="0%" valign="top"><table width="235" border="0" cellpadding="0" cellspacing="0" id="corporate-menu">
+          <tr>
+            <td class="corporate-menu-item"><a href="/company.htm" class="corporate-menu-item_link">О компании</a> <span class="dots-span">.....................</span> </td>
+            <td width="49" class="corporate-menu-sign"><a href="/About.htm" class="corporate-menu-sign_link">&gt;</a></td>
+          </tr>
+          <tr>
+            <td class="corporate-menu-item"><a href="/facility.htm" class="corporate-menu-item_link">Услуги</a> <span class="dots-span">............................</span> </td>
+            <td width="49" class="corporate-menu-sign"><a href="/facility.htm" class="corporate-menu-sign_link">&gt;</a></td>
+          </tr>
+          <tr>
+            <td class="corporate-menu-item"><a href="/news.htm" class="corporate-menu-item_link">Новости</a> <span class="dots-span">...........................</span></td>
+            <td width="49" class="corporate-menu-sign"><a href="/news.htm" class="corporate-menu-sign_link">&gt;</a></td>
+          </tr>
+          <tr>
+            <td class="corporate-menu-item"><a href="/index.htm" class="corporate-menu-item_link"><nobr>На главную</a> <span class="dots-span">.....................</span></td>
+            <td width="49" class="corporate-menu-sign"><a href="#" class="corporate-menu-sign_link">&gt;</a></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="0%" valign="top">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="40%" valign="top"><table width="235" border="0" cellpadding="0" cellspacing="0" id="address">
+          <tr>
+            <td class="address">&copy;СПСР-Экспресс<br>
+            Россия 109316 Москва,<br>
+            Волгоградский пр-т, д. 42, к. 23<br>
+тел.: +7 (495) 981-10-10<br>
+тел.: +7 (495) 980-10-90<br>
+факс: +7 (495) 981-10-00<br>
+              e-mail: <a href="/mailto:%20cpcr@cpcr.ru" class="address_link">cpcr@cpcr.ru</a></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="60%" valign="top" class="copyright"><a href="/http://www.xds.ru" class="copyright-link">Impex Design: web-дизайн <br>
+          и разработка сайта </a>
+<br><br>
+
+<!--Rating@Mail.ru COUNTER--><script language="JavaScript" type="text/javascript"><!--
+d=document;var a='';a+=';r='+escape(d.referrer)
+js=10//--></script><script language="JavaScript1.1" type="text/javascript"><!--
+a+=';j='+navigator.javaEnabled()
+js=11//--></script><script language="JavaScript1.2" type="text/javascript"><!--
+s=screen;a+=';s='+s.width+'*'+s.height
+a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth)
+js=12//--></script><script language="JavaScript1.3" type="text/javascript"><!--
+js=13//--></script><script language="JavaScript" type="text/javascript"><!--
+d.write('<a href="http://top.mail.ru/jump?from=357602"'+
+' target=_top><img src="http://top.list.ru/counter'+
+'?id=357602;t=84;js='+js+a+';rand='+Math.random()+
+'" alt="Рейтинг@Mail.ru"'+' border=0 height=18 width=88/><\/a>')
+if(11<js)d.write('<'+'!-- ')//--></script><noscript><a
+target=_top href="http://top.mail.ru/jump?from=357602"><img
+src="http://top.list.ru/counter?js=na;id=357602;t=84"
+border=0 height=18 width=88
+alt="Рейтинг@Mail.ru"/></a></noscript><script language="JavaScript" type="text/javascript"><!--
+if(11<js)d.write('--'+'>')//--></script><!--/COUNTER-->
+<br>
+
+</td>
+      </tr>
+    </table>
+      <br></td>
+  </tr>
+</table></td>
+  </tr>
+</table>
+<map name="Map">
+  <area shape="rect" coords="250,56,304,115" href="/#">
+  <area shape="rect" coords="324,54,368,109" href="/#">
+  <area shape="rect" coords="388,60,440,109" href="/#">
+</map>
+</body>
+</html>
+
+==========================================
+0: 
+==========================================
+
+<html>
+<head>
+<title>Экспресс почта "СПСР Экспресс"</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<script language="JavaScript" src="/index.js"></script>
+<style type="text/css">
+<!--
+body {
+	background-color: #ededec;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+-->
+</style>
+
+<link href="/monitoring.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<link href="../monitoring.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="MM_preloadImages('images/rasshiren-monitoring2.jpg','images/po-naklad-2.jpg','images/new-monitoring2.jpg','/images/monitoring/po-naklad-2.jpg','images/tariffs/new-otpravl3.jpg','images/tariffs/tariffication2.jpg')">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script type="text/javascript" language="Javascript"><!--
+
+function validate(form) {
+
+	if (form.FromCityName.value =='') { alert('Введите Город отправки'); return false;}
+	if (form.Weight.value =='') { alert('Введите Вес'); return false;}	
+	if (form.Amount.value =='') { alert('Введите Оценочную стоимость'); return false;}
+	if (form.ToCityName.value =='') { alert('Введите Город доставки'); return false;}     
+
+	else return true;
+	return false;
+}
+
+
+
+function askdel( warn_msg ){
+	if(confirm( warn_msg )) { return true; }
+return false;
+}
+
+function check_name(field){
+myRe=/ЗАО|ООО|ооо|ОАО|оао|"|'/;
+myArray = myRe.exec(field.value);
+if(myArray) { alert('Краткое название организации не должно содержать\n кавычки и обозначение формы собственности!');  return false;}
+else return true; 
+}
+
+function check_digit(field){
+myRe= /^\d+$/;
+myArray = myRe.exec(field.value);
+if(!myArray) { alert('Поля Вес и Оценочная стоимость должны содержать только цифры !');  return false;}
+else return true; 
+}
+
+function select_city(){
+var form = document.personinfo;
+form.city.value = form.s_city[form.s_city.selectedIndex].value;
+form.s_city[0].selected = 1;
+form.city.focus();
+}
+
+--></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table width="100%%" height="100%"  border="0" cellpadding="0" cellspacing="0" id="body">
+  <tr>
+    <td height="0%" valign="top"><table width="100%" height="100"  border="0" cellpadding="0" cellspacing="0" id="caption">
+  <tr>
+    <td width="24%" class="top-background"></td>
+    <td width="1%"><a href="/index.htm"><img src="/images/monitoring/spsr-logo-monitoring.jpg" width="141" height="100" border="0"></a></td>
+    <td width="24%" class="top-background"></td>
+    <td width="1%"><a href="/index.htm"><img src="/images/monitoring/express-pochta-monitoring.jpg" width="111" height="100" border="0"></a></td>
+    <td width="24%" class="top-background"></td>
+    <td width="1%" ><img src="/images/monitoring/slogan-monitoring.jpg" width="161" height="100"></td>
+    <td width="24%" class="top-background"></td>
+    <td width="1%"><img src="/images/monitoring/envelope-top-monitoring.jpg" width="473" height="100" border="0" usemap="#Map"></td>
+  </tr>
+</table></td>
+  </tr>
+  <tr>
+    <td height="100%" valign="top"><table width="100%" height="100%"  border="0" cellpadding="0" cellspacing="0" id="content">
+  <tr>
+    <td width="100%" valign="top"><table width="100%%"  border="0" cellpadding="0" cellspacing="0" id="mainpart">
+      <tr>
+        <td valign="top"><table width="100%%" height="189"  border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td width="30%"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="1%"><img src="/images/tariffs/leftstamp-tariffs.jpg" width="89" height="250"></td>
+                <td width="17%" background="/images/tariffs/backlines-tariffs1.jpg">&nbsp;</td>
+                <td width="1%"><img src="/images/tariffs/tariffs-stamp.jpg" width="185" height="250"></td>
+              </tr>
+            </table></td>
+            <td width="70%" valign="top"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="5%" background="/images/tariffs/backlines-tariffs2.jpg">&nbsp;</td>
+                <td width="1%"><a href="/monitoring.htm"><img src="/images/tariffs/monitoring-tariffs.jpg" width="108" height="189" border="0"></a></td>
+                <td width="5%" background="/images/tariffs/backlines-tariffs3.jpg">&nbsp;</td>
+                <td width="1%"><a href="/novoe-otpravl.htm"><img src="/images/tariffs/courier-tariffs.jpg" width="113" height="189" border="0"></a></td>
+                <td width="5%" background="/images/tariffs/backlines-tariffs4.jpg">&nbsp;</td>
+                <td width="1%"><a href="/courier.htm"><img src="/images/tariffs/contacts-tariffs.jpg" width="118" height="189" border="0"></a></td>
+              </tr>
+              <tr>
+                <td colspan="6"><table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td width="5%"></td>
+                    <td width="95%"><img src="/images/tariffs/tariffs_heading.jpg" width="350" height="61"></td>
+                  </tr>
+                </table></td>
+                </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+      <table width="100%" height="100%"  border="0" cellpadding="0" cellspacing="0" id="main-content">
+        <tr>
+          <td width="10%" valign="top">&nbsp;</td>
+          <td width="25%" valign="top"><table width="100%" height="90%"  border="0" cellpadding="0" cellspacing="0" id="first column">
+            <tr>
+              <td height="1%">&nbsp;</td>
+            </tr>
+            <tr>
+              <td height="1%">&nbsp;</td>
+              </tr>
+            <tr>
+              <td class="anonces-monitoring">         </p>
+                <p class="attention2">&nbsp;</p>  </td>
+            </tr>
+          </table>            </td>
+          <td width="55%" height="90%" valign="top"><table width="100%" height="90%"  border="0" cellpadding="0" cellspacing="0" id="second-column">
+            <tr>
+              <td width="58%" height="5%"><a href="/tariffs.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','/images/tariffs/tariffication2.jpg',1)"><img src="/images/tariffs/tariffication1.jpg" name="Image15" width="237" height="31" border="0"></a></td>
+              <td width="42%" align="center"><a href="/novoe-otpravl.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','/images/tariffs/new-otpravl3.jpg',1)"><img src="/images/tariffs/new-otpravl3.jpg" name="Image14" width="185" height="31" border="0"></a></td>
+            </tr>
+            <tr>
+              <td colspan="2"  class="maintext-monitoring2">
+
+               
+
+
+ </td>
+            </tr>
+            <tr>
+              <td height="90%" colspan="2" valign="top" class="formtext-container">
+<p class="heading">Уважаемые дамы и господа!
+<p class="maintext-paragraf">Сообщаем Вам, что после долгого периода в 16 месяцев, когда мы удерживали цены на услуги Компании на стабильном уровне, мы вынуждены пойти на повышение наших тарифов на отправку из Москвы.<br>
+<br>
+Начавшийся в начале осени прошлого года и продолжающийся по настоящее время  значительный подъем цен на топливо, повышение в разы стоимости услуг за авиаперевозки не оставляют нам другого выбора. <br>
+<br>
+Тем не менее, компания «СПСР» нашла возможность не только оставить некоторые тарифы на прежнем уровне, но даже понизить их. Так, дешевле обойдется Вам отправка груза свыше 30 кг в Оренбург, Уфу, Волгоград, Екатеринбург, Челябинск, Майкоп, Нальчик, Ставрополь. Причем стоимость отправки тяжелых грузов (более 200 кг) будет меньше более чем на 16 % .<br>
+<br>
+Для клиентов, отправляющих за наличный расчет, по гарантийным письмам, а также впервые заключающих договор с компанией «СПСР» новые тарифы начинают действовать с 01 сентября 2008 года.<br>
+<br>
+С 01 сентября по 01 октября все наши постоянные клиенты будут проинформированы об изменениях в тарифной сетке Компании.<br>
+<br>
+Система скидок будет также пересмотрена с учетом новых тарифов.<br>
+<br>
+Компания «СПСР» продолжает  осуществлять программу повышения качества наших услуг. Уже с 01 сентября срок доставки во все населенные пункты Московской области не будет превышать 1 рабочего дня. А для Вашего удобства повышающий коэффициент к Межрегиональному тарифу теперь будет единым для любых грузов.<br>
+<br>
+Мы искренне надеемся на Ваше понимание и заверяем Вас, что будем и в дальнейшем  повышать качество наших услуг, учитывая все Ваши пожелания.<br>
+<br>
+Обращаем Ваше внимание, что с <font color="red">01 сентября 2008 г.</font> расчет стоимости доставки производится по <a href="docs/tariffs-russia.rar" class="maintext-link">новым тарифам</a>. </p>
+<center>
+
+
+<form method="post" action="/cgi-bin/post.pl?TariffCompute#bottom" name="personinfo" onSubmit="return validate(document.personinfo)"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td height="48" class="kuda-otkuda">Откуда:</td>
+<td class="form-inputcell"></td>
+</tr>
+<tr>
+<td height="48" class="formtext">Страна</td>
+<td class="formtext2">РОССИЯ</td>
+</tr>
+<tr>
+<td class="formtext">Регион</td>
+<td class="form-inputcell"><SELECT name="FromRegion" class="input2" id="6"><OPTION VALUE="1|0">Агинский Бурятский авт. округ</OPTION>
+<OPTION VALUE="53|0">Адыгея респ.</OPTION>
+<OPTION VALUE="54|0">Алтай респ.</OPTION>
+<OPTION VALUE="3|0">Алтайский край</OPTION>
+<OPTION VALUE="4|0">Амурская обл.</OPTION>
+<OPTION VALUE="6|0">Архангельская обл.</OPTION>
+<OPTION VALUE="7|0">Астраханская обл.</OPTION>
+<OPTION VALUE="55|0">Башкортостан респ.</OPTION>
+<OPTION VALUE="8|0">Белгородская обл.</OPTION>
+<OPTION VALUE="55|2">Белоруссия</OPTION>
+<OPTION VALUE="10|0">Брянская обл.</OPTION>
+<OPTION VALUE="56|0">Бурятия респ.</OPTION>
+<OPTION VALUE="11|0">Владимирская обл.</OPTION>
+<OPTION VALUE="12|0">Волгоградская обл.</OPTION>
+<OPTION VALUE="13|0">Вологодская обл.</OPTION>
+<OPTION VALUE="14|0">Воронежская обл.</OPTION>
+<OPTION VALUE="57|0">Дагестан респ.</OPTION>
+<OPTION VALUE="999|0">Дальнее зарубежье</OPTION>
+<OPTION VALUE="16|0">Еврейская авт. обл.</OPTION>
+<OPTION VALUE="17|0">Ивановская обл.</OPTION>
+<OPTION VALUE="101|0">Ингушская респ.</OPTION>
+<OPTION VALUE="18|0">Иркутская обл.</OPTION>
+<OPTION VALUE="19|0">Кабардино-Балкарская респ.</OPTION>
+<OPTION VALUE="21|0">Калининградская обл.</OPTION>
+<OPTION VALUE="58|0">Калмыкия-Хальмг Танч респ.</OPTION>
+<OPTION VALUE="22|0">Калужская обл.</OPTION>
+<OPTION VALUE="23|0">Камчатская обл.</OPTION>
+<OPTION VALUE="24|0">Карачаево-Черкесская респ.</OPTION>
+<OPTION VALUE="59|0">Карелия респ.</OPTION>
+<OPTION VALUE="25|0">Кемеровская обл.</OPTION>
+<OPTION VALUE="27|0">Кировская обл.</OPTION>
+<OPTION VALUE="60|0">Коми респ.</OPTION>
+<OPTION VALUE="28|0">Коми-Пермяцкий авт. округ</OPTION>
+<OPTION VALUE="96|0">Корякский авт. округ</OPTION>
+<OPTION VALUE="29|0">Костромская обл.</OPTION>
+<OPTION VALUE="30|0">Краснодарский край</OPTION>
+<OPTION VALUE="31|0">Красноярский край</OPTION>
+<OPTION VALUE="32|0">Курганская обл.</OPTION>
+<OPTION VALUE="33|0">Курская обл.</OPTION>
+<OPTION VALUE="35|0">Ленинградская обл.</OPTION>
+<OPTION VALUE="36|0">Липецкая обл.</OPTION>
+<OPTION VALUE="38|0">Магаданская обл.</OPTION>
+<OPTION VALUE="61|0">Марий-Эл респ.</OPTION>
+<OPTION VALUE="62|0">Мордовия респ.</OPTION>
+<OPTION VALUE="40|0">Московская обл.</OPTION>
+<OPTION VALUE="41|0">Мурманская обл.</OPTION>
+<OPTION VALUE="42|0">Ненецкий авт. округ</OPTION>
+<OPTION VALUE="43|0">Нижегородская обл.</OPTION>
+<OPTION VALUE="44|0">Новгородская обл.</OPTION>
+<OPTION VALUE="45|0">Новосибирская обл.</OPTION>
+<OPTION VALUE="46|0">Омская обл.</OPTION>
+<OPTION VALUE="47|0">Оренбургская обл.</OPTION>
+<OPTION VALUE="48|0">Орловская обл.</OPTION>
+<OPTION VALUE="49|0">Пензенская обл.</OPTION>
+<OPTION VALUE="50|0">Пермская обл.</OPTION>
+<OPTION VALUE="51|0">Приморский край</OPTION>
+<OPTION VALUE="52|0">Псковская обл.</OPTION>
+<OPTION VALUE="68|0">Ростовская обл.</OPTION>
+<OPTION VALUE="69|0">Рязанская обл.</OPTION>
+<OPTION VALUE="70|0">Самарская обл.</OPTION>
+<OPTION VALUE="71|0">Саратовская обл.</OPTION>
+<OPTION VALUE="63|0">Саха респ.</OPTION>
+<OPTION VALUE="72|0">Сахалинская обл.</OPTION>
+<OPTION VALUE="73|0">Свердловская обл.</OPTION>
+<OPTION VALUE="64|0">Северная Осетия респ.</OPTION>
+<OPTION VALUE="74|0">Смоленская обл.</OPTION>
+<OPTION VALUE="75|0">Ставропольский край</OPTION>
+<OPTION VALUE="77|0">Таймырский авт. округ</OPTION>
+<OPTION VALUE="78|0">Тамбовская обл.</OPTION>
+<OPTION VALUE="65|0">Татарстан респ.</OPTION>
+<OPTION VALUE="79|0">Тверская обл.</OPTION>
+<OPTION VALUE="80|0">Томская обл.</OPTION>
+<OPTION VALUE="81|0">Тульская обл.</OPTION>
+<OPTION VALUE="66|0">Тыва респ.</OPTION>
+<OPTION VALUE="83|0">Тюменская обл.</OPTION>
+<OPTION VALUE="84|0">Удмуртская респ.</OPTION>
+<OPTION VALUE="87|0">Ульяновская обл.</OPTION>
+<OPTION VALUE="88|0">Усть-Ордынский авт.округ</OPTION>
+<OPTION VALUE="89|0">Хабаровский край</OPTION>
+<OPTION VALUE="67|0">Хакасия респ.</OPTION>
+<OPTION VALUE="90|0">Ханты-Мансийский авт. округ</OPTION>
+<OPTION VALUE="91|0">Челябинская обл.</OPTION>
+<OPTION VALUE="92|0">Чечня респ.</OPTION>
+<OPTION VALUE="93|0">Читинская обл.</OPTION>
+<OPTION VALUE="94|0">Чувашия респ.</OPTION>
+<OPTION VALUE="95|0">Чукотский авт. округ</OPTION>
+<OPTION VALUE="97|0">Эвенкийский авт. округ</OPTION>
+<OPTION VALUE="99|0">Ямало-Ненецкий авт. округ</OPTION>
+<OPTION VALUE="100|0">Ярославская обл.</OPTION></SELECT></td>
+</tr>
+<tr>
+<td class="formtext">Город</td>
+<td class="form-inputcell"><input name="FromCityName" type="text" class="input1" size="35" value="Москва"></td>
+</tr>
+<tr>
+<td width="55%" class="formtext">Общий вес отправки, кг.</td>
+<td width="45%" class="form-inputcell"><input name="Weight" type="text" class="input1" size="35"></td>
+</tr>
+<tr>
+<td class="formtext">Характер груза:</td>
+<td class="form-inputcell"><SELECT name="Nature" class="input2" id="7"><OPTION VALUE="1">документы</OPTION>
+<OPTION VALUE="2">мобильные телефоны</OPTION>
+<OPTION VALUE="3">бытовая и оргтехника</OPTION>
+<OPTION VALUE="4">ценные бумаги</OPTION>
+<OPTION VALUE="5">ювелирные изделия</OPTION>
+<OPTION VALUE="6">косметика</OPTION>
+<OPTION VALUE="7">одежда и текстильные изд.        </OPTION>
+<OPTION VALUE="8">другое</OPTION></SELECT></td>
+</tr>
+<tr>
+<td class="formtext">Сумма оценочной стоимости, руб.</td>
+<td class="form-inputcell"><input name="Amount" type="text" class="input1" size="35" value="0"></td>
+</tr>
+<tr>
+<td class="kuda-otkuda">Куда: </td>
+<td class="form-inputcell"></td>
+</tr>
+<tr>
+<td class="formtext">Страна</td>
+<td class="form-inputcell"><SELECT name="Country"  class="input2" onchange="javascript:if (Country.value == '209|0') {ToRegion.disabled=false;ToCityName.disabled=false} else {ToRegion.disabled=true;ToCityName.disabled=true}"><OPTION VALUE="11|0">Австралия</OPTION>
+<OPTION VALUE="12|0">Австрия</OPTION>
+<OPTION VALUE="13|0">Азербайджан</OPTION>
+<OPTION VALUE="1|0">Албания</OPTION>
+<OPTION VALUE="2|0">Алжир</OPTION>
+<OPTION VALUE="3|0">Амер. Самоа</OPTION>
+<OPTION VALUE="6|0">Ангилья</OPTION>
+<OPTION VALUE="5|0">Ангола</OPTION>
+<OPTION VALUE="4|0">Андорра</OPTION>
+<OPTION VALUE="7|0">Антигуа</OPTION>
+<OPTION VALUE="132|0">Антильские о.(Нид)</OPTION>
+<OPTION VALUE="8|0">Аргентина</OPTION>
+<OPTION VALUE="9|0">Армения</OPTION>
+<OPTION VALUE="10|0">Аруба</OPTION>
+<OPTION VALUE="14|0">Багамские о-ва</OPTION>
+<OPTION VALUE="16|0">Бангладеш</OPTION>
+<OPTION VALUE="17|0">Барбадос</OPTION>
+<OPTION VALUE="15|0">Бахрейн</OPTION>
+<OPTION VALUE="19|0">Белиз</OPTION>
+<OPTION VALUE="2|2">Белоруссия</OPTION>
+<OPTION VALUE="18|0">Бельгия</OPTION>
+<OPTION VALUE="20|0">Бенин</OPTION>
+<OPTION VALUE="21|0">Бермудские о-ва</OPTION>
+<OPTION VALUE="28|0">Болгария</OPTION>
+<OPTION VALUE="23|0">Боливия</OPTION>
+<OPTION VALUE="24|0">Босния</OPTION>
+<OPTION VALUE="25|0">Ботсвана</OPTION>
+<OPTION VALUE="26|0">Бразилия</OPTION>
+<OPTION VALUE="27|0">Бруней</OPTION>
+<OPTION VALUE="29|0">Буркина Фасо</OPTION>
+<OPTION VALUE="30|0">Бурунди</OPTION>
+<OPTION VALUE="22|0">Бутан</OPTION>
+<OPTION VALUE="199|0">Вануату</OPTION>
+<OPTION VALUE="72|0">Великобритания</OPTION>
+<OPTION VALUE="84|0">Венгрия</OPTION>
+<OPTION VALUE="200|0">Венесуэла</OPTION>
+<OPTION VALUE="202|0">Виргиния о.(Вел.)</OPTION>
+<OPTION VALUE="203|0">Виргиния о.(США)</OPTION>
+<OPTION VALUE="201|0">Вьетнам</OPTION>
+<OPTION VALUE="66|0">Габон</OPTION>
+<OPTION VALUE="81|0">Гаити</OPTION>
+<OPTION VALUE="80|0">Гайана</OPTION>
+<OPTION VALUE="67|0">Гамбия</OPTION>
+<OPTION VALUE="70|0">Гана</OPTION>
+<OPTION VALUE="75|0">Гваделупа</OPTION>
+<OPTION VALUE="77|0">Гватемала</OPTION>
+<OPTION VALUE="78|0">Гвинея</OPTION>
+<OPTION VALUE="79|0">Гвинея-Бисау</OPTION>
+<OPTION VALUE="69|0">Германия</OPTION>
+<OPTION VALUE="71|0">Гибралтар</OPTION>
+<OPTION VALUE="82|0">Гондурас</OPTION>
+<OPTION VALUE="83|0">Гонконг</OPTION>
+<OPTION VALUE="74|0">Гренада</OPTION>
+<OPTION VALUE="73|0">Греция</OPTION>
+<OPTION VALUE="68|0">Грузия</OPTION>
+<OPTION VALUE="76|0">Гуам о-в</OPTION>
+<OPTION VALUE="50|0">Дания</OPTION>
+<OPTION VALUE="51|0">Джибути</OPTION>
+<OPTION VALUE="52|0">Доминика</OPTION>
+<OPTION VALUE="15653129|3">Доминика</OPTION>
+<OPTION VALUE="53|0">Доминиканская респ.</OPTION>
+<OPTION VALUE="55|0">Египет</OPTION>
+<OPTION VALUE="207|0">Замбия</OPTION>
+<OPTION VALUE="204|0">Западное Самоа</OPTION>
+<OPTION VALUE="34|0">Зеленого Мыса о.</OPTION>
+<OPTION VALUE="208|0">Зимбабве</OPTION>
+<OPTION VALUE="90|0">Израиль</OPTION>
+<OPTION VALUE="86|0">Индия</OPTION>
+<OPTION VALUE="87|0">Индонезия</OPTION>
+<OPTION VALUE="94|0">Иордания</OPTION>
+<OPTION VALUE="88|0">Иран</OPTION>
+<OPTION VALUE="89|0">Ирландия</OPTION>
+<OPTION VALUE="85|0">Исландия</OPTION>
+<OPTION VALUE="169|0">Испания</OPTION>
+<OPTION VALUE="91|0">Италия</OPTION>
+<OPTION VALUE="205|0">Йемен</OPTION>
+<OPTION VALUE="95|0">Казахстан</OPTION>
+<OPTION VALUE="35|0">Кайманские о-ва</OPTION>
+<OPTION VALUE="31|0">Камбоджа</OPTION>
+<OPTION VALUE="32|0">Камерун</OPTION>
+<OPTION VALUE="33|0">Канада</OPTION>
+<OPTION VALUE="14194405|3">Канарские о-ва</OPTION>
+<OPTION VALUE="153|0">Катар</OPTION>
+<OPTION VALUE="96|0">Кения</OPTION>
+<OPTION VALUE="47|0">Кипр</OPTION>
+<OPTION VALUE="99|0">Киргизия</OPTION>
+<OPTION VALUE="97|0">Кирибати</OPTION>
+<OPTION VALUE="39|0">Китай</OPTION>
+<OPTION VALUE="40|0">Колумбия</OPTION>
+<OPTION VALUE="41|0">Коморские о-ва</OPTION>
+<OPTION VALUE="42|0">Конго</OPTION>
+<OPTION VALUE="49|0">Конго Дем.</OPTION>
+<OPTION VALUE="1|2">Коста-Рика</OPTION>
+<OPTION VALUE="46|0">Куба</OPTION>
+<OPTION VALUE="98|0">Кувейт</OPTION>
+<OPTION VALUE="43|0">Кука о-ва</OPTION>
+<OPTION VALUE="3|2">Кыргызстан</OPTION>
+<OPTION VALUE="100|0">Лаос</OPTION>
+<OPTION VALUE="101|0">Латвия</OPTION>
+<OPTION VALUE="103|0">Лесото</OPTION>
+<OPTION VALUE="104|0">Либерия</OPTION>
+<OPTION VALUE="102|0">Ливан</OPTION>
+<OPTION VALUE="105|0">Ливия</OPTION>
+<OPTION VALUE="106|0">Литва</OPTION>
+<OPTION VALUE="647354|2">Лихтенштейн</OPTION>
+<OPTION VALUE="107|0">Люксембург</OPTION>
+<OPTION VALUE="119|0">Маврикий</OPTION>
+<OPTION VALUE="118|0">Мавритания</OPTION>
+<OPTION VALUE="110|0">Мадагаскар</OPTION>
+<OPTION VALUE="120|0">Майот</OPTION>
+<OPTION VALUE="108|0">Макао</OPTION>
+<OPTION VALUE="109|0">Македония</OPTION>
+<OPTION VALUE="111|0">Малави</OPTION>
+<OPTION VALUE="112|0">Малазия</OPTION>
+<OPTION VALUE="114|0">Мали</OPTION>
+<OPTION VALUE="113|0">Мальдивские о-ва</OPTION>
+<OPTION VALUE="115|0">Мальта</OPTION>
+<OPTION VALUE="126|0">Марокко</OPTION>
+<OPTION VALUE="117|0">Мартиника о-в</OPTION>
+<OPTION VALUE="116|0">Маршалловы о.</OPTION>
+<OPTION VALUE="121|0">Мексика</OPTION>
+<OPTION VALUE="122|0">Микронезия</OPTION>
+<OPTION VALUE="127|0">Мозамбик</OPTION>
+<OPTION VALUE="123|0">Молдова</OPTION>
+<OPTION VALUE="13572866|3">Монако</OPTION>
+<OPTION VALUE="124|0">Монголия</OPTION>
+<OPTION VALUE="125|0">Монсеррат</OPTION>
+<OPTION VALUE="128|0">Мьянма</OPTION>
+<OPTION VALUE="129|0">Намибия</OPTION>
+<OPTION VALUE="130|0">Науру</OPTION>
+<OPTION VALUE="131|0">Непал</OPTION>
+<OPTION VALUE="137|0">Нигер</OPTION>
+<OPTION VALUE="138|0">Нигерия</OPTION>
+<OPTION VALUE="133|0">Нидерланды</OPTION>
+<OPTION VALUE="136|0">Никарагуа</OPTION>
+<OPTION VALUE="135|0">Новая Зеландия</OPTION>
+<OPTION VALUE="134|0">Новая Каледония о-в</OPTION>
+<OPTION VALUE="141|0">Норвегия</OPTION>
+<OPTION VALUE="193|0">ОАЭ</OPTION>
+<OPTION VALUE="142|0">Оман</OPTION>
+<OPTION VALUE="143|0">Пакистан</OPTION>
+<OPTION VALUE="144|0">Палау</OPTION>
+<OPTION VALUE="145|0">Панама</OPTION>
+<OPTION VALUE="146|0">Папуа Новая Гвинея</OPTION>
+<OPTION VALUE="147|0">Парагвай</OPTION>
+<OPTION VALUE="148|0">Перу</OPTION>
+<OPTION VALUE="150|0">Польша</OPTION>
+<OPTION VALUE="151|0">Португалия</OPTION>
+<OPTION VALUE="152|0">Пуэрто-Рико</OPTION>
+<OPTION VALUE="154|0">Реюньон</OPTION><OPTION VALUE="209|0" selected> Россия</option><OPTION VALUE="156|0">Руанда</OPTION>
+<OPTION VALUE="155|0">Румыния</OPTION>
+<OPTION VALUE="56|0">Сальвадор</OPTION>
+<OPTION VALUE="157|0">Сан-Марино</OPTION>
+<OPTION VALUE="158|0">Сан-Томе</OPTION>
+<OPTION VALUE="159|0">Саудовская Аравия</OPTION>
+<OPTION VALUE="176|0">Свазиленд</OPTION>
+<OPTION VALUE="140|0">Сев. Марианские о.</OPTION>
+<OPTION VALUE="139|0">Северная Корея</OPTION>
+<OPTION VALUE="161|0">Сейшельские о-ва</OPTION>
+<OPTION VALUE="160|0">Сенегал</OPTION>
+<OPTION VALUE="173|0">Сент-Винсент</OPTION>
+<OPTION VALUE="171|0">Сент-Китте и Невис</OPTION>
+<OPTION VALUE="172|0">Сент-Люсия</OPTION>
+<OPTION VALUE="32583743|3">Сербия и Черногория</OPTION>
+<OPTION VALUE="162|0">Серра-Леоне</OPTION>
+<OPTION VALUE="163|0">Сингапур</OPTION>
+<OPTION VALUE="179|0">Сирия</OPTION>
+<OPTION VALUE="164|0">Словакия</OPTION>
+<OPTION VALUE="165|0">Словения</OPTION>
+<OPTION VALUE="166|0">Соломоновы о-ва</OPTION>
+<OPTION VALUE="174|0">Судан</OPTION>
+<OPTION VALUE="175|0">Суринам</OPTION>
+<OPTION VALUE="196|0">США</OPTION>
+<OPTION VALUE="182|0">Таджикистан</OPTION>
+<OPTION VALUE="180|0">Таити о-в</OPTION>
+<OPTION VALUE="181|0">Тайвань</OPTION>
+<OPTION VALUE="184|0">Тайланд</OPTION>
+<OPTION VALUE="183|0">Танзания</OPTION>
+<OPTION VALUE="191|0">Теркс.Кайкос</OPTION>
+<OPTION VALUE="185|0">Того</OPTION>
+<OPTION VALUE="186|0">Тонга</OPTION>
+<OPTION VALUE="187|0">Тринидад и Тобаго</OPTION>
+<OPTION VALUE="192|0">Тувалу</OPTION>
+<OPTION VALUE="188|0">Тунис</OPTION>
+<OPTION VALUE="190|0">Туркменистан</OPTION>
+<OPTION VALUE="189|0">Турция</OPTION>
+<OPTION VALUE="194|0">Уганда</OPTION>
+<OPTION VALUE="198|0">Узбекистан</OPTION>
+<OPTION VALUE="195|0">Украина</OPTION>
+<OPTION VALUE="197|0">Уругвай</OPTION>
+<OPTION VALUE="61|0">Фарерские о-ва</OPTION>
+<OPTION VALUE="62|0">Фиджи о-ва</OPTION>
+<OPTION VALUE="149|0">Филиппины</OPTION>
+<OPTION VALUE="63|0">Финляндия</OPTION>
+<OPTION VALUE="64|0">Франция</OPTION>
+<OPTION VALUE="65|0">Француз. Гайана</OPTION>
+<OPTION VALUE="45|0">Хорватия</OPTION>
+<OPTION VALUE="36|0">ЦАР</OPTION>
+<OPTION VALUE="37|0">Чад</OPTION>
+<OPTION VALUE="48|0">Чехия</OPTION>
+<OPTION VALUE="38|0">Чили</OPTION>
+<OPTION VALUE="178|0">Швейцария</OPTION>
+<OPTION VALUE="177|0">Швеция</OPTION>
+<OPTION VALUE="170|0">Шри-Ланка</OPTION>
+<OPTION VALUE="54|0">Эквадор</OPTION>
+<OPTION VALUE="57|0">Экват.Гвинея</OPTION>
+<OPTION VALUE="17909748|3">Экспорт</OPTION>
+<OPTION VALUE="10675429|3">Эритрея</OPTION>
+<OPTION VALUE="58|0">Эритрея</OPTION>
+<OPTION VALUE="59|0">Эстония</OPTION>
+<OPTION VALUE="60|0">Эфиопия</OPTION>
+<OPTION VALUE="167|0">ЮАР</OPTION>
+<OPTION VALUE="206|0">Югославия</OPTION>
+<OPTION VALUE="168|0">Южная Корея</OPTION>
+<OPTION VALUE="92|0">Ямайка</OPTION>
+<OPTION VALUE="93|0">Япония</OPTION></SELECT></td>
+</tr>
+<tr>
+<td class="formtext">Область</td>
+<td class="form-inputcell"><SELECT name="ToRegion" class="input2" id="5"><OPTION VALUE="1|0">Агинский Бурятский авт. округ</OPTION>
+<OPTION VALUE="53|0">Адыгея респ.</OPTION>
+<OPTION VALUE="54|0">Алтай респ.</OPTION>
+<OPTION VALUE="3|0">Алтайский край</OPTION>
+<OPTION VALUE="4|0">Амурская обл.</OPTION>
+<OPTION VALUE="6|0">Архангельская обл.</OPTION>
+<OPTION VALUE="7|0">Астраханская обл.</OPTION>
+<OPTION VALUE="55|0">Башкортостан респ.</OPTION>
+<OPTION VALUE="8|0">Белгородская обл.</OPTION>
+<OPTION VALUE="55|2">Белоруссия</OPTION>
+<OPTION VALUE="10|0">Брянская обл.</OPTION>
+<OPTION VALUE="56|0">Бурятия респ.</OPTION>
+<OPTION VALUE="11|0">Владимирская обл.</OPTION>
+<OPTION VALUE="12|0">Волгоградская обл.</OPTION>
+<OPTION VALUE="13|0">Вологодская обл.</OPTION>
+<OPTION VALUE="14|0">Воронежская обл.</OPTION>
+<OPTION VALUE="57|0">Дагестан респ.</OPTION>
+<OPTION VALUE="999|0">Дальнее зарубежье</OPTION>
+<OPTION VALUE="16|0">Еврейская авт. обл.</OPTION>
+<OPTION VALUE="17|0">Ивановская обл.</OPTION>
+<OPTION VALUE="101|0">Ингушская респ.</OPTION>
+<OPTION VALUE="18|0">Иркутская обл.</OPTION>
+<OPTION VALUE="19|0">Кабардино-Балкарская респ.</OPTION>
+<OPTION VALUE="21|0">Калининградская обл.</OPTION>
+<OPTION VALUE="58|0">Калмыкия-Хальмг Танч респ.</OPTION>
+<OPTION VALUE="22|0">Калужская обл.</OPTION>
+<OPTION VALUE="23|0">Камчатская обл.</OPTION>
+<OPTION VALUE="24|0">Карачаево-Черкесская респ.</OPTION>
+<OPTION VALUE="59|0">Карелия респ.</OPTION>
+<OPTION VALUE="25|0">Кемеровская обл.</OPTION>
+<OPTION VALUE="27|0">Кировская обл.</OPTION>
+<OPTION VALUE="60|0">Коми респ.</OPTION>
+<OPTION VALUE="28|0">Коми-Пермяцкий авт. округ</OPTION>
+<OPTION VALUE="96|0">Корякский авт. округ</OPTION>
+<OPTION VALUE="29|0">Костромская обл.</OPTION>
+<OPTION VALUE="30|0">Краснодарский край</OPTION>
+<OPTION VALUE="31|0">Красноярский край</OPTION>
+<OPTION VALUE="32|0">Курганская обл.</OPTION>
+<OPTION VALUE="33|0">Курская обл.</OPTION>
+<OPTION VALUE="35|0">Ленинградская обл.</OPTION>
+<OPTION VALUE="36|0">Липецкая обл.</OPTION>
+<OPTION VALUE="38|0">Магаданская обл.</OPTION>
+<OPTION VALUE="61|0">Марий-Эл респ.</OPTION>
+<OPTION VALUE="62|0">Мордовия респ.</OPTION>
+<OPTION VALUE="40|0">Московская обл.</OPTION>
+<OPTION VALUE="41|0">Мурманская обл.</OPTION>
+<OPTION VALUE="42|0">Ненецкий авт. округ</OPTION>
+<OPTION VALUE="43|0">Нижегородская обл.</OPTION>
+<OPTION VALUE="44|0">Новгородская обл.</OPTION>
+<OPTION VALUE="45|0">Новосибирская обл.</OPTION>
+<OPTION VALUE="46|0">Омская обл.</OPTION>
+<OPTION VALUE="47|0">Оренбургская обл.</OPTION>
+<OPTION VALUE="48|0">Орловская обл.</OPTION>
+<OPTION VALUE="49|0">Пензенская обл.</OPTION>
+<OPTION VALUE="50|0">Пермская обл.</OPTION>
+<OPTION VALUE="51|0">Приморский край</OPTION>
+<OPTION VALUE="52|0">Псковская обл.</OPTION>
+<OPTION VALUE="68|0">Ростовская обл.</OPTION>
+<OPTION VALUE="69|0">Рязанская обл.</OPTION>
+<OPTION VALUE="70|0">Самарская обл.</OPTION>
+<OPTION VALUE="71|0">Саратовская обл.</OPTION>
+<OPTION VALUE="63|0">Саха респ.</OPTION>
+<OPTION VALUE="72|0">Сахалинская обл.</OPTION>
+<OPTION VALUE="73|0">Свердловская обл.</OPTION>
+<OPTION VALUE="64|0">Северная Осетия респ.</OPTION>
+<OPTION VALUE="74|0">Смоленская обл.</OPTION>
+<OPTION VALUE="75|0">Ставропольский край</OPTION>
+<OPTION VALUE="77|0">Таймырский авт. округ</OPTION>
+<OPTION VALUE="78|0">Тамбовская обл.</OPTION>
+<OPTION VALUE="65|0">Татарстан респ.</OPTION>
+<OPTION VALUE="79|0">Тверская обл.</OPTION>
+<OPTION VALUE="80|0">Томская обл.</OPTION>
+<OPTION VALUE="81|0">Тульская обл.</OPTION>
+<OPTION VALUE="66|0">Тыва респ.</OPTION>
+<OPTION VALUE="83|0">Тюменская обл.</OPTION>
+<OPTION VALUE="84|0">Удмуртская респ.</OPTION>
+<OPTION VALUE="87|0">Ульяновская обл.</OPTION>
+<OPTION VALUE="88|0">Усть-Ордынский авт.округ</OPTION>
+<OPTION VALUE="89|0">Хабаровский край</OPTION>
+<OPTION VALUE="67|0">Хакасия респ.</OPTION>
+<OPTION VALUE="90|0">Ханты-Мансийский авт. округ</OPTION>
+<OPTION VALUE="91|0">Челябинская обл.</OPTION>
+<OPTION VALUE="92|0">Чечня респ.</OPTION>
+<OPTION VALUE="93|0">Читинская обл.</OPTION>
+<OPTION VALUE="94|0">Чувашия респ.</OPTION>
+<OPTION VALUE="95|0">Чукотский авт. округ</OPTION>
+<OPTION VALUE="97|0">Эвенкийский авт. округ</OPTION>
+<OPTION VALUE="99|0">Ямало-Ненецкий авт. округ</OPTION>
+<OPTION VALUE="100|0">Ярославская обл.</OPTION></SELECT></td>
+</tr>
+<tr>
+<td class="formtext">Город</td>
+<td class="form-inputcell"><input name="ToCityName" type="text" class="input1" size="35"></td>
+</tr>
+<tr>
+<td></td>
+<td class="vydacha2"><input checked type="radio" name="ToCity" value="" >
+Поискать город заново<br>
+</td>
+</tr>
+<tr>
+<td></td>
+<td class="form-inputcell"><table cellspacing="5" border="0"><tr>
+<td><input type="image" src="/images/tariffs/raschet-button.jpg" name="submit" width="124" height="27"></td>
+<td><input type="image" src="/images/monitoring/clear-button.jpg" width="124" height="27" onClick="ToRegion.disabled=false; ToCityName.disabled=false; document.personinfo.reset();  return false;"></td>
+</tr></table></td>
+</tr>
+</table></form>
+
+	<script language="JavaScript">
+	<!-- hide
+	document.personinfo.FromCityName.value= 'Москва'
+document.personinfo.Weight.value= '0.001'
+document.personinfo.Amount.value= '0'
+document.personinfo.ToCityName.value= 'Другой (указать выше)'
+document.getElementById("5").options[0]=new Option("Московская обл.", "40|0")
+document.getElementById("5").options[0].selected = true
+document.getElementById("6").options[0]=new Option("Московская обл.", "40|0")
+document.getElementById("6").options[0].selected = true
+document.getElementById("7").options[7].selected = true
+
+	// -->
+	</script>
+	<a name=bottom>
+<br>
+
+<p class="heading">ВНИМАНИЕ!<br>Уважаемые господа!</p>
+<ol class="maintext-paragraf">
+<li>Обращаем Ваше внимание, что расчет стоимости оправки производится согласно услуге  «Экспресс-доставка» в режиме «от двери до двери», т.е. Отправителем всегда является Заказчик перевозки.<br>
+Если же Вы хотите воспользоваться услугой «Сбор отправлений в других городах  РФ» (мы забираем отправление в одном из населенных пунктов и доставляем его Вам, либо перевозим его в другой населенный пункт), то к полученному при расчете  результату необходимо применять повышающий коэффициент 1,3.</li>
+<li>Просим Вас учесть, что при отправке груза нужно определить, какой его вес -   фактический или «объемный» больше, и именно эту величину заложить для расчета в тарифный калькулятор в графу «Общий вес отправки». К сожалению, на сегодняшний день в тарифном калькуляторе не предусмотрена эта функция, поэтому Вам придется самостоятельно рассчитать «объемный вес» Вашего груза и сравнить его с фактическим.<br>
+Для определения величины «объемного веса»  (в кг.) найдите  объем посылки (перемножить длину на ширину на  высоту  в см.)  и разделите на коэффициент 6000 (длина (см) х ширина (см) х высота (см) / 6000).<br>
+По такому же принципу будет производиться оплата и при  оформлении заказа курьером.</li>
+</ol>
+<p class="maintext-paragraf">Приносим свои извинения за предоставленные неудобства и заверяем Вас, что в самое ближайшее время избавим Вас от лишних забот, так как тарифный калькулятор начнет функционировать в нужном режиме.</p>
+
+<p class="heading">Уважаемые дамы и господа!</p>
+<p class="maintext-paragraf">Обращаем Ваше внимание, что  расчет тарифным калькулятором стоимости доставки грузов весом свыше 80 кг. производится с повышающим коэффициентом 1,5. Данный коэффициент применяется при тарификации грузов, вес <font color="#FF0000">одного места</font> которых превышает 80 кг. В случае если при весе от 80 кг. Ваш груз состоит из более чем одного места, то полученную величину Вам необходимо разделить на 1,5.</p>
+<p class="heading">Уважаемые дамы и господа!
+<p class="maintext-paragraf"><font color="#FF0000">Со всеми правилами тарификации услуг Вы можете ознакомиться <a href="docs/tariff_rules.xls" class="maintext-link">здесь</a></font></p>
+
+<br><br><br>
+</td>
+            </tr>
+          </table></td>
+          <td width="11%">&nbsp;</td>
+        </tr>
+      </table>      </td>
+    <td width="0%" height="100%" valign="top" class="right-column-container"><table width="235" height="100%" border="0" cellpadding="0" cellspacing="0" id="right_column">
+      <tr>
+        <td height="0" valign="top"><table width="235" height="47" border="0" cellpadding="0" cellspacing="0" id="icons">
+          <tr>
+            <td width="66" class="icons-text"><a href="/english.htm" class="icons-text_link">English<br>
+              version</a></td>
+            <td width="62" class="icons-text"><a href="/sitemap.htm" class="icons-text_link">Карта<br> 
+              сайта</a> </td>
+            <td width="107" class="icons-text"><a href="mailto:cpcr@cpcr.ru" class="icons-text_link">Обратная<br> 
+              связь </a></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="0%" valign="top"><table width="235" border="0" cellpadding="0" cellspacing="0" id="corporate-menu">
+          <tr>
+            <td class="corporate-menu-item"><a href="/company.htm" class="corporate-menu-item_link">О компании</a> <span class="dots-span">.....................</span> </td>
+            <td width="49" class="corporate-menu-sign"><a href="/About.htm" class="corporate-menu-sign_link">&gt;</a></td>
+          </tr>
+          <tr>
+            <td class="corporate-menu-item"><a href="/facility.htm" class="corporate-menu-item_link">Услуги</a> <span class="dots-span">............................</span> </td>
+            <td width="49" class="corporate-menu-sign"><a href="/facility.htm" class="corporate-menu-sign_link">&gt;</a></td>
+          </tr>
+          <tr>
+            <td class="corporate-menu-item"><a href="/news.htm" class="corporate-menu-item_link">Новости</a> <span class="dots-span">...........................</span></td>
+            <td width="49" class="corporate-menu-sign"><a href="/news.htm" class="corporate-menu-sign_link">&gt;</a></td>
+          </tr>
+          <tr>
+            <td class="corporate-menu-item"><a href="/index.htm" class="corporate-menu-item_link"><nobr>На главную</a> <span class="dots-span">.....................</span></td>
+            <td width="49" class="corporate-menu-sign"><a href="#" class="corporate-menu-sign_link">&gt;</a></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="0%" valign="top">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="40%" valign="top"><table width="235" border="0" cellpadding="0" cellspacing="0" id="address">
+          <tr>
+            <td class="address">&copy;СПСР-Экспресс<br>
+            Россия 109316 Москва,<br>
+            Волгоградский пр-т, д. 42, к. 23<br>
+тел.: +7 (495) 981-10-10<br>
+тел.: +7 (495) 980-10-90<br>
+факс: +7 (495) 981-10-00<br>
+              e-mail: <a href="/mailto:%20cpcr@cpcr.ru" class="address_link">cpcr@cpcr.ru</a></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td height="60%" valign="top" class="copyright"><a href="/http://www.xds.ru" class="copyright-link">Impex Design: web-дизайн <br>
+          и разработка сайта </a>
+<br><br>
+
+<!--Rating@Mail.ru COUNTER--><script language="JavaScript" type="text/javascript"><!--
+d=document;var a='';a+=';r='+escape(d.referrer)
+js=10//--></script><script language="JavaScript1.1" type="text/javascript"><!--
+a+=';j='+navigator.javaEnabled()
+js=11//--></script><script language="JavaScript1.2" type="text/javascript"><!--
+s=screen;a+=';s='+s.width+'*'+s.height
+a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth)
+js=12//--></script><script language="JavaScript1.3" type="text/javascript"><!--
+js=13//--></script><script language="JavaScript" type="text/javascript"><!--
+d.write('<a href="http://top.mail.ru/jump?from=357602"'+
+' target=_top><img src="http://top.list.ru/counter'+
+'?id=357602;t=84;js='+js+a+';rand='+Math.random()+
+'" alt="Рейтинг@Mail.ru"'+' border=0 height=18 width=88/><\/a>')
+if(11<js)d.write('<'+'!-- ')//--></script><noscript><a
+target=_top href="http://top.mail.ru/jump?from=357602"><img
+src="http://top.list.ru/counter?js=na;id=357602;t=84"
+border=0 height=18 width=88
+alt="Рейтинг@Mail.ru"/></a></noscript><script language="JavaScript" type="text/javascript"><!--
+if(11<js)d.write('--'+'>')//--></script><!--/COUNTER-->
+<br>
+
+</td>
+      </tr>
+    </table>
+      <br></td>
+  </tr>
+</table></td>
+  </tr>
+</table>
+<map name="Map">
+  <area shape="rect" coords="250,56,304,115" href="/#">
+  <area shape="rect" coords="324,54,368,109" href="/#">
+  <area shape="rect" coords="388,60,440,109" href="/#">
+</map>
+</body>
+</html>
+
+==========================================
+0: 
+==========================================
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /cgi-bin/post.pl was not found on this server.</p>
+<hr>
+<address>Apache Server at cpcr.ru Port 80</address>
+</body></html>
+
+==========================================
+0: 
+==========================================
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /cgi-bin/post.pl was not found on this server.</p>
+<hr>
+<address>Apache Server at cpcr.ru Port 80</address>
+</body></html>
+
+==========================================
+0: 
+==========================================
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /cgi-bin/post.pl was not found on this server.</p>
+<hr>
+<address>Apache Server at cpcr.ru Port 80</address>
+</body></html>
