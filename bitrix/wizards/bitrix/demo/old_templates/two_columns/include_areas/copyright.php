@@ -1,0 +1,1 @@
+<a href="http://www.bitrixsoft.ru">Работает на &laquo;1С-Битрикс: Управление сайтом&raquo;</a>

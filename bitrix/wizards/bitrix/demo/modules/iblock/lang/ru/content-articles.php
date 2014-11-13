@@ -1,0 +1,5 @@
+<?
+$MESS ['DEMO_IBLOCK_CONTENT_ARTICLES_MENU'] = "Статьи";
+$MESS ['DEMO_IBLOCK_CONTENT_ARTICLES_FORUM_NAME'] = "Комментарии к статьям";
+$MESS ['DEMO_IBLOCK_CONTENT_ARTICLES_FORUM_GROUP_NAME'] = "Комментарии пользователей";
+?>

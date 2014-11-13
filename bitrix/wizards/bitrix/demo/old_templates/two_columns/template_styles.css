@@ -1,0 +1,288 @@
+html, body
+{
+	margin: 0;
+	padding: 0;
+}
+
+html
+{
+	height:100%;
+}
+
+body
+{
+	height:auto !important;
+	height:100%;
+	min-height:100%;
+}
+
+/*Font*/
+body
+{
+	font-size: 80%;
+	font-family: Tahoma, Verdana, Helvetica, sans-serif;
+	color: #333;
+	background-color: #fff;
+}
+
+/*Font in table*/
+table
+{
+	font-size:100%;
+}
+
+
+#container
+{
+	position:relative;
+	min-width:750px;
+	width:expression((document.documentElement.clientWidth || document.body.clientWidth) < 740 ? "750px" : "auto");
+}
+
+/*Links*/
+a:link {color: #486DAA;}
+a:visited{color:#8C9AA8;}
+a:active {color: #486DAA;}
+a:hover{color:#DD0000;}
+
+hr
+{
+	width:100%;
+	height: 1px;
+	border: medium none;
+	color: #C3C4C6;
+	background-color: #C3C4C6;
+	margin:8px 0
+}
+
+/*Header box*/
+#header
+{
+	height:79px;
+	width:100%;
+	background:#DDDDDD url(images/header_bg.gif) repeat-x;
+	margin-bottom:2px;
+	border-collapse:collapse;
+}
+
+/*Header cell*/
+#header td
+{
+	vertical-align:middle;
+	padding:0;
+}
+
+td#header_separator
+{
+	vertical-align:top;
+}
+
+/*Header slogan*/
+td#header_slogan
+{
+	width:100%;
+	padding-left:35px;
+}
+
+#header_slogan h1
+{
+	padding:0;
+	margin:0;
+	font-size:130%;
+	border:none;
+	color:#000;
+}
+
+#header_slogan h2
+{
+	padding:0;
+	margin:0;
+	font-size:80%;
+	color:#434343;
+	border:none;
+	color:#434343;
+}
+
+/*Header icons*/
+td#header_icons
+{
+	padding:15px;
+	white-space:nowrap;
+}
+
+td#header_search
+{
+	white-space:nowrap;
+	padding:0 15px;
+}
+
+#header_icons
+{
+	line-height:115%;
+}
+
+#header_icons a
+{
+	text-decoration:none;
+	font-size:75%;
+	font-weight:bold;
+	color:#737373;
+}
+
+
+#content-table
+{
+	width:100%;
+	height:100%;
+	border-collapse:collapse;
+}
+
+#left-column
+{
+	width:215px;
+	vertical-align:top;
+	padding:0;
+}
+
+
+#right-column
+{
+	vertical-align:top;
+	padding:0;
+	padding-left:1px;
+}
+
+#logo
+{
+	height:156px;
+	background:#6196D2 url(images/logo_bg.gif) repeat-x;
+}
+
+#logo_bg
+{
+	width:485px;
+	height:156px;
+	background-image:url(images/logo_bg.jpg);
+}
+
+#logo_image
+{
+	width:224px;
+	height:201px;
+	position:absolute;
+	left:216px;top:36px;
+	background-image:url(images/heads.gif);
+	background-repeat:no-repeat;
+}
+
+#logo_sites
+{
+	position:absolute;
+	right:10px;
+	top: 90px;
+	color:#fff;
+	text-align:right;
+}
+
+#logo_sites a, #logo_sites span
+{
+	color:#fff;
+	text-decoration:none;
+}
+
+#logo_sites span
+{
+	color: #b2cce9;
+}
+
+#navigation a
+{
+	font-size:95%;
+	/*text-decoration:none;*/
+	color:#486DAA;
+}
+
+#work-area
+{
+	width:100%;
+	padding:4px 14px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+
+/*Footer*/
+#footer
+{
+	background: #D5D5D5 url(images/footer_bg) repeat-x;
+	text-align:right;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	height:35px;
+	padding:8px;
+	
+}
+
+#footer a
+{
+	color:#707070;
+}
+
+/*Data table*/
+table.data-table
+{
+	border-collapse:collapse;
+}
+
+/*Any cell*/
+table.data-table td
+{
+	border:1px solid #D6D6D6;
+	background-color:#FFFFFF;
+	color:#333;
+	padding:3px 5px;
+}
+
+/*Head cell*/
+table.data-table thead td, table.data-table th
+{
+	background-color:#DFEAF5;
+	text-align:left;
+	font-weight:normal;
+	background-image:none;
+	border:1px solid #D6D6D6;
+	padding:4px;
+	color:#333;
+}
+
+/*Body cell*/
+table.data-table tbody td
+{
+	background-color:#FFF;
+	background-image:none;
+	color:#333;
+}
+
+/*Foot cell*/
+table.data-table tfoot td
+{
+	background-color:#F3F7FC;
+	padding:4px;
+	color:#333;
+}
+
+/*Error & OK messages*/
+.errortext
+{
+	color:red;
+}
+
+.notetext
+{
+	color:green;
+}
+
+/* Used to draw a "star" near reqired field */
+.starrequired
+{
+	color:red;
+}

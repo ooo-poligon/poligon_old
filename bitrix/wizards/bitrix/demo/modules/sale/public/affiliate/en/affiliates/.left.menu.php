@@ -1,0 +1,39 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Report", 
+		"/e-store/affiliates/index.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Instructions", 
+		"/e-store/affiliates/instructions.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Registration", 
+		"/e-store/affiliates/register.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Plans", 
+		"/e-store/affiliates/plans.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Program report", 
+		"/e-store/affiliates/report.php", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

@@ -1,0 +1,3 @@
+<?
+$sSectionName="RSS Import";
+?>

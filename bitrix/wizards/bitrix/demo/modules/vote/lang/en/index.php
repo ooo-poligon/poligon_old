@@ -1,0 +1,4 @@
+<?
+$MESS ['VOTING_INSTALL_II_VOTE'] = "Vote";
+$MESS ['VOTING_INSTALL_MENU_ITEM'] = "Polls";
+?>

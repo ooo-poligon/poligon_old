@@ -1,0 +1,58 @@
+h1
+{
+	color:#1D497F;
+	font-size:120%;
+	border-bottom:4px double #C3C4C6;
+	padding:0 0 10px 0;
+	margin-top:6px;
+}
+
+h2, h3
+{
+	font-size:120%;
+}
+
+h4, h5, h6
+{
+	font-size:110%;
+}
+
+/*Information block*/
+.information-block
+{
+	margin-top:2px;
+	font-size:95%;
+	color:#4C4C4C;
+}
+
+.information-block-head
+{
+	background:#E7E7E7 url(images/information_bg.gif) repeat-x;
+	font-weight:bold;
+	min-height:26px;
+	height:expression(this.scrollHeight < 26 ? "26px" :"auto");
+	padding-left:14px;
+	padding-top:4px;
+}
+
+.information-block-head-image
+{
+	width:21px;
+	height:21px;
+	background-image: url(images/information_image.gif);
+	background-repeat:no-repeat;
+	float:left;
+	margin-right:9px;
+}
+
+.information-block-head-text
+{
+	padding-top:3px;
+}
+
+.information-block-body
+{
+	padding:14px;
+	text-align:left;
+	border:1px solid #C9C9C9;
+}
