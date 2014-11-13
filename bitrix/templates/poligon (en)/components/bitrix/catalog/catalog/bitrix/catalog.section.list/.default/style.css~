@@ -1,0 +1,27 @@
+#catalog-section-list ul img
+{
+	margin:5px 5px 0 5px;
+}
+
+#catalog-section-list ul ul
+{
+	margin-top:5px;
+}
+
+#catalog-section-list ul li.pic
+{
+	height:80px;
+	line-height:40px;
+	text-transform:uppercase;
+	padding-bottom:10px;
+}
+
+#catalog-section-list ul ul li
+{
+	margin-left:45px;
+}
+
+ul li
+{
+list-style:none;
+}
