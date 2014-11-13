@@ -1,0 +1,4 @@
+AuthName 'Restricted Area'
+AuthType Basic
+AuthUserFile /home2/p/poliinfo/.authfile
+require valid-user

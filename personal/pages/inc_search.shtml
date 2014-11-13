@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Полигон - Электронные компоненты - Поиск по сайту</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="keywords"
+content="электронные компоненты, компоненты, электроника, оформление заказа, Полигон, Poligon, Polygon">
+<meta name="description" content="Полигон - поставка электронных компонентов">
+<meta name="ROBOTS" content="INDEX,FOLLOW">
+<LINK REL=STYLESHEET TYPE="text/css" HREF="../styles.css">
+<SCRIPT>
+<!-- ;
+if(800 >= screen.width) {
+	document.write("<STYLE type=\'text/css\'><!-- BODY TABLE {font-size:9pt;} --></STYLE>");
+}
+
+// end hide -->
+</SCRIPT>
+</head>
+
+<body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0">
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+<!--#include virtual="win_top.si"-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF">
+  <tr> 
+    <td height="15" bgcolor="#B4B4B4" colspan="4" align="right"><font class=m4><b>&gt 
+      Поиск</b></font></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF">
+  <tr> 
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td colspan="2"> 
+      <div align="center"><font class=frm> 
+        <form action="/cgi-bin/risearch/search.pl" method="GET">
+          <div align="left">
+            <input type="Text" name="query" size="30">
+            <input type="Hidden" name="stpos" value="0">
+            <input type="Submit" value="Искать" name="Submit">
+            <br>
+            Search mode: 
+            <input type="Radio" name="stype" value="AND" checked>
+            "AND" 
+            <input type="Radio" name="stype" value="OR">
+            "OR" </div>
+        </form>
+      </font></div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"> 
+      <p>Поиск осуществляется только по сайту www.poligon.info. </p>
+      </td>
+  </tr>
+  <tr> 
+    <td colspan="2"><br>
+      <!--#include virtual="win_bott.si"--></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+</body>
+</html>

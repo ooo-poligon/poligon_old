@@ -1,0 +1,54 @@
+.nav_point0 {background:url(/bitrix/templates/poligon/images/point0.jpg) left center no-repeat;}
+.nav_point1 {background:url(/bitrix/templates/poligon/images/point1.jpg) left center no-repeat;}
+.nav_point2{background:url(/bitrix/templates/poligon/images/point2.jpg) left center no-repeat;}
+.nav_point3{background:url(/bitrix/templates/poligon/images/point3.gif) 3px center no-repeat;}
+.nav_point4 {background:url(/bitrix/templates/poligon/images/point4.gif) left center no-repeat;}
+.nav_point5{background:url(/bitrix/templates/poligon/images/point5.gif) left center no-repeat;}
+.vacancies {background: url("/images/icons/user_suit.png") left center no-repeat;}
+
+<!--
+
+#partners .top_right_corner	{
+	display:block;
+	position:absolute;
+	background:url(/bitrix/templates/poligon/images/banner_right_top.jpg) no-repeat;
+	top:0;
+	right:0;
+	height:4px;
+	width:4px;
+}
+
+#partners .bottom_right_corner{
+	display:block;
+	position:absolute;
+	background:url(/bitrix/templates/poligon/images/banner_right_bottom.jpg) no-repeat;
+	bottom:0;
+	right:0;
+	height:4px;
+	width:4px;
+}
+
+#partners .bottom_left_corner{
+	display:block;
+	position:absolute;
+	background:url(/bitrix/templates/poligon/images/banner_left_bottom.jpg) no-repeat;
+	bottom:0;
+	left:0;
+	height:4px;
+	width:4px;	}
+
+-->
+
+#partners a img{	
+	border: none;
+	/*min-height: 31px;*/
+	padding-top: 12px;
+	vertical-align: top;
+	width: 150px;
+}
+
+#partners a	{
+	color:#4192e3;
+	font:18px Arial, Helvetica, sans-serif;
+	text-decoration:underline;
+}

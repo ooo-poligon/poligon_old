@@ -1,0 +1,343 @@
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetTitle("Промежуточные реле RELECO");?><style type="text/css">
+<!--
+.style11 {font-family: Arial, Helvetica, sans-serif}
+.style14 {font-size: 14px}
+-->
+</style>
+<h3 align="center"><span class="style11"><strong>Сводная информация по промежуточным реле RELECO</strong><strong></strong></span></h3>
+<p><img src="/images/releco/releco_transp.gif" alt="RELECO" width="182" height="27"> <br>    <strong> ПРОМЫШЛЕННЫЕ ПРОМЕЖУТОЧНЫЕ РЕЛЕ </strong> <br>    <strong>ПОЛНОЕ СОБРАНИЕ</strong></p><table border="0" cellspacing="0" cellpadding="1">  <tr bgcolor="#3399FF">    <td colspan="7"><strong>Реле общего назначения (универсальные реле) </strong></td>  </tr>
+  <tr>    <td><a href="http://poligon.info/catalog/index.php?SECTION_ID=4852"><img src="/images/releco/140/C2A20.jpg" alt="реле промежуточное C2-A20" width="87" height="140" border="0"></a></td>    <td><a href="http://poligon.info/catalog/index.php?SECTION_ID=4855"><img src="/images/releco/140/C3A30.jpg" alt="реле промежуточное C3-A30" width="88" height="140" border="0"></a></td>    <td><a href="http://poligon.info/catalog/index.php?SECTION_ID=4864"><img src="/images/releco/140/C4A40.jpg" alt="реле промежуточное C4-A40" width="92" height="140" border="0"></a></td>    <td><a href="http://poligon.info/catalog/index.php?SECTION_ID=4870"><img src="/images/releco/140/C5A20.jpg" alt="реле промежуточное C5-A20" width="95" height="140" border="0"></a></td>    <td><a href="http://poligon.info/catalog/index.php?SECTION_ID=4871"><img src="/images/releco/140/C5A30.jpg" alt="реле промежуточное C5-A30" width="98" height="140" border="0"></a></td>    <td><a href="http://poligon.info/catalog/index.php?SECTION_ID=4878"><img src="/images/releco/140/C7A10.jpg" alt="реле промежуточное C7-A10" width="92" height="140" border="0"></a></td>    <td><a href="http://poligon.info/catalog/index.php?SECTION_ID=4878"><img src="/images/releco/140/C7A20.jpg" alt="реле промежуточное C7-A20" width="91" height="140" border="0"></a></td>  </tr>
+  <tr>    <td><span class="style14">C2-A20<br>
+      2ПК <br>
+      10A/250VAC<br>
+      0.5A/110VDC <br>
+    </span></td>
+    <td><span class="style14">C3-A30<br>
+      3ПК<br>
+      10A/250VAC<br>
+      0.5A/110VDC</span></td>
+    <td><span class="style14">C4-A40<br>
+      4ПК<br>
+      10A/250VAC<br>
+      0.5A/110VDC</span></td>
+    <td><span class="style14">C5-A20<br>
+      2ПК<br>
+      16A/400VAC<br>
+      0.5A/110VDC <br>
+    </span></td>
+    <td><span class="style14">C5-A30<br>
+3ПК<br>
+16A/400VAC<br>
+0.5A/110VDC </span></td>
+    <td><span class="style14">C7-A10<br>
+1ПК<br>
+16A/250VAC<br>
+0.5A/110VDC</span></td>
+    <td><span class="style14">C7-A20<br>
+2ПК<br>
+10A/250VAC<br>
+0.5A/110VDC </span></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><a href="http://poligon.info/catalog/index.php?SECTION_ID=4886"><img src="/images/releco/140/C9A41.jpg" alt="реле промежуточное C9-A41" width="94" height="140" border="0"></a></td>
+    <td><a href="http://poligon.info/catalog/index.php?SECTION_ID=4889"><img src="/images/releco/140/C10A10.jpg" alt="реле промежуточное C10-A10" width="91" height="140" border="0"></a></td>
+    <td><a href="http://poligon.info/catalog/index.php?SECTION_ID=4893"><img src="/images/releco/140/C12A21.jpg" alt="реле промежуточное C12-A21" width="95" height="140" border="0"></a></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><span class="style14">C9-A41<br>
+4ПК<br>
+5A/250VAC<br>
+0.2A/110VDC</span></td>
+    <td><span class="style14">C10-A10<br>
+1ПК<br>
+10A/250VAC<br>
+0.5A/110VDC </span></td>
+    <td><span class="style14">C12-A21<br>
+2ПК<br>
+5A/250VAC<br>
+0.5A/110VDC</span></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<br>
+<table border="0" cellspacing="0" cellpadding="1">
+  <tr bgcolor="#3399FF">
+    <td colspan="5" bgcolor="#3399FF"><strong>Реле для нагрузок с низкими токами (раздвоенные контакты) </strong></td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td colspan="2" bgcolor="#3399FF"><strong>Реле общего назначения <br>
+с обратным сигналом</strong></td>
+  </tr>
+  <tr>
+    <td><img src="/images/releco/140/C2T21.jpg" alt="реле промежуточное C2-T21" width="83" height="140"></td>
+    <td><img src="/images/releco/140/C3T31.jpg" alt="реле промежуточное C3-T31" width="83" height="140"></td>
+    <td><a href="http://poligon.info/catalog/index.php?SECTION_ID=4879"><img src="/images/releco/140/C7T21.jpg" alt="реле промежуточное C7-T21" width="89" height="140" border="0"></a></td>
+    <td><img src="/images/releco/140/C10T13.jpg" alt="реле промежуточное C10-T13" width="97" height="140"></td>
+    <td><img src="/images/releco/140/C10GT13.jpg" alt="реле промежуточное C10-TG13" width="94" height="140"></td>
+    <td>&nbsp;</td>
+    <td><img src="/images/releco/140/C7A20.jpg" alt="реле промежуточное C7-H23" width="91" height="140"></td>
+    <td><img src="/images/releco/140/C7A20.jpg" alt="реле промежуточное C7-H23" width="91" height="140"></td>
+  </tr>
+  <tr>
+    <td>C2-T21<br>
+      2ПК<br>
+      <span class="style14">6A/250VAC<br>
+        1mA/5VDC</span></td>
+    <td>C3-T31<br>
+      3ПК<br>
+      <span class="style14">6A/250VAC<br>
+        1mA/5VDC</span></td>
+    <td>C7-T21<br>
+      2ПК<br>
+      <span class="style14">6A/250VAC<br>
+        1mA/5VDC</span></td>
+    <td>C10-T13<br>
+      1ПК<br>
+      <span class="style14">6A/250VAC<br>
+        1mA/5VDC</span></td>
+    <td>C10-TG13<br>
+1НО<br>
+<span class="style14">6A/250VAC<br>
+1mA/5VDC</span></td>
+    <td>&nbsp;</td>
+    <td>C7-H23<br>
+Стандарт<br>
+1ПК <br>
+<span class="style14">10A/250VAC<br>
+0.5A/110VDC</span></td>
+    <td>C7-H23<br>
+Раздвоенные<br>
+1 ПК <br>
+<span class="style14">6A/250VAC<br>
+0.5A/110VDC </span></td>
+  </tr>
+</table>
+<br>
+<table border="0" cellspacing="0" cellpadding="1">
+  <tr>
+    <td colspan="6" bgcolor="#3399FF"><strong>Реле для коммутации DC-цепей (увеличенный зазор между контактами)</strong></td>
+  </tr>
+  <tr>
+    <td><a href="http://poligon.info/catalog/index.php?SECTION_ID=4854"><img src="/images/releco/140/C2G20.jpg" alt="реле промежуточное C2-G20" width="77" height="140" border="0"></a></td>
+    <td><img src="/images/releco/140/C3G30.jpg" alt="реле промежуточное C3-G30" width="71" height="140"></td>
+    <td><a href="http://poligon.info/catalog/index.php?SECTION_ID=4872"><img src="/images/releco/140/C5G30.jpg" alt="реле промежуточное C5-G30" width="85" height="140" border="0"></a></td>
+    <td><a href="http://poligon.info/catalog/index.php?SECTION_ID=4880"><img src="/images/releco/140/C7G20.jpg" alt="реле промежуточное C7-G20" width="85" height="140" border="0"></a></td>
+    <td><img src="/images/releco/140/C10G10.jpg" alt="реле промежуточное C10-G10" width="99" height="140"></td>
+    <td><img src="/images/releco/140/C12G20.jpg" alt="реле промежуточное C12-G20" width="99" height="140"></td>
+  </tr>
+  <tr>
+    <td>C2-G20<br>
+      2НО<br>
+      <span class="style14">10A/250VAC<br>
+        1.2A/110VDC</span></td>
+    <td>C3-G30<br>
+      3НО<br>
+      <span class="style14">10A/250VAC<br>
+        1.2A/110VDC</span></td>
+    <td>C5-G30<br>
+      3НО<br>
+      <span class="style14">16A/400VAC<br>
+        1.2A/110VDC</span></td>
+    <td>C7-G20<br>
+      2НО<br>
+      <span class="style14">10A/250VAC<br>
+        0.8A/110VDC</span> <br></td>
+    <td>C10-G10<br>
+      1НО<br>
+      <span class="style14">10A/250VAC<br>
+        0.5A/110VDC</span></td>
+    <td>C12-G20<br>
+      2НО<br>
+      <span class="style14">5A/250VAC<br>
+        1.2A/110VDC</span></td>
+  </tr>
+</table>
+<br>
+<table border="0" cellpadding="1" cellspacing="0">
+  <tr>
+    <td colspan="3" bgcolor="#3399FF"><strong>Реле для коммутации DC-цепей <br>
+      (с дугогасительным магнитом)</strong></td>
+    <td>&nbsp;</td>
+    <td colspan="4" bgcolor="#3399FF"><strong>Реле для коммутации DC-цепей (увеличенный <br>
+зазор 
+    между контактами, разрыв цепи в 2 точках)</strong></td>
+  </tr>
+  <tr>
+    <td><img src="/images/releco/140/C3M10.jpg" alt="реле промежуточное C3-M10" width="83" height="140"></td>
+    <td><a href="http://poligon.info/catalog/index.php?SECTION_ID=4858"><img src="/images/releco/140/C5M10.jpg" alt="реле промежуточное C5-M10" width="93" height="140" border="0"></a></td>
+    <td><img src="/images/releco/140/C5M20.jpg" alt="реле промежуточное C3-M20" width="110" height="140"></td>
+    <td>&nbsp;</td>
+    <td><a href="http://poligon.info/catalog/index.php?SECTION_ID=4859"><img src="/images/releco/140/C3X10.jpg" alt="реле промежуточное C3-X10" width="83" height="140" border="0"></a></td>
+    <td><a href="http://poligon.info/catalog/index.php?SECTION_ID=4865"><img src="/images/releco/140/C4X20.jpg" alt="реле промежуточное C4-X20" width="92" height="140" border="0"></a></td>
+    <td><img src="/images/releco/140/C5X10.jpg" alt="реле промежуточное C5-X10" width="92" height="140"></td>
+    <td><a href="http://poligon.info/catalog/index.php?SECTION_ID=4881"><img src="/images/releco/140/C7X10.jpg" alt="реле промежуточное C7-X10" width="94" height="140" border="0"></a></td>
+  </tr>
+  <tr>
+    <td>C3-M10<br>
+      1 двойной<br>
+      <span class="style14">10A/250VAC<br>
+        10A/110VDC</span> </td>
+    <td>C5-M10<br>
+      1 двойной<br>
+      <span class="style14">16A/400VAC<br>
+        10A/110VDC</span> </td>
+    <td>C3-M20<br>
+      1 двойной<br>
+      <span class="style14">16A/250VAC<br>
+        7A/110VDC</span> </td>
+    <td>&nbsp;</td>
+    <td>C3-X10<br>
+1 двойной<br>
+<span class="style14">10A/250VAC<br>
+7A/110VDC</span> </td>
+    <td>C4-X20<br>
+2 двойных<br>
+<span class="style14">10A/250VAC<br>
+7A/110VDC</span></td>
+    <td>C5-X10<br>
+1 двойной<br>
+<span class="style14">10A/250VAC<br>
+7A/110VDC</span> </td>
+    <td>C7-X10<br>
+1 двойной<br>
+<span class="style14">10A/250VAC<br>
+6A/110VDC</span> </td>
+  </tr>
+</table>
+<br>
+<br>
+<table border="0" cellpadding="1" cellspacing="0">
+  <tr>
+    <td colspan="4" bgcolor="#3399FF"><strong>Реле с защелкой (поляризованные, бистабильные)</strong></td>
+  </tr>
+  <tr>
+    <td><a href="http://poligon.info/catalog/index.php?SECTION_ID=4860"><img src="/images/releco/140/C3R20.jpg" alt="реле промежуточное C3-R20" width="89" height="140" border="0"></a></td>
+    <td><a href="http://poligon.info/catalog/index.php?SECTION_ID=4869"><img src="/images/releco/140/C4R30.jpg" alt="реле промежуточное C4-R30" width="94" height="140" border="0"></a></td>
+    <td><img src="/images/releco/140/C5R20.jpg" alt="реле промежуточное C5-R20" width="101" height="140"></td>
+    <td><a href="http://poligon.info/catalog/index.php?SECTION_ID=4888"><img src="/images/releco/140/C9R21.jpg" alt="реле промежуточное C9-R21" width="97" height="140" border="0"></a></td>
+  </tr>
+  <tr>
+    <td>C3-R20<br>
+      2ПК<br>
+      <span class="style14">10A/250VAC<br>
+        0.5A/110VDC </span> </td>
+    <td>C4-R30<br>
+      3ПК<br>
+      <span class="style14">10A/250VAC<br>
+        0.5A/110VDC </span> </td>
+    <td>C5-R20<br>
+      2ПК<br>
+      <span class="style14">10A/250VAC<br>
+        0.5A/110VDC </span> </td>
+    <td>C9-R21<br>
+      2ПК<br>
+      <span class="style14">5A/250VAC<br>
+        0.2A/110VDC </span> </td>
+  </tr>
+</table>
+<br>
+<br>
+<br>
+<table border="0" cellspacing="0" cellpadding="1">
+  <tr>
+    <td colspan="3" bgcolor="#3399FF"><strong>Реле с чувствительной катушкой <br>
+      (500мВт...800мВт)</strong></td>
+    <td>&nbsp;</td>
+    <td colspan="3" bgcolor="#3399FF"><strong>Реле для ж/д применения</strong></td>
+    <td>&nbsp;</td>
+    <td bgcolor="#3399FF"><strong>Реле для <br>
+      коммутации ламп</strong></td>
+  </tr>
+  <tr>
+    <td><img src="/images/releco/140/C3E24.jpg" alt="реле промежуточное C3-E24" width="92" height="140"></td>
+    <td><img src="/images/releco/140/C3N34.jpg" alt="реле промежуточное C3-N34" width="91" height="140"></td>
+    <td><a href="http://poligon.info/catalog/index.php?SECTION_ID=4887"><img src="/images/releco/140/C9E21.jpg" alt="реле промежуточное C9-E21" width="96" height="140" border="0"></a></td>
+    <td>&nbsp;</td>
+    <td><a href="http://poligon.info/catalog/index.php?SECTION_ID=4863"><img src="/images/releco/140/C3A30.jpg" alt="реле промежуточное R3-N30" width="88" height="140" border="0"></a></td>
+    <td><strong><a href="http://poligon.info/catalog/index.php?SECTION_ID=5108"><img src="/images/releco/140/R7-A20D.jpg" alt="реле промежуточное R7-A20" width="112" height="140" border="0"></a></strong></td>
+    <td><img src="/images/releco/140/C7T21.jpg" alt="реле промежуточное R7-T21" width="89" height="140"></td>
+    <td>&nbsp;</td>
+    <td><img src="/images/releco/140/C7W10.jpg" alt="реле промежуточное C7-W10" width="95" height="140"></td>
+  </tr>
+  <tr>
+    <td>C3-E24<br>
+      2ПК<br>
+      <span class="style14">6A/250VAC<br>
+        0.5A/110VDC</span></td>
+    <td>C3-N34<br>
+      3ПК<br>
+      <span class="style14">6A/250VAC<br>
+        0.5A/110VDC</span></td>
+    <td>C9-E21<br>
+      2ПК<br>
+      <span class="style14">5A/250VAC<br>
+        0.2A/110VDC</span></td>
+    <td>&nbsp;</td>
+    <td>R3-N30<br>
+      3ПК<br>
+      <span class="style14">6A/250VAC<br>
+        0.5A/110VDC</span></td>
+    <td>R7-A20<br>
+      2ПК<br>
+      <span class="style14">10A/250VAC<br>
+        0.5A/110VDC</span></td>
+    <td>R7-T21<br>
+      2ПК<br>
+      <span class="style14">6A/250VAC<br>
+        0.5A/110VDC</span></td>
+    <td>&nbsp;</td>
+    <td>C7-W10<br>
+      1НО<br>
+      <span class="style14">10A/250VAC<br>
+        0.5A/110VDC</span></td>
+  </tr>
+</table>
+<br>
+<table border="0" cellspacing="0" cellpadding="2">
+  <tr bgcolor="#3399FF">
+    <td colspan="4"><strong>Полупроводниковые реле</strong></td>
+    <td bgcolor="#FFFFFF">&nbsp;</td>
+    <td><strong>Модули времени MRC</strong></td>
+  </tr>
+  <tr>
+    <td><img src="/images/releco/140/CSS_AC.jpg" alt="реле промежуточное CSS AC " width="109" height="140"></td>
+    <td><a href="http://poligon.info/catalog/index.php?SECTION_ID=4896"><img src="/images/releco/140/CSS_AZ.jpg" alt="реле промежуточное CSS AZ" width="103" height="140" border="0"></a></td>
+    <td><img src="/images/releco/140/CSS_DC-N.jpg" alt="реле промежуточное CSS-DCN" width="104" height="140"></td>
+    <td><img src="/images/releco/140/CSS-DCP.jpg" alt="реле промежуточное CSS-DCP" width="118" height="140"></td>
+    <td>&nbsp;</td>
+    <td><a href="http://poligon.info/catalog/index.php?SECTION_ID=5083"><img src="/images/releco/140/CT3.jpg" alt="реле промежуточное CT2 и CT3" width="171" height="140" border="0"></a></td>
+  </tr>
+  <tr>
+    <td>CSS AC <br>
+      1НО<br>
+      3A/250V AC </td>
+    <td>CSS AZ<br>
+      1НО<br>
+      3A/250V AC <br></td>
+    <td>CSS-DCN<br>
+      1НО<br>
+      2A/50V DC </td>
+    <td>CSS-DCP<br>
+      1НО<br>
+      2A/50V DC</td>
+    <td>&nbsp;</td>    <td>CT2 (8-pin) и CT3 (11-pin)<br>      позволяет сделать реле <br>      времени из промежуточного реле</td>  </tr></table>
+<p><strong>Преимущества промежуточных реле RELECO:</strong><br>- основной приоритет: высокое качество и надежность<br>  - уникальная исчерпывающея линейка промышленных промежуточных реле<br>- реле RELECO занимают большую долю рынка в странах с северным климатом (Финляндия, Норвегия, Швеция, Канада)<br>- узнаваемый внешний вид и легендарная надежность, имидж высокого качества<br>- нестандартные исполнения и напряжения<br>  - разработка и производство в Европе (г. Мадрид, Испания)<br>    - функциональный дизайн реле<br>  - все реле имеют механическую индикацию и ручное управление по умолчанию<br>- склад продукции в Санкт-Петербурге обеспечивает быструю отгрузку<br>- доставка экспресс-почтой или компанией Автотрейдинг<br></p>
+<p>
+  Разместите заказ через <a href="/content/feedback/quick_order/"><strong>стандартную форму</strong></a> или по телефону <strong>(812) 3254220</strong>.</p>   <p><a href="/catalog/index.php?SECTION_ID=77">Вся продукция RELECO</a></p>
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

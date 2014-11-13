@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>Полигон - Электронные компоненты - Условия поставки</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="keywords"
+content="электронные компоненты, компоненты, электроника, оформление заказа, Полигон, Poligon, Polygon, условия поставки, доставка">
+<meta name="description"
+content="Полигон - условия поставки товаров">
+<meta name="ROBOTS" content="INDEX,FOLLOW">
+<LINK REL=STYLESHEET TYPE="text/css" HREF="../styles.css">
+<SCRIPT>
+<!-- ;
+if(800 >= screen.width) {
+	document.write("<STYLE type=\'text/css\'><!-- BODY TABLE {font-size:9pt;} --></STYLE>");
+}
+
+// end hide -->
+</SCRIPT>
+</head>
+
+<body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0">
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+<!--#include virtual="win_top.si"-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF">
+  <tr> 
+    <td height="15" bgcolor="#B4B4B4" colspan="4" align="right"><font class=m4><b>&gt 
+      Условия поставки</b></font></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="5" align="center" bgcolor="#FFFFFF">
+  <tr> 
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td colspan="2"> 
+      <p><font face="Arial, Helvetica, sans-serif" size="2">Компания &quot;Полигон&quot; 
+        поставляет отечественные и импортные КИ со склада и на заказ от 1 штуки.
+            Мы работаем с организациями (поставка производится после поступления
+        средств на наш расчетный счет).</font></p>
+      <blockquote> 
+        <p><font face="Arial, Helvetica, sans-serif" size="2"> 1. Отечественная 
+          комплектация поставляется со сроком от 1 дня до 2-4 недель в зависимости 
+          от наличия на складе и сроков поставки с заводов-изготовителей.</font></p>
+        <p><font face="Arial, Helvetica, sans-serif" size="2">2. Импортные КИ
+             поставляются от производителя или с европейских
+             оптовых складов под
+             заказ, в зависимости от наличия на складе, требуемого количества. Возможны штучные поставки. Срок поставки до Санкт-Петербурга
+             - 5-14 дней. Расчет осуществляется в рублях по курсу ЦБ + 1,5%. </font></p>
+      </blockquote>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"><b>Доставка КИ:</b> 
+        возможна отправка почтой, экспресс-почтой или самовывоз. Оплата за пересылку 
+        - отдельно.</font></p>
+      <p><font size="2" face="Arial, Helvetica, sans-serif">Чтобы оформить заказ, 
+        выяснить наличие на складе или возможность поставки под заказ интересующих 
+        КИ Вы можете связаться с нами заполнив <a href="inc_form_qw.shtml">feedback</a>, отправив письмо по электронной почте на <a href="mailto:elcomp@poligon.info">elcomp@poligon.info</a> 
+        или позвонив в офис в рабочее время по тел. (812) 3254220, 3256420.</font></p>
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="2"><br>
+      <!--#include virtual="win_bott.si"--></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+</body>
+</html>

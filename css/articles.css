@@ -1,0 +1,83 @@
+/* таблицы в обзорах */
+table.review-relays caption{
+	font-size: 16px;
+}
+
+table.review-relays{
+	border-collapse: collapse;
+}
+
+table.review-relays td.device-description{
+	width: 200px;
+}
+
+table.review-relays td.contents-img{
+	width: 170px;
+	text-align: center;
+}
+table.review-relays td.contents-img img{
+	max-width: 160px;
+	max-height: 160px;
+}
+table.review-relays td.link-to-pdf a.pdf{
+	padding: 0;
+	margin: 10px;
+}
+table.review-relays td.link-to-pdf{
+	text-align: center;
+	vertical-align: middle;
+}
+table.review-relays td{
+	border: 1px solid black;
+	vertical-align: top;
+}
+/**
+	общие стили для статей
+*/
+.article p{
+	text-align: justify;
+}
+.article table th {
+	padding-left: 1em;
+	text-align: left;
+	vertical-align: top;
+}
+.article blockquote:before {content: open-quote;}
+.article blockquote:after {content: close-quote;}
+
+.article blockquote {
+	font-weight: bold;
+	font-family: Arial;
+	font-size: 200%;
+	font-style: italic;
+	text-align: right;
+	line-height: 100%;
+	float: right; 
+	margin: 0 0 0 12px; 
+	width: 300px; 
+	border: 1px dashed #FFEBCD; 
+	border-radius: 8px;	
+}
+/**
+	иллюстрации
+*/
+
+.article figure {
+	margin: 0 auto;
+	width: 100%;
+}
+.article figure img{
+	width: 450px;
+	margin: 0 auto;
+	display: block;
+}
+.article figure figcaption{
+	font-style: italic;
+}
+
+.formula {
+	font-family: monospace;
+	font-size: 12pt;
+	letter-spacing: 2pt;
+	outline: 3px outset silver;
+}

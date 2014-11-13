@@ -1,0 +1,46 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"About company", 
+		"/en/content/about/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Delivery programs", 
+		"/en/content/program/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Vacancy", 
+		"/en/content/vacans/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Sertificates", 
+		"/en/content/certificates/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Partners", 
+		"/en/content/partners/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Ñollaboration", 
+		"/en/content/predl/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

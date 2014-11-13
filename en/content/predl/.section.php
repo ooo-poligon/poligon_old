@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Ñollaboration";
+$arDirProperties = Array(
+
+);
+?>

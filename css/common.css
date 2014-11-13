@@ -1,0 +1,296 @@
+/*  стандартные классы из fast-css */
+/** вынести во фреймворк!! **/
+.w100px{width: 100px;}
+.w200px{width: 200px;}
+.w300px{width: 300px;}
+
+.w100p{width: 100%;}
+.p4px{padding: 4px;}
+
+
+.h50px{height: 50px;}
+/* общие для шаблонов стили */
+.pdf {
+	background: left url('/images/pdf_doc.gif') no-repeat;
+    display: inline-block;
+    min-height: 16px;
+    min-width: 16px;
+    padding-left: 20px;	
+}
+a[href$=".xls"]{
+	background: left url('/images/icons/page_excel.png') no-repeat;
+    display: inline-block;
+    min-height: 16px;
+    min-width: 16px;
+    padding-left: 20px;	
+		
+}
+
+a.new::after {
+	content: 'Новинка!';
+	color: red;
+	vertical-align: super;
+	font-size: 10px;
+	text-decoration: blink underline;
+}
+
+.nowrap {white-space: nowrap;}
+.zip {
+	background: left url('/images/pdf_doc.gif') no-repeat;
+	padding-left: 20px;
+}
+/** схемы/гаариты в карточке товара */
+.add-images {/*width: 48%; */float: left; margin: 0px; padding: 1%;}
+.add-images figcaption{font-weight: bold; text-align: left; background-color: #CCCCCC; font-style: normal;}
+.add-images figcaption:first-letter{text-transform: capitalize;}
+.add-images img{/*width: 100%;*/ height: 200px;}	
+/* см. также в карточке товара */
+div.see-also h3{background-color: #CCCCCC;}
+#first{
+	padding:10px 0 0 0;
+	margin:0;
+	list-style:none;
+}
+
+#first li{
+	width:185px;
+	display:inline;
+	float:left;
+	}
+
+#first li a{
+	font:14px Arial, Helvetica, sans-serif;
+	color:#ffffff;
+	line-height:26px;
+	text-decoration:none;
+}
+
+#first li a:hover{	text-decoration:underline;}
+
+li.arrow{
+	background:url(/images/arrow.gif) no-repeat 3% 50%;
+	padding-left:20px;
+	line-height:22px;
+	display:block;
+}
+img.right-image{
+	float: right;
+	max-height: 150px;
+	max-width: 200px;
+	padding: 4px;
+}
+
+/*START HEAD*/
+#main_div{
+	width:977px;
+	padding:0 0 0 15px;
+	background:url(/bitrix/templates/poligon/images/background_maindiv_.jpg) left top no-repeat #ffffff;
+}
+
+#lang{
+	position:absolute;
+	width:45px;
+	top:16px;
+	left:445px;
+}
+
+#lang a{
+	text-decoration:none;
+}
+
+#lang .selected{
+	background:#8bbbf0;
+	font:12px Arial, Helvetica, sans-serif;
+	color:#ffffff;
+	padding:2px;
+}
+
+#lang .not_selected	{
+	font:12px Arial, Helvetica, sans-serif;
+	color:#000000;
+	padding:2px;
+}
+#logo{
+	height:96px;
+	position:relative;
+	width:960px;
+}
+
+#logo_link{
+	display:block;
+	width:340px;
+	#height:70px;
+	text-decoration:none;
+	position:absolute;
+	top:5px;
+	left:1px;
+}
+
+#mail{
+	position:absolute;
+	right:1px;
+	#width:136px;
+	top:75px;
+	height:20px;
+	background:url(/bitrix/templates/poligon/images/mail.gif) left 4px no-repeat;
+	padding:0 0 0 30px;
+}
+
+#mail a{
+	color:#3371b9;
+	font:14px Arial, Helvetica, sans-serif;
+	line-height:20px;
+}
+
+#phone{
+	color:#3371b9;
+	position:absolute;
+	right:1px;
+	top:2px;
+	height:24px;
+	font:22px Arial, Helvetica, sans-serif;
+}
+
+#phone .pre{
+	font:12px Arial, Helvetica, sans-serif;
+	height:24px;
+	float:left;
+	padding:6px 0 0 0;
+	width:30px;
+}
+#phone .number{
+	font:22px Arial, Helvetica, sans-serif;
+	height:24px;
+	float:right;
+}
+
+
+
+#phone a{
+	color:#3371b9;
+	font:20px Arial, Helvetica, sans-serif;
+	display:block;
+	padding:0;
+	margin:0;
+	line-height:18px!important;
+        align:right;
+}
+
+#form{
+	position:absolute;
+        top:185px;
+	right:4px;
+	bottom:0;
+	width:320px;
+}
+
+#form .inputtext{
+	#height:21px;
+	#border:1px solid #cbc8ba;
+	#font:14px Arial, Helvetica, sans-serif;
+	color:#606060;
+	width:220px;
+	float:left;
+	padding:4px 0 0 10px;
+	margin:0;
+}
+#form .submit{
+	height:24px;
+	#padding:2;
+	margin:0 0 0 5px;
+	width:66px;
+	border:1px solid #cbc8ba;
+	background:#fdfdfd;
+}
+
+/*END HEAD*/
+/*START MENU DIV*/
+
+#menu {
+	height:132px;
+	margin:0;
+	width:970px;
+}
+
+#tabs{
+	margin:0 0 0 10px;
+	padding:0;
+	list-style:none;
+	height:24px;
+}
+
+#tabs li{
+	float:left;
+	display:inline;
+	margin:0;
+	padding:5px 15px 0 15px;
+}
+
+#tabs li.selected{
+	display:inline;
+	margin:0;
+	padding:0 0 0 10px;
+	background:url(/bitrix/templates/poligon/images/tab_background_left.jpg) left bottom no-repeat;
+}
+
+
+/* width fixed, cause IE  don't understand width:100% or width:auto for a(block) */
+
+#tabs li.selected a{
+	display:block;
+	_width:90px;
+	_white-space:nowrap;
+	margin:0;
+	padding:5px 10px 0 0;
+	height:19px;
+	text-align:center;
+	font:14px Arial, Helvetica, sans-serif;
+	color:#ffffff;
+	background:url(/bitrix/templates/poligon/images/tab_background_right.jpg) right bottom no-repeat;
+}
+
+#tabs li.selected a:hover{
+	color:#ffffff;
+}
+
+#tabs li a{
+	text-decoration:none;
+	font:14px Arial, Helvetica, sans-serif;
+	color:#606060;
+	text-decoration:none;
+        font-weight:bold;
+	}
+
+#tabs li a:hover{
+	color:#606060;
+	text-decoration:none;
+        font-weight:bold;
+}
+
+#menu #main_area{
+	height:107px;
+	background:url(/bitrix/templates/poligon/images/menu_background_.jpg) left top no-repeat;
+	text-align:left;
+	padding:0 0 0 24px;
+}
+
+#navigation{
+	float:right;
+	width:376px;
+	padding:5px 0 0 0;
+	height:102px;
+}
+
+#navigation div span{
+	color:#cfddee;
+	font:9px Arial, Helvetica, sans-serif;
+	padding:0 0 0 10px;
+}
+
+#navigation div a{
+	color:#ffffff;
+	font:12px Arial, Helvetica, sans-serif;
+	line-height:30px;
+}
+
+/*END MENU DIV*/

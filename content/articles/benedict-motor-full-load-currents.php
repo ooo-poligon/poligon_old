@@ -1,0 +1,781 @@
+<?
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetTitle("Типовые значения для 3-х фазных двигателей");
+$APPLICATION->AddHeadString('<link href="/css/articles.css"  type="text/css" rel="stylesheet" />',true);
+?>
+<h1>Ток номинальной нагрузки двигателя</h1>
+<p>На нашем сайте Вы можете выбрать подходящие <a href="/catalog/index.php?SECTION_ID=5263">3-х</a> и <a href="/catalog/index.php?SECTION_ID=5264">4-х полюсные контакторы</a> производства Benedict (Австрия). </p>
+<style>
+table.benedict-FLC td{
+	padding: 5px;
+}
+table.benedict-FLC td:nth-child(1){
+	font-weight: bold;
+}
+table.benedict-FLC td:nth-child(9){
+	background-color: gray;
+}
+</style>
+<script src="/js/jquery.tablehover.v014/jquery.tablehover.min.js"></script>
+<script src="/js/jquery.column-table-char-align.pack.js"></script>
+<script>
+$(document).ready(function(){
+	$('.benedict-FLC').columnTableCharAlign({cols: 1, left_offset: 3});
+	$('.benedict-FLC').columnTableCharAlign({cols: 2, left_offset: 3});
+	$('.benedict-FLC').columnTableCharAlign({cols: 3, left_offset: 3});
+	$('.benedict-FLC').columnTableCharAlign({cols: 4, left_offset: 3});
+	//$('.benedict-FLC').columnTableCharAlign({cols: 5, left_offset: 3});
+	$('.benedict-FLC').columnTableCharAlign({cols: 6, left_offset: 3});
+	$('.benedict-FLC').columnTableCharAlign({cols: 7, left_offset: 4});
+	$('.benedict-FLC').columnTableCharAlign({cols: 8, left_offset: 4});
+	$('.benedict-FLC').columnTableCharAlign({cols: 9, left_offset: 3});
+	$('.benedict-FLC').columnTableCharAlign({cols: 10, left_offset: 4});
+	$('.benedict-FLC').columnTableCharAlign({cols: 11, left_offset: 3});
+	$('.benedict-FLC').columnTableCharAlign({cols: 12, left_offset: 3});
+	$('.benedict-FLC').columnTableCharAlign({cols: 13, left_offset: 3});
+	$('.benedict-FLC').columnTableCharAlign({cols: 14, left_offset: 3});
+	$('.benedict-FLC').columnTableCharAlign({cols: 15, left_offset: 3});
+	$('.benedict-FLC').columnTableCharAlign({cols: 16, left_offset: 3});
+	$('.benedict-FLC').columnTableCharAlign({cols: 17, left_offset: 3});
+
+	$('.backlight').tableHover({
+	   colClass: 'hover', 
+	   rowClass: 'hover', 
+	   headCols: true, 
+	   spanRows: false, 
+	   spanCols: false, 
+	   ignoreRows: [1,2]
+	  });
+});
+</script>
+
+<table class="zebra benedict-FLC backlight" ><caption>Ток номинальной нагрузки двигателя (ТНН) и минимальный номинала «медленного» ("gL") предохранителя от K3</caption>
+<thead>
+<tr>
+	<th colspan="1">Мощность двигателя</th>
+	<th colspan="2">Диапазон согласно BS для 415V</th>
+	<th>Двигатель 220-230V</th>
+	<th colspan="2">Номинал предохран. при пуске </th>
+	<th>Двигатель 380-400V</th>
+	<th colspan="2">Номинал предохран. при пуске </th>
+	<th>Двигатель 660-690V</th>
+	<th colspan="2">Номинал предохран. при пуске </th>
+</tr>
+<tr>
+	<th>kW</th>
+	<th>cos(phi)</th>
+	<th>КПД %</th>
+	<th>ТНН <br/>(А)</th>
+	<th>D.O.L. <br/>(A)</th>
+	<th>YD <br/>(A)</th>
+	<th>ТНН <br/>(А)</th>
+	<th>D.O.L. <br/>(A)</th>
+	<th>YD <br/>(A)</th>
+	<th>ТНН <br/>(А)</th>
+	<th>D.O.L. <br/>(A)</th>
+	<th>YD <br/>(A)</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+	<th>kW</th>
+	<th>cos(phi)</th>
+	<th>КПД %</th>
+	<th>ТНН <br/>(А)</th>
+	<th>D.O.L. <br/>(A)</th>
+	<th>YD <br/>(A)</th>
+	<th>ТНН <br/>(А)</th>
+	<th>D.O.L. <br/>(A)</th>
+	<th>YD <br/>(A)</th>
+	<th>ТНН <br/>(А)</th>
+	<th>D.O.L. <br/>(A)</th>
+	<th>YD <br/>(A)</th>
+</tr>
+<tr>
+	<th colspan="1">Мощность двигателя</th>
+	<th colspan="2">Диапазон согласно BS для 415V</th>
+	<th>Двигатель 220-230V</th>
+	<th colspan="2">Номинал предохран. при пуске </th>
+	<th>Двигатель 380-400V</th>
+	<th colspan="2">Номинал предохран. при пуске </th>
+	<th>Двигатель 660-690V</th>
+	<th colspan="2">Номинал предохран. при пуске </th>
+</tr>
+</tfoot>
+<tbody>
+<tr>
+	<td>0,06</td>
+	<td>0,7</td>
+	<td>59</td>
+	<td>0,38</td>
+	<td>1</td>
+	<td>1</td>
+	<td>0,22</td>
+	<td>1</td>
+	<td>1</td>
+	<td>-</td>
+	<td>-</td>
+	<td>-</td>
+</tr>
+<tr>
+	<td>0,9</td>
+	<td>0,7</td>
+	<td>60</td>
+	<td>0,55</td>
+	<td>2</td>
+	<td>2</td>
+	<td>0,33</td>
+	<td>1</td>
+	<td>1</td>
+	<td>-</td>
+	<td>-</td>
+	<td>-</td>
+</tr>
+<tr>
+	<td>0,12</td>
+	<td>0,7</td>
+	<td>61</td>
+	<td>0,76</td>
+	<td>2</td>
+	<td>2</td>
+	<td>0,42</td>
+	<td>2</td>
+	<td>2</td>
+	<td>-</td>
+	<td>-</td>
+	<td>-</td>
+</tr>
+<tr>
+	<td>0,18</td>
+	<td>0,7</td>
+	<td>61</td>
+	<td>1,1</td>
+	<td>2</td>
+	<td>2</td>
+	<td>0,64</td>
+	<td>2</td>
+	<td>2</td>
+	<td>-</td>
+	<td>-</td>
+	<td>-</td>
+</tr>
+<tr>
+	<td>0,25</td>
+	<td>0,7</td>
+	<td>62</td>
+	<td>1,4</td>
+	<td>4</td>
+	<td>2</td>
+	<td>0,88</td>
+	<td>2</td>
+	<td>2</td>
+	<td>-</td>
+	<td>-</td>
+	<td>-</td>
+</tr>
+<tr>
+	<td>0,37</td>
+	<td>0,72</td>
+	<td>64</td>
+	<td>2,1</td>
+	<td>4</td>
+	<td>4</td>
+	<td>1,22</td>
+	<td>4</td>
+	<td>2</td>
+	<td>0,7</td>
+	<td>2</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>0,55</td>
+	<td>0,75</td>
+	<td>69</td>
+	<td>2,7</td>
+	<td>4</td>
+	<td>4</td>
+	<td>1,5</td>
+	<td>4</td>
+	<td>2</td>
+	<td>0,9</td>
+	<td>2</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>0,75</td>
+	<td>0,8</td>
+	<td>74</td>
+	<td>3,3</td>
+	<td>6</td>
+	<td>4</td>
+	<td>2</td>
+	<td>4</td>
+	<td>4</td>
+	<td>1,1</td>
+	<td>2</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>1,1</td>
+	<td>0,83</td>
+	<td>77</td>
+	<td>4,9</td>
+	<td>10</td>
+	<td>6</td>
+	<td>2,6</td>
+	<td>4</td>
+	<td>4</td>
+	<td>1,5</td>
+	<td>4</td>
+	<td>2</td>
+</tr>
+<tr>
+	<td>1,5</td>
+	<td>0,83</td>
+	<td>78</td>
+	<td>6,2</td>
+	<td>10</td>
+	<td>10</td>
+	<td>3,5</td>
+	<td>6</td>
+	<td>4</td>
+	<td>2</td>
+	<td>4</td>
+	<td>4</td>
+</tr>
+<tr>
+	<td>2,2</td>
+	<td>0,83</td>
+	<td>81</td>
+	<td>8,7</td>
+	<td>16</td>
+	<td>10</td>
+	<td>5</td>
+	<td>10</td>
+	<td>6</td>
+	<td>2,9</td>
+	<td>6</td>
+	<td>4</td>
+</tr>
+<tr>
+	<td>2,5</td>
+	<td>0,83</td>
+	<td>81</td>
+	<td>9,8</td>
+	<td>16</td>
+	<td>16</td>
+	<td>5,7</td>
+	<td>10</td>
+	<td>10</td>
+	<td>-</td>
+	<td>-</td>
+	<td>-</td>
+</tr>
+<tr>
+	<td>3</td>
+	<td>0,84</td>
+	<td>81</td>
+	<td>11,4</td>
+	<td>20</td>
+	<td>16</td>
+	<td>6,6</td>
+	<td>16</td>
+	<td>10</td>
+	<td>3,5</td>
+	<td>6</td>
+	<td>4</td>
+</tr>
+<tr>
+	<td>3,7</td>
+	<td>0,84</td>
+	<td>82</td>
+	<td>14,2</td>
+	<td>25</td>
+	<td>20</td>
+	<td>8,2</td>
+	<td>16</td>
+	<td>10</td>
+	<td>-</td>
+	<td>-</td>
+	<td>-</td>
+</tr>
+<tr>
+	<td>4</td>
+	<td>0,84</td>
+	<td>82</td>
+	<td>15,3</td>
+	<td>25</td>
+	<td>202</td>
+	<td>8,5</td>
+	<td>16</td>
+	<td>10</td>
+	<td>4,9</td>
+	<td>10</td>
+	<td>6</td>
+</tr>
+<tr>
+	<td>5,5</td>
+	<td>0,85</td>
+	<td>83</td>
+	<td>20,6</td>
+	<td>36</td>
+	<td>25</td>
+	<td>11,5</td>
+	<td>20</td>
+	<td>16</td>
+	<td>6,7</td>
+	<td>16</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>7,5</td>
+	<td>0,86</td>
+	<td>85</td>
+	<td>27,4</td>
+	<td>35</td>
+	<td>35</td>
+	<td>15,5</td>
+	<td>25</td>
+	<td>20</td>
+	<td>9</td>
+	<td>16</td>
+	<td>10</td>
+</tr>
+<tr>
+	<td>8</td>
+	<td>0,86</td>
+	<td>85</td>
+	<td>28,8</td>
+	<td>50</td>
+	<td>35</td>
+	<td>16,7</td>
+	<td>25</td>
+	<td>20</td>
+	<td>-</td>
+	<td>-</td>
+	<td>-</td>
+</tr>
+<tr>
+	<td>11</td>
+	<td>0,86</td>
+	<td>87</td>
+	<td>39,2</td>
+	<td>63</td>
+	<td>50</td>
+	<td>22</td>
+	<td>35</td>
+	<td>25</td>
+	<td>13</td>
+	<td>25</td>
+	<td>16</td>
+</tr>
+<tr>
+	<td>12,5</td>
+	<td>0,86</td>
+	<td>87</td>
+	<td>43,8</td>
+	<td>63</td>
+	<td>50</td>
+	<td>25</td>
+	<td>35</td>
+	<td>35</td>
+	<td>-</td>
+	<td>-</td>
+	<td>-</td>
+</tr>
+<tr>
+	<td>15</td>
+	<td>0,86</td>
+	<td>87</td>
+	<td>52,6</td>
+	<td>80</td>
+	<td>63</td>
+	<td>30</td>
+	<td>50</td>
+	<td>35</td>
+	<td>17,5</td>
+	<td>25</td>
+	<td>20</td>
+</tr>
+<tr>
+	<td>18,5</td>
+	<td>0,86</td>
+	<td>88</td>
+	<td>64,9</td>
+	<td>100</td>
+	<td>80</td>
+	<td>37</td>
+	<td>63</td>
+	<td>50</td>
+	<td>21</td>
+	<td>35</td>
+	<td>25</td>
+</tr>
+<tr>
+	<td>20</td>
+	<td>0,86</td>
+	<td>88</td>
+	<td>69,3</td>
+	<td>100</td>
+	<td>80</td>
+	<td>40</td>
+	<td>63</td>
+	<td>50</td>
+	<td>-</td>
+	<td>-</td>
+	<td>-</td>
+</tr>
+<tr>
+	<td>22</td>
+	<td>0,87</td>
+	<td>89</td>
+	<td>75,2</td>
+	<td>100</td>
+	<td>80</td>
+	<td>44</td>
+	<td>63</td>
+	<td>50</td>
+	<td>25</td>
+	<td>35</td>
+	<td>35</td>
+</tr>
+<tr>
+	<td>25</td>
+	<td>0,87</td>
+	<td>89</td>
+	<td>84,4</td>
+	<td>125</td>
+	<td>100</td>
+	<td>50</td>
+	<td>80</td>
+	<td>63</td>
+	<td>-</td>
+	<td>-</td>
+	<td>-</td>
+</tr>
+<tr>
+	<td>30</td>
+	<td>0,87</td>
+	<td>90</td>
+	<td>101</td>
+	<td>125</td>
+	<td>125</td>
+	<td>60</td>
+	<td>80</td>
+	<td>63</td>
+	<td>33</td>
+	<td>50</td>
+	<td>35</td>
+</tr>
+<tr>
+	<td>37</td>
+	<td>0,87</td>
+	<td>90</td>
+	<td>124</td>
+	<td>160</td>
+	<td>160</td>
+	<td>72</td>
+	<td>100</td>
+	<td>80</td>
+	<td>42</td>
+	<td>63</td>
+	<td>50</td>
+</tr>
+<tr>
+	<td>40</td>
+	<td>0,87</td>
+	<td>90</td>
+	<td>134</td>
+	<td>160</td>
+	<td>160</td>
+	<td>79</td>
+	<td>100</td>
+	<td>100</td>
+	<td>-</td>
+	<td>-</td>
+	<td>-</td>
+</tr>
+<tr>
+	<td>45</td>
+	<td>0,88</td>
+	<td>91</td>
+	<td>150</td>
+	<td>200</td>
+	<td>160</td>
+	<td>85</td>
+	<td>125</td>
+	<td>100</td>
+	<td>49</td>
+	<td>63</td>
+	<td>63</td>
+</tr>
+<tr>
+	<td>51</td>
+	<td>0,88</td>
+	<td>91</td>
+	<td>168</td>
+	<td>200</td>
+	<td>200</td>
+	<td>97</td>
+	<td>125</td>
+	<td>100</td>
+	<td>-</td>
+	<td>-</td>
+	<td>-</td>
+</tr>
+<tr>
+	<td>55</td>
+	<td>0,88</td>
+	<td>91</td>
+	<td>181</td>
+	<td>250</td>
+	<td>200</td>
+	<td>105</td>
+	<td>160</td>
+	<td>125</td>
+	<td>60</td>
+	<td>80</td>
+	<td>63</td>
+</tr>
+<tr>
+	<td>59</td>
+	<td>0,88</td>
+	<td>91</td>
+	<td>194</td>
+	<td>250</td>
+	<td>250</td>
+	<td>112</td>
+	<td>160</td>
+	<td>125</td>
+	<td>-</td>
+	<td>-</td>
+	<td>-</td>
+</tr>
+<tr>
+	<td>75</td>
+	<td>0,88</td>
+	<td>91</td>
+	<td>245</td>
+	<td>315</td>
+	<td>250</td>
+	<td>140</td>
+	<td>200</td>
+	<td>160</td>
+	<td>82</td>
+	<td>125</td>
+	<td>100</td>
+</tr>
+<tr>
+	<td>90</td>
+	<td>0,88</td>
+	<td>92</td>
+	<td>292</td>
+	<td>400</td>
+	<td>315</td>
+	<td>170</td>
+	<td>250</td>
+	<td>200</td>
+	<td>98</td>
+	<td>125</td>
+	<td>125</td>
+</tr>
+<tr>
+	<td>110</td>
+	<td>0,88</td>
+	<td>92</td>
+	<td>358</td>
+	<td>500</td>
+	<td>400</td>
+	<td>205</td>
+	<td>250</td>
+	<td>250</td>
+	<td>118</td>
+	<td>160</td>
+	<td>125</td>
+</tr>
+<tr>
+	<td>129</td>
+	<td>0,88</td>
+	<td>92</td>
+	<td>420</td>
+	<td>500</td>
+	<td>500</td>
+	<td>242</td>
+	<td>315</td>
+	<td>250</td>
+	<td>-</td>
+	<td>-</td>
+	<td>-</td>
+</tr>
+<tr>
+	<td>132</td>
+	<td>0,88</td>
+	<td>92</td>
+	<td>425</td>
+	<td>500</td>
+	<td>500</td>
+	<td>245</td>
+	<td>315</td>
+	<td>250</td>
+	<td>140</td>
+	<td>200</td>
+	<td>160</td>
+</tr>
+<tr>
+	<td>147</td>
+	<td>0,88</td>
+	<td>93</td>
+	<td>472</td>
+	<td>630</td>
+	<td>630</td>
+	<td>273</td>
+	<td>315</td>
+	<td>315</td>
+	<td>-</td>
+	<td>-</td>
+	<td>-</td>
+</tr>
+<tr>
+	<td>160</td>
+	<td>0,88</td>
+	<td>93</td>
+	<td>502</td>
+	<td>630</td>
+	<td>630</td>
+	<td>295</td>
+	<td>400</td>
+	<td>315</td>
+	<td>170</td>
+	<td>200</td>
+	<td>200</td>
+</tr>
+<tr>
+	<td>184</td>	
+	<td>0,88</td>
+	<td>93</td>
+	<td>590</td>
+	<td>800</td>
+	<td>630</td>
+	<td>340</td>
+	<td>400</td>
+	<td>400</td>
+	<td>-</td>
+	<td>-</td>
+	<td>-</td>
+</tr>
+<tr>
+	<td>200</td>
+	<td>0,88</td>
+	<td>93</td>
+	<td>626</td>
+	<td>800</td>
+	<td>800</td>
+	<td>370</td>
+	<td>500</td>
+	<td>400</td>
+	<td>215</td>
+	<td>250</td>
+	<td>250</td>
+</tr>
+<tr>
+	<td>220</td>
+	<td>0,88</td>
+	<td>93</td>
+	<td>700</td>
+	<td>1000</td>
+	<td>800</td>
+	<td>408</td>
+	<td>500</td>
+	<td>500</td>
+	<td>-</td>
+	<td>-</td>
+	<td>-</td>
+</tr>
+<tr>
+	<td>250</td>
+	<td>0,88</td>
+	<td>93</td>
+	<td>803</td>
+	<td>1000</td>
+	<td>1000</td>
+	<td>460</td>
+	<td>630</td>
+	<td>500</td>
+	<td>268</td>
+	<td>315</td>
+	<td>315</td>
+</tr>
+<tr>
+	<td>257</td>
+	<td>0,88</td>
+	<td>93</td>
+	<td>826</td>
+	<td>1000</td>
+	<td>1000</td>
+	<td>475</td>
+	<td>630</td>
+	<td>630</td>
+	<td>-</td>
+	<td>-</td>
+	<td>-</td>
+</tr>
+<tr>
+	<td>295</td>
+	<td>0,88</td>
+	<td>93</td>
+	<td>948</td>
+	<td>1250</td>
+	<td>1000</td>
+	<td>546</td>
+	<td>800</td>
+	<td>630</td>
+	<td>-</td>
+	<td>-</td>
+	<td>-</td>
+</tr>
+<tr>
+	<td>315</td>
+	<td>0,88</td>
+	<td>93</td>
+	<td>990</td>
+	<td>1250</td>
+	<td>1250</td>
+	<td>580</td>
+	<td>800</td>
+	<td>630</td>
+	<td>337</td>
+	<td>400</td>
+	<td>400</td>
+</tr>
+<tr>
+	<td>355</td>
+	<td>0,89</td>
+	<td>95</td>
+	<td>-</td>
+	<td>-</td>
+	<td>-</td>
+	<td>636</td>
+	<td>800</td>
+	<td>800</td>
+	<td>366</td>
+	<td>500</td>
+	<td>400</td>
+</tr>
+<tr>
+	<td>400</td>
+	<td>0,89</td>
+	<td>96</td>
+	<td>-</td>
+	<td>-</td>
+	<td>-</td>
+	<td>710</td>
+	<td>1000</td>
+	<td>800</td>
+	<td>410</td>
+	<td>500</td>
+	<td>500</td>
+</tr>
+</tbody></table>
+
+
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

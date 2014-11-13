@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Полигон - Электронные компоненты - Карта сайта</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="keywords"
+content="электронные компоненты, компоненты, электроника, оформление заказа, Полигон, Poligon, Polygon,  радиодетали,  импортные микросхемы, диоды, транзисторы, микросхемы">
+<meta name="description" content="Полигон - поставка отечественных и импортных электронных компонентов . Оптом и от 1 штуки ">
+<meta name="ROBOTS" content="INDEX,FOLLOW">
+<LINK REL=STYLESHEET TYPE="text/css" HREF="../styles.css">
+<SCRIPT>
+<!-- ;
+if(800 >= screen.width) {
+	document.write("<STYLE type=\'text/css\'><!-- BODY TABLE {font-size:9pt;} --></STYLE>");
+}
+
+// end hide -->
+</SCRIPT>
+</head>
+
+<body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0">
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+<!--#include virtual="win_top.si"-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF">
+  <tr> 
+    <td height="15" bgcolor="#B4B4B4" colspan="4" align="right"><font class=m4><b>&gt 
+      Карта сайта</b></font></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF">
+  <tr> 
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif"><!--#include virtual="../cgi-bin/tree-206/tree.pl" --></font><br>
+><br>
+      <!--#include virtual="win_bott.si"--></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.php");?>
+Добавление в корзину покупателя: 
+<?if(CModule::IncludeModule("iblock"))
+{
+	$res = CIBlockElement::GetByID($_REQUEST["ELEMENT_ID"]);
+	if($ar_res = $res->GetNext())
+		echo $ar_res['NAME'].','.$ar_res['PREVIEW_TEXT'];
+
+}?>
+
+<form>
+<table cellpadding=0 cellspacing=0>
+	<tr>
+		<Td>Количество*:</td><td><input type="text" size="4" value=""></td><td><input type="button" value="Добавить"></td>
+	</tr>
+	<tr>
+		<Td colspan="2">Наличие на складе:</td><td></td><td></td>
+	</tr>
+</table>
+<br>
+<div style="border-top:1px solid #000; width:150px;height:1px;"></div>
+<?$APPLICATION->IncludeFile(
+	$APPLICATION->GetTemplatePath("/catalog/basket_text.php"),
+	Array(),
+	Array("MODE"=>"html")
+);?>
+</form>
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/epilog_after.php");?>

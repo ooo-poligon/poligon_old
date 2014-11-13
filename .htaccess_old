@@ -1,0 +1,97 @@
+# пр€чем репозиторий
+RedirectMatch 404 "(?:.*)/(?:\.git|file_or_dir)(?:/.*)?$"
+RedirectMatch 404 ".gitignore"
+AddDefaultCharset Windows-1251;
+# раньше по умолчанию работало, теперь €вно указываем, когда отдаЄм пожатые файлы
+#<FilesMatch "\.css.gz$">  
+#  ForceType text/css  
+#  Header set Content-Encoding: gzip  
+#</FilesMatch>
+#<FilesMatch "\.js.gz$">  
+#  ForceType text/javascript
+#  Header set Content-Encoding: gzip 
+#</FilesMatch>
+
+php_flag display_errors on
+
+redirect /links/index.shtml http://poligon.info/content/links/
+
+redirect /content/feedback/catalog_order/index.php http://poligon.info/content/feedback/catalog_order/catalogs.php 
+# в последствии стоит и вовсе убрать старую форму
+# так же стоит в будущем убрать старые страницы, редиректы сделаные в сент€бре 2010
+# лишн€€ нагрузка на сервер таким кол-вом правил
+#redirect /pages/inc_form_cd.shtml http://poligon.info/content/feedback/catalog_order/catalogs.php
+redirect /e1zmq10.html http://poligon.info/special/e1zm10.php
+redirect /index.shtml http://poligon.info/
+
+
+
+Options -Indexes 
+
+ErrorDocument 404 /404.php
+
+###  ќроткие „ѕ” дл€ брендов ###
+redirect /citel http://poligon.info/catalog/index.php?SECTION_ID=74
+redirect /tele http://poligon.info/catalog/index.php?SECTION_ID=142
+redirect /releco http://poligon.info/catalog/index.php?SECTION_ID=77
+redirect /graesslin http://poligon.info/catalog/index.php?SECTION_ID=5414
+redirect /cbi http://poligon.info/catalog/index.php?SECTION_ID=5512
+redirect /farnell.html http://poligon.info/special/farnell.php
+redirect /farnell http://poligon.info/special/farnell.php
+redirect /h+s http://poligon.info/catalog/index.php?SECTION_ID=4847
+redirect /benedict http://poligon.info/catalog/index.php?SECTION_ID=5094
+redirect /benedikt http://poligon.info/catalog/index.php?SECTION_ID=5094
+redirect /sonder http://poligon.info/catalog/index.php?SECTION_ID=5535
+redirect /emko http://poligon.info/catalog/index.php?SECTION_ID=5583
+redirect /hyundai http://poligon.info/catalog/index.php?SECTION_ID=5644
+###############################
+
+
+redirect /enya_time    http://poligon.info/catalog/index.php?SECTION_ID=160
+redirect /modcont http://poligon.info/catalog/index.php?SECTION_ID=5266
+redirect /promcont  http://poligon.info/catalog/index.php?SECTION_ID=5095
+
+
+
+redirect /powermonitoring http://poligon.info/catalog/index.php?SECTION_ID=4992
+Redirect /ds250vg-300 http://poligon.info/catalog/index.php?SECTION_ID=5305
+redirect /releco.html http://poligon.info/special/releco_collection.php
+redirect /elcomp http://poligon.info/catalog/index.php?SECTION_ID=13
+redirect /pages/inc_warehouse.shtml http://poligon.info/search/
+redirect /pages/releco/inc_releco.shtml http://poligon.info/catalog/index.php?SECTION_ID=77
+redirect /pages/tele/tele_timing_relays.shtml http://poligon.info/catalog/index.php?SECTION_ID=159
+#php_flag allow_call_time_pass_reference 1
+#php_flag session.use_trans_sid off
+#php_value display_errors 1
+#php_value mbstring.func_overload 2
+#php_value mbstring.internal_encoding UTF-8
+
+#<IfModule mod_rewrite.c>
+#  RewriteEngine On
+#  RewriteCond %{REQUEST_FILENAME} !-f
+#  RewriteCond %{REQUEST_FILENAME} !-l
+#  RewriteCond %{REQUEST_FILENAME} !-d
+#  RewriteCond %{REQUEST_FILENAME} !/bitrix/urlrewrite.php$
+#  RewriteRule ^(.*)$ /bitrix/urlrewrite.php [L]
+#</IfModule>
+
+<Files ~ ".(bash_profile|bash_logout|bashrc)$">
+Order Deny,Allow
+Deny from all
+</Files>
+
+#<IfModule mod_mime.c>
+#  AddType application/x-httpd-php .ico
+#</IfModule>
+
+
+
+<IfModule mod_dir.c>
+  DirectoryIndex index.php
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive on
+  ExpiresByType image/jpeg "access plus 3 day"
+  ExpiresByType image/gif "access plus 3 day"
+</IfModule>

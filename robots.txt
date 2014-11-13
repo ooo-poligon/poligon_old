@@ -1,0 +1,62 @@
+User-agent: *
+Disallow: /bitrix/
+Disallow: /en/
+# запрет версии для вечати страниц каталога
+Disallow: /catalog/index.php?print=Y
+
+# запрет индексирования полупроводников
+Disallow: /catalog/index.php?SECTION_ID=5206
+Disallow: /catalog/index.php?SECTION_ID=5207
+Disallow: /catalog/index.php?SECTION_ID=5208
+Disallow: /catalog/index.php?SECTION_ID=5209
+Disallow: /catalog/index.php?SECTION_ID=5210
+Disallow: /catalog/index.php?SECTION_ID=5211
+Disallow: /catalog/index.php?SECTION_ID=5212
+Disallow: /catalog/index.php?SECTION_ID=5213
+Disallow: /catalog/index.php?SECTION_ID=5214
+Disallow: /catalog/index.php?SECTION_ID=5215
+Disallow: /catalog/index.php?SECTION_ID=5216
+Disallow: /catalog/index.php?SECTION_ID=5217
+Disallow: /catalog/index.php?SECTION_ID=5218
+Disallow: /catalog/index.php?SECTION_ID=5219
+Disallow: /catalog/index.php?SECTION_ID=5220
+Disallow: /catalog/index.php?SECTION_ID=5221
+Disallow: /catalog/index.php?SECTION_ID=5222
+Disallow: /catalog/index.php?SECTION_ID=5223
+Disallow: /catalog/index.php?SECTION_ID=5224
+Disallow: /catalog/index.php?SECTION_ID=5225
+Disallow: /catalog/index.php?SECTION_ID=5226
+Disallow: /catalog/index.php?SECTION_ID=5227
+Disallow: /catalog/index.php?SECTION_ID=5228
+Disallow: /catalog/index.php?SECTION_ID=5229
+Disallow: /catalog/index.php?SECTION_ID=5230
+Disallow: /catalog/index.php?SECTION_ID=5231
+
+# исключаем микросхемы для идексирования
+Disallow: /catalog/index.php?SECTION_ID=5233
+Disallow: /catalog/index.php?SECTION_ID=5234
+Disallow: /catalog/index.php?SECTION_ID=5235
+Disallow: /catalog/index.php?SECTION_ID=5236
+Disallow: /catalog/index.php?SECTION_ID=5237
+Disallow: /catalog/index.php?SECTION_ID=5238
+Disallow: /catalog/index.php?SECTION_ID=5239
+Disallow: /catalog/index.php?SECTION_ID=5240
+Disallow: /catalog/index.php?SECTION_ID=5241
+Disallow: /catalog/index.php?SECTION_ID=5242
+Disallow: /catalog/index.php?SECTION_ID=5243
+Disallow: /catalog/index.php?SECTION_ID=5244
+Disallow: /catalog/index.php?SECTION_ID=5245
+Disallow: /catalog/index.php?SECTION_ID=5246
+Disallow: /catalog/index.php?SECTION_ID=5247
+Disallow: /catalog/index.php?SECTION_ID=5248
+Disallow: /catalog/index.php?SECTION_ID=5249
+Disallow: /catalog/index.php?SECTION_ID=5250
+Disallow: /catalog/index.php?SECTION_ID=5251
+Disallow: /catalog/index.php?SECTION_ID=5252
+Disallow: /catalog/index.php?SECTION_ID=5253
+Disallow: /catalog/index.php?SECTION_ID=5254
+Disallow: /catalog/index.php?SECTION_ID=5255
+Disallow: /catalog/index.php?SECTION_ID=5256
+Disallow: /catalog/index.php?SECTION_ID=5257
+
+Host: www.poligon.info

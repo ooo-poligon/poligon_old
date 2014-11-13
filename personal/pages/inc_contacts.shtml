@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>Полигон - Электронные компоненты - Контакты</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="keywords"
+content="электронные компоненты, компоненты, электроника, оформление заказа, Полигон, Poligon, Polygon">
+<meta name="description"
+content="Полигон - Электронные компоненты - Контакты">
+<meta name="ROBOTS" content="INDEX,FOLLOW">
+<LINK REL=STYLESHEET TYPE="text/css" HREF="../styles.css">
+<SCRIPT>
+<!-- ;
+if(800 >= screen.width) {
+	document.write("<STYLE type=\'text/css\'><!-- BODY TABLE {font-size:9pt;} --></STYLE>");
+}
+
+// end hide -->
+</SCRIPT>
+</head>
+
+<body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0">
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+<!--#include virtual="win_top.si"-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF">
+  <tr> 
+    <td height="15" bgcolor="#B4B4B4" colspan="4" align="right"><font class=m4><b>&gt 
+      Контакты </b></font></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF">
+  <tr> 
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr> 
+    <td width="100">&nbsp;</td>
+    <td width="661"> 
+      <p><font face="Arial, Helvetica, sans-serif" size="2"> <b>Адрес:</b> 197376,
+           Санкт-Петербург, ул. Льва Толстого, д. 7, офис 501(300м от
+          ст.м. 
+        Петроградская)<br>
+        <b>e-mail:</b> <a href="mailto:elcomp@poligon.info">elcomp@poligon.info</a><br>
+        <b>Сайт:</b> <a href="http://www.poligon.info/">http://www.poligon.info/</a></font><font face="Arial, Helvetica, sans-serif" size="2"><br>
+      <b>Контактные телефоны(факс):</b> +7 (812) 325-4220, 325-6420</font></p>
+      <p><font face="Arial, Helvetica, sans-serif" size="2"><b>Отдел поставок:</b> 
+        Долгова Инна Федоровна <br>
+        <b>Отдел закупок:</b> Деревянко Татьяна Александровна<br>
+        <b>Генеральный директор: </b>Левкин Александр Геннадьевич<br>
+        </font></p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2"><div align="center"><img src="../images/map.gif" width="291" height="188"></div></td>
+  </tr>
+  <tr> 
+    <td colspan="2"><br>
+      <!--#include virtual="win_bott.si"--></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+</body>
+</html>

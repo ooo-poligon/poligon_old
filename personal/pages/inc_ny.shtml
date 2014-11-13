@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Полигон - Электронные компоненты - С Новым годом!</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="keywords"
+content="электронные компоненты, компоненты, электроника, оформление заказа, Полигон, Poligon, Polygon">
+<meta name="description"
+content="Полигон - Электронные компоненты - Информация о фирме">
+<meta name="ROBOTS" content="INDEX,FOLLOW">
+<LINK REL=STYLESHEET TYPE="text/css" HREF="../styles.css">
+<SCRIPT>
+<!-- ;
+if(800 >= screen.width) {
+	document.write("<STYLE type=\'text/css\'><!-- BODY TABLE {font-size:9pt;} --></STYLE>");
+}
+
+// end hide -->
+</SCRIPT>
+<style type="text/css">
+<!--
+.style1 {color: #FF9933}
+-->
+</style>
+</head>
+
+<body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0">
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td background="../images/sale2.gif">
+<!--#include virtual="win_top.si"-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF">
+  <tr> 
+    <td height="15" bgcolor="#B4B4B4" colspan="4" align="right"><font class=m4><b>&gt 
+      С Новым годом!</b></font></td>
+  </tr>
+</table>
+<p align="center"><br>
+</p>
+<p align="center">  <span class="st110"><strong>Поздравляем!</strong><br>
+  <br>
+    Вы попали на страничку со специальным предложением. Позвоните нам по телефону</span></p><p align="center" class="st110"> (812) 325-4220 или 325-6420 </p>
+<p align="center" class="st110">и <strong>получите новогоднюю скидку - до <span class="style1">12%</span></strong> <strong>и новогодний подарок! </strong></p>
+<p align="center" class="st110">предложение действительно до 31 января 2005 года.<br>
+</p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF">
+  <tr> 
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td><br>
+      <!--#include virtual="win_bott.si"--></td>
+  </tr>
+</table></td>
+  </tr>
+</table>
+</body>
+</html>

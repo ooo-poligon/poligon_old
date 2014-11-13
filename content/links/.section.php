@@ -1,0 +1,6 @@
+<?
+$sSectionName = "—сылки";
+$arDirProperties = Array(
+
+);
+?>

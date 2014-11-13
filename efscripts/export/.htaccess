@@ -1,0 +1,8 @@
+php_flag display_errors on
+php_flag display_startup_errors on
+php_value error_reporting 2047
+AuthName 'Restricted Area'
+AuthType Basic
+AuthUserFile /home/p/poliinfo/.authfile
+require user  partner
+AuthName 'Restricted Area'

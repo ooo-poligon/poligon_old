@@ -1,0 +1,7 @@
+                        <FORM ACTION="http://www.poligon.info/cgi-bin/risearch/search.pl" METHOD="GET">
+                          <INPUT TYPE="Text" NAME="query" SIZE="19">
+                          <INPUT TYPE="Hidden" NAME="stpos" VALUE="0">
+                          <INPUT name="Submit" TYPE="Submit" style="color: #FFFFFF; background-color: #000000; border: 1" VALUE="Искать">
+                          <INPUT TYPE="Hidden" NAME="stype2" VALUE="AND" checked>
+                          <div align="right"></div>
+                        </FORM>

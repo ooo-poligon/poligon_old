@@ -1,0 +1,148 @@
+<html>
+<head>
+<title>ПОЛИГОН - ЭЛЕКТРОННЫЕ КОМПОНЕНТЫ > Оформление заявки</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="description" content="Полигон - продажа отечественных и импортных электронных компонентов.">
+<meta name="keywords"
+content="электронные компоненты, радиоэлектроника, официальный дилер, электроника, оформление заказа, Полигон">
+<meta name="ROBOTS" content="INDEX,FOLLOW">
+<LINK REL=STYLESHEET TYPE="text/css" HREF="../styles.css">
+<SCRIPT>
+<!-- ;
+if(800 >= screen.width) {
+	document.write("<STYLE type=\'text/css\'><!-- BODY TABLE {font-size:9pt;} --></STYLE>");
+}
+
+// end hide -->
+</SCRIPT>
+<style type="text/css">
+<!--
+.style1 {font-weight: bold}
+-->
+</style>
+</head>
+
+<body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0">
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+<!--#include virtual="win_top.si"-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF">
+  <tr> 
+    <td height="15" bgcolor="#B4B4B4" colspan="4" align="right"><font class=m4><b>&gt 
+      Оформление заявки</b></font></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF">
+  <tr> 
+    <td colspan="2"> 
+      <div align="center"><font face="Arial, Helvetica, sans-serif" size="2"><i><font color="#660000"><br>
+        Здесь Вы можете сделать заказ или задать вопросы</font></i></font></div>
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="2"> 
+      <hr size="1" noshade align="center">
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="2"> 
+      <table width="700" border="0" cellspacing="0" cellpadding="0" align="center">
+        <tr>
+          <td><div align="justify"><font face="Arial, Helvetica, sans-serif" size="2">При составлении
+                   заявки не забудьте указать <strong>тип
+                    изделия</strong>(или точно его описать, указать требуемые параметры),
+                    <strong>нужное количество</strong>(от
+                    него зависит цена), <strong>способ поставки</strong>(условия
+                    и варианты описаны <a href="inc_cond.shtml">здесь</a>) и <strong>координаты
+                    для связи</strong>. Мы постараемся обработать заявку в течение суток или
+                    быстрее. Ответим
+                в любом случае.</font></div></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <hr size="1" noshade align="center">
+    </td>
+  </tr>
+  <tr> 
+    <td width="5">&nbsp;</td>
+    <td> 
+      <form method="get" action="../cgi-bin/form_qw.pl">
+        <br>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+          <tr> 
+            <td width="80" height="35"><font class=frm>Название организации:</font></td>
+            <td height="35" valign="top">      <input type="text" name="orgname" size="50" value="" maxlength="50">              
+            <font class=frm><font color=red> </font></font>            </td>
+            <td width="3" valign="top"><font class=frm>&nbsp;</font></td>
+            <td width="160">&nbsp;</td>
+          </tr>
+          <tr> 
+            <td height="35"><font class=frm>Контактное лицо:</font></td>
+            <td colspan="3"> 
+              <input type="text" name="confc" size="50" maxlength="50">              
+              <font class=frm><font color=red> </font></font>            </td>
+            </tr>
+          <tr>
+            <td height="35"><font class=frm>Тел./факс:</font></td>
+            <td colspan="3"><input type="text" name="telfax" size="50" maxlength="100"></td>
+          </tr>
+          <tr>
+            <td height="35"><span class="style1"><font class="frm" size="3">*</font><font  class=frm>E-mail адрес:</font></span></td>
+            <td colspan="3"><input type="text" name="emailad" size="50" maxlength="50"></td>
+          </tr>
+          <tr>
+            <td height="20">Почтовый адрес:</td>
+            <td colspan="3"><input name="paddr" type="text" id="paddr2" size="70" maxlength="100"></td>
+          </tr>
+          <tr>
+            <td height="20">&nbsp;</td>
+            <td colspan="3">&nbsp;</td>
+          </tr>
+          <tr>
+            <td height="20">&nbsp;</td>
+            <td colspan="3">&nbsp;</td>
+          </tr>
+
+          <tr> 
+            <td valign="top" width="80"><font class=frm>Текст сообщения:</font></td>
+            <td colspan="2" valign="top"> 
+              <textarea name="textblk" cols="75" rows="15"></textarea>
+            </td>
+            <td valign="top" width="168"><font class=frm>&nbsp;</font></td>
+          </tr>
+          <tr> 
+            <td valign="top" colspan="4" height="20"></td>
+          </tr>
+          <tr> 
+            <td valign="top" colspan="4"> 
+              <div align="center"> 
+                <input type="submit" name="Submit" value="Отправить" style="color: #FFFFFF; background-color: #000000; border: 1">
+                <input type="reset" name="Submit2" value="Очистить" style="color: #FFFFFF; background-color: #000000; border: 1">
+              </div>
+            </td>
+          </tr>
+        </table>
+        <p align="right"><font size="2" face="Arial, Helvetica, sans-serif">Заявка 
+          будет отправлена на <a href="mailto:elcomp@poligon.info">elcomp@poligon.info</a></font></p>
+      </form>
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="2"> 
+      <div align="right"></div>
+    </td>
+  </tr>
+  <tr> 
+    <td colspan="2"><br>
+      <!--#include virtual="win_bott.si"--></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+</body>
+</html>

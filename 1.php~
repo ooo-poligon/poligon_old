@@ -1,0 +1,5 @@
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");?>
+<?CAjax::Init();?>
+<a href="javascript:void(0)" onclick="run()">Загрузить</a>
+
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>Полигон - Приглашаем к сотрудничеству дистрибьюторов</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="keywords"
+content="электронные компоненты, компоненты, электроника, оформление заказа, Полигон, Poligon, Polygon">
+<meta name="description"
+content="Полигон - Электронные компоненты и электротехнические изделия - Приглашаем к сотрудничеству дистрибьюторов">
+<meta name="ROBOTS" content="INDEX,FOLLOW">
+<LINK REL=STYLESHEET TYPE="text/css" HREF="../styles.css">
+<SCRIPT>
+<!-- ;
+if(800 >= screen.width) {
+	document.write("<STYLE type=\'text/css\'><!-- BODY TABLE {font-size:9pt;} --></STYLE>");
+}
+
+// end hide -->
+</SCRIPT>
+</head>
+
+<body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0">
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+<!--#include virtual="win_top.si"-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF">
+  <tr> 
+    <td height="15" bgcolor="#B4B4B4" colspan="4" align="right"><p><font class=m4><b>&gt 
+        Приглашаем к сотрудничеству дистрибьюторов </b></font></p>
+      </td>
+  </tr>
+</table>
+<table width="100%"  border="0">
+  <tr>
+    <td><p>&nbsp;</p>
+      <p align="center"><strong>Приглашаем к сотрудничеству дилеров и инсталляторов <br>
+        электротехнических изделий и электронных компонентов</strong></p>
+      <p>Наша компания является официальным дистрибьютором следующих производителей:</p>
+      <table width="100%"  border="0" cellpadding="0" cellspacing="5" bordercolor="#FFFFFF">
+        <tr>
+          <td><div align="center"><a href="releco/inc_releco.shtml"><img src="releco/releco50perc_transp.gif" alt="RELECO" width="91" height="14" border="0"></a></div></td>
+          <td><strong>RELECO</strong> - реле переключающие, интерфейсные, миниатюрные, розетки, таймеры, мосты (Испания) </td>
+        </tr>
+        <tr>
+          <td><div align="center"><a href="citel/inc_citel.shtml"><img src="citel/CITEL_logo.gif" alt="CITEL" width="133" height="76" border="0"></a></div></td>
+          <td><strong>CITEL</strong> - защита от импульсного повышения напряжения, грозозащита. Модули на DIN-рейку, стандартные блоки, газоразрядники. Защита электропитания, сетей передачи данных, телекоммуникаций, MSR , техники высоких частот, от разностного тока (Франция) </td>
+        </tr>
+        <tr>
+          <td><div align="center"><a href="tele/inc_tele.shtml"><img src="tele/TELE.gif" alt="TELE" width="133" height="63" border="0"></a></div></td>
+          <td><strong>TELE</strong> - устройства для промышленной автоматизации. Реле управления и мониторинга (1- и 3-фазных сетей, температуры, уровня, времени и др.), плавный пуск, счетчики часов и др. (Австрия) </td>
+        </tr>
+        <tr>
+          <td><div align="center"><a href="orbis/inc_ORBIS.shtml"><img src="orbis/orbis_70pr.gif" alt="ORBIS" width="134" height="78" border="0"></a></div></td>
+          <td><strong>ORBIS</strong> - устройства для автоматизации в быту и промышленности. Таймеры, сумеречные выключатели, лестничные выключатели, датчики движения, термостаты и др. (Испания)</td>
+        </tr>
+        <tr>
+          <td><div align="center"><img src="alfa-r/logo_alfa-r.gif" alt="ALFA'R" width="60" height="85"></div></td>
+          <td><strong>ALFA'R</strong> - высокочастотные коаксиальные разъемы (Испания) </td>
+        </tr>
+      </table>
+      <p><br>
+        Мы готовы сотрудничать по любому из этих направлений и ищем партнеров по всей России.</p>
+      <p>          Наши партнеры получают:</p>
+      <p>        - специальные условия<br>
+        - техническую поддержку<br>
+        - каталоги и рекламные материалы
+        <br>
+        - своевременную информацию о новых изделиях<br>
+        </p>
+      <p><strong>За дополнительной информацией обращайтесь в отдел маркетинга по телефону (812) 3254220</strong></p>
+      </td>
+  </tr>
+</table>
+<p align="center">&nbsp;</p>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#FFFFFF">
+  <tr> 
+    <td>&nbsp;</td>
+  </tr>
+  <tr> 
+    <td><br>
+      <!--#include virtual="win_bott.si"--></td>
+  </tr>
+</table>
+</td>
+  </tr>
+</table>
+</body>
+</html>

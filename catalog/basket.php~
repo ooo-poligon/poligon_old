@@ -1,0 +1,68 @@
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");?>
+
+<form id="basketform" action="/catalog/basket.php?ELEMENT_ID=<?=$_REQUEST["ELEMENT_ID"]?>" method="POST" onSubmit="self.close()">
+<table cellpadding=5 cellspacing=0 id="_table" width="380">
+	<tr>
+		<td colspan="3">Добавление в корзину покупателя: </td>
+	</tr>
+	<tr>
+		<td colspan="3"><b>
+			<?if(CModule::IncludeModule("iblock"))
+			{
+				$res = CIBlockElement::GetByID($_REQUEST["ELEMENT_ID"]);
+				if($obRes = $res->GetNextElement()){
+					
+					$props = $obRes->GetProperties();
+					$ar_res = $obRes->GetFields();
+					echo $ar_res['NAME'].'<br>'.$ar_res['PREVIEW_TEXT'];
+				
+				}
+
+			}?></b>
+		</td>
+	</tr>
+	<tr>
+		<Td width=100>Количество*:</td><td width=70><input id="qua" name="quantity" type="text" size="4" value=""></td><td><input type="submit" value="Добавить"></td>
+	</tr>
+	<tr>
+		<Td colspan="2">Наличие на складе:</td><td><b>
+			<?
+				$db_res1 = CCatalogProduct::GetList(
+					array(),
+					array("ID" => $ar_res['ID']),
+					false,
+					array()
+				    );
+				if ($ar_res1 = $db_res1->Fetch())
+				{
+				if (!$ar_res1["QUANTITY"]){
+					if (!$props["srok"]["VALUE"])
+						echo 'нет';
+					else echo $props["srok"]["VALUE"]; 					
+					}
+				    else echo 'да';
+				}?>				
+			</b>		
+		</td><td></td>
+	</tr>
+</table>
+<?$APPLICATION->SetTitle('Добавление в корзину. '.$ar_res["PREVIEW_TEXT"])?>
+<br>
+<div style="border-top:1px solid #000; width:150px;height:1px;"></div>
+<div style="font-size:10px">
+<?$APPLICATION->IncludeFile(
+	$APPLICATION->GetTemplatePath("/catalog/basket_text.php"),
+	Array(),
+	Array("MODE"=>"html")
+);?>
+</div>
+</form>
+<?if (intval($_REQUEST["ELEMENT_ID"])&&intval($_REQUEST["quantity"])){
+	if (CModule::IncludeModule("sale")&&CModule::IncludeModule("catalog"))
+	{
+	  Add2BasketByProductID(
+                $_REQUEST["ELEMENT_ID"],
+                $_REQUEST["quantity"],array());
+	}
+}?>
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

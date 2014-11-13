@@ -1,0 +1,28 @@
+<!ELEMENT catalog (section, offers)>
+<!ELEMENT section (#PCDATA)>
+<!ATTLIST section 
+	section_name CDATA #REQUIRED
+	section_url CDATA #REQUIRED>
+
+<!ELEMENT offers (offer+)>
+<!ELEMENT offer (name, article, url, picture, add_images?, pdf, price1, price10, price100, price_d, thesis, short_description, full_description, vendor)>
+<!ATTLIST offer id CDATA #REQUIRED>
+
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT article (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT picture (#PCDATA)>
+<!ELEMENT add_images (img+)>
+	<!ELEMENT img EMPTY>
+	<!ATTLIST img 
+	src CDATA #REQUIRED
+	alt CDATA #IMPLIED>
+<!ELEMENT pdf (#PCDATA)>
+<!ELEMENT price1 (#PCDATA)>
+<!ELEMENT price10 (#PCDATA)>
+<!ELEMENT price100 (#PCDATA)>
+<!ELEMENT price_d (#PCDATA)>
+<!ELEMENT thesis (#PCDATA)>
+<!ELEMENT short_description (#PCDATA)>
+<!ELEMENT full_description (#PCDATA)>
+<!ELEMENT vendor (#PCDATA)>

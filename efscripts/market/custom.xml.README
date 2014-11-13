@@ -1,0 +1,40 @@
+Документ основан на схеме, которая распологается по адресу: 
+	http://poligon.info/efscripts/market/custom.xml.dtd
+Ниже приведён фрагмент xml с комментариями к каждому элементу:
+
+<!-- корневой элемент catalog, атрибуты: section_name (наименование типа и серии устройств) и section_url (ссылка на страницу сайта poligon.info, где представлена полная информация по серии) -->
+<catalog section_name="Реле времени Серия ENYA" section_url="http://poligon.info/catalog.php?SECTION_ID=160">
+	<offer id="128"><!--  узел конкретного изделия, с его числовым идентификатором (уникальным на сайте poligon.info -->
+		<name>E1ZM10 12-240VAC/DC</name><!--  наименование изделия, в соответвии с маркировкой производителя -->
+		<url>http://poligon.info/catalog/index.php?SECTION_ID=160&amp;ELEMENT_ID=128</url><!--  ссылка на карточку товара на сайте poligon.info -->
+		<picture>http://poligon.info/images/TELE/E1ZM10.jpg</picture><!--  изображение -->
+		<pdf>http://poligon.info/PDF/TELE/ru_e1zm_e1z1.pdf</pdf><!--  техническая документация в pdf -->
+		<price1>45.61</price1><!--  розничеая цена (от 1 штуки) -->
+		<price10>41.05</price10><!--  мелкооптовая (от 10 штук) -->
+		<price100></price100><!-- оптовая цена (от 100 штук)  -->
+		<price_d></price_d><!--  специальная цена для дилеров -->
+		<thesis></thesis><!--  основная характеристика устройства (тезис) -->
+		<short_description>Реле времени многофункциональное (7 функций: E, R, Ws, Wa, Es, Wu, Bp), 1 CO</short_description><!--  краткое текстовое описание -->
+		<!-- расширенное описание (html) -->
+		<full_description><![CDATA[<table><tbody>
+	 <tr><td>Напряжение питания</td>  <td>12-240VAC/DC</td></tr>
+	 <tr><td>Максимальный коммутируемый ток</td>  <td>8А / 250VAC</td></tr>
+	 <tr><td>Количество выходных контактов</td>  <td>1 перекидной</td></tr>
+	 <tr><td>Диапазон рабочих температур</td>  <td>-25 .. +55 &deg;C</td></tr>
+	 <tr><td>Выполняемые функции</td>  <td>E, R, Ws, Wa, Es, Wu, Bp</td></tr>
+	 <tr><td>Диапазон выдержек времени</td>  <td>50мс .. 100ч</td></tr>
+	 <tr><td>Габаритные размеры</td>  <td>17,5х60х87мм</td></tr>
+	 <tr><td>Монтаж</td>  <td>на DIN-рейку 35мм</td></tr>
+	 <tr><td>Сертификаты</td>  <td>ГОСТ, UL, cUL, CE</td></tr>
+	</tbody></table>
+	<div class="benefitLogos">
+	 <img src="/images/TELE/sgn_eu.jpg" alt="Сделано в Европе"> 
+	 <img src="/images/TELE/sgn_50years.jpg" alt="TELE: 50 лет разработки и производства"> 
+	 <img src="/images/TELE/sgn_quality.jpg" alt="Продукт высокого качества"> 
+	 <img src="/images/TELE/sgn_watchdog.jpg" alt="относится к семейству WatchDog">
+	</div>]]></full_description>
+		<vendor>TELE</vendor><!-- производитель -->
+	</offer>
+</catalog>
+
+Параматром $_GET['SECTION_ID'] указывается идентификатор раздела, в соответвии с сайтом poligon.info. Стоит указывать нижний раздел, в котором непосредственно и находятся товары. 

@@ -1,0 +1,39 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Настройки пользователя", 
+		"/personal/profile/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Подписка", 
+		"/personal/subscribe/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Заказы", 
+		"/personal/order/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Корзина", 
+		"/personal/cart/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Профили покупателя", 
+		"/personal/customer-profiles/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

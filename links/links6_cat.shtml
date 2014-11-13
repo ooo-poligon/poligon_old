@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>Ссылки &gt; каталоги ссылок, доски объявлений</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link rel=STYLESHEET type="text/css" href="../styles.css">
+<SCRIPT>
+<!-- ;
+if(800 >= screen.width) {
+	document.write("<STYLE type=\'text/css\'><!-- BODY TABLE {font-size:9pt;} --></STYLE>");
+}
+
+// end hide -->
+</SCRIPT>
+</head>
+
+<body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0">
+<table width="100%"  border="0" cellspacing="0" cellpadding="1">
+  <tr>
+    <td><!--#include virtual="../pages/win_top.si"--></td>
+  </tr>
+  <tr>
+    <td><table width="100%" border="0" cellspacing="0" cellpadding="1">
+      <tr>
+        <td>
+          <div align="center">              
+            <blockquote>
+              <p align="left"><br>
+                Ссылки на сайты радиотехнической тематики:</p>
+              <p align="left"><a href="index.shtml">Радиотехнические порталы, форумы</a><br>
+                    <a href="links2_scheme.shtml">Схемы, справочники, руководства, техническая документация, статьи, сертификация</a><br>
+                    <a href="links3_repair.shtml">Ремонт</a><br>
+                    <a href="links4_develop.shtml">Разработка, проектирование и производство РЭА, печатных плат </a><br>
+                    <a href="links5_suppliers.shtml">Поставщики и дистрибьюторы электронных компонентов, оборудования, сопутствующих материалов</a><br>
+                    <a href="links6_cat.shtml"><strong>&gt; Каталоги ссылок, доски объявлений</strong></a><br>
+                <a href="links7_var.shtml">Разное</a></p>
+              </blockquote>
+          </div></td>
+      </tr>
+      <tr>
+        <td><table width="100%" border="0" cellspacing="5" cellpadding="1">
+            <tr bgcolor="#CCCCCC">
+              <td colspan="2"><strong>Каталоги ссылок, доски объявлений</strong></td>
+              </tr>
+            <tr>
+              <td><div align="center"><a href='http://www.e-avtomatika.ru' target=_blank><img src='http://www.e-avtomatika.ru/images/button88x31.gif' alt='Автоматика и автоматизация' border=1 width='88' height='31'></a></div></td>
+              <td>Автоматика и автоматизация. Ежедневно публикуемые новости автоматики, каталог фирм, работа, доска объявлений с авторассыльщиком, каталог сайтов и события.</td>
+            </tr>
+            <tr>
+              <td><div align="center"><a href="http://www.llink.al.ru/"><img border="1" src="http://www.llink.al.ru/k7.gif"  width="88" height="31"alt="Лучшие ссылки в Интернете"></a></div></td>
+              <td>Лучшие ссылки в Интернете</td>
+            </tr>
+            <tr>
+              <td><div align="center"><a href="http://www.maginfo.ru/"><img src="../images/shops2.gif" width="88" height="31" border="1"></a></div></td>
+              <td>Все магазины Рунета </td>
+            </tr>
+            <tr>
+              <td><div align="center"><a href="http://2000.dp.ru" target=_top><img src="http://dp.ru/img/2000.gif" border=1 alt="Поиск в каталоге 2000.dp.ru" width=88 height=31></a></div></td>
+              <td>Поиск в каталоге 2000.dp.ru</td>
+            </tr>
+            <tr>
+              <td><div align="center"><a href="http://findcomp.ru" target="_blank"><img
+src="http://findcomp.ru/goto.php?pic=findcompru.gif" border=1 width=88 height=31
+alt="Интернет-магазины, новости электронной коммерции."></a></div></td>
+              <td>Интернет-магазины, новости электронной коммерции.</td>
+            </tr>
+            <tr>
+              <td><div align="center"><a href="http://board.sdki.ru" target="_blank"><img src="http://board.sdki.ru/banner.gif" alt="Board.SDKI.ru  - доска деловых объявлений" width="88" height="31" border="1"></a></div></td>
+              <td>Доска деловых объявлений</td>
+            </tr>
+            <tr>
+              <td><div align="center"><a href="http://www.comby.info"><strong>comby.info</strong></a></div></td>
+              <td><a href="http://comby.info">Интернет-каталог сайтов Comby.info</a></td>
+            </tr>
+            <tr>
+              <td><!--begin of biz-market.ru module-->
+                <img src="http://biz-market.ru/logo/do.gif" border="0" width="88" height="31" alt="Бизнес-Маркет :: доски объявлений" usemap="#logo" />
+                <map name="logo">
+                  <area alt="" coords="0,0,43,1" href="http://razdelelektro.biz-market.ru/number3562859.html">
+                  <area alt="" coords="0,0,44,1" href="http://razdelelektro.biz-market.ru/">
+                  <area alt="" coords="0,0,88,30" href="http://biz-market.ru">
+                </map>
+                <!--end of biz-market.ru module--></td>
+              <td>Объявления - Бизнес-Маркет </td>
+            </tr>
+            <tr>
+              <td><!--begin of DeloNet logo-->
+                <a href="http://delonet.ru"> <img src="http://delonet.ru/logo/1.gif" alt="Доски объявлений DeloNet" width=88 height=31 border=0></a>
+                <!--end of DeloNet logo --></td>
+              <td>Объявления - DeloNet</td>
+            </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td>&nbsp;          </td>
+      </tr>
+      <tr>
+        <td>
+          <div align="center"> <font face="Arial, Helvetica, sans-serif" size="2">Если Вы заинтересованы в обмене ссылками - <a href="mailto:webmaster@poligon.info">пишите</a>, код ссылки для обмена <a href="linkexch.shtml">здесь</a>. </font></div></td>
+      </tr>
+      <tr>
+        <td><!--#include virtual="../pages/win_bott.si"--></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

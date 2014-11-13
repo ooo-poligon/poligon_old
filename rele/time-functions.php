@@ -1,0 +1,2 @@
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");$APPLICATION->SetTitle("выбор реле времени по требуемой функции");require_once $_SERVER["DOCUMENT_ROOT"]."/bitrix/templates/poligon_ew/include_areas/releMenu.php";print '<h1>Выбор реле времени по требуемой функции</h1>';
+releFunctions("реле времени");require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

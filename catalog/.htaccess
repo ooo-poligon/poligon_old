@@ -1,0 +1,25 @@
+RewriteEngine On
+RewriteEngine On
+RewriteRule ^(TELE|RELECO)(.*)$ /PDF/$1$2 [R=301,L]
+#redirect /catalog/TELE /PDF/TELE
+
+### КОроткие ЧПУ для брендов ###
+redirect /citel http://poligon.info/catalog/index.php?SECTION_ID=74
+redirect /tele http://poligon.info/catalog/index.php?SECTION_ID=142
+redirect /releco http://poligon.info/catalog/index.php?SECTION_ID=77
+redirect /graesslin http://poligon.info/catalog/index.php?SECTION_ID=5414
+redirect /cbi http://poligon.info/catalog/index.php?SECTION_ID=5512
+redirect /h+s http://poligon.info/catalog/index.php?SECTION_ID=4847
+redirect /benedict http://poligon.info/catalog/index.php?SECTION_ID=5094
+redirect /benedikt http://poligon.info/catalog/index.php?SECTION_ID=5094
+redirect /sonder http://poligon.info/catalog/index.php?SECTION_ID=5535
+redirect /emko http://poligon.info/catalog/index.php?SECTION_ID=5583
+redirect /hyundai http://poligon.info/catalog/index.php?SECTION_ID=5644
+###############################
+
+
+redirect /powermonitoring http://www.poligon.info/catalog/index.php?SECTION_ID=4992
+Redirect /ds250vg-300 http://poligon.info/catalog/index.php?SECTION_ID=5305
+redirect /elcomp http://poligon.info/catalog/index.php?SECTION_ID=13
+redirect /pages/releco/inc_releco.shtml http://poligon.info/catalog/index.php?SECTION_ID=77
+redirect /pages/tele/tele_timing_relays.shtml http://poligon.info/catalog/index.php?SECTION_ID=159

@@ -1,0 +1,68 @@
+<?php 
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+if(CModule::IncludeModule("iblock"))
+{
+  $arFilter = Array('IBLOCK_ID'=>4, 'GLOBAL_ACTIVE'=>'Y', 'DEPTH_LEVEL'=>1);
+  $db_list = CIBlockSection::GetList(Array("sort"=>'asc'), $arFilter, true);
+  echo '<ul id="v_menu">';
+  while($ar_result = $db_list->GetNext())
+  {
+    echo '<li><a href="/content/products/?SECTION_ID='.$ar_result['ID'].'"><pre>'.var_dump($ar_result).'</pre></a>';
+	if (intval($_REQUEST["SECTION_ID"]))
+	{
+		$res = CIBlockSection::GetByID($_REQUEST["SECTION_ID"]);
+		if($ar_res = $res->GetNext()){ 
+		$DEPTH_LEVEL = $ar_res['DEPTH_LEVEL'];
+			if ($DEPTH_LEVEL==3)
+			{
+				$res1 = CIBlockSection::GetByID($ar_res["IBLOCK_SECTION_ID"]);
+				if($ar_res1 = $res1->GetNext())
+				{
+					$ar_res["IBLOCK_SECTION_ID"] = $ar_res1["IBLOCK_SECTION_ID"];
+				} 
+			}
+		}
+		if ($DEPTH_LEVEL==1&&$_REQUEST["SECTION_ID"]==$ar_result["ID"])
+		{
+			$arFilter1 = Array('IBLOCK_ID'=>51, 'SECTION_ID'=>$_REQUEST["SECTION_ID"],'GLOBAL_ACTIVE'=>'Y', 'DEPTH_LEVEL'=>2);
+			$db_list1 = CIBlockSection::GetList(Array(), $arFilter1, true);
+			echo '<ul>';
+			while($ar_result1 = $db_list1->GetNext())
+			{
+			    echo '<li><a href="/content/products/?SECTION_ID='.$ar_result1['ID'].'">'.$ar_result1['NAME'].'</a></li>';	
+			}
+			echo '</ul>';
+		}
+		if ($DEPTH_LEVEL>=2&&$ar_res["IBLOCK_SECTION_ID"]==$ar_result["ID"])
+		{
+			$arFilter1 = Array('IBLOCK_ID'=>51, 'SECTION_ID'=>$ar_res["IBLOCK_SECTION_ID"],'GLOBAL_ACTIVE'=>'Y', 'DEPTH_LEVEL'=>2);
+			$db_list1 = CIBlockSection::GetList(Array(), $arFilter1, true);
+			echo '<ul>';
+			while($ar_result1 = $db_list1->GetNext())
+			{
+			    echo '<li><a href="/content/products/?SECTION_ID='.$ar_result1['ID'].'">'.$ar_result1['NAME'].'</a></li>';	
+			}
+			echo '</ul>';
+		}
+	}
+    echo '</li>';
+  }
+  echo '</ul>';
+}
+
+
+$arSelect = Array("ID", "NAME", "DATE_ACTIVE_FROM");
+$arFilter = Array("IBLOCK_ID"=>4, "SECTION_ID"=>4, "ACTIVE_DATE"=>"Y", "ACTIVE"=>"Y");
+$res = CIBlockElement::GetList(Array(), $arFilter, false, Array(), $arSelect);
+if($ob = $res->GetNextElement())
+{
+  $arFields = $ob->GetFields();
+  print_r($arFields);
+}
+else
+{
+	echo 'false';
+}
+
+
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

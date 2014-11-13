@@ -1,0 +1,103 @@
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetTitle("Ссылки");?>
+<p>
+
+<div align="center">
+            <blockquote>
+              <p align="left">
+                  Ссылки на сайты радиотехнической тематики:</p>
+              <p align="left"><a href="index.php">Радиотехнические порталы, форумы</a><br>
+                  <a href="links2_scheme.php">Схемы, справочники, руководства, техническая документация, статьи, сертификация</a><br>
+                  <a href="links3_repair.php">Ремонт</a><br>
+                  <a href="links4_develop.php">Разработка, проектирование и производство РЭА, печатных плат</a><br>
+                  <a href="links5_suppliers.php">Поставщики и дистрибьюторы электронных компонентов, оборудования, сопутствующих материалов</a><br>
+                  <a href="links6_cat.php">Каталоги ссылок, доски объявлений</a><br>
+                <a href="links7_var.php"><strong>&gt; Разное</a></strong>              </p>
+              </blockquote>
+          </div>
+
+
+
+<table width="100%" border="0" cellspacing="5" cellpadding="1">
+            <tr bgcolor="#CCCCCC">
+              <td colspan="2"><strong>Разное</strong></td>
+              </tr>
+            <tr>
+              <td><div align="center"><a href="http://www.knm.ru"><strong>www.knm.ru</strong></a></div></td>
+              <td><a href="http://www.knm.ru/" title="Сервер Коммерческой Недвижимости Москвы и Московской области (KNM.RU): аренда и продажа зданий, помещений, земельных участков коммерческого назначения (офисы, магазины, склады, производственные здания и помещения); продажа готового бизнеса." target="_blank">Коммерческая недвижимость Москвы и Подмосковья:</a> аренда офисов, продажа магазинов и готового бизнеса; продажа и аренда торговых площадей в торговых центрах Москвы.</td>
+            </tr>
+            <tr>
+              <td><div align="center"><a href="http://www.9r.ru"><img src="http://www.9r.ru/images/9r_banner.gif"Эксперт-Оценка": оценка недвижимости,
+юридические услуги, бизнес-планирование" width=88 height=31 border=1></a></div></td>
+              <td><a href="http://www.9r.ru"> </a> <a href="http://www.9r.ru">Оценочная компания "Эксперт-Оценка":</a> <a href="http://www.9r.ru/part2.html">оценка недвижимости</a>, <a href="http://www.9r.ru/part1.html">оценка бизнеса</a>, <a href="http://www.9r.ru/part7.html">юридические услуги</a>, <a href="http://www.9r.ru/part6.html">бизнес-планирование</a>, <a href="http://www.9r.ru/part4.html">оценка интеллектуальной собственности</a>, <a href="http://www.9r.ru/part5.html">оценка ущерба</a></td>
+            </tr>
+            <tr>
+              <td><div align="center"><a title="FLESINEON " href="http://www.flesineon.ru"> <img src="http://www.flesineon.ru/viewImg.php?img_id=377&amp;tabname=Templates&amp;showtext=0" width="88" height="31" border=1></a><a
+href=www.flesineon.ru title="
+FLESINEON "> </a></div></td>
+              <td><a title=" FLESINEON " href="http://www.flesineon.ru">Декоративное освещение: Дюралайт, Плей-Лайт, Твинкл-лайт, Световой дождь, Светодиодный дождь, Гирлянды, Белт-лайт, Фейерверки.</a></td>
+            </tr>
+            <tr>
+              <td><div align="center"><a  href="http://www.evanty.ru/"><img src="http://www.evanty.ru/imgs/ban88-2.gif" height=31 alt="Мебельная фабрика Эванти.
+Производство и продажа мягкой мебели, журнальных столов."  width=88 border=1></a></div></td>
+              <td><a href="http://www.evanty.ru">Мебельная фабрика "ЭВАНТИ"</a>. Производство и продажа мягкой мебели,большой выбор моделей от <a
+href="http://www.evanty.ru/collections/index.html">классики</a> до <a href="http://www.evanty.ru/collections/modern.html">модерна</a>, большой <a href="http://www.evanty.ru/collections/materials/index.html">ассортимент кожи и тканей</a>, <a
+href="http://www.evanty.ru/collections/accessory/index.html">аксессуары</a>, <a
+href="http://www.evanty.ru/information/articles/index.html">статьи о мебели</a>, наши <a
+href="http://www.evanty.ru/contacts/dealers.html">дилеры</a>.</td>
+            </tr>
+            <tr>
+              <td><div align="center"><a href="http://www.acoust.ru"><strong>www.acoust.ru</strong></a></div></td>
+              <td><p>Acoust.Ru магазин продает Домашний кинотеатр в одной коробке, Подставка, Проектор, CD проигрыватель, Межблочный кабель, AV Ресивер, Акустическая система, Видеомагнитофон, Комплект акустики, Акустический кабель, Предусилитель, AV Процессор, Тюнер. </p>
+                </td>
+            </tr>
+            <tr>
+              <td><div align="center"><a href="http://www.intellhouse.ru"><strong>www.intellhouse.ru</strong></a></div></td>
+              <td>Умный дом - монтаж систем кондиционирования и вентиляции, систем видеонаблюдения, 
+                охранно-пожарной сигнализации умного дома.</td>
+            </tr>
+            <tr>
+              <td><div align="center"><a href="http://www.anten.ru/" target=_blank><img height=31 alt="www.anten.ru - интернет-магазин для организаций." src="http://www.anten.ru/ant_ban.gif" width=88 border=1></a></div></td>
+              <td>                <a title="Компания АНТЭН-1 - интернет-магазин для организаций" href="http://www.anten.spb.ru/">Интернет магазин для организаций</a><br>
+                <a title="www.anten.ru - ноутбуки" href="http://www.anten.ru/notebooks.html"><font color=#000099>ноутбуки</font></a>: <a title="www.anten.ru - ноутбуки Toshiba" href="http://www.anten.ru/toshiba.html"><font color=#000099>Toshiba</font></a>, <a title="www.anten.ru - ноутбуки HP/Compaq" href="http://www.anten.ru/hp.html"><font color=#000099>HP/Compaq</font></a>, <a title="www.anten.ru - ноутбуки Sony" href="http://www.anten.ru/sony.html"><font color=#000099>Sony</font></a>, <a title="www.anten.ru - ноутбуки Asus" href="http://www.anten.ru/asus.html"><font color=#000099>Asus</font></a> <font color=red>+</font> 
+                <a title="www.anten.ru - компьютеры и сервера" href="http://anten.ru/computers.html"><font color=#000099>компьютеры и сервера</font></a> <font color=red>+</font> <a title="www.anten.ru - расходные материалы" href="http://www.anten.ru/cartrige.html"><font color=#000099>расходные материалы</font></a> <font color=red>+</font> <a title="www.anten.ru - сети" href="http://www.anten.ru/net.html"><font color=#000099>сети</font></a> <font color=red>+</font> 
+                <a title="www.anten.ru - видеонаблюдение" href="http://www.anten.ru/video.html"><font color=#000099>видеонаблюдение</font></a> <font color=red>+</font> <a title="www.anten.ru - контроль доступа" href="http://www.anten.ru/skud.html"><font color=#000099>контроль доступа</font></a> <font color=red>+</font> 
+                <a title="www.anten.ru - торговое оборудование" href="http://www.anten.ru/torg.html"><font color=#000099>торговое оборудование</font></a> <font color=red>+</font> <a title="www.anten.ru - выставочные стенды" href="http://anten.ru/stend.html"><font color=#000099>выставочные стенды</font></a></td>
+            </tr>
+            <tr>
+              <td><div align="center"><a href="http://www.daewoo-electronics.ru"><strong>www.daewoo-electronics.ru</strong></a></div></td>
+              <td>Компания Daewoo Electronics</td>
+            </tr>
+            <tr>
+              <td><div align="center"><a href="http://www.t-a.ru"><strong>www.t-a.ru</strong></a></div></td>
+              <td>Senao радиостанции, продажа средств радиосвязи: motorola, kenwood, alan, icom, vertex, alinco - ЗАО "Техно-Арт" предоставляет широкий выбор радиостанций до 100 км: радиостанции motorola, kenwood (кенвуд), vertex (вертекс), icom, alinco, а также радиотелефоны SENAO: SENAO sn-258, 358, 458, 868. Радиосвязь при помощи разнообразных устройств: переговорное устройство - рация, портативные радиостанции, радиопередатчики, системы радиосвязи и средства радиосвязи. Наши направления - это продажа радиостанций и продажа раций.</td>
+            </tr>
+            <tr>
+              <td><div align="center"><a href="http://www.magnetron.ru"><strong>magnetron.ru</strong></a></div></td>
+              <td>ЗАО "Ферри-Ватт" - <a
+href=http://www.magnetron.ru/rus/info/pokr.htm>вакуумные покрытия</a>: <a
+href=http://www.magnetron.ru/rus/products/vatt1600m.htm>декоративные и защитные покрытия</a>, <a
+href=http://www.magnetron.ru/rus/products/vatt1600.htm>изготовление зеркал</a>, <a
+href=http://www.magnetron.ru/rus/products/vatt200.htm>тонировка стекол</a>, <a href=http://www.magnetron.ru/rus/products/vatt1600c.htm>вакуумная сушка древесины</a>.</td>
+            </tr>
+            <tr>
+              <td><div align="center"><a href="http://www.settle.ru"><strong>www.settle.ru</strong></a></div></td>
+              <td><!--www.settle.ru code-->
+                <a href="http://www.settle.ru" target="_blank"> СЕТЛ Компрессор осуществляет поставку и обслуживание оборудования:</a> 
+                <a
+href="http://www.settle.ru" target="_blank">винтовые компрессоры</a>, 
+                <a href="http://www.settle.ru" target="_blank">поршневые компрессоры</a>, 
+                <a href="http://www.settle.ru" target="_blank">компрессоры</a>, 
+                <a href="http://www.settle.ru" target="_blank">воздушные компрессоры</a>, 
+                <a
+href="http://www.settle.ru" target="_ blank">осушители сжатого воздуха</a>
+                <!-- /end www.settle.ru code--></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+        </table>
+</p>
+<p><font size="2">Код ссылки для обмена <a href="exchange.php">здесь</a></font></p>
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

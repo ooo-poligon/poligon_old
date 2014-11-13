@@ -1,0 +1,79 @@
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetTitle("Ссылки");?>
+<p>
+
+<div align="center">
+            <blockquote>
+              <p align="left">
+                  Ссылки на <a href="index.php">сайты радиотехнической</a> тематики:</p>
+              <p align="left"><a href="links1_radioport.php">&gt; Радиотехнические порталы, форумы</a><br>
+                  <a href="links2_scheme.php"><strong>Схемы, справочники, руководства, техническая документация, статьи, сертификация</strong></a><br>
+                  <a href="links3_repair.php">Ремонт</a><br>
+                  <a href="links4_develop.php">Разработка, проектирование и производство РЭА, печатных плат </a><br>
+                  <a href="links5_suppliers.php">Поставщики и дистрибьюторы электронных компонентов, оборудования, сопутствующих материалов</a><br>
+                  <a href="links6_cat.php">Каталоги ссылок, доски объявлений</a><br>
+                <a href="links7_var.php">Разное</a>              </p>
+              </blockquote>
+          </div>
+
+
+
+<table width="100%" border="0" cellspacing="5" cellpadding="1">
+            <tr bgcolor="#CCCCCC">
+              <td colspan="2"><strong>Радиотехнические порталы, форумы</strong></td>
+              </tr>
+            <tr>
+              <td><span >
+                <!-- QRZ.RU banner start -->
+                </span>
+                  <div align="center" ><a href="http://www.qrz.ru/"><img 
+src="http://www.qrz.ru/graphics/banners/small2.gif" width="88" 
+height="31" border="0" alt="Сервер радиолюбителей России - схемы, документация,
+ соревнования, дипломы, программы, форумы и многое другое!"></a>
+                      <!-- QRZ.RU banner end -->
+                </div></td>
+              <td>Сервер радиолюбителей России</td>
+            </tr>
+            <tr>
+              <td><div align="center" class="style11 style18"><a href="http://www.rlocman.ru/indexs.htm" target="_top"> <img src="http://www.rlocman.ru/logo/rlbut1r.gif" alt="РадиоЛоцман - поисковая машина схем в www" width=88 height=31 border=0> </a> </div></td>
+              <td><span >РадиоЛоцман - поисковая машина схем, каталог </span></td>
+            </tr>
+            <tr>
+              <td><div align="center"><a href="http://www.kazus.ru" ><strong>KAZUS.ru</strong></a></div></td>
+              <td><span >Свежие и интересные схемы радиолюбительских устройств (17000 схем). 720 000 даташитов и поиск по он-лайн складам. Ответы на часто задаваемые вопросы (FAQ) по электронике. Форум. </span></td>
+            </tr>
+            <tr>
+              <td><div align="center"><a href="http://www.radioradar.net"><img src="http://radioradar.net/_banners/button.gif" width="88" height="31" border="1"></a></div></td>
+              <td>RadioRadar - сайт как для профессиональных радиоинженеров, так и для начинающих радиолюбителей и всем тем, кто интересуется аспектами развития современной радиотехники и электроники. На сайте представлены: ежедневная подборка новостей электроники, технологий, разработок, новинок электронных компонентов, радиолюбительский раздел,
+    статьи и обзоры изобретений, разделы &quot;Ремонт РЭА&quot;, &quot;Альбомы схем&quot;, &quot;Справочная&quot;, обзоры аудио- и видеотехники, измерительной аппаратуры, подборка радиотехнических программ, книги, журналы, каталог компаний, выставки, форум, файлообменник, и многое другое</td>
+            </tr>
+            <tr>
+              <td><div align="center" ><strong><a href="http://www.radioweb.ru/">radioweb.ru</a></strong></div></td>
+              <td><span >Информационно-поисковая система &quot;Радиодетали и цены&quot;.Поиск по наименованию. Предлагается рубрикатор фирм и предприятий данной отрасли с возможностью добавления своих данных. Доп. услуги по созданию и поддержанию веб-представительства.</span></td>
+            </tr>
+            <tr>
+              <td><div align="center"><a href="http://www.techportal.ru"> <img border="1" src="http://www.techportal.ru/img/88x31.gif" alt="Техпортал: интернет-каталог систем безопасности" width="88" height="31"></a></div></td>
+              <td><a href="http://www.techportal.ru" target=_blank title="ОПС, CCTV, Домофоны, СКУД, Охрана
+периметров, Оповещение,
+Пожаротушение, АТС, Дымоудаление, СКС, Климатическое оборудование, Cистемы управления зданием,
+Инженерные средства
+защиты, Огнезащита, Досмотровое оборудование, Защита информации, Радиосвязь и
+навигация."><b>Специализированный портал по безопасности. </b></a><a href="http://www.phonezone.ru"></a><a
+href="http://www.techportal.ru/equipment">Классификатор оборудования</a>, <a href="http://www.techportal.ru/company">компаний</a>, <a
+href="http://www.techportal.ru/trademark">торговых марок</a>, <a
+href="http://www.techportal.ru/resource">ссылок</a>, <a
+href="http://job.techportal.ru/">работа</a></td>
+            </tr>
+            <tr>
+              <td><div align="center"><a target="_blank" href="http://www.acdc.h14.ru"> <img border="1" src="http://www.acdc.h14.ru/img/rozetka.gif" 
+alt="Схемы,  статьи по электроники, материалы о САПР,"width="88" height="31" ></a></div></td>
+              <td><a href="http://www.acdc.h14.ru/index.php">Портал радиолюбителей</a> Схемы, статьи, документация.</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+        </table>
+</p>
+<p></p>
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

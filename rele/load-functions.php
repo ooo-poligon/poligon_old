@@ -1,0 +1,2 @@
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");$APPLICATION->SetTitle("Функции реле контроля мощности");require_once $_SERVER["DOCUMENT_ROOT"]."/bitrix/templates/poligon_ew/include_areas/releMenu.php";releFunctions("реле контроля напряжения");
+?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
