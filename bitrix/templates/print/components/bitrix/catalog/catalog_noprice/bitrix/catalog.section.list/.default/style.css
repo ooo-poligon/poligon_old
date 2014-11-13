@@ -1,0 +1,26 @@
+#catalog-section-list ul img
+{
+	margin:5px 5px 0 5px;
+}
+
+#catalog-section-list ul ul
+{
+	margin-top:5px;
+/*	margin-left:45px;*/
+}
+
+#catalog-section-list ul li.pic
+{
+	height:80px;
+	line-height:40px;
+	text-transform:uppercase;
+	padding-bottom:10px;
+}
+
+#catalog-section-list ul ul li
+{
+	padding-left:15px;
+	line-height:14px;
+	background:url(/images/arrow.gif) no-repeat 0% 50%;
+}
+

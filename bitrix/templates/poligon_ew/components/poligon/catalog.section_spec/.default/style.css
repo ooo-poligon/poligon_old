@@ -1,0 +1,32 @@
+.catalog-price {
+	 color:black;
+}
+
+
+
+div.catalog-section table th {
+/*	padding-right:10px;
+	padding-top:10px;*/
+	text-align:left;
+	border-bottom:2px solid #ccc;
+	padding-left:5px;
+
+}
+
+div.catalog-section table td {
+/*	padding-right:10px;
+	padding-top:10px;*/
+	border-bottom:1px solid #ccc;
+	padding-left:5px;
+}
+div.catalog-section table tr.grey {
+	background-color: #F3F4EE;
+}
+div.catalog-section table tr.spec {
+	background-color: #FDF0B9;
+}
+
+div.catalog-section table td.qu {
+	border-bottom:0px;
+}
+
