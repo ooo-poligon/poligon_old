@@ -1,0 +1,1 @@
+<?$arTemplate = Array("NAME"=>"Шаблон для остальных страниц", "DESCRIPTION"=>"Главный шаблон сайта poligon.info");?>

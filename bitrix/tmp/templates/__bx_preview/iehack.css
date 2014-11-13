@@ -1,0 +1,27 @@
+/* CSS Document */
+.iefix
+	{
+	visibility:hidden;
+	}
+
+#mail
+	{
+	background:url(images/mail.gif) left 5px no-repeat;
+	}
+#form .submit
+	{
+	margin:0 0 0 4px;
+	}
+.subscribe_submit	
+	{
+	margin:0 0 0 1px;
+	}
+
+#footer
+{
+width:1003px;
+}
+#main_div
+	{
+	width:973px;
+	}
