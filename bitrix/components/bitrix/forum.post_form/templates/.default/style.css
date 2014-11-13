@@ -1,0 +1,99 @@
+table.forum-post-form {
+	background-color:#99BAD7;
+	border: none;
+	border-collapse:collapse;
+	width:100%;
+	font-size:100%;}
+table.forum-post-form td, table.forum-post-form th {
+	background-color:#F1F5FA;
+	border: 1px solid #99BAD7;
+	padding: 4px;
+	vertical-align:top;
+	font-size:100%;
+	font-weight: normal;
+	text-align:left;}
+table.forum-post-form th {
+	background-color:#CEDEEC;
+	white-space:nowrap;}
+table.forum-icons, table.forum-icons td	{
+	font-size:100%;}
+span.title{
+	width:80px;
+	display:block;
+	float:left;}
+span.value input{
+	width:50%;}
+span.value-icons input {
+	width:auto!important;}
+
+/* Buttons */
+input.italic, input.underline, input.bold {
+	width:30px;}
+input.underline{
+	text-decoration:underline;}
+input.italic{
+	font-style:italic;}
+input.bold{
+	font-weight:bold;}
+input.tagcount {
+	font-size: 80%;
+	font-weight: bold;
+	border:none;
+	background:transparent;
+	width:15px;}
+input.helpbox {
+	font-size: 90%;
+	font-weight: normal;
+	color: #333333;
+	border:none;
+	background:transparent;
+	width:250px;}
+input.translit {
+	width:90px;}
+input.close{}
+/* /Buttons */
+
+/* Smile table */
+table.forum-smile {
+	border: 1px solid #99BAD7;
+	margin:0px;
+	border-collapse:collapse;}
+table.forum-smile td {
+	border: none;}
+table.forum-smile th {
+	background-color:#CEDEEC;
+	border: 1px solid #99BAD7;
+	font-weight: bold;
+	padding:4px;
+	white-space:nowrap;}
+table.forum-smile img {
+ 	cursor: pointer;
+ 	cursor: hand;
+ 	margin: 4px 2px;}
+/*/Smile table */
+/* Icons table */
+table.forum-icons, table.forum-icons td{
+	border: none;}
+/*/Icons table */
+
+div.group{
+	padding:5px 0px;}
+
+/* Standart style */
+div.forum-title {
+	border: 1px solid #99BAD7;
+	padding: 4px;
+	background-color: #CEDEEC;}
+form.forum-form {
+	padding: 0px;
+	margin: 0px;
+	border: none;}
+div.forum-br {
+    height: 4px;
+	padding: 0px;
+	margin: 0px;
+    width: 100%; 
+	overflow: hidden;}
+table.clear, table.clear td {
+	border: none;}
+/* /Standart style */
