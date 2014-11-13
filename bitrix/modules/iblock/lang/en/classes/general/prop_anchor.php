@@ -1,0 +1,4 @@
+<?
+$MESS ['IBLOCK_PROP_ANCHOR_DESC'] = "Link";
+$MESS ['IBLOCK_PROP_ANCHOR_MORE'] = "More...";
+?>
