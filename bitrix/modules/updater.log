@@ -1,0 +1,772 @@
+2008-09-24 17:23:11 -  - exec CUpdateSystem::GetAvailableUpdateTypes
+2008-09-24 17:23:11 -  - LICENSE_KEY=X&lang=ru&UTYPES=MLH&SUPD_VER=7.0.4&ALL_MODULES=Y&TYPENC=D&COUNT_ONLY=Y&SUPD_STS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.5&bitm_forum=7.0.1&bitm_subscribe=7.0.3&bitm_catalog=7.0.3&bitm_fileman=7.0.3&bitm_search=7.0.4&bitm_iblock=7.0.5&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-09-24 17:23:11 -  - exec CUpdateSystem::getHTTPPage
+2008-09-24 17:23:12 -  - TIME GetAvailableUpdateTypes.getHTTPPage 0.962 sec
+2008-09-24 17:23:12 -  - exec CUpdateSystem::ParseServerData
+2008-09-24 17:23:14 -  - exec CUpdateSystem::UpdateUpdate
+2008-09-24 17:23:14 -  - LICENSE_KEY=X&CLIENT_SITE=localhost&CANGZIP=Y&UTYPES=U&SUPD_STS=1&COUNT_ONLY=F&SUPD_VER=7.0.4&SUPD_DBS=MYSQL&XE=N&CLIENT_PHPVER=5.2.6&stable=Y&lang=ru
+2008-09-24 17:23:14 -  - exec CUpdateSystem::getHTTPPage
+2008-09-24 17:23:17 -  - exec CUpdateSystem::UnGzipArchive
+2008-09-24 17:23:17 -  - TIME UnGzipArchive 0.045 sec
+2008-09-24 17:23:17 -  - exec CUpdateSystem::ParseServerData
+2008-09-24 17:23:17 - CUUU - Update updated successfully!
+2008-09-24 17:23:17 -  - exec CUpdateSystem::GetAvailableUpdateTypes
+2008-09-24 17:23:17 -  - LICENSE_KEY=X&lang=ru&UTYPES=MLH&SUPD_VER=7.0.12&ALL_MODULES=Y&TYPENC=D&COUNT_ONLY=Y&SUPD_STS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.5&bitm_forum=7.0.1&bitm_subscribe=7.0.3&bitm_catalog=7.0.3&bitm_fileman=7.0.3&bitm_search=7.0.4&bitm_iblock=7.0.5&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-09-24 17:23:17 -  - exec CUpdateSystem::getHTTPPage
+2008-09-24 17:23:18 -  - TIME GetAvailableUpdateTypes.getHTTPPage 0.596 sec
+2008-09-24 17:23:18 -  - exec CUpdateSystem::ParseServerData
+2008-09-24 17:30:33 -  - exec CUpdateSystem::ActivateLicenseKey
+2008-09-24 17:30:33 -  - LICENSE_KEY=X&CLIENT_SITE=localhost&CANGZIP=Y&UTYPES=A&COUNT_ONLY=N&SUPD_STS=1&SUPD_DBS=MYSQL&XE=N&SUPD_VER=7.0.12&CLIENT_PHPVER=5.2.6&stable=Y&lang=ru&NAME=%CE%CE%CE+%22%CF%EE%EB%E8%E3%EE%ED%22&EMAIL=it%40poligon.info&SITE_URL=poligon.info&CONTACT_INFO=&GENERATE_USER=Y&USER_NAME=%C8%E3%EE%F0%FC&USER_LAST_NAME=%D1%E5%F0%E3%E5%E5%E2%E8%F7&USER_LOGIN=poligon&USER_PASSWORD=3254220&PHONE=%28812%293254220&CONTACT_PERSON=%C8%E3%EE%F0%FC+%D1%E5%F0%E3%E5%E5%E2%E8%F7&CONTACT_EMAIL=it%40poligon.info&CONTACT_PHONE=%28812%293254220
+2008-09-24 17:30:33 -  - exec CUpdateSystem::getHTTPPage
+2008-09-24 17:30:34 -  - TIME ActivateLicenseKey.getHTTPPage 0.936 sec
+2008-09-24 17:30:34 -  - exec CUpdateSystem::ParseServerData
+2008-09-24 17:30:34 - CUALK - License key activated successfully!
+2008-09-24 17:30:34 -  - exec CUpdateSystem::GetAvailableUpdateTypes
+2008-09-24 17:30:34 -  - LICENSE_KEY=X&lang=ru&UTYPES=MLH&SUPD_VER=7.0.12&ALL_MODULES=Y&TYPENC=D&COUNT_ONLY=Y&SUPD_STS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.5&bitm_forum=7.0.1&bitm_subscribe=7.0.3&bitm_catalog=7.0.3&bitm_fileman=7.0.3&bitm_search=7.0.4&bitm_iblock=7.0.5&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-09-24 17:30:34 -  - exec CUpdateSystem::getHTTPPage
+2008-09-24 17:30:35 -  - TIME GetAvailableUpdateTypes.getHTTPPage 0.963 sec
+2008-09-24 17:30:35 -  - exec CUpdateSystem::ParseServerData
+2008-09-24 17:30:40 -  - exec CUpdateSystem::RegisterVersion
+2008-09-24 17:30:40 -  - LICENSE_KEY=X&CLIENT_SITE=localhost&CANGZIP=Y&UTYPES=R&COUNT_ONLY=F&VERSION=7.0.5&SUPD_STS=1&SUPD_DBS=MYSQL&XE=N&SUPD_VER=7.0.12&CLIENT_PHPVER=5.2.6&stable=Y&lang=ru
+2008-09-24 17:30:40 -  - exec CUpdateSystem::getHTTPPage
+2008-09-24 17:30:41 -  - TIME RegisterVersion.getHTTPPage 0.951 sec
+2008-09-24 17:30:41 -  - exec CUpdateSystem::UnGzipArchive
+2008-09-24 17:30:41 -  - TIME UnGzipArchive 0.001 sec
+2008-09-24 17:30:41 -  - exec CUpdateSystem::ParseServerData
+2008-09-24 17:30:41 - CURV - Product registered successfully!
+2008-09-24 17:30:41 -  - exec CUpdateSystem::GetAvailableUpdateTypes
+2008-09-24 17:30:41 -  - LICENSE_KEY=X&lang=ru&UTYPES=MLH&SUPD_VER=7.0.12&ALL_MODULES=Y&TYPENC=E&COUNT_ONLY=Y&SUPD_STS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.5&bitm_forum=7.0.1&bitm_subscribe=7.0.3&bitm_catalog=7.0.3&bitm_fileman=7.0.3&bitm_search=7.0.4&bitm_iblock=7.0.5&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-09-24 17:30:41 -  - exec CUpdateSystem::getHTTPPage
+2008-09-24 17:30:41 -  - TIME GetAvailableUpdateTypes.getHTTPPage 0.62 sec
+2008-09-24 17:30:41 -  - exec CUpdateSystem::ParseServerData
+2008-10-02 17:31:09 -  - exec CUpdateSystem::GetAvailableUpdateTypes
+2008-10-02 17:31:09 -  - LICENSE_KEY=X&lang=ru&UTYPES=MLH&SUPD_VER=7.0.12&ALL_MODULES=Y&TYPENC=E&COUNT_ONLY=Y&SUPD_STS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.5&bitm_forum=7.0.1&bitm_subscribe=7.0.3&bitm_catalog=7.0.3&bitm_fileman=7.0.3&bitm_search=7.0.4&bitm_iblock=7.0.5&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-02 17:31:09 -  - exec CUpdateSystem::getHTTPPage
+2008-10-02 17:31:10 -  - TIME GetAvailableUpdateTypes.getHTTPPage 0.629 sec
+2008-10-02 17:31:10 -  - exec CUpdateSystem::ParseServerData
+2008-10-02 17:31:13 -  - exec CUpdateSystem::GetServerModuleUpdates
+2008-10-02 17:31:13 -  - LICENSE_KEY=X&lang=ru&UTYPES=M&SUPD_VER=7.0.12&ALL_MODULES=Y&TYPENC=E&COUNT_ONLY=N&SUPD_STS=1&CLIENT_SITE=localhost&SUPD_DBS=MYSQL&XE=N&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.5&bitm_forum=7.0.1&bitm_subscribe=7.0.3&bitm_catalog=7.0.3&bitm_fileman=7.0.3&bitm_search=7.0.4&bitm_iblock=7.0.5&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1
+2008-10-02 17:31:13 -  - exec CUpdateSystem::getHTTPPage
+2008-10-02 17:31:16 -  - TIME GetServerModuleUpdates.getHTTPPage 3.387 sec
+2008-10-02 17:31:16 -  - exec CUpdateSystem::ParseServerData
+2008-10-02 17:37:20 -  - exec CUpdateSystem::GetServerModuleUpdates
+2008-10-02 17:37:20 -  - LICENSE_KEY=X&lang=ru&UTYPES=M&SUPD_VER=7.0.12&ALL_MODULES=Y&TYPENC=E&COUNT_ONLY=N&SUPD_STS=1&CLIENT_SITE=localhost&SUPD_DBS=MYSQL&XE=N&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.5&bitm_forum=7.0.1&bitm_subscribe=7.0.3&bitm_catalog=7.0.3&bitm_fileman=7.0.3&bitm_search=7.0.4&bitm_iblock=7.0.5&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1
+2008-10-02 17:37:20 -  - exec CUpdateSystem::getHTTPPage
+2008-10-02 17:37:21 -  - TIME GetServerModuleUpdates.getHTTPPage 1.258 sec
+2008-10-02 17:37:21 -  - exec CUpdateSystem::ParseServerData
+2008-10-02 17:37:36 -  - exec CUpdateSystem::GetAvailableUpdateTypes
+2008-10-02 17:37:36 -  - LICENSE_KEY=X&lang=ru&UTYPES=MLH&SUPD_VER=7.0.12&ALL_MODULES=Y&TYPENC=E&COUNT_ONLY=Y&SUPD_STS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.5&bitm_forum=7.0.1&bitm_subscribe=7.0.3&bitm_catalog=7.0.3&bitm_fileman=7.0.3&bitm_search=7.0.4&bitm_iblock=7.0.5&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-02 17:37:36 -  - exec CUpdateSystem::getHTTPPage
+2008-10-02 17:37:37 -  - TIME GetAvailableUpdateTypes.getHTTPPage 0.623 sec
+2008-10-02 17:37:37 -  - exec CUpdateSystem::ParseServerData
+2008-10-02 17:37:40 -  - exec CUpdateClient::GetUpdatesList
+2008-10-02 17:37:40 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:37:40 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.0.12&VERSION=7.0.5&TYPENC=E&SUPD_STS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.5&bitm_forum=7.0.1&bitm_subscribe=7.0.3&bitm_catalog=7.0.3&bitm_fileman=7.0.3&bitm_search=7.0.4&bitm_iblock=7.0.5&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-02 17:37:40 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:37:41 -  - TIME GetUpdatesList(request) 0.6 sec
+2008-10-02 17:37:41 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:37:46 -  - exec CUpdateClient::UpdateUpdate
+2008-10-02 17:37:46 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:37:46 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.0.12&VERSION=7.0.5&TYPENC=E&SUPD_STS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.5&bitm_forum=7.0.1&bitm_subscribe=7.0.3&bitm_catalog=7.0.3&bitm_fileman=7.0.3&bitm_search=7.0.4&bitm_iblock=7.0.5&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=&query_type=updateupdate
+2008-10-02 17:37:46 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:37:51 -  - TIME UpdateUpdate(request) 4.84 sec
+2008-10-02 17:37:51 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:37:51 -  - TIME UnGzipArchive 0.022 sec
+2008-10-02 17:37:51 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:37:51 - CURV - Update updated successfully!
+2008-10-02 17:37:51 - UPD_SUCCESS - Update system updated
+2008-10-02 17:37:51 -  - exec CUpdateClient::GetUpdatesList
+2008-10-02 17:37:51 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:37:51 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.5&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.5&bitm_forum=7.0.1&bitm_subscribe=7.0.3&bitm_catalog=7.0.3&bitm_fileman=7.0.3&bitm_search=7.0.4&bitm_iblock=7.0.5&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-02 17:37:51 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:37:52 -  - TIME GetUpdatesList(request) 0.915 sec
+2008-10-02 17:37:52 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:38:02 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:38:02 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:38:02 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.5&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.5&bitm_forum=7.0.1&bitm_subscribe=7.0.3&bitm_catalog=7.0.3&bitm_fileman=7.0.3&bitm_search=7.0.4&bitm_iblock=7.0.5&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-02 17:38:02 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:38:07 -  - TIME GetNextStepUpdates(request) 5.626 sec
+2008-10-02 17:38:07 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:38:07 -  - TIME UnGzipArchive 0.028 sec
+2008-10-02 17:38:07 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:38:07 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:38:07 - CSURUS1 - Run updater '/bitrix/updates/update_m1222954687/main/updater7.0.6.php'
+2008-10-02 17:38:07 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954687/main/updater7.0.6.php': CopyFiles(install/js, js)
+2008-10-02 17:38:07 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954687/main/updater7.0.6.php': CopyFiles(install/components, components)
+2008-10-02 17:38:07 -  - TIME UpdateStepModules 0.038 sec
+2008-10-02 17:38:07 - UPD_SUCCESS - Updated: main(7.0.6)
+2008-10-02 17:38:08 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:38:08 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:38:08 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.6&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.6&bitm_forum=7.0.1&bitm_subscribe=7.0.3&bitm_catalog=7.0.3&bitm_fileman=7.0.3&bitm_search=7.0.4&bitm_iblock=7.0.5&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-02 17:38:08 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:38:11 -  - TIME GetNextStepUpdates(request) 3.921 sec
+2008-10-02 17:38:11 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:38:12 -  - TIME UnGzipArchive 0.021 sec
+2008-10-02 17:38:12 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:38:12 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:38:12 - CSURUS1 - Run updater '/bitrix/updates/update_m1222954691/main/updater7.0.7.php'
+2008-10-02 17:38:12 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954691/main/updater7.0.7.php': CopyFiles(install/js, js)
+2008-10-02 17:38:12 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954691/main/updater7.0.7.php': CopyFiles(install/themes, themes)
+2008-10-02 17:38:12 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954691/main/updater7.0.7.php': CopyFiles(install/components, components)
+2008-10-02 17:38:12 -  - TIME UpdateStepModules 0.056 sec
+2008-10-02 17:38:12 - UPD_SUCCESS - Updated: main(7.0.7)
+2008-10-02 17:38:12 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:38:12 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:38:12 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.7&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.7&bitm_forum=7.0.1&bitm_subscribe=7.0.3&bitm_catalog=7.0.3&bitm_fileman=7.0.3&bitm_search=7.0.4&bitm_iblock=7.0.5&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-02 17:38:12 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:38:14 -  - TIME GetNextStepUpdates(request) 1.977 sec
+2008-10-02 17:38:14 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:38:14 -  - TIME UnGzipArchive 0.002 sec
+2008-10-02 17:38:14 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:38:14 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:38:14 -  - TIME UpdateStepModules 0.002 sec
+2008-10-02 17:38:14 - UPD_SUCCESS - Updated: main(7.0.8)
+2008-10-02 17:38:14 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:38:14 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:38:14 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.8&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.8&bitm_forum=7.0.1&bitm_subscribe=7.0.3&bitm_catalog=7.0.3&bitm_fileman=7.0.3&bitm_search=7.0.4&bitm_iblock=7.0.5&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-02 17:38:14 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:38:18 -  - TIME GetNextStepUpdates(request) 4.506 sec
+2008-10-02 17:38:18 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:38:19 -  - TIME UnGzipArchive 0.031 sec
+2008-10-02 17:38:19 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:38:19 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:38:19 - CSURUS1 - Run updater '/bitrix/updates/update_m1222954698/main/updater7.0.9.php'
+2008-10-02 17:38:19 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954698/main/updater7.0.9.php': CopyFiles(install/js, js)
+2008-10-02 17:38:19 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954698/main/updater7.0.9.php': CopyFiles(install/themes, themes)
+2008-10-02 17:38:19 -  - TIME UpdateStepModules 0.033 sec
+2008-10-02 17:38:19 - UPD_SUCCESS - Updated: main(7.0.9)
+2008-10-02 17:38:19 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:38:19 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:38:19 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.9&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.9&bitm_forum=7.0.1&bitm_subscribe=7.0.3&bitm_catalog=7.0.3&bitm_fileman=7.0.3&bitm_search=7.0.4&bitm_iblock=7.0.5&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-02 17:38:19 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:38:21 -  - TIME GetNextStepUpdates(request) 2.559 sec
+2008-10-02 17:38:21 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:38:21 -  - TIME UnGzipArchive 0.009 sec
+2008-10-02 17:38:21 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:38:21 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:38:21 - CSURUS1 - Run updater '/bitrix/updates/update_m1222954701/main/updater7.0.10.php'
+2008-10-02 17:38:21 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954701/main/updater7.0.10.php': CopyFiles(install/themes, themes)
+2008-10-02 17:38:21 -  - TIME UpdateStepModules 0.019 sec
+2008-10-02 17:38:21 - UPD_SUCCESS - Updated: main(7.0.10)
+2008-10-02 17:38:22 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:38:22 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:38:22 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.10&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.10&bitm_forum=7.0.1&bitm_subscribe=7.0.3&bitm_catalog=7.0.3&bitm_fileman=7.0.3&bitm_search=7.0.4&bitm_iblock=7.0.5&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-02 17:38:22 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:38:27 -  - TIME GetNextStepUpdates(request) 5.744 sec
+2008-10-02 17:38:27 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:38:27 -  - TIME UnGzipArchive 0.024 sec
+2008-10-02 17:38:27 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:38:27 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:38:27 - CSURUS1 - Run updater '/bitrix/updates/update_m1222954707/main/updater7.0.11.php'
+2008-10-02 17:38:27 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954707/main/updater7.0.11.php': CopyFiles(install/components, components)
+2008-10-02 17:38:27 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954707/main/updater7.0.11.php': CopyFiles(install/js, js)
+2008-10-02 17:38:27 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954707/main/updater7.0.11.php': CopyFiles(install/themes, themes)
+2008-10-02 17:38:27 -  - TIME UpdateStepModules 0.02 sec
+2008-10-02 17:38:27 - UPD_SUCCESS - Updated: main(7.0.11)
+2008-10-02 17:38:28 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:38:28 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:38:28 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.11&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.11&bitm_forum=7.0.1&bitm_subscribe=7.0.3&bitm_catalog=7.0.3&bitm_fileman=7.0.3&bitm_search=7.0.4&bitm_iblock=7.0.5&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-02 17:38:28 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:38:33 -  - TIME GetNextStepUpdates(request) 5.451 sec
+2008-10-02 17:38:33 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:38:33 -  - TIME UnGzipArchive 0.048 sec
+2008-10-02 17:38:33 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:38:33 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:38:33 - CSURUS1 - Run updater '/bitrix/updates/update_m1222954713/main/updater7.0.12.php'
+2008-10-02 17:38:33 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954713/main/updater7.0.12.php': CopyFiles(install/components, components)
+2008-10-02 17:38:33 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954713/main/updater7.0.12.php': CopyFiles(install/js, js)
+2008-10-02 17:38:33 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954713/main/updater7.0.12.php': CopyFiles(install/themes, themes)
+2008-10-02 17:38:33 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954713/main/updater7.0.12.php': CopyFiles(install/tools, tools)
+2008-10-02 17:38:33 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954713/main/updater7.0.12.php': CopyFiles(install/bitrix/footer.php, footer.php)
+2008-10-02 17:38:33 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954713/main/updater7.0.12.php': CopyFiles(install/bitrix/header.php, header.php)
+2008-10-02 17:38:33 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954713/main/updater7.0.12.php': CopyFiles(install/bitrix/index.php, index.php)
+2008-10-02 17:38:33 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954713/main/updater7.0.12.php': CopyFiles(install/bitrix/spread.php, spread.php)
+2008-10-02 17:38:33 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954713/main/updater7.0.12.php': CopyFiles(install/bitrix/urlrewrite.php, urlrewrite.php)
+2008-10-02 17:38:33 -  - TIME UpdateStepModules 0.055 sec
+2008-10-02 17:38:33 - UPD_SUCCESS - Updated: main(7.0.12)
+2008-10-02 17:38:33 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:38:33 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:38:33 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.12&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.12&bitm_forum=7.0.1&bitm_subscribe=7.0.3&bitm_catalog=7.0.3&bitm_fileman=7.0.3&bitm_search=7.0.4&bitm_iblock=7.0.5&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-02 17:38:33 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:38:36 -  - TIME GetNextStepUpdates(request) 2.288 sec
+2008-10-02 17:38:36 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:38:36 -  - TIME UnGzipArchive 0.004 sec
+2008-10-02 17:38:36 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:38:36 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:38:36 -  - TIME UpdateStepModules 0.004 sec
+2008-10-02 17:38:36 - UPD_SUCCESS - Updated: main(7.0.13)
+2008-10-02 17:38:36 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:38:36 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:38:36 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.13&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.13&bitm_forum=7.0.1&bitm_subscribe=7.0.3&bitm_catalog=7.0.3&bitm_fileman=7.0.3&bitm_search=7.0.4&bitm_iblock=7.0.5&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-02 17:38:36 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:38:40 -  - TIME GetNextStepUpdates(request) 4.345 sec
+2008-10-02 17:38:40 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:38:40 -  - TIME UnGzipArchive 0.023 sec
+2008-10-02 17:38:40 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:38:40 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:38:40 - CSURUS1 - Run updater '/bitrix/updates/update_m1222954720/main/updater7.0.14.php'
+2008-10-02 17:38:40 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954720/main/updater7.0.14.php': CopyFiles(install/js, js)
+2008-10-02 17:38:40 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954720/main/updater7.0.14.php': CopyFiles(install/themes, themes)
+2008-10-02 17:38:40 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954720/main/updater7.0.14.php': CopyFiles(install/images, images)
+2008-10-02 17:38:40 -  - TIME UpdateStepModules 0.025 sec
+2008-10-02 17:38:40 - UPD_SUCCESS - Updated: main(7.0.14)
+2008-10-02 17:38:40 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:38:40 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:38:41 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.1&bitm_subscribe=7.0.3&bitm_catalog=7.0.3&bitm_fileman=7.0.3&bitm_search=7.0.4&bitm_iblock=7.0.5&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-02 17:38:41 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:38:46 -  - TIME GetNextStepUpdates(request) 5.723 sec
+2008-10-02 17:38:46 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:38:46 -  - TIME UnGzipArchive 0.036 sec
+2008-10-02 17:38:46 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:38:46 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:38:46 - CSURUS1 - Run updater '/bitrix/updates/update_m1222954726/fileman/updater7.0.4.php'
+2008-10-02 17:38:46 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954726/fileman/updater7.0.4.php': CopyFiles(install/components, components)
+2008-10-02 17:38:46 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954726/fileman/updater7.0.4.php': CopyFiles(install/admin, admin/)
+2008-10-02 17:38:46 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954726/fileman/updater7.0.4.php': CopyFiles(install/themes, themes/)
+2008-10-02 17:38:46 -  - TIME UpdateStepModules 0.046 sec
+2008-10-02 17:38:46 - UPD_SUCCESS - Updated: fileman(7.0.4)
+2008-10-02 17:38:47 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:38:47 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:38:47 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.1&bitm_subscribe=7.0.3&bitm_catalog=7.0.3&bitm_fileman=7.0.4&bitm_search=7.0.4&bitm_iblock=7.0.5&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-02 17:38:47 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:38:50 -  - TIME GetNextStepUpdates(request) 3.298 sec
+2008-10-02 17:38:50 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:38:50 -  - TIME UnGzipArchive 0.027 sec
+2008-10-02 17:38:50 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:38:50 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:38:50 - CSURUS1 - Run updater '/bitrix/updates/update_m1222954730/fileman/updater7.0.5.php'
+2008-10-02 17:38:50 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954730/fileman/updater7.0.5.php': CopyFiles(install/components, components)
+2008-10-02 17:38:50 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954730/fileman/updater7.0.5.php': CopyFiles(install/admin, admin/)
+2008-10-02 17:38:50 -  - TIME UpdateStepModules 0.045 sec
+2008-10-02 17:38:50 - UPD_SUCCESS - Updated: fileman(7.0.5)
+2008-10-02 17:38:50 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:38:50 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:38:50 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.1&bitm_subscribe=7.0.3&bitm_catalog=7.0.3&bitm_fileman=7.0.5&bitm_search=7.0.4&bitm_iblock=7.0.5&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-02 17:38:50 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:39:00 -  - TIME GetNextStepUpdates(request) 9.391 sec
+2008-10-02 17:39:00 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:39:00 -  - TIME UnGzipArchive 0.28 sec
+2008-10-02 17:39:00 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:39:00 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:39:00 - CSURUS1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php'
+2008-10-02 17:39:00 - CRUPDICS1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponents()
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum.user.list)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum.user.list, /bitrix/components/bitrix/forum.user.list)
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum.topic.reviews)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum.topic.reviews, /bitrix/components/bitrix/forum.topic.reviews)
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum.pm.search)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum.pm.search, /bitrix/components/bitrix/forum.pm.search)
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum.topic.move)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum.topic.move, /bitrix/components/bitrix/forum.topic.move)
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum.message.approve)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum.message.approve, /bitrix/components/bitrix/forum.message.approve)
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum.topic.read)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum.topic.read, /bitrix/components/bitrix/forum.topic.read)
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum.pm.list)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum.pm.list, /bitrix/components/bitrix/forum.pm.list)
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum.topic.last)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum.topic.last, /bitrix/components/bitrix/forum.topic.last)
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum.post_form)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum.post_form, /bitrix/components/bitrix/forum.post_form)
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum.user.post)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum.user.post, /bitrix/components/bitrix/forum.user.post)
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum.message.move)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum.message.move, /bitrix/components/bitrix/forum.message.move)
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum.menu)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum.menu, /bitrix/components/bitrix/forum.menu)
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum.topic.search)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum.topic.search, /bitrix/components/bitrix/forum.topic.search)
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum.user.profile.view)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum.user.profile.view, /bitrix/components/bitrix/forum.user.profile.view)
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum, /bitrix/components/bitrix/forum)
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum.index)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum.index, /bitrix/components/bitrix/forum.index)
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum.interface)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum.interface, /bitrix/components/bitrix/forum.interface)
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum.rules)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum.rules, /bitrix/components/bitrix/forum.rules)
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum.help)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum.help, /bitrix/components/bitrix/forum.help)
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum.statistic)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum.statistic, /bitrix/components/bitrix/forum.statistic)
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum.rss)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum.rss, /bitrix/components/bitrix/forum.rss)
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum.message.send)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum.message.send, /bitrix/components/bitrix/forum.message.send)
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum.topic.new)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum.topic.new, /bitrix/components/bitrix/forum.topic.new)
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum.subscribe.list)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum.subscribe.list, /bitrix/components/bitrix/forum.subscribe.list)
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum.topic.active)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum.topic.active, /bitrix/components/bitrix/forum.topic.active)
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum.user.profile.edit)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum.user.profile.edit, /bitrix/components/bitrix/forum.user.profile.edit)
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum.pm.folder)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum.pm.folder, /bitrix/components/bitrix/forum.pm.folder)
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum.pm.edit)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum.pm.edit, /bitrix/components/bitrix/forum.pm.edit)
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum.search)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum.search, /bitrix/components/bitrix/forum.search)
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum.topic.list)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum.topic.list, /bitrix/components/bitrix/forum.topic.list)
+2008-10-02 17:39:00 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': InstallComponent(bitrix:forum.pm.read)
+2008-10-02 17:39:00 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954740/forum/updater7.0.2.php': CopyDirFiles(/bitrix/updates/update_m1222954740/forum/install/components/bitrix/forum.pm.read, /bitrix/components/bitrix/forum.pm.read)
+2008-10-02 17:39:00 -  - TIME UpdateStepModules 0.527 sec
+2008-10-02 17:39:00 - UPD_SUCCESS - Updated: forum(7.0.2)
+2008-10-02 17:39:01 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:39:01 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:39:01 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.3&bitm_catalog=7.0.3&bitm_fileman=7.0.5&bitm_search=7.0.4&bitm_iblock=7.0.5&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-02 17:39:01 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:39:05 -  - TIME GetNextStepUpdates(request) 4.864 sec
+2008-10-02 17:39:05 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:39:05 -  - TIME UnGzipArchive 0.027 sec
+2008-10-02 17:39:05 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:39:05 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:39:05 - CSURUS1 - Run updater '/bitrix/updates/update_m1222954745/iblock/updater7.0.6.php'
+2008-10-02 17:39:05 - CRUPDICS1 - Run updater '/bitrix/updates/update_m1222954745/iblock/updater7.0.6.php': InstallComponents()
+2008-10-02 17:39:05 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954745/iblock/updater7.0.6.php': InstallComponent(bitrix:iblock.vote)
+2008-10-02 17:39:05 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954745/iblock/updater7.0.6.php': CopyDirFiles(/bitrix/updates/update_m1222954745/iblock/install/components/bitrix/iblock.vote, /bitrix/components/bitrix/iblock.vote)
+2008-10-02 17:39:05 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954745/iblock/updater7.0.6.php': InstallComponent(bitrix:iblock.element.add.form)
+2008-10-02 17:39:05 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954745/iblock/updater7.0.6.php': CopyDirFiles(/bitrix/updates/update_m1222954745/iblock/install/components/bitrix/iblock.element.add.form, /bitrix/components/bitrix/iblock.element.add.form)
+2008-10-02 17:39:05 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954745/iblock/updater7.0.6.php': InstallComponent(bitrix:catalog)
+2008-10-02 17:39:05 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954745/iblock/updater7.0.6.php': CopyDirFiles(/bitrix/updates/update_m1222954745/iblock/install/components/bitrix/catalog, /bitrix/components/bitrix/catalog)
+2008-10-02 17:39:05 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954745/iblock/updater7.0.6.php': InstallComponent(bitrix:catalog.top)
+2008-10-02 17:39:05 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954745/iblock/updater7.0.6.php': CopyDirFiles(/bitrix/updates/update_m1222954745/iblock/install/components/bitrix/catalog.top, /bitrix/components/bitrix/catalog.top)
+2008-10-02 17:39:05 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954745/iblock/updater7.0.6.php': InstallComponent(bitrix:photo)
+2008-10-02 17:39:05 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954745/iblock/updater7.0.6.php': CopyDirFiles(/bitrix/updates/update_m1222954745/iblock/install/components/bitrix/photo, /bitrix/components/bitrix/photo)
+2008-10-02 17:39:05 - CRUPDIC1 - Run updater '/bitrix/updates/update_m1222954745/iblock/updater7.0.6.php': InstallComponent(bitrix:news)
+2008-10-02 17:39:05 - CRUPDCDF1 - Run updater '/bitrix/updates/update_m1222954745/iblock/updater7.0.6.php': CopyDirFiles(/bitrix/updates/update_m1222954745/iblock/install/components/bitrix/news, /bitrix/components/bitrix/news)
+2008-10-02 17:39:06 -  - TIME UpdateStepModules 0.052 sec
+2008-10-02 17:39:06 - UPD_SUCCESS - Updated: iblock(7.0.6)
+2008-10-02 17:39:06 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:39:06 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:39:06 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.3&bitm_catalog=7.0.3&bitm_fileman=7.0.5&bitm_search=7.0.4&bitm_iblock=7.0.6&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-02 17:39:06 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:39:08 -  - TIME GetNextStepUpdates(request) 2.595 sec
+2008-10-02 17:39:08 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:39:08 -  - TIME UnGzipArchive 0.007 sec
+2008-10-02 17:39:08 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:39:08 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:39:08 - CSURUS1 - Run updater '/bitrix/updates/update_m1222954748/search/updater7.0.5.php'
+2008-10-02 17:39:08 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954748/search/updater7.0.5.php': CopyFiles(install/components, components)
+2008-10-02 17:39:08 - CRUPDCDF2 - Run updater '/bitrix/updates/update_m1222954748/search/updater7.0.5.php': Query(Array, )
+2008-10-02 17:39:08 -  - TIME UpdateStepModules 0.03 sec
+2008-10-02 17:39:08 - UPD_SUCCESS - Updated: search(7.0.5)
+2008-10-02 17:39:09 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:39:09 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:39:09 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.3&bitm_catalog=7.0.3&bitm_fileman=7.0.5&bitm_search=7.0.5&bitm_iblock=7.0.6&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-02 17:39:09 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:39:10 -  - TIME GetNextStepUpdates(request) 1.221 sec
+2008-10-02 17:39:10 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:39:10 -  - TIME UnGzipArchive 0.004 sec
+2008-10-02 17:39:10 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:39:10 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:39:10 - CSURUS1 - Run updater '/bitrix/updates/update_m1222954750/search/updater7.0.6.php'
+2008-10-02 17:39:10 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954750/search/updater7.0.6.php': CopyFiles(install/js, js/search)
+2008-10-02 17:39:10 -  - TIME UpdateStepModules 0.005 sec
+2008-10-02 17:39:10 - UPD_SUCCESS - Updated: search(7.0.6)
+2008-10-02 17:39:10 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:39:10 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:39:10 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.3&bitm_catalog=7.0.3&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.6&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-02 17:39:10 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:39:13 -  - TIME GetNextStepUpdates(request) 3.054 sec
+2008-10-02 17:39:13 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:39:13 -  - TIME UnGzipArchive 0.007 sec
+2008-10-02 17:39:13 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:39:13 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:39:13 - CSURUS1 - Run updater '/bitrix/updates/update_m1222954753/subscribe/updater7.0.4.php'
+2008-10-02 17:39:13 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954753/subscribe/updater7.0.4.php': CopyFiles(install/components, components)
+2008-10-02 17:39:13 -  - TIME UpdateStepModules 0.01 sec
+2008-10-02 17:39:13 - UPD_SUCCESS - Updated: subscribe(7.0.4)
+2008-10-02 17:39:13 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:39:13 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:39:13 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.3&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.6&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-02 17:39:13 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:39:16 -  - TIME GetNextStepUpdates(request) 3.074 sec
+2008-10-02 17:39:16 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:39:16 -  - TIME UnGzipArchive 0.008 sec
+2008-10-02 17:39:16 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:39:16 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:39:16 -  - TIME UpdateStepModules 0.007 sec
+2008-10-02 17:39:16 - UPD_SUCCESS - Updated: catalog(7.0.4)
+2008-10-02 17:39:17 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:39:17 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:39:17 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.4&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.6&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-02 17:39:17 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:39:18 -  - TIME GetNextStepUpdates(request) 1.385 sec
+2008-10-02 17:39:18 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:39:18 -  - TIME UnGzipArchive 0.002 sec
+2008-10-02 17:39:18 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:39:18 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:39:18 -  - TIME UpdateStepModules 0.002 sec
+2008-10-02 17:39:18 - UPD_SUCCESS - Updated: catalog(7.0.5)
+2008-10-02 17:39:18 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:39:18 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:39:18 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.6&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-02 17:39:18 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:39:21 -  - TIME GetNextStepUpdates(request) 3.171 sec
+2008-10-02 17:39:21 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:39:21 -  - TIME UnGzipArchive 0.007 sec
+2008-10-02 17:39:21 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:39:21 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:39:21 -  - TIME UpdateStepModules 0.006 sec
+2008-10-02 17:39:21 - UPD_SUCCESS - Updated: iblock(7.0.7)
+2008-10-02 17:39:22 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:39:22 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:39:22 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.7&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-02 17:39:22 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:39:27 -  - TIME GetNextStepUpdates(request) 5.41 sec
+2008-10-02 17:39:27 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:39:27 -  - TIME UnGzipArchive 0.026 sec
+2008-10-02 17:39:27 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:39:27 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:39:27 - CSURUS1 - Run updater '/bitrix/updates/update_m1222954767/iblock/updater7.0.8.php'
+2008-10-02 17:39:27 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954767/iblock/updater7.0.8.php': CopyFiles(install/components, components)
+2008-10-02 17:39:27 - CRUPDCDF2 - Run updater '/bitrix/updates/update_m1222954767/iblock/updater7.0.8.php': Query(Array, )
+2008-10-02 17:39:27 - CRUPDCDF2 - Run updater '/bitrix/updates/update_m1222954767/iblock/updater7.0.8.php': Query(Array, )
+2008-10-02 17:39:27 -  - TIME UpdateStepModules 0.057 sec
+2008-10-02 17:39:27 - UPD_SUCCESS - Updated: iblock(7.0.8)
+2008-10-02 17:39:27 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:39:27 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:39:27 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.8&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-02 17:39:27 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:39:34 -  - TIME GetNextStepUpdates(request) 6.288 sec
+2008-10-02 17:39:34 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:39:34 -  - TIME UnGzipArchive 0.04 sec
+2008-10-02 17:39:34 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:39:34 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:39:34 - CSURUS1 - Run updater '/bitrix/updates/update_m1222954774/iblock/updater7.0.9.php'
+2008-10-02 17:39:34 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954774/iblock/updater7.0.9.php': CopyFiles(install/components, components)
+2008-10-02 17:39:34 -  - TIME UpdateStepModules 0.05 sec
+2008-10-02 17:39:34 - UPD_SUCCESS - Updated: iblock(7.0.9)
+2008-10-02 17:39:34 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:39:34 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:39:34 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.2&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-02 17:39:34 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:39:42 -  - TIME GetNextStepUpdates(request) 8.146 sec
+2008-10-02 17:39:42 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:39:42 -  - TIME UnGzipArchive 0.115 sec
+2008-10-02 17:39:42 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:39:42 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:39:42 - CSURUS1 - Run updater '/bitrix/updates/update_m1222954782/sale/updater7.0.3.php'
+2008-10-02 17:39:42 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954782/sale/updater7.0.3.php': CopyFiles(install/components, components)
+2008-10-02 17:39:43 -  - TIME UpdateStepModules 0.284 sec
+2008-10-02 17:39:43 - UPD_SUCCESS - Updated: sale(7.0.3)
+2008-10-02 17:39:43 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:39:43 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:39:43 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.1&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-02 17:39:43 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:39:44 -  - TIME GetNextStepUpdates(request) 0.838 sec
+2008-10-02 17:39:44 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:39:44 -  - TIME UnGzipArchive 0.007 sec
+2008-10-02 17:39:44 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:39:44 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:39:44 - CSURUS1 - Run updater '/bitrix/updates/update_m1222954784/currency/updater7.0.2.php'
+2008-10-02 17:39:44 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1222954784/currency/updater7.0.2.php': CopyFiles(install/components, components)
+2008-10-02 17:39:44 -  - TIME UpdateStepModules 0.017 sec
+2008-10-02 17:39:44 - UPD_SUCCESS - Updated: currency(7.0.2)
+2008-10-02 17:39:44 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:39:44 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:39:44 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-02 17:39:44 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:39:44 -  - TIME GetNextStepUpdates(request) 0.604 sec
+2008-10-02 17:39:44 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:39:44 -  - TIME UnGzipArchive 0.001 sec
+2008-10-02 17:39:44 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:39:44 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:39:44 - STEP - Finish - NOUPDATES
+2008-10-02 17:40:02 -  - exec CUpdateClient::GetUpdatesList
+2008-10-02 17:40:02 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:40:02 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-02 17:40:02 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:40:03 -  - TIME GetUpdatesList(request) 0.609 sec
+2008-10-02 17:40:03 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:40:10 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:40:10 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:40:10 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=&requested_modules=main%2Cforum%2Csubscribe%2Ccatalog%2Cfileman%2Csearch%2Ciblock%2Csale%2Ccurrency%2Ccompression
+2008-10-02 17:40:10 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:40:28 -  - TIME GetNextStepUpdates(request) 18.69 sec
+2008-10-02 17:40:28 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:40:29 -  - TIME UnGzipArchive 0.259 sec
+2008-10-02 17:40:29 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:40:29 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:40:29 -  - TIME UpdateStepModules 0.342 sec
+2008-10-02 17:40:29 - UPD_SUCCESS - Sources loaded: forum
+2008-10-02 17:40:29 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:40:29 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:40:29 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=&requested_modules=main%2Csubscribe%2Ccatalog%2Cfileman%2Csearch%2Ciblock%2Csale%2Ccurrency%2Ccompression
+2008-10-02 17:40:29 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:40:35 -  - TIME GetNextStepUpdates(request) 5.783 sec
+2008-10-02 17:40:35 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:40:35 -  - TIME UnGzipArchive 0.047 sec
+2008-10-02 17:40:35 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:40:35 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:40:35 -  - TIME UpdateStepModules 0.05 sec
+2008-10-02 17:40:35 - UPD_SUCCESS - Sources loaded: subscribe
+2008-10-02 17:40:35 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:40:35 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:40:35 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=&requested_modules=main%2Ccatalog%2Cfileman%2Csearch%2Ciblock%2Csale%2Ccurrency%2Ccompression
+2008-10-02 17:40:35 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:40:41 -  - TIME GetNextStepUpdates(request) 5.957 sec
+2008-10-02 17:40:41 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:40:42 -  - TIME UnGzipArchive 0.088 sec
+2008-10-02 17:40:42 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:40:42 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:40:42 -  - TIME UpdateStepModules 0.067 sec
+2008-10-02 17:40:42 - UPD_SUCCESS - Sources loaded: catalog
+2008-10-02 17:40:42 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:40:42 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:40:42 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=&requested_modules=main%2Cfileman%2Csearch%2Ciblock%2Csale%2Ccurrency%2Ccompression
+2008-10-02 17:40:42 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:40:46 -  - TIME GetNextStepUpdates(request) 4.136 sec
+2008-10-02 17:40:46 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:40:46 -  - TIME UnGzipArchive 0.07 sec
+2008-10-02 17:40:46 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:40:46 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:40:46 -  - TIME UpdateStepModules 0.052 sec
+2008-10-02 17:40:46 - UPD_SUCCESS - Sources loaded: fileman
+2008-10-02 17:40:46 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:40:46 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:40:46 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=&requested_modules=main%2Csearch%2Ciblock%2Csale%2Ccurrency%2Ccompression
+2008-10-02 17:40:46 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:40:48 -  - TIME GetNextStepUpdates(request) 2.153 sec
+2008-10-02 17:40:48 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:40:48 -  - TIME UnGzipArchive 0.053 sec
+2008-10-02 17:40:48 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:40:48 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:40:49 -  - TIME UpdateStepModules 0.052 sec
+2008-10-02 17:40:49 - UPD_SUCCESS - Sources loaded: search
+2008-10-02 17:40:49 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:40:49 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:40:49 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=&requested_modules=main%2Ciblock%2Csale%2Ccurrency%2Ccompression
+2008-10-02 17:40:49 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:40:56 -  - TIME GetNextStepUpdates(request) 7.007 sec
+2008-10-02 17:40:56 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:40:56 -  - TIME UnGzipArchive 0.271 sec
+2008-10-02 17:40:56 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:40:56 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:40:56 -  - TIME UpdateStepModules 0.415 sec
+2008-10-02 17:40:56 - UPD_SUCCESS - Sources loaded: iblock
+2008-10-02 17:40:57 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:40:57 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:40:57 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=&requested_modules=main%2Csale%2Ccurrency%2Ccompression
+2008-10-02 17:40:57 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:41:15 -  - TIME GetNextStepUpdates(request) 18.366 sec
+2008-10-02 17:41:15 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:41:15 -  - TIME UnGzipArchive 0.303 sec
+2008-10-02 17:41:15 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:41:15 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:41:16 -  - TIME UpdateStepModules 0.418 sec
+2008-10-02 17:41:16 - UPD_SUCCESS - Sources loaded: sale
+2008-10-02 17:41:16 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:41:16 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:41:16 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=&requested_modules=main%2Ccurrency%2Ccompression
+2008-10-02 17:41:16 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:41:19 -  - TIME GetNextStepUpdates(request) 2.93 sec
+2008-10-02 17:41:19 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:41:19 -  - TIME UnGzipArchive 0.019 sec
+2008-10-02 17:41:19 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:41:19 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:41:19 -  - TIME UpdateStepModules 0.026 sec
+2008-10-02 17:41:19 - UPD_SUCCESS - Sources loaded: currency
+2008-10-02 17:41:19 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:41:19 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:41:19 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=&requested_modules=main%2Ccompression
+2008-10-02 17:41:19 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:41:20 -  - TIME GetNextStepUpdates(request) 0.793 sec
+2008-10-02 17:41:20 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:41:20 -  - TIME UnGzipArchive 0.003 sec
+2008-10-02 17:41:20 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:41:20 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:41:20 -  - TIME UpdateStepModules 0.004 sec
+2008-10-02 17:41:20 - UPD_SUCCESS - Sources loaded: compression
+2008-10-02 17:41:20 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-02 17:41:20 -  - exec CUpdateClient::CollectRequestData
+2008-10-02 17:41:20 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=1&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=&requested_modules=main
+2008-10-02 17:41:20 -  - exec CUpdateClient::GetHTTPPage
+2008-10-02 17:41:32 -  - TIME GetNextStepUpdates(request) 11.67 sec
+2008-10-02 17:41:32 -  - exec CUpdateClient::UnGzipArchive
+2008-10-02 17:41:32 -  - TIME UnGzipArchive 0.306 sec
+2008-10-02 17:41:32 -  - exec CUpdateClient::GetStepUpdateInfo
+2008-10-02 17:41:32 -  - exec CUpdateClient::ParseServerData
+2008-10-02 17:41:33 -  - TIME UpdateStepModules 0.3 sec
+2008-10-02 17:41:33 - UPD_SUCCESS - Sources loaded: main
+2008-10-03 08:15:29 -  - exec CUpdateSystem::GetAvailableUpdateTypes
+2008-10-03 08:15:29 -  - LICENSE_KEY=X&lang=ru&UTYPES=MLH&SUPD_VER=7.0.12&ALL_MODULES=Y&TYPENC=F&COUNT_ONLY=Y&SUPD_STS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=localhost&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-03 08:15:29 -  - exec CUpdateSystem::getHTTPPage
+2008-10-03 08:15:30 -  - TIME GetAvailableUpdateTypes.getHTTPPage 1.071 sec
+2008-10-03 08:15:30 -  - exec CUpdateSystem::ParseServerData
+2008-10-06 13:38:40 -  - exec CUpdateSystem::GetAvailableUpdateTypes
+2008-10-06 13:38:40 -  - LICENSE_KEY=X&lang=ru&UTYPES=MLH&SUPD_VER=7.0.12&ALL_MODULES=Y&TYPENC=E&COUNT_ONLY=Y&SUPD_STS=2&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.poligon.info&CANGZIP=Y&CLIENT_PHPVER=4.4.4&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-06 13:38:40 -  - exec CUpdateSystem::getHTTPPage
+2008-10-06 13:38:41 -  - TIME GetAvailableUpdateTypes.getHTTPPage 1.384 sec
+2008-10-06 13:38:41 -  - exec CUpdateSystem::ParseServerData
+2008-10-06 13:38:45 -  - exec CUpdateSystem::LoadSources
+2008-10-06 13:38:45 -  - LICENSE_KEY=X&lang=ru&UTYPES=S&SUPD_VER=7.0.12&COUNT_ONLY=F&SUPD_STS=2&CLIENT_SITE=www.poligon.info&SUPD_DBS=MYSQL&XE=N&CANGZIP=Y&CLIENT_PHPVER=4.4.4&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1
+2008-10-06 13:38:45 -  - exec CUpdateSystem::getHTTPPage
+2008-10-06 13:39:16 -  - exec CUpdateSystem::LoadSources
+2008-10-06 13:39:16 -  - LICENSE_KEY=X&lang=ru&UTYPES=S&SUPD_VER=7.0.12&COUNT_ONLY=F&SUPD_STS=2&CLIENT_SITE=www.poligon.info&SUPD_DBS=MYSQL&XE=N&CANGZIP=Y&CLIENT_PHPVER=4.4.4&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1
+2008-10-06 13:39:16 -  - exec CUpdateSystem::getHTTPPage
+2008-10-06 13:39:45 -  - TIME LoadSources.getHTTPPage 29.019 sec
+2008-10-06 13:39:45 -  - exec CUpdateSystem::UnGzipArchive
+2008-10-06 13:39:45 -  - TIME UnGzipArchive 0.007 sec
+2008-10-06 13:39:45 - CUUGZA - [UUGZA073] —бой на файле "/fileman/admin/fileman_load_comp2_params.php".<br>
+2008-10-06 13:39:45 - CULS - [UUGZA073] —бой на файле "/fileman/admin/fileman_load_comp2_params.php".<br>[ULS04] «агрузка исходников прервана.<br>
+2008-10-06 13:39:45 -  - exec CUpdateSystem::GetAvailableUpdateTypes
+2008-10-06 13:39:45 -  - LICENSE_KEY=X&lang=ru&UTYPES=MLH&SUPD_VER=7.0.12&ALL_MODULES=Y&TYPENC=E&COUNT_ONLY=Y&SUPD_STS=2&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.poligon.info&CANGZIP=Y&CLIENT_PHPVER=4.4.4&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-06 13:39:45 -  - exec CUpdateSystem::getHTTPPage
+2008-10-06 13:40:09 -  - exec CUpdateClient::GetUpdatesList
+2008-10-06 13:40:09 -  - exec CUpdateClient::CollectRequestData
+2008-10-06 13:40:09 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.0.12&VERSION=7.0.14&TYPENC=E&SUPD_STS=2&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.poligon.info&CANGZIP=Y&CLIENT_PHPVER=4.4.4&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-06 13:40:09 -  - exec CUpdateClient::GetHTTPPage
+2008-10-06 13:40:09 -  - TIME GetUpdatesList(request) 0.381 sec
+2008-10-06 13:40:10 -  - exec CUpdateClient::ParseServerData
+2008-10-06 13:40:13 -  - exec CUpdateClient::UpdateUpdate
+2008-10-06 13:40:13 -  - exec CUpdateClient::CollectRequestData
+2008-10-06 13:40:13 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.0.12&VERSION=7.0.14&TYPENC=E&SUPD_STS=2&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.poligon.info&CANGZIP=Y&CLIENT_PHPVER=4.4.4&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=&query_type=updateupdate
+2008-10-06 13:40:13 -  - exec CUpdateClient::GetHTTPPage
+2008-10-06 13:40:15 -  - TIME UpdateUpdate(request) 2.4 sec
+2008-10-06 13:40:15 -  - exec CUpdateClient::UnGzipArchive
+2008-10-06 13:40:15 -  - TIME UnGzipArchive 0.037 sec
+2008-10-06 13:40:15 -  - exec CUpdateClient::ParseServerData
+2008-10-06 13:40:15 - CURV - Update updated successfully!
+2008-10-06 13:40:15 - UPD_SUCCESS - Update system updated
+2008-10-06 13:40:16 -  - exec CUpdateClient::GetUpdatesList
+2008-10-06 13:40:16 -  - exec CUpdateClient::CollectRequestData
+2008-10-06 13:40:16 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=2&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.poligon.info&CANGZIP=Y&CLIENT_PHPVER=4.4.4&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-06 13:40:16 -  - exec CUpdateClient::GetHTTPPage
+2008-10-06 13:40:16 -  - TIME GetUpdatesList(request) 0.377 sec
+2008-10-06 13:40:16 -  - exec CUpdateClient::ParseServerData
+2008-10-06 13:40:40 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-06 13:40:40 -  - exec CUpdateClient::CollectRequestData
+2008-10-06 13:40:40 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=2&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.poligon.info&CANGZIP=Y&CLIENT_PHPVER=4.4.4&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=&requested_modules=main%2Cforum%2Csubscribe%2Ccatalog%2Cfileman%2Csearch%2Ciblock%2Csale%2Ccurrency%2Ccompression
+2008-10-06 13:40:40 -  - exec CUpdateClient::GetHTTPPage
+2008-10-06 13:40:44 -  - TIME GetNextStepUpdates(request) 3.896 sec
+2008-10-06 13:40:44 -  - exec CUpdateClient::UnGzipArchive
+2008-10-06 13:40:44 -  - TIME UnGzipArchive 0.013 sec
+2008-10-06 13:40:44 - CUUGZA - [UUGZA073] —бой на файле "/forum/general/topic.php". 
+2008-10-06 13:40:44 - CL02 - ќшибка распаковки пакета
+2008-10-06 13:40:44 - UPD_ERROR - Error: [UUGZA073] —бой на файле "/forum/general/topic.php". [CL02] ќшибка распаковки пакета. 
+2008-10-06 13:41:38 -  - exec CUpdateClient::GetUpdatesList
+2008-10-06 13:41:38 -  - exec CUpdateClient::CollectRequestData
+2008-10-06 13:41:38 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=2&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.poligon.info&CANGZIP=Y&CLIENT_PHPVER=4.4.4&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-06 13:41:38 -  - exec CUpdateClient::GetHTTPPage
+2008-10-06 13:41:38 -  - TIME GetUpdatesList(request) 0.375 sec
+2008-10-06 13:41:38 -  - exec CUpdateClient::ParseServerData
+2008-10-06 13:41:40 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-06 13:41:40 -  - exec CUpdateClient::CollectRequestData
+2008-10-06 13:41:40 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=2&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.poligon.info&CANGZIP=Y&CLIENT_PHPVER=4.4.4&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=&requested_modules=main%2Cforum%2Csubscribe%2Ccatalog%2Cfileman%2Csearch%2Ciblock%2Csale%2Ccurrency%2Ccompression
+2008-10-06 13:41:40 -  - exec CUpdateClient::GetHTTPPage
+2008-10-06 13:41:44 -  - TIME GetNextStepUpdates(request) 3.55 sec
+2008-10-06 13:41:44 -  - exec CUpdateClient::UnGzipArchive
+2008-10-06 13:41:44 -  - TIME UnGzipArchive 0.019 sec
+2008-10-06 13:41:44 - CUUGZA - [UUGZA073] —бой на файле "/forum/general/message.php". 
+2008-10-06 13:41:44 - CL02 - ќшибка распаковки пакета
+2008-10-06 13:41:44 - UPD_ERROR - Error: [UUGZA073] —бой на файле "/forum/general/message.php". [CL02] ќшибка распаковки пакета. 
+2008-10-06 13:41:48 -  - exec CUpdateClient::GetUpdatesList
+2008-10-06 13:41:48 -  - exec CUpdateClient::CollectRequestData
+2008-10-06 13:41:48 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=2&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.poligon.info&CANGZIP=Y&CLIENT_PHPVER=4.4.4&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-06 13:41:48 -  - exec CUpdateClient::GetHTTPPage
+2008-10-06 13:41:49 -  - TIME GetUpdatesList(request) 0.41 sec
+2008-10-06 13:41:49 -  - exec CUpdateClient::ParseServerData
+2008-10-06 13:41:51 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-06 13:41:51 -  - exec CUpdateClient::CollectRequestData
+2008-10-06 13:41:51 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=2&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.poligon.info&CANGZIP=Y&CLIENT_PHPVER=4.4.4&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=&requested_modules=main%2Cforum%2Csubscribe%2Ccatalog%2Cfileman%2Csearch%2Ciblock%2Csale%2Ccurrency%2Ccompression
+2008-10-06 13:41:51 -  - exec CUpdateClient::GetHTTPPage
+2008-10-06 13:41:54 -  - TIME GetNextStepUpdates(request) 3.452 sec
+2008-10-06 13:41:54 -  - exec CUpdateClient::UnGzipArchive
+2008-10-06 13:41:54 -  - TIME UnGzipArchive 0.019 sec
+2008-10-06 13:41:54 - CUUGZA - [UUGZA073] —бой на файле "/forum/general/message.php". 
+2008-10-06 13:41:54 - CL02 - ќшибка распаковки пакета
+2008-10-06 13:41:54 - UPD_ERROR - Error: [UUGZA073] —бой на файле "/forum/general/message.php". [CL02] ќшибка распаковки пакета. 
+2008-10-06 13:42:08 -  - exec CUpdateClient::GetUpdatesList
+2008-10-06 13:42:08 -  - exec CUpdateClient::CollectRequestData
+2008-10-06 13:42:08 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=2&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.poligon.info&CANGZIP=Y&CLIENT_PHPVER=4.4.4&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-06 13:42:08 -  - exec CUpdateClient::GetHTTPPage
+2008-10-06 13:42:09 -  - TIME GetUpdatesList(request) 0.354 sec
+2008-10-06 13:42:09 -  - exec CUpdateClient::ParseServerData
+2008-10-06 13:42:15 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-06 13:42:15 -  - exec CUpdateClient::CollectRequestData
+2008-10-06 13:42:15 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=2&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.poligon.info&CANGZIP=Y&CLIENT_PHPVER=4.4.4&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=&requested_modules=main%2Cforum%2Csubscribe%2Ccatalog%2Cfileman%2Csearch%2Ciblock%2Csale%2Ccurrency%2Ccompression
+2008-10-06 13:42:15 -  - exec CUpdateClient::GetHTTPPage
+2008-10-06 13:42:19 -  - TIME GetNextStepUpdates(request) 4.239 sec
+2008-10-06 13:42:19 -  - exec CUpdateClient::UnGzipArchive
+2008-10-06 13:42:19 -  - TIME UnGzipArchive 0.615 sec
+2008-10-06 13:42:19 - CUUGZA - [UUGZA073] —бой на файле "/forum/install/components/bitrix/forum/templates/.default/bitrix/forum.topic.new/.default/template.php". 
+2008-10-06 13:42:19 - CL02 - ќшибка распаковки пакета
+2008-10-06 13:42:19 - UPD_ERROR - Error: [UUGZA073] —бой на файле "/forum/install/components/bitrix/forum/templates/.default/bitrix/forum.topic.new/.default/template.php". [CL02] ќшибка распаковки пакета. 
+2008-10-06 13:42:29 -  - exec CUpdateClient::GetUpdatesList
+2008-10-06 13:42:29 -  - exec CUpdateClient::CollectRequestData
+2008-10-06 13:42:29 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=2&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.poligon.info&CANGZIP=Y&CLIENT_PHPVER=4.4.4&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-06 13:42:29 -  - exec CUpdateClient::GetHTTPPage
+2008-10-06 13:42:30 -  - TIME GetUpdatesList(request) 0.367 sec
+2008-10-06 13:42:30 -  - exec CUpdateClient::ParseServerData
+2008-10-06 13:42:32 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-06 13:42:32 -  - exec CUpdateClient::CollectRequestData
+2008-10-06 13:42:32 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=2&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.poligon.info&CANGZIP=Y&CLIENT_PHPVER=4.4.4&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=&requested_modules=main%2Cforum%2Csubscribe%2Ccatalog%2Cfileman%2Csearch%2Ciblock%2Csale%2Ccurrency%2Ccompression
+2008-10-06 13:42:32 -  - exec CUpdateClient::GetHTTPPage
+2008-10-06 13:42:35 -  - TIME GetNextStepUpdates(request) 3.319 sec
+2008-10-06 13:42:35 -  - exec CUpdateClient::UnGzipArchive
+2008-10-06 13:42:35 -  - TIME UnGzipArchive 0.062 sec
+2008-10-06 13:42:35 - CUUGZA - [UUGZA073] —бой на файле "/forum/install/components/bitrix/forum/templates/.default/bitrix/forum.message.approve/.default/template.php". 
+2008-10-06 13:42:35 - CL02 - ќшибка распаковки пакета
+2008-10-06 13:42:35 - UPD_ERROR - Error: [UUGZA073] —бой на файле "/forum/install/components/bitrix/forum/templates/.default/bitrix/forum.message.approve/.default/template.php". [CL02] ќшибка распаковки пакета. 
+2008-10-06 13:42:42 -  - exec CUpdateClient::GetUpdatesList
+2008-10-06 13:42:42 -  - exec CUpdateClient::CollectRequestData
+2008-10-06 13:42:42 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=2&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.poligon.info&CANGZIP=Y&CLIENT_PHPVER=4.4.4&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2008-10-06 13:42:42 -  - exec CUpdateClient::GetHTTPPage
+2008-10-06 13:42:43 -  - TIME GetUpdatesList(request) 0.37 sec
+2008-10-06 13:42:43 -  - exec CUpdateClient::ParseServerData
+2008-10-06 13:42:44 -  - exec CUpdateClient::GetNextStepUpdates
+2008-10-06 13:42:44 -  - exec CUpdateClient::CollectRequestData
+2008-10-06 13:42:44 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=2&SUPD_URS=1&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.poligon.info&CANGZIP=Y&CLIENT_PHPVER=4.4.4&stable=Y&bitm_main=7.0.14&bitm_forum=7.0.2&bitm_subscribe=7.0.4&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_search=7.0.6&bitm_iblock=7.0.9&bitm_sale=7.0.3&bitm_currency=7.0.2&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=&requested_modules=main%2Cforum%2Csubscribe%2Ccatalog%2Cfileman%2Csearch%2Ciblock%2Csale%2Ccurrency%2Ccompression
+2008-10-06 13:42:44 -  - exec CUpdateClient::GetHTTPPage
+2008-10-06 13:42:47 -  - TIME GetNextStepUpdates(request) 2.916 sec
+2008-10-06 13:42:47 -  - exec CUpdateClient::UnGzipArchive
+2008-10-06 13:42:47 -  - TIME UnGzipArchive 0.071 sec
+2008-10-06 13:42:47 - CUUGZA - [UUGZA073] —бой на файле "/forum/general/topic.php". 
+2008-10-06 13:42:47 - CL02 - ќшибка распаковки пакета
+2008-10-06 13:42:47 - UPD_ERROR - Error: [UUGZA073] —бой на файле "/forum/general/topic.php". [CL02] ќшибка распаковки пакета. 
+2009-03-02 10:47:43 -  - exec CUpdateClient::GetUpdatesList
+2009-03-02 10:47:43 -  - exec CUpdateClient::CollectRequestData
+2009-03-02 10:47:43 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=2&SUPD_URS=3&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=poligon.info&CANGZIP=Y&CLIENT_PHPVER=5.2.5&stable=Y&bitm_main=7.0.14&bitm_subscribe=7.0.4&bitm_compression=7.0.1&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_iblock=7.0.9&bitm_forum=7.0.2&bitm_sale=7.0.3&bitm_search=7.0.6&bitm_currency=7.0.2&bitl_en=20070905&bitl_ru=&bith_ru=20080603&bith_en=
+2009-03-02 10:47:43 -  - exec CUpdateClient::GetHTTPPage
+2009-03-02 10:47:45 -  - TIME GetUpdatesList(request) 1.339 sec
+2009-03-02 10:47:45 -  - exec CUpdateClient::ParseServerData
+2009-03-04 10:52:40 -  - exec CUpdateClient::GetUpdatesList
+2009-03-04 10:52:40 -  - exec CUpdateClient::CollectRequestData
+2009-03-04 10:52:40 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=2&SUPD_URS=3&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=www.poligon.info&CANGZIP=Y&CLIENT_PHPVER=5.2.5&stable=Y&bitm_main=7.0.14&bitm_subscribe=7.0.4&bitm_compression=7.0.1&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_iblock=7.0.9&bitm_forum=7.0.2&bitm_sale=7.0.3&bitm_search=7.0.6&bitm_currency=7.0.2&bitl_en=20070905&bitl_ru=&bith_ru=20080603&bith_en=
+2009-03-04 10:52:40 -  - exec CUpdateClient::GetHTTPPage
+2009-03-04 10:52:41 -  - TIME GetUpdatesList(request) 1.446 sec
+2009-03-04 10:52:41 -  - exec CUpdateClient::ParseServerData
+2010-05-31 17:58:51 -  - exec CUpdateClient::GetUpdatesList
+2010-05-31 17:58:51 -  - exec CUpdateClient::CollectRequestData
+2010-05-31 17:58:51 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=2&SUPD_URS=4&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=poligon.info&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_iblock=7.0.9&bitm_search=7.0.6&bitm_sale=7.0.3&bitm_forum=7.0.2&bitm_fileman=7.0.5&bitm_currency=7.0.2&bitm_catalog=7.0.5&bitm_subscribe=7.0.4&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2010-05-31 17:58:51 -  - exec CUpdateClient::GetHTTPPage
+2010-05-31 17:59:00 -  - TIME GetUpdatesList(request) 9.3 sec
+2010-05-31 17:59:00 -  - exec CUpdateClient::ParseServerData
+2011-10-13 10:13:04 -  - exec CUpdateClient::GetUpdatesList
+2011-10-13 10:13:04 -  - exec CUpdateClient::CollectRequestData
+2011-10-13 10:13:04 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=2&SUPD_URS=5&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=poligon.info&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_iblock=7.0.9&bitm_search=7.0.6&bitm_sale=7.0.3&bitm_forum=7.0.2&bitm_fileman=7.0.5&bitm_currency=7.0.2&bitm_catalog=7.0.5&bitm_subscribe=7.0.4&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2011-10-13 10:13:04 -  - exec CUpdateClient::GetHTTPPage
+2011-10-13 10:13:05 -  - TIME GetUpdatesList(request) 0.383 sec
+2011-10-13 10:13:05 -  - exec CUpdateClient::ParseServerData
+2011-10-13 10:13:26 -  - exec CUpdateClient::GetUpdatesList
+2011-10-13 10:13:26 -  - exec CUpdateClient::CollectRequestData
+2011-10-13 10:13:26 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=2&SUPD_URS=5&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=poligon.info&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_iblock=7.0.9&bitm_search=7.0.6&bitm_sale=7.0.3&bitm_forum=7.0.2&bitm_fileman=7.0.5&bitm_currency=7.0.2&bitm_catalog=7.0.5&bitm_subscribe=7.0.4&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2011-10-13 10:13:26 -  - exec CUpdateClient::GetHTTPPage
+2011-10-13 10:13:26 -  - TIME GetUpdatesList(request) 0.242 sec
+2011-10-13 10:13:26 -  - exec CUpdateClient::ParseServerData
+2012-03-26 16:23:25 -  - exec CUpdateClient::GetUpdatesList
+2012-03-26 16:23:25 -  - exec CUpdateClient::CollectRequestData
+2012-03-26 16:23:25 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=1&SUPD_URS=5&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=poligon.info&CANGZIP=Y&CLIENT_PHPVER=5.2.6&stable=Y&bitm_main=7.0.14&bitm_iblock=7.0.9&bitm_search=7.0.6&bitm_sale=7.0.3&bitm_forum=7.0.2&bitm_fileman=7.0.5&bitm_currency=7.0.2&bitm_catalog=7.0.5&bitm_subscribe=7.0.4&bitm_compression=7.0.1&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2012-03-26 16:23:25 -  - exec CUpdateClient::GetHTTPPage
+2012-03-26 16:23:26 -  - TIME GetUpdatesList(request) 0.412 sec
+2012-03-26 16:23:26 -  - exec CUpdateClient::ParseServerData
+2013-04-09 14:41:40 -  - exec CUpdateClient::GetUpdatesList
+2013-04-09 14:41:40 -  - exec CUpdateClient::CollectRequestData
+2013-04-09 14:41:40 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=7.1.1&VERSION=7.0.14&TYPENC=E&SUPD_STS=1&SUPD_URS=4&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=poligon.info&CANGZIP=Y&CLIENT_PHPVER=5.2.17-pl0-gentoo&stable=Y&bitm_main=7.0.14&bitm_subscribe=7.0.4&bitm_compression=7.0.1&bitm_catalog=7.0.5&bitm_fileman=7.0.5&bitm_iblock=7.0.9&bitm_search=7.0.6&bitm_forum=7.0.2&bitm_currency=7.0.2&bitm_sale=7.0.3&bitl_ru=&bitl_en=20070905&bith_ru=20080603&bith_en=
+2013-04-09 14:41:40 -  - exec CUpdateClient::GetHTTPPage
+2013-04-09 14:41:40 -  - TIME GetUpdatesList(request) 0.689 sec
+2013-04-09 14:41:40 -  - exec CUpdateClient::ParseServerData

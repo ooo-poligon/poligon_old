@@ -1,0 +1,30 @@
+<?
+$MESS ['customrank_param1'] = "Параметр 1:";
+$MESS ['customrank_param2'] = "Параметр 2:";
+$MESS ['customrank_param3'] = "Параметр 3:";
+$MESS ['customrank_site'] = "Сайт:";
+$MESS ['customrank_module'] = "Модуль:";
+$MESS ['customrank_no'] = "(нет)";
+$MESS ['customrank_sort'] = "Вес:";
+$MESS ['customrank_edit_rule'] = "Редактирование правила #";
+$MESS ['customrank_add_rule'] = "Добавление правила";
+$MESS ['customrank_list_rule'] = "Список";
+$MESS ['customrank_list_rule_title'] = "Список правил";
+$MESS ['customrank_add_new'] = "Добавить";
+$MESS ['customrank_add_new_title'] = "Добавить новое правило";
+$MESS ['customrank_delete'] = "Удалить";
+$MESS ['customrank_delete_title'] = "Удалить данное правило";
+$MESS ['customrank_delete_conf'] = "Удалить правило?";
+$MESS ['customrank_param3_main'] = "Параметр 3 (полный путь к файлу):";
+$MESS ['customrank_param1_iblock'] = "Параметр 1 (тип информационного блока):";
+$MESS ['customrank_param2_iblock'] = "Параметр 2 (информационный блок):";
+$MESS ['customrank_param3_iblock'] = "Параметр 3 (элемент информационного блока):";
+$MESS ['customrank_param1_forum'] = "Параметр 1 (форум):";
+$MESS ['customrank_param2_forum'] = "Параметр 2 (тема форума):";
+$MESS ['customrank_param3_forum'] = "Параметр 3 (сообщение на форуме):";
+$MESS ['customrank_rule'] = "Правило";
+$MESS ['customrank_rule_title'] = "Параметры правила сортировки";
+$MESS["customrank_iblocks"]="Информационные блоки";
+$MESS["customrank_forum"]="Форум";
+$MESS["customrank_files"]="Статические файлы";
+?>
