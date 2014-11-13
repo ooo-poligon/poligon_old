@@ -1,0 +1,14 @@
+#landing_header{float: left;padding: 0px 10px;width: 1180px;background-color: #a7a7a7;}
+#landing_block{float:left;margin:0px 5px;width: 1180px;background-color: #a7a7a7;}
+.bx-wrapper{max-width: 1141px !important; }
+.slide{display:block;max-width: 220px;}
+.slide_img{max-width: 207px !important;margin: 5px auto;}
+.slide{background-color: d1d6da;text-decoration: none;}
+.slide:hover{text-decoration: underline;}
+.title-slide1-wrapper{width: 196px;margin: 6px 7px;background-color: #f0f0f8;padding: 5px;}
+.title-slide1{justify-content: center;display: flex;text-overflow: ellipsis;overflow: hidden;height: 37px;}
+.carusel-price{color: #454545;}
+#carusel-price-value{color: #F11F1F;font-size: 20px;margin-top: -4px;}
+#carusel-slide-bottom{justify-content: flex-end;display: flex;margin-top: 10px;text-decoration: none;}
+#carusel-slide-bottom:hover, .slide:hover {text-decoration: none;}
+#landing_slider{clear: both;margin: 0 auto;}
