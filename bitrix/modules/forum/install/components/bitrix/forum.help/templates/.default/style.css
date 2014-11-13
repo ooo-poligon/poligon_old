@@ -1,0 +1,30 @@
+/*forum.help*/
+table.forum-main {
+	border: none;
+	border-collapse: collapse;
+	margin: 0px;
+	width: 100%;
+	font-size: 100%;
+}
+table.forum-main th {
+	background-color:#CEDEEC;
+	border: 1px solid #99BAD7;
+	font-weight: normal;
+	padding:4px;
+	white-space:nowrap;
+	vertical-align:top;
+}
+table.forum-main td {
+	background-color:#F1F5FA;
+	border: 1px solid #99BAD7;
+	padding: 4px;
+	vertical-align:top;
+}
+.forum-title {border: 1px solid #99BAD7;padding: 4px;background-color: #CEDEEC;font-size: 100%; font-weight:bold;}
+div.forum-br {
+    height: 4px;
+    width: 100%; 
+    border: none;
+	overflow: hidden;
+}
+div.forum-bold {font-weight: bold; display:inline;}
