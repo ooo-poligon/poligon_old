@@ -1,0 +1,107 @@
+@import '/css/common.css';
+article,aside,footer,nav{display:block;}
+body{
+        background:url(/bitrix/templates/poligon_i/images/bg_gradient.gif) repeat-y #cccccc;
+        background-position: center;
+}
+header{
+position: relative;
+z-index: 9999;
+min-width: 1010px;
+#height: 2.55556em;
+#margin: 0 auto 1em;
+        background:url(/bitrix/templates/poligon_i/images/alum_texture.jpg);
+        height:120px;
+        #width:100%;
+        margin:-8px;
+}
+#header_container{
+        vertical-align: baseline;
+        margin: 0 auto; 
+        width:960px;
+}
+#content_pad{
+        min-height:20px;
+}
+#site_logo{
+        position: relative; 
+        float:left;
+        top:25px;
+        left:20px;
+}
+#telephon_header{
+        position:relative;
+        float:right;
+        top:20px;
+        right:20px;
+}
+#telephon_header img{
+        width: 300px;
+}
+#site_logo a img{
+        width: 320px;
+}
+#site_menu{
+        display: inline-block;
+        white-space: nowrap;
+}
+#site_menu ul{
+    padding:0;
+    margin:0;
+}
+#site_menu li{
+    position: relative;
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding:0;
+    white-space: nowrap;
+    width:150px;
+} 
+#search_form{
+        vertical-align: baseline;
+        margin:0 auto;
+        padding:13px;
+	width:275px;
+        height: 30px;
+        background: url("/bitrix/templates/poligon_i/images/search_field.gif") 0 0 no-repeat;
+        border:none;
+}
+#search_form .inputtext{
+	border:none;
+	color:#606060;
+	width:210px;
+	float:center;
+	padding:0 0 0 25px;
+	margin:8px 18px;
+}
+#search_form .submit{
+	height:24px;
+	width:66px;
+}
+#partners{
+        position: relative;
+        background:#ffffff;
+        margin:-16px 0 0 0;
+}
+#partners a img{	
+	border: none;
+	padding-top: 12px;
+	vertical-align: top;
+	width: 155px;
+}
+#partners a	{
+	color:#4192e3;
+	font:18px Arial, Helvetica, sans-serif;
+	text-decoration:underline;
+}
+#content_table{
+        vertical-align: baseline;
+        margin: 0 auto; 
+        width:962px;
+}
+#footer_container{
+        vertical-align: baseline;
+        margin: 0 auto; 
+        width:962px;        
+}
