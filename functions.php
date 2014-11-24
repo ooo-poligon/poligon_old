@@ -516,7 +516,7 @@ function getPrice($price = 0, $format = array()){
 	//$price = $currentRate*str_ireplace(',', '.', $price);
 	// число может содержать пробелы
 	//return round($currentRate*str_ireplace(array(',', ' '), array('.', ''), $price)*1.02);
-	$cost = round($currentRate*str_ireplace(array(',', ' '), array('.', ''), $price)*1.02);
+	$cost = round($currentRate*str_ireplace(array(',', ' '), array('.', ''), $price)*1.05);
 	// для разных форматов используем значения массива-аргумента $format
 	// порядок тот же что и number_format()
 	switch(count($format)){

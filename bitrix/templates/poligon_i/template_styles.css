@@ -1,107 +1,458 @@
-@import '/css/common.css';
-article,aside,footer,nav{display:block;}
+header, 
+nav, 
+section, 
+article, 
+aside, 
+footer {
+		display: block;
+}
 body{
-        background:url(/bitrix/templates/poligon_i/images/bg_gradient.gif) repeat-y #cccccc;
-        background-position: center;
+		margin: 0px;
+		padding: 0px;
 }
-header{
-position: relative;
-z-index: 9999;
-min-width: 1010px;
-#height: 2.55556em;
-#margin: 0 auto 1em;
-        background:url(/bitrix/templates/poligon_i/images/alum_texture.jpg);
-        height:120px;
-        #width:100%;
-        margin:-8px;
+.top_bar{
+		position: fixed;
+		width: 100%;
+		background: #19466c;
+		height: 190px;
 }
-#header_container{
-        vertical-align: baseline;
-        margin: 0 auto; 
-        width:960px;
+.site_logo{
+		width: 300px;
+		float: left;
+		margin: 5px;
 }
-#content_pad{
-        min-height:20px;
+.site_logo .site_logo_image{
+		width: 300px;		
 }
-#site_logo{
-        position: relative; 
-        float:left;
-        top:25px;
-        left:20px;
+.site_menu_container{
+		width: 627px;
+		margin:auto;
+		padding-top: 7px;
 }
-#telephon_header{
-        position:relative;
-        float:right;
-        top:20px;
-        right:20px;
+.site_menu_ul{
+		margin: 0;
+		padding: 4px;
 }
-#telephon_header img{
-        width: 300px;
+.site_menu_ul .site_menu_li{
+		display: inline; /* Отображать как строчный элемент */
+		margin-right: 7px; /* Отступ слева */
+		border: 1px solid #fff; /* Рамка вокруг текста */
+		padding: 5px; /* Поля вокруг текста */
+		font:20px Arial, Helvetica, sans-serif;
+		color:#ffffff;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: center;
 }
-#site_logo a img{
-        width: 320px;
+.site_menu_ul .site_menu_li a{
+		color: #fff;
+		text-decoration: none;
 }
-#site_menu{
-        display: inline-block;
-        white-space: nowrap;
+.phone{
+		width: 280px;
+		float: right;
+		margin-top: -18px;
+		margin-right: 5px;
 }
-#site_menu ul{
-    padding:0;
-    margin:0;
+.phone_image{
+		width: 280px;
 }
-#site_menu li{
-    position: relative;
-    float: right;
-    list-style: none;
-    margin: 0;
-    padding:0;
-    white-space: nowrap;
-    width:150px;
-} 
-#search_form{
-        vertical-align: baseline;
-        margin:0 auto;
-        padding:13px;
-	width:275px;
-        height: 30px;
-        background: url("/bitrix/templates/poligon_i/images/search_field.gif") 0 0 no-repeat;
-        border:none;
+.search{
+		position: fixed;
+		width: 100%;
+		top: 50px;
 }
-#search_form .inputtext{
-	border:none;
+.search-form{
+		width: 300px;
+		margin: auto;	
+}
+.search-form .inputtext{
+		font:16px Arial, Helvetica, sans-serif;
+		color:#aaaaaa;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: center;		
+}
+.partners{
+		position: fixed;
+		width: 100%;
+		margin-top: 50px;
+		background: #ffffff;
+		height: 130px;
+}
+.partners .partners_table{
+		width: 950px;
+		text-align: center;
+		margin-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
+}
+.partners .partners_table .partners_logo{
+		width: 150px;
+		border: 1px solid #606060;
+}
+.intro{
+		padding-top: 200px;
+		font:46px Arial, Helvetica, sans-serif;
+		color:#606060;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+		width: 100%;
+		margin:auto;
+		height: 500px;
+}
+.intro h1{
+		text-align: center;
+}
+.intro p{
+		font:26px Arial, Helvetica, sans-serif;
+		color:#606060;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+		padding-top: 40px;
+		padding-left: 70px;
+		padding-right: 70px;
+}
+.intro a{
+		font:26px Arial, Helvetica, sans-serif;
+		color:#19466c;
+		text-decoration:none;
+		font-weight:bold;
+}
+.intro a:hover{
+		font:26px Arial, Helvetica, sans-serif;
+		color:#00ccff;
+		text-decoration:none;
+		font-weight:bold;
+}
+.intro img{
+		width: 350px;
+}
+.intro_table{
+		width: 1600px;
+		margin: auto;
+}
+.intro td{
+		vertical-align: top;
+}
+.iso9001{
+		float: right;
+		margin-top: -60px;
+		margin-right: 90px;
+		height: 170px;
+}
+.iso9001 img{
+		width: 150px;
+}
+.our_partners{
+		font:46px Arial, Helvetica, sans-serif;
+		color:#606060;
+		text-decoration:none;
+		font-weight:bold;
+		width: 1500px;
+		margin:auto;
+		text-align: center;
+}
+.our_partners h1{ 
+		font:46px Arial, Helvetica, sans-serif;
+		color:#606060;
+		text-decoration:none;
+		font-weight:bold;
+		padding: 40px;		
+}
+.tele_page{
+		height: 700px;
+		background: #fff;
+		width: 100%;
+		margin-top: -50px;
+}
+.tele_page h1{
+		font:46px Arial, Helvetica, sans-serif;
+		color:#000000;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: center;
+		padding-top: 40px;
+}
+.tele_page a{
+		font:26px Arial, Helvetica, sans-serif;
+		color:#000000;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+.tele_page a:hover{
+		font:26px Arial, Helvetica, sans-serif;
+		color:#80bd01;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+.citel_page{
+		font:26px Arial, Helvetica, sans-serif;
+		color:#afb6bc;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+		height: 600px;
+		background: #fff;
+		width: 100%;
+		margin-top: -50px;
+}
+.citel_page h1{
+		font:46px Arial, Helvetica, sans-serif;
+		color:#afb6bc;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: center;
+		padding-top: 40px;
+}
+.citel_page a{
+		font:26px Arial, Helvetica, sans-serif;
+		color:#afb6bc;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+.citel_page a:hover{
+		font:26px Arial, Helvetica, sans-serif;
+		color:#ffd80e;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+.benedict_page{
+		height: 500px;
+		background: #ffffff;
+		width: 100%;
+		margin-top: -50px;
+}
+.benedict_page h1{
+		font:46px Arial, Helvetica, sans-serif;
+		color:#127e6f;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: center;
+		padding-top: 40px;
+}
+.benedict_page a{
+		font:26px Arial, Helvetica, sans-serif;
+		color:#127e6f;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+.benedict_page a:hover{
+		font:26px Arial, Helvetica, sans-serif;
+		color:#808185;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+.graesslin_page{
+		height: 500px;
+		background: #fff;
+		width: 100%;
+		margin-top: -50px;
+}
+.graesslin_page h1{
+		font:46px Arial, Helvetica, sans-serif;
+		color:#8a8b8d;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: center;
+		padding-top: 40px;
+}
+.graesslin_page a{
+		font:26px Arial, Helvetica, sans-serif;
+		color:#8a8b8d;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+.graesslin_page a:hover{
+		font:26px Arial, Helvetica, sans-serif;
+		color:#b9074a;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+.sonder_page{
+		height: 500px;
+		background: #fff;
+		width: 100%;
+		margin-top: -50px;
+}
+.sonder_page h1{
+		font:46px Arial, Helvetica, sans-serif;
+		color:#0268b3;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: center;
+		padding-top: 40px;
+}
+.sonder_page a{
+		font:26px Arial, Helvetica, sans-serif;
+		color:#0268b3;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+.sonder_page a:hover{
+		font:26px Arial, Helvetica, sans-serif;
+		color:#73b9ed;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+.relequick_page{
+		height: 600px;
+		background: #fff;
+		width: 100%;
+		margin-top: -50px;
+}
+.relequick_page h1{
+		font:46px Arial, Helvetica, sans-serif;
+		color:#000;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: center;
+		padding-top: 40px;
+}
+.relequick_page a{
+		font:26px Arial, Helvetica, sans-serif;
+		color:#000;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+.relequick_page a:hover{
+		font:26px Arial, Helvetica, sans-serif;
+		color:#920833;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+.comat_releco_page{
+		height: 900px;
+		background: #08639a;
+		width: 100%;
+		margin-top: -50px;
+}
+.emko_page{
+		height: 900px;
+		background: #5464c8;
+		width: 100%;
+		margin-top: -50px;
+}
+.cbi_page{
+		height: 900px;
+		background: #ce2227;
+		width: 100%;
+		margin-top: -50px;
+}
+.huber_suhner_page{
+		height: 900px;
+		background: #005192;
+		width: 100%;
+		margin-top: -50px;
+}
+.farnell_page{
+		height: 900px;
+		background: #ff6600;
+		width: 100%;
+		margin-top: -50px;
+}
+.vemer_page{
+		height: 900px;
+		background: #ff0d01;
+		width: 100%;
+		margin-top: -50px;
+}
+.work_area{
+		display: none;
+}
+.footer_container{
+		background:url(/bitrix/templates/poligon_i/images/background_footer.jpg) left top no-repeat #ffffff;
+		vertical-align: baseline;
+		margin: 0 auto; 
+		width:1020px;     
+}
+#footer_list{
+	margin:0px 0 25px 0px;
+	padding-left:3px;
+	list-style:none;
+}
+#footer_list li{
+	margin:0;
+	padding:0 20px;
+	display:inline;
+}
+#footer_list li a{
+	font:16px Arial, Helvetica, sans-serif;
 	color:#606060;
-	width:210px;
-	float:center;
-	padding:0 0 0 25px;
-	margin:8px 18px;
+        text-decoration:none;
+        font-weight: bold;
 }
-#search_form .submit{
-	height:24px;
-	width:66px;
+#footer_list li a:hover{
+	color:#606060;
 }
-#partners{
-        position: relative;
-        background:#ffffff;
-        margin:-16px 0 0 0;
+.copyright{
+		color:#adadad;
+		font:12px Arial, Helvetica, sans-serif;
 }
-#partners a img{	
-	border: none;
-	padding-top: 12px;
-	vertical-align: top;
-	width: 155px;
+#copyright a{
+	color:#ADADAD;
+	text-decoration:none;
 }
-#partners a	{
-	color:#4192e3;
-	font:18px Arial, Helvetica, sans-serif;
+#copyright a:hover{
 	text-decoration:underline;
 }
-#content_table{
-        vertical-align: baseline;
-        margin: 0 auto; 
-        width:962px;
+/*
+body {
+		/* ћестоположение фоновой картинки */ background-image: url(/bitrix/templates/poligon_i/images/background_picture_1.jpg);
+        /* ‘оновое изображение выровнено по центру в горизонтальной и вертикальной плоскост€х */ background-position: center center;
+        /* ‘он не повтор€етс€ */ background-repeat: no-repeat;
+        /* ‘он зафиксирован в области просмотра и потому не двигаетс€, когда высота контента превышает высоту изображени€ */ background-attachment: fixed;
+        /* Ёто свойство заставл€ет фон мен€ть масштаб при изменении размеров содержащего его контейнера*/ background-size: cover;
+        /* ÷вет фона, который будет отображатьс€ при загрузке фоновой картинки*/ background-color: #464646;
 }
-#footer_container{
+*/
+/*
+#content{
+	font:14px Arial, Helvetica, sans-serif;
+	color:#606060;
+	line-height:19px;
+        overflow:hidden;
+        background:#ffffff;
+        width:1018px;
         vertical-align: baseline;
-        margin: 0 auto; 
-        width:962px;        
+        margin: 0 auto;
 }
+#content a{
+	font:14px Arial, Helvetica, sans-serif;
+	color:#3371b9;
+        text-decoration:none;
+        font-weight:bold;
+}
+#content ul{
+	margin:0;
+	padding:0;
+}
+#content ul ul{
+	margin:0 0 0 10px;
+	padding:0;
+}
+#content ul li{
+	list-style:none;
+}
+#footer{
+	border-top:1px solid #d3d3d3;
+	height:137px;
+	color:#606060;
+	font:12px Arial, Helvetica, sans-serif;
+        padding-top:20px;
+}
+*/
