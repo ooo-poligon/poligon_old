@@ -21,7 +21,7 @@ body{
 		float: left;
 		margin-top: 10px;
 		margin-left: 5px;
-		margin-right: 40px;
+		margin-right: 36px;
 }
 .site_logo .site_logo_image{
 		width: 300px;		
@@ -36,10 +36,10 @@ body{
 		padding: 4px;
 }
 .site_menu_ul .site_menu_li{
-		display: inline; /* Ћтображать как строчный элемент */
-		margin-right: 7px; /* Ћтступ слева */
-		border: 1px solid #fff; /* ђамка вокруг текста */
-		padding: 5px; /* ЏолЯ вокруг текста */
+		display: inline; /* РћС‚РѕР±СЂР°Р¶Р°С‚СЊ РєР°Рє СЃС‚СЂРѕС‡РЅС‹Р№ СЌР»РµРјРµРЅС‚ */
+		margin-right: 7px; /* РћС‚СЃС‚СѓРї СЃР»РµРІР° */
+		border: 1px solid #fff; /* Р Р°РјРєР° РІРѕРєСЂСѓРі С‚РµРєСЃС‚Р° */
+		padding: 5px; /* РџРѕР»СЏ РІРѕРєСЂСѓРі С‚РµРєСЃС‚Р° */
 		font:18px Arial, Helvetica, sans-serif;
 		color:#ffffff;
 		text-decoration:none;
@@ -47,10 +47,10 @@ body{
 		text-align: center;
 }
 .site_menu_ul .site_menu_li_last{
-		display: inline; /* Ћтображать как строчный элемент */
-		#margin-right: 7px; /* Ћтступ слева */
-		border: 1px solid #fff; /* ђамка вокруг текста */
-		padding: 5px; /* ЏолЯ вокруг текста */
+		display: inline; /* РћС‚РѕР±СЂР°Р¶Р°С‚СЊ РєР°Рє СЃС‚СЂРѕС‡РЅС‹Р№ СЌР»РµРјРµРЅС‚ */
+		#margin-right: 7px; /* РћС‚СЃС‚СѓРї СЃР»РµРІР° */
+		border: 1px solid #fff; /* Р Р°РјРєР° РІРѕРєСЂСѓРі С‚РµРєСЃС‚Р° */
+		padding: 5px; /* РџРѕР»СЏ РІРѕРєСЂСѓРі С‚РµРєСЃС‚Р° */
 		font:18px Arial, Helvetica, sans-serif;
 		color:#ffffff;
 		text-decoration:none;
@@ -116,51 +116,51 @@ body{
 }
 .intro{
 		padding-top: 200px;
-		font:46px Arial, Helvetica, sans-serif;
+		font:36px Arial, Helvetica, sans-serif;
 		color:#606060;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
 		width: 100%;
 		margin:auto;
-		height: 800px;
+		height: 660px;
 }
 .intro h1{
 		text-align: center;
-		font:46px Arial, Helvetica, sans-serif;
+		font:36px Arial, Helvetica, sans-serif;
 		font-weight:bold;
 }
 .intro h2{
 		text-align: center;
-		font:46px Arial, Helvetica, sans-serif;
+		font:36px Arial, Helvetica, sans-serif;
 }
 .intro p{
-		font:26px Arial, Helvetica, sans-serif;
+		font:20px Arial, Helvetica, sans-serif;
 		color:#606060;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
-		padding-top: 40px;
+		padding-top: 36px;
 		padding-left: 70px;
 		padding-right: 70px;
 }
 .intro a{
-		font:26px Arial, Helvetica, sans-serif;
+		font:20px Arial, Helvetica, sans-serif;
 		color:#19466c;
 		text-decoration:none;
 		font-weight:bold;
 }
 .intro a:hover{
-		font:26px Arial, Helvetica, sans-serif;
+		font:20px Arial, Helvetica, sans-serif;
 		color:#00ccff;
 		text-decoration:none;
 		font-weight:bold;
 }
 .intro img{
-		width: 350px;
+		width: 300px;
 }
 .intro_table{
-		width: 1550px;
+		width: 1350px;
 		margin: auto;
 }
 .intro td{
@@ -170,478 +170,363 @@ body{
 		vertical-align: top;
 }
 .intro_arrow img{
-		width: 200px;		
+		width: 170px;		
 }
 .iso9001{
 		float: right;
 		margin-top: -60px;
-		margin-right: 90px;
-		height: 170px;
+		margin-right: 70px;
+		height: 150px;
 }
 .iso9001 img{
-		width: 150px;
-}
-#tele_ancor {
-		background: url("/bitrix/templates/poligon_i/images/tele_ancor.jpg") no-repeat;
-		background-size: 100%;
-		height: 440px;
+		width: 120px;
 }
 .tele_page{
-		height: 800px;
-		background: #7ab51d;
+		height: 600px;
+		background: #fff;
 		width: 100%;
-		margin-top: -70px;
+		margin-top: -50px;
 }
 .tele_page h1{
-		font:46px Arial, Helvetica, sans-serif;
+		font:36px Arial, Helvetica, sans-serif;
 		color:#000000;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: center;
-		padding-top: 40px;
-}
-.tele_story{
-		width: 900px;
-		margin: auto;
-		font:20px Arial, Helvetica, sans-serif;
-		color:#fff;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
+		padding-top: 36px;
 }
 .tele_page a{
-		font:26px Arial, Helvetica, sans-serif;
+		font:20px Arial, Helvetica, sans-serif;
 		color:#000000;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
 }
 .tele_page a:hover{
-		font:26px Arial, Helvetica, sans-serif;
-		#color:#80bd01;
-		color:#fff;
+		font:20px Arial, Helvetica, sans-serif;
+		color:#80bd01;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
-}
-#citel_ancor {
-		background: url("/bitrix/templates/poligon_i/images/citel_ancor.jpg") no-repeat;
-		background-size: 100%;
-		height: 440px;
 }
 .citel_page{
-		font:26px Arial, Helvetica, sans-serif;
-		color:#afb6bc;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-		height: 800px;
-		background: #fdffbb;
-		width: 100%;
-		margin-top: -50px;
-}
-.citel_page h1{
-		font:46px Arial, Helvetica, sans-serif;
-		color:#afb6bc;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: center;
-		padding-top: 40px;
-}
-.citel_story{
-		width: 1100px;
-		margin: auto;
 		font:20px Arial, Helvetica, sans-serif;
 		color:#afb6bc;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
+		height: 550px;
+		background: #fff;
+		width: 100%;
+		margin-top: -50px;
+}
+.citel_page h1{
+		font:36px Arial, Helvetica, sans-serif;
+		color:#afb6bc;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: center;
+		padding-top: 36px;
 }
 .citel_page a{
-		font:26px Arial, Helvetica, sans-serif;
+		font:20px Arial, Helvetica, sans-serif;
 		color:#afb6bc;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
 }
 .citel_page a:hover{
-		font:26px Arial, Helvetica, sans-serif;
+		font:20px Arial, Helvetica, sans-serif;
 		color:#ffd80e;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
 }
-#benedict_ancor {
-		background: url("/bitrix/templates/poligon_i/images/benedict_ancor.jpg") no-repeat;
-		background-size: 100%;
-		height: 440px;
-}
 .benedict_page{
-		height: 800px;
-		background: #b5fff7;
+		height: 450px;
+		background: #ffffff;
 		width: 100%;
 		margin-top: -50px;
 }
 .benedict_page h1{
-		font:46px Arial, Helvetica, sans-serif;
+		font:36px Arial, Helvetica, sans-serif;
 		color:#127e6f;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: center;
-		padding-top: 40px;
+		padding-top: 36px;
 }
-.benedict_story{
-		width: 1000px;
-		margin: auto;
+.benedict_page a{
 		font:20px Arial, Helvetica, sans-serif;
 		color:#127e6f;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
 }
-.benedict_page a{
-		font:26px Arial, Helvetica, sans-serif;
-		color:#127e6f;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
 .benedict_page a:hover{
-		font:26px Arial, Helvetica, sans-serif;
+		font:20px Arial, Helvetica, sans-serif;
 		color:#808185;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
 }
-#graesslin_ancor {
-		#position: relative;
-		#display:block;
-		#margin-bottom: 230px;
-		background: url("/bitrix/templates/poligon_i/images/graesslin_ancor.jpg") no-repeat;
-		background-size: 100%;
-		height: 220px;
-}
 .graesslin_page{
-		height: 500px;
+		height: 450px;
 		background: #fff;
 		width: 100%;
 		margin-top: -50px;
 }
 .graesslin_page h1{
-		font:46px Arial, Helvetica, sans-serif;
+		font:36px Arial, Helvetica, sans-serif;
 		color:#8a8b8d;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: center;
-		padding-top: 40px;
+		padding-top: 36px;
 }
 .graesslin_page a{
-		font:26px Arial, Helvetica, sans-serif;
+		font:20px Arial, Helvetica, sans-serif;
 		color:#8a8b8d;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
 }
 .graesslin_page a:hover{
-		font:26px Arial, Helvetica, sans-serif;
+		font:20px Arial, Helvetica, sans-serif;
 		color:#b9074a;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
 }
-#sonder_ancor {
-		#position: relative;
-		#display:block;
-		#margin-bottom: 230px;
-		background: url("/bitrix/templates/poligon_i/images/sonder_ancor.jpg") no-repeat;
-		background-size: 100%;
-		height: 220px;
-}
 .sonder_page{
-		height: 500px;
+		height: 450px;
 		background: #fff;
 		width: 100%;
 		margin-top: -50px;
 }
 .sonder_page h1{
-		font:46px Arial, Helvetica, sans-serif;
+		font:36px Arial, Helvetica, sans-serif;
 		color:#0268b3;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: center;
-		padding-top: 40px;
+		padding-top: 36px;
 }
 .sonder_page a{
-		font:26px Arial, Helvetica, sans-serif;
+		font:20px Arial, Helvetica, sans-serif;
 		color:#0268b3;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
 }
 .sonder_page a:hover{
-		font:26px Arial, Helvetica, sans-serif;
+		font:20px Arial, Helvetica, sans-serif;
 		color:#73b9ed;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
 }
-#relequick_ancor {
-		#position: relative;
-		#display:block;
-		#margin-bottom: 230px;
-		background: url("/bitrix/templates/poligon_i/images/relequick_ancor.jpg") no-repeat;
-		background-size: 100%;
-		height: 220px;
-}
 .relequick_page{
-		height: 550px;
+		height: 500px;
 		background: #fff;
 		width: 100%;
 		margin-top: -50px;
 }
 .relequick_page h1{
-		font:46px Arial, Helvetica, sans-serif;
+		font:36px Arial, Helvetica, sans-serif;
 		color:#000;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: center;
-		padding-top: 40px;
+		padding-top: 36px;
 }
 .relequick_page a{
-		font:26px Arial, Helvetica, sans-serif;
+		font:20px Arial, Helvetica, sans-serif;
 		color:#000;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
 }
 .relequick_page a:hover{
-		font:26px Arial, Helvetica, sans-serif;
+		font:20px Arial, Helvetica, sans-serif;
 		color:#920833;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
 }
-#comat_releco_ancor {
-		#position: relative;
-		#display:block;
-		#margin-bottom: 230px;
-		background: url("/bitrix/templates/poligon_i/images/comat-releco_ancor.jpg") no-repeat;
-		background-size: 100%;
-		height: 220px;
-}
 .comat_releco_page{
-		height: 500px;
+		height: 450px;
 		background: #fff;
 		width: 100%;
 		margin-top: -50px;
 }
 .comat_releco_page h1{
-		font:46px Arial, Helvetica, sans-serif;
+		font:36px Arial, Helvetica, sans-serif;
 		color:#006ab0;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: center;
-		padding-top: 40px;
+		padding-top: 36px;
 }
 .comat_releco_page a{
-		font:26px Arial, Helvetica, sans-serif;
+		font:20px Arial, Helvetica, sans-serif;
 		color:#006ab0;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
 }
 .comat_releco_page a:hover{
-		font:26px Arial, Helvetica, sans-serif;
+		font:20px Arial, Helvetica, sans-serif;
 		color:#60bff7;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
 }
-#emko_ancor {
-		#position: relative;
-		#display:block;
-		#margin-bottom: 230px;
-		background: url("/bitrix/templates/poligon_i/images/emko_ancor.jpg") no-repeat;
-		background-size: 100%;
-		height: 220px;
-}
 .emko_page{
-		height: 700px;
+		height: 650px;
 		background: #fff;
 		width: 100%;
 		margin-top: -50px;
 }
 .emko_page h1{
-		font:46px Arial, Helvetica, sans-serif;
+		font:36px Arial, Helvetica, sans-serif;
 		color:#3c59ff;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: center;
-		padding-top: 40px;
+		padding-top: 36px;
 }
 .emko_page a{
-		font:26px Arial, Helvetica, sans-serif;
+		font:20px Arial, Helvetica, sans-serif;
 		color:#3c59ff;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
 }
 .emko_page a:hover{
-		font:26px Arial, Helvetica, sans-serif;
+		font:20px Arial, Helvetica, sans-serif;
 		color:#6f84fe;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
 }
-#cbi_ancor {
-		#position: relative;
-		#display:block;
-		#margin-bottom: 230px;
-		background: url("/bitrix/templates/poligon_i/images/cbi_ancor.jpg") no-repeat;
-		background-size: 100%;
-		height: 220px;
-}
 .cbi_page{
-		height: 600px;
+		height: 550px;
 		background: #fff;
 		width: 100%;
 		margin-top: -50px;
 }
 .cbi_page h1{
-		font:46px Arial, Helvetica, sans-serif;
+		font:36px Arial, Helvetica, sans-serif;
 		color:#000;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: center;
-		padding-top: 40px;
+		padding-top: 36px;
 }
 .cbi_page a{
-		font:26px Arial, Helvetica, sans-serif;
+		font:20px Arial, Helvetica, sans-serif;
 		color:#000;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
 }
 .cbi_page a:hover{
-		font:26px Arial, Helvetica, sans-serif;
+		font:20px Arial, Helvetica, sans-serif;
 		color:#d02128;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
 }
-#huber_suhner_ancor {
-		#position: relative;
-		#display:block;
-		#margin-bottom: 230px;
-		background: url("/bitrix/templates/poligon_i/images/huber-suhner_ancor.jpg") no-repeat;
-		background-size: 100%;
-		height: 220px;
-}
 .huber_suhner_page{
-		font:26px Arial, Helvetica, sans-serif;
+		font:20px Arial, Helvetica, sans-serif;
 		color:#005192;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
-		height: 500px;
+		height: 450px;
 		background: #fff;
 		width: 100%;
 		margin-top: -50px;
 }
 .huber_suhner_page h1{
-		font:46px Arial, Helvetica, sans-serif;
+		font:36px Arial, Helvetica, sans-serif;
 		color:#005192;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: center;
-		padding-top: 40px;
+		padding-top: 36px;
 }
 .huber_suhner_page a{
-		font:26px Arial, Helvetica, sans-serif;
+		font:20px Arial, Helvetica, sans-serif;
 		color:#005192;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
 }
 .huber_suhner_page a:hover{
-		font:26px Arial, Helvetica, sans-serif;
+		font:20px Arial, Helvetica, sans-serif;
 		color:#000;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
 }
-#farnell_ancor {
-		#position: relative;
-		#display:block;
-		#margin-bottom: 230px;
-		background: url("/bitrix/templates/poligon_i/images/farnell_ancor.jpg") no-repeat;
-		background-size: 100%;
-		height: 220px;
-}
 .farnell_page{
-		font:26px Arial, Helvetica, sans-serif;
+		font:20px Arial, Helvetica, sans-serif;
 		color:#ff6600;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
-		height: 700px;
+		height: 650px;
 		background: #fff;
 		width: 100%;
 		margin-top: -50px;
 }
 .farnell_page h1{
-		font:46px Arial, Helvetica, sans-serif;
+		font:36px Arial, Helvetica, sans-serif;
 		color:#ff6600;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: center;
-		padding-top: 40px;
+		padding-top: 36px;
 }
 .farnell_page a{
-		font:26px Arial, Helvetica, sans-serif;
+		font:20px Arial, Helvetica, sans-serif;
 		color:#ff6600;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
 }
 .farnell_page a:hover{
-		font:26px Arial, Helvetica, sans-serif;
+		font:20px Arial, Helvetica, sans-serif;
 		color:#ff6600;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
 }
-#vemer_ancor {
-		#position: relative;
-		#display:block;
-		#margin-bottom: 230px;
-		background: url("/bitrix/templates/poligon_i/images/vemer_ancor.jpg") no-repeat;
-		background-size: 100%;
-		height: 220px;
-}
 .vemer_page{
-		height: 700px;
+		height: 550px;
 		background: #fff;
 		width: 100%;
 		margin-top: -50px;
 }
 .vemer_page h1{
-		font:46px Arial, Helvetica, sans-serif;
+		font:36px Arial, Helvetica, sans-serif;
 		color:#ff0d01;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: center;
-		padding-top: 40px;
+		padding-top: 36px;
 }
 .vemer_page a{
-		font:26px Arial, Helvetica, sans-serif;
+		font:20px Arial, Helvetica, sans-serif;
 		color:#ff0d01;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
 }
 .vemer_page a:hover{
-		font:26px Arial, Helvetica, sans-serif;
+		font:20px Arial, Helvetica, sans-serif;
 		color:#9f0903;
 		text-decoration:none;
 		font-weight:bold;
@@ -670,7 +555,7 @@ body{
 		display:inline;
 }
 .footer_container li a{
-	font:16px Arial, Helvetica, sans-serif;
+	font:14px Arial, Helvetica, sans-serif;
 	color:#fff;
 	text-decoration:none;
 	font-weight: bold;
@@ -679,5 +564,5 @@ body{
 	color:#fff;
 }
 .footer_container p{
-		font:12px Arial, Helvetica, sans-serif;
+		font:11px Arial, Helvetica, sans-serif;
 }

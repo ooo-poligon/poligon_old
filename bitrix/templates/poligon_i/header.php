@@ -8,7 +8,13 @@
 <meta charset=utf-8>
 <title><?$APPLICATION->ShowTitle()?></title>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-<link href="<?=$APPLICATION->GetTemplatePath();?>template_styles.css.gz" rel="stylesheet" type="text/css" />
+<link href="<?=$APPLICATION->GetTemplatePath();?>template_styles.css" rel="stylesheet" type="text/css" media="(min-width: 1600px)" />
+<link href="<?=$APPLICATION->GetTemplatePath();?>style_1600.css" rel="stylesheet" type="text/css" media="(max-width: 1599px)"  />
+<link href="<?=$APPLICATION->GetTemplatePath();?>style_1400.css" rel="stylesheet" type="text/css" media="(max-width: 1399px)"  />
+<link href="<?=$APPLICATION->GetTemplatePath();?>style_1280.css" rel="stylesheet" type="text/css" media="(max-width: 1279px)"  />
+<link href="<?=$APPLICATION->GetTemplatePath();?>style_1024.css" rel="stylesheet" type="text/css" media="(max-width: 1023px)"  />
+<link href="<?=$APPLICATION->GetTemplatePath();?>style_800.css" rel="stylesheet" type="text/css" media="(max-width: 799px)"  />
+<link href="<?=$APPLICATION->GetTemplatePath();?>style_640.css" rel="stylesheet" type="text/css" media="(max-width: 639px)"  />
 </head>
 <!--#################################################################################################################-->
 <body>
@@ -30,19 +36,19 @@
 			<li class="site_menu_li">
 				<a href="/certificates/">сертификаты</a>
 			</li>
-			<li class="site_menu_li">
+			<li class="site_menu_li_last">
 				<a href="/content/contacts/">контакты</a>
 			</li>
 		</ul>
 	</nav>
 	<p class="phone">
-		<img class="phone_image" src="/bitrix/templates/poligon_i/images/phone.gif" alt="(812)325-42-20"/>
+		(812) 325-42-20
 	</p>
 <div class="partners">
 <table class="partners_table">
 <tr>
 <td>
-<a href="/catalog/index.php?SECTION_ID=142"><img class="partners_logo" src="/images/logo/logo_200/tele_grey.gif" alt="TELE" title="реле времени и контроля из Австрии"
+<a href="#tele_ancor"><img class="partners_logo" src="/images/logo/logo_200/tele_grey.gif" alt="TELE" title="реле времени и контроля из Австрии"
 
 onmouseover="this.src='/images/logo/logo_200/tele.gif';"
 onmouseout="this.src='/images/logo/logo_200/tele_grey.gif';"
@@ -50,7 +56,7 @@ onmouseout="this.src='/images/logo/logo_200/tele_grey.gif';"
 /></a>
 </td>
 <td>
-<a href="/catalog/index.php?SECTION_ID=5094"><img class="partners_logo" src="/images/logo/logo_200/benedict_grey.gif" alt="Benedict" title="Контакторы, пускатели, защита Benedict"
+<a href="#benedict_ancor"><img class="partners_logo" src="/images/logo/logo_200/benedict_grey.gif" alt="Benedict" title="Контакторы, пускатели, защита Benedict"
 
 onmouseover="this.src='/images/logo/logo_200/benedict.gif';"
 onmouseout="this.src='/images/logo/logo_200/benedict_grey.gif';"
@@ -58,7 +64,7 @@ onmouseout="this.src='/images/logo/logo_200/benedict_grey.gif';"
 /></a>
 </td>
 <td>
-<a href="/catalog/index.php?SECTION_ID=74">  <img class="partners_logo" src="/images/logo/logo_200/citel_grey.gif" alt="CITEL" title="CITEL - устройства молниезащиты"
+<a href="#citel_ancor">  <img class="partners_logo" src="/images/logo/logo_200/citel_grey.gif" alt="CITEL" title="CITEL - устройства молниезащиты"
 
 onmouseover="this.src='/images/logo/logo_200/citel.gif';"
 onmouseout="this.src='/images/logo/logo_200/citel_grey.gif';"
@@ -66,7 +72,7 @@ onmouseout="this.src='/images/logo/logo_200/citel_grey.gif';"
 /></a>
 </td>
 <td>
-<a href="/catalog/index.php?SECTION_ID=5414"><img class="partners_logo" src="/images/logo/logo_200/graesslin_grey.gif" alt="Graesslin" title="Graesslin - таймеры и фотореле. Сделано в Германии."
+<a href="#graesslin_ancor"><img class="partners_logo" src="/images/logo/logo_200/graesslin_grey.gif" alt="Graesslin" title="Graesslin - таймеры и фотореле. Сделано в Германии."
 
 onmouseover="this.src='/images/logo/logo_200/graesslin.gif';"
 onmouseout="this.src='/images/logo/logo_200/graesslin_grey.gif';"
@@ -74,7 +80,7 @@ onmouseout="this.src='/images/logo/logo_200/graesslin_grey.gif';"
 /></a>
 </td>
 <td>
-<a href="/catalog/index.php?SECTION_ID=5535"><img class="partners_logo" src="/images/logo/logo_200/sonder_grey.gif" alt="SONDER" title="SONDER - термостаты"
+<a href="#sonder_ancor"><img class="partners_logo" src="/images/logo/logo_200/sonder_grey.gif" alt="SONDER" title="SONDER - термостаты"
 
 onmouseover="this.src='/images/logo/logo_200/sonder.gif';"
 onmouseout="this.src='/images/logo/logo_200/sonder_grey.gif';"
@@ -82,7 +88,7 @@ onmouseout="this.src='/images/logo/logo_200/sonder_grey.gif';"
 /></a>
 </td>
 <td>
-<a href="/catalog/index.php?SECTION_ID=5818"><img class="partners_logo" src="/images/logo/logo_200/relequick_grey.gif" alt="RELEQUICK" title="RELEQUICK - интерфейсные реле"
+<a href="#relequick_ancor"><img class="partners_logo" src="/images/logo/logo_200/relequick_grey.gif" alt="RELEQUICK" title="RELEQUICK - интерфейсные реле"
 
 onmouseover="this.src='/images/logo/logo_200/relequick.gif';"
 onmouseout="this.src='/images/logo/logo_200/relequick_grey.gif';"
@@ -92,7 +98,7 @@ onmouseout="this.src='/images/logo/logo_200/relequick_grey.gif';"
 </tr>
 <tr>
 <td>
-<a href="/catalog/index.php?SECTION_ID=77"> <img class="partners_logo" src="/images/logo/logo_200/comat_releco_grey.gif" alt="COMAT-RELECO" title="COMAT-RELECO - промышленные промежуточные реле"
+<a href="#comat_releco_ancor"> <img class="partners_logo" src="/images/logo/logo_200/comat_releco_grey.gif" alt="COMAT-RELECO" title="COMAT-RELECO - промышленные промежуточные реле"
 
 onmouseover="this.src='/images/logo/logo_200/comat_releco.gif';"
 onmouseout="this.src='/images/logo/logo_200/comat_releco_grey.gif';"
@@ -100,7 +106,7 @@ onmouseout="this.src='/images/logo/logo_200/comat_releco_grey.gif';"
 /></a>
 </td>
 <td>
-<a href="/catalog/index.php?SECTION_ID=5583"><img class="partners_logo" src="/images/logo/logo_200/emko_grey.gif" alt="EMKO" title="EMKO - температурные датчики и и контроллеры"
+<a href="#emko_ancor"><img class="partners_logo" src="/images/logo/logo_200/emko_grey.gif" alt="EMKO" title="EMKO - температурные датчики и и контроллеры"
 
 onmouseover="this.src='/images/logo/logo_200/emko.gif';"
 onmouseout="this.src='/images/logo/logo_200/emko_grey.gif';"
@@ -108,7 +114,7 @@ onmouseout="this.src='/images/logo/logo_200/emko_grey.gif';"
 /></a>
 </td>
 <td>
-<a href="/catalog/index.php?SECTION_ID=5512"><img class="partners_logo" src="/images/logo/logo_200/cbi_grey.gif" alt="CBI" title="Профессиональные автоматические выключатели"
+<a href="#cbi_ancor"><img class="partners_logo" src="/images/logo/logo_200/cbi_grey.gif" alt="CBI" title="Профессиональные автоматические выключатели"
 
 onmouseover="this.src='/images/logo/logo_200/cbi.gif';"
 onmouseout="this.src='/images/logo/logo_200/cbi_grey.gif';"
@@ -116,7 +122,7 @@ onmouseout="this.src='/images/logo/logo_200/cbi_grey.gif';"
 /></a>
 </td>
 <td>
-<a href="/catalog/index.php?SECTION_ID=4847"><img class="partners_logo" src="/images/logo/logo_200/huber-suhner_grey.gif" alt="HUBER+SUHNER" title="ВЧ-разъемы, оптические компоненты"
+<a href="#huber_suhner_ancor"><img class="partners_logo" src="/images/logo/logo_200/huber-suhner_grey.gif" alt="HUBER+SUHNER" title="ВЧ-разъемы, оптические компоненты"
 
 onmouseover="this.src='/images/logo/logo_200/huber-suhner.gif';"
 onmouseout="this.src='/images/logo/logo_200/huber-suhner_grey.gif';"
@@ -124,7 +130,7 @@ onmouseout="this.src='/images/logo/logo_200/huber-suhner_grey.gif';"
 /></a>
 </td>
 <td>
-<a href="/special/farnell.php"><img class="partners_logo" src="/images/logo/logo_200/farnell_grey.gif" alt="FARNELL" title="мировой лидер в области поставок электронных компонентов"
+<a href="#farnell_ancor"><img class="partners_logo" src="/images/logo/logo_200/farnell_grey.gif" alt="FARNELL" title="мировой лидер в области поставок электронных компонентов"
 
 onmouseover="this.src='/images/logo/logo_200/farnell.gif';"
 onmouseout="this.src='/images/logo/logo_200/farnell_grey.gif';"
@@ -132,7 +138,7 @@ onmouseout="this.src='/images/logo/logo_200/farnell_grey.gif';"
 /></a>
 </td>
 <td>
-<a href="/catalog/index.php?SECTION_ID=5650"><img class="partners_logo" src="/images/logo/logo_200/vemer_grey.gif" alt="VEMER" title="производитель промышленных решений для измерения и контроля основных электрических параметров"
+<a href="#vemer_ancor"><img class="partners_logo" src="/images/logo/logo_200/vemer_grey.gif" alt="VEMER" title="производитель промышленных решений для измерения и контроля основных электрических параметров"
 
 onmouseover="this.src='/images/logo/logo_200/vemer.gif';"
 onmouseout="this.src='/images/logo/logo_200/vemer_grey.gif';"
@@ -151,7 +157,7 @@ onmouseout="this.src='/images/logo/logo_200/vemer_grey.gif';"
 <section class="intro">
 	<article>
 		<header>
-			<h1>Специализация компании</h1>
+			<h1>СПЕЦИАЛИЗАЦИЯ КОМПАНИИ</h1>
 		</header>
 	<table class="intro_table">
 	<tr>
@@ -173,35 +179,39 @@ onmouseout="this.src='/images/logo/logo_200/vemer_grey.gif';"
 		<img src="/bitrix/templates/poligon_i/images/pic2.jpg" />
 		</td>
 	</tr>
+		<tr>
+		<td class="intro_arrow">
+		<img src="/bitrix/templates/poligon_i/images/arrow-down.gif" align="left" />
+		</td>
+		<td>
+			<h2>Мы сотрудничаем со следующими производителями:</h2>
+		</td>
+		<td class="intro_arrow">
+		<img src="/bitrix/templates/poligon_i/images/arrow-down.gif" align="right" />
+		</td>
+		</tr>
 	</table>
 	</article>
 </section>
-<section class="our_partners">
-	<article>
-	<table>
-		<tr>
-		<td>
-		<img src="/bitrix/templates/poligon_i/images/arrow-down.gif" />
-		</td>
-		<td>
-			<h1>Мы сотрудничаем со следующими производителями:</h1>
-		</td>
-		<td>
-		<img src="/bitrix/templates/poligon_i/images/arrow-down.gif" />
-		</td>
-		</tr>
-	</table>		
-	</article>
-</section>
+<div id="tele_ancor"></div>
 <section class="tele_page">
 <article>
-		<header>
-			<h1>ПРОМЫШЛЕННАЯ АВТОМАТИЗАЦИЯ TELE</h1>
-		</header>
+	<header>
+		<h1>ПРОМЫШЛЕННАЯ АВТОМАТИЗАЦИЯ TELE</h1>
+	</header>
+	<p class="tele_story">
+			= 50 лет на рынке промышленной автоматизации<br>
+			= второе место в мире по количеству выпускаемых реле времени и контроля<br>
+			= наиболее широкая номенклатура реле времени и контроля на рынке<br>
+			= разработка и производство находятся в г. Вена, Австрия<br>
+			= реле TELE широко продаются под известными брэндами<br>
+			= собственные инновационные разработки<br>
+			= 6 лет в России
+	</p>
 	<table class="intro_table">
 	<tr>
 		<td>
-		<img src="/bitrix/templates/poligon_i/images/tele-logo.png" />
+		<img src="/bitrix/templates/poligon_i/images/tele-logo.png" align="left"  />
 		</td>
 		<td>
 		<ul>
@@ -221,21 +231,31 @@ onmouseout="this.src='/images/logo/logo_200/vemer_grey.gif';"
 		</ul>
 		</td>
 		<td>
-		<img src="/bitrix/templates/poligon_i/images/tele-device.gif" />
+		<img src="/bitrix/templates/poligon_i/images/tele-device.gif" align="right"  />
 		</td>
 	</tr>
 	</table>
 		</article>
 </section>
+<div id="citel_ancor"></div>
 <section class="citel_page">
 	<article>
 	<header>
 		<h1>МОЛНИЕЗАЩИТА / ГРОЗОЗАЩИТА</h1>
 	</header>
+	<p class="citel_story">
+		Компания CITEL — лидер в области защиты от повышения напряжения. Международный электротехнический концерн CITEL, основанный в 1937 году во Франции, специализируется в разработках и производстве систем грозозащиты и устройств защиты от импульсных перенапряжений (УЗИП).
+		<br>
+		Концерн CITEL предлагает экспертизу, консультации и профессиональные решения по грозозащите и защите от импульсных перенапряжений в электрических и слаботочных сетях и коаксиальных кабелях.
+		<br>
+		УЗИП защищают электрические цепи, чувствительные электронные приборы и обслуживающий персонал от опасных и разрушающих последствий импульсного перенапряжения, причиной которых могут быть как естественные явления (молния) так и работа, и эксплуатация промышленных установок.
+		<br>
+		Ежегодно CITEL производит более 30 миллионов газоразрядников и более 300 тыс. модулей защиты от импульсного перенапряжения.<br>
+	</p>
 	<table class="intro_table">
 		<tr>
 		<td>
-		<img src="/bitrix/templates/poligon_i/images/citel-logo.gif" />
+		<img src="/bitrix/templates/poligon_i/images/citel-logo.gif" align="left"  />
 		</td>
 		<td>
 		<ul>
@@ -250,21 +270,25 @@ onmouseout="this.src='/images/logo/logo_200/vemer_grey.gif';"
 		</ul>
 		</td>
 		<td>
-		<img src="/bitrix/templates/poligon_i/images/citel-device.gif" />
+		<img src="/bitrix/templates/poligon_i/images/citel-device.gif" align="right"  />
 		</td>
 		</tr>
 	</table>
 	</article>
 </section>
+<div id="benedict_ancor"></div>
 <section class="benedict_page">
 	<article>
 	<header>
 		<h1>КОММУТАЦИОННАЯ АППАРАТУРА</h1>
 	</header>
+	<p class="benedict_story">
+		Компания Benedict более 90 лет специализируется в производстве контакторов, пускателей и переключателей. <br>Разработка и производство находятся в г. Вена, Австрия. Контакторы и пускатели Benedict широко известны по всему миру и обладают отличными характеристиками, дающими существенное преимущество перед другими производителями: <br>компактность и отсутствие температурной зависимости в широком диапазоне рабочих температур (от -40 до +90°С). <br>Изделия отличаются высокой надежностью. Исчерпывающая номенклатура.<br><br>
+	</p>
 	<table class="intro_table">
 		<tr>
 		<td>
-		<img src="/bitrix/templates/poligon_i/images/benedict-logo.gif" />
+		<img src="/bitrix/templates/poligon_i/images/benedict-logo.gif" align="left"  />
 		</td>
 		<td>
 		<ul>
@@ -280,12 +304,13 @@ onmouseout="this.src='/images/logo/logo_200/vemer_grey.gif';"
 	</ul>
 		</td>
 		<td>
-		<img src="/bitrix/templates/poligon_i/images/benedict-device.gif" />
+		<img src="/bitrix/templates/poligon_i/images/benedict-device.gif" align="right"  />
 		</td>
 		</tr>
 	</table>
 	</article>
 </section>
+<div id="graesslin_ancor"></div>
 <section class="graesslin_page">
 	<article>
 	<header>
@@ -294,7 +319,7 @@ onmouseout="this.src='/images/logo/logo_200/vemer_grey.gif';"
 	<table class="intro_table">
 		<tr>
 		<td>
-		<img src="/bitrix/templates/poligon_i/images/graeslin-logo.gif" />
+		<img src="/bitrix/templates/poligon_i/images/graeslin-logo.gif" align="left"  />
 		</td>
 		<td>
 	<ul>
@@ -308,12 +333,13 @@ onmouseout="this.src='/images/logo/logo_200/vemer_grey.gif';"
 	</ul>
 		</td>
 		<td>
-		<img src="/bitrix/templates/poligon_i/images/graeslin-device.gif" />
+		<img src="/bitrix/templates/poligon_i/images/graeslin-device.gif" align="right"  />
 		</td>
 		</tr>
 	</table>
 	</article>
 </section>
+<div id="sonder_ancor"></div>
 <section class="sonder_page">
 	<article>
 	<header>
@@ -322,20 +348,21 @@ onmouseout="this.src='/images/logo/logo_200/vemer_grey.gif';"
 	<table class="intro_table">
 		<tr>
 		<td>
-		<img src="/bitrix/templates/poligon_i/images/sonder-logo.gif" />
+		<img src="/bitrix/templates/poligon_i/images/sonder-logo.gif" align="left"  />
 		</td>
 		<td>
 	<ul>
-		<li><a href="/catalog/index.php?SECTION_ID=5415">механические комнатные термостаты</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=5536">механические комнатные термостаты</a></li>
 	</ul>
 		</td>
 		<td>
-		<img src="/bitrix/templates/poligon_i/images/sonder-device.gif" />
+		<img src="/bitrix/templates/poligon_i/images/sonder-device.gif" align="right"  />
 		</td>
 		</tr>
 	</table>
 	</article>
 </section>
+<div id="relequick_ancor"></div>
 <section class="relequick_page">
 	<article>
 	<header>
@@ -344,67 +371,182 @@ onmouseout="this.src='/images/logo/logo_200/vemer_grey.gif';"
 	<table class="intro_table">
 		<tr>
 		<td>
-		<img src="/bitrix/templates/poligon_i/images/relequick-logo.gif" />
+		<img src="/bitrix/templates/poligon_i/images/relequick-logo.gif" align="left"  />
 		</td>
 		<td>
 	<ul>
-		<li><a href="/catalog/index.php?SECTION_ID=5415">Интерфейсные реле (6.2мм)</a></li>
-		<li><a href="/catalog/index.php?SECTION_ID=5415">Твердотельные реле</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=5819">интерфейсные реле (6.2мм)</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=5931">твердотельные реле</a></li>
 	</ul>
 		</td>
 		<td>
-		<img src="/bitrix/templates/poligon_i/images/relequick-device.gif" />
+		<img src="/bitrix/templates/poligon_i/images/relequick-device.gif" align="right"  />
 		</td>
 		</tr>
 	</table>
 	</article>
 </section>
+<div id="comat_releco_ancor"></div>
 <section class="comat_releco_page">
 	<article>
 	<header>
+		<h1>ПРОМЕЖУТОЧНЫЕ РЕЛЕ</h1>
 	</header>
-	<p>
-	</p>
+	<table class="intro_table">
+		<tr>
+		<td>
+		<img src="/bitrix/templates/poligon_i/images/comat-releco-logo.gif" align="left"  />
+		</td>
+		<td>
+	<ul>
+		<li><a href="/catalog/index.php?SECTION_ID=4851">промышленные реле</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=4866">миниатюрные реле</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=4867">интерфейсные реле</a></li>
+		<li><a href="">полупроводниковые реле</a></li>
+	</ul>
+		</td>
+		<td>
+		<img src="/bitrix/templates/poligon_i/images/comat-releco-device.gif" align="right"  />
+		</td>
+		</tr>
+	</table>
 	</article>
 </section>
+<div id="emko_ancor"></div>
 <section class="emko_page">
 	<article>
 	<header>
+		<h1>УСТРОЙСТВА ИЗМЕРЕНИЯ И УПРАВЛЕНИЯ</h1>
 	</header>
-	<p>
-	</p>
+	<table class="intro_table">
+		<tr>
+		<td>
+		<img src="/bitrix/templates/poligon_i/images/emko-logo.gif"  align="left" />
+		</td>
+		<td>
+	<ul>
+		<li><a href="/catalog/index.php?SECTION_ID=5584">Температурные контроллеры</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=5587">Таймеры и счётчики</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=5585">Температурные датчики</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=5586">Технологические контроллеры</a></li>
+	</ul>
+		</td>
+		<td>
+		<img src="/bitrix/templates/poligon_i/images/emko-device.gif" align="right"  />
+		</td>
+		</tr>
+	</table>
 	</article>
 </section>
+<div id="cbi_ancor"></div>
 <section class="cbi_page">
 	<article>
 	<header>
+		<h1>ПРОФЕССИОНАЛЬНЫЕ АВТОМАТИЧЕСКИЕ ВЫКЛЮЧАТЕЛИ</h1>
 	</header>
-	<p>
-	</p>
+	<table class="intro_table">
+		<tr>
+		<td>
+		<img src="/bitrix/templates/poligon_i/images/cbi-logo.gif"  align="left" />
+		</td>
+		<td>
+	<ul>
+		<li><a href="/catalog/index.php?SECTION_ID=5513">автоматические выключатели для промышленного использования</a></li>
+	</ul>
+		</td>
+		<td>
+		<img src="/bitrix/templates/poligon_i/images/cbi-device.gif" align="right"  />
+		</td>
+		</tr>
+	</table>
 	</article>
 </section>
+<div id="huber_suhner_ancor"></div>
 <section class="huber_suhner_page">
 	<article>
 	<header>
+		<h1>ВЫСОКОЧАСТОТНЫЕ КОМПОНЕНТЫ</h1>
 	</header>
-	<p>
-	</p>
+	<table class="intro_table">
+		<tr>
+		<td>
+		<img src="/bitrix/templates/poligon_i/images/huber_suhner-logo.gif" align="left" />
+		</td>
+		<td>
+	<ul>
+		<li>ВЧ-разъемы</li>
+		<li>ВЧ-адаптеры</li>
+		<li>кабели</li>
+		<li>кабельные сборки</li>
+		<li>антенны</li>
+		<li>грозоразрядники</li>
+		<li>сплиттеры</li>
+		<li>резистивные компоненты</li>
+	</ul>
+		</td>
+		<td>
+		<img src="/bitrix/templates/poligon_i/images/huber_suhner-device.gif" align="right"  />
+		</td>
+		</tr>
+	</table>
 	</article>
 </section>
+<div id="farnell_ancor"></div>
 <section class="farnell_page">
 	<article>
 	<header>
+		<h1>ЭЛЕКТРОННЫЕ КОМПОНЕНТЫ</h1>
 	</header>
-	<p>
-	</p>
+	<table class="intro_table">
+		<tr>
+		<td>
+		<img src="/bitrix/templates/poligon_i/images/farnell-logo.gif"  align="left" />
+		</td>
+		<td>
+	<ul>
+	<li>электроные компоненты (пассивные, полупроводниковые и т.п.)</li>
+	<li>ВЧ-разъемы и соединители</li>
+	<li>оптические компоненты</li>
+	<li>электротехнические изделия</li>
+	<li>компоненты АСУ</li>
+	<li>тестовое оборудование</li>
+	<li>кабель</li>
+	<li>комплектующие изделия и аксессуары</li>
+	</ul>
+		</td>
+		<td>
+		<img src="/bitrix/templates/poligon_i/images/farnell-device.gif" align="right"  />
+		</td>
+		</tr>
+	</table>
 	</article>
 </section>
+<div id="vemer_ancor"></div>
 <section class="vemer_page">
 	<article>
 	<header>
+		<h1>VEMER</h1>
 	</header>
-	<p>
-	</p>
+	<table class="intro_table">
+		<tr>
+		<td>
+		<img src="/bitrix/templates/poligon_i/images/vemer-logo.gif"  align="left" />
+		</td>
+		<td>
+	<ul>
+		<li><a href="/catalog/index.php?SECTION_ID=5703">Газ и безопасность</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=5664">Измерение и контроль</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=5651">Изоляторы и держатели шин</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=5670">Климат-контроль</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=5689">Регулирование физических величин</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=5679">Управление временем</a></li>
+	</ul>
+		</td>
+		<td>
+		<img src="/bitrix/templates/poligon_i/images/vemer-device.gif" align="right"  />
+		</td>
+		</tr>
+	</table>
 	</article>
 </section>
 <!--#################################################################################################################-->

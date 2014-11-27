@@ -1,28 +1,22 @@
 
 </section>
 <!--#################################################################################################################-->
-<footer>
-	<div class="footer_container">
-	<?$APPLICATION->IncludeComponent("bitrix:menu", "footer_menu", Array(
-		"ROOT_MENU_TYPE"	=>	"footer",
-		"MAX_LEVEL"	=>	"1",
-		"CHILD_MENU_TYPE"	=>	"left",
-		"USE_EXT"	=>	"N"
-		)
-	);?>
-		<img src="/images/round.gif"  style="position:relative; top:-46px; left:767px;" usemap="#map">
-		<map name="map">
-			<area shape="circle" coords="70,70,70" href="/PDF/cert/POLIGON_ISO9001.pdf" alt="Посмотреть сертификат">
-		</map>	
-	<div class="copyright">
-		<?$APPLICATION->IncludeFile(
-			$APPLICATION->GetTemplatePath("include_areas/copyright.php"),
-			Array(),
-			Array("MODE"=>"html")
-		);?>
-	</div>
-	</div>
+<footer class="footer_container">
+		<ul id="footer_list">
+
+			<li><a href="/content/about/">О компании</a></li>
+	
+			<li><a href="/content/contacts/">Контактная информация</a></li>
+	
+			<li><a href="/map.php">Карта сайта</a></li>
+	
+			<li><a href="/content/links/">Обмен ссылками</a></li>
+		</ul>
+		<p>© 2014 ООО "ПОЛИГОН"<br>Все права защищены</p>
 </footer>
+<!-- RedHelper -->
+<script id="rhlpscrtg" type="text/javascript" charset="utf-8" async="async" src="https://web.redhelper.ru/service/main.js?c=poligon"></script>
+<!--/Redhelper -->
 <!--#################################################################################################################-->
 </body>
 </html>
