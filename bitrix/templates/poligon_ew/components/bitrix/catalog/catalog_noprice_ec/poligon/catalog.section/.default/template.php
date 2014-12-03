@@ -8,7 +8,7 @@
 <table cellpadding="0" cellspacing="0" border="0" width="100%">
 <tr>
 	<th width="70%">Наименование</th>
-	<th width="10%">Произв.</th>
+	<th width="10%">Производитель</th>
 	<th width="10%" style="text-align:center">PDF</th>
 	<th width="10%" style="text-align:center">Склад</th>
 </tr>

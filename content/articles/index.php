@@ -2,17 +2,14 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Статьи по автоматизации и электротехническому оборудованию");?><h1>Публикации по автоматизации и электротехническому оборудованию</h1>
 
-
-
 <table>
 <tbody>
 <tr>
 <td width="50%">
-<div position="relative" top="1px">
 
 <h2>Статьи</h2>
  
-<ul class="mark"> 
+<ul> 
   <li><a href="/content/articles/sonder_ta.php">Комнатные термостаты SONDER - принцип работы и обзор моделей.</a></li>
  	 
   <li><a href="/content/articles/graesslin_mc.php">Достаточно полный обзор датчиков движения производства &quot;Graesslin&quot;, 
@@ -33,10 +30,34 @@ $APPLICATION->SetTitle("Статьи по автоматизации и электротехническому оборудован
  	 
   <li><a href="/content/articles/loadmonitors.php">Реле контроля мощности и cos &#966;: двигатель как датчик</a></li>
  </ul>
+</td>
+
+<td>
+<h2>Видео</h2>
  
+<ul> 
+  <li><a target="_self" href="/content/articles/video_links/citel1.php">УЗИП CITEL для защиты системы светодиодного оборудования.</a></li>
+ 
+  <li><a target="_self" href="/content/articles/video_links/citel2.php">УЗИП CITEL для защиты систем безопасности.</a></li>
+ 
+  <li><a target="_self" href="/content/articles/video_links/citel3.php">УЗИП CITEL для защиты промышленных объектов.</a></li>
+ 
+  <li><a target="_self" href="/content/articles/video_links/citel4.php">УЗИП CITEL для защиты фотоэлектрических станций от импульсных перенапряжений.</a></li>
+ 
+  <li><a target="_self" href="/content/articles/video_links/citel5.php">УЗИП CITEL для защиты фотоэлектрических систем (частное использование).</a></li>
+ 
+  <li><a target="_self" href="/content/articles/video_links/citel6.php">УЗИП CITEL для фотоэлектрических систем промышленных и общественных сооружений.</a></li>
+ 
+  <li><a target="_self" href="/content/articles/video_links/citel7.php">CITEL – эксперт по защите от импульсных перенапряжений.</a></li>
+ 
+</ul>
+</td> 
+</tr>
+<tr>
+<td width="50%">
 <h2>Обзоры</h2>
  
-<ul class="mark"> 	 
+<ul> 	 
   <li><a href="/content/articles/enya_range.php">Преимущества и обзор ассортимента серии ENYA</a></li>
  	 
   <li><a href="/content/articles/gas-discharge-tube.php">Газовые разрядники CITEL: принцип работы и технические особенности</a></li>
@@ -52,15 +73,12 @@ $APPLICATION->SetTitle("Статьи по автоматизации и электротехническому оборудован
   <li><a href="/rele/daily-time-switch.php">Суточные реле времени</a></li>
  </ul>
 
-</div>
-
 </td>
-<td>
-<div position="relative" top="1px">
+<td width="50%">
  
 <h2>Дополнительная информация</h2>
  
-<ul class="mark"> 	 
+<ul> 	 
   <li><a href="/content/articles/benedict-motor-full-load-currents.php">Таблица значений тока номинальной нагрузки двигателя</a></li>
  	 
   <li><a href="/content/articles/contactors-for-lighting.php">Таблица подбора модульных контакторов для коммутации ламп</a></li>
@@ -76,35 +94,6 @@ $APPLICATION->SetTitle("Статьи по автоматизации и электротехническому оборудован
   <li><a href="/content/articles/programming-timer.php">Программирование цифрового таймера talento pro</a></li>
  </ul>
  
-<h2>Видео</h2>
- <span></span> 
-<ul class="mark"> 
-  <li><a target="_self" href="/content/articles/video_links/citel1.php">УЗИП CITEL для защиты системы светодиодного оборудования.</a></li>
- 
-  <li><a target="_self" href="/content/articles/video_links/citel2.php">УЗИП CITEL для защиты систем безопасности.</a></li>
- 
-  <li><a target="_self" href="/content/articles/video_links/citel3.php">УЗИП CITEL для защиты промышленных объектов.</a></li>
- 
-  <li><a target="_self" href="/content/articles/video_links/citel4.php">УЗИП CITEL для защиты фотоэлектрических станций от импульсных перенапряжений.</a></li>
- 
-  <li><a target="_self" href="/content/articles/video_links/citel5.php">УЗИП CITEL для защиты фотоэлектрических систем (частное использование).</a></li>
- 
-  <li><a target="_self" href="/content/articles/video_links/citel6.php">УЗИП CITEL для фотоэлектрических систем промышленных и общественных сооружений.</a></li>
- 
-  <li><a target="_self" href="/content/articles/video_links/citel7.php">CITEL – эксперт по защите от импульсных перенапряжений.</a></li>
- 
-
-</ul>
-</div>
-
-
-<br />
-<br />
-<br />
-<br />
-
-
-
 </td>
 </tr>
 </tbody>
