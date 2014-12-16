@@ -96,7 +96,7 @@
 				= разработка и производство находятся в г. Вена, Австрия<br>
 				= реле TELE широко продаются под известными брэндами<br>
 				= собственные инновационные разработки<br>
-				= 6 лет в России<br><br><br><br><br><br><br><br><br><br><br><br><br>
+				= 6 лет в России<br><br><br><br><br><br><br>
 					<a href="#" id="return_tele_story">
 						<img src="/bitrix/templates/poligon_i/images/tele_arrow_hide.gif" alt="Скрыть" id="tele_hide_story_arrow" />
 					</a>
@@ -105,7 +105,9 @@
 			<img id="tele_logo" src="/bitrix/templates/poligon_i/images/tele-logo.png" align="left" />
 				<div style="height: 200px;"></div>
 				<a id="start_tele_story" href="#"><h2 id="tele_h2">Подробнее о компании TELE</h2></a>
-				<a id="start_tele_sertificates" href="#"><h2 id="tele_h2_1">Сертификаты на продукцию TELE</h2></a>				
+				<a id="start_tele_sertificates" href="#"><h2 id="tele_h2_1">Сертификаты на продукцию TELE</h2></a>
+				<a href="/pdf/index.php#tele_ancor"><h2 id="tele_h2_2">Каталоги продукции TELE</h2></a>
+				<a href="/content/feedback/catalog_order/catalogs.php"><h2 id="tele_h2_3"><span class="redline" >Бесплатный заказ</span> каталогов и CD</h2></a>
 			</div>
 		</div>
 		</td>

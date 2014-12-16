@@ -1,1 +1,0 @@
-<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?><table>	<tr>		<td style="vertical-align: top;">Наш адрес:</td><td> 197376, Санкт-Петербург,		<br/> ул. Льва Толстого, д. 7, оф. 501</td></tr></table> 

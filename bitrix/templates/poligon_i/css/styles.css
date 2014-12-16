@@ -241,18 +241,18 @@ a.PMtr2{text-decoration: none;}
 .hideImage{
 	display: none; 
 	position: absolute;
-	margin-left: 464px;
-	margin-top: -380px;
+	margin-left: -330px;
+	margin-top: -200px;
 	#opacity: 0.8}
 .hideImage img, img.hideImage{
 	width: 300px;
 	height: auto;
-	border: 2px double #3371b9;}
+	border: 2px double #19466c;}
 
 .hideImage p {
 	width: 300px;
 	text-align: center;
-	background: #3371b9; 
+	background: #19466c; 
 	color: white; 
 	font-weight: bold; 
 	padding: 0px; 
@@ -346,17 +346,7 @@ table.citel-zebra td,table.tele-zebra th{
 .citel-cs{background: #c8ebfc;}
 .citel-cs tr:nth-child(odd) {background-color: #91d9f8;}
 
-.partners {border-collapse: collapse;}
-.partners tr td:first-child{
-	text-align: center;
-	vertical-align: middle;
 
-}
-.partners td{
-	border: 1px silver solid;
-	vertical-align: top;
-}
-.partners td p{padding: 0px 8px;}
 
 /* для релеко, обновлённых страниц */
 .relecoLogos{float: right;}
@@ -589,3 +579,44 @@ table.cbi tr td:nth-of-type(4){text-align: center;}
 table.cbi tr th:nth-of-type(4){text-align: center;}
 /* для статей */
 /* 13.12.2012 - вынесено в /css/articles.css */
+
+
+
+#wrapperOrder{
+	background: white;
+	opacity: 0.2;
+	width: 100%;
+	position: fixed;
+	height: 100%;
+	top: 0;
+}
+#orderPopup {
+	background-color: white;
+	display: none;
+	position: fixed;
+	z-index: 100;
+	font-family: Sans;
+	width: 38%;
+	height: auto;
+	border-radius: 24px;
+	border-color: blue;
+	border-width: 1%;
+	border-style: solid;
+	top: 30%;
+	left: 30%;}
+#orderPopup p{
+	padding: 0 2%;
+	font-size: 12pt;
+}
+#orderPopup img#close{
+	cursor: pointer;
+	float: right;
+}
+#orderPopup h1{
+	margin: 0;
+	padding: 0 2%;
+	font-size: 100%;
+	background-color: blue;
+	color: white;
+	border-radius: 24px 24px 0px 0px;
+}

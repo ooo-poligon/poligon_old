@@ -323,9 +323,7 @@
 								Контактные телефоны: <br>(812) 335-3-665, <br>(812) 325-4220
 								
 								<p>Евтихиев Дмитрий: <br><a href="mailto:edn@poligon.info">edn@poligon.info</a>, <br>тел.: (812) 325-64-20 (доб. 141)<br></p> 
-								<p>Крутень Евгений: <br><a href="mailto:kruten@poligon.info">kruten@poligon.info</a>, <br>тел.: (812) 325-64-20 (доб. 148)<br></p>
-								<!--<li>Тихомиров Игорь: <br><a href="mailto:it@poligon.info">it@poligon.info</a>, <br>тел.: (812) 325-64-20 (доб. 145)<br></li>-->
-								
+								<p>Крутень Евгений: <br><a href="mailto:kruten@poligon.info">kruten@poligon.info</a>, <br>тел.: (812) 325-64-20 (доб. 148)<br></p>								
 							</p>
 						</div>
 						<div class="yandex_map"> 

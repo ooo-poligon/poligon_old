@@ -285,6 +285,13 @@ img{
 		width: 150px;
 		border: 4px solid #19466c;
 }
+.redline{
+		font:20px Arial, Helvetica, sans-serif;
+		color:#ff0000;
+		text-decoration: none;
+		font-weight:bold;
+		text-align: left;
+}
 #company_info{
 		width: 1550px;
 		margin: auto;

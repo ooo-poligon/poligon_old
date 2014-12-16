@@ -2,33 +2,77 @@
 <!DOCTYPE html>
 <html>
 <!--#################################################################################################################-->
-<head>
-<?$APPLICATION->ShowHead()?>
-<?//$APPLICATION->AddHeadScript();?>
-<meta charset=utf-8>
-<title><?$APPLICATION->ShowTitle()?></title>
-<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-<link href="/bitrix/templates/poligon_i/css/styles.css" rel="stylesheet" type="text/css" />
-<link href="/bitrix/templates/poligon_ibx/css/template_styles.css" rel="stylesheet" type="text/css" media="(min-width: 1600px)" />
-<link href="/bitrix/templates/poligon_i/css/style_1600.css" rel="stylesheet" type="text/css" media="(max-width: 1599px)"  />
-<link href="/bitrix/templates/poligon_i/css/style_1400.css" rel="stylesheet" type="text/css" media="(max-width: 1399px)"  />
-<link href="/bitrix/templates/poligon_i/css/style_1280.css" rel="stylesheet" type="text/css" media="(max-width: 1279px)"  />
-<link href="/bitrix/templates/poligon_i/css/style_1024.css" rel="stylesheet" type="text/css" media="(max-width: 1023px)"  />
-<link href="/bitrix/templates/poligon_i/css/style_800.css"  rel="stylesheet" type="text/css" media="(max-width: 799px)"  />
-<link href="/bitrix/templates/poligon_i/css/style_640.css"  rel="stylesheet" type="text/css" media="(max-width: 639px)"  />
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
-<script type="text/javascript" src="/bitrix/templates/poligon_i/js/jquery.min.js"></script>
-<script type="text/javascript" src="/bitrix/templates/poligon_i/js/jquery.localscroll.js"></script>
-<script type="text/javascript" src="/bitrix/templates/poligon_i/js/jquery.scrollto.js"></script>
-<script type="text/javascript" src="/bitrix/templates/poligon_i/js/height.js"></script>
-<script type="text/javascript" src="/bitrix/templates/poligon_i/js/screen.js"></script>
-<script type="text/javascript" src="/bitrix/templates/poligon_i/js/poligon_i_scripts.js"></script>
-</head>
+	<head>
+		<?$APPLICATION->ShowHead()?>
+		<?//$APPLICATION->AddHeadScript();?>
+		<meta charset=utf-8>
+		<title><?$APPLICATION->ShowTitle()?></title>
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+		<link href="/bitrix/templates/poligon_ibx/css/template_styles.css"        rel="stylesheet" type="text/css" media="(min-width: 1600px)" />
+		<link href="/bitrix/templates/poligon_ibx/css/resolutions/style_1600.css" rel="stylesheet" type="text/css" media="(max-width: 1599px)" />
+		<link href="/bitrix/templates/poligon_ibx/css/resolutions/style_1400.css" rel="stylesheet" type="text/css" media="(max-width: 1399px)" />
+		<link href="/bitrix/templates/poligon_ibx/css/resolutions/style_1280.css" rel="stylesheet" type="text/css" media="(max-width: 1279px)" />
+		<link href="/bitrix/templates/poligon_ibx/css/resolutions/style_1024.css" rel="stylesheet" type="text/css" media="(max-width: 1023px)" />
+		<link href="/bitrix/templates/poligon_ibx/css/resolutions/style_800.css"  rel="stylesheet" type="text/css" media="(max-width:  799px)" />
+		<link href="/bitrix/templates/poligon_ibx/css/resolutions/style_640.css"  rel="stylesheet" type="text/css" media="(max-width:  639px)" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="/bitrix/templates/poligon_i/js/jquery.min.js"></script>
+		<script type="text/javascript" src="/bitrix/templates/poligon_i/js/jquery.localscroll.js"></script>
+		<script type="text/javascript" src="/bitrix/templates/poligon_i/js/jquery.scrollto.js"></script>
+		<script type="text/javascript" src="/bitrix/templates/poligon_i/js/height.js"></script>
+		<script type="text/javascript" src="/bitrix/templates/poligon_i/js/screen.js"></script>
+		<script type="text/javascript" src="/bitrix/templates/poligon_i/js/poligon_i_scripts.js"></script>
+	</head>
 <!--#################################################################################################################-->
 <body>
 <?$APPLICATION->ShowPanel();?>
-<header class="top_bar">
-
+		<div style="position:fixed; height:100px;"></div>
+		<header class="top_bar">
+			<section id="special">
+				<div id="special_container">
+				<?
+					if(CModule::IncludeModule("iblock"))
+					{
+						//$i=0;
+						$arFilter = Array("IBLOCK_ID"=>8, "ACTIVE_DATE"=>"Y", "ACTIVE"=>"Y");
+						$res = CIBlockElement::GetList(Array(), $arFilter, false, Array(), $arSelect);
+						while($ar_res = $res->GetNext())
+						{
+							$mass[] = $ar_res;
+						}
+						echo '<ul id="special_list">';
+						for ($i=0; $i<=count($mass); $i++){
+							$db_props = CIBlockElement::GetProperty(8, $mass[$i]["ID"], "sort", "asc", Array("CODE"=>"picture"));
+							$db_props1 = CIBlockElement::GetProperty(8, $mass[$i]["ID"], "sort", "asc", Array("CODE"=>"link"));
+							echo '<li>';
+							echo '<div>';
+							if ($ar_props = $db_props->Fetch()){ 
+								if ($ar_props["VALUE"]){
+									echo '<img id="special_image" src="'.$ar_props["VALUE"].'" alt="" />';
+									echo '<br>';
+										if ($ar_props1 = $db_props1->Fetch()){ 
+											echo '<a href="'.str_ireplace('&', '&amp;', $ar_props1["VALUE"]).'">';
+										}
+										echo $mass[$i]["NAME"].'</a>';
+										echo '<br>';
+										echo '<br>';
+								}
+								echo $mass[$i]["PREVIEW_TEXT"];
+								echo '</div>';
+								echo '</li>';
+							}
+						}
+						echo '</ul>';
+					}
+				?>
+				</div>
+				<p class="special_hide_button">
+					<img src="/bitrix/templates/poligon_i/images/special_hide.png" usemap="#special_hide_area" />
+					<map name="special_hide_area">
+						<area shape="rect" coords="110,10,480,40" href="#" id="special_close" alt="«акрыть панель специальных предложений">
+					</map>
+				</p>
+			</section>
 <section id="contacts">
 	<article>
 		<header>
@@ -331,10 +375,10 @@
 			onmouseout="this.src='/bitrix/templates/poligon_i/images/quick_logo_off.png';"
 		/></a>
 	<?$APPLICATION->IncludeComponent("bitrix:search.form", "form", Array("PAGE"	=>	"#SITE_DIR#search/index.php"));?>
-		<a href="/special/"><img class="special_logo_img" src="/bitrix/templates/poligon_i/images/special_logo_off.png"
-			onmouseover="this.src='/bitrix/templates/poligon_i/images/special_logo_on.png';"
-			onmouseout="this.src='/bitrix/templates/poligon_i/images/special_logo_off.png';"
-		/></a>
+						<a href="#" id="special_open"><img class="special_logo_img" src="/bitrix/templates/poligon_i/images/special_logo_off.png"
+							onmouseover="this.src='/bitrix/templates/poligon_i/images/special_logo_on.png';"
+							onmouseout="this.src='/bitrix/templates/poligon_i/images/special_logo_off.png';"
+						/></a>
 </div>
 <div class="partners_pad"></div>
 <div class="partners">
