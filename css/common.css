@@ -84,7 +84,7 @@ img.right-image{
 #main_div{
 	width:977px;
 	padding:0 0 0 15px;
-	#background:url(/bitrix/templates/poligon/images/background_maindiv_.jpg) left top no-repeat #ffffff;
+	background:url(/bitrix/templates/poligon/images/background_maindiv_.jpg) left top no-repeat #ffffff;
 }
 
 #lang{
@@ -111,9 +111,9 @@ img.right-image{
 	padding:2px;
 }
 #logo{
-	#height:96px;
-	#position:relative;
-	#width:960px;
+	height:96px;
+	position:relative;
+	width:960px;
 }
 
 #logo_link{
@@ -178,32 +178,29 @@ img.right-image{
 
 #form{
 	position:absolute;
-        #top:60px;
-        #left:650px;
-	width:275px;
-        height: 30px;
-        background: url("/bitrix/templates/poligon_i/images/search_field.gif") 0 0 no-repeat;
-        border:none;
-        display:block;
+        top:185px;
+	right:4px;
+	bottom:0;
+	width:320px;
 }
 
 #form .inputtext{
 	#height:21px;
-	border:none;
+	#border:1px solid #cbc8ba;
 	#font:14px Arial, Helvetica, sans-serif;
 	color:#606060;
-	width:210px;
-	float:center;
-	padding:0 0 0 25px;
-	margin:8px 18px;
+	width:220px;
+	float:left;
+	padding:4px 0 0 10px;
+	margin:0;
 }
 #form .submit{
 	height:24px;
 	#padding:2;
-	#margin:0 0 0 5px;
+	margin:0 0 0 5px;
 	width:66px;
-	#border:1px solid #cbc8ba;
-	#background:#fdfdfd;
+	border:1px solid #cbc8ba;
+	background:#fdfdfd;
 }
 
 /*END HEAD*/

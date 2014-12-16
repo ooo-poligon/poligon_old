@@ -1,0 +1,96 @@
+#citel_ancor {
+		background: url("/bitrix/templates/poligon_i/images/citel_ancor.jpg") no-repeat;
+		background-size: 100%;
+		height: 340px;
+}
+#citel_sertificates {
+		display: none;
+		wigth: 100%;
+		height: 210px;
+		background: url(/bitrix/templates/poligon_i/images/citel_sertificates_bg.jpg) repeat-x #fff25f;
+		#margin-bottom: 20px;
+}
+.citel_page{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#afb6bc;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+		height: 700px;
+		background: #333639;
+		width: 100%;
+		margin-top: -50px;
+}
+.citel_page h1{
+		font:36px Arial, Helvetica, sans-serif;
+		color:#afb6bc;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: center;
+		padding-top: 40px;
+}
+.citel_page h2{
+		font:20px Arial, Helvetica, sans-serif;
+		color:#ffdd00;
+		text-decoration: none;
+		font-weight:bold;
+		text-align: left;
+}
+#citel_story{
+		background: #333639;
+		margin: auto;
+		font:14px Arial, Helvetica, sans-serif;
+		color:#afb6bc;
+		text-decoration:none;
+		font-weight:normal;
+		text-align: left;
+		position:relative;
+		width:450px;
+		height:0px;
+		opacity:0;
+}
+#citel_hide_story_arrow{
+		width: 130px;
+		margin-left: 135px;
+		display: none;
+}
+#citel_logo {
+		position:relative;
+		#width:400px;
+		height:200px;
+		text-align:center;
+}
+.citel_page a{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#afb6bc;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+.citel_page a:hover{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#ffdd00;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+#citel_logo_story_container  {
+	   position:relative;
+	   width:450px;
+	   height:420px;
+	   background: #333639;
+}
+.citel_sertificates_list{
+		width: 1100px;
+		margin: auto;
+		padding-top: 10px;
+}
+.citel_sertificate_thumb{
+		height: 180px;
+		box-shadow: 0 0 20px rgba(0,0,0,0.5); /* Параметры тени */
+		margin-right: 10px;
+}
+.citel_sertificate_arrow{
+		height: 180px;
+		margin-right: 10px;
+}

@@ -19,7 +19,7 @@ $APPLICATION->SetTitle("CITEL – эксперт по защите от импульсных перенапряжений."
  
   <li><a target="_self" href="/content/articles/video_links/citel6.php">УЗИП CITEL для фотоэлектрических систем промышленных и общественных сооружений.</a></li>
  
-  <!--<li><a target="_self" href="/content/articles/video_links/citel7.php">CITEL – эксперт по защите от импульсных перенапряжений.</a></li>-->
+  <li><a target="_self" href="/content/articles/video_links/citel8.php">CITEL : Технология VG для УЗИП переменного тока и для фотоэлектрических систем.</a></li>
  </ul>
 
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

@@ -65,16 +65,29 @@ $rsSect1 = CIBlockSection::GetList(array("SORT"=>"ASC"), array("IBLOCK_ID"=>$ar_
 					else echo '<img src="/images/green.gif" alt="Есть на складе" title="Есть на складе">';
 				}?>			
 			</td>
-			<td align="center">	
+			<td align="center">&nbsp;<?//var_dump($arElement["PRICE_MATRIX"]["MATRIX"]);?>	
 
-				<span class="catalog-price"><nobr><?
-<?echo «<pre>»; print_r($arResult); echo «</pre>»;?>
-				?></nobr></span>
+				<span class="catalog-price"><nobr><?=FormatCurrency($arElement["PRICE_MATRIX"]["MATRIX"][1][0]["PRICE"], $arElement["PRICE_MATRIX"]["MATRIX"][1][0]["CURRENCY"]);?></nobr></span>
+			<?foreach($arElement["PRICES"] as $code=>$arPrice):?>
+				<?if($arPrice["CAN_ACCESS"]):?>
+					<?//=$arResult["PRICES"][$code]["TITLE"];?>
+					<?if($arPrice["DISCOUNT_VALUE"] < $arPrice["VALUE"]):?>
+						<s><?=$arPrice["PRINT_VALUE"]?></s> <span class="catalog-price"><?=$arPrice["PRINT_DISCOUNT_VALUE"]?></span>
+					<?else:?><span class="catalog-price">&nbsp;<nobr><?=$arPrice["PRINT_VALUE"]?></nobr></span><?endif;?>
+								
 
+				<?endif;?>
+			<?endforeach;?>
 			</td>
-			
-
-		
+			<td width="30">
+			<?if($arElement["CAN_BUY"]):?>
+			<center>
+				<a href="javascript:void(0)<?//echo $arElement['ADD_URL']?>" onclick="run(<?=$arElement['ID']?>)"><img src="/bitrix/templates/poligon/images/basket.gif"><?//echo GetMessage("CATALOG_ADD")?></a>
+			</center>
+			<?elseif((count($arResult["PRICES"]) > 0) || is_array($arElement["PRICE_MATRIX"])):?>
+				<?=GetMessage("CATALOG_NOT_AVAILABLE")?>
+			<?endif?>
+			</td>
 	</tr>
 	<?endforeach; // foreach($arResult["ITEMS"] as $arElement):?>
 </table>

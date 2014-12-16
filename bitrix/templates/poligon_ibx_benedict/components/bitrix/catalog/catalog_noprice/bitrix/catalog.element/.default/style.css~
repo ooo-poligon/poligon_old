@@ -1,0 +1,27 @@
+.catalog-price {
+	 color:red;
+}
+
+.catalog-price-1 {
+	 color:#fff;
+	background:#0D4B96;
+	font-size:14px;
+}
+
+.abs{
+	position:absolute; 
+	right:15px;
+	top:20px;
+	width:234px;
+}
+.abs table.price{
+	border:1px solid #CCC;
+}
+.abs table th{
+	text-align:left
+}
+
+
+.catalog-element{
+position:relative;
+}

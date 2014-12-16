@@ -1,0 +1,769 @@
+@import url("/bitrix/templates/poligon_i/css/tele_index.css") all;
+header, 
+nav, 
+section, 
+article, 
+aside, 
+footer {
+		display: block;
+}
+body{
+		margin: 0px;
+		padding: 0px;
+}
+img{
+		border: none; /* убрать рамку у ссылок-картинок */
+}
+.top_bar{
+		position: fixed;
+		width: 100%;
+		background: #19466c;
+		height: 90px;
+		z-index: 1000;
+}
+.top_background{
+		background: #19466c;
+}
+.site_logo{
+		position: relative;
+		z-index: 1000;
+		width: 260px;
+		float: left;
+		margin-top: 17px;
+		margin-left: 5px;
+		margin-right: 40px;
+}
+.site_logo .site_logo_image{
+		width: 260px;
+		border: none; /* убрать рамку у ссылок-картинок */
+}
+.site_menu_container{
+		width: 510px;
+		margin:auto;
+		padding-top: 7px;
+}
+.site_menu_ul{
+		margin: 0;
+		padding: 4px;
+}
+.site_menu_ul .site_menu_li{
+		display: inline; /* Отображать как строчный элемент */
+		margin-right: 7px; /* Отступ слева */
+		border: 1px solid #fff; /* Рамка вокруг текста */
+		padding-left: 5px; /* Поля вокруг текста */
+		padding-bottom: 2px;
+		font:18px Arial, Helvetica, sans-serif;
+		color:#ffffff;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: center;
+}
+.site_menu_ul .site_menu_li_last{
+		display: inline; /* Отображать как строчный элемент */
+		#margin-right: 7px; /* Отступ слева */
+		border: 1px solid #fff; /* Рамка вокруг текста */
+		padding-left: 5px; /* Поля вокруг текста */
+		padding-right: 5px;
+		padding-bottom: 2px;
+		font:18px Arial, Helvetica, sans-serif;
+		color:#ffffff;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: center;
+}
+.site_menu_ul .site_menu_li a{
+		color: #fff;
+		text-decoration: none;
+}
+.site_menu_ul .site_menu_li_last a{
+		color: #fff;
+		text-decoration: none;
+}
+.phone{
+		font:30px Arial, Helvetica, sans-serif;
+		color:#ffffff;
+		text-decoration:none;
+		#font-weight:bold;
+		text-align: right;	
+		width: 400px;
+		float: right;
+		margin-top: -8px;
+		margin-right: 5px;
+}
+.search{
+		position: fixed;
+		width: 100%;
+		margin-top: 14px;
+}
+.search-form{
+		width: 300px;
+		margin: auto;	
+}
+.search-form .inputtext{
+		font:16px Arial, Helvetica, sans-serif;
+		color:#aaaaaa;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: center;		
+}
+.special_logo_img{
+		width: 210px;
+		float: right;
+		margin-top: -58px;
+		margin-right: 250px;
+		border: none; /* убрать рамку у ссылок-картинок */
+}
+#contacts{
+		display: none;
+		position: relative;
+		background: url(/bitrix/templates/poligon_i/images/contacts_bg.gif) repeat-x #19466c;
+		font:14px Arial, Helvetica, sans-serif;
+		color:#ffffff;
+		text-decoration:none;
+		font-weight:bold;
+		height: 420px;
+}
+#contacts header{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#ffffff;
+		text-decoration:none;
+		font-weight:bold;
+		width: 860px;
+		margin: auto;
+		padding: 20px;
+}
+#contacts header span{
+		font: 14px serif;
+		font-style: italic;
+		color:#ffffff;
+		text-decoration:none;		
+}
+#contacts article{
+		width: 1550px;
+		margin: auto;
+}
+#contacts a{
+		font:14px Arial, Helvetica, sans-serif;
+		color:#00ccff;
+		text-decoration:none;
+		font-weight:bold;
+}
+.contacts_column_left{
+		float: left;
+		width: 500px;
+}
+.contacts_column_left span{
+		font: 14px serif;
+		font-style: italic;
+		color:#ffffff;
+		text-decoration:none;
+}
+.yandex_map{
+		position: absolute;
+		top: 70px;
+		right: 200px;
+}
+.contacts_column_right{
+		width: 500px;
+		margin: auto;
+}
+.contacts_column_right span{
+		font: 14px serif;
+		font-style: italic;
+		color:#ffffff;
+		text-decoration:none;
+}
+.contacts_hide_button{
+		position: absolute;
+		top: 360px;
+		left: 660px;
+		width: 585px;
+		margin-left: auto;
+		margin-right: auto;
+		height: 62px;
+		font:0px Arial, Helvetica, sans-serif;
+}
+.contacts_hide_button img{
+		border: none; /* убрать рамку у ссылок-картинок */
+}
+.partners_pad{
+		height: 53px;
+}
+.partners{
+		position: fixed;
+		width: 100%;
+		margin-top: 0px;
+		background-color: transparent;
+		height: 130px;
+		padding-bottom: 10px;
+}
+.partners .partners_table{
+		width: 950px;
+		text-align: center;
+		margin-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
+}
+.partners .partners_table .partners_logo{
+		width: 150px;
+		border: 4px solid #19466c;
+}
+.intro_pad{
+		height: 200px;
+}
+.intro{
+		font:46px Arial, Helvetica, sans-serif;
+		color:#606060;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+		width: 100%;
+		margin:auto;
+		height: 800px;
+}
+.intro h1{
+		text-align: center;
+		font:40px Arial, Helvetica, sans-serif;
+		font-weight:bold;
+}
+.intro h2{
+		text-align: center;
+		font:46px Arial, Helvetica, sans-serif;
+}
+.intro p{
+		font:26px Arial, Helvetica, sans-serif;
+		color:#606060;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+		padding-top: 40px;
+		padding-left: 70px;
+		padding-right: 70px;
+}
+.intro a{
+		font:26px Arial, Helvetica, sans-serif;
+		color:#19466c;
+		text-decoration:none;
+		font-weight:bold;
+}
+.intro a:hover{
+		font:26px Arial, Helvetica, sans-serif;
+		color:#00ccff;
+		text-decoration:none;
+		font-weight:bold;
+}
+.intro img{
+		width: 300px;
+}
+.intro_table{
+		width: 1550px;
+		margin: auto;
+}
+.intro table td{
+		vertical-align: top;
+}
+.intro_arrow{
+		vertical-align: top;
+}
+.intro_arrow img{
+		width: 200px;		
+}
+.iso9001{
+		float: right;
+		margin-top: -140px;
+		margin-right: 90px;
+		height: 170px;
+}
+.iso9001 img{
+		width: 150px;
+		border: none; /* убрать рамку у ссылок-картинок */
+}
+.sertificates_list{
+		width: 1384px;
+		margin: auto;
+		padding-top: 10px;
+}
+.sertificate_thumb{
+		height: 180px;
+		box-shadow: 0 0 20px rgba(0,0,0,0.5); /* Параметры тени */
+		margin-right: 10px;
+}
+.sertificate_arrow{
+		height: 180px;
+		margin-right: 10px;
+}
+#citel_ancor {
+		background: url("/bitrix/templates/poligon_i/images/citel_ancor.jpg") no-repeat;
+		background-size: 100%;
+		height: 340px;
+}
+.citel_page{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#afb6bc;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+		height: 750px;
+		background: #ffffd7;
+		width: 100%;
+		margin-top: -50px;
+}
+.citel_page h1{
+		font:36px Arial, Helvetica, sans-serif;
+		color:#9a9a9a;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: center;
+		padding-top: 40px;
+}
+.citel_story{
+		width: 1550px;
+		margin: auto;
+		font:18px Arial, Helvetica, sans-serif;
+		color:#9a9a9a;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+.citel_page a{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#9a9a9a;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+.citel_page a:hover{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#ffd80e;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+#benedict_ancor {
+		background: url("/bitrix/templates/poligon_i/images/benedict_ancor.jpg") no-repeat;
+		background-size: 100%;
+		height: 440px;
+}
+.benedict_page{
+		height: 600px;
+		background: #b5fff7;
+		width: 100%;
+		margin-top: -50px;
+}
+.benedict_page h1{
+		font:36px Arial, Helvetica, sans-serif;
+		color:#127e6f;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: center;
+		padding-top: 40px;
+}
+.benedict_story{
+		width: 1550px;
+		margin: auto;
+		font:18px Arial, Helvetica, sans-serif;
+		color:#127e6f;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+.benedict_page a{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#127e6f;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+.benedict_page a:hover{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#808185;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+#graesslin_ancor {
+		#position: relative;
+		#display:block;
+		#margin-bottom: 230px;
+		background: url("/bitrix/templates/poligon_i/images/graesslin_ancor.jpg") no-repeat;
+		background-size: 100%;
+		height: 330px;
+}
+.graesslin_page{
+		height: 700px;
+		background: #dbdbdb;
+		width: 100%;
+		margin-top: -50px;
+}
+.graesslin_page h1{
+		font:36px Arial, Helvetica, sans-serif;
+		color:#8a8b8d;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: center;
+		padding-top: 40px;
+}
+.graesslin_story{
+		width: 1550px;
+		margin: auto;
+		font:18px Arial, Helvetica, sans-serif;
+		color:#8a8b8d;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+.graesslin_page a{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#8a8b8d;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+.graesslin_page a:hover{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#b9074a;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+#sonder_ancor {
+		#position: relative;
+		#display:block;
+		#margin-bottom: 230px;
+		background: url("/bitrix/templates/poligon_i/images/sonder_ancor.jpg") no-repeat;
+		background-size: 100%;
+		height: 500px;
+}
+.sonder_page{
+		height: 500px;
+		background: #c7e8ff;
+		width: 100%;
+		margin-top: -65px;
+}
+.sonder_page h1{
+		font:46px Arial, Helvetica, sans-serif;
+		color:#0268b3;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: center;
+		padding-top: 40px;
+}
+.sonder_page a{
+		font:26px Arial, Helvetica, sans-serif;
+		color:#0268b3;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+.sonder_page a:hover{
+		font:26px Arial, Helvetica, sans-serif;
+		color:#73b9ed;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+#relequick_ancor {
+		#position: relative;
+		#display:block;
+		#margin-bottom: 230px;
+		background: url("/bitrix/templates/poligon_i/images/relequick_ancor.jpg") no-repeat;
+		background-size: 100%;
+		height: 500px;
+}
+.relequick_page{
+		height: 550px;
+		background: #f4c6c6;
+		width: 100%;
+		margin-top: -50px;
+}
+.relequick_page h1{
+		font:36px Arial, Helvetica, sans-serif;
+		color:#000;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: center;
+		padding-top: 40px;
+}
+.relequick_page a{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#000;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+.relequick_page a:hover{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#920833;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+#comat_releco_ancor {
+		#position: relative;
+		#display:block;
+		#margin-bottom: 230px;
+		background: url("/bitrix/templates/poligon_i/images/comat-releco_ancor.jpg") no-repeat;
+		background-size: 100%;
+		height: 500px;
+}
+.comat_releco_page{
+		height: 500px;
+		background: #fff;
+		width: 100%;
+		margin-top: -50px;
+}
+.comat_releco_page h1{
+		font:46px Arial, Helvetica, sans-serif;
+		color:#006ab0;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: center;
+		padding-top: 40px;
+}
+.comat_releco_page a{
+		font:26px Arial, Helvetica, sans-serif;
+		color:#006ab0;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+.comat_releco_page a:hover{
+		font:26px Arial, Helvetica, sans-serif;
+		color:#60bff7;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+#emko_ancor {
+		#position: relative;
+		#display:block;
+		#margin-bottom: 230px;
+		background: url("/bitrix/templates/poligon_i/images/emko_ancor.jpg") no-repeat;
+		background-size: 100%;
+		height: 360px;
+}
+.emko_page{
+		height: 650px;
+		background: #455df1;
+		width: 100%;
+		margin-top: -50px;
+}
+.emko_page h1{
+		font:36px Arial, Helvetica, sans-serif;
+		color:#fff;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: center;
+		padding-top: 40px;
+}
+.emko_page a{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#fff;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+.emko_page a:hover{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#6f84fe;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+#cbi_ancor {
+		#position: relative;
+		#display:block;
+		#margin-bottom: 230px;
+		background: url("/bitrix/templates/poligon_i/images/cbi_ancor.jpg") no-repeat;
+		background-size: 100%;
+		height: 440px;
+}
+.cbi_page{
+		height: 600px;
+		background: #fe3535;
+		width: 100%;
+		margin-top: -50px;
+}
+.cbi_page h1{
+		font:36px Arial, Helvetica, sans-serif;
+		color:#fff;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: center;
+		padding-top: 40px;
+}
+.cbi_page a{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#fff;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+.cbi_page a:hover{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#000;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+#huber_suhner_ancor {
+		#position: relative;
+		#display:block;
+		#margin-bottom: 230px;
+		background: url("/bitrix/templates/poligon_i/images/huber-suhner_ancor.jpg") no-repeat;
+		background-size: 100%;
+		height: 550px;
+}
+.huber_suhner_page{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#005192;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+		height: 500px;
+		background: #fff;
+		width: 100%;
+		margin-top: -50px;
+}
+.huber_suhner_page h1{
+		font:36px Arial, Helvetica, sans-serif;
+		color:#005192;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: center;
+		padding-top: 40px;
+}
+.huber_suhner_page a{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#005192;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+.huber_suhner_page a:hover{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#000;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+#farnell_ancor {
+		#position: relative;
+		#display:block;
+		#margin-bottom: 230px;
+		background: url("/bitrix/templates/poligon_i/images/farnell_ancor.jpg") no-repeat;
+		background-size: 100%;
+		height: 450px;
+}
+.farnell_page{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#ff6600;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+		height: 570px;
+		background: #ffd092;
+		width: 100%;
+		margin-top: -50px;
+}
+.farnell_page h1{
+		font:36px Arial, Helvetica, sans-serif;
+		color:#ff6600;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: center;
+		padding-top: 40px;
+}
+.farnell_page a{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#ff6600;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+.farnell_page a:hover{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#ff6600;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+#vemer_ancor {
+		#position: relative;
+		#display:block;
+		#margin-bottom: 230px;
+		background: url("/bitrix/templates/poligon_i/images/vemer_ancor.jpg") no-repeat;
+		background-size: 100%;
+		height: 300px;
+}
+.vemer_page{
+		height: 560px;
+		background: #ffdbdf;
+		width: 100%;
+		margin-top: -50px;
+}
+.vemer_page h1{
+		font:36px Arial, Helvetica, sans-serif;
+		color:#ff0d01;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: center;
+		padding-top: 40px;
+}
+.vemer_page a{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#ff0d01;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+.vemer_page a:hover{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#9f0903;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+#work_area{
+		display: none;
+		font:18px Arial, Helvetica, sans-serif;
+		color:#606060;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+		width: 100%;
+		margin:auto;
+}
+.footer_container{
+		width: 100%;
+		height: 100px;
+		background: #19466c;
+		color:#fff;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: center;
+		padding-top: 10px;
+		
+}
+.footer_container ul{
+		margin:0px 0 25px 0px;
+		padding-left:3px;
+		list-style:none;
+}
+.footer_container ul li{
+		margin:0;
+		padding:0 20px;
+		display:inline;
+}
+.footer_container li a{
+	font:16px Arial, Helvetica, sans-serif;
+	color:#fff;
+	text-decoration:none;
+	font-weight: bold;
+}
+.footer_container li a:hover{
+	color:#fff;
+}
+.footer_container p{
+		font:12px Arial, Helvetica, sans-serif;
+}

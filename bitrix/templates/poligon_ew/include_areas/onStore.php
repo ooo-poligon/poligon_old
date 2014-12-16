@@ -1,7 +1,7 @@
 <?
 $price = $onStore = null;
 $productProps = CCatalogProduct::GetByID($arResult["ID"]);
-var_dump($arResult["PROPERTIES"]["BASE"]["VALUE"]);
+//var_dump($arResult["ID"]);
 if($productProps["QUANTITY"] == 0 && $arResult["PROPERTIES"]["srok"]["VALUE"])
 	$onStore = "Срок поставки: <br/>{$arResult["PROPERTIES"]["srok"]["VALUE"]}";
 elseif($productProps["QUANTITY"]<10 && $productProps["QUANTITY"] > 0)

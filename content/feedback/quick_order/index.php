@@ -40,12 +40,12 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 -->
 </style>
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
-	<tr>
+	<!--<tr>
 		<td align="left" valign="top">
 			<a href="/content/feedback/"><b>Форма обратной связи</b></a><br />
 			<a href="/content/feedback/catalog_order/"><b>Форма для заказа CD, каталога</b></a><br />
 		</td>
-	</tr>
+	</tr>-->
   <tr>
     <td align="center" valign="top">
 	<h2>Форма быстрой заявки</h2>
@@ -57,8 +57,8 @@ $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y");
 
 <?php
 	//include требуемых библиотек
-	include("func.inc");
-	include("useragent.inc");
+	include("/content/feedback/quick_order/func.inc");
+	include("/content/feedback/quick_order/useragent.inc");
 	
 	
 	
@@ -362,7 +362,7 @@ echo '</td></tr>';
 				<!-- Печатаем кнопки-->
 				<input class="goButtonSend" type="submit" value="Отправить заявку" name="submit" onclick=run2()>
 				<input class="goButtonClaer" type="reset" value="Очистить">
-			</p></td></tr></table>';
+			</p></td></tr></table><br><br><br><br><br><br><br><br>';
 }
 		
 if ($boolenMessageWasSend == true)

@@ -1,0 +1,1 @@
+<?$arTemplate = Array("NAME"=>"poligon_ibx_huber_suhner", "DESCRIPTION"=>"TELE Новый доп. шаблон сайта poligon.info Разраб. И. Клекотнев");?>

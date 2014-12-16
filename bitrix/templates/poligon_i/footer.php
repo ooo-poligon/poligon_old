@@ -1,7 +1,25 @@
-
 </section>
-
 <section class="all_brands">
+<div id="company_info">
+	<table>
+		<tr>
+		<td>
+		<p>
+			Компания ПОЛИГОН начала свою работу в <b>1997</b> году, как поставщик <strong>электронных компонентов</strong>, <strong>релейной автоматики</strong> и <strong>устройств промышленной автоматизации</strong>. <br>Нашими заказчиками стали компании из самых разных областей промышленности, их география достаточно многообразна и охватывает всю территорию Российской Федерации. <br>Мы уделяем большое значение технической поддержке и всегда ищем индивидуальный подход к заказчикам. <br>Мы поставляем широкую номенклатуру электронных компонентов, технологических материалов и комплектующих изделий для монтажа печатных плат от отечественных и импортных производителей, как напрямую, так и с крупных оптовых складов, позволяющих охватить выборочную номенклатуру более 2000 брендов. <br>По данной номенклатуре сформирован склад, поставка изделий ведется в короткие сроки. Осуществляется поставка под ведомость покупных изделий. <br>Особым  направлением является поставка электротехнических товаров, устройств промышленной автоматизации, молниезащиты, коммутационной аппаратуры, промежуточных реле, компонентов умного дома. Основу этой номенклатуры составляют качественные товары европейского производства. <br>Мы поставляем продукцию <a href="/index.php#tele_ancor"><strong>TELE-HAASE</strong></a>, <a href="/index.php#citel_ancor"><strong>CITEL</strong></a>, <a href="/content/partners/producers.php#releco"><strong>Releco</strong></a>, <a href="/content/partners/producers.php#benedict"><strong>Benedict</strong> <em>(ранее Benedikt &amp; Jager)</em></a>, <a href="/content/partners/producers.php#huber-suhner"><strong>Huber+Suhner</strong></a>, <a href="/content/partners/producers.php#cbi"><strong>CBI</strong></a>, <a href="/content/partners/producers.php#sonder"><strong>SONDER</strong></a>, <a href="/content/partners/producers.php#emko"><strong>EMKO</strong></a>, Vemer.
+		</p>
+		</td>
+		<td>
+			<p><img src="/bitrix/templates/poligon_i/images/flag_poligon.png" class="flag" /></p>
+		</td>
+		<td>
+		<p>
+			Являясь официальным дистрибьютором ряда производителей электротехнической продукции, мы занимаемся развитием дилерской сети в России, имеем партнеров в Москве, Екатеринбурге, Красноярске, Перми, Нижнем Новгороде и приглашаем к сотрудничеству партнеров в других городах, желающих продавать сформированную нами уникальную линейку товаров. <br>В основном интерес для потенциальных дилеров может представлять следующая часть нашей номенклатуры: реле времени и реле контроля, промежуточные реле, контакторы, фотореле, таймеры, термостаты, счетчики часов, устройства молниезащиты, устройства автоматизации. <br>Соответственно нашими партнерами мы видим: поставщиков электротехнической продукции, поставщиков светотехники, проектные и электромонтажные компании, и др. Сформированная нами линейка электротехнических товаров дает альтернативу широко распространенным брендам и поэтому открывает большие возможности для наших партнеров. <br>Важным направлением в нашей работе является поставка изделий под проекты крупным промышленным предприятиям РФ. Большим проектам – особое внимание. <br>Мы имеем серьезный опыт поставки изделий ключевым заказчикам и открыты для новых проектов. Будем рады видеть Вас среди наших партнеров и заказчиков.
+		</p>
+		</td>
+		</tr>
+	</table>
+	<p id="info_hide"><a href="#" id="info_off"><img src="/bitrix/templates/poligon_i/images/info_hide.png"/></a></p>
+</div>
 <section class="intro">
 	<article>
 		<header>
@@ -13,8 +31,10 @@
 		<img src="/bitrix/templates/poligon_i/images/pic1.jpg" />
 		</td>
 		<td>
-		<p>Компания &quot;ПОЛИГОН&quot; специализируется в оптовой торговле <a href="/catalog/">электротехническими изделиями</a> 
-		и <a href="#farnell_ancor">электронными компонентами</a>.<br><br>Все наши товары и услуги имеют необходимые <a href="/certificates/">сертификаты</a> качества и соответствуют всем необходимым требованиям и стандартам.
+		<p>Компания &quot;ПОЛИГОН&quot; специализируется в оптовой торговле электротехническими изделиями
+		и электронными компонентами.<br><br>Все наши товары и услуги имеют необходимые сертификаты качества и соответствуют всем необходимым требованиям и стандартам.
+		<br><br>
+		<a href="#" id="info_on">Подробнее о нашей компании...</a>
 		<div class="iso9001">
 			<img src="/bitrix/templates/poligon_i/images/iso9001.gif" usemap="#map" />
 				<map name="map">
@@ -27,6 +47,8 @@
 		<img src="/bitrix/templates/poligon_i/images/pic2.jpg" />
 		</td>
 	</tr>
+	</table>
+	<table class="intro_table">
 		<tr>
 		<td class="intro_arrow">
 		<img src="/bitrix/templates/poligon_i/images/arrow-down.gif" align="left" />
@@ -42,33 +64,62 @@
 	</article>
 </section>
 <div id="tele_ancor"></div>
+<div id="tele_sertificates">
+	<div class="tele_sertificates_list">
+		<a href="#" id="hide_tele_sertificates"><img src="/bitrix/templates/poligon_i/images/tele_arrow_hide.gif" alt="Скрыть сертификаты"    class="tele_sertificate_arrow"></a>
+		<a href="/images/lics/tele-1.jpg" class="show" target="_blank"><img src="/images/lics/pre/tele-1.jpg" alt="Сертификат продукции TELE" class="tele_sertificate_thumb"></a>
+		<a href="/images/lics/tele-2.jpg" class="show" target="_blank"><img src="/images/lics/pre/tele-2.jpg" alt="Сертификат продукции TELE" class="tele_sertificate_thumb"></a>
+		<a href="/images/lics/tele-3.jpg" class="show" target="_blank"><img src="/images/lics/pre/tele-3.jpg" alt="Сертификат продукции TELE" class="tele_sertificate_thumb"></a>
+		<a href="/images/lics/tele-4.jpg" class="show" target="_blank"><img src="/images/lics/pre/tele-4.jpg" alt="Сертификат продукции TELE" class="tele_sertificate_thumb"></a>
+		<a href="/images/lics/tele-5.jpg" class="show" target="_blank"><img src="/images/lics/pre/tele-5.jpg" alt="Сертификат продукции TELE" class="tele_sertificate_thumb"></a>
+		<a href="/images/lics/tele-6.jpg" class="show" target="_blank"><img src="/images/lics/pre/tele-6.jpg" alt="Сертификат продукции TELE" class="tele_sertificate_thumb"></a>
+		<a href="/images/lics/tele-7.jpg" class="show" target="_blank"><img src="/images/lics/pre/tele-7.jpg" alt="Сертификат продукции TELE" class="tele_sertificate_thumb"></a>
+		<a href="#" id="hide_tele_sertificates"><img src="/bitrix/templates/poligon_i/images/tele_arrow_hide.gif" alt="Скрыть сертификаты"    class="tele_sertificate_arrow"></a>
+	</div>
+</div>
 <section class="tele_page">
 <article>
 	<header>
-		<h1>ПРОМЫШЛЕННАЯ АВТОМАТИЗАЦИЯ TELE</h1>
+		<br>
+		<h1>ПРОМЫШЛЕННАЯ АВТОМАТИЗАЦИЯ</h1>
+		<br>
 	</header>
-	<p class="tele_story">
-			= 50 лет на рынке промышленной автоматизации<br>
-			= второе место в мире по количеству выпускаемых реле времени и контроля<br>
-			= наиболее широкая номенклатура реле времени и контроля на рынке<br>
-			= разработка и производство находятся в г. Вена, Австрия<br>
-			= реле TELE широко продаются под известными брэндами<br>
-			= собственные инновационные разработки<br>
-			= 6 лет в России
-	</p>
 	<table class="intro_table">
 	<tr>
 		<td>
-		<img src="/bitrix/templates/poligon_i/images/tele-logo.png" align="left"  />
+		<div id="tele_logo_story_container"> 
+			<div>
+				<p id="tele_story">
+				= 50 лет на рынке промышленной автоматизации<br>
+				= второе место в мире по количеству выпускаемых реле времени и контроля<br>
+				= наиболее широкая номенклатура реле времени и контроля на рынке<br>
+				= разработка и производство находятся в г. Вена, Австрия<br>
+				= реле TELE широко продаются под известными брэндами<br>
+				= собственные инновационные разработки<br>
+				= 6 лет в России<br><br><br><br><br><br><br><br><br><br><br><br><br>
+					<a href="#" id="return_tele_story">
+						<img src="/bitrix/templates/poligon_i/images/tele_arrow_hide.gif" alt="Скрыть" id="tele_hide_story_arrow" />
+					</a>
+				</p>
+				
+			<img id="tele_logo" src="/bitrix/templates/poligon_i/images/tele-logo.png" align="left" />
+				<div style="height: 200px;"></div>
+				<a id="start_tele_story" href="#"><h2 id="tele_h2">Подробнее о компании TELE</h2></a>
+				<a id="start_tele_sertificates" href="#"><h2 id="tele_h2_1">Сертификаты на продукцию TELE</h2></a>				
+			</div>
+		</div>
 		</td>
-		<td>
+		<td id="tele_category_list">		
+		<div>
 		<ul>
 		<li><a href="/catalog/index.php?SECTION_ID=157">реле контроля</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=4992">реле контроля мощности</a></li>
 		<li><a href="/catalog/index.php?SECTION_ID=159">реле времени</a></li>
-		<li><a href="/catalog/index.php?SECTION_ID=5005">модульная система контроля WatchDog pro</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=5005">модульная система контроля <br>WatchDog pro</a></li>
 		<li><a href="/catalog/index.php?SECTION_ID=5011">устройства управления</a></li>
 		<li><a href="/catalog/index.php?SECTION_ID=4835">устройства сопряжения</a></li>
 		<li><a href="/catalog/index.php?SECTION_ID=5019">промежуточные реле</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=5028">реле безопасности</a></li>
 		<li><a href="/catalog/index.php?SECTION_ID=161">плавный пуск</a></li>
 		<li><a href="/catalog/index.php?SECTION_ID=5088">торможение двигателей</a></li>
 		<li><a href="/catalog/index.php?SECTION_ID=5034">тиристорные преобразователи</a></li>
@@ -76,34 +127,60 @@
 		<li><a href="/catalog/index.php?SECTION_ID=5039">источники питания</a></li>
 		<li><a href="/catalog/index.php?SECTION_ID=5040">цифровые таймеры</a></li>
 		<li><a href="/catalog/index.php?SECTION_ID=5041">счетчики часов</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=5004">аксессуары</a></li>
 		</ul>
+		</div>
 		</td>
 		<td>
-		<img src="/bitrix/templates/poligon_i/images/tele-device.gif" align="right"  />
+			<div id="tele_device_container">
+				<img id="tele_device" src="/bitrix/templates/poligon_i/images/tele-device.gif" align="right"  />
+			</div>
 		</td>
 	</tr>
-	</table>
+	</table>	
 		</article>
 </section>
+
 <div id="citel_ancor"></div>
+<div id="citel_sertificates">
+	<div class="citel_sertificates_list">
+		<a href="#" id="hide_citel_sertificates"><img src="/bitrix/templates/poligon_i/images/citel_arrow_hide.gif" alt="Скрыть сертификаты"  class="citel_sertificate_arrow"></a>
+		<a href="/images/lics/citel-1.jpg" class="show" target="_blank"><img src="/images/lics/pre/citel-1.jpg" alt="Сертификат продукции CITEL" class="citel_sertificate_thumb"></a>
+		<a href="/images/lics/citel-2.jpg" class="show" target="_blank"><img src="/images/lics/pre/citel-2.jpg" alt="Сертификат продукции CITEL" class="citel_sertificate_thumb"></a>
+		<a href="/images/lics/citel_rosatom_AC.jpg" class="show" target="_blank"><img src="/images/lics/pre/citel_rosatom_AC.jpg" alt="Сертификат продукции CITEL" class="citel_sertificate_thumb"></a>
+		<a href="/images/lics/citel_rosatom_COAX.jpg" class="show" target="_blank"><img src="/images/lics/pre/citel_rosatom_COAX.jpg" alt="Сертификат продукции CITEL" class="citel_sertificate_thumb"></a>
+		<a href="/images/lics/citel_rosatom_TD.jpg" class="show" target="_blank"><img src="/images/lics/pre/citel_rosatom_TD.jpg" alt="Сертификат продукции CITEL" class="citel_sertificate_thumb"></a>
+		<a href="#" id="hide_citel_sertificates"><img src="/bitrix/templates/poligon_i/images/citel_arrow_hide.gif" alt="Скрыть сертификаты"  class="citel_sertificate_arrow"></a>
+	</div>
+</div>
 <section class="citel_page">
 	<article>
 	<header>
 		<h1>МОЛНИЕЗАЩИТА / ГРОЗОЗАЩИТА</h1>
 	</header>
-	<p class="citel_story">
-		Компания CITEL — лидер в области защиты от повышения напряжения. Международный электротехнический концерн CITEL, основанный в 1937 году во Франции, специализируется в разработках и производстве систем грозозащиты и устройств защиты от импульсных перенапряжений (УЗИП).
-		<br>
-		Концерн CITEL предлагает экспертизу, консультации и профессиональные решения по грозозащите и защите от импульсных перенапряжений в электрических и слаботочных сетях и коаксиальных кабелях.
-		<br>
-		УЗИП защищают электрические цепи, чувствительные электронные приборы и обслуживающий персонал от опасных и разрушающих последствий импульсного перенапряжения, причиной которых могут быть как естественные явления (молния) так и работа, и эксплуатация промышленных установок.
-		<br>
-		Ежегодно CITEL производит более 30 миллионов газоразрядников и более 300 тыс. модулей защиты от импульсного перенапряжения.<br>
-	</p>
 	<table class="intro_table">
 		<tr>
-		<td>
-		<img src="/bitrix/templates/poligon_i/images/citel-logo.gif" align="left"  />
+			<td>
+			<div id="citel_logo_story_container">
+				<div>
+					<p id="citel_story">
+						Компания CITEL — лидер в области защиты от повышения напряжения. Международный электротехнический концерн CITEL, основанный в 1937 году во Франции, специализируется в разработках и производстве систем грозозащиты и устройств защиты от импульсных перенапряжений (УЗИП).
+						<br>
+						Концерн CITEL предлагает экспертизу, консультации и профессиональные решения по грозозащите и защите от импульсных перенапряжений в электрических и слаботочных сетях и коаксиальных кабелях.
+						<br>
+						УЗИП защищают электрические цепи, чувствительные электронные приборы и обслуживающий персонал от опасных и разрушающих последствий импульсного перенапряжения, причиной которых могут быть как естественные явления (молния) так и работа, и эксплуатация промышленных установок.
+						<br>
+						Ежегодно CITEL производит более 30 миллионов газоразрядников и более 300 тыс. модулей защиты от импульсного перенапряжения.<br>
+						<a href="#" id="return_citel_story">
+							<img src="/bitrix/templates/poligon_i/images/citel_arrow_hide.gif" alt="Скрыть" id="citel_hide_story_arrow" />
+						</a>
+					</p>
+					<img id="citel_logo" src="/bitrix/templates/poligon_i/images/citel-logo.gif" align="left"  />
+					<div style="height: 300px;"></div>
+					<a id="start_citel_story" href="#"><h2 id="citel_h2">Подробнее о компании CITEL</h2></a>
+					<a id="start_citel_sertificates" href="#"><h2 id="citel_h2_1">Сертификаты на продукцию CITEL</h2></a>				
+				</div>
+			</div>
 		</td>
 		<td>
 		<ul>

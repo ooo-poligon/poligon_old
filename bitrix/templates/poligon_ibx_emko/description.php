@@ -1,0 +1,1 @@
+<?$arTemplate = Array("NAME"=>"poligon_ibx_poligon_ibx_emko", "DESCRIPTION"=>"TELE Новый доп. шаблон сайта poligon.info Разраб. И. Клекотнев");?>
