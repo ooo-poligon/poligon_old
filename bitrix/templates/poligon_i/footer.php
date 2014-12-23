@@ -5,7 +5,7 @@
 		<tr>
 		<td>
 		<p>
-			Компания ПОЛИГОН начала свою работу в <b>1997</b> году, как поставщик <strong>электронных компонентов</strong>, <strong>релейной автоматики</strong> и <strong>устройств промышленной автоматизации</strong>. <br>Нашими заказчиками стали компании из самых разных областей промышленности, их география достаточно многообразна и охватывает всю территорию Российской Федерации. <br>Мы уделяем большое значение технической поддержке и всегда ищем индивидуальный подход к заказчикам. <br>Мы поставляем широкую номенклатуру электронных компонентов, технологических материалов и комплектующих изделий для монтажа печатных плат от отечественных и импортных производителей, как напрямую, так и с крупных оптовых складов, позволяющих охватить выборочную номенклатуру более 2000 брендов. <br>По данной номенклатуре сформирован склад, поставка изделий ведется в короткие сроки. Осуществляется поставка под ведомость покупных изделий. <br>Особым  направлением является поставка электротехнических товаров, устройств промышленной автоматизации, молниезащиты, коммутационной аппаратуры, промежуточных реле, компонентов умного дома. Основу этой номенклатуры составляют качественные товары европейского производства. <br>Мы поставляем продукцию <a href="/index.php#tele_ancor"><strong>TELE-HAASE</strong></a>, <a href="/index.php#citel_ancor"><strong>CITEL</strong></a>, <a href="/content/partners/producers.php#releco"><strong>Releco</strong></a>, <a href="/content/partners/producers.php#benedict"><strong>Benedict</strong> <em>(ранее Benedikt &amp; Jager)</em></a>, <a href="/content/partners/producers.php#huber-suhner"><strong>Huber+Suhner</strong></a>, <a href="/content/partners/producers.php#cbi"><strong>CBI</strong></a>, <a href="/content/partners/producers.php#sonder"><strong>SONDER</strong></a>, <a href="/content/partners/producers.php#emko"><strong>EMKO</strong></a>, Vemer.
+			Компания ПОЛИГОН начала свою работу в <b>1997</b> году, как поставщик <strong>электронных компонентов</strong>, <strong>релейной автоматики</strong> и <strong>устройств промышленной автоматизации</strong>. <br>Нашими заказчиками стали компании из самых разных областей промышленности, их география достаточно многообразна и охватывает всю территорию Российской Федерации. <br>Мы уделяем большое значение технической поддержке и всегда ищем индивидуальный подход к заказчикам. <br>Мы поставляем широкую номенклатуру электронных компонентов, технологических материалов и комплектующих изделий для монтажа печатных плат от отечественных и импортных производителей, как напрямую, так и с крупных оптовых складов, позволяющих охватить выборочную номенклатуру более 2000 брендов. <br>По данной номенклатуре сформирован склад, поставка изделий ведется в короткие сроки. Осуществляется поставка под ведомость покупных изделий. <br>Особым  направлением является поставка электротехнических товаров, устройств промышленной автоматизации, молниезащиты, коммутационной аппаратуры, промежуточных реле, компонентов умного дома. Основу этой номенклатуры составляют качественные товары европейского производства. <br>Мы поставляем продукцию <a href="/index.php#tele_ancor"><strong>TELE-HAASE</strong></a>, <a href="/index.php#citel_ancor"><strong>CITEL</strong></a>, <a href="/index.php#comat-releco_ancor"><strong>Releco</strong></a>, <a href="/index.php#benedict_ancor"><strong>Benedict</strong> <em>(ранее Benedikt &amp; Jager)</em></a>, <a href="/index.php#huber_suhner_ancor"><strong>Huber+Suhner</strong></a>, <a href="/index.php#cbi_ancor"><strong>CBI</strong></a>, <a href="/index.php#sonder_ancor"><strong>SONDER</strong></a>, <a href="/index.php#emko_ancor"><strong>EMKO</strong></a>, Vemer.
 		</p>
 		</td>
 		<td>
@@ -18,7 +18,9 @@
 		</td>
 		</tr>
 	</table>
-	<p id="info_hide"><a href="#" id="info_off"><img src="/bitrix/templates/poligon_i/images/info_hide.png"/></a></p>
+					<div id="info_hide">
+						<button href="#" id="info_off">ЗАКРЫТЬ ПАНЕЛЬ С ИНФОРМАЦИЕЙ</button>
+					</div>
 </div>
 <section class="intro">
 	<article>
@@ -38,7 +40,7 @@
 		<div class="iso9001">
 			<img src="/bitrix/templates/poligon_i/images/iso9001.gif" usemap="#map" />
 				<map name="map">
-					<area shape="circle" coords="75,75,75" href="/PDF/cert/POLIGON_ISO9001.pdf" alt="Посмотреть сертификат">
+					<area shape="circle" coords="75,75,75" href="/PDF/cert/POLIGON_ISO9001.pdf" target="_blank" alt="Посмотреть сертификат">
 				</map>	
 		</div>
 		</p>
@@ -177,10 +179,12 @@
 							<img src="/bitrix/templates/poligon_i/images/citel_arrow_hide.gif" alt="Скрыть" id="citel_hide_story_arrow" />
 						</a>
 					</p>
-					<img id="citel_logo" src="/bitrix/templates/poligon_i/images/citel-logo.gif" align="left"  />
+					<img id="citel_logo" src="/bitrix/templates/poligon_i/images/citel-logo.png" align="left"  />
 					<div style="height: 300px;"></div>
 					<a id="start_citel_story" href="#"><h2 id="citel_h2">Подробнее о компании CITEL</h2></a>
-					<a id="start_citel_sertificates" href="#"><h2 id="citel_h2_1">Сертификаты на продукцию CITEL</h2></a>				
+					<a id="start_citel_sertificates" href="#"><h2 id="citel_h2_1">Сертификаты на продукцию CITEL</h2></a>
+					<a href="/pdf/index.php#citel_ancor"><h2 id="citel_h2_2">Каталоги продукции CITEL</h2></a>
+					<a href="/content/feedback/catalog_order/catalogs.php"><h2 id="citel_h2_3"><span class="redline" >Бесплатный заказ</span> каталогов и CD</h2></a>
 				</div>
 			</div>
 		</td>
@@ -204,18 +208,47 @@
 	</article>
 </section>
 <div id="benedict_ancor"></div>
+<div id="benedict_sertificates">
+	<div class="benedict_sertificates_list">
+		<a href="#" id="hide_benedict_sertificates"><img src="/bitrix/templates/poligon_i/images/benedict_arrow_hide.gif" alt="Скрыть сертификаты"  class="benedict_sertificate_arrow"></a>
+		<a href="/images/lics/benedict-1.jpg" class="show" target="_blank"><img src="/images/lics/pre/benedict-1.jpg" alt="Сертификат продукции BENEDICT" class="benedict_sertificate_thumb"></a>
+		<a href="/images/lics/benedict-2.jpg" class="show" target="_blank"><img src="/images/lics/pre/benedict-2.jpg" alt="Сертификат продукции BENEDICT" class="benedict_sertificate_thumb"></a>
+		<a href="/images/lics/benedict-3.jpg" class="show" target="_blank"><img src="/images/lics/pre/benedict-3.jpg" alt="Сертификат продукции BENEDICT" class="benedict_sertificate_thumb"></a>
+		<a href="/images/lics/benedict-4.jpg" class="show" target="_blank"><img src="/images/lics/pre/benedict-4.jpg" alt="Сертификат продукции BENEDICT" class="benedict_sertificate_thumb"></a>
+		<a href="/images/lics/benedict2012-1.jpg" class="show" target="_blank"><img src="/images/lics/pre/benedict2012-1.jpg" alt="Сертификат продукции BENEDICT" class="benedict_sertificate_thumb"></a>
+		<a href="/images/lics/benedict2012-2_Page_1.jpg" class="show" target="_blank"><img src="/images/lics/pre/benedict2012-2_Page_1.jpg" alt="Сертификат продукции BENEDICT" class="benedict_sertificate_thumb"></a>
+		<a href="/images/lics/benedict2012-2_Page_2.jpg" class="show" target="_blank"><img src="/images/lics/pre/benedict2012-2_Page_2.jpg" alt="Сертификат продукции BENEDICT" class="benedict_sertificate_thumb"></a>
+		<a href="/images/lics/benedict2012-3.jpg" class="show" target="_blank"><img src="/images/lics/pre/benedict2012-3.jpg" alt="Сертификат продукции BENEDICT" class="benedict_sertificate_thumb"></a>
+		<a href="#" id="hide_benedict_sertificates"><img src="/bitrix/templates/poligon_i/images/benedict_arrow_hide.gif" alt="Скрыть сертификаты"  class="benedict_sertificate_arrow"></a>
+	</div>
+</div>
 <section class="benedict_page">
 	<article>
 	<header>
 		<h1>КОММУТАЦИОННАЯ АППАРАТУРА</h1>
 	</header>
-	<p class="benedict_story">
-		Компания Benedict более 90 лет специализируется в производстве контакторов, пускателей и переключателей. <br>Разработка и производство находятся в г. Вена, Австрия. Контакторы и пускатели Benedict широко известны по всему миру и обладают отличными характеристиками, дающими существенное преимущество перед другими производителями: <br>компактность и отсутствие температурной зависимости в широком диапазоне рабочих температур (от -40 до +90°С). <br>Изделия отличаются высокой надежностью. Исчерпывающая номенклатура.<br><br>
-	</p>
 	<table class="intro_table">
 		<tr>
 		<td>
-		<img src="/bitrix/templates/poligon_i/images/benedict-logo.gif" align="left"  />
+			<div id="benedict_logo_story_container">
+				<div>
+					<p id="benedict_story">
+						Компания Benedict более 90 лет специализируется в производстве контакторов, пускателей и переключателей. 
+						<br>Разработка и производство находятся в г. Вена, Австрия. Контакторы и пускатели Benedict широко известны по всему миру и обладают отличными характеристиками, дающими существенное преимущество перед другими производителями: 
+						<br>компактность и отсутствие температурной зависимости в широком диапазоне рабочих температур (от -40 до +90°С). 
+						<br>Изделия отличаются высокой надежностью. Исчерпывающая номенклатура.
+					</p>
+					<a href="#" id="return_benedict_story">
+						<img src="/bitrix/templates/poligon_i/images/benedict_arrow_hide.gif" alt="Скрыть" id="benedict_hide_story_arrow" />
+					</a>
+					<img id="benedict_logo" src="/bitrix/templates/poligon_i/images/benedict-logo.png" align="left"  />
+					<div style="height: 130px;"></div>
+					<a id="start_benedict_story" href="#"><h2 id="benedict_h2">Подробнее о компании BENEDICT</h2></a>
+					<a id="start_benedict_sertificates" href="#"><h2 id="benedict_h2_1">Сертификаты на продукцию BENEDICT</h2></a>
+					<a href="/pdf/index.php#benedict_ancor"><h2 id="benedict_h2_2">Каталоги продукции BENEDICT</h2></a>
+					<a href="/content/feedback/catalog_order/catalogs.php"><h2 id="benedict_h2_3"><span class="redline" >Бесплатный заказ</span> каталогов и CD</h2></a>
+				</div>
+			</div>		
 		</td>
 		<td>
 		<ul>
@@ -228,35 +261,63 @@
 		<li><a href="/catalog/index.php?SECTION_ID=5098">автоматические выключатели</a></li>
 		<li><a href="/catalog/index.php?SECTION_ID=5260">переключатели</a></li>
 		<li><a href="/catalog/index.php?SECTION_ID=5101">кнопки</a></li>
-	</ul>
+		</ul>
+		<br><br><br><br><br><br><br><br>
 		</td>
 		<td>
-		<img src="/bitrix/templates/poligon_i/images/benedict-device.gif" align="right"  />
+			<p id="benedict_device_image" >
+				<img src="/bitrix/templates/poligon_i/images/benedict-device.gif" align="right" />
+			</p>
+			<div style="height: 400px;"></div>
 		</td>
 		</tr>
 	</table>
 	</article>
 </section>
 <div id="graesslin_ancor"></div>
+<div id="graesslin_sertificates">
+	<div class="graesslin_sertificates_list">
+		<a href="#" id="hide_graesslin_sertificates"><img src="/bitrix/templates/poligon_i/images/graesslin_arrow_hide.gif" alt="Скрыть сертификаты"  class="graesslin_sertificate_arrow"></a>
+		<a href="/images/lics/photo-2.jpg" class="show" target="_blank"><img src="/images/lics/pre/photo-2.jpg" alt="Сертификат продукции GRAESSLIN" class="graesslin_sertificate_thumb"></a>
+		<a href="/images/lics/thermo-4.jpg" class="show" target="_blank"><img src="/images/lics/pre/thermo-4.jpg" alt="Сертификат продукции GRAESSLIN" class="graesslin_sertificate_thumb"></a>
+		<a href="/images/lics/timers-6.jpg" class="show" target="_blank"><img src="/images/lics/pre/timers-6.jpg" alt="Сертификат продукции GRAESSLIN" class="graesslin_sertificate_thumb"></a>
+		<a href="#" id="hide_graesslin_sertificates"><img src="/bitrix/templates/poligon_i/images/graesslin_arrow_hide.gif" alt="Скрыть сертификаты"  class="graesslin_sertificate_arrow"></a>
+	</div>
+</div>
 <section class="graesslin_page">
 	<article>
 	<header>
 		<h1>КОМПОНЕНТЫ УМНОГО ДОМА</h1>
 	</header>
-	<p class="graesslin_story">
-		Компания Graesslin была основана в 1956 году Дитером Грэсслин в Германии. Это было семейное предприятие, которое собирало часовые механизмы для местных часовых заводов.</br>
-		Graesslin сегодня – один из ведущих производителей оборудования для энергосбережения и управления освещением: программируемых таймеров, фотореле, комнатных термостатов.</br>
-		Каталог Graesslin насчитывает более 1500 продуктов, которые продаются более чем в 50 странах мира на всех пяти континентах. Доля экспорта в обороте компании составляет 80%.</br>
-		С 2007 года Graesslin входит в состав Intermatic Inc. (США). Intermatic - компания, с более чем столетней историей. Это один из крупнейших мировых производителей осветительного и энергетического оборудования, а также самый крупный производитель программируемых таймеров в мире. В 5 филиалах компании работают более 4500 человек.</br>
-		Graesslin производит: таймеры механические и цифровые (с суточной, недельной и годовой программой), таймеры астрономические, таймеры лестничные, фотореле (сумеречные выключатели) со встроенным или внешним датчиком, комнатные термостаты и хронотермостаты, счетчики моточасов.</br>
-	</p>
+
 	<table class="intro_table">
 		<tr>
 		<td>
-		<img src="/bitrix/templates/poligon_i/images/graeslin-logo.gif" align="left"  />
+		
+			<div id="graesslin_logo_story_container">
+				<div>
+			<div id="graesslin_story">
+				Компания Graesslin была основана в 1956 году Дитером Грэсслин в Германии. Это было семейное предприятие, которое собирало часовые механизмы для местных часовых заводов.</br>
+				Graesslin сегодня – один из ведущих производителей оборудования для энергосбережения и управления освещением: программируемых таймеров, фотореле, комнатных термостатов.</br>
+				Каталог Graesslin насчитывает более 1500 продуктов, которые продаются более чем в 50 странах мира на всех пяти континентах. Доля экспорта в обороте компании составляет 80%.</br>
+				С 2007 года Graesslin входит в состав Intermatic Inc. (США). Intermatic - компания, с более чем столетней историей. Это один из крупнейших мировых производителей осветительного и энергетического оборудования, а также самый крупный производитель программируемых таймеров в мире. В 5 филиалах компании работают более 4500 человек.</br>
+				Graesslin производит: таймеры механические и цифровые (с суточной, недельной и годовой программой), таймеры астрономические, таймеры лестничные, фотореле (сумеречные выключатели) со встроенным или внешним датчиком, комнатные термостаты и хронотермостаты, счетчики моточасов.</br>
+			</div>
+					<a href="#" id="return_graesslin_story">
+						<img src="/bitrix/templates/poligon_i/images/graesslin_arrow_hide.gif" alt="Скрыть" id="graesslin_hide_story_arrow" />
+					</a>
+					<img id="graesslin_logo" src="/bitrix/templates/poligon_i/images/graeslin-logo.gif" align="left" id="graesslin_hide_story_arrow" />
+					<div style="height: 150px;"></div>
+					<a id="start_graesslin_story" href="#"><h2 id="graesslin_h2">Подробнее о компании GRAESSLIN</h2></a>
+					<a id="start_graesslin_sertificates" href="#"><h2 id="graesslin_h2_1">Сертификаты на продукцию GRAESSLIN</h2></a>
+					<a href="/pdf/index.php#graesslin_ancor"><h2 id="graesslin_h2_2">Каталоги продукции GRAESSLIN</h2></a>
+					<a href="/content/feedback/catalog_order/catalogs.php"><h2 id="graesslin_h2_3"><span class="redline" >Бесплатный заказ</span> каталогов и CD</h2></a>
+				</div>
+			</div>		
+		
 		</td>
 		<td>
-	<ul>
+	<ul style="-webkit-padding-start: 20px;">
 		<li><a href="/catalog/index.php?SECTION_ID=5415">таймеры (с суточной, недельной и годовой программой)</a></li>
 		<li><a href="/catalog/index.php?SECTION_ID=5418">астрономические таймеры</a></li>
 		<li><a href="/catalog/index.php?SECTION_ID=5420">лестничные таймеры</a></li>
@@ -264,16 +325,25 @@
 		<li><a href="/catalog/index.php?SECTION_ID=5454">фотореле (сумеречный выключатель)</a></li>
 		<li><a href="/catalog/index.php?SECTION_ID=5422">термостаты и хронотермостаты</a></li>
 		<li><a href="/catalog/index.php?SECTION_ID=5423">счётчики часов наработки</a></li>
-	</ul>
+	</ul><br><br><br><br><br><br><br><br>
 		</td>
 		<td>
-		<img src="/bitrix/templates/poligon_i/images/graeslin-device.gif" align="right"  />
+		<img src="/bitrix/templates/poligon_i/images/graeslin-device.gif" align="right" id="graesslin_device_image" />
 		</td>
 		</tr>
 	</table>
 	</article>
 </section>
 <div id="sonder_ancor"></div>
+<div id="sonder_sertificates">
+	<div class="sonder_sertificates_list">
+		<a href="#" id="hide_sonder_sertificates"><img src="/bitrix/templates/poligon_i/images/sonder_arrow_hide.gif" alt="Скрыть сертификаты"  class="sonder_sertificate_arrow"></a>
+		<a href="/images/lics/Sonder_GOST_1.jpg" class="show" target="_blank"><img src="/images/lics/pre/Sonder_GOST_1.jpg" alt="Сертификат продукции sonder" class="sonder_sertificate_thumb"></a>
+		<a href="/images/lics/Sonder_GOST_2.jpg" class="show" target="_blank"><img src="/images/lics/pre/Sonder_GOST_2.jpg" alt="Сертификат продукции sonder" class="sonder_sertificate_thumb"></a>
+		<a href="/images/lics/Sonder_GOST_3.jpg" class="show" target="_blank"><img src="/images/lics/pre/Sonder_GOST_3.jpg" alt="Сертификат продукции sonder" class="sonder_sertificate_thumb"></a>
+		<a href="#" id="hide_sonder_sertificates"><img src="/bitrix/templates/poligon_i/images/sonder_arrow_hide.gif" alt="Скрыть сертификаты"  class="sonder_sertificate_arrow"></a>
+	</div>
+</div>
 <section class="sonder_page">
 	<article>
 	<header>
@@ -282,21 +352,69 @@
 	<table class="intro_table">
 		<tr>
 		<td>
-		<img src="/bitrix/templates/poligon_i/images/sonder-logo.gif" align="left"  />
+		
+			<div id="sonder_logo_story_container">
+				<div>
+			<div id="sonder_story">
+				<b>Sonder Regulacion</b> (Испания) начала свою деятельность под названием <b>SOPAC Espanola</b>, SA в 1966 году, как часть международной группы <b>SOPAC Regulacion, SA</b> (Франция), основной специализации компании стало производство термостатов и реле давления для систем отопления, промышленного холода и кондиционирования.<br>
+				В 1987 компания выходит из состава международной группы, и с тех пор на 100% состоит из испанского капитала.<br>
+				В 1996 производство переезжает на новую фабрику. Начиная, с этого момента производство ориентируется на промышленный сектор и экспорт.<br>
+				<b>Исследования, разработка, проектирование</b><br>
+				Разработка термостатов - это главный актив компании. Разработкой занимается группа ведущих инженеров, которые являются экспертами в своей области. Благодаря новейшим технологиям, создаются решения, отвечающие всем требованиям клиентов.<br>
+				Продукция <b>Sonder</b> применяется в различных сферах, таких как:<br>
+				Управление температурой в жилых помещениях;<br>
+				частные хозяйства, сельское хозяйство, животноводство и т.п.<br>
+				OEM-продукты.<br>
+				Возобновляемые источники энергии.
+			</div>
+					<a href="#" id="return_sonder_story">
+						<img src="/bitrix/templates/poligon_i/images/sonder_arrow_hide.gif" alt="Скрыть" id="sonder_hide_story_arrow" />
+					</a>
+					<img id="sonder_logo" src="/bitrix/templates/poligon_i/images/sonder-logo.png" align="left" id="sonder_hide_story_arrow" /><br>
+					<div style="height: 150px;"></div>
+					<a id="start_sonder_story" href="#"><h2 id="sonder_h2">Подробнее о компании SONDER</h2></a>
+					<a id="start_sonder_sertificates" href="#"><h2 id="sonder_h2_1">Сертификаты на продукцию SONDER</h2></a>
+					<a href="/pdf/index.php#sonder_ancor"><h2 id="sonder_h2_2">Каталоги продукции SONDER</h2></a>
+					<a href="/content/feedback/catalog_order/catalogs.php"><h2 id="sonder_h2_3"><span class="redline" >Бесплатный заказ</span> каталогов и CD</h2></a>
+				</div>
+			</div>			
+		
 		</td>
 		<td>
 	<ul>
+		<li><a href="/catalog/index.php?SECTION_ID=5535">термостаты для тёплого пола</a></li>
 		<li><a href="/catalog/index.php?SECTION_ID=5536">механические комнатные термостаты</a></li>
 	</ul>
 		</td>
 		<td>
-		<img src="/bitrix/templates/poligon_i/images/sonder-device.gif" align="right"  />
+			<div id="sonder_logo_story_container2">
+				<div>		
+			<div id="sonder_story2">
+				<b>Преимущества производителя</b><br>
+				Производство Sonder состоит из двух производственных линий: <br>производство механических и электронных изделий. Обе линии имеют высокий уровень автоматизации и производительную мощность соответствующие объему производства, сертифицированы по стандарту управления качеством ISO 9001:2000 Bureau Veritas Certification.<br>
+				Полный цикл производства даёт возможность для адаптации продукции к любым требованиям рынка.<br>
+				Механические комнатные термостаты производства SONDER отвечают самым изысканным требованиям клиентов. Возможна как поставка полностью укомплектованных устройств под брендом <b>Sonder</b>, так и продукции для интеграции в OEM и любые другие системы.<br><br><br><br><br><br><br><br>
+			</div>
+					<a href="#" id="return_sonder_story2">
+						<img src="/bitrix/templates/poligon_i/images/sonder_arrow_hide.gif" alt="Скрыть" id="sonder_hide_story_arrow2" />
+					</a>
+			<img src="/bitrix/templates/poligon_i/images/sonder-device.gif" align="right" id="sonder_device_image" />	
+			</div>
+		</div>
 		</td>
 		</tr>
 	</table>
 	</article>
 </section>
 <div id="relequick_ancor"></div>
+<div id="relequick_sertificates">
+	<div class="relequick_sertificates_list">
+		<a href="#" id="hide_relequick_sertificates"><img src="/bitrix/templates/poligon_i/images/relequick_arrow_hide.gif" alt="Скрыть сертификаты"  class="relequick_sertificate_arrow"></a>
+		<a href="/images/lics/relequick-1.jpg" class="show" target="_blank"><img src="/images/lics/pre/relequick-1.jpg" alt="Сертификат продукции relequick" class="relequick_sertificate_thumb"></a>
+		<a href="/images/lics/relequick-2.jpg" class="show" target="_blank"><img src="/images/lics/pre/relequick-2.jpg" alt="Сертификат продукции relequick" class="relequick_sertificate_thumb"></a>
+		<a href="#" id="hide_relequick_sertificates"><img src="/bitrix/templates/poligon_i/images/relequick_arrow_hide.gif" alt="Скрыть сертификаты"  class="relequick_sertificate_arrow"></a>
+	</div>
+</div>
 <section class="relequick_page">
 	<article>
 	<header>
@@ -305,7 +423,24 @@
 	<table class="intro_table">
 		<tr>
 		<td>
-		<img src="/bitrix/templates/poligon_i/images/relequick-logo.gif" align="left"  />
+		
+			<div id="relequick_logo_story_container">
+				<div>
+					<div id="relequick_story">
+						Relequick - испанский производитель промышленных реле, интерфейсных реле, полупроводниковых реле, электронных цифровых модулей, реле времени и реле контроля, оборудования для возобновляемой энергии, SMS-реле.</br></br></br></br></br>
+					</div>
+					<a href="#" id="return_relequick_story">
+						<img src="/bitrix/templates/poligon_i/images/relequick_arrow_hide.gif" alt="Скрыть" id="relequick_hide_story_arrow" />
+					</a>
+					<img id="relequick_logo" src="/bitrix/templates/poligon_i/images/relequick-logo.gif" align="left" id="relequick_hide_story_arrow" />
+					<div style="height: 150px;"></div>
+					<a id="start_relequick_story" href="#"><h2 id="relequick_h2">Подробнее о компании RELEQUICK</h2></a>
+					<a id="start_relequick_sertificates" href="#"><h2 id="relequick_h2_1">Сертификаты на продукцию RELEQUICK</h2></a>
+					<a href="/pdf/index.php#relequick_ancor"><h2 id="relequick_h2_2">Каталоги продукции RELEQUICK</h2></a>
+					<a href="/content/feedback/catalog_order/catalogs.php"><h2 id="relequick_h2_3"><span class="redline" >Бесплатный заказ</span> каталогов и CD</h2></a>
+				</div>
+			</div>	
+		
 		</td>
 		<td>
 	<ul>
@@ -314,14 +449,52 @@
 	</ul>
 		</td>
 		<td>
-		<img src="/bitrix/templates/poligon_i/images/relequick-device.gif" align="right"  />
+		<img src="/bitrix/templates/poligon_i/images/relequick-device.gif" align="right" id="relequick_device_image" />
 		</td>
 		</tr>
 	</table>
 	</article>
 </section>
 <div id="comat_releco_ancor"></div>
-<section class="comat_releco_page">
+<div id="comat-releco_sertificates">
+	<div class="comat-releco_sertificates_list">
+	<table>
+		<tr>
+		<td>
+		<a href="#" id="hide_comat-releco_sertificates"><img src="/bitrix/templates/poligon_i/images/comat-releco_arrow_hide.gif" alt="Скрыть сертификаты"  class="comat-releco_sertificate_arrow"></a>
+		</td>
+		<td>
+		<table>
+			<tr>
+			<td>
+		<a href="/images/lics/Releco_2012-2015_1.jpg" class="show" target="_blank"><img src="/images/lics/pre/Releco_2012-2015_1.jpg" alt="Сертификат продукции comat-releco" class="comat-releco_sertificate_thumb"></a>
+		<a href="/images/lics/Releco_2012-2015_2.jpg" class="show" target="_blank"><img src="/images/lics/pre/Releco_2012-2015_2.jpg" alt="Сертификат продукции comat-releco" class="comat-releco_sertificate_thumb"></a>
+		<a href="/images/lics/Releco_2012-2015_3.jpg" class="show" target="_blank"><img src="/images/lics/pre/Releco_2012-2015_3.jpg" alt="Сертификат продукции comat-releco" class="comat-releco_sertificate_thumb"></a>
+		<a href="/images/lics/Releco_app_1.jpg" class="show" target="_blank"><img src="/images/lics/pre/Releco_app_1.jpg" alt="Сертификат продукции comat-releco" class="comat-releco_sertificate_thumb"></a>
+		<a href="/images/lics/Releco_app_2.jpg" class="show" target="_blank"><img src="/images/lics/pre/Releco_app_2.jpg" alt="Сертификат продукции comat-releco" class="comat-releco_sertificate_thumb"></a>
+		<a href="/images/lics/Releco_app_3.0.jpg" class="show" target="_blank"><img src="/images/lics/pre/Releco_app_3.0.jpg" alt="Сертификат продукции comat-releco" class="comat-releco_sertificate_thumb"></a>
+		<a href="/images/lics/Releco_app_3.1.jpg" class="show" target="_blank"><img src="/images/lics/pre/Releco_app_3.1.jpg" alt="Сертификат продукции comat-releco" class="comat-releco_sertificate_thumb"></a>
+			</td>
+			</tr>
+			<tr>
+			<td align="center">
+		<a href="/images/lics/releco-1.jpg" class="show" target="_blank"><img src="/images/lics/pre/releco-1.jpg" alt="Сертификат продукции comat-releco" class="comat-releco_sertificate_thumb"></a>
+		<a href="/images/lics/releco-2.jpg" class="show" target="_blank"><img src="/images/lics/pre/releco-2.jpg" alt="Сертификат продукции comat-releco" class="comat-releco_sertificate_thumb"></a>
+		<a href="/images/lics/releco-3.jpg" class="show" target="_blank"><img src="/images/lics/pre/releco-3.jpg" alt="Сертификат продукции comat-releco" class="comat-releco_sertificate_thumb"></a>
+		<a href="/images/lics/releco-4.jpg" class="show" target="_blank"><img src="/images/lics/pre/releco-4.jpg" alt="Сертификат продукции comat-releco" class="comat-releco_sertificate_thumb"></a>
+		<a href="/images/lics/releco-5.jpg" class="show" target="_blank"><img src="/images/lics/pre/releco-5.jpg" alt="Сертификат продукции comat-releco" class="comat-releco_sertificate_thumb"></a>
+			</td>
+			</tr>
+		</table>
+		</td>
+		<td>
+		<a href="#" id="hide_comat-releco_sertificates"><img src="/bitrix/templates/poligon_i/images/comat-releco_arrow_hide.gif" alt="Скрыть сертификаты"  class="comat-releco_sertificate_arrow"></a>
+		</td>
+		</tr>
+		</table>
+	</div>
+</div>
+<section class="comat-releco_page">
 	<article>
 	<header>
 		<h1>ПРОМЕЖУТОЧНЫЕ РЕЛЕ</h1>
@@ -329,14 +502,38 @@
 	<table class="intro_table">
 		<tr>
 		<td>
-		<img src="/bitrix/templates/poligon_i/images/comat-releco-logo.gif" align="left"  />
+		
+					<div id="comat-releco_logo_story_container">
+						<div>
+					<div id="comat-releco_story">
+						Группа Comat/Releco является лидером в разработке и производстве промежуточных реле.
+						</br>Comat AG, основанная в Швейцарии в 1970 году и Releco SA, основанная Испании в 1962 году, сегодня включают в себя более 200 профессионалов. Экспорт производится в 60 стран и составляет 80% оборота. </br>Releco производит около 5 млн реле в год.
+						</br>Продукция Comat/Releco занимает значительную часть рынка в странах, с климатом схожим с российским, таких как Финляндия, Швеция, Норвегия и Канада. </br></br>
+					</div>
+					<a href="#" id="return_comat-releco_story">
+						<img src="/bitrix/templates/poligon_i/images/comat-releco_arrow_hide.gif" alt="Скрыть" id="comat-releco_hide_story_arrow" />
+					</a>
+					<img id="comat-releco_logo" src="/bitrix/templates/poligon_i/images/comat-releco-logo.gif" align="left" id="comat-releco_hide_story_arrow" />
+					<div style="height: 150px;"></div>
+					<a id="start_comat-releco_story" href="#"><h2 id="comat-releco_h2">Подробнее о COMAT-RELECO</h2></a>
+					<a id="start_comat-releco_sertificates" href="#"><h2 id="comat-releco_h2_1">Сертификаты на продукцию COMAT-RELECO</h2></a>
+					<a href="/pdf/index.php#comat-releco_ancor"><h2 id="comat-releco_h2_2">Каталоги продукции COMAT-RELECO</h2></a>
+					<a href="/content/feedback/catalog_order/catalogs.php"><h2 id="comat-releco_h2_3"><span class="redline" >Бесплатный заказ</span> каталогов и CD</h2></a>
+				</div>
+			</div>	
+		
 		</td>
 		<td>
 	<ul>
-		<li><a href="/catalog/index.php?SECTION_ID=4851">промышленные реле</a></li>
-		<li><a href="/catalog/index.php?SECTION_ID=4866">миниатюрные реле</a></li>
-		<li><a href="/catalog/index.php?SECTION_ID=4867">интерфейсные реле</a></li>
-		<li><a href="">полупроводниковые реле</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=77">Общий обзор продукции COMAT-RELECO</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=4851">Серия  MRC - Промышленные реле</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=4866">Серия  QRC - Миниатюрные  реле</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=4867">Серия  IRC - Интерфейсные реле</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=5537">Серия RINT - Интерфейсные реле</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=5083">Таймеры</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=5109">Колодки для реле</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=5084">Охранное устройство</a></li>
+		
 	</ul>
 		</td>
 		<td>
@@ -347,6 +544,20 @@
 	</article>
 </section>
 <div id="emko_ancor"></div>
+<div id="emko_sertificates">
+	<div class="emko_sertificates_list">
+		<a href="#" id="hide_emko_sertificates"><img src="/bitrix/templates/poligon_i/images/emko_arrow_hide.gif" alt="Скрыть сертификаты"  class="emko_sertificate_arrow"></a>
+		<a href="/images/lics/emko_1_page_1.jpg" class="show" target="_blank"><img src="/images/lics/pre/emko_1_page_1.jpg" alt="Сертификат продукции emko" class="emko_sertificate_thumb"></a>
+		<a href="/images/lics/emko_1_page_2.jpg" class="show" target="_blank"><img src="/images/lics/pre/emko_1_page_2.jpg" alt="Сертификат продукции emko" class="emko_sertificate_thumb"></a>
+		<a href="/images/lics/emko_2.jpg" class="show" target="_blank"><img src="/images/lics/pre/emko_2.jpg" alt="Сертификат продукции emko" class="emko_sertificate_thumb"></a>
+		<a href="/images/lics/emko_3_page_1.jpg" class="show" target="_blank"><img src="/images/lics/pre/emko_3_page_1.jpg" alt="Сертификат продукции emko" class="emko_sertificate_thumb"></a>
+		<a href="/images/lics/emko_3_page_2.jpg" class="show" target="_blank"><img src="/images/lics/pre/emko_3_page_2.jpg" alt="Сертификат продукции emko" class="emko_sertificate_thumb"></a>
+		<a href="/images/lics/emko_4.jpg" class="show" target="_blank"><img src="/images/lics/pre/emko_4.jpg" alt="Сертификат продукции emko" class="emko_sertificate_thumb"></a>
+		<a href="/images/lics/emko_5_page_1.jpg" class="show" target="_blank"><img src="/images/lics/pre/emko_5_page_1.jpg" alt="Сертификат продукции emko" class="emko_sertificate_thumb"></a>
+		<a href="/images/lics/emko_5_page_2.jpg" class="show" target="_blank"><img src="/images/lics/pre/emko_5_page_2.jpg" alt="Сертификат продукции emko" class="emko_sertificate_thumb"></a>
+		<a href="#" id="hide_emko_sertificates"><img src="/bitrix/templates/poligon_i/images/emko_arrow_hide.gif" alt="Скрыть сертификаты"  class="emko_sertificate_arrow"></a>
+	</div>
+</div>
 <section class="emko_page">
 	<article>
 	<header>
@@ -355,14 +566,42 @@
 	<table class="intro_table">
 		<tr>
 		<td>
-		<img src="/bitrix/templates/poligon_i/images/emko-logo.gif"  align="left" />
+		
+					<div id="emko_logo_story_container">
+						<div>
+					<div id="emko_story">
+						С 1986 года <b>EMKO ELEKTRONIK AS</b> занимается разработкой, производством и поставками устройств для измерения и контроля, датчиков температуры и контроллеров генераторных установок, а также предоставляет техническую поддержку своих клиентов после продажи.</br>
+						Компания является лидером в своей отрасли на локальном рынке и имеет представительства в 40 странах мира. Главный офис, разработчики и производство находятся в городе Бурса (Турция), всего в компании занято 110 человек. </br>
+						<b>Продукция EMKO помогает решать следующие задачи:</b></br>
+						-Измерение, преобразование и контроль технологических параметров: </br>температуры, давления, веса, расхода, уровня, скорости, влажности, количества, времени, напряжения и тока и т.д., в соответвии с промышленными стандартами. </br>Ассортимент предлагаемых устройств используется для автоматизация, учёта и контроля материалов и услуг в текстильной, пищевой, автомобильной, химической, металлургической, цементной отраслях, машиностроении, животноводстве, энергетике и других. 
+					</div>
+					<a href="#" id="return_emko_story">
+						<img src="/bitrix/templates/poligon_i/images/emko_arrow_hide.gif" alt="Скрыть" id="emko_hide_story_arrow" />
+					</a>
+					<img id="emko_logo" src="/bitrix/templates/poligon_i/images/emko-logo.gif" align="left" id="emko_hide_story_arrow" />
+					<div style="height: 150px;"></div>
+					<a id="start_emko_story" href="#"><h2 id="emko_h2">Подробнее о компании EMKO</h2></a>
+					<a id="start_emko_sertificates" href="#"><h2 id="emko_h2_1">Сертификаты на продукцию EMKO</h2></a>
+					<a href="/pdf/index.php#emko_ancor"><h2 id="emko_h2_2">Каталоги продукции EMKO</h2></a>
+					<a href="/content/feedback/catalog_order/catalogs.php"><h2 id="emko_h2_3"><span class="redline" >Бесплатный заказ</span> каталогов и CD</h2></a>
+				</div>
+			</div>	
+		
 		</td>
 		<td>
 	<ul>
-		<li><a href="/catalog/index.php?SECTION_ID=5584">Температурные контроллеры</a></li>
-		<li><a href="/catalog/index.php?SECTION_ID=5587">Таймеры и счётчики</a></li>
+		<!--<li><a href="/catalog/index.php?SECTION_ID=5584">Температурные контроллеры</a></li>-->
+		<!--<li><a href="/catalog/index.php?SECTION_ID=5587">Таймеры и счётчики</a></li>-->
 		<li><a href="/catalog/index.php?SECTION_ID=5585">Температурные датчики</a></li>
-		<li><a href="/catalog/index.php?SECTION_ID=5586">Технологические контроллеры</a></li>
+		<!--<li><a href="/catalog/index.php?SECTION_ID=5586">Технологические контроллеры</a></li>-->
+		<!--<li><a href="/catalog/index.php?SECTION_ID=5588">Клиент-ориентированные контроллеры <br>для промышленного применения</a></li>-->
+		<li><a href="/catalog/index.php?SECTION_ID=5965">Цифровые тахометры</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=5966">Цифровые измерители длины</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=5967">Таймеры</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=5968">Счетчики</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=5969">Контроллеры</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=6019">Цифровые потенциометры</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=5964">Термоконтроллеры</a></li>
 	</ul>
 		</td>
 		<td>
@@ -373,6 +612,20 @@
 	</article>
 </section>
 <div id="cbi_ancor"></div>
+<div id="cbi_sertificates">
+	<div class="cbi_sertificates_list">
+		<a href="#" id="hide_cbi_sertificates"><img src="/bitrix/templates/poligon_i/images/cbi_arrow_hide.gif" alt="Скрыть сертификаты"  class="cbi_sertificate_arrow"></a>
+		<a href="/images/lics/CBI-B-2014_Page_1.jpg" class="show" target="_blank"><img src="/images/lics/pre/CBI-B-2014_Page_1.jpg" alt="Сертификат продукции cbi" class="cbi_sertificate_thumb"></a>
+		<a href="/images/lics/CBI-B-2014_Page_2.jpg" class="show" target="_blank"><img src="/images/lics/pre/CBI-B-2014_Page_2.jpg" alt="Сертификат продукции cbi" class="cbi_sertificate_thumb"></a>
+		<a href="/images/lics/CBI-C-2014_Page_1.jpg" class="show" target="_blank"><img src="/images/lics/pre/CBI-C-2014_Page_1.jpg" alt="Сертификат продукции cbi" class="cbi_sertificate_thumb"></a>
+		<a href="/images/lics/CBI-C-2014_Page_2.jpg" class="show" target="_blank"><img src="/images/lics/pre/CBI-C-2014_Page_2.jpg" alt="Сертификат продукции cbi" class="cbi_sertificate_thumb"></a>
+		<a href="/images/lics/CBI-DD-2014_Page_1.jpg" class="show" target="_blank"><img src="/images/lics/pre/CBI-DD-2014_Page_1.jpg" alt="Сертификат продукции cbi" class="cbi_sertificate_thumb"></a>
+		<a href="/images/lics/CBI-DD-2014_Page_2.jpg" class="show" target="_blank"><img src="/images/lics/pre/CBI-DD-2014_Page_2.jpg" alt="Сертификат продукции cbi" class="cbi_sertificate_thumb"></a>
+		<a href="/images/lics/CBI-Q-2014_Page_1.jpg" class="show" target="_blank"><img src="/images/lics/pre/CBI-Q-2014_Page_1.jpg" alt="Сертификат продукции cbi" class="cbi_sertificate_thumb"></a>
+		<a href="/images/lics/CBI-Q-2014_Page_2.jpg" class="show" target="_blank"><img src="/images/lics/pre/CBI-Q-2014_Page_2.jpg" alt="Сертификат продукции cbi" class="cbi_sertificate_thumb"></a>
+		<a href="#" id="hide_cbi_sertificates"><img src="/bitrix/templates/poligon_i/images/cbi_arrow_hide.gif" alt="Скрыть сертификаты"  class="cbi_sertificate_arrow"></a>
+	</div>
+</div>
 <section class="cbi_page">
 	<article>
 	<header>
@@ -381,7 +634,25 @@
 	<table class="intro_table">
 		<tr>
 		<td>
-		<img src="/bitrix/templates/poligon_i/images/cbi-logo.gif"  align="left" />
+		
+			<div id="cbi_logo_story_container">
+				<div>
+					<div id="cbi_story">
+						<b>CBI</b> (ЮАР) — производитель профессиональных автоматических выключателей. История CBI начинается с 1949 г., когда было создано совместное предприятие с американской компанией <b>Heinemann Electric</b>. В 1986 г. предприятие было полностью выкуплено компанией <b>Fuchs Electrical Industries</b> и преобразовано в новую компанию под названием <b>Circuit Breaker Industries Ltd (CBI)</b>. Теперь компания <b>CBI</b> полностью принадлежит группе <b>Reunert Limited</b>, работающей в области электроники и электротехники.</br>
+						<b>CBI-Electric</b> представляет широкий ассортимент низковольтной аппаратуры. В первую очередь это профессиональные автоматические выключатели, работающие на магнитно-гидравлическом принципе, счётчики расхода электроэнергии, устройства защиты от импульсных помех.</br></br></br></br>				
+					</div>
+					<a href="#" id="return_cbi_story">
+						<img src="/bitrix/templates/poligon_i/images/cbi_arrow_hide.gif" alt="Скрыть" id="cbi_hide_story_arrow" />
+					</a>
+					<img id="cbi_logo" src="/bitrix/templates/poligon_i/images/cbi-logo.gif" align="left" id="cbi_hide_story_arrow" />
+					<div style="height: 120px;"></div>
+					<a id="start_cbi_story" href="#"><h2 id="cbi_h2">Подробнее о компании CBI</h2></a>
+					<a id="start_cbi_sertificates" href="#"><h2 id="cbi_h2_1">Сертификаты на продукцию CBI</h2></a>
+					<a href="/pdf/index.php#cbi_ancor"><h2 id="cbi_h2_2">Каталоги продукции CBI</h2></a>
+					<a href="/content/feedback/catalog_order/catalogs.php"><h2 id="cbi_h2_3"><span class="redline_cbi" >Бесплатный заказ</span> каталогов и CD</h2></a>
+				</div>
+			</div>	
+
 		</td>
 		<td>
 	<ul>
@@ -389,7 +660,34 @@
 	</ul>
 		</td>
 		<td>
-		<img src="/bitrix/templates/poligon_i/images/cbi-device.gif" align="right"  />
+		
+			<div id="cbi_logo_story_container2">
+				<div>
+					<div id="cbi_story2">
+						<b>Основные отрасли применения продукции CBI:</b><br>
+						<ul class="mark">
+							<li>Телекоммуникации</li>
+							<li>Системы электропитания</li>
+							<li>Железнодорожная техника (Сигнальные системы и подвижный состав)</li>
+							<li>UPS – устройства безперебойного питания</li>
+							<li>Мобильные генераторы</li>
+							<li>Электростанции</li>
+							<li>Отопление, вентиляция и кондиционирование воздуха</li>
+							<li>Торговое оборудование</li>
+							<li>Сценические осветительные системы</li>
+							<li>Сварочное оборудование</li>
+							<li>Морской транспорт</li>
+							<li>Медицинское оборудование</li>
+							<li>Военный транспорт и оборудование электропитания</li>
+						</ul>						
+					</div>
+					<a href="#" id="return_cbi_story2">
+						<img src="/bitrix/templates/poligon_i/images/cbi_arrow_hide.gif" alt="Скрыть" id="cbi_hide_story_arrow2" />
+					</a>
+					<img src="/bitrix/templates/poligon_i/images/cbi-device.gif" align="left" id="cbi_device_image" />
+				</div>
+			</div>	
+			
 		</td>
 		</tr>
 	</table>
@@ -403,23 +701,90 @@
 	</header>
 	<table class="intro_table">
 		<tr>
-		<td>
-		<img src="/bitrix/templates/poligon_i/images/huber_suhner-logo.gif" align="left" />
+		<td>		
+			<div id="huber_suhner_logo_story_container">
+				<div>
+
+					<div id="huber_suhner_story">
+						История HUBER+SUHNER ведет свой отсчет с конца 19 столетия.
+						До объединения в 1969 году две швейцарские частные компании HUBER и SUHNER развивались независимо, конкурируя друг с другом.
+						</br>
+						Обладая широчайшей известностью в мире, сегодня HUBER+SUHNER - это брэнд мирового масштаба.
+						</br>
+						HUBER+SUHNER разрабатывает и производит различные компоненты высокочастотных, микроволновых и оптических приложений, используемых: - в системах беспроводной связи любого типа - в сотовой телефонии - при строительстве глобальных и локальных телекоммуникационных сетей - при производстве телекоммуникационного оборудования - в автомобилестроении, авиастроении, космической технике - на транспорте - в военной промышленности и многих других областях.
+					</div>
+					<a href="#" id="return_huber_suhner_story">
+						<img src="/bitrix/templates/poligon_i/images/huber_suhner_arrow_hide.gif" alt="Скрыть" id="huber_suhner_hide_story_arrow" />
+					</a>
+					<img id="huber_suhner_logo" src="/bitrix/templates/poligon_i/images/huber_suhner-logo.gif" align="left" />
+					<div style="height: 80px;"></div>
+					<a id="start_huber_suhner_story" href="#"><h2 id="huber_suhner_h2">Подробнее о компании HUBER+SUHNER</h2></a>
+					<a href="/pdf/index.php#huber_suhner_ancor"><h2 id="huber_suhner_h2_2">Каталоги продукции HUBER+SUHNER</h2></a>
+					<a href="/content/feedback/catalog_order/catalogs.php"><h2 id="huber_suhner_h2_3"><span class="redline" >Бесплатный заказ</span> каталогов и CD</h2></a>
+				</div>
+			</div>		
+		</td>
+		<td>	
+			<div id="huber_suhner_logo_story_container2">
+				<div id="huber_suhner_links_table">
+						<b style="font:26px Arial, Helvetica, sans-serif;">Основные сведения о номенклатуре HUBER+SUHNER:</b><br><br>
+						<table valign="top">
+							<tbody>
+							<tr>
+								<td valign="top">
+
+									<b>ВЫСОКОЧАСТОТНЫЕ<br>КОМПОНЕНТЫ</b><br>
+
+									- Разъемы<br>
+									- Адаптеры<br>
+									- Кабели<br>
+									- Кабельные сборки<br>
+									- Антенны<br>
+									- Грозоразрядники<br>
+									- Сплиттеры<br>
+									- Резистивные компоненты
+								</td>
+								<td valign="top"><b>ОПТИЧЕСКИЕ КОМПОНЕНТЫ</b><br>
+
+									- Оптические разъемы и адаптеры<br>
+									- Оптоволоконные кабели<br>
+									- Оптические кабельные сборки<br>
+									- Распредилительное оборудование<br>
+								</td>
+								<td valign="top"><b>ЭЛЕКТРИЧЕСКИЕ ПРОВОДА И КАБЕЛИ</b><br>
+
+									- Кабели для подвижного состава железнодорожного транспорта<br>
+									- Кабели для автомобилестроения<br>
+									- Кабели промышленного применения<br>
+									- Распредилительное оборудование<br>
+									- Безопасные кабели<br>
+									- Кабели для военной промышленности</td>
+							</tr>
+							</tbody>
+						</table><br><br>
+				</div>
+				<a href="/content/feedback/quick_order/"><h2 style="width: 230px; margin: auto; text-decoration: underline;">ОФОРМИТЬ ЗАЯВКУ</h2></a>
+			</div>			
 		</td>
 		<td>
-	<ul>
-		<li>ВЧ-разъемы</li>
-		<li>ВЧ-адаптеры</li>
-		<li>кабели</li>
-		<li>кабельные сборки</li>
-		<li>антенны</li>
-		<li>грозоразрядники</li>
-		<li>сплиттеры</li>
-		<li>резистивные компоненты</li>
-	</ul>
-		</td>
-		<td>
-		<img src="/bitrix/templates/poligon_i/images/huber_suhner-device.gif" align="right"  />
+		
+		<div id="huber_suhner_logo_story_container3">
+				<div>
+					<a href="#" id="return_huber_suhner_story">
+						<img src="/bitrix/templates/poligon_i/images/huber_suhner_arrow_hide.gif" alt="Скрыть" id="huber_suhner_hide_story_arrow" />
+					</a>
+					<div id="huber_suhner_story3">
+						HUBER+SUHNER производит современные высокотехнологичное оборудование на уровне мировых стандартов: - антенное оборудование и системы - высокочастотные и оптические кабели - высокочастотные и оптические разъемы и переходники - распределительные кабельные системы - грозоразрядники и другие компоненты и оборудование для высокочастотных, микроволновых и оптических приложений.
+						</br>
+						Штаб квартира HUBER+SUHNER расположена в Швейцарии в городе Herisau. Производственные мощности HUBER+SUHNER расположены на всех континентах - всего 12 производственных предприятий. Штат HUBER+SUHNER насчитывает около 2500 сотрудников по всему миру.
+						</br></br></br>
+					</div>
+					<a href="#" id="return_huber_suhner_story2">
+						<img src="/bitrix/templates/poligon_i/images/huber_suhner_arrow_hide.gif" alt="Скрыть" id="huber_suhner_hide_story_arrow2" />
+					</a>
+						<img src="/bitrix/templates/poligon_i/images/huber_suhner-device.gif" align="right" id="huber_suhner_device_image" />
+				</div>
+			</div>	
 		</td>
 		</tr>
 	</table>
@@ -437,6 +802,7 @@
 		<img src="/bitrix/templates/poligon_i/images/farnell-logo.gif"  align="left" />
 		</td>
 		<td>
+	<a href="/special/farnell.php">
 	<ul>
 	<li>электроные компоненты (пассивные, полупроводниковые и т.п.)</li>
 	<li>ВЧ-разъемы и соединители</li>
@@ -446,7 +812,7 @@
 	<li>тестовое оборудование</li>
 	<li>кабель</li>
 	<li>комплектующие изделия и аксессуары</li>
-	</ul>
+	</ul></a>
 		</td>
 		<td>
 		<img src="/bitrix/templates/poligon_i/images/farnell-device.gif" align="right"  />
@@ -459,7 +825,7 @@
 <section class="vemer_page">
 	<article>
 	<header>
-		<h1>VEMER</h1>
+		<h1>VEMER<br>Внимание! Предварительный заказ на продукцию этого производителя недоступен. <br>Идёт продажа остатков по складу.</h1>
 	</header>
 	<table class="intro_table">
 		<tr>
@@ -468,12 +834,12 @@
 		</td>
 		<td>
 	<ul>
-		<li><a href="/catalog/index.php?SECTION_ID=5703">Газ и безопасность</a></li>
-		<li><a href="/catalog/index.php?SECTION_ID=5664">Измерение и контроль</a></li>
-		<li><a href="/catalog/index.php?SECTION_ID=5651">Изоляторы и держатели шин</a></li>
-		<li><a href="/catalog/index.php?SECTION_ID=5670">Климат-контроль</a></li>
-		<li><a href="/catalog/index.php?SECTION_ID=5689">Регулирование физических величин</a></li>
-		<li><a href="/catalog/index.php?SECTION_ID=5679">Управление временем</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=6063">Газ и безопасность</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=6039">Измерение и контроль</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=6036">Климат-контроль</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=6046">Регулирование физических величин</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=6049">Управление временем</a></li>
+		<li><a href="/catalog/index.php?SECTION_ID=6148">Управление освещением</a></li>
 	</ul>
 		</td>
 		<td>

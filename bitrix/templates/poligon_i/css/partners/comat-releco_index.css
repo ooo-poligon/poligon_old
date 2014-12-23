@@ -1,0 +1,116 @@
+#comat_releco_ancor {
+		background: url("/bitrix/templates/poligon_i/images/comat-releco_ancor.jpg") no-repeat;
+		background-size: 100%;
+		height: 470px;
+}
+#comat-releco_sertificates {
+		display: none;
+		wigth: 100%;
+		height: 408px;
+		background: url(/bitrix/templates/poligon_i/images/comat-releco_sertificates_bg.jpg) repeat-x #006ab0;
+}
+.comat-releco_sertificates_list{
+		width: 1420px;
+		margin: auto;
+		padding-top: 10px;
+		align: center;
+}
+.comat-releco_sertificate_thumb{
+		height: 180px;
+		box-shadow: 0 0 20px rgba(0,0,0,0.5); /* Параметры тени */
+		margin-right: 10px;
+}
+.comat-releco_sertificate_arrow{
+		height: 180px;
+		margin-right: 10px;
+}
+#comat-releco_logo_story_container {
+		position:relative;
+		background: #fff;
+		margin-top: -60px;
+		height: 300px;
+}
+#comat-releco_story{
+		background: #fff;
+		font:14px Arial, Helvetica, sans-serif;
+		text-decoration:none;
+		font-weight:normal;
+		text-align: left;
+		position:relative;
+		#height:0px;
+		#opacity:0;
+		display: none;
+		width: 450px;
+		margin-top: -40px;
+		color:#006ab0;
+}
+#comat-releco_hide_story_arrow{
+		width: 140px;
+		margin-top: 0px;
+		margin-left: 155px;
+		display: none;
+}
+#comat-releco_logo {
+		position:relative;
+		height: 140px;
+		text-align:center;
+		margin-top: -60px;
+}
+#comat-releco_device_image {
+		height: 370px;
+		margin-top: -100px;
+}
+.comat-releco_page{
+		font:20px Arial, Helvetica, sans-serif;
+		color:#006ab0;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+		height: 520px;
+		background: #fff;
+		width: 100%;
+		margin-top: -50px;
+}
+.comat-releco_page h1{
+		font:46px Arial, Helvetica, sans-serif;
+		color:#006ab0;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: center;
+		padding-top: 40px;
+}
+.comat-releco_page h2{
+		font:20px Arial, Helvetica, sans-serif;
+		color:#006ab0;
+		text-decoration: none;
+		font-weight:bold;
+		text-align: left;
+}
+.comat-releco_page h2:hover{
+		font:20px Arial, Helvetica, sans-serif;
+		color:#60bff7;
+		text-decoration: none;
+		font-weight:bold;
+		text-align: left;
+}
+.redline:hover{
+		font:26px Arial, Helvetica, sans-serif;
+		color:#60bff7;
+		text-decoration: none;
+		font-weight:bold;
+		text-align: left;		
+}
+.comat-releco_page a{
+		font:26px Arial, Helvetica, sans-serif;
+		color:#006ab0;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+.comat-releco_page a:hover{
+		font:26px Arial, Helvetica, sans-serif;
+		color:#60bff7;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}

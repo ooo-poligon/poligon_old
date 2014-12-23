@@ -8,13 +8,13 @@
 		<meta charset=utf-8>
 		<title><?$APPLICATION->ShowTitle()?></title>
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-		<link href="/bitrix/templates/poligon_i/css/template_styles.css"        rel="stylesheet" type="text/css" media="(min-width: 1600px)" />
+		<link href="/bitrix/templates/poligon_i/template_styles.css"        rel="stylesheet" type="text/css" media="(min-width: 1600px)" />
 		<link href="/bitrix/templates/poligon_i/css/resolutions/style_1600.css" rel="stylesheet" type="text/css" media="(max-width: 1599px)" />
 		<link href="/bitrix/templates/poligon_i/css/resolutions/style_1400.css" rel="stylesheet" type="text/css" media="(max-width: 1399px)" />
 		<link href="/bitrix/templates/poligon_i/css/resolutions/style_1280.css" rel="stylesheet" type="text/css" media="(max-width: 1279px)" />
 		<link href="/bitrix/templates/poligon_i/css/resolutions/style_1024.css" rel="stylesheet" type="text/css" media="(max-width: 1023px)" />
 		<link href="/bitrix/templates/poligon_i/css/resolutions/style_800.css"  rel="stylesheet" type="text/css" media="(max-width: 799px)"  />
-		<link href="/bitrix/templates/poligon_i/css/resolutions/style_640.css"  rel="stylesheet" type="text/css" media="(max-width: 639px)"  />
+		<link href="/bitrix/templates/poligon_i/css/resolutions/style_640.css"  rel="stylesheet" type="text/css" media="(max-width: 639px)"  />		
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script type="text/javascript" src="/bitrix/templates/poligon_i/js/jquery.min.js"></script>
 		<script type="text/javascript" src="/bitrix/templates/poligon_i/js/jquery.localscroll.js"></script>
@@ -22,9 +22,38 @@
 		<script type="text/javascript" src="/bitrix/templates/poligon_i/js/height.js"></script>
 		<script type="text/javascript" src="/bitrix/templates/poligon_i/js/screen.js"></script>
 		<script type="text/javascript" src="/bitrix/templates/poligon_i/js/poligon_i_scripts.js"></script>
+		
+		<link href="/css/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css" />		
+		<script type="text/javascript" src="/js/jquery.lightbox-0.5.pack.js"></script>
+		<script>
+		jQuery(function(){
+	    jQuery("a.show").lightBox({
+			imageLoading: '/js/images/lightbox-ico-loading.gif',
+			imageBtnClose: '/js/images/lightbox-btn-close.gif',
+			imageBtnPrev: '/js/images/lightbox-btn-prev.gif',
+			imageBtnNext: '/js/images/lightbox-btn-next.gif',
+			imageBlank: '/js/images/lightbox-blank.gif',
+		});
+		$("#onStore a[href='#orderPopup']").bind('click', function(){
+			$('body').append('<div id="wrapperOrder"></div>');
+			$("#orderPopup").show('slow');
+			return false;
+		});
+		$("img#close").bind('click', function(){
+			$("#orderPopup").hide('slow');
+			$("#wrapperOrder").remove();
+			return false;
+		});
+		$("#wrapperOrder").live('click', function(){
+			$("#orderPopup").hide();
+			$("#wrapperOrder").remove();
+			return false;
+		});
+		});
+		</script>
 	</head>
 	<!--#################################################################################################################-->
-	<body>
+	<body>	
 		<?$APPLICATION->ShowPanel();?>
 		<div style="position:fixed; height:100px;"></div>
 		<header class="top_bar">
@@ -66,18 +95,44 @@
 					}
 				?>
 				</div>
-				<p class="special_hide_button">
-					<img src="/bitrix/templates/poligon_i/images/special_hide.png" usemap="#special_hide_area" />
-					<map name="special_hide_area">
-						<area shape="rect" coords="110,10,480,40" href="#" id="special_close" alt="Закрыть панель специальных предложений">
-					</map>
-				</p>
+					<div class="special_hide_button">
+						<button href="#" id="special_close">ЗАКРЫТЬ ПАНЕЛЬ СПЕЦПРЕДЛОЖЕНИЙ</button>
+					</div>
 			</section>
 			<section id="contacts">
 				<article>
 					<header>
 						Адрес: 197376, Санкт-Петербург, ул. Льва Толстого, д. 7, офис 501 <span>(300м от ст.м. Петроградская)</span>
 					</header>
+						<div class="yandex_map"> 
+							<script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=mMcHB3adzZU56nSeZMihcmzE0Jlbq5ti&amp"></script>
+						</div>
+						<div class="contacts_column_left">
+							<p>
+								ОТДЕЛ ПРОДАЖ <br><span>(выставление счетов и отгрузка <br>по всем направлениям, <br>электронные компоненты,
+									<br>
+								электротехническая продукция):</span> 
+								<br><br>
+								Контактные телефоны: <br>(812) 325-4220, <br>(812) 325-6420
+								
+								<p>Долгова Инна: <br><a href="mailto:dolgova@poligon.info">dolgova@poligon.info</a>, <br>тел.: (812) 325-64-20 (доб. 115)<br></p> 	 
+								<p>Борисовец Елена: <br><a href="mailto:elcomp@poligon.info">elcomp@poligon.info</a>, <br>тел.: (812) 325-64-20 (доб. 114)<br></p>
+								
+							</p>
+						</div>
+						<div class="contacts_column_right">
+							<p>
+								ТЕХНИЧЕСКАЯ ПОДДЕРЖКА<span> 
+									<br>(TELE, RELECO, BENEDICT,
+									<br>CITEL, GRAESSLIN, CBI, SONDER, EMKO),
+								<br>оптовая поставка электротехнической продукции:</span>
+								<br><br>
+								Контактные телефоны: <br>(812) 335-3-665, <br>(812) 325-4220
+								
+								<p>Евтихиев Дмитрий: <br><a href="mailto:edn@poligon.info">edn@poligon.info</a>, <br>тел.: (812) 325-64-20 (доб. 141)<br></p> 
+								<p>Крутень Евгений: <br><a href="mailto:kruten@poligon.info">kruten@poligon.info</a>, <br>тел.: (812) 325-64-20 (доб. 148)<br></p>								
+							</p>
+						</div>
 					<div class="feedback">	
 						<table width="100%" border="0" cellspacing="0" cellpadding="0">
 							<tr>
@@ -114,8 +169,8 @@
 											$goTitle [2]='E-Mail:';		$goTypeHTML [2]=$goInput; $goName[2]='email'; 	$goReqParam[2]=true; 
 											$goTitle [3]='Телефон:';	$goTypeHTML [3]=$goInput; $goName[3]='phone1';	$goReqParam[3]=true; 
 											$goTitle [4]='Компания:';		$goTypeHTML [4]=$goInput; $goName[4]='company'; 	$goReqParam[4]=true; 
-											$goTitle [5]='Должность:';	$goTypeHTML [5]=$goTextArea; $goName[5]='doljnost';	$goReqParam[5]=false; 
-											$goTitle [6]='Вопрос/Заявка:';			$goTypeHTML [6]=$goTextArea; $goName[6]='question';	$goReqParam[6]=false; 
+											$goTitle [5]='Должность:';	$goTypeHTML [5]=$goTextArea; $goName[5]='doljnost';	$goReqParam[5]=true; 
+											$goTitle [6]='Вопрос/Заявка:';			$goTypeHTML [6]=$goTextArea; $goName[6]='question';	$goReqParam[6]=true; 
 											//***************************************** Здесь меняем и вносим требуемые условия (конец) *****************************************//
 											//***************************************** Все, что ниже менять не рекомендуется *****************************************//
 											$goKolichestvoElementov = count($goTitle); // не трогать, и неперемещать. Эта строчка должна быть внизу.
@@ -300,43 +355,11 @@
 								</tr>
 							</table>
 						</div>
-						<div class="contacts_column_left">
-							<p>
-								ОТДЕЛ ПРОДАЖ <br><span>(выставление счетов и отгрузка <br>по всем направлениям, электронные компоненты,
-									<br>
-								электротехническая продукция):</span> 
-								<br><br>
-								Контактные телефоны: <br>(812) 325-4220, <br>(812) 325-6420
-								
-								<p>Долгова Инна: <br><a href="mailto:dolgova@poligon.info">dolgova@poligon.info</a>, <br>тел.: (812) 325-64-20 (доб. 115)<br></p> 	 
-								<p>Борисовец Елена: <br><a href="mailto:elcomp@poligon.info">elcomp@poligon.info</a>, <br>тел.: (812) 325-64-20 (доб. 114)<br></p>
-								
-							</p>
+						<div class="contacts_hide_button">
+							<button href="#" id="trigger_2">ЗАКРЫТЬ ПАНЕЛЬ КОНТАКТОВ</button>
 						</div>
-						<div class="contacts_column_right">
-							<p>
-								ТЕХНИЧЕСКАЯ ПОДДЕРЖКА<span> 
-									<br>(TELE, RELECO, BENEDICT,
-									<br>CITEL, GRAESSLIN, CBI, SONDER, EMKO),
-								<br>оптовая поставка электротехнической продукции:</span>
-								<br><br>
-								Контактные телефоны: <br>(812) 335-3-665, <br>(812) 325-4220
-								
-								<p>Евтихиев Дмитрий: <br><a href="mailto:edn@poligon.info">edn@poligon.info</a>, <br>тел.: (812) 325-64-20 (доб. 141)<br></p> 
-								<p>Крутень Евгений: <br><a href="mailto:kruten@poligon.info">kruten@poligon.info</a>, <br>тел.: (812) 325-64-20 (доб. 148)<br></p>								
-							</p>
-						</div>
-						<div class="yandex_map"> 
-							<script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=mMcHB3adzZU56nSeZMihcmzE0Jlbq5ti&amp;width=480&amp;height=250"></script>
-						</div>
-						<p class="contacts_hide_button">
-							<img src="/bitrix/templates/poligon_i/images/contacts_hide.png" usemap="#contacts_hide_area" />
-							<map name="contacts_hide_area">
-								<area shape="rect" coords="110,10,480,40" href="#" id="trigger_2" alt="Закрыть панель контактов">
-							</map>
-						</p>
 					</article>
-				</section>
+			</section>
 				<section class="top_background">
 					<a href="/index.php" class="site_logo">
 						<img class="site_logo_image" src="/bitrix/templates/poligon_i/images/logo.gif" alt="Логотип ООО ПОЛИГОН"/>

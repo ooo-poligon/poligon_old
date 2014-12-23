@@ -19,9 +19,6 @@
 <body id="main_main">
 
 
-
-
-
 <!-- Rating@Mail.ru counter -->
 <script type="text/javascript">
 var _tmr = _tmr || [];

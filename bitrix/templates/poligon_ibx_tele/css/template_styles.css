@@ -9,7 +9,6 @@ footer {
 body{
 		margin: 0px;
 		padding: 0px;
-        #background: #7ab51d;
         background:url(/bitrix/templates/poligon_ibx_tele/images/bg_gradient.gif) repeat-y #7ab51d;
         background-position: center;
 }
@@ -209,7 +208,10 @@ img{
 }
 .contacts_column_left{
 		float: left;
-		width: 500px;
+		width: 300px;
+}
+.contacts_column_left ul{
+		padding-start: 0px;
 }
 .contacts_column_left span{
 		font: 14px serif;
@@ -220,10 +222,10 @@ img{
 .yandex_map{
 		position: absolute;
 		top: 70px;
-		right: 200px;
+		right: 170px;
 }
 .contacts_column_right{
-		width: 500px;
+		width: 370px;
 		margin: auto;
 }
 .contacts_column_right span{
@@ -244,6 +246,18 @@ img{
 }
 .contacts_hide_button img{
 		border: none; /* убрать рамку у ссылок-картинок */
+}
+.feedback{
+		float: left;
+		margin-top: -54px;
+		margin-left: -130px;
+		width: 500px;
+		font:12px Arial, Helvetica, sans-serif;
+		color:#ffffff;
+		text-decoration:none;
+}
+.feedback .goFormsInputAndTextarea{
+		width: 220px;
 }
 .partners_pad{
 		height: 53px;
@@ -299,16 +313,15 @@ img{
 }
 #work_area{
 		display: block;
-		font:18px Arial, Helvetica, sans-serif;
+		font:14px Arial, Helvetica, sans-serif;
 		color:#000;
 		text-decoration:none;
-		#font-weight:bold;
 		text-align: left;
 		width: 966px;
 		margin:auto;
 }
 #work_area a{
-		font:18px Arial, Helvetica, sans-serif;
+		font:14px Arial, Helvetica, sans-serif;
 		color:#7ab51d;
 		text-decoration:none;
 		font-weight:bold;
@@ -345,7 +358,7 @@ font-color: #000;
 }
 .footer_container{
 		width: 100%;
-		height: 100px;
+		height: 200px;
 		background: #19466c;
 		color:#fff;
 		text-decoration:none;
@@ -376,5 +389,3 @@ font-color: #000;
 .footer_container p{
 		font:12px Arial, Helvetica, sans-serif;
 }
-##############################################
-.w200px{ width: 200px; }

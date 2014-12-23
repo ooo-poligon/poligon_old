@@ -53,7 +53,7 @@ die(1);
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetPageProperty("keywords", "каталоги");
 $APPLICATION->SetPageProperty("description", "Печатный каталог продукции по почте");
-$APPLICATION->SetTitle("Заказ доставки каталогов TELE, Comat/Releco Graesslin, Benedict");
+$APPLICATION->SetTitle("Заказ доставки каталогов TELE, Comat/Releco, Graesslin, Benedict");
 ?>
 <style>
 #catalogsOrder{
@@ -206,17 +206,17 @@ $(function(){
 
 <p>Вы можете бесплатно заказать интересующие вас печатные каталоги.</p>
 
-<div id="catalogsOrder">
+<div id="catalogsOrder" >
 <h2>Заказ каталогов: </h2>
 <form method="post">
-<div style="float: left; width: 250px; ">
+<div style=" margin:auto; width: 250px; ">
 	<h3>Ваши данные: </h3>
 	<label for="name" class="pic" title="Введите своё имя">&nbsp;</label><input type="text" placeholder="Имя" name="name" id="name"/><br/>
 	<label for="company" class="pic" title="Укажите название компании">&nbsp;</label><input type="text" placeholder="Компания" name="company" id="company"/><br/>
 	<label for="telephone" class="pic" title="Введите контактный телефон">&nbsp;</label><input type="text" placeholder="Телефон" name="telephone" id="telephone"/><br/>
 	<label for="address" class="pic" title="Укажите адрес">&nbsp;</label><textarea placeholder="Адрес" name="address" id="address"></textarea><br/>
 </div>
-<div style="width: 193px; ">
+<div style="width: 193px; margin:auto;">
 	<h3>Выберите каталоги: </h3>
 	<label for="tele" class="text">TELE</label><input type="checkbox" name="cat[]" value="tele" id="tele"/><br/>
 	<label for="releco" class="text">Comat/Releco</label><input type="checkbox" name="cat[]" value="releco" id="releco"/><br/>
@@ -227,30 +227,12 @@ $(function(){
 </div>
 </form>
 </div>
+
 <div id="catalogsThumbs">
-	<img src="/images/covers/pre/tele.png" alt="tele" class="show"	/>
-	<img src="/images/covers/pre/RELECO_CATALOGUE_2012_eng_1.jpg" alt="releco"  class="show"/>
-	<img src="/images/covers/pre/graesslin.png" alt="graesslin"  class="show"/>
-	<img src="/images/covers/pre/benedict.png" alt="benedict" class="show" />
-	<img src="/images/covers/pre/cd_poligon.jpg" alt="cd" class="show" />
+
 </div>
 
 <div id="catalogs" style="clear: left;">
-<div>
-	<ul>
-		<li><img src="/images/covers/pre/tele.png" alt="tele" class="cover"	/>
-		<p>TELE — широкий ассортимент реле и устройств для <a href="/catalog/index.php?SECTION_ID=5011">промышленной автоматизации</a>. </p>
-		</li>		
-		<li><img src="/images/covers/pre/RELECO_CATALOGUE_2012_eng_1.jpg" alt="tele" class="cover"	/>
-		<p>Comat/Releco — разнообразная релейная автоматика, главное направление: профессиональные <a href="/catalog/index.php?SECTION_ID=77">промежуточные реле</a>. </p>
-		</li>
-		<li><img src="/images/covers/pre/graesslin.png" alt="graesslin"  class="cover"/>
-		<p>Graesslin — таймеры, термостаты: устройства для <a href="/content/articles/control-lighting.php">управления освещением</a>, теплом и временем. </p>
-		</li>
-		<li><img src="/images/covers/pre/benedict.png" alt="benedict" class="cover" />
-		<p>Benedict — <a href="/catalog/index.php?SECTION_ID=5095">контакторы</a>, пускатели, переключатели, мотор-автоматы для защиты двигателя. </p>
-		</li>
-	</ul>
-</div>
+<br><br><br><br>
 </div>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

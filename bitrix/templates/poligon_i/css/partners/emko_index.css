@@ -1,0 +1,116 @@
+#emko_ancor {
+		background: url("/bitrix/templates/poligon_i/images/emko_ancor.jpg") no-repeat;
+		background-size: 100%;
+		height: 360px;
+}
+#emko_sertificates {
+		display: none;
+		wigth: 100%;
+		height: 211px;
+		background: url(/bitrix/templates/poligon_i/images/emko_sertificates_bg.jpg) repeat-x #fff25f;
+}
+.emko_sertificates_list{
+		width: 1550px;
+		margin: auto;
+		padding-top: 10px;
+}
+.emko_sertificate_thumb{
+		height: 180px;
+		box-shadow: 0 0 20px rgba(0,0,0,0.5); /* Параметры тени */
+		margin-right: 10px;
+}
+.emko_sertificate_arrow{
+		height: 180px;
+		margin-right: 10px;
+}
+#emko_logo_story_container {
+		position:relative;
+		background: #455df1;
+		margin-top: -30px;
+		#width: 500px;
+		height: 300px;
+}
+#emko_story{
+		background: #455df1;
+		font:14px Arial, Helvetica, sans-serif;
+		text-decoration:none;
+		font-weight:normal;
+		text-align: left;
+		position:relative;
+		#height:0px;
+		#opacity:0;
+		display: none;
+		width: 450px;
+		margin-top: -50px;
+		color:#fff;
+}
+#emko_hide_story_arrow{
+		width: 140px;
+		margin-top: 0px;
+		margin-left: 155px;
+		display: none;
+}
+#emko_logo {
+		position:relative;
+		height: 100px;
+		text-align:center;
+		margin-top: -50px;
+}
+#emko_device_image {
+		height: 350px;
+		#margin-top: -100px;
+}
+.emko_page{
+		font:24px Arial, Helvetica, sans-serif;
+		color:#fff;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+		height: 650px;
+		background: #455df1;
+		width: 100%;
+		margin-top: -50px;
+}
+.emko_page h1{
+		font:36px Arial, Helvetica, sans-serif;
+		color:#fff;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: center;
+		padding-top: 40px;
+}
+.emko_page h2{
+		font:24px Arial, Helvetica, sans-serif;
+		color:#fff;
+		text-decoration: none;
+		font-weight:bold;
+		text-align: left;
+}
+.emko_page h2:hover{
+		font:24px Arial, Helvetica, sans-serif;
+		color:#6f84fe;
+		text-decoration: none;
+		font-weight:bold;
+		text-align: left;
+}
+.redline:hover{
+		font:24px Arial, Helvetica, sans-serif;
+		color:#6f84fe;
+		text-decoration: none;
+		font-weight:bold;
+		text-align: left;		
+}
+.emko_page a{
+		font:24px Arial, Helvetica, sans-serif;
+		color:#fff;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+.emko_page a:hover{
+		font:24px Arial, Helvetica, sans-serif;
+		color:#6f84fe;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}

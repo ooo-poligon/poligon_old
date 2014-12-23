@@ -22,6 +22,35 @@
 		<script type="text/javascript" src="/bitrix/templates/poligon_i/js/height.js"></script>
 		<script type="text/javascript" src="/bitrix/templates/poligon_i/js/screen.js"></script>
 		<script type="text/javascript" src="/bitrix/templates/poligon_i/js/poligon_i_scripts.js"></script>
+				
+		<link href="/css/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css" />		
+		<script type="text/javascript" src="/js/jquery.lightbox-0.5.pack.js"></script>
+		<script>
+		jQuery(function(){
+	    jQuery("a.show").lightBox({
+			imageLoading: '/js/images/lightbox-ico-loading.gif',
+			imageBtnClose: '/js/images/lightbox-btn-close.gif',
+			imageBtnPrev: '/js/images/lightbox-btn-prev.gif',
+			imageBtnNext: '/js/images/lightbox-btn-next.gif',
+			imageBlank: '/js/images/lightbox-blank.gif',
+		});
+		$("#onStore a[href='#orderPopup']").bind('click', function(){
+			$('body').append('<div id="wrapperOrder"></div>');
+			$("#orderPopup").show('slow');
+			return false;
+		});
+		$("img#close").bind('click', function(){
+			$("#orderPopup").hide('slow');
+			$("#wrapperOrder").remove();
+			return false;
+		});
+		$("#wrapperOrder").live('click', function(){
+			$("#orderPopup").hide();
+			$("#wrapperOrder").remove();
+			return false;
+		});
+		});
+		</script>
 	</head>
 <!--#################################################################################################################-->
 <body>

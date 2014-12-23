@@ -1,5 +1,10 @@
 
 </section>
+<br><br>
+<div class="breadcrumbs">
+<?$APPLICATION->IncludeComponent( "bitrix:breadcrumb", "", Array( "START_FROM" => "3", "PATH" => "", "SITE_ID" => "-" ), false);?>
+</div>
+<br><br>
 <!--#################################################################################################################-->
 <footer class="footer_container">
 		<ul id="footer_list">

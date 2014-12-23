@@ -1,4 +1,3 @@
-@import url("/bitrix/templates/poligon_i/css/tele_index.css") all;
 header, 
 nav, 
 section, 
@@ -10,16 +9,18 @@ footer {
 body{
 		margin: 0px;
 		padding: 0px;
+        background:url(/bitrix/templates/poligon_ibx_comat_releco/images/bg_gradient.gif) repeat-y #006ab0;
+        background-position: center;
 }
 img{
-		border: none; /* убрать рамку у ссылок-картинок */
+		border: none;
 }
 .top_bar{
 		position: fixed;
 		width: 100%;
 		background: #19466c;
 		height: 90px;
-		z-index: 1000;
+		z-index: 10000;
 }
 .top_background{
 		background: #19466c;
@@ -35,7 +36,7 @@ img{
 }
 .site_logo .site_logo_image{
 		width: 260px;
-		border: none; /* убрать рамку у ссылок-картинок */
+		border: none;
 }
 .site_menu_container{
 		width: 510px;
@@ -47,10 +48,10 @@ img{
 		padding: 4px;
 }
 .site_menu_ul .site_menu_li{
-		display: inline; /* Отображать как строчный элемент */
-		margin-right: 7px; /* Отступ слева */
-		border: 1px solid #fff; /* Рамка вокруг текста */
-		padding-left: 5px; /* Поля вокруг текста */
+		display: inline; 
+		margin-right: 7px;
+		border: 1px solid #fff; 
+		padding-left: 5px;
 		padding-bottom: 2px;
 		font:18px Arial, Helvetica, sans-serif;
 		color:#ffffff;
@@ -59,10 +60,10 @@ img{
 		text-align: center;
 }
 .site_menu_ul .site_menu_li_last{
-		display: inline; /* Отображать как строчный элемент */
-		#margin-right: 7px; /* Отступ слева */
-		border: 1px solid #fff; /* Рамка вокруг текста */
-		padding-left: 5px; /* Поля вокруг текста */
+		display: inline;
+		#margin-right: 7px;
+		border: 1px solid #fff;
+		padding-left: 5px;
 		padding-right: 5px;
 		padding-bottom: 2px;
 		font:18px Arial, Helvetica, sans-serif;
@@ -106,12 +107,66 @@ img{
 		font-weight:bold;
 		text-align: center;		
 }
+.quick_logo_img{
+		float: left;
+		margin-top: -32px;
+		margin-left: 300px;
+		border: none;
+}
+#special{
+		display: none;
+		position: relative;
+		background: url(/bitrix/templates/poligon_i/images/special_bg.gif) repeat-x #19466c;
+		font:12px Arial, Helvetica, sans-serif;
+		color:#ffffff;
+		text-align: center;
+		text-decoration:none;
+		font-weight:bold;
+		height: 420px;
+		margin-top: -12px;
+		padding: 10px;
+}
+#special a{
+		font:16px Arial, Helvetica, sans-serif;
+		color:#ffdd00;
+		text-align: center;
+		text-decoration:underline;
+		font-weight:bold;		
+}
+#special_container{
+		width: 1700px;
+		margin: auto;
+}
 .special_logo_img{
 		width: 210px;
 		float: right;
 		margin-top: -58px;
 		margin-right: 250px;
-		border: none; /* убрать рамку у ссылок-картинок */
+		border: none;
+}
+#special_list li{
+		display: inline;
+}
+#special_list div{
+		float: left;
+		width: 250px;
+		padding: 10px;
+}
+#special_image{
+		width: 220px;
+}
+.special_hide_button{
+		position: absolute;
+		top: 360px;
+		left: 660px;
+		width: 585px;
+		margin-left: auto;
+		margin-right: auto;
+		height: 62px;
+		font:0px Arial, Helvetica, sans-serif;
+}
+.special_hide_button img{
+		border: none;
 }
 #contacts{
 		display: none;
@@ -122,6 +177,8 @@ img{
 		text-decoration:none;
 		font-weight:bold;
 		height: 420px;
+		margin-top: -17px;
+		padding: 10px;		
 }
 #contacts header{
 		font:18px Arial, Helvetica, sans-serif;
@@ -150,7 +207,10 @@ img{
 }
 .contacts_column_left{
 		float: left;
-		width: 500px;
+		width: 300px;
+}
+.contacts_column_left ul{
+		padding-start: 0px;
 }
 .contacts_column_left span{
 		font: 14px serif;
@@ -161,10 +221,10 @@ img{
 .yandex_map{
 		position: absolute;
 		top: 70px;
-		right: 200px;
+		right: 170px;
 }
 .contacts_column_right{
-		width: 500px;
+		width: 370px;
 		margin: auto;
 }
 .contacts_column_right span{
@@ -185,6 +245,18 @@ img{
 }
 .contacts_hide_button img{
 		border: none; /* убрать рамку у ссылок-картинок */
+}
+.feedback{
+		float: left;
+		margin-top: -54px;
+		margin-left: -130px;
+		width: 500px;
+		font:12px Arial, Helvetica, sans-serif;
+		color:#ffffff;
+		text-decoration:none;
+}
+.feedback .goFormsInputAndTextarea{
+		width: 220px;
 }
 .partners_pad{
 		height: 53px;
@@ -207,536 +279,84 @@ img{
 .partners .partners_table .partners_logo{
 		width: 150px;
 		border: 4px solid #19466c;
+		text-align: right;
 }
 .intro_pad{
-		height: 200px;
-}
-.intro{
-		font:46px Arial, Helvetica, sans-serif;
-		color:#606060;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-		width: 100%;
-		margin:auto;
-		height: 800px;
-}
-.intro h1{
-		text-align: center;
-		font:40px Arial, Helvetica, sans-serif;
-		font-weight:bold;
-}
-.intro h2{
-		text-align: center;
-		font:46px Arial, Helvetica, sans-serif;
-}
-.intro p{
-		font:26px Arial, Helvetica, sans-serif;
-		color:#606060;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-		padding-top: 40px;
-		padding-left: 70px;
-		padding-right: 70px;
-}
-.intro a{
-		font:26px Arial, Helvetica, sans-serif;
-		color:#19466c;
-		text-decoration:none;
-		font-weight:bold;
-}
-.intro a:hover{
-		font:26px Arial, Helvetica, sans-serif;
-		color:#00ccff;
-		text-decoration:none;
-		font-weight:bold;
-}
-.intro img{
-		width: 300px;
-}
-.intro_table{
-		width: 1550px;
+		height: 240px;
+		}
+.breadcrumbs{
+		width: 970px;
 		margin: auto;
-}
-.intro table td{
-		vertical-align: top;
-}
-.intro_arrow{
-		vertical-align: top;
-}
-.intro_arrow img{
-		width: 200px;		
-}
-.iso9001{
-		float: right;
-		margin-top: -140px;
-		margin-right: 90px;
-		height: 170px;
-}
-.iso9001 img{
-		width: 150px;
-		border: none; /* убрать рамку у ссылок-картинок */
-}
-.sertificates_list{
-		width: 1384px;
-		margin: auto;
-		padding-top: 10px;
-}
-.sertificate_thumb{
-		height: 180px;
-		box-shadow: 0 0 20px rgba(0,0,0,0.5); /* Параметры тени */
-		margin-right: 10px;
-}
-.sertificate_arrow{
-		height: 180px;
-		margin-right: 10px;
-}
-#citel_ancor {
-		background: url("/bitrix/templates/poligon_i/images/citel_ancor.jpg") no-repeat;
-		background-size: 100%;
-		height: 340px;
-}
-.citel_page{
-		font:18px Arial, Helvetica, sans-serif;
-		color:#afb6bc;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-		height: 750px;
-		background: #ffffd7;
-		width: 100%;
-		margin-top: -50px;
-}
-.citel_page h1{
-		font:36px Arial, Helvetica, sans-serif;
-		color:#9a9a9a;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: center;
-		padding-top: 40px;
-}
-.citel_story{
-		width: 1550px;
-		margin: auto;
-		font:18px Arial, Helvetica, sans-serif;
-		color:#9a9a9a;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.citel_page a{
-		font:18px Arial, Helvetica, sans-serif;
-		color:#9a9a9a;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.citel_page a:hover{
-		font:18px Arial, Helvetica, sans-serif;
-		color:#ffd80e;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-#benedict_ancor {
-		background: url("/bitrix/templates/poligon_i/images/benedict_ancor.jpg") no-repeat;
-		background-size: 100%;
-		height: 440px;
-}
-.benedict_page{
-		height: 600px;
-		background: #b5fff7;
-		width: 100%;
-		margin-top: -50px;
-}
-.benedict_page h1{
-		font:36px Arial, Helvetica, sans-serif;
-		color:#127e6f;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: center;
-		padding-top: 40px;
-}
-.benedict_story{
-		width: 1550px;
-		margin: auto;
-		font:18px Arial, Helvetica, sans-serif;
-		color:#127e6f;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.benedict_page a{
-		font:18px Arial, Helvetica, sans-serif;
-		color:#127e6f;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.benedict_page a:hover{
-		font:18px Arial, Helvetica, sans-serif;
-		color:#808185;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-#graesslin_ancor {
-		#position: relative;
-		#display:block;
-		#margin-bottom: 230px;
-		background: url("/bitrix/templates/poligon_i/images/graesslin_ancor.jpg") no-repeat;
-		background-size: 100%;
-		height: 330px;
-}
-.graesslin_page{
-		height: 700px;
-		background: #dbdbdb;
-		width: 100%;
-		margin-top: -50px;
-}
-.graesslin_page h1{
-		font:36px Arial, Helvetica, sans-serif;
-		color:#8a8b8d;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: center;
-		padding-top: 40px;
-}
-.graesslin_story{
-		width: 1550px;
-		margin: auto;
-		font:18px Arial, Helvetica, sans-serif;
-		color:#8a8b8d;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.graesslin_page a{
-		font:18px Arial, Helvetica, sans-serif;
-		color:#8a8b8d;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.graesslin_page a:hover{
-		font:18px Arial, Helvetica, sans-serif;
-		color:#b9074a;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-#sonder_ancor {
-		#position: relative;
-		#display:block;
-		#margin-bottom: 230px;
-		background: url("/bitrix/templates/poligon_i/images/sonder_ancor.jpg") no-repeat;
-		background-size: 100%;
-		height: 500px;
-}
-.sonder_page{
-		height: 500px;
-		background: #c7e8ff;
-		width: 100%;
-		margin-top: -65px;
-}
-.sonder_page h1{
-		font:46px Arial, Helvetica, sans-serif;
-		color:#0268b3;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: center;
-		padding-top: 40px;
-}
-.sonder_page a{
-		font:26px Arial, Helvetica, sans-serif;
-		color:#0268b3;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.sonder_page a:hover{
-		font:26px Arial, Helvetica, sans-serif;
-		color:#73b9ed;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-#relequick_ancor {
-		#position: relative;
-		#display:block;
-		#margin-bottom: 230px;
-		background: url("/bitrix/templates/poligon_i/images/relequick_ancor.jpg") no-repeat;
-		background-size: 100%;
-		height: 500px;
-}
-.relequick_page{
-		height: 550px;
-		background: #f4c6c6;
-		width: 100%;
-		margin-top: -50px;
-}
-.relequick_page h1{
-		font:36px Arial, Helvetica, sans-serif;
-		color:#000;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: center;
-		padding-top: 40px;
-}
-.relequick_page a{
-		font:18px Arial, Helvetica, sans-serif;
-		color:#000;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.relequick_page a:hover{
-		font:18px Arial, Helvetica, sans-serif;
-		color:#920833;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-#comat_releco_ancor {
-		#position: relative;
-		#display:block;
-		#margin-bottom: 230px;
-		background: url("/bitrix/templates/poligon_i/images/comat-releco_ancor.jpg") no-repeat;
-		background-size: 100%;
-		height: 500px;
-}
-.comat_releco_page{
-		height: 500px;
-		background: #fff;
-		width: 100%;
-		margin-top: -50px;
-}
-.comat_releco_page h1{
-		font:46px Arial, Helvetica, sans-serif;
-		color:#006ab0;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: center;
-		padding-top: 40px;
-}
-.comat_releco_page a{
-		font:26px Arial, Helvetica, sans-serif;
+		font:24px Arial, Helvetica, sans-serif;
 		color:#006ab0;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
+		
 }
-.comat_releco_page a:hover{
-		font:26px Arial, Helvetica, sans-serif;
-		color:#60bff7;
+.breadcrumbs a{
+		font:24px Arial, Helvetica, sans-serif;
+		color:#006ab0;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
+		
 }
-#emko_ancor {
-		#position: relative;
-		#display:block;
-		#margin-bottom: 230px;
-		background: url("/bitrix/templates/poligon_i/images/emko_ancor.jpg") no-repeat;
-		background-size: 100%;
-		height: 360px;
-}
-.emko_page{
-		height: 650px;
-		background: #455df1;
-		width: 100%;
-		margin-top: -50px;
-}
-.emko_page h1{
-		font:36px Arial, Helvetica, sans-serif;
-		color:#fff;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: center;
-		padding-top: 40px;
-}
-.emko_page a{
-		font:18px Arial, Helvetica, sans-serif;
-		color:#fff;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.emko_page a:hover{
-		font:18px Arial, Helvetica, sans-serif;
-		color:#6f84fe;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-#cbi_ancor {
-		#position: relative;
-		#display:block;
-		#margin-bottom: 230px;
-		background: url("/bitrix/templates/poligon_i/images/cbi_ancor.jpg") no-repeat;
-		background-size: 100%;
-		height: 440px;
-}
-.cbi_page{
-		height: 600px;
-		background: #fe3535;
-		width: 100%;
-		margin-top: -50px;
-}
-.cbi_page h1{
-		font:36px Arial, Helvetica, sans-serif;
-		color:#fff;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: center;
-		padding-top: 40px;
-}
-.cbi_page a{
-		font:18px Arial, Helvetica, sans-serif;
-		color:#fff;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.cbi_page a:hover{
-		font:18px Arial, Helvetica, sans-serif;
+.breadcrumbs a:hover{
+		font:24px Arial, Helvetica, sans-serif;
 		color:#000;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: left;
-}
-#huber_suhner_ancor {
-		#position: relative;
-		#display:block;
-		#margin-bottom: 230px;
-		background: url("/bitrix/templates/poligon_i/images/huber-suhner_ancor.jpg") no-repeat;
-		background-size: 100%;
-		height: 550px;
-}
-.huber_suhner_page{
-		font:18px Arial, Helvetica, sans-serif;
-		color:#005192;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-		height: 500px;
-		background: #fff;
-		width: 100%;
-		margin-top: -50px;
-}
-.huber_suhner_page h1{
-		font:36px Arial, Helvetica, sans-serif;
-		color:#005192;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: center;
-		padding-top: 40px;
-}
-.huber_suhner_page a{
-		font:18px Arial, Helvetica, sans-serif;
-		color:#005192;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.huber_suhner_page a:hover{
-		font:18px Arial, Helvetica, sans-serif;
-		color:#000;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-#farnell_ancor {
-		#position: relative;
-		#display:block;
-		#margin-bottom: 230px;
-		background: url("/bitrix/templates/poligon_i/images/farnell_ancor.jpg") no-repeat;
-		background-size: 100%;
-		height: 450px;
-}
-.farnell_page{
-		font:18px Arial, Helvetica, sans-serif;
-		color:#ff6600;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-		height: 570px;
-		background: #ffd092;
-		width: 100%;
-		margin-top: -50px;
-}
-.farnell_page h1{
-		font:36px Arial, Helvetica, sans-serif;
-		color:#ff6600;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: center;
-		padding-top: 40px;
-}
-.farnell_page a{
-		font:18px Arial, Helvetica, sans-serif;
-		color:#ff6600;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.farnell_page a:hover{
-		font:18px Arial, Helvetica, sans-serif;
-		color:#ff6600;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-#vemer_ancor {
-		#position: relative;
-		#display:block;
-		#margin-bottom: 230px;
-		background: url("/bitrix/templates/poligon_i/images/vemer_ancor.jpg") no-repeat;
-		background-size: 100%;
-		height: 300px;
-}
-.vemer_page{
-		height: 560px;
-		background: #ffdbdf;
-		width: 100%;
-		margin-top: -50px;
-}
-.vemer_page h1{
-		font:36px Arial, Helvetica, sans-serif;
-		color:#ff0d01;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: center;
-		padding-top: 40px;
-}
-.vemer_page a{
-		font:18px Arial, Helvetica, sans-serif;
-		color:#ff0d01;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.vemer_page a:hover{
-		font:18px Arial, Helvetica, sans-serif;
-		color:#9f0903;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
+		
 }
 #work_area{
-		display: none;
-		font:18px Arial, Helvetica, sans-serif;
-		color:#606060;
+		display: block;
+		font:14px Arial, Helvetica, sans-serif;
+		color:#000;
+		text-decoration:none;
+		text-align: left;
+		width: 966px;
+		margin:auto;
+}
+#work_area a{
+		font:14px Arial, Helvetica, sans-serif;
+		color:#006ab0;
 		text-decoration:none;
 		font-weight:bold;
-		text-align: left;
-		width: 100%;
-		margin:auto;
+}
+#work_area h3{
+		font-color: #000;		
+}
+#work_area table tbody tr td{
+		vertical-align: top;
+}
+.open {
+		background: url('/images/icons/table_add.png') no-repeat scroll left center transparent;
+}
+.close {
+		background: url('/images/icons/table_delete.png') no-repeat scroll left center transparent;
+}
+.close, .open {
+
+		border-bottom: 1px dashed;
+		font-size: 12px;
+		font-weight: bolder;
+		text-decoration: none;
+		padding-left: 16px;
+}
+.f-right {
+		float: right;
+}
+.none {
+    display: none;
+}
+#work_area a.open.f-right{
+		font-color: #000;
 }
 .footer_container{
 		width: 100%;
-		height: 100px;
+		height: 200px;
 		background: #19466c;
 		color:#fff;
 		text-decoration:none;

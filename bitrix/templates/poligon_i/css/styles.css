@@ -41,7 +41,7 @@ img.product-image{
 th:first-letter{text-transform: capitalize;}
 table.benefits p {margin: 0px; line-height: 1;}
 table.benefits th, table.images-1 th,table.images-2 th,table.images-3 th, table.product th{
-	background-color: #CCCCCC;
+	background-color: #fff;
 	font-family: Arial,Helvetica,sans-serif;
 	font-size: 14px;
 	font-weight: bold;
@@ -49,9 +49,9 @@ table.benefits th, table.images-1 th,table.images-2 th,table.images-3 th, table.
 	
 }
 table.product, table.product table{width: 100%;}
-table.product table {border-collapse: separate; background-color: #EEEEEE;}
+table.product table {border-collapse: separate; background-color: #fff;}
 table.product table td{
-	border: 1px #FFFFFF inset;
+	border: 1px #000 inset;
 	width: 29%; 
 	text-align: right;
 }
@@ -115,6 +115,12 @@ table.hhi-inverter-table td{
 	text-align: center;
 	border: silver 1px solid;
 }
+table.tele-zanaveska td{
+	border: 1px solid #000;
+}
+table.tele-zanaveska th{
+	border: 1px solid #000;
+}
 /* таблицы (+с продукцией graesslin) */
 table caption {font-weight: bold; text-align: left; font-style: italic;  }
 table.zebra {margin-top: 28px;}
@@ -133,7 +139,8 @@ table.graesslin th {
 table.gdt {width: 940px;}
 table.gdt td {border: 1px white solid;}
 table.gdt td img{max-width: 200px;}
-table.gdt th{font-size: 75%;}
+table.gdt th{font-size: 57%;}
+table.gdt td{font-size: 57%;}
 .gdt-icon img{width: 48px;}
 table.gdt tr:nth-child(odd){background: #dccde4;}
 table.gdt tr:nth-child(even){background: #c39fcb;}

@@ -1,1 +1,1 @@
-<?$arTemplate = Array("NAME"=>"poligon_ibx_sonder", "DESCRIPTION"=>"TELE Новый доп. шаблон сайта poligon.info Разраб. И. Клекотнев");?>
+<?$arTemplate = Array("NAME"=>"poligon_ibx_graesslin", "DESCRIPTION"=>"benedict Новый доп. шаблон сайта poligon.info Разраб. И. Клекотнев");?>

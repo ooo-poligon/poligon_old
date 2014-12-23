@@ -1,0 +1,41 @@
+#farnell_ancor {
+		#position: relative;
+		#display:block;
+		#margin-bottom: 230px;
+		background: url("/bitrix/templates/poligon_i/images/farnell_ancor.jpg") no-repeat;
+		background-size: 100%;
+		height: 450px;
+}
+.farnell_page{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#ff6600;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+		height: 570px;
+		background: #ffd092;
+		width: 100%;
+		margin-top: -50px;
+}
+.farnell_page h1{
+		font:36px Arial, Helvetica, sans-serif;
+		color:#ff6600;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: center;
+		padding-top: 40px;
+}
+.farnell_page a{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#ff6600;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}
+.farnell_page a:hover{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#ff6600;
+		text-decoration:none;
+		font-weight:bold;
+		text-align: left;
+}

@@ -1,1 +1,1 @@
-<?$arTemplate = Array("NAME"=>"poligon_ibx_relequick", "DESCRIPTION"=>"TELE Новый доп. шаблон сайта poligon.info Разраб. И. Клекотнев");?>
+<?$arTemplate = Array("NAME"=>"poligon_ibx_relequick", "DESCRIPTION"=>"benedict Новый доп. шаблон сайта poligon.info Разраб. И. Клекотнев");?>
