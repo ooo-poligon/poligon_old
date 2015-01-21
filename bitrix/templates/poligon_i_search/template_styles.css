@@ -1,0 +1,54 @@
+@media (min-width: 1600px) {
+body{
+	margin: 0px;
+		padding: 0px;
+        background:url(/bitrix/templates/poligon_i/images/bg_gradient.gif) repeat-y #cccccc;
+        background-position: center;
+}
+#work_area{
+		display: block;
+		font:18px Arial, Helvetica, sans-serif;
+		color:#606060;
+		text-decoration:none;
+		#font-weight:bold;
+		text-align: left;
+		width: 972px;
+		margin:auto;
+}
+#work_area a{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#3371b9;
+		text-decoration:none;
+		font-weight:bold;
+}
+#work_area table tbody tr td{
+		vertical-align: top;
+}
+}
+@media (max-width: 1599px) {
+body{
+	margin: 0px;
+		padding: 0px;
+        background:url(/bitrix/templates/poligon_i/images/bg_gradient.gif) repeat-y #cccccc;
+        background-position: center;
+}
+#work_area{
+		display: block;
+		font:18px Arial, Helvetica, sans-serif;
+		color:#606060;
+		text-decoration:none;
+		#font-weight:bold;
+		text-align: left;
+		width: 972px;
+		margin:auto;
+}
+#work_area a{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#3371b9;
+		text-decoration:none;
+		font-weight:bold;
+}
+#work_area table tbody tr td{
+		vertical-align: top;
+}
+}

@@ -1,0 +1,6 @@
+<?
+$MESS ['SEARCH_MODULE_UNAVAILABLE'] = "Извините, но модуль поиска временно недоступен";
+$MESS ['SEARCH_RESULTS'] = "Результаты поиска";
+$MESS ['SEARCH_FORUM'] = "Форум";
+$MESS ['SEARCH_BLOG'] = "Блоги";
+?>

@@ -1,6 +1,7 @@
 <?if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();?>
 <script type="text/javascript" src="/bitrix/templates/poligon/js/ajax.js"></script>
 <?
+Global $no;
 //var_dump($arResult);
 //echo $nav;
 $arCloudParams = Array(
@@ -52,23 +53,8 @@ $arCloudParams = Array(
 
 //$APPLICATION->IncludeComponent("bitrix:search.tags.cloud", ".default", $arCloudParams, $component);
 
-?><br /><div class="search-page">
-<form action="" method="get">
-<?if($arResult["REQUEST"]["HOW"]=="d"):?>
-	<input type="hidden" name="how" value="d" />
-<?endif;?>
-	<input type="hidden" name="tags" value="<?echo $arResult["REQUEST"]["TAGS"]?>" />
-	<input type="text" name="q" value="<?=$arResult["REQUEST"]["QUERY"]?>" size="40" />
-<?if($arParams["SHOW_WHERE"]):?>
-	&nbsp;<select name="where">
-	<option value=""><?=GetMessage("SEARCH_ALL")?></option>
-	<?foreach($arResult["DROPDOWN"] as $key=>$value):?>
-	<option value="<?=$key?>"<?if($arResult["REQUEST"]["WHERE"]==$key) echo " selected"?>><?=$value?></option>
-	<?endforeach?>
-	</select>
-<?endif;?>
-	&nbsp;<input type="submit" value="<?=GetMessage('SEARCH_GO')?>"/>
-</form><br />
+?><div class="search-page">
+
 <?if($arResult["REQUEST"]["QUERY"] === false && $arResult["REQUEST"]["TAGS"] === false):?>
 <?elseif($arResult["ERROR_CODE"]!=0):?>
 	<p><?=GetMessage("SEARCH_ERROR")?></p>
@@ -100,43 +86,51 @@ $arCloudParams = Array(
 		</tr>
 	</table>
 <?elseif(count($arResult["SEARCH"])>0):?>
-	<br />
-<?		$i=0;		
+<?		$i=0;
+		$c=0;
 		foreach($arResult["SEARCH"] as $arItem):
-			if (!$i&&$arItem["TEXT1"]) echo '<b>Поиск по каталогу:</b><br><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr>
+			/*echo '<pre>';
+			var_dump($arResult["SEARCH"]);
+			echo '</pre>';*/
+			if (!$i&&$arItem["TEXT1"]) echo '<table cellpadding="0" cellspacing="0" border="0" width="100%"><tr>
 				<th width="60%" style="text-align:left">Наименование</th>
-				<th width="100" style="text-align:left">Цена</th>
-				<th width="100">Производитель</th>
+				<th width="50">Произв.</th>
 				<th width="50" style="text-align:center">PDF</th>
 				<th width="50" style="text-align:center">Склад</th>
-				<th width="50"></th>
+				<th width="70" style="text-align:center">Цена</th>
+				<th width="50">&nbsp;</th>
 				</tr>';				
 			if ($arItem["~PARAM1"]=='catalog')
 			{
 				echo $arItem["TEXT1"];	
 				$i++;
+				$c++;
 			}
 		endforeach;
 		if ($i) echo '</table>';
-		$i=0;		
+		$i=0;
+		$s=0;
 		foreach($arResult["SEARCH"] as $arItem):
 			if ($arItem["~PARAM1"]!='news'&&$arItem["~PARAM1"]!='catalog')
 			{
-				if (!$i&&$arItem["BODY_FORMATED"]) echo '<br><b>Поиск по сайту:</b><br>';				
+				if (!$i&&$arItem["BODY_FORMATED"]) echo '<br>';				
 				echo '<a href="'.$arItem["URL"].'">'.$arItem["TITLE_FORMATED"].'</a>
 				<p>'.$arItem["BODY_FORMATED"].'</p>';
 				$i++;
+				$s++;
 			}
 		endforeach;
 		$i=0;
+		$n=0;
 		foreach($arResult["SEARCH"] as $arItem):
 			
 			if ($arItem["~PARAM1"]=='news')
 			{				
-				if (!$i&&$arItem["BODY_FORMATED"]) echo '<br><b>Поиск по новостям:</b><br>';				
+				if (!$i&&$arItem["BODY_FORMATED"]) echo '<br>';				
 				echo '<a href="'.$arItem["URL"].'">'.$arItem["TITLE_FORMATED"].'</a>
 				<p>'.$arItem["BODY_FORMATED"].'</p>';
 				$i++;
+				$n++;
 			}
 		endforeach;
 
@@ -151,8 +145,11 @@ $arCloudParams = Array(
 	<?endif;?>
 	</p>
 <?else:?>
-	<?ShowNote(GetMessage("SEARCH_NOTHING_TO_FOUND"));?>
-<?include ('quick_order/index.php');?>
+	<?
+	ShowNote(GetMessage("SEARCH_NOTHING_TO_FOUND"));?>
+<?//include ('quick_order/index.php');
+$no++;
+?>
 
 <?endif;?>
 </div>

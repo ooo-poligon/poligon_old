@@ -1,0 +1,38 @@
+table.forum-stat {
+	background-color:#99BAD7;
+	border: none;
+	margin: 0px;
+	border-collapse: collapse;
+	width:100%;
+	font-size: 100%;}
+
+table.forum-stat th {
+	background-color:#CEDEEC;
+	border: 1px solid #99BAD7;
+	font-weight: normal;
+	padding: 4px;
+	white-space: nowrap;
+	text-align: left;}
+
+table.forum-stat td {
+	background-color:#F1F5FA;
+	border: 1px solid #99BAD7;
+	padding: 4px;
+	vertical-align:top;}
+	
+table.forum-stat .forum-attention{
+	font-weight: bold;
+	color: #555555;
+	text-decoration: none;
+	font-size: 90%;}
+	
+div.icon-users, div.icon-birth, div.icon-stat {
+	background-image:url("images/foot_users.gif");
+	background-repeat:no-repeat;
+	background-position:left;
+	width: 27px;height: 27px;
+	margin: 10px;}
+div.icon-birth { 
+	background-image:url("images/foot_birth.gif");}
+div.icon-stat { 
+	background-image:url("images/foot_stat.gif");}

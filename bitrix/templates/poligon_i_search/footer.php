@@ -1,4 +1,8 @@
 </section>
+<br>
+<br>
+<br>
+
 <div class="search_container">
 
        <b>Поиск по каталогу:</b> <?$APPLICATION->IncludeComponent(

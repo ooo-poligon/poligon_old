@@ -1,0 +1,36 @@
+/* Only for user-profile*/
+table.fuser {border:none; margin:0px; padding: 0px; font-size:100%; border-collapse: collapse; width:100%;}
+table.fuser td {font-size:100%;}
+table.fuser td.fuser-static {width:210px;}
+table.fuser td.fuser-separator {width:10px;}
+table.fuser td.fuser-dinamic {}
+table.fuser-static {border:none; margin:0px; padding:0px; width:100%; font-size:100%; border-collapse: collapse;}
+table.fuser-static th {background-color:#CEDEEC;margin:0px; padding:4px; border:1px solid #99BAD7; font-size:100%; text-align:left; height:21px;}
+table.fuser-static td {background-color:#F1F5FA; margin:0px; padding:4px; border:1px solid #99BAD7; font-size:100%; text-align:center;}
+div.no-photo {width:200px; height:200px;background-image:url("images/no-photo.gif"); background-repeat:no-repeat; background-position:center; border:none;}
+div.no-data {font-style: oblique;}
+
+/* Edit form*/
+div.tabs {margin:0px; width:100%;}
+/* Tab controls*/
+table.tabs {border:none; border-left:1px solid #99BAD7; padding:0px; margin:0px; font-size:100%;}
+table.tabs td {border:none; padding:0px; margin:0px; font-size:100%;}
+table.tabs td.tab-indent-left {border:none; border-bottom:1px solid #99BAD7; display:none;}
+table.tabs td.tab-indent-right {border:none; border-bottom:1px solid #99BAD7;}
+table.tabs td.tab-indent-right div.empty{width:100%;}
+table.tabs td.tab-container {border:1px solid #99BAD7; border-left: none; cursor:pointer; cursor: hand;}
+table.tabs td.tab-container-selected {border:1px solid #99BAD7; border-left: none; border-bottom:1px solid #F1F5FA; cursor:default; background-color:#F1F5FA;}
+
+table.tabs table {border:none; font-size:100%;}
+table.tabs table td {font-size:100%; font-weight:bold; white-space:nowrap; vertical-align:top; padding:4px; height:21px; border:none;}
+table.tabs table td.tab {border-top:2px solid #CEDEEC;}
+table.tabs table td.tab-selected {border-top:2px solid red;}
+table.tabs table td.tab-hover {border-top:2px solid #99BAD7;}
+
+
+/* Tab inside edit form */
+table.tab {border:1px solid #B8C1DD; border-top:none; width:100%; font-size:100%;}
+table.tab td {background-color:#F1F5FA; padding:4px 4px 9px 4px; font-size:100%; vertical-align:top;}
+table.tab-content {font-size:100%;}
+table.tab-content td.field-name {text-align: right; width:150px;}
+form.forum-form {padding: 0px;margin: 0px;border: none;}

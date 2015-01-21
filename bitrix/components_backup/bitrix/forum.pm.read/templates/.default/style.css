@@ -1,0 +1,115 @@
+table.forum-main {
+	background-color:#99BAD7;
+	border: none;
+	border-collapse: collapse;
+	margin: 0px;
+	width: 100%;
+	font-size: 100%;
+}
+
+table.forum-main th {
+	background-color:#CEDEEC;
+	border: 1px solid #99BAD7;
+	font-weight: normal;
+	padding:4px;
+	white-space:nowrap;
+}
+table.forum-main th.left {text-align:left;}
+table.forum-main td {
+	background-color:#F1F5FA;
+	border: 1px solid #99BAD7;
+	padding: 4px;
+	vertical-align:top;
+}
+
+.forum-title {
+	border: 1px solid #99BAD7;
+	padding: 4px;
+	background-color: #CEDEEC;
+	color: #000000;
+	font-weight: bold;
+	font-size: 100%;
+}
+
+div.forum-br {
+    height: 4px;
+	padding: 0px;
+	margin: 0px;
+    width: 100%; 
+	overflow: hidden;  
+}
+
+table.clear, table.clear td {
+	border: none;
+	background-color: transparent;
+	padding: 0px;
+	margin: 0px;
+	border-collapse: collapse;
+	font-size: 100%;
+}
+	
+table.forum-quote, table.forum-code {
+	color: #000000; 
+	background-color: transparent; 
+	width:90%;
+	margin: 0px 20px 0px 20px;
+	font-size: 100%;
+}
+table.forum-quote th, table.forum-code th {
+	font-weight:bold;
+	text-align:left;
+	background-color: transparent; 
+	border: none;
+}
+	
+table.forum-quote td, table.forum-code td {
+	border : 1px solid Black;
+	background-color: #FBFBF9; 
+	padding: 2px; 
+	text-indent: 2pt;
+}
+	
+table.forum-code {color: #333333;}
+
+/*PM only*/
+div.out {
+	width:200px;
+	margin: 0px; 
+	padding: 1px; 
+	border: #99bad7 1px solid; 
+	display: block; 
+	position: relative; 
+	top: 4px; 
+	text-align:left;
+	background-color: #ffffff;
+}
+div.out1 {
+	width:200px;
+	padding:0px; 
+	margin:0px; 
+	display: block; 
+	position: relative; 
+	top: -9px;
+}
+div.in {
+	padding: 0px; 
+	font-size: 8px; 
+	background-color: #cedeec;
+}
+div.in1 {
+	width:100%;
+	text-align: center;
+	padding: 0px; 
+	font-size: 10px; 
+	font-weight: normal; 
+	color:#444444;	
+}
+/*PM only*/
+
+div.forum-pm-notification{margin-top:10px;}
+/*pm only*/
+form.forum-form {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}

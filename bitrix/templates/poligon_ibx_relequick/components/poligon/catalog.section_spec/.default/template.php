@@ -7,16 +7,18 @@
 <?if (count($arResult["ITEMS"])):?>
 <table cellpadding="0" cellspacing="0" border="0" width="100%">
 <tr>
-	<th width="40%">Наименование</th>
-	<th width="300">Цена</th>
-	<th width="100">Производитель</th>
+	<th width="60%">Наименование</th>
+	<th width="50">Произв.</th>
 	<th width="50" style="text-align:center">PDF</th>
 	<th width="50" style="text-align:center">Склад</th>
+	<th width="80" style="text-align:center">Цена</th>
 	<th width="50">&nbsp;</th>
 </tr>
 	<?foreach($arResult["ITEMS"] as $cell=>$arElement):?>
-		<tr>
-			<td valign="top"><a href="<?=$arElement["DETAIL_PAGE_URL"]?>"><?=$arElement["NAME"]?></a>
+	<?if ($cell%2==1) $st = 'class="grey"'; else $st='';?>
+	<?//if ($arElement["DISPLAY_PROPERTIES"]["SPEC"]["VALUE"]==1) $st = 'class="spec"';?>
+		<tr <?=$st?> >
+			<td valign="top"><a href="<?=$arElement["DETAIL_PAGE_URL"]?>"><b><?=$arElement["NAME"]?><? if ($arElement["DISPLAY_PROPERTIES"]["article"]["VALUE"]) echo ' ('.$arElement["DISPLAY_PROPERTIES"]["article"]["VALUE"].')';?></b></a>
 				<?/*foreach($arElement["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
 					<?=$arProperty["NAME"]?>:&nbsp;<?
 					if(is_array($arProperty["DISPLAY_VALUE"]))
@@ -27,57 +29,6 @@
 				<br />
 				<?=$arElement["PREVIEW_TEXT"]?>
 			</td>
-			
-			<td>&nbsp;
-			<?foreach($arElement["PRICES"] as $code=>$arPrice):?>	
-				<?if($arPrice["CAN_ACCESS"]):?>
-					<p><?=$arResult["PRICES"][$code]["TITLE"];?>:&nbsp;&nbsp;
-					<?if($arPrice["DISCOUNT_VALUE"] < $arPrice["VALUE"]):?>
-						<s><?=$arPrice["PRINT_VALUE"]?></s> <span class="catalog-price"><?=$arPrice["PRINT_DISCOUNT_VALUE"]?></span>
-					<?else:?><span class="catalog-price"><?=$arPrice["PRINT_VALUE"]?></span><?endif;?>
-					</p>
-				<?endif;?>
-			<?endforeach;?>
-			</td>
-			
-			<?if(is_array($arElement["PRICE_MATRIX"])):?>
-			<td>
-				<table cellpadding="0" cellspacing="0" border="0" width="200" class="data-table">
-				<thead>
-				<tr>
-					<?if(count($arElement["PRICE_MATRIX"]["ROWS"]) >= 1 && ($arElement["PRICE_MATRIX"]["ROWS"][0]["QUANTITY_FROM"] > 0 || $arElement["PRICE_MATRIX"]["ROWS"][0]["QUANTITY_TO"] > 0)):?>
-						<td valign="top" nowrap><?= GetMessage("CATALOG_QUANTITY") ?></td>
-					<?endif?>
-					<?foreach($arElement["PRICE_MATRIX"]["COLS"] as $typeID => $arType):?>
-						<td valign="top" nowrap><?= $arType["NAME_LANG"] ?></td>
-					<?endforeach?>
-				</tr>
-				</thead>
-				<?foreach ($arElement["PRICE_MATRIX"]["ROWS"] as $ind => $arQuantity):?>
-				<tr>
-					<?if(count($arElement["PRICE_MATRIX"]["ROWS"]) > 1 || count($arElement["PRICE_MATRIX"]["ROWS"]) == 1 && ($arElement["PRICE_MATRIX"]["ROWS"][0]["QUANTITY_FROM"] > 0 || $arElement["PRICE_MATRIX"]["ROWS"][0]["QUANTITY_TO"] > 0)):?>
-						<td nowrap class="qu"><?
-							if (IntVal($arQuantity["QUANTITY_FROM"]) > 0 && IntVal($arQuantity["QUANTITY_TO"]) > 0)
-								echo str_replace("#FROM#", $arQuantity["QUANTITY_FROM"], str_replace("#TO#", $arQuantity["QUANTITY_TO"], GetMessage("CATALOG_QUANTITY_FROM_TO")));
-							elseif (IntVal($arQuantity["QUANTITY_FROM"]) > 0)
-								echo str_replace("#FROM#", $arQuantity["QUANTITY_FROM"], GetMessage("CATALOG_QUANTITY_FROM"));
-							elseif (IntVal($arQuantity["QUANTITY_TO"]) > 0)
-								echo str_replace("#TO#", $arQuantity["QUANTITY_TO"], GetMessage("CATALOG_QUANTITY_TO"));
-						?></td>
-					<?endif?>
-					<?foreach($arElement["PRICE_MATRIX"]["COLS"] as $typeID => $arType):?>
-						<td class="qu"><?
-							if($arElement["PRICE_MATRIX"]["MATRIX"][$typeID][$ind]["DISCOUNT_PRICE"] < $arElement["PRICE_MATRIX"]["MATRIX"][$typeID][$ind]["PRICE"]):?>
-								<s><?=FormatCurrency($arElement["PRICE_MATRIX"]["MATRIX"][$typeID][$ind]["PRICE"], $arElement["PRICE_MATRIX"]["MATRIX"][$typeID][$ind]["CURRENCY"])?></s><span class="catalog-price"><?=FormatCurrency($arElement["PRICE_MATRIX"]["MATRIX"][$typeID][$ind]["DISCOUNT_PRICE"], $arElement["PRICE_MATRIX"]["MATRIX"][$typeID][$ind]["CURRENCY"]);?></span>
-							<?else:?>
-								<span class="catalog-price"><?=FormatCurrency($arElement["PRICE_MATRIX"]["MATRIX"][$typeID][$ind]["PRICE"], $arElement["PRICE_MATRIX"]["MATRIX"][$typeID][$ind]["CURRENCY"]);?></span>
-							<?endif?>&nbsp;
-						</td>
-					<?endforeach?>
-				</tr>
-				<?endforeach?>
-				</table></td>
-			<?endif?>
 			<td align="center">
 				<?if($arElement["DISPLAY_PROPERTIES"]["producer_full"]["DISPLAY_VALUE"])				
 				echo $arElement["DISPLAY_PROPERTIES"]["producer_full"]["DISPLAY_VALUE"];
@@ -97,9 +48,9 @@
 					}
 				?>
 			</td>
-			<td>
+			<td align="center">
 				<?if($arElement["DISPLAY_PROPERTIES"]["pdf"]["DISPLAY_VALUE"]){?>				
-				<a href="<?=$arElement["DISPLAY_PROPERTIES"]["pdf"]["DISPLAY_VALUE"]?>"><img src="/images/pdf.jpg" height="50"></	a>	<?} else{ echo '&nbsp;';}?>		
+				<a href="<?=$arElement["DISPLAY_PROPERTIES"]["pdf"]["DISPLAY_VALUE"]?>"><img src="/images/pdf_doc.gif"></	a>	<?} else{ echo '&nbsp;';}?>				
 			</td>
 			<td align="center">
 				<?$db_res = CCatalogProduct::GetList(
@@ -112,11 +63,24 @@
 				{
 				    if (!$ar_res["QUANTITY"]){
 					if (!$arElement["DISPLAY_PROPERTIES"]["srok"]["DISPLAY_VALUE"])
-						echo '<img src="/images/red.gif" alt="Под заказ" title="Под заказ">';
+						echo '<img src="/images/grey.gif" alt="Нет данных" title="Нет данных">';
 					else echo $arElement["DISPLAY_PROPERTIES"]["srok"]["DISPLAY_VALUE"]; 					
 					}
-				    else echo '<img src="/images/green.gif" alt="Есть на складе" title="Есть на складе">';
+					else echo '<img src="/images/green.gif" alt="Есть на складе" title="Есть на складе">';
 				}?>			
+			</td>
+			<td align="center">&nbsp;
+			<span class="catalog-price"><nobr><?=FormatCurrency($arElement["PRICE_MATRIX"]["MATRIX"][1][0]["PRICE"], $arElement["PRICE_MATRIX"]["MATRIX"][1][0]["CURRENCY"]);?></nobr></span>
+			<?foreach($arElement["PRICES"] as $code=>$arPrice):?>
+				<?if($arPrice["CAN_ACCESS"]):?>
+					<?//=$arResult["PRICES"][$code]["TITLE"];?>
+					<?if($arPrice["DISCOUNT_VALUE"] < $arPrice["VALUE"]):?>
+						<s><?=$arPrice["PRINT_VALUE"]?></s> <span class="catalog-price"><?=$arPrice["PRINT_DISCOUNT_VALUE"]?></span>
+					<?else:?><span class="catalog-price">&nbsp;<nobr><?=$arPrice["PRINT_VALUE"]?></nobr></span><?endif;?>
+								
+
+				<?endif;?>
+			<?endforeach;?>
 			</td>
 			<td width="30">
 			<?if($arElement["CAN_BUY"]):?>
@@ -127,8 +91,6 @@
 				<?=GetMessage("CATALOG_NOT_AVAILABLE")?>
 			<?endif?>
 			</td>
-			&nbsp;
-		</td>
 	</tr>
 	<?endforeach; // foreach($arResult["ITEMS"] as $arElement):?>
 </table>

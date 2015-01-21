@@ -14,6 +14,6 @@
 		<?endif?>
 	<?endif?>
 <?endforeach?>
-
+		</li>
 	</ul>
 <?endif?>

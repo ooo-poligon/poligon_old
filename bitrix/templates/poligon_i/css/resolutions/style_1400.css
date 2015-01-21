@@ -6,28 +6,40 @@ aside,
 footer {
 		display: block;
 }
-body{
-		margin: 0px;
-		padding: 0px;
+img{
+		border: none; /* убрать рамку у ссылок-картинок */
+}
+ul li {
+		list-style-type: square;
+}
+.catalog-element table {
+		z-index: 10;
 }
 .top_bar{
 		position: fixed;
 		width: 100%;
 		background: #19466c;
-		height: 190px;
+		height: 85px;
+		z-index: 9999;
+}
+.top_background{
+		background: #19466c;
 }
 .site_logo{
-		width: 300px;
+		position: relative;
+		z-index: 1000;
+		width: 210px;
 		float: left;
-		margin-top: 10px;
+		margin-top: 15px;
 		margin-left: 5px;
-		margin-right: 30px;
+		margin-right: 40px;
 }
 .site_logo .site_logo_image{
-		width: 300px;		
+		width: 210px;
+		border: none; /* убрать рамку у ссылок-картинок */
 }
 .site_menu_container{
-		width: 565px;
+		width: 510px;
 		margin:auto;
 		padding-top: 7px;
 }
@@ -39,7 +51,8 @@ body{
 		display: inline; /* Отображать как строчный элемент */
 		margin-right: 7px; /* Отступ слева */
 		border: 1px solid #fff; /* Рамка вокруг текста */
-		padding: 5px; /* Поля вокруг текста */
+		padding-left: 5px; /* Поля вокруг текста */
+		padding-bottom: 2px;
 		font:18px Arial, Helvetica, sans-serif;
 		color:#ffffff;
 		text-decoration:none;
@@ -50,7 +63,9 @@ body{
 		display: inline; /* Отображать как строчный элемент */
 		#margin-right: 7px; /* Отступ слева */
 		border: 1px solid #fff; /* Рамка вокруг текста */
-		padding: 5px; /* Поля вокруг текста */
+		padding-left: 5px; /* Поля вокруг текста */
+		padding-right: 5px;
+		padding-bottom: 2px;
 		font:18px Arial, Helvetica, sans-serif;
 		color:#ffffff;
 		text-decoration:none;
@@ -66,26 +81,23 @@ body{
 		text-decoration: none;
 }
 .phone{
-		font:42px Arial, Helvetica, sans-serif;
+		font:26px Arial, Helvetica, sans-serif;
 		color:#ffffff;
 		text-decoration:none;
 		#font-weight:bold;
 		text-align: right;	
 		width: 400px;
 		float: right;
-		margin-top: -18px;
+		margin-top: -5px;
 		margin-right: 5px;
-}
-.phone_image{
-		width: 200px;
 }
 .search{
 		position: fixed;
 		width: 100%;
-		top: 50px;
+		margin-top: 14px;
 }
 .search-form{
-		width: 300px;
+		width: 270px;
 		margin: auto;	
 }
 .search-form .inputtext{
@@ -95,495 +107,182 @@ body{
 		font-weight:bold;
 		text-align: center;		
 }
-.partners{
-		position: fixed;
-		width: 100%;
-		margin-top: 50px;
-		background: #ffffff;
-		height: 130px;
-		padding-bottom: 10px;
+.quick_logo_img{
+		width: 100px;
+		float: left;
+		margin-top: -28px;
+		margin-left: 270px;
+		border: none; /* убрать рамку у ссылок-картинок */
 }
-.partners .partners_table{
-		width: 950px;
+#special{
+		display: none;
+		position: relative;
+		background: url(/bitrix/templates/poligon_i/images/special_bg_1400.gif) repeat-x #19466c;
+		font:11px Arial, Helvetica, sans-serif;
+		color:#ffffff;
 		text-align: center;
-		margin-top: 10px;
-		margin-left: auto;
-		margin-right: auto;
+		text-decoration:none;
+		font-weight:bold;
+		height: 340px;
+		margin-top: -12px;
+		padding: 10px;
 }
-.partners .partners_table .partners_logo{
+#special a{
+		font:13px Arial, Helvetica, sans-serif;
+		color:#ffdd00;
+		text-align: center;
+		text-decoration:underline;
+		font-weight:bold;		
+}
+#special_container{
+		width: 1270px;
+		margin: auto;
+}
+.special_logo_img{
+		width: 165px;
+		float: right;
+		margin-top: -58px;
+		margin-right: 210px;
+		border: none; /* убрать рамку у ссылок-картинок */
+}
+#special_list li{
+		display: inline;
+}
+#special_list div{
+		float: left;
+		width: 174px;
+		padding: 10px;
+}
+#special_image{
 		width: 150px;
-		border: 1px solid #606060;
 }
-.intro{
-		padding-top: 200px;
-		font:30px Arial, Helvetica, sans-serif;
-		color:#606060;
+.special_hide_button{
+		width: 250px;
+		margin: auto;
+		margin-top: 20px;
+}
+#contacts{
+		display: none;
+		position: relative;
+		background: url(/bitrix/templates/poligon_i/images/contacts_bg_1400.gif) repeat-x #19466c;
+		font:12px Arial, Helvetica, sans-serif;
+		color:#ffffff;
 		text-decoration:none;
 		font-weight:bold;
-		text-align: left;
-		width: 100%;
-		margin:auto;
-		height: 510px;
+		height: 360px;
+		margin-top: -17px;
+		padding: 10px;		
 }
-.intro h1{
-		text-align: center;
-		font:30px Arial, Helvetica, sans-serif;
-		font-weight:bold;
-}
-.intro h2{
-		text-align: center;
-		font:24px Arial, Helvetica, sans-serif;
-}
-.intro p{
-		font:16px Arial, Helvetica, sans-serif;
-		color:#606060;
+#contacts header{
+		font:14px Arial, Helvetica, sans-serif;
+		color:#ffffff;
 		text-decoration:none;
 		font-weight:bold;
-		text-align: left;
-		padding-top: 30px;
-		padding-left: 70px;
-		padding-right: 70px;
+		width: 860px;
+		margin: auto;
+		padding: 20px;
 }
-.intro a{
-		font:16px Arial, Helvetica, sans-serif;
-		color:#19466c;
-		text-decoration:none;
-		font-weight:bold;
+#contacts header span{
+		font: 12px serif;
+		font-style: italic;
+		color:#ffffff;
+		text-decoration:none;		
 }
-.intro a:hover{
-		font:16px Arial, Helvetica, sans-serif;
+#contacts article{
+		width: 1270px;
+		margin: auto;
+}
+#contacts a{
+		font:12px Arial, Helvetica, sans-serif;
 		color:#00ccff;
 		text-decoration:none;
 		font-weight:bold;
 }
-.intro img{
-		width: 250px;
+.contacts_column_left{
+		float: left;
+		width: 270px;
+		margin-top: -15px;
+		margin-left: 60px;
 }
-.intro_table{
-		width: 1230px;
-		margin: auto;
+.contacts_column_left ul{
+		padding-start: 0px;
 }
-.intro td{
-		vertical-align: top;
+.contacts_column_left span{
+		font: 12px serif;
+		font-style: italic;
+		color:#ffffff;
+		text-decoration:none;
 }
-.intro_arrow{
-		vertical-align: top;
+.yandex_map{
+		float: left;
+		margin-top: 0px;
+		margin-left: 5px;
+		width: 320px;
+		height: 250px;
 }
-.intro_arrow img{
-		width: 120px;
-		margin-left: 50px;
-		margin-right: 50px;		
-}
-.iso9001{
+.contacts_column_right{
 		float: right;
-		margin-top: -30px;
-		margin-right: 30px;
-		height: 110px;
+		width: 270px;
+		margin-top: -15px;
+		padding-right: 340px;
 }
-.iso9001 img{
-		width: 110px;
+.contacts_column_right span{
+		font: 12px serif;
+		font-style: italic;
+		color:#ffffff;
+		text-decoration:none;
 }
-.tele_page{
-		height: 400px;
-		background: #fff;
+.contacts_hide_button{
+		width: 196px;
+		margin: auto;
+		margin-top: 255px;
+}
+.feedback{
+		margin-top: -280px;
+		margin-right: 130px;
+		float: right;
+		width: 210px;
+		font:10px Arial, Helvetica, sans-serif;
+		color:#ffffff;
+		text-decoration:none;
+}
+.feedback .goFormsInputAndTextarea{
+		width: 210px;
+		height: 22px;
+}
+.partners_pad{
+		height: 50px;
+}
+.partners{
+		position: fixed;
 		width: 100%;
-		margin-top: -50px;
+		margin-top: 0px;
+		background-color: transparent;		
+		padding-bottom: 10px;
 }
-.tele_page img{
-		width: 250px;
-}
-.tele_page h1{
-		font:30px Arial, Helvetica, sans-serif;
-		color:#000000;
-		text-decoration:none;
-		font-weight:bold;
+.partners .partners_table{
+		width: 900px;
 		text-align: center;
-		padding-top: 30px;
+		margin-top: 3px;
+		margin-left: auto;
+		margin-right: auto;
 }
-.tele_page a{
-		font:16px Arial, Helvetica, sans-serif;
-		color:#000000;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
+.partners .partners_table .partners_logo{
+		width: 140px;
+		border: 3px solid #19466c;
 }
-.tele_page a:hover{
-		font:16px Arial, Helvetica, sans-serif;
-		color:#80bd01;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.citel_page{
-		font:16px Arial, Helvetica, sans-serif;
-		color:#afb6bc;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-		height: 500px;
-		background: #fff;
-		width: 100%;
-		margin-top: -50px;
-}
-.citel_page img{
-		width: 250px;
-}
-.citel_page h1{
-		font:30px Arial, Helvetica, sans-serif;
-		color:#afb6bc;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: center;
-		padding-top: 30px;
-}
-.citel_page a{
-		font:16px Arial, Helvetica, sans-serif;
-		color:#afb6bc;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.citel_page a:hover{
-		font:16px Arial, Helvetica, sans-serif;
-		color:#ffd80e;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.benedict_page{
-		height: 400px;
-		background: #ffffff;
-		width: 100%;
-		margin-top: -50px;
-}
-.benedict_page img{
-		width: 250px;
-}
-.benedict_page h1{
-		font:30px Arial, Helvetica, sans-serif;
-		color:#127e6f;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: center;
-		padding-top: 30px;
-}
-.benedict_page a{
-		font:16px Arial, Helvetica, sans-serif;
-		color:#127e6f;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.benedict_page a:hover{
-		font:16px Arial, Helvetica, sans-serif;
-		color:#808185;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.graesslin_page{
-		height: 400px;
-		background: #fff;
-		width: 100%;
-		margin-top: -50px;
-}
-.graesslin_page img{
-		width: 250px;
-}
-.graesslin_page h1{
-		font:30px Arial, Helvetica, sans-serif;
-		color:#8a8b8d;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: center;
-		padding-top: 30px;
-}
-.graesslin_page a{
-		font:16px Arial, Helvetica, sans-serif;
-		color:#8a8b8d;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.graesslin_page a:hover{
-		font:16px Arial, Helvetica, sans-serif;
-		color:#b9074a;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.sonder_page{
-		height: 400px;
-		background: #fff;
-		width: 100%;
-		margin-top: -50px;
-}
-.sonder_page img{
-		width: 250px;
-}
-.sonder_page h1{
-		font:30px Arial, Helvetica, sans-serif;
-		color:#0268b3;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: center;
-		padding-top: 30px;
-}
-.sonder_page a{
-		font:16px Arial, Helvetica, sans-serif;
-		color:#0268b3;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.sonder_page a:hover{
-		font:16px Arial, Helvetica, sans-serif;
-		color:#73b9ed;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.relequick_page{
-		height: 450px;
-		background: #fff;
-		width: 100%;
-		margin-top: -50px;
-}
-.relequick_page img{
-		width: 250px;
-}
-.relequick_page h1{
-		font:30px Arial, Helvetica, sans-serif;
-		color:#000;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: center;
-		padding-top: 30px;
-}
-.relequick_page a{
-		font:16px Arial, Helvetica, sans-serif;
-		color:#000;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.relequick_page a:hover{
-		font:16px Arial, Helvetica, sans-serif;
-		color:#920833;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.comat_releco_page img{
-		width: 150px;
-}
-.comat_releco_page{
-		height: 400px;
-		background: #fff;
-		width: 100%;
-		margin-top: -50px;
-}
-.comat_releco_page img{
-		width: 250px;
-}
-.comat_releco_page h1{
-		font:30px Arial, Helvetica, sans-serif;
-		color:#006ab0;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: center;
-		padding-top: 30px;
-}
-.comat_releco_page a{
-		font:16px Arial, Helvetica, sans-serif;
-		color:#006ab0;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.comat_releco_page a:hover{
-		font:16px Arial, Helvetica, sans-serif;
-		color:#60bff7;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.emko_page{
-		height: 600px;
-		background: #fff;
-		width: 100%;
-		margin-top: -50px;
-}
-.emko_page img{
-		width: 250px;
-}
-.emko_page h1{
-		font:30px Arial, Helvetica, sans-serif;
-		color:#3c59ff;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: center;
-		padding-top: 30px;
-}
-.emko_page a{
-		font:16px Arial, Helvetica, sans-serif;
-		color:#3c59ff;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.emko_page a:hover{
-		font:16px Arial, Helvetica, sans-serif;
-		color:#6f84fe;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.cbi_page{
-		height: 500px;
-		background: #fff;
-		width: 100%;
-		margin-top: -50px;
-}
-.cbi_page img{
-		width: 250px;
-}
-.cbi_page h1{
-		font:30px Arial, Helvetica, sans-serif;
-		color:#000;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: center;
-		padding-top: 30px;
-}
-.cbi_page a{
-		font:16px Arial, Helvetica, sans-serif;
-		color:#000;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.cbi_page a:hover{
-		font:16px Arial, Helvetica, sans-serif;
-		color:#d02128;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.huber_suhner_page{
-		font:16px Arial, Helvetica, sans-serif;
-		color:#005192;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-		height: 400px;
-		background: #fff;
-		width: 100%;
-		margin-top: -50px;
-}
-.huber_suhner_page img{
-		width: 250px;
-}
-.huber_suhner_page h1{
-		font:30px Arial, Helvetica, sans-serif;
-		color:#005192;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: center;
-		padding-top: 30px;
-}
-.huber_suhner_page a{
-		font:16px Arial, Helvetica, sans-serif;
-		color:#005192;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.huber_suhner_page a:hover{
-		font:16px Arial, Helvetica, sans-serif;
-		color:#000;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.farnell_page{
-		font:16px Arial, Helvetica, sans-serif;
-		color:#ff6600;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-		height: 600px;
-		background: #fff;
-		width: 100%;
-		margin-top: -50px;
-}
-.farnell_page img{
-		width: 250px;
-}
-.farnell_page h1{
-		font:30px Arial, Helvetica, sans-serif;
-		color:#ff6600;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: center;
-		padding-top: 30px;
-}
-.farnell_page a{
-		font:16px Arial, Helvetica, sans-serif;
-		color:#ff6600;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.farnell_page a:hover{
-		font:16px Arial, Helvetica, sans-serif;
-		color:#ff6600;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.vemer_page{
-		height: 500px;
-		background: #fff;
-		width: 100%;
-		margin-top: -50px;
-}
-.vemer_page img{
-		width: 250px;
-}
-.vemer_page h1{
-		font:30px Arial, Helvetica, sans-serif;
-		color:#ff0d01;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: center;
-		padding-top: 30px;
-}
-.vemer_page a{
-		font:16px Arial, Helvetica, sans-serif;
-		color:#ff0d01;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.vemer_page a:hover{
-		font:16px Arial, Helvetica, sans-serif;
-		color:#9f0903;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-}
-.work_area{
-		display: none;
+.intro_pad{
+		height: 200px;
 }
 .footer_container{
 		width: 100%;
+		height: 500px;
 		background: #19466c;
 		color:#fff;
 		text-decoration:none;
 		font-weight:bold;
 		text-align: center;
-		padding-top: 10px;
+		padding-top: 10px;		
 }
 .footer_container ul{
 		margin:0px 0 25px 0px;
@@ -592,11 +291,11 @@ body{
 }
 .footer_container ul li{
 		margin:0;
-		padding:0 16px;
+		padding:0 20px;
 		display:inline;
 }
 .footer_container li a{
-	font:14px Arial, Helvetica, sans-serif;
+	font:16px Arial, Helvetica, sans-serif;
 	color:#fff;
 	text-decoration:none;
 	font-weight: bold;
@@ -605,5 +304,661 @@ body{
 	color:#fff;
 }
 .footer_container p{
-		font:10px Arial, Helvetica, sans-serif;
+		font:12px Arial, Helvetica, sans-serif;
+}
+/*############################################################################*/
+.yashare-auto-init{
+		width: 100px;
+}
+.open {
+    background: url('/images/icons/table_add.png') no-repeat scroll left center transparent;
+}
+.close {
+    background: url('/images/icons/table_delete.png') no-repeat scroll left center transparent;
+}
+.close, .open {
+    border-bottom: 1px dashed;
+    font-size: 12px;
+    font-weight: bolder;
+    text-decoration: none;
+    padding-left: 16px;
+}
+.search_container{
+		width: 960px;
+		margin: auto;
+		display: block;
+		font:18px Arial, Helvetica, sans-serif;
+		color:#606060;
+		text-decoration:none;
+		#font-weight:bold;
+		text-align: left;
+		width: 972px;
+		margin:auto;
+}
+.search_container a{
+		font:18px Arial, Helvetica, sans-serif;
+		color:#3371b9;
+		text-decoration:none;
+		font-weight:bold;
+}
+
+/* классы для быстрого и кошерного форматирования страниц, особенно копипасты */
+/* в перспективе можно подключить сайт к fast-css */
+.right  {text-align: right;}
+.left  {text-align: left;}
+.center {text-align: center;}
+.f-left {float: left;}
+.f-right {float: right;}
+
+.h200px {height: 200px;}
+
+.px200 {width: 200px;}
+.px250 {width: 250px;}
+.px400 {width: 400px;}
+.p50 {width: 50%;}
+.p100 {width: 100%;}
+
+.none {display: none;}
+.block {display: block;}
+/** блока в углу страниц разделов */
+.img-pdf{
+	float: right;
+	width: 208px;
+	padding: 0 0 8px 8px;
+	/*padding: 4px;*/
+}
+.img-pdf img{
+	width: 200px;
+	display: block;
+	}
+
+/* убрал, бо перекидывает блок и все ниже идущие под сайдбар, когда нет контента выше, получается много пустоты в контентной области
+.see-also {clear:both;}
+*/
+
+img.product-image{
+	margin-right: 10px;
+	max-height: 200px;
+	vertical-align: text-top;
+}
+
+th:first-letter{text-transform: capitalize;}
+table.benefits p {margin: 0px; line-height: 1;}
+table.benefits th, table.images-1 th,table.images-2 th,table.images-3 th, table.product th{
+	background-color: #fff;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: left;
+	
+}
+table.product, table.product table{width: 100%;}
+table.product table {border-collapse: separate; background-color: #fff;}
+table.product table td{
+	border: 1px #000 inset;
+	width: 29%; 
+	text-align: right;
+}
+table.product table td:first-child {
+	width: 59%; 
+	text-align: left;
+}
+
+/*
+
+table.product table td:nth-child(odd){
+	width: 59%; 
+	text-align: left;}
+table.product table td:nth-child(even){
+	width: 29%; 
+	text-align: right;}
+	*/
+table.benefits. table.product {
+	font-size: 12px;
+	border-collapse: collapse;
+}
+/* списки */
+#content ul.mark li { list-style: disc inside none; padding-left: 15px;}
+dt {font-weight: bold;}
+
+/* сноски */
+.note-content {display: none; background: wheat;}
+/*  */
+.help {cursor: help;}
+/* изображения */
+/* контейнер для иллюстраций */
+div.images, div.image, div.image400{text-align: center;}
+div.images img {
+	border: none; 
+	/*height: auto;
+	min-height: 200px;
+	width: 32%;*/
+	padding: 2px; 
+	vertical-align: middle;}
+div.image img {border: none; height: auto; width: 300px;}
+div.image400 img {border: none; height: auto; width: 400px;}
+/* таблицы с посдветкой */
+table.backlight td.hover, table.backlight th.hover{
+	background-color: #69f;
+	color: white;
+	font-weight: bold;
+}
+table.backlight td.hovercell, table.backlight th.hovercell{
+	background-color: #abc;
+}
+table.backlight td.click, table.backlight th.click{
+	background-color: #bbb;
+}
+table.backlight td.hoverrow, table.backlight th.hoverrow{
+	background-color: #6df;
+}
+table.hhi-inverter-table thead th{
+	text-align: center;
+}
+table.hhi-inverter-table td{
+	text-align: center;
+	border: silver 1px solid;
+}
+table.tele-zanaveska td{
+	border: 1px solid #000;
+}
+table.tele-zanaveska th{
+	border: 1px solid #000;
+}
+/* таблицы (+с продукцией graesslin) */
+table caption {font-weight: bold; text-align: left; font-style: italic;  }
+table.zebra {margin-top: 28px;}
+table.zebra caption{font-size: 16px; font-weight: bold; text-align: left; font-style: normal;}
+table.zebra th{ text-align: left;}
+table.zebra tr:nth-child(odd) {background-color: #EFEFEF;}
+table.zebra {border-spacing: 0px;}
+
+table.graesslin {border-collapse: collapse;}
+table.graesslin th {    
+	font-weight: bold;
+	text-align: center;
+	background-color: #C5DAA7;
+}
+/*  газовые разрядники */
+table.gdt {width: 940px;}
+table.gdt td {border: 1px white solid;}
+table.gdt td img{max-width: 200px;}
+table.gdt th{font-size: 57%;}
+table.gdt td{font-size: 57%;}
+.gdt-icon img{width: 48px;}
+table.gdt tr:nth-child(odd){background: #dccde4;}
+table.gdt tr:nth-child(even){background: #c39fcb;}
+
+table.graesslin td {    
+	border: 1px solid #C5DAA7;
+	margin-top: 10px;
+	padding: 10px;
+	vertical-align: top;
+}
+/*  чудные ссылки */
+
+.first-pdf {
+	font-weight: bold;
+	font-stretch: expanded;
+}
+.first-pdf .cover{
+	width: 180px;
+	border: 2px solid black;	
+}
+
+.cover {
+	width: 60px;
+	border: 1px solid black;
+}
+#catalogs div {clear: left; border-top: 2px ridge #1063B3;}
+#catalogs div ul li{clear: left;}
+#catalogs div ul li img.cover{float: left; margin: 0px 4px 4px 0px;}
+
+
+/* интерактивный подбор реле времени теле */
+.releSelect {width: 674px;}
+.releSelect .function  label{cursor: pointer;}
+
+.no-voltage {display: none;}
+div.function {
+	width: 125px; 
+	height: 125px; 
+	float: left; 
+	padding: 2px; 
+	margin: 0px;
+	overflow: hidden;}
+div.function img {
+	width: 120px; 
+	height: 50px;
+	display: block; 
+	/*z-index: 10;*/
+}
+div.function input[type=checkbox] {
+	vertical-align: top;
+    position: relative;
+    left: 112px;
+    top: 3px;
+    z-index: 10;
+}
+div.function label{	position: absolute;}
+
+div.function p b{font-weight: bold; font-style: normal;}
+div.function p {
+	height: 70px;
+	line-height: 10pt;
+	width: 120px;
+	font-size: 9pt;
+	font-style: italic;
+	word-wrap: break-word;
+	padding: 0px;
+	margin: 0px;
+	background-color: #79b543;}
+
+.select {border: 2px solid Yellow;}	
+	
+a.PMtr2{text-decoration: none;}
+	
+/* страница реле */
+#releMenu li {
+	background: #0c50A3; 
+	border-radius: 8px 8px 0px 0px; 
+	display: inline-block;
+	width: 160px;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;}
+#releMenu li:hover {background: #337CCB;}
+#releMenu li a{
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	width: 100%;
+	padding: 12px;
+}
+#releMenu li.active a{
+	background: url('/images/icons/bullet_green.png') left center no-repeat;
+	text-decoration: underline;
+}
+
+.hideImage{
+	display: none; 
+	position: absolute;
+	margin-left: 330px;
+	margin-top: -30px;
+	opacity: 0.8}
+.hideImage img, img.hideImage{
+	width: 300px;
+	height: auto;
+	border: 2px double #19466c;}
+
+.hideImage p {
+	width: 300px;
+	text-align: center;
+	background: #19466c; 
+	color: white; 
+	font-weight: bold; 
+	padding: 0px; 
+	margin: 0px;
+}
+
+img.hideImage{
+	/*position: relative;*/
+	margin: 0;
+}
+/* большие списки для электронных компонентов */
+#content ul.ec {padding-bottom: 6px; float: left; font-size: x-small; width: 24%}
+#content .producers h2 a {font-size: 1.5em;}
+
+/* citel таблички в разделах каталога */
+.new-citel, .new-citel-1  {border-collapse: collapse;}
+.new-citel  td, .new-citel-1  td{
+	border: 1px silver solid;
+	text-align: center;
+	vertical-align: middle;	
+}
+.new-citel-1 h3, .new-citel-1 h2{
+	line-height: 1;
+	margin: 0px;
+	padding: 0px;
+}
+
+table.citel-zebra {
+	border-collapse: collapse;
+}
+table.citel-zebra  caption{
+	text-align: left;
+	background-color: #ff8800;
+	color: white;
+	padding-left: 1em;
+}
+table.citel-zebra tr:nth-child(even){
+	background-color: #ff9218;
+}
+
+table.citel-zebra tr:nth-child(odd){
+	background-color: #DDDDDD;
+}
+table.citel-zebra th{
+	background-color: white;
+}
+table.citel-zebra td,table.tele-zebra th{
+	border: ridge 3px #999999;
+}
+
+/*.new-citel-1 h3{	white-space: nowrap;}*/
+.new-citel-1 ul li{	white-space: nowrap;}
+
+.new-citel td ul {	text-align: left;}
+
+.new-citel  td  dl+ul li {
+	display: inline;
+	margin-right: 36px;
+}
+.new-citel  td  dl+ul li a, .new-citel dt{
+	font-weight: bold;	
+}
+.new-citel td dd{	
+	text-align: justify;
+	margin: 0px;
+	padding: 6px;
+}
+
+.new-citel  td:first-child {
+	width: 30%;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.new-citel  td img {
+	height: 100px;
+	width: auto;
+}
+
+.new-citel-1  td:first-child {	width: 20%;}
+.new-citel-1  td:last-child {width: 40%;}
+
+.new-citel-1  td img {
+	height: 125px;
+	width: auto;
+}
+.citel-cs caption{
+	font-style: italic;
+	text-align: left;
+}
+.citel-cs{background: #c8ebfc;}
+.citel-cs tr:nth-child(odd) {background-color: #91d9f8;}
+
+
+
+/* для релеко, обновлённых страниц */
+.relecoLogos{float: right;}
+.relecoLogos img{
+	height: 48px;
+	width: auto: 
+}
+.benefitLogos img{
+	height: 55px;
+	width: 55px;
+}
+
+table.releco{	width: 940px;}
+table.releco caption{
+	text-align: left;
+	font-size: 18px;
+}
+
+table.releco thead{	border-bottom: 1px blue solid}
+table.releco th{
+	text-align: left;
+	border-top: 1px blue solid
+}
+
+table.releco img{height: 28px; width: auto;}
+
+table.releco td:nth-child(1) img{
+	width: 75px;
+	height: auto;
+}
+table.releco th:nth-child(1){width: 75px;}
+table.releco th:nth-child(2){width: 355px;}
+table.releco th:nth-child(3){width: 75px;}
+table.releco th:nth-child(4){width: 30px;}
+table.releco th:nth-child(5){width: 150px;}
+table.releco th:nth-child (6){width: 150px;}
+table.releco th:nth-child (7){width: 150px;}
+table.releco th:nth-child (8){
+	width: 40px;
+	text-align: center;
+}
+/* ссылка на форму заказа электронных компанентов со страниц каталога */
+#linkToFarnell{
+	float: right; 
+	padding: 5px; 
+	border: 1px rgb(242, 132, 17) dotted; 
+	border-radius: 0px 25px 0px 100px/25px;
+}
+
+/* картинки-всплывашки */ 
+.show {cursor: pointer;}
+div.lics img {
+	width: 100px;
+	height: 140px;
+	padding: 4px;
+}
+
+#layer{
+	width: 100%;
+	background: grey;
+	opacity: 0.9;
+	-ms-filter: "alpha(opacity=80)"; /* IE 8 */
+	filter: alpha(opacity=80);       /* IE 4-7 */
+	zoom: 1; /* триггер "hasLayout" в IE 7 и ниже */ 
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 50;
+}
+#window{
+	z-index: 100;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+#popup {
+	position: relative;
+	z-index: 200;
+	width: 60%;
+	margin-left: 20%;
+	border: 3px blue solid;
+	border-radius: 25px;
+	background-color: white;
+	text-align: center;
+}
+.closeShow{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	float: right;
+	margin: 15px;
+	text-decoration: none;
+	background: url('/images/icons/cancel.png') no-repeat;
+}
+/* контакторы */
+.modCont caption{text-align: left;}
+.modCont {
+	border-collapse: collapse;
+	width: 686px;
+}
+.modCont td[rowspan]{	text-align: left;}
+.modCont td[rowspan="1"]{	text-align: center;}
+
+.modCont td, .modCont th{
+	border-left: 1px black solid;
+	border-right: 1px black solid; 
+	text-align: center;
+}
+
+.modCont tr{
+	border-top: 1px black solid;
+	border-bottom: 1px black solid;
+}
+
+/* benedict */
+table.benedict{
+	border-collapse: collapse;
+	width: 100%;
+	/*white-space: nowrap; */
+	text-align: center;
+}
+
+table.benedict caption{
+	font-size: 12px;
+	text-align: left;
+	padding-top: 24px;
+	font-style: italic;
+}
+
+table.benedict thead{ 
+	background-color: #CCC;
+}
+table.benedict td , table.benedict th{
+	border: 1px solid gray;
+	vertical-align: top;
+}
+table.benedict td{
+	text-align: left;
+}
+table.benedict th.th {
+	border: none;
+	font-size: 16px;
+	text-align: left;
+	padding-top: 28px;
+}
+table.benedict img {max-width: 150px;}
+table.benedict th.img {
+	border: none;
+	vertical-align: middle;
+}
+
+/* таблицы с тепловыми реле */
+table.ThermalOverloadRelays td.img{
+	background: white;
+	vertical-align: top;
+	text-align: center;
+	width: 125px;
+	padding: 0px;
+	font-style: italic;
+}
+table.ThermalOverloadRelays {border-collapse: collapse;}
+
+table.ThermalOverloadRelays td.caption{
+	background: white;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 20px;	
+}
+table.ThermalOverloadRelays td{padding-left: 12px;}
+table.ThermalOverloadRelays td:nth-child(5) img{width: 100%;}
+table.ThermalOverloadRelays td:nth-child(1) img{width: 100%;}
+table.ThermalOverloadRelays tr:nth-child(even){background: silver;}
+table.ThermalOverloadRelays tr:nth-child(even) td{height: 20px;}
+
+table.modular-tech-params th{text-align: left;}
+table.modular-tech-params td{text-align: right;}
+
+table.tele-zebra {
+	border-collapse: collapse;
+}
+table.tele-zebra  caption{
+	text-align: left;
+	background-color: #79B542;
+	color: white;
+	padding-left: 1em;
+}
+table.tele-zebra tr:nth-child(even){
+	background-color: #ABE391;
+}
+
+table.tele-zebra tr:nth-child(odd){
+	background-color: #DDDDDD;
+}
+table.tele-zebra th{
+	background-color: white;
+}
+table.tele-zebra td,table.tele-zebra th{
+	border: ridge 3px #999999;
+}
+
+table.product table.tr-snt-table tbody td{
+	text-align: right;
+}
+table.tr-snt-table td:first-child {
+    text-align: right;
+}
+table.tele{
+	border: 1px inset #999999;
+	border-collapse: collapse;
+	border-spacing: 0;
+	text-align: center;
+}
+table.tele td, table.tele th{
+	border: 1px inset #999999;
+	border-collapse: collapse;
+}
+table.tele tbody th{text-align: left;}
+table.tele thead th{text-align: center;}
+
+/* таблицы cbi */
+table.cbi {width: 80%; border-collapse: collapse;}
+table.cbi td, table.cbi th{border: 1px solid grey;}
+table.cbi thead th {font-size: 90%; text-align: left;}
+table.cbi tr td:nth-of-type(3){text-align: center;}
+table.cbi tr th:nth-of-type(3){text-align: center;}
+table.cbi tr td:nth-of-type(4){text-align: center;}
+table.cbi tr th:nth-of-type(4){text-align: center;}
+/* для статей */
+/* 13.12.2012 - вынесено в /css/articles.css */
+
+
+
+#wrapperOrder{
+	background: white;
+	opacity: 0.2;
+	width: 100%;
+	position: fixed;
+	height: 100%;
+	top: 0;
+}
+#orderPopup {
+	background-color: white;
+	display: none;
+	position: fixed;
+	z-index: 100;
+	font-family: Sans;
+	width: 38%;
+	height: auto;
+	border-radius: 24px;
+	border-color: blue;
+	border-width: 1%;
+	border-style: solid;
+	top: 30%;
+	left: 30%;}
+#orderPopup p{
+	padding: 0 2%;
+	font-size: 12pt;
+}
+#orderPopup img#close{
+	cursor: pointer;
+	float: right;
+}
+#orderPopup h1{
+	margin: 0;
+	padding: 0 2%;
+	font-size: 100%;
+	background-color: blue;
+	color: white;
+	border-radius: 24px 24px 0px 0px;
 }

@@ -1,0 +1,14 @@
+div.news-list img.preview_picture
+{
+	float:left;
+	margin:0 4px 6px 0;
+	max-width: 120px;
+	height: auto;
+}
+.news-date-time {
+	color:#486DAA;
+	font-weight: 800;
+}
+p.news-item{
+	padding: 14px 0px;
+}

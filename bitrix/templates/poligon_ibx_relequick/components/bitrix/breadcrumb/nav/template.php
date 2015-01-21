@@ -13,11 +13,10 @@ for($index = 0, $itemSize = count($arResult); $index < $itemSize; $index++)
 		$strReturn .='&nbsp;/&nbsp;';
 
 	$title = htmlspecialcharsex($arResult[$index]["TITLE"]);
-	if($arResult[$index]["LINK"] <> "" AND $index != ($itemSize-1))
+	if(($arResult[$index]["LINK"] <> "" AND $index != ($itemSize-1))||($index == ($itemSize-1)&&$_REQUEST["ELEMENT_ID"]!=''))
 		$strReturn .= '<a href="'.$arResult[$index]["LINK"].'" title="'.$title.'">'.$title.'</a>';
 	else
 		$strReturn .= $title;
 }
-
 return $strReturn;
 ?>

@@ -14,12 +14,20 @@ $title_main = $section_name2.' '.$proizv.' > '.$section_name.' > '.$arResult["NA
 $img_alt = $section_name2.' '.$proizv.' '.$arResult["NAME"];
 $APPLICATION->SetTitle($title_main);?>
 
-<div class="element_container">
-<table>
+<!-- попап для быстрого обращения -->
+<div id="orderPopup">
+<h1><img src="/images/icons/basket_add.png" alt="Заказ электронных компанентов и НВА"/> заказать <?=$arResult["NAME"];?><img src="/images/icons/cross.png" id="close" alt="Х" title="Закрыть"/></h1>
+<p><img src="/images/icons/phone.png" alt="телефон"/> Позвоните нашему менеджеру по телефону (812) 325-42-20. </p>
+<p><img src="/images/icons/email.png" alt="email"/> Либо отправьте заявку на выставаление счёта <a href="mailto:elcomp@poligon.info?subject=<?=$arResult["NAME"];?>">e-mail</a>. </p>
+<p><img src="/images/icons/box.png" alt="доставка"/> Узнайте про возможные <a href="/content/program/delivery.php" target="_blank">способы доставки</a>. </p>
+</div>
+
+<div class="catalog-element">
+<table style="width: 100%;">
 <tbody>
 <tr>
-	<td class="element_name">
-		<h1><?=$arResult["NAME"]?> <? if ($arResult["PROPERTIES"]["article"]["VALUE"]) echo '('.$arResult["PROPERTIES"]["article"]["VALUE"].')';?></h1>
+	<td>
+		<h1 class="name"><?=$arResult["NAME"]?> <? if ($arResult["PROPERTIES"]["article"]["VALUE"]) echo '('.$arResult["PROPERTIES"]["article"]["VALUE"].')';?></h1>
 		<strong><?=$arResult["PREVIEW_TEXT"]?></strong><br/>
 		<strong><?=$section_name?></strong><br/>
 	</td>
@@ -33,7 +41,7 @@ $APPLICATION->SetTitle($title_main);?>
 	</td>
 </tr>
 </tbody>
-</table class="element_datasheet">
+</table>
 <?if($arResult["PROPERTIES"]["preview_text"]["~VALUE"]["TEXT"]):?>
 <b>Особенности:</b>
 <div><?

@@ -1,0 +1,61 @@
+/*forum.search*/
+/* from main*/
+table.forum-main {
+	border: none;
+	border-collapse: collapse;
+	margin: 0px;
+	width: 100%;
+	font-size: 100%;
+}
+table.forum-main th {
+	background-color:#CEDEEC;
+	border: 1px solid #99BAD7;
+	font-weight: normal;
+	padding:4px;
+	white-space:nowrap;
+	vertical-align:top;
+}
+table.forum-main td {
+	background-color:#F1F5FA;
+	border: 1px solid #99BAD7;
+	padding: 4px;
+	vertical-align:top;
+}
+.forum-title {
+	border: 1px solid #99BAD7;
+	padding: 4px;
+	background-color: #CEDEEC;
+	font-size: 100%; 
+	font-weight:bold;}
+div.forum-br {
+    height: 4px;
+    width: 100%; 
+    border: none;
+	overflow: hidden;  
+}
+form.forum-form {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+/* Filter only */
+table.forum-filter, table.forum-filter-popup {border: 1px solid #99BAD7;border-collapse: collapse;margin: 0px;padding: 0px;font-size: 100%;width: auto;}
+table.forum-filter th, table.forum-filter-popup th, table.forum-filter td, table.forum-filter-popup td {border: none;padding:4px;font-size: 100%;vertical-align: middle;}
+table.forum-filter th, table.forum-filter-popup th {background-color:#CEDEEC;border-top: 1px solid #99BAD7;border-bottom: 1px solid #99BAD7;text-align: left;font-weight: bold;}
+table.forum-filter td, table.forum-filter-popup td {background-color:#F1F5FA;}
+table.forum-filter-popup th, table.forum-filter-popup td {font-size: 90%; font-weight: normal;}
+table.forum-filter-popup th input, table.forum-filter-popup td  input {float:left; margin:0px 5px 0px 0px;}
+.filter-hide {cursor: pointer;cursor: hand;background-repeat:no-repeat;background-position:left;background-image:url(images/filter/less.gif);padding:0px;margin:0px 0px 0px 10px;width:14px;height:14px;border:none;float:right;}
+.filter-more, .filter-more-hover {cursor: pointer;cursor: hand;background-repeat:no-repeat;background-position:left;background-image:url(images/filter/more.gif);margin: 0px 4px 0px 0px;width:14px;height:14px;float:left;}
+/*/Filter only*/
+
+/* search only*/
+div.forum-search {
+	border-bottom: 1px solid #EEEEEE; 
+	margin:4px 0px 10px 0px; 
+	padding-bottom:14px;}
+div.forum-search-date {
+	color:#333333;
+	font-weight:normal; 
+	font-size:80%;}
+

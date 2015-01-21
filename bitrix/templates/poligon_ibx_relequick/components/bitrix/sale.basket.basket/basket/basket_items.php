@@ -45,29 +45,41 @@ echo GetMessage("STB_ORDER_PROMT"); ?>
 			{
 				$arBasketItems["PRICE_MATRIX"] = false;
 			}
-/*			echo '<pre>';
-			var_dump($arBasketItems["PRICE_MATRIX"]);
+			/*echo '<pre>';
+			var_dump($arBasketItems);
 			echo '</pre>';*/
+$db_props = CIBlockElement::GetProperty(4, $arBasketItems["PRODUCT_ID"], "sort", "asc", Array("CODE"=>"article"));
+if($ar_props = $db_props->Fetch())
+        $article = $ar_props["VALUE"];
+
 $body = '';
 $old_price = '';
+$count = 0;
 			foreach ($arBasketItems["PRICE_MATRIX"]["ROWS"] as $ind => $arQuantity):
-				if ($ind) $body .= '<br>';
+				$ind2=0;
+				if ($ind) $body .= '';
 					if(count($arBasketItems["PRICE_MATRIX"]["ROWS"]) > 1 || count($arBasketItems["PRICE_MATRIX"]["ROWS"]) == 1 && ($arElement["PRICE_MATRIX"]["ROWS"][0]["QUANTITY_FROM"] > 0 || $arBasketItems["PRICE_MATRIX"]["ROWS"][0]["QUANTITY_TO"] > 0)):
-							if (IntVal($arQuantity["QUANTITY_FROM"]) > 0 && IntVal($arQuantity["QUANTITY_TO"]) > 0)
-								$body .= 'При покупке от '.$arQuantity["QUANTITY_FROM"].' шт. до '. $arQuantity["QUANTITY_TO"];
-							elseif (IntVal($arQuantity["QUANTITY_FROM"]) > 0)
-								$body .= 'При покупке от '.$arQuantity["QUANTITY_FROM"].' шт.';
-							elseif (IntVal($arQuantity["QUANTITY_TO"]) > 0)
-								$body .= 'При покупке от '.$arQuantity["QUANTITY_TO"].' шт. и более';
+							if (IntVal($arQuantity["QUANTITY_FROM"])>$arBasketItems["QUANTITY"]&&$count==0){
+								if (IntVal($arQuantity["QUANTITY_FROM"]) > 0 && IntVal($arQuantity["QUANTITY_TO"]) > 0)
+									$body .= 'При покупке от '.$arQuantity["QUANTITY_FROM"].' шт. до '. $arQuantity["QUANTITY_TO"];
+								elseif (IntVal($arQuantity["QUANTITY_FROM"]) > 0)
+									$body .= 'При покупке от '.$arQuantity["QUANTITY_FROM"].' шт.';
+								elseif (IntVal($arQuantity["QUANTITY_TO"]) > 0)
+									$body .= 'При покупке от '.$arQuantity["QUANTITY_TO"].' шт. и более';
+								$count++;
+								$ind2=$ind;
+							}
 						if ($arBasketItems["QUANTITY"]>$arQuantity["QUANTITY_FROM"]) $s=1;
 						else $s=0;
 					endif;
 					foreach($arBasketItems["PRICE_MATRIX"]["COLS"] as $typeID => $arType):
-							if($arBasketItems["PRICE_MATRIX"]["MATRIX"][$typeID][$ind]["DISCOUNT_PRICE"] < $arBasketItems["PRICE_MATRIX"]["MATRIX"][$typeID][$ind]["PRICE"]):
-								$body .= ' цена за штуку составит <s>'.FormatCurrency($arElement["PRICE_MATRIX"]["MATRIX"][$typeID][$ind]["PRICE"], $arElement["PRICE_MATRIX"]["MATRIX"][$typeID][$ind]["CURRENCY"]).'</s><span class="catalog-price">'.FormatCurrency($arBasketItems["PRICE_MATRIX"]["MATRIX"][$typeID][$ind]["DISCOUNT_PRICE"], $arElement["PRICE_MATRIX"]["MATRIX"][$typeID][$ind]["CURRENCY"]).'</span>';
-							else:
-								$body .= ' цена за штуку составит <span class="catalog-price">'.FormatCurrency($arBasketItems["PRICE_MATRIX"]["MATRIX"][$typeID][$ind]["PRICE"], $arElement["PRICE_MATRIX"]["MATRIX"][$typeID][$ind]["CURRENCY"]).'</span>';
-							endif;
+							if ($ind2&&$ind==$ind2){
+								if($arBasketItems["PRICE_MATRIX"]["MATRIX"][$typeID][$ind]["DISCOUNT_PRICE"] < $arBasketItems["PRICE_MATRIX"]["MATRIX"][$typeID][$ind]["PRICE"]):
+									$body .= ' цена за штуку составит <s>'.FormatCurrency($arElement["PRICE_MATRIX"]["MATRIX"][$typeID][$ind]["PRICE"], $arElement["PRICE_MATRIX"]["MATRIX"][$typeID][$ind]["CURRENCY"]).'</s><span class="catalog-price">'.FormatCurrency($arBasketItems["PRICE_MATRIX"]["MATRIX"][$typeID][$ind]["DISCOUNT_PRICE"], $arElement["PRICE_MATRIX"]["MATRIX"][$typeID][$ind]["CURRENCY"]).'</span>';
+								else:
+									$body .= ' цена за штуку составит <span class="catalog-price">'.FormatCurrency($arBasketItems["PRICE_MATRIX"]["MATRIX"][$typeID][$ind]["PRICE"], $arElement["PRICE_MATRIX"]["MATRIX"][$typeID][$ind]["CURRENCY"]).'</span>';
+								endif;
+							}
 							if ($s==1&&$arBasketItems["PRICE"]!=$arBasketItems["PRICE_MATRIX"]["MATRIX"][$typeID][$ind]["PRICE"]) $old_price .= '<br>'.$arBasketItems["PRICE_MATRIX"]["MATRIX"][$typeID][$ind]["PRICE"].$arBasketItems["PRICE_MATRIX"]["MATRIX"][$typeID][$ind]["CURRENCY"];
 							
 					endforeach;
@@ -79,14 +91,14 @@ $old_price = '';
 				if (strlen($arBasketItems["DETAIL_PAGE_URL"])>0):
 					?><a href="<?=$arBasketItems["DETAIL_PAGE_URL"] ?>"><?
 				endif;
-				?><b><?=$arBasketItems["NAME"] ?></b><?
+				?><b><?=$arBasketItems["NAME"] ?> (<?=$article?>)</b><?
 				if (strlen($arBasketItems["DETAIL_PAGE_URL"])>0):
 					?></a><?
 				endif;
 				?><small><?=$body?></small></td>
 			<?endif;?>
 			<?if (in_array("PRICE", $arParams["COLUMNS_LIST"])):?>
-				<td align="right"><small class="price"><?=$old_price?></small><br><?=$arBasketItems["PRICE_FORMATED"]?></td>
+				<td align="right"><small class="price"><?=$old_price?></small><?=$arBasketItems["PRICE_FORMATED"]?></td>
 			<?endif;?>
 			<?if (in_array("TYPE", $arParams["COLUMNS_LIST"])):?>
 				<td><?=$arBasketItems["NOTES"]?></td>
