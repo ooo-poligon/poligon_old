@@ -8,8 +8,8 @@
 		<meta charset=utf-8>
 		<title><?$APPLICATION->ShowTitle()?></title>
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-		<link href="/bitrix/templates/poligon_i/css/styles.css"                 rel="stylesheet" type="text/css" />
 		<link href="/bitrix/templates/poligon_i/template_styles.css"            rel="stylesheet" type="text/css" media="all" />
+		<link href="/bitrix/templates/poligon_i/css/styles.css"                 rel="stylesheet" type="text/css" />		
 		<link href="/bitrix/templates/poligon_i/css/resolutions/style_1600.css" rel="stylesheet" type="text/css" media="(max-width: 1599px)" />
 		<link href="/bitrix/templates/poligon_i/css/resolutions/style_1400.css" rel="stylesheet" type="text/css" media="(max-width: 1399px)" />
 		<link href="/bitrix/templates/poligon_i/css/resolutions/style_1280.css" rel="stylesheet" type="text/css" media="(max-width: 1279px)" />

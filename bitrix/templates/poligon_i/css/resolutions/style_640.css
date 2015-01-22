@@ -43,7 +43,7 @@ ul li {
 		border: none; /* убрать рамку у ссылок-картинок */
 }
 .site_menu_container{
-		width: 244px;
+		width: 251px;
 		margin:auto;
 		padding-top: 0px;
 }
@@ -128,8 +128,8 @@ ul li {
 		text-align: center;
 		text-decoration:none;
 		font-weight:bold;
-		height: 235px;
-		margin-top: -12px;
+		height: 280px;
+		margin-top: 0px;
 		padding: 10px;
 }
 #special a{
@@ -166,6 +166,7 @@ ul li {
 }
 .special_hide_button{
 		width: 250px;
+		height: 220px;
 		margin: auto;
 		margin-top: 0px;
 }

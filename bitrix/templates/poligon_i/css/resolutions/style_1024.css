@@ -43,7 +43,7 @@ ul li {
 		border: none; /* убрать рамку у ссылок-картинок */
 }
 .site_menu_container{
-		width: 388px;
+		width: 395px;
 		margin:auto;
 		padding-top: 4px;
 }
@@ -127,8 +127,8 @@ ul li {
 		text-align: center;
 		text-decoration:none;
 		font-weight:bold;
-		height: 310px;
-		margin-top: -12px;
+		height: 330px;
+		margin-top: 0px;
 		padding: 10px;
 }
 #special a{
@@ -164,9 +164,14 @@ ul li {
 		width: 90px;
 }
 .special_hide_button{
-		width: 250px;
+		width: 260px;
+		height: 300px;
 		margin: auto;
-		margin-top: -20px;
+		margin-top: 0px;
+		margin-bottom: 10px;
+}
+#special_close {
+		font:10px Arial, Helvetica, sans-serif;
 }
 #contacts{
 		display: none;

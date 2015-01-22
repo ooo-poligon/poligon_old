@@ -39,7 +39,7 @@ ul li {
 		border: none; /* убрать рамку у ссылок-картинок */
 }
 .site_menu_container{
-		width: 510px;
+		width: 517px;
 		margin:auto;
 		padding-top: 7px;
 }
@@ -157,11 +157,14 @@ ul li {
 		width: 150px;
 }
 .special_hide_button{
-		width: 250px;
+		width: 260px;
 		margin: auto;
 		margin-top: 20px;
 }
-#contacts{
+#special_close {
+		font:12px Arial, Helvetica, sans-serif;
+}
+		#contacts{
 		display: none;
 		position: relative;
 		background: url(/bitrix/templates/poligon_i/images/contacts_bg_1400.gif) repeat-x #19466c;

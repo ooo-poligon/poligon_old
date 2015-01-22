@@ -316,12 +316,15 @@
 							<li class="site_menu_li">
 								<a href="/content/news/">новости</a>
 							</li>
-							<li class="site_menu_li">
+							<!--<li class="site_menu_li">
 								<a href="/catalog/">каталог</a>
-							</li>
+							</li>-->
 							<li class="site_menu_li">
 								<a href="/content/articles/">публикации</a>
 							</li>
+							<li class="site_menu_li">
+								<a href="/content/program/delivery.php">доставка</a>
+							</li>							
 							<li class="site_menu_li_last">
 								<a href="#" id="trigger_1">контакты</a>
 							</li>
