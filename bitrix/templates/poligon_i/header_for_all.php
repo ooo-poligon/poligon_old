@@ -311,7 +311,7 @@
 					<nav class="site_menu_container">
 						<ul class="site_menu_ul">
 							<li class="site_menu_li">
-								<a href="/index.php">главная</a>
+								<a href="/index.php#intro_ancor">главная</a>
 							</li>
 							<li class="site_menu_li">
 								<a href="/content/news/">новости</a>
@@ -453,4 +453,5 @@
 						</div>
 					</section>
 				</header>
+			<div id="intro_ancor"></div>	
 		<div class="intro_pad"></div>

@@ -10,6 +10,8 @@
 		
 		<li><a href="/content/about/">О компании</a></li>
 		
+		<li><a href="/catalog/">Каталог</a></li>
+		
 		<li><a href="#" id="trigger_1">Контактная информация</a></li>
 		
 		<li><a href="/map.php">Карта сайта</a></li>

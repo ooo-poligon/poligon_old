@@ -130,6 +130,8 @@ if ($no==3)
 		<ul id="footer_list">
 
 			<li><a href="/content/about/">О компании</a></li>
+			
+			<li><a href="/catalog/">Каталог</a></li>
 	
 			<li><a href="#" id="trigger_1">Контактная информация</a></li>
 	
