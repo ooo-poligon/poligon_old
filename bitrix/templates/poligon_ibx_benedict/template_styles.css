@@ -1,9 +1,25 @@
-@media (min-width: 1600px) {
 body{
 		margin: 0px;
 		padding: 0px;
         background:url(/bitrix/templates/poligon_ibx_benedict/images/bg_gradient.gif) repeat-y #36877e;
         background-position: center;
+}
+#print {
+		width: 970px;
+		margin: auto;
+		text-align: right;
+}
+#print a{
+		font:14px Arial, Helvetica, sans-serif;
+		color:#36877e;
+		text-decoration:none;
+		font-weight:bold;
+}
+#print a:hover{
+		font:14px Arial, Helvetica, sans-serif;
+		color:#36877e;
+		text-decoration:none;
+		font-weight:bold;
 }
 .breadcrumbs{
 		width: 970px;
@@ -52,61 +68,4 @@ body{
 }
 #work_area a.open.f-right{
 		font-color: #000;
-}
-}
-@media (max-width: 1599px) {
-body{
-		margin: 0px;
-		padding: 0px;
-        background:url(/bitrix/templates/poligon_ibx_benedict/images/bg_gradient.gif) repeat-y #36877e;
-        background-position: center;
-}
-.breadcrumbs{
-		width: 970px;
-		margin: auto;
-		font:24px Arial, Helvetica, sans-serif;
-		color:#36877e;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;		
-}
-.breadcrumbs a{
-		font:24px Arial, Helvetica, sans-serif;
-		color:#36877e;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;
-		
-}
-.breadcrumbs a:hover{
-		font:24px Arial, Helvetica, sans-serif;
-		color:#000;
-		text-decoration:none;
-		font-weight:bold;
-		text-align: left;		
-}
-#work_area{
-		display: block;
-		font:14px Arial, Helvetica, sans-serif;
-		color:#000;
-		text-decoration:none;
-		text-align: left;
-		width: 966px;
-		margin:auto;
-}
-#work_area a{
-		font:14px Arial, Helvetica, sans-serif;
-		color:#36877e;
-		text-decoration:none;
-		font-weight:bold;
-}
-#work_area h3{
-		font-color: #000;		
-}
-#work_area table tbody tr td{
-		vertical-align: top;
-}
-#work_area a.open.f-right{
-		font-color: #000;
-}
 }

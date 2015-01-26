@@ -27,6 +27,9 @@
 <!--#################################################################################################################-->
 <body>
 	<?php $APPLICATION->IncludeFile("/bitrix/templates/poligon_i/header_for_all.php"); ?>
+		<br>
+			<div id="print"><a href='<?=$APPLICATION->GetCurPageParam("print=Y")?>'><img src="/images/printer.gif" width="16" style="vertical-align: top" alt="print" />Версия для печати</a></div>
+		<br>
 <!--#################################################################################################################-->
 <section id="work_area">
   

@@ -56,7 +56,9 @@
 <!--#################################################################################################################-->
 	<body>	
 	<?php $APPLICATION->IncludeFile("/bitrix/templates/poligon_i/header_for_all.php"); ?>
-<br><br>
+		<br>
+			<div id="print"><a href='<?=$APPLICATION->GetCurPageParam("print=Y")?>'><img src="/images/printer.gif" width="16" style="vertical-align: top" alt="print" />Версия для печати</a></div>
+		<br>
 <div class="breadcrumbs">
 <?$APPLICATION->IncludeComponent( "bitrix:breadcrumb", "", Array( "START_FROM" => "3", "PATH" => "", "SITE_ID" => "-" ), false);?>
 </div>
